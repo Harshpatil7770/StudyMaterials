@@ -1,0 +1,121 @@
+Secure coding- sucure application development
+
+1) Section A
+secure coding- secure coding is a way to writing application or software that shileded from cyber attacks.
+
+2) Section B
+SDLC- Software development life cycle
+Every application is made following sdlc steps. It has basically seven steps such as
+1) Analysis of Requirments
+2) Defining
+3) Desigign
+4) Coding
+5) Testing
+6) Deployment
+7) Maintance
+
+Owasp Top 10 web application proactive or sequrity risks
+1) Defiining Security Requirements
+2) leverage of framworks and libraries
+3) Sucure database access
+4) Ecaspe and enable data
+5) Validate All input
+6) Implements digital Identity
+7) TLS Transport layer security
+8) Handel all error and exception
+9) Implement security logging and monotoring
+10)Protect data everywhere
+
+1)Defining security requirments
+Every software makes by following SDLC steps. Nowdays agile is very famous to develop actual software in an industry.But they don't follow security concepts.
+After making application then work on security is not good. We need to implements security from sratch.
+
+2)Leverage of framework and libraries
+whatever libraries we are using are they internally secured.That's why we need to use updated one and we have Owasp depedency check to check all dependenies updated 
+and secured.
+
+3) Secure database access
+Change default configuaration such as password, avoid sql injection use prepared statement.and commmunication between sever and database server must be encrypted.
+
+4) Validate All Inputs
+All Inputs must be sanitized or whatever input receving from client it must be santized.
+
+5) Escape and enable data
+We have libraries for escape and enable data
+
+6) Implement digital Identity
+Use Cryptographic identity and multifactor authentication like OTP.
+
+7) Protect data Everywhere
+Use https not http
+
+8) Handel all error and exceptions
+
+9) Implements security logging and monotoring
+Log only user actitivies it hepls monotoring later
+
+10) TLS - Transport layer security
+
+
+3) Section C
+Vulnerablity assessment and Penetration Testing
+
+Vulnerability  Assessment
+Vulnerability assessment is the process of defining, identifing classfying priorites of computer application system over the network.
+
+Types of vulnerablity assessments
+1) Active Assessments - We do directly assessment
+2) Passive Assessments - We do Indirectly Assessments
+3) Hot based assessements - We do assesment for particular system
+4) Internal assessments- Inside member find out the vulnerablity 
+5) External Assessments- Outside the member find out the vulnerablity
+6) Network based assessments
+7) Wireless based assessments
+8) Application assessments
+
+Penetration Testing
+Penestration testing is the process of hacking System with the permission from owner of that system to evaluate performance,hack values,attcaks other components
+such as threat daisy chaining
+
+Types of penetrstion Testing
+1)Black Box- Black box testing means blind testing pentester doesn't have information about the system.
+2)Gray Box- Gray box testing means pentester has some information about the system such as port no.
+3) White Box- White box testing means pentestert has complete infomration about the system.
+
+
+4) Section -D
+Input Validation  
+All input must be sanitized or don't trust on user input.
+
+A) SQL(Structured query language) Vulnerablity 
+SQL Injection vulnerablity allows an attakcer to inject malicious input through sql statement.
+Types of SQL Injection 
+1) Error based sql injection
+2) Boolean based sql injection
+3) Time based sql injection
+4) Out of band based sql injection
+
+Prevetation from sql injection
+Use prepared statement, becaouse whatever input we passing it act as string literal not sql statements.Use placeholder.
+
+B) Xpath injection vulnerablity
+x path query language used to select data from xml resource.
+
+C) XSS- cross site scripting vulnerablity 
+Cross site scripting vulnerablity allows an attakcer to inejct malicous code in the form of script.
+Types of xss vulnerablity
+1) Stored vulneablity
+2) Reflected vulnerablity
+3) DOM based vulnerablity
+
+d)OS commond injection Vulnerablity
+OS Commod injection vulnerability allows an attacker to execute arbitary commond.This type of vulnerablity generally occur when input isn't properly sanitized.
+
+e)Local File Inclusion(LFI)
+Local file inclusion exposes the sensitive information. It is listed on owasp top ten security web application riks or proactive.
+
+f)Remote file inclusion(RFI)
+Remote file inclusion is very serious vulnerablity. If vulnerablity exist attacker insert malicious external files and later run on web application.The most efficient 
+way to detect RFI by using automated scanner such as acunetix. To avoid remote file inclusion we need to follow the steps like never trust on user input 
+
+
