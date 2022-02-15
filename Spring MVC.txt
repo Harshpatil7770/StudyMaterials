@@ -7,6 +7,7 @@ Dispatcher servelet is front controller class of Spring MVC.
 
 2)What is spring MVC? why they used?
 Spring MVC stands for model view controller. It maily used to create dyanamic web application.
+When we use spring mvc we need to add dependencies manually as well as deployment descriptor.
 Model- Java Bean
 View- Front End
 Controller- RestFul Resources
