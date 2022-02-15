@@ -132,6 +132,13 @@ Just run your spring boot application as debug.
 24)what is dependency inejction and it's types?
 Dependecy injection means injecting dependecy object to dependent object.
 D.I is design pattern that remove dependecy of your application and make them loosely coupled. So it's become easy to manage or test your application.
+There are two types of dependency injection
+1)Constructor based dependency injection
+2)Setter method based dependency injection
+
+1)Constructor based dependency injection means injecting dependency object to the dependent object via constructor.If chnages occur it will create new instance.
+2)Setter method based dependency injection means injecting dependency object to the dependent object by using setter method. If changes occur it doesn't create
+  new instance. 
 
 
 25)What is IOC?
