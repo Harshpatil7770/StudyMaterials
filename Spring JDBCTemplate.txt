@@ -1,0 +1,29 @@
+=======================================================================================================================================================================
+                                                                      Spring JDBCTemplate
+=======================================================================================================================================================================
+1)What is JDBC Template and it's advantages?
+JDBC Tempalte is powerful mechanism that used to connect database and execure sql quries.
+JDBCTemplate internally used JDBCAPI but reduce lot's of internal problem of JDBCAPI
+Adavantages of JDBCTemplate
+1)No need to perform exception handeling on database logic.
+2)Reduce lot's of code such as we don't need to write create connection,creating statement etc.
+
+
+2)What are the classes of spring JDBCAPI?
+1)JDBC Template
+2)SimleJDBC Call
+3)SimpleJDBC Insert
+4)SimpleJDBC Template
+
+
+3)How can you fetch record by using jdbcTemplate?
+By using RowSetExactor and rowMapper.
+
+
+4)What is advantages of Named Parameter JDBC Template?
+Named Parameter JDBC Template is used to pass the value in Named Parameter.
+
+
+5)What is the advantages of simple jdbc Template?
+1)No need to perform exception handeling on database logic
+2)Reduce lot's code such as we don't need to write creating connection,creating statement etc.
