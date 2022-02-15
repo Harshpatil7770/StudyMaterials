@@ -1,0 +1,201 @@
+Hibernate(ORM 5.4.0)
+
+1)What is Hibernate?
+Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
+
+
+2)What is JPA
+JPA stands for java persistence API.
+It provide platform to work directly with objects instead of sql statements.
+
+
+3)What is the diffrence between hibernate and JPA?
+JPA is used to reduce the boilerplate code where as hibernate is implementaions of JPA.
+
+
+4)What is ORM?
+ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
+
+
+5)Explain hibernate architecture?
+Hibernate architecture comprises many interfaces such as session,session factory,criteria,query and transaction.
+Before going to hibernate architecture we have some layers such as
+1)Backhand api layer
+2)database layer
+3)Hibernate framework layer
+4)Java Application layer
+
+
+6)What are the core interfaces of hibernate?
+1)Session
+2)Session factory
+3)Criteria
+4)Query
+5)Transaction
+6)Configuration
+
+
+7)Mention some advantages of using ORM over JDBC?
+1)Details of sql quries are hidden
+2)Application development is fast
+
+
+8)What are some database supported by hibernate?
+1)Mysql,oracle
+
+
+9)List of key component of Hibernate?
+1)session
+2)Session factory
+3)Transaction
+4)Criteria
+5)Configuration
+6)Query
+
+
+10)How sql query is created is hibernate?
+By using session.createSqlquery method
+
+
+11)What does HQL stands for?
+HQL stands for hibernate query language
+
+
+12)How HQL Query is created?
+HQL query created by session.createQuery
+
+
+13)How can we add criteria to sql query?
+Session.createCriteria
+
+
+14)Define persistance class?
+The class whose objects direclty stored in database called persistence class.
+
+
+15)What is mean by Thread safe?
+Thread safe means we can't access multiple thread simultaneously at a same time.
+
+
+16)What is session factory?
+Session factory is an interface proide factory method to get instance of class.
+
+
+17)Is session-factory object is thread safe?
+yes,session factory object is thread safe.
+
+
+18)What is session?
+Session is an interface which is used to maintain the relation between hibernate application and database layer.
+
+
+19)Is session object is thread safe?
+no, session object is not thread safe.
+
+
+20)What is the diffrence between update() and merge() method?
+Update means editing something whereas merger means combine something.
+
+
+21)What are states of objects in hibernate?
+There are three states of objects in hibernate
+1)Transient- The object is transient state means they don't have primary key and not associated with session.
+2)Persistance -The object in persistance state means they direclty stored in database.
+3)Detahced - The object is detached state means object is destoryed.
+
+
+22)How to make immutable class in hibernate?
+Mark mutable=false which class want to make immutable because by default they are mutable=true
+
+
+23)How many type of association mapping supported in hibernate?
+1)One to one - Only one record of table A is associted with only one records of table B and vice versa.
+2)One to many- Only one record of table A is associted with one or more records of table B not vice versa.
+3)Many to Many- Many records of table A is associated with many records of table B.
+4)Many to one- Many records of table A is related to one record of table B.
+
+
+24)Is it possible to collection mapping one to one and many to one?
+It's not to possible to perform collection mapping with one to one and many to one.
+It's possible only with many to many and one to many
+
+
+25)What is logger?
+Logger hepls to detect error in the application.
+We can simple slf4j logger(simple logger forcascade for java)
+
+
+26)What is API?
+API stands application programming interface it helps to communicate two software.
+
+
+27)What is coupling& Realtionship?
+Coupling describe realtionship between the module.
+Tight coupling- A class dependeds upon another class called tight coupling.
+Loose coupling- A class doesn't dependes uponn another class is called loose coupling
+
+
+28)What is cohesion?
+Cohesion describe how single is created.
+Adavnatage of cohesion is single class easy for maintance.
+
+
+29)What is adhesion?
+Adhesion helps to glues different things together. 
+
+
+30)What is JPQL?
+JPQL stands for java persistance query language,i.e not a native query. 
+
+
+31)Mentions two component of hibernate configuration object?
+1)class Mapping setup
+2)Database connection
+
+
+32)What is the diffrence between session.save() method and session.persist()method?
+session.save() return current identifier of an instance where as session.persist() method doesn't return anything because return type is void.
+
+33)What is the diffrence between get and load method in hibernate?
+get() method return null if object is not found whereas
+load() method return object not found exception if object isn't found.
+
+
+34)What are the states of objects in hibernate?
+There are three states of objects in hibernate
+Transient- The object is transient state means it doesn't have primary key and not associated the session.
+Persistance- The object is persistance state means directly stored in database.
+Detached-  Detached state means after destroying the object.
+
+
+35)What is Apache Tomcat?
+Apache Tomcat is most common predefined server for an internet.
+Tomacat is used to server java server pages.
+
+
+36)What is Automatic dirty checking in hibernate?
+Automatic dirty checking is feaures of hibernate,calls update statement automatically when changes occur in database.
+
+
+37)What is HQL?
+HQL stands for hibernate query language it is not native query.
+The main advantage of HQL is 
+1)No need to learn SQL
+2)Simple to learn
+
+
+38)What is the difference between first level cache and second level cache?
+First level cache is associated the session and second level cache is cache is session factory.
+
+
+39)Annotaions in Hibernate?
+//------------------------------------------------------------------------------------------------------//
+
+@ID,@Entity compulsory for hibernate 
+1)@ID - @ID annotations is used to set primary key in the database
+2)@Entity- @Entity annotations is used to mark a class is an entity and map table in database.
+//-------------------------------------------------------------------------------------------------------//
+
+3)@Table- used to set name of table in database.If you don't write then they consider a class name is table name
+4)@Column- used to set column name in table.If you don't write they they consider variable name is column name
+5)@GeneratedValue(stratergy=GenerationType.AUTO) - used to set generating startegy of primary key.
