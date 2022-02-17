@@ -1,283 +1,310 @@
 =======================================================================================================================================================================
-SpringBoot 
+                                                                          SpringBoot 
 =======================================================================================================================================================================
 
-1)what is springBoot?
-Spring boot is good platform for deveopler to develop stand alone application and production ready feaure that you can just run it.
+1) What is springBoot?
+   Spring boot is good platform for deveopler to develop stand alone application and production ready feaure that you can just run it.
 
 
-2)What is feature of springBoot?
-A) Spring application
-B) web development
-c) Logging
-d) Security
-e) Admin features
+2) What is feature of springBoot?
+   A) Spring application
+   B) web development
+   c) Logging
+   d) Security
+   e) Admin features
 
 
-3)what are the advantages of springBoot?
-A)Spring boot used to develope stand alone application that you can just run it.
-B)It provide no. of plugin
-c)It reduce the cost and time of deveoplment
-d)Spring boot increases the productivity
-e)There is no need of xml configurations
+3) What are the advantages of springBoot?
+   A)Spring boot used to develope stand alone application that you can just run it.
+   B)It provide no. of plugin
+   c)It reduce the cost and time of deveoplment
+   d)Spring boot increases the productivity
+   e)There is no need of xml configurations
 
 
-4)what are the componets of spring boot?
-A) Spring boot stater
-B) Spring boot actutor
-c) Spring boot cli
-d) Spring boot autoconfiguration
+4) What are the componets of spring boot?
+   A) Spring boot stater
+   B) Spring boot actutor
+   c) Spring boot cli
+   d) Spring boot autoconfiguration
 
 
-5)why we use springboot over the spring?
-Because spring boot is good platform for developer to develope stand alone application and production ready features that you can just run it.
-and spring boot mainly focus on business logic not any other things.whereas if we use spring we need to add depencies manually as well as deployment descriptor.
+5) Why we use springboot over the spring?
+   Because spring boot is good platform for developer to develope stand alone application and production ready features that you can just run it.
+   and spring boot mainly focus on business logic not any other things.whereas if we use spring we need to add depencies manually as well as deployment descriptor.
 
 
-6)what are stater dependencies of spring boot modeule?
-Spring boot stater dependencies provide rapid and easier application development process.
+6) What are stater dependencies of spring boot modeule?
+   Spring boot stater dependencies provide rapid and easier application development process.
 
 
-7)How does spring boot works?
-Sprign boot uses the annotation such as @SpringBootApplication,it used to marks main class of your application. It consist of three annotations such as
-@CompnentScan-(used to scan package for bean),@EnableAutoConfiguration-(Used to config your application automatically based upon their dependencies),
-@Configuration-(Class level annotaions used by spring container act as source bean definations).
+7) How does spring boot works?
+   Spring boot uses the annotation such as @SpringBootApplication,it used to marks main class of your application. It consist of three annotations such as
+   @CompnentScan-(used to scan package for bean),@EnableAutoConfiguration-(Used to config your application automatically based upon their dependencies),
+   @Configuration-(Class level annotaions used by spring container act as source bean definations).
 
 
-8)what does stater dependecnies?
-Spring boot stater dependencies provide rapid and easier application development process.
+8) What does stater dependecnies?
+   Spring boot stater dependencies provide rapid and easier application development process.
 
 
-9) what is spring initilizr ? How to generate project(steps)?
-Spring initilizr is great tool developed by spring team to quicky develpe or boot starp your spring boot project.
-step 1)
-To create spring boot project using spring initizr just open your browser
-and search spring.io.init
-step 2)
-select project type maven or gradel 
-step 3)
-select language type java,kotlin and groory
-step 4) fill the configuration details like group id( package name),artifact id(application name) etc
-step 5) Select java version
-step 6) select spring boot version
-step 7) add dependencies as per your reqirements
-step 8) generate the zip file
-step 9) Import the spring boot peject into your IDE(Integrated development enviorment)sofware
+9) What is spring initilizr ? How to generate project(steps)?
+   Spring initilizr is great tool developed by spring team to quicky develpe or boot starp your spring boot project.
+   step 1)
+   To create spring boot project using spring initizr just open your browser
+   and search spring.io.init
+   step 2)
+   select project type maven or gradel 
+   step 3)
+   select language type java,kotlin and groory
+   step 4) fill the configuration details like group id( package name),artifact id(application name) etc
+   step 5) Select java version
+   step 6) select spring boot version
+   step 7) add dependencies as per your reqirements
+   step 8) generate the zip file
+   step 9) Import the spring boot peject into your IDE(Integrated development enviorment)sofware
 
 
-10)what is springboot CLI& it's advantages?
-Spring Boot CLI stands for spring boot commond line interface. If you want to create spring boot project by using CLI we need to download cli tool from offical spring
-boot website.
-The main advantages of spring boot cli is allwos us to create spring boot proejct using groovy language, whenever we use spring boot cli we don't need to create setter
-and getter manually.
+10) What is springboot CLI& it's advantages?
+    Spring Boot CLI stands for spring boot commond line interface. If you want to create spring boot project by using CLI we need to download cli tool
+    from offical spring boot website.
+    The main advantages of spring boot cli is allwos us to create spring boot proejct using groovy language, whenever we use spring boot cli we don't need 
+    to create setter and getter manually.
 
 
-11)what are most common springboot commond line interface tool?
-The most common commond line interface tool such as jar,war, install, uninstall etc
+11) What are most common springboot commond line interface tool?
+    The most common commond line interface tool such as jar,war, install, uninstall etc
 
 
-12)what is apache tomcat?
-Apache is most common predefined server for an internet.
-tomcat is used to server Java Server Pages.
+12) What is apache tomcat?
+    Apache is most common predefined server for an internet.
+    tomcat is used to server Java Server Pages.
 
 
-13)what is inbuild server for springboot?
-Apache Tomcat is inbulid server for a springboot.
+13) What is inbuild server for springboot?
+    Apache Tomcat is inbulid server for a springboot.
 
 
-14)If you want to change default port no. of server,how can you do that? or is it possible to change default port no. of embeded server?
-Yes it's poosible to change default port no of spring boot application. The default port no of spring boot application is 8080.
-Now supppose i want to change port no for eg 9090 then just open the application.properies file. This file located under the src/main/resource folder 
-and write down such as server.port=9090 so in this way we change the default port no of spring boot application.
+14) If you want to change default port no. of server,how can you do that? or is it possible to change default port no. of embeded server?
+    Yes it's poosible to change default port no of spring boot application. The default port no of spring boot application is 8080.
+    Now supppose i want to change port no for eg 9090 then just open the application.properies file. This file located under the src/main/resource folder 
+    and write down such as server.port=9090 so in this way we change the default port no of spring boot application.
 
 
-15)can we create non-webapplication in spring boot?
-Yes we can create non- web application in spring boot, just remove the web dependecies.
+15) Can we create non-webapplication in spring boot?
+    Yes,we can create non- web application in spring boot, just remove the web dependecies.
 
 
-16) what is the default port no. of embeded server in spring boot?
-The default port no. of embeded server is 8080.
+16) What is the default port no. of embeded server in spring boot?
+    The default port no. of embeded server is 8080.
 
 
-17)can we overide or replace embeded tomacat server in springboot?
-Yes we can override or replace embeded tomcat server in springboot,suppose i want to use jetty sever i need to add the dependecy such as spring boot -stater -jetty.
+17) Can we overide or replace embeded tomacat server in springboot?
+    Yes,we can override or replace embeded tomcat server in springboot,suppose i want to use jetty sever i need to add the dependecy such as spring boot -stater -jetty.
 
 
-18)can we disable the default web server in spring boot application?
-Yes we can disable the default web server in spring boot.inside the application.properties file we need to write spring.main.web.application.type=none
+18) Can we disable the default web server in spring boot application?
+    Yes,we can disable the default web server in spring boot.inside the application.properties file we need to write spring.main.web.application.type=none
 
 
-19)How to disable specific autoconfiguration of class?
-Whatever class you want to disable just write down the annotations such as @EnableAutoConfiguration(exclude={className})
+19) How to disable specific autoconfiguration of class?
+    Which class you want to disable just write down the annotations such as @EnableAutoConfiguration(exclude={className})
 
 
-20)Describe the flow of http request in spring boot?
-Client send http request, that comes in controller class. Controller map the request or handel the request. After the controller we have that request goes to service 
-class and inside the service class we have business logic i.e main part of your application. Then request goes to Dao class i.e the class whose directly communicate 
-to the databse and then reuest call bean class.
+20) Describe the flow of http request in spring boot?
+    Client send http request, that comes in controller class. Controller map the request or handel the request. After the controller we have that request goes to 
+    service class and inside the service class we have business logic i.e main part of your application. Then request goes to Dao class i.e the class whose directly 
+    communicate to the databse and then reuest call bean class.
 
 
-21) what is profile in spring boot?
-Profile provide seggration of your application i.e they operate in specific environments. for eg- dev,QA,Test,stage,production etc.
+21) What is profile in spring boot?
+    Profile provide seggration of your application i.e they operate in specific environments. for eg- dev,QA,Test,stage,production etc.
 
 
-what is actuator & it's adantages?
-Actuator is sub proejct of spring boot framework.It acts as monitor of your application. It desctibe health information of your running application.
+22) What is actuator & it's adantages?
+    Actuator is sub proejct of spring boot framework.It acts as monitor of your application. It describe health information of your running application.
 
 
-23)How to debug or enable debug log in spring boot application?
-Just run your spring boot application as debug.
+23) How to debug or enable debug log in spring boot application?
+    Just run your spring boot application as debug.
 
 
-24)what is dependency inejction and it's types?
-Dependecy injection means injecting dependecy object to dependent object.
-D.I is design pattern that remove dependecy of your application and make them loosely coupled. So it's become easy to manage or test your application.
-There are two types of dependency injection
-1)Constructor based dependency injection
-2)Setter method based dependency injection
+24) What is dependency inejction and it's types?
+    Dependecy injection means injecting dependecy object to dependent object.
+    D.I is design pattern that remove dependecy of your application and make them loosely coupled. So it's become easy to manage or test your application.
+    There are two types of dependency injection
+    1)Constructor based dependency injection
+    2)Setter method based dependency injection
 
-1)Constructor based dependency injection means injecting dependency object to the dependent object via constructor.If chnages occur it will create new instance.
-2)Setter method based dependency injection means injecting dependency object to the dependent object by using setter method. If changes occur it doesn't create
-  new instance. 
+    1)Constructor based dependency injection means injecting dependency object to the dependent object via constructor.If chnages occur it will create new instance.
+    2)Setter method based dependency injection means injecting dependency object to the dependent object by using setter method. If changes occur it doesn't create
+    new instance. 
 
 
-25)What is IOC?
-IOC stand for inversion of controller. It allows us to create the object , assemble the object and manage their entire life cycle.
-There are two types IOC container 
-1)Bean factory - It root interface for all spring bean container
-2)Application Context - All beans are loaded inside the application context.
+25) What is IOC?
+    IOC stand for inversion of controller. It allows us to create the object , assemble the object and manage their entire life cycle.
+    There are two types IOC container 
+    1)Bean factory - It root interface for all spring bean container
+    2)Application Context - All beans are loaded inside the application context.
 
 
-26) what do you mean by spring boot support relaxed binding?
-Relaxed binding means key properies doesn't need to match with enviorments properties. for eg App-name is similat APPNAME
+26) What do you mean by spring boot support relaxed binding?
+    Relaxed binding means key properies doesn't need to match with enviorments properties. for eg App-name is similat APPNAME
 
 
-27)what is dependency object?
-A class requires other class object to do it's operation called dependency object or class.
+27) What is dependency object?
+    A class requires other class object to do it's operation called dependency object or class.
 
 
-28)what is the purpose of spring boot devtool dependencies?
-Devtools dependecies used because it detect changes automatically as well as restart the server.There is no need to restart server manually.
+28) What is the purpose of spring boot devtool dependencies?
+    Devtools dependecies used because it detect changes automatically as well as restart the server.There is no need to restart server manually.
 
-29)which is better to config in spring boot application. properties or yaml file?
-Yaml file is more or better cofig in springboot as compared to application.properties file.
-Yaml file is more clear and human readable as compare to application.properties fie also it provide lot's of useful feature to us.
 
-30)can you explain what happen in background if you run spring boot application as a java application?
-If you run spring boot applicationa as java application then by deafault tomcat sever is loaded.
+29) Which is better to config in spring boot application. properties or yaml file?
+    Yaml file is more or better cofig in springboot as compared to application.properties file.
+    Yaml file is more clear and human readable as compare to application.properties fie also it provide lot's of useful feature to us.
 
-31)what are the advantages of yaml file vs properties files?
-Yaml file is more clear and human readable as compare to application.properties file.
-Yaml file provide lot's of useful feature to us as compared to application.properties file.
 
-32)what are the minimun requirements of spring boot system?
-Java=1.8+
-Maven=3.3+
-Gradel=4.4+
-Tomcat=9.0
+30) Can you explain what happen in background if you run spring boot application as a java application?
+    If you run spring boot applicationa as java application then by deafault tomcat sever is loaded.
 
-33)what is thymleaf?
-Thymeleaf is open source library that licensed under apache 2.0
 
-34)Mentions some steps how to connect spring boot application to database?
-To connect spring boot application to the database first we need to add the dependecies such as mysql driver and to perform operation on database we need to add
-Spring Data JDBC or you can us Spring data JPA as per your project, then proivde connection inside application.properties file such as
-spring.datasource.url=jdbc:mysql://localhost:3306/schema_name
-spring.datasource.username=root
-spring.datasource.password=root
+31) What are the advantages of yaml file vs properties files?
+    Yaml file is more clear and human readable as compare to application.properties file.
+    Yaml file provide lot's of useful feature to us as compared to application.properties file.
 
-35)Which annoataions is used to create custom endpoints in springboot?
-@endpoint annotations is used to create custome endpoints in springboot.
 
-36)Can you explain how to deploy spring boot application on different server?
-To deploy spring boot application on different server first we need to generate jar file of that project and deploy on your favorite server.
+32) What are the minimun requirements of spring boot system?
+    Java=1.8+
+    Maven=3.3+
+    Gradel=4.4+
+    Tomcat=9.0
 
-37)Why we use spring boot framework?
-Spring boot is good platform for java developer to develop stand alone application and production ready feature that you can just run it.
-And spring boot mainly focus on business logic.
 
-38)what are the limitations of spring boot?
-Spring boot uses dependecies and after that they are not going to use in the project so size of application increase unnecessarily.
+33) What is thymleaf?
+    Thymeleaf is open source library that licensed under apache 2.0
 
-39)what is framework?
-Framework is predefined platform for deveopler to deveop application.
 
-40)what are the goals of springboot?
-1) Avoid xml configuration
-2) Avoid lot's of import statements
+34) Mentions some steps how to connect spring boot application to database?
+    To connect spring boot application to the database first we need to add the dependecies such as mysql driver and to perform operation on database we need to add
+    Spring Data JDBC or you can us Spring data JPA as per your project, then proivde connection inside application.properties file such as
+    spring.datasource.url=jdbc:mysql://localhost:3306/schema_name
+    spring.datasource.username=root
+    spring.datasource.password=root
 
-41)what is maven ? how to create spring boot project using maven?
-Maven is powerful project management tool used to create spring boot project.
-step 1) Click on New
-step 2) New Project
-step 3) Maven
-step 4) fill the confiuration details like group id(package name),artifact id(application name)
-step 5) select quick start project
-step 6) add depdency manually
 
-42)what is annoatations in spring boot?
-Annotations is metadata that provides data to your program
-1)@Required - @Required annotations used to when we want setter method of bean
-2)@SpringBootApplication- It is mark main class of your application.It include three annotations such as
-3)@EnableAutoConguration- It used to config your application automatically based on their dependecies.
-4)@ComponentScan- annotaions used to scan package for bean.
-5)@Configuration- It is class level annotations, Used by spring container as source bean java definations.
-6)@Repository- annotations means dao layer, i.e classes directly communicate with databases.
-7)@Service.It is class level annotations.In side this class we have all business logic.
-8)@Component- It is class level annotations. USed to mark a class is java bean
-9)@RequestParam -It is used to access the values from query parameter
-10)@pathvariable - It is used to acces value from URI template 
-11)@RequestBody- used to send the data in form of JSON
-12)@ResponseBody -used to return data in form of JSON
-13)@Controller- class level annotations used to mark spring mvc application.When we use controller we need to add explicitly response body.
-14)@Restcontroller- it is combination of @Controller and @Responsebody annotaions. it used to handel restful web serices
-15)@PutMapping- used to update the resource
-16)@GetMapping- Used to return the resource
-17)@PostMapping- create a new resource
-18)@PathMapping -used to partially update the resource
-19)@deleteMapping -used to delete the resource
-20)@Autowired - used when we want instance of a class
-21)@Bean - it is method level annotations, method produced by bean and managed by spring container.
-22)@Scope -used to specify scope of the bean
-23)@value -used to specify value of object
-24)@RequestMapping -used to map the web requests
-25)@lombok-when we use @lombok dependecy we don't need to create setter and getter manually also no need to specify default as well as parameterized constructor 
-we can use @data , @NoArguConstructor and @AllArguConstructor annotations
-26)@RefreshScope -
-27)@Crossorigin-securityconcept
+35) Which annoataions is used to create custom endpoints in springboot?
+    @endpoint annotations is used to create custom endpoints in springboot.
 
-43)which design pattern spring boot by default follow?
-Spring boot default follow sinleton design pattern.
 
-44)what is spring boot application.properties files?
-A spring boot come with built in mechanism application configuration using files called application.properties.It located inside the src/main/resource folder.
-the main advantage of spring boot application.properties file is provide platform to run your application on different enviorments
+36) Can you explain how to deploy spring boot application on different server?
+    To deploy spring boot application on different server first we need to generate jar file of that project and deploy on your favorite server.
 
-45) what are diffrent ways to create spring boot proejct?
-1)Spring stater project
-2)Maven Project'
-3)Spring boot CLI
-4)Spring Initilizr
+
+37) Why we use spring boot framework?
+    Spring boot is good platform for java developer to develop stand alone application and production ready feature that you can just run it.
+    And spring boot mainly focus on business logic.
+
+
+38) What are the limitations of spring boot?
+    Spring boot uses dependecies and after that they are not going to use in the project so size of application increase unnecessarily.
+
+
+39) What is framework?
+    Framework is predefined platform for deveopler to deveop application.
+
+
+40) What are the goals of springboot?
+    1) Avoid xml configuration
+    2) Avoid lot's of import statements
+
+
+41) What is maven ? how to create spring boot project using maven?
+    Maven is powerful project management tool used to create spring boot project.
+    step 1) Click on New
+    step 2) New Project
+    step 3) Maven
+    step 4) fill the confiuration details like group id(package name),artifact id(application name)
+    step 5) select quick start project
+    step 6) add depdency manually
+
+
+42) What is annoatations in spring boot?
+    Annotations is metadata that provides data to your program
+    
+    1)@Required - @Required annotations used to when we want setter method of bean
+    2)@SpringBootApplication- It is mark main class of your application.It include three annotations such as
+    3)@EnableAutoConguration- It used to config your application automatically based on their dependecies.
+    4)@ComponentScan- annotaions used to scan package for bean.
+    5)@Configuration- It is class level annotations, Used by spring container as source bean java definations.
+    6)@Repository- annotations means dao layer, i.e classes directly communicate with databases.
+    7)@Service.It is class level annotations.In side this class we have all business logic.
+    8)@Component- It is class level annotations. USed to mark a class is java bean
+    9)@RequestParam -It is used to access the values from query parameter
+    10)@pathvariable - It is used to acces value from URI template 
+    11)@RequestBody- used to send the data in form of JSON
+    12)@ResponseBody -used to return data in form of JSON
+    13)@Controller- class level annotations used to mark spring mvc application.When we use controller we need to add explicitly response body.
+    14)@Restcontroller- it is combination of @Controller and @Responsebody annotaions. it used to handel restful web serices
+    15)@PutMapping- used to update the resource
+    16)@GetMapping- Used to return the resource
+    17)@PostMapping- create a new resource
+    18)@PathMapping -used to partially update the resource
+    19)@deleteMapping -used to delete the resource
+    20)@Autowired - used when we want instance of a class
+    21)@Bean - it is method level annotations, method produced by bean and managed by spring container.
+    22)@Scope -used to specify scope of the bean
+    23)@value -used to specify value of object
+    24)@RequestMapping -used to map the web requests
+    25)@lombok-when we use @lombok dependecy we don't need to create setter and getter manually also no need to specify default as well as parameterized constructor 
+    we   can use @data , @NoArguConstructor and @AllArguConstructor annotations
+    26)@RefreshScope -
+    27)@Crossorigin-securityconcept
+
+
+43) Which design pattern spring boot by default follow?
+    Spring boot default follow sinleton design pattern.
+
+
+44) What is spring boot application.properties files?
+    A spring boot come with built in mechanism application configuration using files called application.properties.It located inside the src/main/resource folder.
+    the main advantage of spring boot application.properties file is provide platform to run your application on different enviorments
+
+
+45) What are diffrent ways to create spring boot project?
+    1)Spring stater project
+    2)Maven Project'
+    3)Spring boot CLI
+    4)Spring Initilizr
+
 
 46) How to add dependencies?
-It is very simple to add the dependecies at the time project creation but suppose you forget any dependecies to add you copy form outside (i.e MVN Repo is very
-famoues for that) and add in pom.xml file
+    It is very simple to add the dependecies at the time project creation but suppose you forget any dependecies to add you copy form outside (i.e MVN Repo is very
+    famoues for that) and add in pom.xml file
 
-47) what is the diffrenece between bootstrap file and application.properties file?
-Bootstarp file is eargely loading ie. bean are already loading where as application.properties file lazy loading it will server when request comes.
 
-48)what is the latest version of spring boot?
-SpringBoot 2.6.2
+47) What is the diffrenece between bootstrap file and application.properties file?
+    Bootstarp file is eargely loading ie. bean are already loading where as application.properties file lazy loading it will server when request comes.
 
-49)what are the diffrent types of scopes of bean?
-@Scope annotations used to mark scoper of the bean
-1)Singleton- only one instance is created.
-2)Prototype- every reqest new instance is created
-3)request- object created as per the http request
-4)session- object created as per the http session request
-5)global session -object is created as per the http global session reuest.
+
+48) What is the latest version of spring boot?
+    SpringBoot 2.6.2
+
+
+49) What are the diffrent types of scopes of bean?
+    @Scope annotations used to mark scoper of the bean
+    1)Singleton- only one instance is created.
+    2)Prototype- every reqest new instance is created
+    3)request- object created as per the http request
+    4)session- object created as per the http session request
+    5)global session -object is created as per the http global session reuest.
+
 
 50) Explain the meaning of dependency and dependent object?
-class A required other class object to do it's opeations i.e class B
-Then class A- dependent object
-class B- dependency obejct
+    class A required other class object to do it's opeations i.e class B
+    Then class A-dependent object
+    class B-dependency obejct
+
+
+51) What is purpose of spring web dependecies?
+    Spring web dependecies is used to develop web application or restful web application.s
