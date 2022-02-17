@@ -1,9 +1,15 @@
-Secure coding- sucure application development
+=======================================================================================================================================================================
+                                                      Secure coding- sucure application development
+=======================================================================================================================================================================
 
 1) Section A
+
 secure coding- secure coding is a way to writing application or software that shileded from cyber attacks.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 2) Section B
+
 SDLC- Software development life cycle
 Every application is made following sdlc steps. It has basically seven steps such as
 1) Analysis of Requirments
@@ -55,9 +61,10 @@ Use https not http
 Log only user actitivies it hepls monotoring later
 
 10) TLS - Transport layer security
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3) Section C
+
 Vulnerablity assessment and Penetration Testing
 
 Vulnerability  Assessment
@@ -81,9 +88,10 @@ Types of penetrstion Testing
 1)Black Box- Black box testing means blind testing pentester doesn't have information about the system.
 2)Gray Box- Gray box testing means pentester has some information about the system such as port no.
 3) White Box- White box testing means pentestert has complete infomration about the system.
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4) Section -D
+
 Input Validation  
 All input must be sanitized or don't trust on user input.
 
@@ -118,4 +126,4 @@ f)Remote file inclusion(RFI)
 Remote file inclusion is very serious vulnerablity. If vulnerablity exist attacker insert malicious external files and later run on web application.The most efficient 
 way to detect RFI by using automated scanner such as acunetix. To avoid remote file inclusion we need to follow the steps like never trust on user input 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
