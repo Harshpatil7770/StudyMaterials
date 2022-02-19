@@ -311,4 +311,4 @@
     
     
 52) What are the springboot dependecy management?
-     Spring Boot config and manage their dependecy automatically when you update the Spring boot dependency will get automatically update.
+     Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency will get       automatically update.
