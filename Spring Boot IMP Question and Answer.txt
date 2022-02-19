@@ -307,4 +307,8 @@
 
 
 51) What is purpose of spring web dependecies?
-    Spring web dependecies is used to develop web application or restful web application.s
+    Spring web dependecies is used to develop web application or restful web application.
+    
+    
+52) What are the springboot dependecy management?
+     Spring Boot config and manage their dependecy automatically when you update the Spring boot dependency will get automatically update.
