@@ -126,6 +126,18 @@
 9)Explain various interfaces used in collection framework?
   1)Collection interface
    Collection interface is primary interface. It extedns iterable interface.
+   
+  2)List Interface
+  List interface extends collection interface. list interface allows duplicate values and provide random access.
+  
+  3)Set Interface
+   set interface allows only unique values.set interface extends collection interface.
+   
+  4)Map interface
+  map interface represents key,value pair. Map interface extends collection interface
+  
+  5)Queue interface
+  queue interface extends collection interface.
 
 10)Explain the difference between ArrayList and Vector?
    ArrayList                                                    Vector
