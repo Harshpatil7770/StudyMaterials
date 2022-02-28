@@ -153,7 +153,7 @@
 
 
 27) What is dependency object?
-    A class requires other class object to do it's operation called dependency object or class.
+    A class requires object of class B to do it's operation i.e class A-dependent object and class-B dependency object.
 
 
 28) What is the purpose of spring boot devtool dependencies?
