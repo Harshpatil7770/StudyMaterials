@@ -211,7 +211,7 @@
 
 
 39) What is framework?
-    Framework is predefined platform for deveopler to deveop application.
+    Framework is predefined platform for deveopler  that used to develop web application.
 
 
 40) What are the goals of springboot?
