@@ -36,6 +36,11 @@
 
 6) What are stater dependencies of spring boot modeule?
    Spring boot stater dependencies provide rapid and easier application development process.
+   1) spring Boot stater JPA 
+   2)Spring Boot stater JDBC
+   3)Spring Boot stater mail
+   4)Spring Boot stater security
+   etc.
 
 
 7) How does spring boot works?
