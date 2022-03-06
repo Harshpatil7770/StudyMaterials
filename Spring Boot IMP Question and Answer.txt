@@ -317,3 +317,9 @@
     
 52) What are the springboot dependecy management?
      Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency will get       automatically update.
+     
+ 53) What are the basic annotations that spring boot offers?
+     @SpringBootApplication -It include three annotations such as 1)@ComponentScan 2)@EnableAutoConfiguration 3)Configuration
+     
+ 54) How to enable Actuator in Spring boot application?
+     To enable actuator in spring boot first we need to add the dependency ie. spring boot actuator. 
