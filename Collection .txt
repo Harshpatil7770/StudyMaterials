@@ -295,4 +295,8 @@
 38)When we use ArrayList vs LinkedList?
   ArrayList mainly used for searching operation because it provide random access where as linkedlist is used for insertion and deletion operation because simple 
   node will get create and delete.
+  
+39) What is time complexity of arraylist and linkedlist? which one is faster?
+    LinkedList is faster than the arraylist for insertion and deletion operations. 
+    The time complexity of arraylist for insertion is o(1) ,remove o(n),get o(1) whereas the time complexity for linkedlist is insertion is o(1),remove o(n),get o(n)  
 
