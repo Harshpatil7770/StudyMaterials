@@ -26,6 +26,10 @@
    System.out.println(" Even Numbers :"+even);
       }
    }   
+   
+   Advantages
+   1)Reduce boiler plate code.
+   2) Code reuse
 
 
 2) Stream API
