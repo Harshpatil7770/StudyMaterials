@@ -32,3 +32,6 @@ yes, Spring MVC Support Validation.
 4)select Maven
 5)fill configuration details like group id, artifact id.
 6)Select project type webapp.
+
+
+7) What is dispathcer servlets?
