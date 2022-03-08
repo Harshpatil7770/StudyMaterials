@@ -52,6 +52,9 @@ byName,byType,Constructor
 Scopes of bean specified the life cycle bean.
 1)Singleton-Only one object is created.
 2)Prototype-Each and every request a new object is created.
+3)Request - object is created as per the http request
+4)seession - object is created as per the http session request.
+5)global session- object is created as per the http global session request.
 
 
 10)In which scenario you will use singleton and prototype?
