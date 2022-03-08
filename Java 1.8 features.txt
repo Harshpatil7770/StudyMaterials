@@ -44,6 +44,8 @@
    System.out.println(" Odd Number in the present list is :: "+oddNum);
       }
    }
+   
+   Advantages of streamAPI- 1) It reduce lot's of lines of codes.
 
 
 3) Default and Static Method 
