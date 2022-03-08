@@ -95,7 +95,7 @@ There are two types of IOC container in spring
 2)Application context
 
 1)Bean factory- Bean factory is root interface for all spring bean container.
-2)Application context- All beans all inside the application context
+2)Application context- All beans are loaded inside an application context.
 
 
 15)what is main difference between bean factory and application context?
