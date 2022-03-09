@@ -200,4 +200,7 @@ First level cache is associated the session and second level cache is cache is s
 
 3)@Table- used to set name of table in database.If you don't write then they consider a class name is table name
 4)@Column- used to set column name in table.If you don't write they they consider variable name is column name
-5)@GeneratedValue(stratergy=GenerationType.AUTO) - used to set generating startegy of primary key.
+5)@GeneratedValue(stratergy=GenerationType.AUTO) - used to set generating startegy of primary key. 
+
+40) What is lazy loading 
+    Lazy loading in hibernate imporves the performs. It load child object on demand
