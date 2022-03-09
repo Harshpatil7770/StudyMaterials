@@ -3,81 +3,80 @@
 =======================================================================================================================================================================
 
 1)What is Hibernate?
-Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
+                                                         Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
 
 
-2)What is JPA
-JPA stands for java persistence API.
-It provide platform to work directly with objects instead of sql statements.
+2)What is JPA?
+                                                        JPA stands for java persistence API.
+                                                        It provide platform to work directly with objects instead of sql statements.
 
 
 3)What is the diffrence between hibernate and JPA?
-JPA is used to reduce the boilerplate code where as hibernate is implementaions of JPA.
+                                                       JPA is used to reduce the boilerplate code where as hibernate is implementaions of JPA.
 
 
 4)What is ORM?
-ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
+                                                       ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
 
 
 5)Explain hibernate architecture?
-Hibernate architecture comprises many interfaces such as session,session factory,criteria,query and transaction.
-Before going to hibernate architecture we have some layers such as
-1)Backhand api layer
-2)database layer
-3)Hibernate framework layer
-4)Java Application layer
+                                                       Hibernate architecture comprises many interfaces such as session,session factory,criteria,query and transaction.
+                                                       Before going to hibernate architecture we have some layers such as
+                                                       1)Backhand api layer
+                                                       2)database layer
+                                                       3)Hibernate framework layer
+                                                       4)Java Application layer
 
 
 6)What are the core interfaces of hibernate?
-1)Session
-2)Session factory
-3)Criteria
-4)Query
-5)Transaction
-6)Configuration
+                                                       1)Session
+                                                       2)Session factory
+                                                       3)Criteria
+                                                       4)Query
+                                                       5)Transaction
+                                                       6)Configuration
 
 
 7)Mention some advantages of using ORM over JDBC?
-1)Details of sql quries are hidden
-2)Application development is fast
+                                                       1)Details of sql quries are hidden
+                                                       2)Application development is fast
 
 
 8)What are some database supported by hibernate?
-1)Mysql,oracle
+                                                       1)Mysql,oracle
 
 
 9)List of key component of Hibernate?
-1)session
-2)Session factory
-3)Transaction
-4)Criteria
-5)Configuration
-6)Query
+                                                       1)session
+                                                       2)Session factory
+                                                       3)Transaction
+                                                       4)Criteria
+                                                       5)Configuration
+                                                       6)Query
 
 
 10)How sql query is created is hibernate?
-By using session.createSqlquery method
+                                                       By using session.createSqlquery method
 
 
 11)What does HQL stands for?
-HQL stands for hibernate query language
+                                                       HQL stands for hibernate query language
 
 
 12)How HQL Query is created?
-HQL query created by session.createQuery
+                                                       HQL query created by session.createQuery
 
 
 13)How can we add criteria to sql query?
-Session.createCriteria
+                                                       Session.createCriteria
 
 
 14)Define persistance class?
-The class whose objects direclty stored in database called persistence class.
+                                                       The class whose objects direclty stored in database called persistence class.
 
 
 15)What is mean by Thread safe?
-Thread safe means we can't access multiple thread simultaneously at a same time.
-
+                                                       Multiple thread execute at a same time with any issue.
 
 16)What is session factory?
 Session factory is an interface proide factory method to get instance of class.
