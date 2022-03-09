@@ -202,5 +202,72 @@ First level cache is associated the session and second level cache is cache is s
 4)@Column- used to set column name in table.If you don't write they they consider variable name is column name
 5)@GeneratedValue(stratergy=GenerationType.AUTO) - used to set generating startegy of primary key. 
 
-40) What is lazy loading 
-    Lazy loading in hibernate imporves the performs. It load child object on demand
+40) What is lazy loading?
+    Lazy loading in hibernate imporves the performs. It load child object on demand.
+   
+41) What can you tell about Hibernate Configuration File?
+    Hibernate configuration file located inside the src/main/resource folder ie. hibernate.cfg.xml file.By using this file hibernate makes connection with database server.
+    
+ 42) Explain hibernate mapping files?
+     Hibernate mapping file is used by hibernate framework to get information about the mapping pojo classes and database table.
+     
+ 43) Can you tell difference between openSession and getCurrentSession() methods?
+     openSession() method always create new session and after done with operation we need to close them. sessionFactory.getCurrentSession() method return session you don't need
+     close them.
+     
+ 44) Differecne between save() and saveOrUpdate() methods?
+     save() method insert new records in the database whereas saveOrUpdate() methods insert or update records based on exisiting records.
+     
+ 45) What is the difference between get() and load() method?
+     get() method return null if object is not found where as load method return object not found exception.
+     
+ 46) What is criteria in hibernate?
+     criteria is used to fetch the records from database based on specified criteria.
+    
+  47) What is criteria API in hibernate?
+      Criteria API is predefined API which is used define queries for entities.
+     
+  48) What does session.lock() method in hibernate?
+      session.lock() method reattached the object which has been detached earlier.
+      
+  49) What is hibernate caching?
+      hibernate caching is layer between the actual database layer and your application.
+      
+ 50) Does hibernate support native SQL queries?
+     yes, hibernate support native sql queries.
+     
+ 51) What happens if you don't write no argument constructor in bean of hibernate?
+     No argument constructor is used to create new instance by using newInstance() method .If you don't write it willl throws InstantiationException.
+     
+ 52) Can we declare the Entity class final?
+      There is no sense for final because persistance bean means directly stored in database.
+      
+ 53) Explain Query catche?
+     Query catche is used to retrive faster data from database.
+     
+ 54) What is N+1 problem in an hibernate?
+     N+1 problems such as first query retreive parent entity whereas n quries retrives child entity.
+     
+ 55) How to solve N+1 problems?
+     By using Criteria Query and HQL qeuries.
+     
+ 56) What is concurrency stratergy?
+     concurrency strategry resposible for stroring the item and retrive it from the cache.
+       
+ 57) What is  single table stratergy?
+     single table stratergy is one of the simplest and easiest way to implements inheritance.
+     
+ 58) Can you tell something about table per class strategry?
+     Table per class strategy means per entity new table is generated.
+     
+ 59) Can you tell something about Named SQL Query?
+     Named sql query are predefined unchageable query String.
+      
+ 60) What are the advatanges of NamedQuery?
+     1) Reusable
+     2)Fail fast
+     
+      
+      
+     
+     
