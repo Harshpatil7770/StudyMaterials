@@ -1,0 +1,6 @@
+1) Right click on Project 
+2)Export
+3)Java- Runnable JAR File
+4)Launch Configuration -select main class of your application
+5)Export Destination- select location
+finish
