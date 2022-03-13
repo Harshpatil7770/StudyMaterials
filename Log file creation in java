@@ -1,0 +1,2 @@
+1) application.properties=
+logging.file.name=mylog.log
