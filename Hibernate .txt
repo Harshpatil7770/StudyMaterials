@@ -267,6 +267,7 @@ First level cache is associated the session and second level cache is cache is s
      2)Fail fast
      
       
-      
+ 61) session methods??, diffrenece betwwen gate and load ,....save and persisit ,,,,hibenate and jpa differecne
+      what is generice
      
      
