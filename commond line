@@ -1,1 +1,5 @@
-
+1) For comiple
+     javac classname.java
+     
+ 2) For Running
+     classname java
