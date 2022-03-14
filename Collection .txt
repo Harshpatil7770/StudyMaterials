@@ -300,3 +300,4 @@
     LinkedList is faster than the arraylist for insertion and deletion operations. 
     The time complexity of arraylist for insertion is o(1) ,remove o(n),get o(1) whereas the time complexity for linkedlist is insertion is o(1),remove o(n),get o(n)  
 
+40) If we remove the element from arraylist at the time iterating it will show concurrent Modification exception.
