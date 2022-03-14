@@ -35,3 +35,5 @@ yes, Spring MVC Support Validation.
 
 
 7) What is dispathcer servlets?
+
+8) What is view Resolver?
