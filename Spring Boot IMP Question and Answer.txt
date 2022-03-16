@@ -440,3 +440,8 @@
      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
      profile means provide seggration of your application that opetate on specific enviornment. for eg- QA,Dev,Production etc
      we put spring.active.profile=qa so it will work for qa.
+
+  56) What are the combinations of spring Boot?
+  
+  
+  57) Explain architecture of Spring Boot?
