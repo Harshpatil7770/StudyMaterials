@@ -11,16 +11,20 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1)What is Collection?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Collection is  framwork that provide an architecuture to store and manipulate the group of objects.
 
 
 2)What is collections?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Collections is class which provides method such as sort and synchronized etc.
 
 3)What is collection framework?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Collection framework is combination of classes and interface. Interface such as list,set,map,queue. Classes such as arraylist,linkedlist,Hashset,treeset etc.
 
 4)Explain Internal Working of ArrayList With Exmaples?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ArrayList internally uses dyanamic array.Arraylist allows to us to store both homogenous and non homogenoues element. Arraylist support only objects not primitive 
   data type. Arraylist provide random acceess. ArrayList maintain insertion order and allows duplicate values. ArrayList require less space because it store only
   object not address.
@@ -57,6 +61,7 @@
    
       
 5)Explain Internal Working of LinkedList with examples?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   When we create object on linkedlist inside the memory doubly linked list is created.
   LinkedList<String> list=new LinkedList<String>();
@@ -80,6 +85,7 @@
 
 
 6)Explain Internal working of HashSet with examples?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HashSet allow only unique values. Hashset internally uses hashmap. Hashset doesn't maintain any insertion order. It allow only one null value.
   Hashset is synchronized and thread safe.
   When we create the object of hashset suppose
@@ -99,6 +105,7 @@
 
 
 7)Explain Internal working of HashMap with examples?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HashMap represent key,value pair.Hashmap allows no. of null value. Hashmap is non-synchronized and no thread safe.
   Hashmap allows duplicate value but only unique keys.
   When we create the object of HashMap inside the memory table is created with default capacity is 16 and load factor is .75.
@@ -114,6 +121,7 @@
 
 
 8)Explain the difference between array and collection?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                
                Array                                                                            Collection  
 1)Array Supports both primitive data type and objets.                     1)Collection support only primitive data type not objects.
@@ -124,6 +132,7 @@
 
 
 9)Explain various interfaces used in collection framework?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1)Collection interface
    Collection interface is primary interface. It extedns iterable interface.
    
@@ -137,9 +146,13 @@
   map interface represents key,value pair. Map interface extends collection interface
   
   5)Queue interface
-  queue interface extends collection interface.
+  queue interface extends collection interface. queue interface follow first in first out manner
+  
+  6)Deque interface
+    Deque interface extends queue interface, which is used to perfom insert or remove operation on block wait until operations are performed.
 
 10)Explain the difference between ArrayList and Vector?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    ArrayList                                                    Vector
  1)ArrayList is non legacy class.          1)Vector is legacy class.
  2)ArrayList is non synchronized           2)Vector is synchronized.
@@ -149,6 +162,7 @@
  
 
 11)What is the difference between arraylist and linkedlist?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              ArrayList                                LinkedList
   1)ArrayList internally uses dyanamic array      1)LinkedList internally uses doubly linked list.
   2)Arraylist provide random access               2)linkedlist doesn't provide random access.
@@ -159,6 +173,7 @@
  
 
 12)What is the difference between Iterator and listIterator?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              Iterator                                     ListIterator
  1)Iterator is used to perform reverese operation   1)ListIterator is used to perform insert,remove operation while travesing the element.
      while traversing the element.
@@ -166,6 +181,7 @@
  3)Iteraor is used in list,set,map                  3)ListIterator is used in only list.
 
 13)What is the difference between Iterator and Enumeration?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 Iterator                                                                         Enumeration
   1)Iterator is used to perform remove operation while traversing           1)Enumeration is used to perform travesion operation over the element.
     the element 
@@ -173,7 +189,9 @@
   3)Iterator fails fastly so it doesn't require any                         3)Enumeration fails slowly.
     extra space in a memory
 
+
 14)What is the difference between List and Set?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
               List                                                                                  Set
   1)list allows duplicate values                                            1)Set doesn't allow duplicate values
   2)List provide random access                                              2)Set doesn't provide random access
@@ -183,20 +201,24 @@
 
 
 15)What is the difference between HashSet and TreeSet?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                          HashSet                                                       TreeSet
-  1)Hashset doesn't maintain any insertion order                        1)Treeset maintain ascending order
+  1)Hashset doesn't maintain any insertion order                         1)Treeset maintain ascending order
   2)HashSet implememts hashtables                                        2)Treeset implements tree structure.
-  3)Hashset reuire less time                                             3)Tree set perform is slower than the hashset.
+  3)Hashset performs is faster than treeset                              3) Treeset performs is slower than the hashset
   4)Hashset allows only one null values                                  5)Treeset doesn't allow null values.
   5)Hashset backed by hashmap                                            5)Treeset backed by Treemap.
   
 16)What is the diffrence between Set and Map?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                  Set                                                                 Map
   1)Set has only one value                                        1)Map has one value and one key
   2)Set allows only unique values                                 2)Map allows unique key and duplicate values
   3)Set allows only one null value                                3)Map allows no. of null values
-  
+  4) set is synchronized                                          4) Map is non synchrinized 
+
 17)What is the diffrence between HashSet and HashMap?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                HashSet                                                              HashMap
    1)Hashset has only one values                                  1) Hashmap represent one values and one key
    2)Hashset allows only unique values                            2)Hashmap allows unique keys but duplicate values
@@ -205,6 +227,7 @@
    5)Hashset is synchronozed                                      5)Hashmap is not synchronized.
 
 18)What is the difference between HashMap and TreeMap?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              HashMap                                                                 TreeMap
   1) HashMap allows n no. of null valeus                         1)Treemap doesn't allows null values
   2)Hashmap doesn't maintain any insertion order                 2)Treemap maintaion insertion order
@@ -213,6 +236,7 @@
   5)Hashmap sorted by keys and value both.                       6)Treemap shorted by only keys.
 
 19)What is the difference between HashMap and Hashtable?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                      HashMap                                                 HashTable
   1)Hashmap is non sychronized                                   1)Hashtable is synchronized
   2)Hashmap is non thread safe                                    2)Hashtable is thread safe
@@ -220,6 +244,7 @@
   4)Hashmap allows number of null values                          4)Hashtable doesn't allows null values.
 
 20)What is the difference between Collection and Collections?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                     Collection                                              Collections
   1)Collection is an interface                                    1)Collecctions is a class
   2)Collection provide data stucture such list,                   2)Collections provide methods such as short,synchronized etc.
@@ -227,6 +252,7 @@
 
 21)What is difference between Comparable and Comparator?
                Comparable                                                     Comparator
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1)Comparable provide compare To method for comparasion              1)Comparator provide compare method for comparision.
   2)Copmarable compare with own objects                               2)Comparator compare with two different objects.
   3)Comparable found in java.lang package                             3)Comparator found is java.util package
@@ -234,35 +260,44 @@
 
 
 22)What do you understand by blocking queue? and why we used?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Blocking is an interface which implements queue interface. The implementation of blocking queue is thread safe.
    The main purpose of blocking queue is due to operation such as insert,remove inside the block or wait util operation are not done.
    
 23)Why we overide equals() method?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Hashcode return us index values or integer value. Sometime we will get same index value that time hashcollision will occur and equlas method get override to
   check contains equal or not.
 
 24)How to snychronized list,set and Map?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To synchronized list we use synchronized.list() method 
     for set synchronized.set() method
     for map synchronized.map() method
 
 25)What are the advanatages of generic collection?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) When we use generic collection we don't need to typecasting, It is type safe and checked at compile time.
 
 26)What is Hash Collision in Hash Table?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) In hashtable put method first calculate hashcode,hashcode return us index value or integer value. So some times so we will get same index value that time
      has collision will occur to check contain equal or not.
 
 27)What is dictionary class?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Dictionary class provides capability to store the key value pair   
 
 28)What is default size of load factor in hasing based collection?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Default size is 16 and load factor is 0.75   
 
 29)What do you understand by fail fast?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Fail fast means immediately show concurrent modification expection.It doesn't require any extra space in memory.
 
 30)What is diffrence between Array And ArrayList?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                         Array                                                               ArrayList
  1)Array is fixed in size                                               1)Arraylist is growable in size
  2)Array supports both primitive data type and objects                  2)Arraylist support only objects.
@@ -271,33 +306,47 @@
  5)Array doesn't have generice feature                                  5)Arraylist have generic ferure
 
 31)What is the difference between length of array and size of array?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    If you want to measure length of array we use length() property but length property is not supported arrayList so we need to use size method.
 
 32)How to convert ArrayList to Array and Array to ArrayList?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   To convert arraylist to array we need to use toarray() method and convert array to arraylist we need to use asList() method.
 
 33)How to make java arrayList read only?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To make java arraylist read only we need to use Collections class collections.unmodificable() method
 
 34)How to remove duplicate from ArrayList?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    We can use hashset or linkedhashSet
 
 35)How to reverse arrayList?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    By using revere() method array. inside this method we pass objects.
 
 36)How to short arrayList in desending order?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   By using reverseOrder()method of Collections class we can short arraylist in descending order
 
 
 37)How to syncronized arrayList?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   By using synchrnized.list() method 
 
 38)When we use ArrayList vs LinkedList?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ArrayList mainly used for searching operation because it provide random access where as linkedlist is used for insertion and deletion operation because simple 
   node will get create and delete.
   
 39) What is time complexity of arraylist and linkedlist? which one is faster?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     LinkedList is faster than the arraylist for insertion and deletion operations. 
     The time complexity of arraylist for insertion is o(1) ,remove o(n),get o(1) whereas the time complexity for linkedlist is insertion is o(1),remove o(n),get o(n)  
 
-40) If we remove the element from arraylist at the time iterating it will show concurrent Modification exception.
+40) If we remove the element from arraylist at the time iterating it will show concurrent Modification exception?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Yes that error will come sevral time to avoid we need to use Iterator.
+41) What is generic?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   generic means paramaneterized type. It is type safe checked at compile time. we don't need to do typecasting.
