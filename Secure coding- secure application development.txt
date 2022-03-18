@@ -4,13 +4,15 @@
 
 1) Section A
 
-secure coding- secure coding is a way to writing application or software that shileded from cyber attacks.
-
+secure coding-
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+secure coding is a way to writing application or software that shileded from cyber attacks.
+
 
 2) Section B
 
 SDLC- Software development life cycle
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Every application is made following sdlc steps. It has basically seven steps such as
 1) Analysis of Requirments
 2) Defining
@@ -21,6 +23,7 @@ Every application is made following sdlc steps. It has basically seven steps suc
 7) Maintance
 
 Owasp Top 10 web application proactive or sequrity risks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Defiining Security Requirements
 2) leverage of framworks and libraries
 3) Sucure database access
@@ -64,7 +67,7 @@ Log only user actitivies it hepls monotoring later
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3) Section C
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Vulnerablity assessment and Penetration Testing
 
 Vulnerability  Assessment
@@ -91,7 +94,7 @@ Types of penetrstion Testing
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4) Section -D
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Input Validation  
 All input must be sanitized or don't trust on user input.
 
