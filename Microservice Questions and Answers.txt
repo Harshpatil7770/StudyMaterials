@@ -1,26 +1,35 @@
 ======================================================================================================================================================================
+======================================================================================================================================================================
+                                                                    !!! Shree Swami Samarth !!!
+======================================================================================================================================================================
+======================================================================================================================================================================
+
+======================================================================================================================================================================
                                                                           Microservice
 ======================================================================================================================================================================
 
 1) What is microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    Micorservice means small small services work together.It must cloud enable.Each service has own database and business layer. Service must be indepdenet deployable.
    It maily follows the principle such as a one service has only one resposibility.
 
 
 2) What is monolithic?
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Monolithic means put functionality into single process.It becomes easy to deploy as single jar/war file. It maily used to make smaller projects also build the
    proof of concepts. and if there is expertisize in microservices. 
 
 
 3) What are the advantages of monolothic?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    1)A single file get easily deploy as jar/war file.
-   2)TO build proof oc concepts.
+   2)TO build proof of concepts.
 
 
 4) What are the disadvantges of monolothic?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    1)Application become Tightly coupled. 
    2)Difficult to manage as well as maintain
@@ -29,17 +38,20 @@
 
 
 5) When to use monolitic?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    1) To build proof of concepts.
    2) To make smaller project if team size small.
 
 
 6) When to use microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    1) To make more complex and scable application.
  
 
 7) What the advantages of microservices?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    1) Each service indepedent deployable
    2) loosely coupled easy to test
@@ -47,6 +59,7 @@
 
  
 8) What are the disadvantages of microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    1) Developer need to solve the problem such as load balancer.
    2) No. of services increase high chances of failure.
@@ -55,53 +68,62 @@
 
 
 9) What is the use of spring boot web starter?
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    1) Spring boot web stater provide rapid and easier application developments, aslo it maily used to develop restful applications.
 
 
 10) Which embeded database can be used in Spring Boot?
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     In springboot we use H2 database as a embeded database.
 
 
 11) What is use of spring data JPA?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     Spring data JPA is used to acces DAO layer.
 
 
 12) What is eureka server?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
 
 
 13) Which annotations needed in springBoot application class to enable eureka server?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     To enable eureka server we need to use @EnableEurekaServer annotations. 
 
 
 14) Which properties we need to add in application.properties so that eureka server doesn't register itself?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Eureka server doesn't register itself as client we need to add the some properties inside the application.properties file such as
     eureka.client.register-with-eureka=false
     eureka.client.fetch-registry=false
     
 
 15) What is use of lombok?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Lombok dependency mainly used to reduce the boilerplate code.We don't need to write manaually no arguments,argument constructor as well as we don't need
     to write manually setter and getter methods.  
 
 
 16) How does your application register with eureka server?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     To register your application on eureka server we need To add dependency such as eureka netfilx client.
     And use the annotations such as @EnableDiscoveryClient to pick implementations of classpaths.
 
 
 17) How microservice communicate with each other?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Microservice communicates with each other by using lightweight http rest or messaging protocols.
 
 
 18) What are the principle of microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     The main principle of microservice is a sinle service has single resposiblity.
 
 
 19) What are the main component of microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) Spring cloud Server
     2) Eureka naming server
     3) Hystrix dashboard
@@ -110,16 +132,19 @@
 
 
 20) What are the challenges in microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) Pack of cards- suppose serivce a,b,and c depends upon each other and one service get failed all application become failed.
     2) Bouded context- decinding boudries of microservice
 
 
 21) What are the micorservice monotoring tool?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) Spring Boot dashboard
     2) Hystrix Dashboard
     3) Eureka Server
 
 22) What do you understand by spring cloud?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud framework maily used to build cloud applications.
     The main feautere of cloud framework such as
     1)Service to service call
@@ -127,12 +152,13 @@
     3)distrubuting servcies
 
 23) In which case microservice is best suited?
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) To make more complex and scabale application microservice architecure is good.
     so we can use in mobile, smart Tvs ,web desktop etc.
 
 
 24) What are the component of microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     1) Spring cloud server-
     The default port no. of cloud server is 8888. we put git url inside this application.properites file.It works both client and server side.
@@ -155,18 +181,22 @@
     
 
 25) Which are the some famous compaines using microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Netflix, amazon, Twitter etc.   
 
 
 26) What is RabbitMQ?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     RabbitMQ is acts as message broker. Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ implements
     AMQP protocols (advanced messaging queue protocols)
 
 
 27) What is spring cloud bus?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud bus dependecies mainly used to send only one refresh other changes happens automatically.
 
 28) What are the most commmon dependecies using in microservice?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) Cloud server
     2) Eureka Server
     3) Spring Data JPA
@@ -182,16 +212,19 @@
 
 
 29) What is feign?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Feign is one of the most popular cloud component. If you want to use feign create an interface use annotations such as @Feignclient(name=)
     we neeed add the dependecny such as openFeign and in tha main application we need to add the annotations such as @EnableFeignClients
     The main purpose of feign client is without writing detailed rest template code microservices communicate with each other.
 
 
 30) What is use of spring web dependecies?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring web dependecies used to develop web application or restful web applications. 
 
 
 31) What is use of spring cloud netflix eureka server and eureka discovery client? or What is the difference between @EnableDiscoveryClient and @EnableEurekaClient?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     spring cloud netflix eureka server is used to build the eureka server. we need to add dependency such as spring cloud netflix eureka server and use
     annotations such as @EnableEurekaServer 
     whereas eureka discovery client is used to pick the implementations of class path. all services must be registerd on eureka server.
@@ -200,19 +233,23 @@
 
 
 32) What is use of devtools dependecies?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Devtools dependecies detect changes automatically and restart the server automatically. we don't need to restart server manually.
 
 
 34) What is Fallback Method?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Fallback Method called when error occurs in the programms. 
     To avoid failure of application fallback method used ,suppose service a ,b,and c dependes upon each other suppose service b goes down then all application becomes
     down to avoid this fallback method called to server atleast service a.
 
 35) What is APIGATEWAY?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     APIGATEWAY is router of your application. we don't need to use separate url to call each service. Inside the application.properties files of api-gateway we provide
     all service url with there id and prefix so service get called gateway url and prefix of that services.
 
 36) What is Hystrix Dashboard?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Hystrix Dashboard is used to avoid failure of your application by using circuit breaker mechanism. If your application running without any error circuit breaker 
     remains closed whereas if your application occurs some error then circuit breaker remains open.
 
