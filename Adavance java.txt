@@ -1,0 +1,934 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                      !!! Shree Swami Samarth !!!
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+1) Array 
+======================================================================================================================================================================
+---------------------------------------------------------------------------------------------------------------------------------------
+1) On which memory array created in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Array are created in dyanamic memory there is no question about static because varibale,object, array created in 
+                                                                                                                                                                        dyanamic memory.
+---------------------------------------------------------------------------------------------------------------------------------------
+2) What is array in Java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Array is an object. It is used to store homemgenous element. It support both primitive data type and object. 
+                                                                                                                                                                        Array is fixed in size. The performance of array is fasrer
+---------------------------------------------------------------------------------------------------------------------------------------
+3) What are the types of array in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        There are two types of arrays in java
+                                                                                                                                                                        1) 1D array - It has only one row or only one column
+                                                                                                                                                                        2) 2D or 3D array- It has mutiple rows and multiple columns.
+---------------------------------------------------------------------------------------------------------------------------------------
+4) What are the advantages of array?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        1) Random access
+                                                                                                                                                                          array provide random access so by using it's index we can access any element
+                                                                                                                                                                        2) Code optimization 
+---------------------------------------------------------------------------------------------------------------------------------------
+5) Is it possible to declare array size negative?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        No it's not possible to declare array size negative if you declare array size negative it compile succesfully.
+                                                                                                                                                                        but runtime shows negative size exception error.
+---------------------------------------------------------------------------------------------------------------------------------------
+6) what is the diffrence between int array[] and int[] array?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Both are the declaration of an array the main difference that is int array[] at postfix means we want to declare  
+                                                                                                                                                                        only one array whereas int[] array at prefix means we can add if you want.
+---------------------------------------------------------------------------------------------------------------------------------------
+7) How to copy arrays in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        We can copy manually also array provides arrays.copy() method by using this we can copy array in java.                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+8) What is the default value of array?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        for int,byte,short,long it is 0 and boolean is false and object is null.float,double is also o
+                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+9) What do you understand by jagged array? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Jagged array is combination of multidimensional array, In which arrays has different size.
+                                                                                                                                                                        for eg- int a[][]=new int[3][];
+---------------------------------------------------------------------------------------------------------------------------------------
+10) What is anonymous array and it's examples? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Anonymous array means array reference is not stored in variable.
+                                                                                                                                                                        It is used to construct another object.
+---------------------------------------------------------------------------------------------------------------------------------------
+11) How many ways to findout duplicate element in an array? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        By using Hashset,Treeset,LinkedHashSet and brut force method we can find out duplicate element in an array.
+---------------------------------------------------------------------------------------------------------------------------------------
+12) Which operation can be performed in an array? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        In array we can perform operation such as insertion,sorting,searching,deletion,treaversal operations.
+---------------------------------------------------------------------------------------------------------------------------------------
+13) Can a set be an array?                                                                                                                                 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        - In java a set can be array but it not neccessary that array is set because, array allows duplicate values,
+                                                                                                                                                                           set cann't allows duplicates values. for eg l,o,o,p in allows in array where in set it become l,o,p.
+---------------------------------------------------------------------------------------------------------------------------------------
+14) Is it possible to make array volatile? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Yes, it's possible to make array volatile but only those elements poining to array volatile.                                                                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------
+15)What happen if you declare array without assigining size? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        It will shows comiple time error.
+                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+16)Can we declare array size negative? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        No we can't declare array size negative if you try to declare array size negative it will show negative size                                                                                                                                                                                      expection  error 
+                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+17) Which method of array class used to serach specific element in an array? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Binary serach method of array class is used to search specific element in an array.
+                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+18) How to retrieve class name of an array? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Array is an object from which we can easily retrieve the class name by using getName() and getclass() method
+                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+19) What is differeence between array and arraylist? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                               Array                                                                                                      ArrayList
+                                                                                             1) Array is fixed in size                                                                  1)Arraylist is groable in size
+                                                                                             2) Array support both primitive data type and objects                       2)Arraylist is support only objects not primitive data type.
+                                                                                             3) Array store homogenous element                                                3)Arraylist store both homogenous and hetrogenous element
+                                                                                             4) Array perfromance is faster than the arraylist                              4)Arraylist performance is slower than the array
+                                                                                             5) Array doesn't have generic feature                                             5) Arraylist have generic feature.
+---------------------------------------------------------------------------------------------------------------------------------------
+20) How can we check array containd values or not? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        By using contain() method we can check array contain values or not.
+                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+21) What is the equilibrium index of array? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Equilibrium index of array is sum of lower indices and sum of higher indices.
+---------------------------------------------------------------------------------------------------------------------------------------
+22) What is left rotations in an array? 
+--------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Left rotations of array means shifting array from lower index of array come to higher index. ie shift one unit to left                                                                                                                                                                        side 
+                                                     
+---------------------------------------------------------------------------------------------------------------------------------------
+23) What is advantages and disadvantages array? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Advantages
+                                                                                                                                                                        1) Random access - we can easily access any element by using it's index
+                                                                                                                                                                        2) Code optimization
+
+                                                                                                                                                                        disadvantages
+                                                                                                                                                                        1) Array is fixed in size we are not able to add parameter at a runtime.
+---------------------------------------------------------------------------------------------------------------------------------------
+24) 1D declaration of array and how to read? 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                      Declaration of array
+                                                                                                                                                                        int a[];     int[] a;
+                                                                                                                                                                        int[]a;      int  []a;
+                                                                                                                                                                      
+                       ** We can't provide size of array at the time of declaration
+                         for eg: int[3] a;      int a[3];
+                                                                                                                                                                       1) int[] a,b
+                                                                                                                                                                         a is one dimensional int array and b is one dimensioanl int array.
+                                                                                                                                                                       
+
+                                                                                                                                                                         2) int []a,b; 
+                                                                                                                                                                        a is one dimensional int array and b is one dimensional int array.
+                                                                                                                                                                        3)int a[],b;
+                                                                                                                                                                        a is one dimensional int array and b is simple variable of type int.
+                                                                                                                                                                      
+ 
+                                                                                                                                                                        4)int a,[]b;
+                                                                                                                                                                         a is simple variable of type int  and b is one dimensional int array. 
+                                                                                                                                                                        5) int a,b[];                                                                                    
+                                                                                                                                                                        a is simple array  and b shows compile time error.
+---------------------------------------------------------------------------------------------------------------------------------------
+22) Contiguous memory locations are usually used for storing actual values in an
+      array but not in ArrayList. Explain.? 
+--------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        ---------------------------------------------------------------------------------------------------------------------------------------
+22)What could be the tradeoff between the usage of an unordered array versus the usage of an ordered array?
+--------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        The advantage of ordered array has serach time complexity is o(log n),wheras unordered array is o(n).
+
+
+
+
+
+
+
+2) Exception Handeling
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+---------------------------------------------------------------------------------------------------------------------------------------
+1)What is Expection Handeling in Java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                         Exception handeling is mechanism that used to handel the runtime exception in java such as IO exception,                                                                                                                                                                                      classNotFound Exception,SQL Exception.
+---------------------------------------------------------------------------------------------------------------------------------------
+2) What is Expection?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Exception means abnormal condition occurs due to human error and bad input.                                                                                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------
+3) Hierarchy of Java Exception classes?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                             Throwable
+                                                                                                                                                    |
+
+                                                                                                                                                   
+                                        |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+                                 Exception                                                                                                                                                                                                                            Error
+ -----------------------------------------------------------------------------------------------                                       ------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                        |                                     |                                                                                    |                                                                                     |
+|                                                                                                                        |
+Checked Expetion                                                                                 Uncheked Exception            OutOfMemoryError                                           Stack Overflow                                                         virtual machine error
+                    |                                                                                                         |                        (WHEN condition always evalute true)               (recursion)                                                         (jar file missing)
+---------------------------------------------------------                                               ------------------------------------------------------------------------------------------------------------------------------
+|                                         |                             |                                           |                                                   |                                         |                                                          |
+IO Exception          SQLException         ClassNotFound Exception         Runtime Exception     IndexOutOfBondException                  Arithmetic Exception                         NullPointer Exception
+                                                                                                                                                              |
+                                                                                            ------------------------------------------------------------------------------------------------------------------------------                                                                                                                                                                                 |                                                                                                                                                            |
+                                                                                    ArrayIndexOutOfBond Exception                                                                                              StringIndexOutOfBond                                                                        
+
+---------------------------------------------------------------------------------------------------------------------------------------
+4) What are the types of exception in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       There are two types of exception in java 
+                                                                                                                                                                                           1)Checked Exception -
+                                                                                                                                                                                           The exception directly inherit from throwable exception except rutime called as checked exception
+                                                                                                                                                                                           Checked excetion handel at compile time.
+                                                                                                                                                                                           eg-1) IOException 
+                                                                                                                                                                                           2)SQLException
+                                                                                                                                                                                           3)ClasNotFoundException
+
+                                                                                                                                                                                           2)Unchecked Exception
+                                                                                                                                                                                           1)The exception directly inherit from runtime exception called as unchecked expection 
+                                                                                                                                                                                           Unchecked Expection handeled at runtime
+                                                                                                                                                                                           eg-1)Index out of Bond Exception
+                                                                                                                                                                                           2)Arithmetic Exception
+                                                                                                                                                                                           3)Null Pointer Expetion
+
+                                                                                                                                                                                           3)Error
+                                                                                                                                                                                           Error means irrecoverable.
+                                                                                                                                                                                           for eg
+                                                                                                                                                                                           1)Virtual m/c error -Jar file
+                                                                                                                                                                                           2)Stackoverflow - recurion time
+                                                                                                                                                                                           3)OutofMemeotyerror- occur in loop always evalute true
+                                                                                                                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------
+5)Keywords of Exception?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                                                  1)try 
+                                                                                                                                                                                                  2)Catch
+                                                                                                                                                                                                  3)finally
+                                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------
+6)Try block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Inside the try we should place exception. after the try block we use catch block that means we can't use                                                                                                                                                                                        try block alone.
+---------------------------------------------------------------------------------------------------------------------------------------
+7)Catch Block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       afert the try block we should use catch block.that means we can't use catch block alone.A exception occur
+                                                                                                                                                                         in try block it must be handel in catch block .
+---------------------------------------------------------------------------------------------------------------------------------------
+8) Finally block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       finally block is used to excute important code of the program such as closing file,closing connection or etc. It                                                                                                                                                                                 execute whether the exception occur or not that means it execute always. It doesn't execute when fatal error occur
+                                                                                                                                                                        or we can extenally call system.exit() method                                                                                                                                                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+9) throw keyword?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       throw keyword is used to thrown an exception. checked exception can't propagate by using throw keyword.                                                                                                                                                                                   throw keyword is used within the method body. by using throw keyword we can't declare multiple exception.
+                                                                                                                                                                      throw keyword is used followed instance.
+---------------------------------------------------------------------------------------------------------------------------------------
+10) throws keyword?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                         throws keywords is used to declare to an exception. throws keyowrd is used with method signature.
+                                                                                                                                                                         throws keyword is used to follows class.checked exception propagated by using throw keyowrd. You can declare
+                                                                                                                                                                         multiple exception by using throws.             
+---------------------------------------------------------------------------------------------------------------------------------------
+11) Why we use Finally block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       finally block is used to execute important code of the program such as closing file, closing connedction etc.                                                                                                                                                                                    It execute always whether exception occur or not. It doesn't exceute if fatal error occur or we can externally
+                                                                                                                                                                        call system.exit() method. 
+---------------------------------------------------------------------------------------------------------------------------------------
+12) Why we use Finally block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Exception block is used to exceute important code of the program such as closing files,closing connection                                                                                                                                                                                      or etc.It is ensurely executed i.e whether exception handeled or not. 
+---------------------------------------------------------------------------------------------------------------------------------------
+13) What is the main advantage of Exception Handeling?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       To maintain normal flow of the program we handel the exception                                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+14) How can you handel exception in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       By using try,catch and finally block is used to handel the exception.                                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+15) What are the new feature added in java 1.7?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       1) Try with resource- A try statement declare with one or more resource called as try with resource.                                                                                                                                                                                                  If we use try with resource we don't need to use finally block for closing connection.
+                                                                                                                                                                       2) Single Catch Block Handel Muliple exception by using vertical bar or pipe |
+---------------------------------------------------------------------------------------------------------------------------------------
+16) What is the difference between throw and throws?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                             throw                                                                                         throws
+                                                      1)  throw keyword is used to thrown an exception                                             1) throws keyowrd is used to declarw an exception 
+                                                      2)  throw keyword is follwed by an instance                                                      2) throws keyoword is followed by a class
+                                                      3) Cheked exception can't propagetes by using throw keyword                          3) checked exception propagates by using throws keyowrd 
+                                                      4) by using throw keyword we can't declare multiple exception                          4)By using throws keyword we can declare multiple exception
+                                                      5) throw keyword is declare within the body                                                     5) throws keyowrd is declared within the method signature
+
+---------------------------------------------------------------------------------------------------------------------------------------
+17) Which exception bydefault handeled in calling chain?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Unchecked exception by default followed in calling chain                                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+18) Can we handel mutilple exception in single catch block and how?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                      Yes we can handel mutiple exception in single catch block by using vertical pipe or bar.                                                                                                                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------
+19)What is exception propagation?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       exception propagation means exception thrown from top of the stack to the bottom of the stack if not catched                                                                                                                                                                                 then drop down again main method called as exception propagation.
+---------------------------------------------------------------------------------------------------------------------------------------
+20)What is custom exception and How to create and why we need ?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Custom exception means user defined exception.It is used to catch and provide specific treatment to exiting java                                                                                                                                                                               exception. Business logic exception 
+                                                                                                                                                                         1)class NewExcpetion extends Exception
+                                                                                                                                                                         2) class NewException extends RuntimeException
+                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+21)Can we keep other statement in try,catch and fianlly block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       No we can't keep other statement in try catch and fianlly block                                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+22)There are three statement in try block and if exception occure in second statement then does control go to
+third statement or catch block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                      If exception occur in secod statment of try block then control directly goes to catch block and third the statement                                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------
+23)What is unreachable catch block error?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       If you are keeping mutliple catch block then it must be placed in order such as first subclass and then super class
+                                                                                                                                                                       It you keep first super class then subclass it shows unreachaable catch block error
+---------------------------------------------------------------------------------------------------------------------------------------
+24)What are the runtime exception in java & give example?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       The excepetion directly inherit from unchecked exception called as runtime exception                                                                                                                                                                                                                     Runtime exception handel at runtime. eg - IndexOutOfBond exception, arithemtic exception, null poiner exception                                                                                                                              
+---------------------------------------------------------------------------------------------------------------------------------------
+24)What is out of memory error in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Out of memory error is subclass of java.lang.error. This type of exception occur in loop when condition                                                                                                                                                                                           evaluate always true
+---------------------------------------------------------------------------------------------------------------------------------------
+25)What is class not found exception & No class defination found error in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       classNotFound Exception occur when you load the class and the class not found in path.                                                                                                                                                                                                               NoClassDefinationFoundException occur when you compile the class and at the runtime they are not present.
+---------------------------------------------------------------------------------------------------------------------------------------
+26)Can we keep the statement after finally block if control returing from the finally block itself?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       No , we can't keep anything if finally block return control. if you keep it will shows unrechable catch block error                                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+27)Does fianlly block get exceute if either try and catch blocks are returning the control?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Yes, finally block always execute either control returning from try or catch block
+---------------------------------------------------------------------------------------------------------------------------------------
+28)What is re-throwing an exception in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       If exception occur in try block it must be follw in catch block if catch block is not able to handel then we need to 
+                                                                                                                                                                       rethroew that expection by using throw keyword
+---------------------------------------------------------------------------------------------------------------------------------------
+29)Why it is always recommonded that cleanup operations like DB resources keep inside finally block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Finally block is used to execute important code of the program such as closing file,closing connection etc.                                                                                                                                                                                      It executed always exception occured or not. That means fianlly block ensurely executed. That's always recomm
+                                                                                                                                                                       ed that important code kept inside the finally block.
+---------------------------------------------------------------------------------------------------------------------------------------
+30)What is difference between final, finally and finialize in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                        Final                                                                       Finally                                                                                   finalize
+                    1) Final is nonaccess modifier keyword                                           1) Finally is block                                                      1)Finalize is a method
+                    1) Final keyword is used to restrict the user . It used with                2) Finally block   is used to execute important              2)Finalize method called just before the object is garbage collected.It is process of cleaning
+                       class,variable,method. Once we declare a class is final we              code of the program such as closing file,                     when we create object without using new keyword that time fianlize block is used for
+                        can't inherit it in subclass. once we declare method is                     closing connection etc.                                               cleaning process.ie remove unreferenced object.
+                       final we can't overide in subclass. Once we declare                        It execute always wheter execption occur       
+                       variable is final and initilized it we can't change it                           or not.
+                       value.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+31)What is class cast exception in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Class cast exeption means jvm unable to cast exection one object type over another type.                                      
+---------------------------------------------------------------------------------------------------------------------------------------
+32)What is the difference between throw,throws and throwable in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                       1)throw- 1)throw keyword is used to throw an exception.2) throw keyword follwed by an instance. 3)checked exception can't propagated by using throw only.4) We can't thorw multiple exception by thorw.
+                                      5) throw keyword is declared inside the body.
+                       2)throws 1)throws keyowrd is used to declare an exception. 2) throws keyword is followed by class 3)by using throws keyowrd we can declare multiple exception. 4)chekced exception propagated by using 
+                                       throws keyword 5) throws keyword is declared within method singnature.
+                      3)throwable - throwable is root class of all exception and errors.                                                                                                                                                                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------
+33)What is stackoverflow error in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.                                                                                                                                                                                    
+---------------------------------------------------------------------------------------------------------------------------------------
+34)Can we overide super class method which throwing unchecked exception with checked exception in the subclass?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                      No we can't override.                                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------
+35)What is chained exception in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Chained exception means identify one exception causes another exception in an application.                                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+36)Which class is super class for all error and exception?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       throwable class is super class for all error and exceptions.                                                                                                                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------
+37)What is the use of printstackTrace() method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       printstackTrace() method is used to declare details information if exception occured.                                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+38)Give some example of checked exception?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       1)IO Expection 2)SQL Exception 3)ClassNotFoundException
+---------------------------------------------------------------------------------------------------------------------------------------
+39)Give some example of unchcked exception?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                      1) ClassNotFound Exception 2)AithmeticExcpetion 3)NullPointerException                                                                                                                                                                               
+---------------------------------------------------------------------------------------------------------------------------------------
+40)What is try with resource statement in java and it's advantages?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       a try statement is declared with one or more resource is called as try with resource.                                                                                                                                                                                                                     when we use try with resource we don't need to use finally block.
+---------------------------------------------------------------------------------------------------------------------------------------
+41)Which class is super class for all error and exception?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Throwable class is super class for all error and exception
+---------------------------------------------------------------------------------------------------------------------------------------
+42) A single try block and multiple catch blocks can co-exist in a Java Program.
+      Explain.?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       At a time only one exception occur and only one catch block will get exceute.
+                                                                                                                                                                       We can keep a single try block and mutiple catch block but it should be placed in order such as
+                                                                                                                                                                      first we  write specific and then general. for eg - first we write arithmetic expection and then we write exception
+                                                                                                                                                                      block. 
+                                                                                                                                                                      high prioriety catch block exceuted first
+---------------------------------------------------------------------------------------------------------------------------------------
+43)Do final, finally and finalize keywords have the same function?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Each keyword has different function.
+                                                                                                                                                                       final is used to restrict the user. finally block is used execute impotant code of the program such as closing files.
+                                                                                                                                                                       closing connection,etc. finallize method execute just before the object is garbage collected.
+                                                                                                                                                                       It is process of cleaning.
+---------------------------------------------------------------------------------------------------------------------------------------
+44)  Is it mandatory for a catch block to be followed after try block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       No,it's not neccesarry each try block must be follwed by catch block, we can use finally block instead of catch                                                                                                                                                                        block and and thrown exception by using throws.
+---------------------------------------------------------------------------------------------------------------------------------------
+45) Will the finally block be executed if the code System.exit(0) is written at the end
+     of try block??
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       NO, then finally block will not get execute.
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        try {
+
+                                                                                                                                                                          //try block
+                                                                                                                                                                          System.out.println("Inside try block");
+                                                                                                                                                                          System.exit(0)
+                                                                                                                                                                       }
+                                                                                                                                                                       catch (Exception exp) {
+                                                                                                                                                                          System.out.println(exp);
+                                                                                                                                                                       }
+                                                                                                                                                                       finally {
+                                                                                                                                                                          System.out.println("Java finally block");
+                                                                                                                                                                       }
+---------------------------------------------------------------------------------------------------------------------------------------
+46) Difference between exception and error (explain with real time example)?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Exception occurs due to human mistake or bad input. we can handel it by using try catch and finally block.
+                                                                                                                                                                       Error means irrecoverable, error occur due to something lack of resource in the system. To handel error
+                                                                                                                                                                       Programmer need to fix that issue.
+
+
+
+
+3) String
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+---------------------------------------------------------------------------------------------------------------------------------------
+1) Why String are thread safe?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String are immutable in java                                                                                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------
+2) What is String 
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String represent squence of character. String is final class present in java.lang package                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+3) Why Java uses concept of string literal?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       When we use object by using to String literal JVM checks whether the object already declared or not                                                                                                                                                                                            If declared it doesn't create new object in this way they makes JVM more memeory efficient.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+4)What are the method of String
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        1) toUppercase 2)toLowercase 3)toCharArray4)toCharAt() 5)equals 6)length()7) toStrim() 8)                                                                                                                                                                                                      9)equalIgnorecase 10) join() 11)subString() 12) IsEmpty 
+---------------------------------------------------------------------------------------------------------------------------------------
+5)Is String keyword in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        No,String is not keyword in java. String is final class present in java.lang package                                                                                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------
+ 6)Is string is primitive or dervied data type?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String is derived data type.                                                                                                                                
+---------------------------------------------------------------------------------------------------------------------------------------
+ 7)What is String constant pool?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String constant pool is special space reserved in heap memeory to store the string objects. When we create object
+                                                                                                                                                                         without using new keyword it will store in string constant pool                                                                                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------
+8)What is special about String objects as compares other objects.
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String objects are created without using new keyword and store in special memory i.e String constant pool,                                                                                                                                                                                     JVM check whether the objects already  declared or not in this way they make JVM more memory efficient. 
+---------------------------------------------------------------------------------------------------------------------------------------
+9) What do you mean by mutable and immutable objects?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Mutable objects means can editable or modify whereas immutable means cannot be modify or editiable.                                                                                                                                                                 
+---------------------------------------------------------------------------------------------------------------------------------------
+10)Which is the final class in between String ,StringBuffer,StringBuilder?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                   All three are final classes.
+
+                                                                                                        String                                                        String Buffer                                                                   String Builder                                                                                                                                1) String objects are stored in String constant pool       1)String buffer objects stored in heap memory                 1)String builder objects stores in heap memory                                                                                                        2) String are thread safe                                           2) String buffer is not thread safe                                    2) Stirng builder is thread safe                                                                                                                                3)  String objects are immutable                                  3)String buffer objects are mutable                                3) String builder objects are mutable                                                     
+---------------------------------------------------------------------------------------------------------------------------------------
+11)Why String buffer and String builder introduced in java there are already exit String class to represent the set of character?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       When we create object by using string it becomes immtable, we are not able to modify it,If you try yo modify                                                                                                                                                                                  then chances of data losses. That's to make mutable objects StringBuffer and StringBuilder are introduced. 
+---------------------------------------------------------------------------------------------------------------------------------------
+12)How many objects will be created in the following code?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String s1=new String("abc");                                                                                                                                                                                                                                                                                                      String s2="abc";                                            
+                                                                                                                                                                        String s3="abc";  
+                                                                                                                                                                        String s4="abc";  
+                                                                                                                                                                        Two objects are created one is stored in heap memory another one is stored in string constant pool
+
+
+                                                                                                                                                                        String s1=new String("abc");  
+                                                                                                                                                                        String s2=new String("abc");
+                                                                                                                                                                        String s3="abc";  
+                                                                                                                                                                        String s4="abc";   
+                                                                                                                                                                        Three objects created, by using new keyword is stored in heap memory whereas by using string lateral it will
+                                                                                                                                                                        store in String constant pool
+---------------------------------------------------------------------------------------------------------------------------------------
+13)How do you create mutable String objects?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        To create mutable string objects we need to use String Buffer and String Builder                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+14) Which one will you prefer among "=="& equals() method to compare two String objects?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        = = equal to operator is used for address comparison wheras equals() method used for content comparison                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+15) Which class will you recommonded among String,String buffer,String builder classes if i want mutable and 
+      thread safe objects?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String Buffer and String Builder both are create mutable objects but for String Builder is not thread safe                                                                                                                                                                                         so you can use StringBuffer. 
+---------------------------------------------------------------------------------------------------------------------------------------
+16) How do you convert given String to char array?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        By using tocharArray() method                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+17) What is the difference between String,String buffer and String builder ?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                      String                                   String Buffer                                           String Buider
+                   1)String objects stored in String constant pool  1)String buffer objects stored in heap memory  1)String builder objects stored in heap memory
+                   2)Strign objects are immutable                        2)String buffer objects are mutaable                2)String builder objects are mutable
+                   3)String are thread safe                                  3)Strign buffer is thread safe                           3)String builder is not thread safe                                                                                                                                                                                                                                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------
+18) How many objects will create in the following code ?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String s1=new String("abc");                                                                                                                                                                                                                                                                                                      String s1="abc";  
+                                                                                                                                                                        Two objects created one by using new keyword and another one by uisng String literal.  
+
+                                                                                                                                                                        String s1=new String("abc");  
+                                                                                                                                                                        String s2=new String("abc");  
+                                                                                                                                                                        Two objects are created both are stored in heap memory
+---------------------------------------------------------------------------------------------------------------------------------------
+19)Where exactly String constant pool located in the memory?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String constant pool is located inside the heap memory.                                                                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------
+20)  I am performaing lots of String concenataions and String modifation in my code, which class among String,
+       String buffer,String builder improve the performance of code, remember i also want thread safe code?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                          String and String buffer both are thread safe but lot's of string concationation is not supported in string ie, 
+                                                                                                                                                                          you can use String Buffer                                                                                                                                                                
+---------------------------------------------------------------------------------------------------------------------------------------
+21)What is String intern?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String objects are stores in String constant pool called as String intern                                                                                                                                                                    
+---------------------------------------------------------------------------------------------------------------------------------------
+22)What is main difference java String and c,c++ String?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        C,C++ String terminated with null whereas java String doesn't terminated with null.                                                                                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------
+23)Can we call method using String literal?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Yes we can call method by using String literal.                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+24)Do you have any idea why String have been made immutable in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        To make JVM more memory efficient String are immuable in java. when we create object of String by using                                                                                                                                                                                 String by using String literal JVM check wheather object declared or not.                                                                                                                                                
+---------------------------------------------------------------------------------------------------------------------------------------
+25) What do you think about String constant pool? why they have provided this pool as we can Store String objects
+     in the heap memory itself?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        When we create object of String by using String literal JVM check whether objects declared or not. If declared                                                                                                                                                                             it doesn't create new objects,in this way they make jvm more memory efficient.
+---------------------------------------------------------------------------------------------------------------------------------------
+26) What is the similarity and difference between String and String buffer class?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        The Similarity between String and String buffer is both are thread safe. And dissimilarity is String objects are 
+                                                                                                                                                                         imutable in java whereas String buffer objects are mutable                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+27)What is similarity between String Buffer and String Builder?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String Buffer and String builder objects are mutable and main differnce that String Buffer is thread safe                                                                                                                                                                                          Wheras String Builder objects is not thread safe
+---------------------------------------------------------------------------------------------------------------------------------------
+28)How can you make String upper case and lower case?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        To make to upper case we will use toUpperCase() method and to make String lower case we can use                                                                                                                                                                                           toLowercase() method. 
+---------------------------------------------------------------------------------------------------------------------------------------
+29)Apart from security concept what are other reason to make string immuatable in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        To make jvm more memory efficient java uses concept of String literal.For eg- suppose five reference variable                                                                                                                                                                               referes to the one object and i want to chnage one value of them so it may chances of data loses.  
+---------------------------------------------------------------------------------------------------------------------------------------
+29)Why is it said that the length() method of String class doesn't return accurate
+      results?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Because length() method count only number of character from the String.                                                            
+30) What is String Buffer?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String buffer is introduced to make mutable objects. When we object by using String buffer it will strore in 
+                                                                                                                                                                        heap memeoy. String Buffer is thread safe. Performance of String Buffer is slower than the Strign Builder.
+---------------------------------------------------------------------------------------------------------------------------------------
+30) What is String  Builder?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        String Builder introduced to make mutable String objects. When we create object by using String builder
+                                                                                                                                                                        it will store in heap memory. String Builder is not thread safe. The performane of String Builder is 
+                                                                                                                                                                        faster than the String Buffer.                                                                                                                                                                                                                                                                                                                                                 
+
+
+
+=======================================================================================================================================================================  =======================================================================================================================================================================  =======================================================================================================================================================================
+
+
+
+
+
+
+
+4)MultiThreading
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+
+---------------------------------------------------------------------------------------------------------------------------------------
+1)What is multithreading?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Multithreading means execute mutiple thread simultaneously. Mutlthreading is way to achieve multitasking                                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+2)What is thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Thread is light weight subprocess.Thread execute independently. i.e exception occur in single thread doesn't                                                                                                                                                                                   affect in other thread.
+---------------------------------------------------------------------------------------------------------------------------------------
+3)What is the difference between thread and process?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                   Thread                                                                                       Process
+                                          1) Thread is light weight subprocess.                                                                                   1)A program in the execution called as process.
+                                          2)  Thread require shared addrees space memeory                                                               2) process require separate address space memory.
+                                          3)  Inter thread communication is faster                                                                               3) Inter process communication is slower.
+                                          4)   Context swithcing in thread is faster                                                                               4) Context swithching in process is slower
+
+---------------------------------------------------------------------------------------------------------------------------------------
+4)What do you understand by inter threads communication?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        The communication between synchronized thread is called as inter thread communication.
+                                                                                                                                                                        It is used to avoid thread pollling in java.                                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+5)How thread communication happen?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Thread communicate with each other by using notify,notify all mehtods . notify meas unblock only one waiting                                                                                                                                                                          thread ,wheras notifyall() means unblock all waiting thread.                                                                                                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------
+6)What is the purpose of wait method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        wait method is object class method. It is used to pause the currently excecuting thread and wait until                                                                                                                                                                                             another thread will call notify  and notify all methods.
+---------------------------------------------------------------------------------------------------------------------------------------
+7) why must wait method called from the synchronized block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Because synchronization block makes clear proper communication.If you try to use wait method from outside                                                                                                                                                                                the block it will show an error such as java.lang.illegalmoniter state exception
+---------------------------------------------------------------------------------------------------------------------------------------
+8)What are the advantages of multithreading?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Mulitthreading means execute mutilple thread simultaneously. It is process to achieve multitasking.
+                                                                                                                                                                        The advantages of multithreading is
+                                                                                                                                                                        1) Thread is lightweight. i.e exception occur in single thread doesn't affect all other thread.
+                                                                                                                                                                        2) Thread require shared address space memory
+                                                                                                                                                                        3) We can perform mutiple task simultaneously at a same time.
+                                                                                                                                                                        4) Inter thread communication cost is slower.                                                                                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------
+9)What is the life cycle of thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                               Life cycle of Thread
+                                                        1) New - In this state thread object is created. but thread is not live until start() method called.
+                                                        2) Ruunable-In this state thread is ready to run. but not running until picked from thread scheduler.
+                                                        3) Running- In this state thread is started running.
+                                                        4) Waited/Blocked-In this state thread is not running but still live and execute another thread if any available.
+                                                        5) dead- In this state thread is get died after exisitng the run method.
+---------------------------------------------------------------------------------------------------------------------------------------
+10)What is the difference between preemptive sheduling and time slicing?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Thread sheduler is part of jvm which decided which thread executed first based on some proriety and other facts.                                                                                                                                                                           There are two types of thread sheculer 1)Preemptive sheduling- Preemptive sheduling means execute high                                                                                                                                                                                   prioriety thread first and wait until another high prioriety thread comes into exisitance. 2)Time slicing -time slicing 
+                                                                                                                                                                       means time taken by cpu for execution.                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------
+11)What is context swithching?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        context switching means time taken by cpu for exceution                                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+12)What is thread class?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        thread class is way to achieve thread object. once we extends thread class we are not able to extends other class.                                                                                                                                                                         extending thread class means tighlty coupled and it doesn't provide any code reusblity other than copy and paste.                                                                                                                                                                            Maintance cost of thread class very high                                                                                                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------
+13)What is difference between thread class and runable interface for creating thread? or What are the different ways of threads usage?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                       Thread object is created by using two ways.
+                                                                                        1) Thread class( extending thread class)
+                                                                                         2) Runnable Interface (implementing runable interface)
+                                                           Thread class                                                                        Runnable Interface
+                   1) Once we extends thread class we are not able to extends other class                1)  Once we implement runable interface we can extends other class.
+                   2)  extending thread is tightly copuled                                                                  2)Implementing runable interface is loosely coupled.
+                   3)Thread class don't provide any code reusablity other than copy and paste           3)runable interface provide better code reuseability.
+                   4)Thread class maintanice is high                                                                        4)maintance if runable interface is low
+                   5)Each thread create new object so it require high memory                                   5)It has shared address space memory.                                                        
+                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------
+14)What is user thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        User thread means user defined thread. JVM doesn't terminate until user thread get execute.                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+15) What is runable interface?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Runable interface means functional interface , it has only one abstract method, run method.                                                                                                                                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------
+16)What does join method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Join method wait until thread get die.
+---------------------------------------------------------------------------------------------------------------------------------------
+17)What is the purpose and woking of sleep () method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Sleep method thread class method. It pause the currently executing thread for specific time and execute another 
+                                                                                                                                                                        thread if any availabel.
+---------------------------------------------------------------------------------------------------------------------------------------
+18)what is difference between wait and sleep() method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                             Wait() Method                                                           Sleep() Method
+                             1)  Wait() method is object class method                                       1)     sleep() method is thread class method                                                                                                                                                                               2) wait() method pause the currently exceuting thread                   2) sleep() method pause the currently executing thread for specific time and execute another thread if any.
+                                  and wait until another thread will call notify and notify all 
+                                  method                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------
+19)Is it possible to start thread twice?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        No,It's not possible to start thread twice it will show illegalMoniterThreadstateException                                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------
+20)Can we call run method instead of start?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Yes, we can run method insted of start but it doesn't behave like thred it behave like normal method                                                                                                                                                                                         When we call start() method internally it will call run method
+---------------------------------------------------------------------------------------------------------------------------------------
+21)What is daemon thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Daemon thread means low prioriety thread it used to proivde service and suppport to user. a java program auto
+                                                                                                                                                                        matically terminate if there is remains only daemon thread. There are two types of daemon thread
+                                                                                                                                                                        1)isDaemon() 2)setDaemon()
+---------------------------------------------------------------------------------------------------------------------------------------
+22)What is user thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        User thread means user defined thread jvm doesn't terminate until user thread get execute.                                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+23)can we make the user thread as daemon thread if thread is started?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        No we can't make user thread as daemon thread if thread is started it will shows illegalMoniterstateExcpetion                                                                                                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------------
+24)What is shutdown hook?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                                                                                                                                                                                 also it is process of cleaning.
+---------------------------------------------------------------------------------------------------------------------------------------
+25)When should we interrupt thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        When we want break out the state of thread from sleep and wait state then we interrupt the thread                                                                                                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+26) What is synchronization? or Why synchronization is neccesary?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Synchronization means capability to access mutiple thread to any shared resource.                                                                                                                                                                                                                        There are two types of synchronization 
+                                                                                                                                                                        1)Synchronization method  
+                                                                                                                                                                        2)Synchronization block
+                                                                                                                                                                        Adavtangets  of synchronization
+                                                                                                                                                                        1) To avoid thread interface
+                                                                                                                                                                        2)To avoid constistance problem 
+                                                                                                                                                                        The main purpose of synchronization is to make clear and proper communication between the thread.
+                                                        
+
+---------------------------------------------------------------------------------------------------------------------------------------
+27)What is the purpose of synchronization block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Synchronization block is used to perform synchronization on specific resoure of that method                                                                                                                                                                                                         Suppose i have 50 lines of code and i want synchronize five lines of them that time we use synchronization block
+                                                                                                                                                                        But if i put all lines of code of method in synchronization block it will behave same as synchronization method
+                                                                                                                                                                        The scope of synchronization block is smaller.
+---------------------------------------------------------------------------------------------------------------------------------------
+28)Can java object locked down for exclusive use by a given thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Yes java object locked for execusive use just we put it in synchronization block.                                                                                                                                                                              
+---------------------------------------------------------------------------------------------------------------------------------------
+29)What is static synchronization?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        If suppose i applied synchronization before an method means lock an object but suppose i use synchronization 
+                                                                                                                                                                        before static method it means lock for an class.
+---------------------------------------------------------------------------------------------------------------------------------------
+30)What is the difference between notify and notifyAll() method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Notify and notifyAll() method is used to occur communcation between the to threads.
+                                                                                                                                                                         notify() meand unblock only one waiting thread whereas notifyall() means unblock all waiting thread
+---------------------------------------------------------------------------------------------------------------------------------------
+32)What is deadlock?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                                                                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------
+33)How to detect deadlock condition ? and how can you avaoid it?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                                                                                                                                                                            To avoid deadlock condition 1)Avoid unnecessary lock
+                                                                                                                                                                        2)Avoid nested lock
+                                                                                                                                                                        3)Using thread join
+---------------------------------------------------------------------------------------------------------------------------------------
+34)What is thread sheduler?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Thread scheduler is part of jvm which decides which thread execute first based on some proority and other facts.                                                                                                                                                                           Such as time sclining and preemptive sheduling.
+                                                                                                                                                                         Preemptive sheduling means high priority thread execute first and wait until high priority thread comes into 
+                                                                                                                                                                        exisitance. time sclining means time taken by cpu for execution
+---------------------------------------------------------------------------------------------------------------------------------------
+35) Does each thread has stack in mutlithreaded program?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                                                                                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------
+36)How safety thread achieved?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Safety thread achieved by using following ways 
+                                                                                                                                                                        1)Using volatile keyword
+                                                                                                                                                                        2)Synchronization
+                                                                                                                                                                        3)Automatic wrapper class 
+                                                                                                                                                                        4)Using lock based mechanism
+---------------------------------------------------------------------------------------------------------------------------------------
+37)What is race condition?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Race condition generally occur when mutiple thread execute at a same time                                                                                                                                                                                                                                 To avoid race condition we need to use synchronization.
+---------------------------------------------------------------------------------------------------------------------------------------
+38)What is volatile keyword is java?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        volatile meas value read from main memory not a specific memory.  
+                                                                                                                                                                        Volatile keyword mainly used to achieve safety threads.              
+---------------------------------------------------------------------------------------------------------------------------------------
+39)What do you understand by thread pool?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Thread pool is group of waited thread waiting for task to be allocated
+---------------------------------------------------------------------------------------------------------------------------------------
+40)what is synchronization block?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Synchronization block is used to perform synchronization on specific resource of method. Suppose i have 50 line
+                                                                                                                                                                        code i want syncronozed 5 lines of them then i will use synchronization block . The scope of synchronization block
+                                                                                                                                                                        is smaller than the sychronization method. 
+                                                                                                                                                                        The main purpose of synchronization is avoid thread constistance and thread interface problems.
+---------------------------------------------------------------------------------------------------------------------------------------
+41)What are the method of thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        1) start()3)setDaemon 4)IsDaemon()5)setPriority 6)getProority 7)yeild 8)join 9)sleep 10) currentThread 
+                                                                                                                                                                         2)run() 11)isAlive 12)setName 13)getName
+---------------------------------------------------------------------------------------------------------------------------------------
+42)What is pass by value and pass by referecne?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        pass by value means pass eaxct cpoy value if changes occur oroginal value doesn't get changed,
+                                                                                                                                                                        pass by reference means pass an refrecne value if changes occur then it afftect in all places.
+---------------------------------------------------------------------------------------------------------------------------------------
+43)What is difference between synchronization block and synchronization method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Synchronozation block is used to perform synchronzation on specific resource of the method. If supporse
+                                                                                                                                                                        i have 50 lines of code i want synchronization 5 lines of them then we will use synchronization block.
+                                                                                                                                                                        The scope of synchronization block is smaller than the synchronization method. But suppose if i put all lines of
+                                                                                                                                                                        synchronization method in synchronization block then the work of both remain same
+---------------------------------------------------------------------------------------------------------------------------------------
+44)What is deadlock?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Deadlock is situation occur when two process waiting for each other to complete and wait endlessly.
+---------------------------------------------------------------------------------------------------------------------------------------
+45)What is maker interface and it's use and can we create our own marker interface?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        marker interface meas empty interface. It doesn't have field and method. It is called as tagiing interface
+                                                                                                                                                                        maker interface proivde hint to jvm i.r we are implemting some important featute.
+                                                                                                                                                                       It is used to mark capabaility of class while impleemnting interface at runtime. 
+                                                                                                                                                                       yes we can create our own marker interface just create an interface and don't write anything inside it.
+                                                                                                                                                                       1) serilizable,clonable,remote are the marker interface
+---------------------------------------------------------------------------------------------------------------------------------------
+46)How to create immutable class in java and example?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        TO make immutable class in java we need to make class is final and all member of class is final,and private
+                                                                                                                                                                        Use only getter method.
+
+                             final class Student{
+                                                 private final int id;
+                                                 private final String name;
+                                                 
+                                                  Student(){
+                                                                 }
+                                                  Student(int id,String name){
+                                                                 this.id=id;
+                                                                 this.name=name;
+                                                                     }
+                                                   public int getId(){
+                                                     return id;
+                                                                     }
+                                                  public String getName(){
+                                                     return name;
+                                                                    }
+                                                     public static void main(String args[]){
+                                                           Student student=new Student(101,"Harsh");
+                                                          System.out.println(student.getId()+","+student.getName());
+                                                               }
+                                                  }
+---------------------------------------------------------------------------------------------------------------------------------------
+47)What is singleton class and example?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        Singleton class is used to restrict the user from creating object of that class. To make class singleton we need 
+                                                                                                                                                                         make constructor private,so we are not able to crete object of that class. Only one object of that is created 
+                                                                                                                                                                          due to it's class defination. 
+                  class Singleton{
+                            public static Singleton singleton=null;
+                            private Singleton(){
+                             }
+                           public static Singleton getInstance(){
+                               if(singleton=null){
+                                 singleton=new Singleton();
+                                 }
+                             return singleton;
+                          }
+                  public static void main(String args[]){
+                        Singlton s1=getInstance();
+                        System.out.println(s1.hashcode);
+                        Singleton s2=getInstance();
+                        System.out.println(s2.hashcode);
+                        }
+                      }
+---------------------------------------------------------------------------------------------------------------------------------------
