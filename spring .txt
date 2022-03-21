@@ -107,8 +107,9 @@ Singleton is used in EJB stateless session where prototypes is used in EJB state
                                                                                      2)Application context
 
                                                                                      1)Bean factory- Bean factory is root interface for all spring bean container.
+                                                                                     Bean factory means basic container.
                                                                                      2)Application context- All beans are loaded inside an application context.
-
+                                                                                      application context means advance container.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 15)what is main difference between bean factory and application context?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -222,7 +223,7 @@ c schema
 31)what is the difference between wiring and autowiring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 The injection of dependency object to the dependent object it's done by programmer called wiring whereas
-THe injection of dependency object to the dependent object it's done by container called autowiring.
+The injection of dependency object to the dependent object it's done by container called autowiring.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 32)what is the use of @Qualifier annotations?
@@ -237,7 +238,7 @@ AJAX stands for asynchronus javascript xml.It communicate with server without re
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 34)what is synchronous?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-Synchrous means we send only one request at a time and wait until respond come.
+Synchrous means we send only one request at a time and wait until respond come. we are not able to do other operations until response come.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 35)what is asynchronous?
@@ -254,9 +255,19 @@ Asynchronous means we send mutilple request at a time and don't need to wait for
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 37)Annotations in spring
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-1)@Required - is used for dependecy check.
-2)@Qualifier -is used for choose correct one bean from multiple.
-3)@Aspect- mark a class is a aspect
-4)@Before-exeute before the business method
-5)@After- execute after the business method
+1)@Required 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+- is used for dependecy check.
+2)@Qualifier 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ is used for choose correct one bean from multiple.
+3)@Aspect
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+mark a class is a aspect
+4)@Before
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+exeute before the business method
+5)@After
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+- execute after the business method
  
