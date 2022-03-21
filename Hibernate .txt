@@ -344,6 +344,7 @@ load() method return object not found exception if object isn't found.
      
       
  61) what are the session methods?
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) save()
     2)update()
     3)delete()
@@ -351,3 +352,6 @@ load() method return object not found exception if object isn't found.
     5)SaveOrUpdate()
      
      
+  62) What is the difference between crud respository and JPA repository?
+      crud repository provides methods such as save(), saveAll(),findAll() whereas JPA repository provides some extra methods as compare to crud repository such as
+      saveAndflush(), flush,saveAllAndFlush() (flush means),delete in batch.
