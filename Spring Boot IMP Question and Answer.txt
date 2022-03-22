@@ -39,7 +39,7 @@
    and spring boot mainly focus on business logic not any other things.whereas if we use spring we need to add depencies manually as well as deployment descriptor.
 
 
-6) What are stater dependencies of spring boot modeule?
+6) What are stater dependencies of spring boot module?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Spring boot stater dependencies provide rapid and easier application development process.
    1) spring Boot stater JPA 
@@ -344,7 +344,7 @@
     - used when we want instance of a class
     21)@Bean -
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    it is method level annotations, method produced by bean and managed by spring container.
+    It is method level annotations, method produced by bean and managed by spring container.
     22)@Scope 
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -used to specify scope of the bean
@@ -373,7 +373,7 @@
 44) What is spring boot application.properties files?
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     A spring boot come with built in mechanism application configuration using files called application.properties.It located inside the src/main/resource folder.
-    the main advantage of spring boot application.properties file is provide platform to run your application on different environments.
+    the main advantage of spring boot application.properties file is provide platform to run your application on different environments. for eg. QA,dev,deployment
 
 
 45) What are diffrent ways to create spring boot project?
@@ -396,8 +396,8 @@
 
 
 48) What is the latest version of spring boot?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 2.6.2
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    SpringBoot 2.6.4
 
 
 49) What are the diffrent types of scopes of bean?
