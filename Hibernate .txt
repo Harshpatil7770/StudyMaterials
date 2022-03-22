@@ -355,3 +355,6 @@ load() method return object not found exception if object isn't found.
   62) What is the difference between crud respository and JPA repository?
       crud repository provides methods such as save(), saveAll(),findAll() whereas JPA repository provides some extra methods as compare to crud repository such as
       saveAndflush(), flush,saveAllAndFlush() (flush means),delete in batch.
+      
+  63) What is cascade?
+     cascade is used to manage state of mapped entity.
