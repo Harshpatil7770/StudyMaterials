@@ -143,10 +143,16 @@ Mark mutable=false which class want to make immutable because by default they ar
 23)How many type of association mapping supported in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 1)One to one - Only one record of table A is associted with only one records of table B and vice versa.
+ eg- Country - capital city,Person - their fingerprints.
+ 
 2)One to many- Only one record of table A is associted with one or more records of table B not vice versa.
-3)Many to Many- Many records of table A is associated with many records of table B.
-4)Many to one- Many records of table A is related to one record of table B.
+  eg- Doctor and patient, brand and product
 
+3)Many to Many- Many records of table A is associated with many records of table B.
+ eg- student and subject
+ 
+4)Many to one- Many records of table A is related to one record of table B.
+  eg- student and college
 
 24)Is it possible to collection mapping one to one and many to one?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
