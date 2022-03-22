@@ -1348,12 +1348,245 @@ third statement or catch block?
                  
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-JAVA 1.8 Feature
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                 
+
+======================================================================================================================================================================
+======================================================================================================================================================================
+                                                                                !!! Shree Swami Samrath !!!
+======================================================================================================================================================================
+======================================================================================================================================================================
+
+
+======================================================================================================================================================================                                                                                   JAVA 1.8 Features 
+======================================================================================================================================================================
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Lambda Expression
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Lambda ex pression is used to provide the implementations of functional interface. It is function so .class file will not get created.
+   Types of lambda expression such as
+   1)No argument lambda expression 
+   ()->{}
+   () Argument list - May or may not be empty
+    -> arrow token  -It is used to connect argument list to the expression body.
+   {} body     - It contaions expression and syntax
+   2) Single Parameter lambda exxpression
+   (e)->{}
+   3) Two Parameter lambda expression
+   (e1,e2)->{}
+
+
+   Class EvenNum{
+   public static void main(String args[]){
+   List<Integer> list=Arrays.asList(3,43,4,42,5,14,42,4,2,52,4,5,5,3,23,2);
+   List<Integer> even=list.stream().filter((e)-> e%2==0).collect(Collectors.toList());
+   System.out.println(" Even Numbers :"+even);
+      }
+   }   
+   
+   Advantages
+   1)Reduce boiler plate code.
+   2) Code reuse
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2) Stream API
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Stream API used to flow element from source to the destination.Stream API doesn't used to store the element.It takes input from collection and element visited only once in thier life.
+   
+   class OddNum{
+   public static void main(String args[]){
+   List<Integer> list=new ArrayList<Integer>();
+   list.add(10);
+   list.add(30);
+   list.add(35);
+   list.add(45);
+   list.add(36);
+   list.add(29);
+   List<Integer> oddNum=list.stream().filter((e)-> e%2!=0).collect(Collectors.toList());
+   System.out.println(" Odd Number in the present list is :: "+oddNum);
+      }
+   }
+   
+   Advantages of streamAPI- 1) It reduce lot's of lines of codes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3) Default and Static Method 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an       interface it must implement in subclass so which is not good. In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
+   that default method they can call such as interface.super.method() name.
+
+   Interface Bike{
+   void  start();
+   public default void run(){
+   System.out.println("running....");
+      }
+   public static void stop(){
+   System.out.println("stopped!!!");
+     }
+   }
+   class Honda implements Bike{
+   public void start(){
+   System.out.println("Started");
+   Bike.super.run();
+     }
+   }
+   class Test{
+   public static void main(String args[]){
+   Honda honda=new Honda();
+   honda.start();
+   Bike.stop();
+     }
+   }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4) Functional Interface
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Functional inerface means it has only one abstract method.In java 1.8 one annotation also added @FunctionInterface.
+   if you add this annotation above the interface you are not able to add any other method inside an interface if you try to add it will show compile time error.
+   But we can add default and static inside the functional Interface also.
+  
+   @FunctionalInterface
+   Interface Bike{
+   void  start();
+   public default void run(){
+   System.out.println("running....");
+      }
+   public static void stop(){
+   System.out.println("stopped!!!");
+     }
+   }
+   class Honda implements Bike{
+   public void start(){
+   System.out.println("Started");
+   Bike.super.run();
+     }
+   }
+   class Test{
+   public static void main(String args[]){
+   Honda honda=new Honda();
+   honda.start();
+   Bike.stop();
+     }
+   }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5) For Each Method
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   For Each Method is used to iterate the element.
+   For Each Method is introduced in iterable and stream Interface. 
+   The main advantage of for each loop is to reduce lot's of code.
+   The disadvantage of this loop is we can't travel in reverse direction.
+   
+   class{
+   public static void main(String args[]){
+   List<String> list=new ArrayList<String>();
+   list.add("Harsh");
+   list.add("Patil");
+   list.add("Vaish");
+   list.add("Taral");
+   list.add("Shreya");
+   list.add("Shradha");
+   list.add("Shruti");
+   System.out.println("Names present in the list");
+   list.forEach(System.out.println);
+      }
+   }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6) Method Reference
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Method reference is compact and easy form of lambda expression. Method reference is used to reference method of fuctional Interface.
+   Types of Method Reference
+   1) Reference to the static method 
+   2) Reference to the instance method 
+   3) Referecne to the constructor
+
+   Interface Bike{
+   void run();
+   }
+   class Honda {
+   public static void run(){
+   System.out.println("Running");
+     }
+   }
+   class Test{
+   public static void main(String args[]){
+   Bike bike=Honda::run;
+   bike.run();
+     }
+   }
+   
+   
+   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7) Optional Class- 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In java 1.8 Optional class is defined to handel the nullpointer exception. It is final class.
+
+for.eg you fetch the data from database by uisng id and the id is not present in the database then they will show null pointer exception.
+=============================================================================================================================================================================
+1) get employee list whose salary is greater than 2000 and department wise using java-8 
+
+public class Interview {
+
+	private int id;
+
+	private String name;
+
+	private double salary;
+
+	public Interview() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Interview(int id, String name, double salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "Interview [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+
+	public static void main(String[] args) {
+
+		List<Interview> list = Arrays.asList(new Interview(101, "Sham", 2000), new Interview(102, "Ram", 3000),
+				new Interview(103, "Jay", 4000), new Interview(104, "Vijay", 5000), new Interview(104, "Sharad", 500));
+
+		List<Interview> eligibleList = list.stream().filter((e) -> e.getSalary() > 2000).map((e) -> e)
+				.collect(Collectors.toList());
+
+		System.out.println(eligibleList);
+
+	}
+}                 
                  
                  
                  
