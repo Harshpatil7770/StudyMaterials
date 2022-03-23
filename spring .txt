@@ -194,7 +194,7 @@ There are two life cycle method of spring
 Spring life cycle config by 
 1) Using Interface - we need to implements initializing and disposable bean.
 2) Using Annotations - 1)Pre-Constrcut 2)Post-Construct
-3) Using xml configuration -
+3) Using xml configuration -(xml file contain information about the classes and describe the process of configuration)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 27)which annotation used for dependency check?
