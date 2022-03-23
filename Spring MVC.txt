@@ -23,7 +23,7 @@ Controller- RestFul Resources
 
 4)What does @Controller annotations?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@Controller annotations used to mark the spring mvc application.WhenEver we use@Controller we need to externally response body.
+@Controller annotations used to mark the spring mvc application.Whenever we use@Controller we need to externally response body.
 
 
 5)Does Spring MVC Support validation?
