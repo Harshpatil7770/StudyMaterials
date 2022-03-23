@@ -86,7 +86,7 @@
 12) What is eureka server?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
-
+    To use eureka server we need to add the dependency such as netfilx eureka server and use @EnableEurekaServer annoataions.
 
 13) Which annotations needed in springBoot application class to enable eureka server?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -103,15 +103,15 @@
 15) What is use of lombok?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Lombok dependency mainly used to reduce the boilerplate code.We don't need to write manaually no arguments,argument constructor as well as we don't need
-    to write manually setter and getter methods.  
+    to write manually setter and getter methods. 
+    Insted of this we can use the annotations such as @Data,@NoargConstructor,@AllArgsConstructor.
 
 
 16) How does your application register with eureka server?
+    To register your application on eureka server first we need to add the dependency netflix eureka client and use the annonations such as @EnabaleDiscoveryClient(
+    It picks the implementations of classpath)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    To register your application on eureka server we need To add dependency such as eureka netfilx client.
-    And use the annotations such as @EnableDiscoveryClient to pick implementations of classpaths.
-
-
+    
 17) How microservice communicate with each other?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Microservice communicates with each other by using lightweight http rest or messaging protocols.
@@ -124,7 +124,7 @@
 
 19) What are the main component of microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    1) Spring cloud Server
+    1) Spring config Server
     2) Eureka naming server
     3) Hystrix dashboard
     4) APT GATEWAY
@@ -163,7 +163,7 @@
     1) Spring cloud server-
     The default port no. of cloud server is 8888. we put git url inside this application.properites file.It works both client and server side.
     also we put common propeties on cloud.
-    To enable cloud server we need to add dependency such as cloud server and use the annotations such ad @EnableCnfigServer
+    To enable cloud server we need to add dependency such as cloud server and use the annotations such ad @EnableConfigServer
 
     2) Eureka Naming Server-
     The default port no of eureka naming server is 8761. to enable eureka naming server we need to add the depdency such as spring cloud netflix eureka server
@@ -172,12 +172,14 @@
 
     3) Hystrix Dashboard-
     Hystrix dahsboard is used to avoid failure of your application by using circuit braker mechnaism. If your application running without any error means circuit
-    breaker remains closed and if your application occur some error means circuit braker remains open.    
+    breaker remains closed and if your application occur some error means circuit braker remains open. 
+    To use Hystrix dashboard we need to add the dependency spring cloud netfilx hystrix, and add annotations @EnableHystrix @EnableCircuitBreaker
     
     4) API- GATEWAY
     It is acts as router of your application. We don't need to write separate url for each service calling we call it by using common url ie api gateway url
     Inside the application.propeties files of api gateway we put all services with their id and prefix. so services call goes throgh gateway url and services 
     prefix.
+    To enable API-GATEWAY we need to add dependency such as cloud stater gateway .
     
 
 25) Which are the some famous compaines using microservice?
@@ -247,11 +249,13 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     APIGATEWAY is router of your application. we don't need to use separate url to call each service. Inside the application.properties files of api-gateway we provide
     all service url with there id and prefix so service get called gateway url and prefix of that services.
+    To enable api gateway we need to add the dependency such as cloud gateway.
 
 36) What is Hystrix Dashboard?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Hystrix Dashboard is used to avoid failure of your application by using circuit breaker mechanism. If your application running without any error circuit breaker 
-    remains closed whereas if your application occurs some error then circuit breaker remains open.
+    remains closed whereas if your application occurs some error then circuit breaker remains open.To use hystrix dashboard we need yo add spring cloud hystrix 
+    depenedency and use the annotations such @ EnableHystrix and @EnableCircuitBreaker.
 
 
 
