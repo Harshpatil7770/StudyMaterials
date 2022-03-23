@@ -4,7 +4,7 @@
 
 1)What is the front controller class of spring MVC?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Dispatcher servelet is front controller class of Spring MVC.
+Dispatcher servelet is front controller class of Spring MVC. It recieve the request from client and send them resource on the server.
 
 
 2)What is spring MVC? why they used?
@@ -43,7 +43,7 @@ yes, Spring MVC Support Validation.
 
 7) What is dispathcer servlets?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Dispatcher servlets is front controller class of spring mvc.
+  Dispatcher servlets is front controller class of spring mvc. In this class recieve the feedback from client and send them resources on the server.
   
 8) What is view Resolver?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
