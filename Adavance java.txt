@@ -623,8 +623,18 @@ third statement or catch block?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         String Builder introduced to make mutable String objects. When we create object by using String builder
                                                                                                                                                                         it will store in heap memory. String Builder is not thread safe. The performane of String Builder is 
-                                                                                                                                                                        faster than the String Buffer.                                                                                                                                                                                                                                                                                                                                                 
-
+                                                                                                                                                                        faster than the String Buffer.  
+																				
+																				
+---------------------------------------------------------------------------------------------------------------------------------------				    31) What is difference between String and String Buffer?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                                                      String                                    String Buffer
+														
+		1) String create immutable objects   1) String buffer create mutable objects
+		2) String objects strored in String  2)String buffer objects Stored in heap memory.
+		constant pool
+                3)String overide equal method        3) String buffer can't overide equal method of object class.
+		of object class.
 
 
 =======================================================================================================================================================================  =======================================================================================================================================================================  =======================================================================================================================================================================
