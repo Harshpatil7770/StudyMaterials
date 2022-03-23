@@ -1819,8 +1819,14 @@ C)Protected   -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 137) Which method is used for serlization of an object?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                               WriteObject() method of objectOutputStreamClass() used to serlize an object.							       
-
+                                                               WriteObject() method of objectOutputStreamClass() used to serlize an object.	
+							       
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+137) What is thread safe and unthread safe?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+                                                               Thread safe means only one thread execute at a time.(Sychronized)
+							       Non thread safe means multiple thread execute at a time.(Non Snychroized)
+							       
 
 
 
