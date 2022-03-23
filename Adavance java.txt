@@ -636,6 +636,12 @@ third statement or catch block?
                 3)String overide equal method        3) String buffer can't overide equal method of object class.
 		of object class.
 
+---------------------------------------------------------------------------------------------------------------------------------------				    31) What is heap memory and String constant pool?
+---------------------------------------------------------------------------------------------------------------------------------------
+    heap memeory id runtime data area on which object are allocated. 
+    whereas String constant pool located inside the heap memory it mainly used to make jvm more memory efficient, when we create obejct of Strign by using
+    String literal jvm check wheather object declared or not,if declared it doesn't create new instance.
+
 
 =======================================================================================================================================================================  =======================================================================================================================================================================  =======================================================================================================================================================================
 
@@ -942,6 +948,17 @@ third statement or catch block?
                         }
 
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------
+44)What is the difference between join and wait method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                       Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another 
+thread will call notify and notifyAll() methods.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+45)Who calls the run method?
+---------------------------------------------------------------------------------------------------------------------------------------
+ once we called the start method it internally calls the run method.
 
 
 
