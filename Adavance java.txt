@@ -457,7 +457,43 @@ third statement or catch block?
                                                                                                                                                                        Exception occurs due to human mistake or bad input. we can handel it by using try catch and finally block.
                                                                                                                                                                        Error means irrecoverable, error occur due to something lack of resource in the system. To handel error
                                                                                                                                                                        Programmer need to fix that issue.
+																				       
+---------------------------------------------------------------------------------------------------------------------------------------
+46) How we can exist code in try block means i don't want to execute finally block?
+---------------------------------------------------------------------------------------------------------------------------------------
+we know that finally block always execute wheather exception handeled or not. But if you want to forcefully stop stop the exceution of 
+finally block then we just write system.exit(0) method at the end of catch block and just before the fianlly block.
 
+---------------------------------------------------------------------------------------------------------------------------------------
+46) What is custom exception and example?
+---------------------------------------------------------------------------------------------------------------------------------------
+Custom exception means user defined exception. It used to catch and provide specific treatment to exisitng java exception. It mainly used in business
+logic exception.
+
+class InvalidVotterException extends Exception{
+
+InvalidVotterException(String err){
+super(err);
+}
+
+class Votter{
+public static void checkEligiblityCriteria(int age) throws InvalidVotterException(){
+if(age<18){
+thorw new InvalidVotterException("You are not eligible for votting");
+}else{
+System.out.println("You are eligible for votting");
+}
+}
+public static void main(String args[]) thorws InvalidVotterException{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter your age::");
+int age=sc.nextInt();
+checkEligiblityCriteria(age);
+}
+---------------------------------------------------------------------------------------------------------------------------------------	
+47) What is class Not found Exception in java?
+---------------------------------------------------------------------------------------------------------------------------------------
+class not found exception occur when we load the class and the class is not present in the path.
 
 
 
@@ -1335,8 +1371,22 @@ thread will call notify and notifyAll() methods.
  
  
  30) What are the collections class methods?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) addAll() 2) max() 3) min() 4) sort()
+
+30) What is the difference between equals() and compareTo() method?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+equlas take input parameter as only objects whereas compareTo method take only string.
+
+
+30) How to remove User-defined class objects in Java ArrayList with example?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+30) Write code for hashmap and explain everything?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
  ==================================================================================================================================================================
