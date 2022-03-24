@@ -1842,9 +1842,24 @@ C)Protected   -
                                                                Thread safe means only one thread execute at a time.(Sychronized)
 							       Non thread safe means multiple thread execute at a time.(Non Snychroized)
 							       
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+137) How can one do custom serilization ?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+                                                               transient keyword is used to skip member while serlizing an object. So if you are using transient 
+							       it may be chnances of data loss.So we need to use custom serlization and to enable custom seriliza
+							       tion we need to use public void 	writeObject() throws Expection and
+							       public void readObject() throws Exception methods.
 
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+138) How to avoid serialization of child class ?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                               There is no direct way to avoid serlization of child class. we need to use writeObject() and                                                                          readObject() methods and throws NoSerilizationExpetion.
+							       
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+138)What are the benifits of immutable?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                               1) Thread safe
+							       2) immutable means easier to desing and implements.
 
 
 
