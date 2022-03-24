@@ -401,7 +401,7 @@
 
 
 49) What are the diffrent types of scopes of bean?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- scope of bean specify the life cycle of bean
     @Scope annotations used to mark scoper of the bean
     1)Singleton- only one instance is created.
     2)Prototype- every reqest new instance is created
