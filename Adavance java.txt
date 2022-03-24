@@ -995,6 +995,11 @@ thread will call notify and notifyAll() methods.
 45)Who calls the run method?
 ---------------------------------------------------------------------------------------------------------------------------------------
  once we called the start method it internally calls the run method.
+ 
+ ---------------------------------------------------------------------------------------------------------------------------------------
+46)What is object and class level lock?
+---------------------------------------------------------------------------------------------------------------------------------------
+ if we put synchronization before a method lock for an object whereas i we put snchronization before a static method means lock for a class.
 
 
 
