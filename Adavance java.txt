@@ -1393,6 +1393,8 @@ equlas take input parameter as only objects whereas compareTo method take only s
  ================================================================================================================================================================== 
  RESTFul web services.(Web services designed for application to application interaction)
  ==================================================================================================================================================================
+ 
+ 
  1) REST-
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Rest stands for Representational state transfer. It developed by roy fielding to make web services most effective.
@@ -1444,7 +1446,7 @@ equlas take input parameter as only objects whereas compareTo method take only s
                                SOAP                                         REST
                1) SOAP stands for simple object        1) REST stands for representational state transfer.
                   access protocol.  
-               2) SOAP maily uses                      2) REST used json for data exachnage
+               2) SOAP manily uses                      2) REST used json for data exachnage
                   xml for dataexachanges
                3) SOAP is protocol.                    3) REST is an architecrure approch.
                4) SOAP are difficult to                4) REST is easy to implement as compare to SOAP.
@@ -1548,6 +1550,7 @@ equlas take input parameter as only objects whereas compareTo method take only s
    if you add this annotation above the interface you are not able to add any other method inside an interface if you try to add it will show compile time error.
    But we can add default and static inside the functional Interface also.
   
+   In functional interface we have only one abstract method but we have mutiple default method
    @FunctionalInterface
    Interface Bike{
    void  start();
@@ -1704,9 +1707,25 @@ public class Interview {
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------10) Stream 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Stream means element flows from source to the desitinations. It doesn't used to store the element, It takes input from the collections.
 
+11)What are method present in the optional class?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) isPresent()  -------------return type boolean 
+2) get()         
+3) orElse       -------It return if present otherwise it return another.
 
-     
 
+12) What is method present in StreamAPI?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) collect
+2) count()
+3) disctint()
+4) filter()
+5) forEach
+6) limit()
+7)min()
+8) max()
+9) reduce()
+10) sorted()
                  
   
                  
