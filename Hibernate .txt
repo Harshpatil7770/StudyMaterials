@@ -117,9 +117,11 @@
                                                        Session is an interface which is used to maintain the relation between hibernate application and database layer.
 
 
-19)Is session object is thread safe?
+19)Is session object is thread safe? why noy?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-                                                       no, session object is not thread safe.
+                                                       no, session object is not thread safe. Because We can share session between multiple threads.
+                                                       (Thread safe means we can perform only one task at a time)
+                                                       (Non thread safe means we can execute multiple thread at a time)
 
 
 20)What is the diffrence between update() and merge() method?
@@ -364,3 +366,13 @@ load() method return object not found exception if object isn't found.
       
   63) What is cascade?
      cascade is used to manage state of mapped entity.
+     
+  64) What is the difference between save() ,saveOrupdate or persisit() method?
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   save() method insert new record and it return current identifier of an instance whereas persist() method save new record but doesn't return anything because
+   it's return type is void.
+   saveOrUpdate method insert new record or update the record based on there existing records. 
+   
+   65) How to enable second level catche?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To enable second level catche we need to use @catche and @cacheable annotations
