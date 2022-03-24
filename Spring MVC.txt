@@ -48,3 +48,12 @@ yes, Spring MVC Support Validation.
 8) What is view Resolver?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
   view reslover provide mapping between view names and actual views.
+  
+9) What are the module of spring framework?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Spring AOP
+2) Spring ORM
+3) Spring JDBC
+4) Spring JPA
+5) beans
+6) Web servlet
