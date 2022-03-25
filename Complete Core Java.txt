@@ -2018,4 +2018,22 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                  1) Reference variable of parent class referes to the objects of child class
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+110) 
+for( int i=0;i<=5;i++)
+{
 
+}
+1) time complexity o(n)    -no of time the loop is executed
+
+for( int i=0;i<=5/2;i++)
+{
+
+}
+2) olog(n) --- constant we need calcualte 
+
+3) for( int i=0;i<=arr.length;i++){
+for( int j=0;j<=arr.length;j++)
+o2n
+
+
+log(n) best 
