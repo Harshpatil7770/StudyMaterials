@@ -496,16 +496,61 @@ checkEligiblityCriteria(age);
 class not found exception occur when we load the class and the class is not present in the path.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-45)Who is responsible for runnable to running transition??
+48)Who is responsible for runnable to running transition??
 ---------------------------------------------------------------------------------------------------------------------------------------
   Thread sheduler.
+---------------------------------------------------------------------------------------------------------------------------------------	
+49) State some situations where exceptions may arise in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
+1) If you are fetching data from database based on the id or name and if the entered id or data is not present in db it will throw null pointer exception.
+2) If you entered wrong input for ex- instread on number if you entered character it will show InputMissMatchException.
+3) If load the class and class is not present in class path it will show classNotFound Exception.
+4) If you load the class and the class is present at compile time and runtime the class will not found it will show NoclassDefFoundError exception.
+
+---------------------------------------------------------------------------------------------------------------------------------------	
+50) In how many ways we can do exception handling in java? or List out five keywords related to Exception handling ?
+---------------------------------------------------------------------------------------------------------------------------------------	
+Exception handeleing by using try,catch and finally block.(try,catch,finally,throw,throws)
+---------------------------------------------------------------------------------------------------------------------------------------	
+51) What is Default exception handeling in java?
+---------------------------------------------------------------------------------------------------------------------------------------	
+Default exception handeled in java by JVM. If any exception occur in the program JVM will identify the exact exception.
+---------------------------------------------------------------------------------------------------------------------------------------	
+52) Can we write any code after throw statement?
+---------------------------------------------------------------------------------------------------------------------------------------	
+No we can't write any code after throw statement if you try to write it will show compile time error.ie .
+---------------------------------------------------------------------------------------------------------------------------------------	
+53) Explain the importance of finally over return statement?
+---------------------------------------------------------------------------------------------------------------------------------------	
+ Finally block is more important than the return statement. If we have both finally block return statement in try and catch block then first
+ fianlly block will get execute after that return statement execute.
+---------------------------------------------------------------------------------------------------------------------------------------	 
+ 54) Can we use catch statement for checked exceptions?
+ ---------------------------------------------------------------------------------------------------------------------------------------	
+ No we can't use catch statement for checked exceptions.
+---------------------------------------------------------------------------------------------------------------------------------------	 
+ 54) Can we nested try statement in java?
+ ---------------------------------------------------------------------------------------------------------------------------------------	
+ yes we nested try statement in java that means we can declare a try block inside anothoer block of try statement.
+ ---------------------------------------------------------------------------------------------------------------------------------------	 
+ 54) Explain the importnce of throwable class and it's method?
+ ---------------------------------------------------------------------------------------------------------------------------------------	
+ Throwable is root class of all error and exception. 
+ There are following methods of exception such as
+ 1) printStackTraceMethod() - gives deatils explanation of error occured.
+ 2) getMessage()- gives description of expcetion occur.
+ 
+
+ 
+
+
+
 
 
 3) String
-=======================================================================================================================================================================
-=======================================================================================================================================================================
-=======================================================================================================================================================================
+======================================================================================================================================================================
+======================================================================================================================================================================
+======================================================================================================================================================================
 ---------------------------------------------------------------------------------------------------------------------------------------
 1) Why String are thread safe?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1005,6 +1050,101 @@ thread will call notify and notifyAll() methods.
 46)What is object and class level lock?
 ---------------------------------------------------------------------------------------------------------------------------------------
  if we put synchronization before a method lock for an object whereas i we put snchronization before a static method means lock for a class.
+---------------------------------------------------------------------------------------------------------------------------------------
+47)What is process?
+---------------------------------------------------------------------------------------------------------------------------------------
+ Process means a program in the execution. every process have their own memeory space.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+47)What are the different types of multitasking?
+---------------------------------------------------------------------------------------------------------------------------------------
+ 1) Process based multitasking 2) Thread based multitasking
+ ---------------------------------------------------------------------------------------------------------------------------------------
+48)Explain about main thread in java??
+---------------------------------------------------------------------------------------------------------------------------------------
+main thread is first thread it starts immediately after program is started.
+---------------------------------------------------------------------------------------------------------------------------------------
+49)Explain about main thread in java??
+---------------------------------------------------------------------------------------------------------------------------------------
+main thread is first thread it starts immediately after program is started.
+---------------------------------------------------------------------------------------------------------------------------------------
+50) Which is the best approach for creating thread ? 
+---------------------------------------------------------------------------------------------------------------------------------------
+ Thread is created by using two ways
+ 1) extending a thread class
+ 2) implementing runable interface
+ 
+ but implement runable interface is best approch to create thread object. becuase if you create thread by extending thread class
+ we are not able to extends other class,maintaince cost is high becuase extending thread class means tightly coupled.
+ whereas implementing runable interface means loosely copuled, we can extends another class also and maintaince cost is also low, and it
+ provide better code reusablity.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 51) Can we restart a dead thread in java?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ No we can't restart dead thread in java if you try it will show runtime exception i.e thread is not live.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ 52) Can one thread block the other thread?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ no, one thread can't block another thread.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ 53) Can we overload run() method in java?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ Yes we can overload the run() method in java ,but start method call run() method with no arguments.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ 54) What is a lock or purpose of locks in java?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ lock is an moniter used to prevent access of multiple thread to any shared resource
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ 55) In how many ways we can do synchronization in java?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+There are two ways to synchronization 
+1) Synchronization block
+2) Synchronization method
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ 56) What are synchronized methods?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ Synchronized means capability to access multiple thread to any shared resources.
+ It mainly used to avoid thread interface and consistance problem.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ 57) When do we use synchronized methods in java?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ IF you want to lock full object then we will use synchronization block.
+ If multiple thread tries to access method so to avoid thread interface or consistance problem we need to use sycnhronization method.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ 58) Can we use synchronized block for primitives?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ No, we can't use synchronized block for primitive we can use only for objects.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 59) Explain different types of thread priorities ?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  Thread priorities decidesc when to execute thread 
+  1) min priority -1
+  2) Norm priority -5
+  3) max priority -10
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  60) How to change the priority of thread or how to set priority of thread?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  By using setPriority method we can set priority of thread
+  ---------------------------------------------------------------------------------------------------------------------------------------
+   61) If two threads have same priority which thread will be executed first ?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+    we don't give garranty which thread is exceute
+    either it execute any thread first nor it will give equal opporutunity.
+ --------------------------------------------------------------------------------------------------------------------------------------- 
+   62) What all methods are used to prevent thread execution ?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 1) join()
+ 2) sleep()
+ 3) yeild()
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 63) When yield () method in thread is executed it?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ yeild() method restrict thread going to wait,sleep and block state. It direclty push it into runnable stage.
+ 
+ 
+ 
+ 
+
+
 
 
 
