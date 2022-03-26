@@ -1139,12 +1139,66 @@ There are two ways to synchronization
  63) When yield () method in thread is executed it?
  ---------------------------------------------------------------------------------------------------------------------------------------
  yeild() method restrict thread going to wait,sleep and block state. It direclty push it into runnable stage.
- 
- 
- 
- 
-
-
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 64) Assume a thread has lock on it, calling sleep() method on that thread will release the 
+ lock?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+  sleep() method doesn't realease the lock that thread sleep for the specify time.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  65)Can sleep() method causes another thread to sleep?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  No sleep() method cause only current thread no any other.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  66) Explain about interrupt() thread?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  when we want to break out the wait and sleep position of thread we interrupt a thread.But it doesn't mean to stop immediatelty ,it polite way
+  to request.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  67) Explain about interthread communication and how it takes place in java?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ Interthread communication happpens by using 
+ 1) wait()
+ 2) notify()Explain wait(), notify() and notifyAll() methods of object class ?Explain wait(), notify() and notifyAll() methods of object class ?
+ 3) notifyAll()
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  68) Explain wait(), notify() and notifyAll() methods of object class ?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  wait () ,notify,notifyAll() are object class methods.
+  wait() - pause the currently executing thread,wait until another thread will call notify and notifyAll() method.
+  notify()- notify means unblock only one waiting thread
+  notifyAll() - notifyAll means unblock all waiting thread.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  69)Explain why wait() , notify() and notifyAll() methods are in Object class rather than in 
+     thread class?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  because wait(),notify(),notifyAll() methods are object level methods and these called on same objects.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  70) Explain IllegalMonitorStateException and when it will be thrown?  
+  ---------------------------------------------------------------------------------------------------------------------------------------
+   If you try to write wait ,notify,notifyAll() methods out the side synchrinzation context at runtime you will get IllegelMonitorStateException.
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  71) when wait(), notify(), notifyAll() methods are called does it releases the lock or holds 
+    the acquired lock?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+ wait() ,notify(),notifyAll() methods are called from synchronization block. If try to call or write outside the synchrnonization block it
+ will show illegal monitor state exception. when these method called it will release the call.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+  72) Explain which of the following methods releases the lock when yield(), 
+    join(),sleep(),wait(),notify(), notifyAll() methods are executed?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 1) yeild() -No (the main purpose of yield method to restrict the thread going into wait,sleep or block state.It direclty push into runable state.
+ 2) join() -No ( join method wait for thread to die)
+ 3) sleep()- No( pause the cureenlty executing thread)
+ 4) wait() - Yes( pause the currently executing thread or wait until another thread will call notify() ,notifyAll() methods.
+ 5) notify() - Yes(unblock only one waiting thread)
+ 6) notifyAll() - Yes( unblock all waiting thread)
+ ---------------------------------------------------------------------------------------------------------------------------------------
+73)What are daemon threads in java? and How to make a non daemon thread as daemon? and How to make a non daemon thread as daemon?
+---------------------------------------------------------------------------------------------------------------------------------------
+daemon thread is low priority thread, it maily used to support to user thread. JVM will automatically terminate if there is only remaning daemon
+thread. Yes we call call make non Daemon thread as daemon thread by using setDaemon() method. just write this method before start() method , if you write
+after the start method it will show IllegalMonitorStateException.
+No we can't make main thread as daemon thread.
 
 
 
