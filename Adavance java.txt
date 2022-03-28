@@ -1590,9 +1590,60 @@ equlas take input parameter as only objects whereas compareTo method take only s
 30) Write code for hashmap and explain everything?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+30)When do we use HashSet over TreeSet?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Hashset is used when we want to search element and we don't want any sorting order. whereas
+   Treeset is used when we want sorting element ,fast insertion and retrieving the element.
+   
+ 30)What is Linked HashSet and its features?
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Linked hashset implements set interface. Linked hashset similar to the hashset. the main difference that linked hashset maintain insertion order whereas
+ hashset doesn't maintain insertion order.
+ 
+30)What is linked hashmap and its features?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Linked hashmap maintain insertion order. Linked hashmap is faster for insertion and deletion the element.
+ 
+ 31)What is SortedMap interface?
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ SortedMap interface maintaing sorting order of keys,by default sortedmap interface natural order.
+ 
+30)What is Hashtable and explain features of Hashtable?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Hashtable is synchronized and thread safe. Hashtable extends Dictionary class.Hashtable doesn't allow null value as well as keys.
+ 
+30)Difference between HashMap and Hashtable?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                      HashMap                                            Hashtable
+	1) Hashmap is non synchronized                   1) Hashtable is synchronized
+	2) Hashmap is thread safe                        2) Hashtable is non thread safe.
+	3) Hashmap allows n number                       3) Hashtable doesn't allow null values or keys. 
+	   null values and only one null keys
+	   
+30) What is concurrent hashmap and its features ?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Concurrent hashmap similar to the hashtable and synchronized version of hashmap. It doesn't allows null value and keys.concurrent hashmap allows multiple thread
+to access.
+
+30) Difference between concurrent hashmap and hashtable?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+concurrent hashamap allows mutiple thread access whereas hashtable doesn't allow multiple thread access.
+
+30)Explain about fail safe iterators in java?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------Fail safe iterator means it doesn't throw concurrentMoficationException. when thread was iterating it doesn't modify the original list it create copy of that
+list. 
 
 
 
+
+
+
+
+
+
+ 
+ 
+ 
  ==================================================================================================================================================================
  ================================================================================================================================================================== 
  RESTFul web services.(Web services designed for application to application interaction)
