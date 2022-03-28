@@ -2071,9 +2071,43 @@ Constant always write with uppercase and by using _ for new keyword.
 							  3) remove() --- It remove the element.
 							  
 							  
-							    
-							    
-							    
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+145)  What are alternatives to java serialization?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                           There are two alternatives of java serialization. 
+							   1) xml based - xml based is done by using JAXB( java architecture for xml binding) 
+							      It provide two mechanism 1) marshling - means convert java object into xml whereas
+							      2) unmarshling- means convert xml into java object.
+							   2) Json based- JSON stands for java script object notations . It is light weight format for storing
+							     and transporting the data.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 145) How to make object serializable in java?
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                           first we need to implement our class by serlizable interface.
+							   objectOutputStream is used for write the objects, wheras objectInputStream is used to read the objects.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 146) Can we serialize static variables in java	
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                           No we can't seriliaze static variable in java, because static varibale are class variable not an
+							   objects. whereas serlizable mechanism is used for only to travel the state objects over the network
+							   not a class state.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+147) When we serialize an object does the serialization mechanism saves its references too?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                         when we serialize an object then the refer must be serilizable> If we don't make this we will get 
+							 NoSerlizableException.
+							 
+----------------------------------------------------------------------------------------------------------------------------------------------------------	
+148) If we don’t want some of the fields not to serialize How to do that?	
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                        There is no direct way to avoid serilization of your objects we need to use readObject and writeObject
+							methods and throws NotSerliableException.
+							otherwise we need to use transieny keyword so it zero or null values.
+							   
+							   
 ======================================================================================================================================================================  ======================================================================================================================================================================    Decision or control making statement,Jump statement
 ======================================================================================================================================================================  ======================================================================================================================================================================    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 109)What's loop?
