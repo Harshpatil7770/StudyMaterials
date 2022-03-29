@@ -310,7 +310,7 @@ IO Exception          SQLException         ClassNotFound Exception         Runti
                                                                                                                                                                          2) class NewException extends RuntimeException
                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
-21)Can we keep other statement in try,catch and fianlly block?
+21)Can we keep other statement in try,catch and finally block?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        No we can't keep other statement in try catch and fianlly block                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -911,7 +911,7 @@ No we can't write any code after throw statement if you try to write it will sho
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                                                                                                                                                                     
 ---------------------------------------------------------------------------------------------------------------------------------------
-33)How to detect deadlock condition ? and how can you avaoid it?
+33) How to detect deadlock condition ? and how can you avaoid it?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                                                                                                                                                                            To avoid deadlock condition 1)Avoid unnecessary lock
                                                                                                                                                                         2)Avoid nested lock
@@ -1223,7 +1223,7 @@ No we can't make main thread as daemon thread.
   Collection framework is combination of classes and interface. Interface such as list,set,map,queue. Classes such as arraylist,linkedlist,Hashset,treeset etc.
 
 4)Explain Internal Working of ArrayList With Exmaples?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ArrayList internally uses dyanamic array.Arraylist allows to us to store both homogenous and non homogenoues element. Arraylist support only objects not primitive 
   data type. Arraylist provide random acceess. ArrayList maintain insertion order and allows duplicate values. ArrayList require less space because it store only
   object not address.
@@ -1567,7 +1567,7 @@ No we can't make main thread as daemon thread.
  3) Hashmap is non legacy class                                         3) Hashtable is legacy
  
  
- 30) What is differnce between hashmap and HashTable?
+ 30) What is differnce between Treemap and hashtable?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        TreeMap                                                  HashTable
  1) TreeMap is non synchronized                                       1) HashTable is synchronied
