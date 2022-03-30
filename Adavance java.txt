@@ -1,9 +1,8 @@
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                   !!! Shree Swami Samarth !!!
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -1720,7 +1719,7 @@ list.
 ======================================================================================================================================================================                                                                                   JAVA 1.8 Features 
 ======================================================================================================================================================================
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Lambda Expression
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Lambda ex pression is used to provide the implementations of functional interface. It is function so .class file will not get created.
@@ -1750,9 +1749,17 @@ list.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2) Stream API
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Stream API used to flow element from source to the destination.Stream API doesn't used to store the element.It takes input from collection and element visited only once in thier life.
-   
+   There are two types of Stream API
+   1) Parallel Stream API
+    Parallel Stream API means we can perform multiple operations at a time. It is platform dependent. The performs of parallel Stream API is faster than the 
+    sequential Stream API. It doesn't maintain the order
+    
+   2) Sequential Stream API
+      Sequential Stream API is used to perform only one operations at a time. It is platform independent. The performs of sequential stream API is slower than the 
+      parallel stream API. It maintain the order.
+      
    class OddNum{
    public static void main(String args[]){
    List<Integer> list=new ArrayList<Integer>();
@@ -1798,10 +1805,11 @@ list.
      }
    }
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-4) Functional Interface
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4) Functional Interface or SAM
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Functional inerface means it has only one abstract method.In java 1.8 one annotation also added @FunctionInterface.
+   It is also called as SAM i.e single abstarct method.
    if you add this annotation above the interface you are not able to add any other method inside an interface if you try to add it will show compile time error.
    But we can add default and static inside the functional Interface also.
   
@@ -1879,13 +1887,13 @@ list.
    
    
    
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 7) Optional Class- 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 In java 1.8 Optional class is defined to handel the nullpointer exception. It is final class.
 
-for.eg you fetch the data from database by uisng id and the id is not present in the database then they will show null pointer exception.
-=============================================================================================================================================================================
+for.eg you fetch the data from database by using id,name and the id or name is not present in the database then they will show null pointer exception.
+======================================================================================================================================================================
 1) get employee list whose salary is greater than 2000 and department wise using java-8 
 
 public class Interview {
@@ -1981,10 +1989,142 @@ public class Interview {
 8) max()
 9) reduce()
 10) sorted()
-                 
+
+13) Describe the newly added features in Java 8?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Lambda expression
+2) StreamAPI
+3) default and static method
+4) Method Reference
+5) For each method
+6) Functional Interface
+7) Optional class
+
+
+14) In StreamAPI what is the difference between parallel and sequential stream?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Sequential Stream API-
+  Sequetial Stream API means we can perform only one iterator or operations at a time. It maintain the order. The perfoms sequential
+  stream API is slower than the parallel stream API. platforn independent.
   
-                 
-                 
+  Paralllel Stream API-
+  Paralllel Stream API means we can perform multiple operations at a same time. The doesn't maintain the order. The performs od parallel stream API
+  is faster than the sequential Stream API. platform dependent.
+  
+ 15) What are the advantages of java 1.8?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) It reduce lots of lines of code
+2) Increase productivity
+
+16) What are the advantages of java 11?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) .class filw will not get create
+2) we don't need to compile your application.
+
+ 17) Can a functional interface extend/inherit another interface?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Yes, Funtion interface extends another interface but only when it doesn't have any abstract methods.
+ 
+ 18) What are pre-defined function in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+1) Runnable 
+2) consumer
+3) predicate
+4) Function 
+5) Supplier
+
+19)  What are the various categories of pre-defined function interfaces?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Funtion-  It takes arguments and return the result
+2) Consumer- It passes the arguments but not return the values
+3) Supplier- no arguments but return result
+4) Predicate- It return true or false value ( boolean return type)
+
+20) How does a lambda expression relate to a functional interface?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Lambda expression is used to represnt the instance of functional interface.
+
+21) What is the basic structure/syntax of a lambda expression?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+()-> { }
+()- argument list- may or may not be empty
+-> arrow token - used to connect argument list to method body
+{} method body - contains expression and syntax.
+
+22) What are the avantages of lambda expression?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) To provide the implementations of functional interface
+2) Reduce lot's of lines of code
+
+23) What are the types and common ways to use lambda expressions?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) No parameter lambda expression
+() -> {
+        }
+	
+2) One Parameter lambda expression
+(e1) -> {
+           }
+	   
+3) Two Parameter lambda expression
+(e1,e2) -> {
+                 }
+
+24) What does the String::ValueOf expression mean?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ValueOf() method convert the data into human readable format. String Valueof() method return the represenatios of values.
+
+25) What are the main componets of stream?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Jobs, tupple, operators,data stream.
+
+26) What are Intermediate and Terminal operations?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Intermediate operations doesn't produce the end result, it return the Stream.Intermediate operator are lazy loading. 
+ intermediate operations methods such as map(),filter(),distinct(),skip()
+2) Terminal operations produce the endd result and it doesn't return the stream. Terminal operator are eargely loading.
+Terminal operations methods such as toarray(),count(),collect(),forEach(),findFirst(),findAny()
+
+27) What are the most commonly used Intermediate operations?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+map() ,filter(),sorted(),disctint(),limit()
+
+28) What is the stateful intermediate operation? Give some examples of stateful intermediate operations?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+stateful means it internally contains state
+The statefull intermediate operations such as 
+1) disctint() ,skip(),sort(),limit()
+all other are stateless such as
+map(),filter()
+
+29) What is the most common type of Terminal operations?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+The most common terminal operations such as
+1) collect() 2) reduce() ) 4) findfirst() 5)findAny() 6) forEach() 7) toArray() 
+
+30) What is the difference between find first and find any?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+findFirst() method return first element of the stream wheras findAny() method return any element of stream
+
+31) How are Collections different from Stream?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Stream doesn't used to store the elements. It is used to modify the resource.
+Collections is used to store the elements.
+
+32) What is the feature of the new Date and Time API in Java 8?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+old date time API is not thread safe, we can do less operations.
+
+33) Explain with example, LocalDate, LocalTime, and LocalDateTime APIs?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+LocalDate means localdate with time zone.
+LocalTime means without any date 
+LocalDateTime - it represent date with time
+
+
+
+
+
                  
   
   
