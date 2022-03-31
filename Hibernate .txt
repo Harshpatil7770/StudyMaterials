@@ -147,8 +147,13 @@ Mark mutable=false which class want to make immutable because by default they ar
 1)One to one - Only one record of table A is associted with only one records of table B and vice versa.
  eg- Country - capital city,Person - their fingerprints.
  
+ One to One mapping means only one records of table A is associate with only one records of table B and vice versa.
+ ------------------------------------------------------------------------------------------------------------------
+ 
+ 
 2)One to many- Only one record of table A is associted with one or more records of table B not vice versa.
   eg- Doctor and patient, brand and product
+  -----------------------------------------------------------------------------------------------------
 
 3)Many to Many- Many records of table A is associated with many records of table B.
  eg- student and subject
