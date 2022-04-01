@@ -300,7 +300,8 @@ A)Abstraction
                                                                                                 method name with different parameter.Compile time polymorphism is also called as static binding
                                                                                                 The performance of compile time ploymorphism is faster than the runtime polymorphism becuase object is determined at compile time.
        
-                                                                                                B-II)   Runtime Polymorphism
+                                                                                                B-II)   Runtime Polymorphism(Return type is not matter in runtime poly
+												morphims due to covarinat return type).
                                                                                                 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                Runtime polymorphism means call an method override to resolve runtime rather than compile time. 
                                                                                                 Runtime polymorphism is also known as dynamic binding.
@@ -330,7 +331,7 @@ A)Abstraction
                                                                                                 A class in java has multiple same method name with different parameter called as method overloading.
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                B-VII)How can we achieve method overloading?
-                                                                                               ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                               -----------------------------------------------------------------------	-----------------------------------------------------------------------------------------------
                                                                                                method oveloading is achieved by two ways
                                                                                                1)By chnaging no. arguments
                                                                                                2)By chnaging no. data type
@@ -350,7 +351,7 @@ A)Abstraction
                                                                                                 B-X))What is method overriding?
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                 Method overriding means classes in java has same method name with same parameter. method overrding is way to achieve runtime polymorphism.
-                                                                                               It is also calles dyanamic biding.Method overrding means call an method override to reslove runtime rather than the comiple time.
+                                                                                               It is also calles dyanamic biding.Method overrding means call an method override to reslove runtime rather than the comiple time.( Different return type also)
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                                                                                                B-X)What is the difference between method overloading and method overriding?
@@ -479,8 +480,8 @@ C)Inheritance
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              D-II) Advantage of encapsulation
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             1)To make read only or write only application.
-                                                                                              2)control over the data and data security
+	                                                                                             1)To make read only or write only application.
+                                                                                                     2)control over the data and data security
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
                                                                                              7 -  A)What is differnce between abstraction and encapsulation?       
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -493,7 +494,7 @@ C)Inheritance
                         Automible sterring, automobile break,ATM machine
  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-8)   What is class in java?
+8) What is class in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              1)Class is blueprint from which objects are created.
                                                                                               2) Class is logical entity.
@@ -533,8 +534,8 @@ C)Inheritance
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              1) Model
                                                                                              2)JAVA BEAN
-
-                                                                                             3)POJO
+                                                                                             3) Entity
+                                                                                             4) POJO
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 11)What are the other names of filed?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1015,7 +1016,7 @@ C)Protected   -
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                             23- A) Why it is called constructor?
                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            because it create object at the time of loading of class.
+                                                                                           because it construct the value at the time of object creation.
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                             23- B) Does constructor return any value? 
                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1214,6 +1215,7 @@ C)Protected   -
 36)What happen if superclass and subclass having same filed name?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                          Then to access super class we neeed to use super keyword.
+													 This situation is also called as filed hiding.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 37)What is the role of implement keyword?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1236,9 +1238,9 @@ C)Protected   -
                                                                                                      Objects are stored in heap memory.
                                                                                                      Heap- heap is run time data area on whch objects are allocated.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-50)What is memory leak?
+50) What is memory leak?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                   Memory leak is situation occur when object present in the heap memory which are not longer used and garbage collector unable to remove it.They are                        
+                                                                         Memory leak is situation occur when object present in the heap memory which are not longer                                                                            used and garbage collector unable to remove it.They are unnecessarly maintained.                      
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 51)What is the differnce between instance and object?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1249,8 +1251,7 @@ C)Protected   -
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 52)Exaplain the concept of singleton class with examples?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                     singleton class is created to restrict other user from creating object of that class. To make singleton class we need to make constrcutor private.
-                                                                                                     so we are not able to create object of that class. 
+                                                                       singleton class is created to restrict other user from creating object of that class. To make                                                                          singleton class we need to make constrcutor private.so we are not able to create object of that                                                                        class. 
       
                        public class Singleton {
 
@@ -1280,99 +1281,100 @@ C)Protected   -
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 53)Why Pointer is not used in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                      Pointer create confusion in the program and increase ambugity. Java is simple language i.r pointer is not used in java
+                                                                      Pointer create confusion in the program and increase ambugity. Java is simple language i.r                                                                             pointer is not used in java
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 54)What is JIT?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                      JIT stands for just in time compiler. It is part of JVM which used to improve the performance of application.
-                                                                                                      JIT imporve performance of your application by compling byte code at run time.
+                                                                     JIT stands for just in time compiler. It is part of JVM which used to improve the performance of                                                                      application.
+                                                                     JIT imporve performance of your application by compling byte code at run time.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 55)How object is created?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                       Object is created by using new keyword.
+                                                                     Object is created by using new keyword.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 56)What is the difference between constructor and Java Method?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                                    Constructor                                                                                        Method
                                                                                                     1) If we don't provide any constructor in the class then constructor                       1)In case of method compiler don't provide anything.
                                                                                                         provide default constrcutor.                                                                                               
-                                                                                                    2) Constructor called implicitly.                                                                            2)Method called explicity.
-                                                                                                    3)constructor explicity doesn't return any values                                                    3)method return values.
-                                                                                                    4)Constructor name same as class name                                                               4)method name may or may not same as class name
-                                                                                                    5)Constructor is special technique that used to intialize a object                             5)Method is used to explore the object.
+                                                                                                    2) Constructor called implicitly.                                                                  2)Method called explicity.
+                                                                                                    3)constructor explicity doesn't return any values                                                  3)method return values.
+                                                                                                    4)Constructor name same as class name                                                              4)method name may or may not same as class name
+                                                                                                    5)Constructor is special technique that used to intialize a object                                5)Method is used to explore the object.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 57)What is the difference between break and continue?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                Break                                                                                              continue
                                                                                                     1) break is used in swith and loop                                               1)continue is used only loop
-                                                                                                    2)break means directly terminate the program                             2)continue means doesn't terminate the program come to next iteration.
+                                                                                                    2)break means directly terminate the program                                    2)continue means doesn't terminate the program come to next iteration.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 58)What is infinte loop?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------                   
-                                                                                                     Infinite loop occur when condition always evalute true. 
+                                                                   Infinite loop occur when condition always evalute true. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 59)What is the this and super keyoword?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                             this keyowrd is used to referes the current the instance of that class. this keyword  is used to call current class constructor, method and variable
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           59-A) Can we call method using this keyword?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                            Yes we can call method by using this keyword.
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                              whereas super keyword is used to call parent class constructor,method and variable.
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           59-A) Can we call method using this keyword from constructor?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                            Yes we can call method by using this keyword from constructor.
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           59-A)Is it possible to assing reference to this ?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                            No.it's not possible to assign reference to this.
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           59-A) Can we return this from method?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           Yes we can return this from method
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------           
-                                                                                                                           59-A) Can we Pass this as parameter of method?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                            Yes we can pass this as parameter or method
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------           
-                                                                                                                           59-A) Can we use this to refer static member?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                            Yes we can use this to refer static member.
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           59-A) Is it possible to use this in static block?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           No,it's not possible to use this in static block
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           59-A) Can we use this in static methods?
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                           No, we can't use this in static methods.
-                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                            -----------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                                                                                                                              
+                                                                  this keyowrd is used to referes the current the instance of that class. this keyword  is used to                                                                       call current class constructor, method and variable
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                59-A) Can we call method using this                                                                                                                                              keyword?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                  Yes we can call method by using this                                                                                                                                         keyword.
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                                   whereas super keyword is used to call parent class constructor,method and variable.
+                                          ---------------------------------------------------------------------------------------------------------------
+                                                                 59-A) Can we call method using this keyword from constructor?
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                                 Yes we can call method by using this keyword from constructor.
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                                 59-A)Is it possible to assing reference to this ?
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                                 No.it's not possible to assign reference to this.
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                                 59-A) Can we return this from method?
+                                          ----------------------------------------------------------------------------------------------------------------------------
+                                                                 Yes we can return this from method
+                                          -----------------------------------------------------------------------------------------------------------------------           
+                                                                59-A) Can we Pass this as parameter of method?
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                                Yes we can pass this as parameter or                                                                                                                                   method
+                                          ---------------------------------------------------------------------------           
+                                                                59-A) Can we use this to refer static member?
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                                Yes we can use this to refer static member.
+                                          ----------------------------------------------------------------------------------------------------------------------
+                                                               59-A) Is it possible to use this in static block?
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                               No,it's not possible to use this in static block
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                              59-A) Can we use this in static methods?
+                                          -----------------------------------------------------------------------------------------------------------------------
+                                                              No, we can't use this in static methods.
+                                         -----------------------------------------------------------------------------------------------------------------------                                                                                                                                                                                                                                                                            
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 60)What is interpreter?
-                                                                                              Interpreter is used to tranform byte code into machine level assembly instruction.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                             Interpreter is used to tranform byte code into machine level assembly instruction.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 61)What is class loader? and it's types
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                             Class loader is subsystem of jvm. when you run the program it loaded first.
-                                                                                             Types of class loader
-                                                                                             1) application class loader 
-                                                                                             2)bootsstrap  class loader
-                                                                                              3)extension class loader
+                                                            Class loader is subsystem of jvm. when you run the program it loaded first.
+                                                            Types of class loader
+                                                            1) application class loader 
+                                                            2)bootsstrap  class loader
+                                                            3)extension class loader
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 62)How classloader works in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                        class loader scan all the related location of jar files and classes. it also load all the reuired file.
+                                                           class loader scan all the related location of jar files and classes.It also load all the required file.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 63)What is the difference between data and information?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                 Data                                                                                           Information
                                                                                        1) Data is unprocessed row format                                                              1)Information is processd well format
-                                                                                       2) Data is huge in format                                                                             2) Information is short format
-                                                                                       3) Data is not meaningful                                                                             3)Infomation is meaningful
+                                                                                       2) Data is huge in format                                                                     2) Information is short format
+                                                                                       3) Data is not meaningful                                                                     3)Infomation is meaningful
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------         
 64)What are other oops concepts?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------     
@@ -1383,16 +1385,16 @@ C)Protected   -
                                                                                       64- A)What is Association?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                       Association means all objects have there own life and there is no owner
-                                                                                      for eg- A single teacher is assocaited with all student and mutiple teachers assocaited with one student, but both have there own life there is no owner.
+                                                                                      for eg- A single teacher is assocaited with all student and mutiple teachers                                                                                           assocaited with one student, but both have there own life there is no owner.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                      64- B)What is aggregation?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                       Aggregation is specilized form of association means all objects have there own life but there is owner.
-                                                                                      for eg- A single teacher is associated with all student but not with all department, if i delete one deparment then student will not get destroy.
+                                                                                       Aggregation is specilized form of association means all objects have there own                                                                                       life but there is owner.
+                                                                                      for eg- A single teacher is associated with all student but not with all                                                                                               department, if i delete one deparment then student will not get destroy.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                      64- C)What is composition?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                      Composition is specilized form of aggregation. It also called as death relationship. Composition represent has-a relationship. ie. child object doesn't have there own life
+                                                                                      Composition is specilized form of aggregation. It also called as death                                                                                                 relationship. Composition represent has-a relationship. ie. child object doesn't                                                                                       have there own life
                                                                                       If i delete parent object then child object get delete automatically.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                      64- D)How many ways to implement relation in java?
@@ -1402,59 +1404,60 @@ C)Protected   -
                                                                                      2)Aggregation 
                                                                                      3)Inheritance
                                                                                      4)composition 
------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
                                                                                      64- E) Which is more tighlty bond inheritance or composition?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                      Composition is more tightly bond as compared to inheritance.  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                     64- F)When will you prefer composition over inheritance?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                    If there is proper IS-A relationship then we will go for inhertiace if there is some cofusion we will go for composition.
+                                                                                    If there is proper IS-A relationship then we will go for inhertiace if there is                                                                                       some cofusion we will go for composition.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                     64- G)How aggregation and composition are different concepts?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                    because aggregation represent weak relationship whereas composition represent strong relationship.
+                                                                                    because aggregation represent weak relationship whereas composition represent                                                                                         strong relationship.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-65)What is marker interface?
+65) What is marker interface?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-                                                                                     Marker interface is called as empty interface, means it has no fileds and methods.Maker interface is used to provide hint to JVM we are implementing some important 
-                                                                                      feature. It is also called as tagging interface. It used to mark capability of class while implementing interface at a run time.
-                                                                                     we can create our marker interface in java. just create an interface don't write anything inside that.
+                                                                                     Marker interface is called as empty interface, means it has no fileds and                                                                                              methods.Maker interface is used to provide hint to JVM we are implementing some                                                                                        important feature. It is also called as tagging interface. It used to mark                                                                                            capability of class while implementing interface at a run time.
+                                                                                     we can create our marker interface in java. just create an interface don't write                                                                                      anything inside that.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-66)What is object cloning in java?
+66) What is object cloning in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                   Object cloning means create an exact copy of an object. In java we have clone() method.
+                                                                                   Object cloning means create an exact copy of an object. In java we have clone()                                                                                        method.
+										   If you want to clone clone () method then we need implements class by clonable                                                                                        interface
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-67)Write a syntax for creating the subclass of class? 
+67) Write a syntax for creating the subclass of class? 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                    class subclassName extends superclassName
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-68)Which keyword is used to inherit the class or used to define subclass?
+68) Which keyword is used to inherit the class or used to define subclass?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                   extends keyowords is used to extends the class.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-69)Can we access subclass method if we create an object of superclass?
+69) Can we access subclass method if we create an object of superclass?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                    No, we can't accesss subclass method if we create object of superclass.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-70)Can we access both superclass & subclass member if we create an object of subclass?
+70) Can we access both superclass & subclass member if we create an object of subclass?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                   Yes, we can access both subclass and superclass member if we  create object of subclass.
+                                                                                   Yes, we can access both subclass and superclass member if we  create object of                                                                                       subclass.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-71)What happens if both superclass and subclass have a filed with same name?
+71) What happens if both superclass and subclass have a filed with same name?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                  If you create the object of subclass then you need to use super keyword to access super class members.
+                                                                                  If you create the object of subclass then you need to use super keyword to access                                                                                     super class members.
+										  This situation is also known as filed hiding.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-72)What is the use of pointer in c?
+72) What is the use of pointer in c?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                  Pointer is used to store the address of object another variable
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-73)What are the supported platform for java programming language?
+73) What are the supported platform for java programming language?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                java programming lanaguage supports on many platfrom such as windows,linux,ubntu. os etc
+                                                                                java programming lanaguage supports on many platfrom such as windows,linux,ubntu. os                                                                                       etc
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 74)How java enable high performance?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                Java uses JIT compiler. it helps to jvm to improve peformans of application. It hepls to comiple your application at runtime.
+                                                                                Java uses JIT compiler. it helps to jvm to improve peformans of application. It hepls                                                                                 to comiple your application at runtime.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 75)What is the difference between java and c++?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1473,7 +1476,7 @@ C)Protected   -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------                      
 77)Who gives java write once and run anywhere nature?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                Byte code gives java WORA concepts. - byte code is intermediate represenations of java programs allows jvm to transfer byte code into machine level assemebly instrcution.
+                                                                                Byte code gives java WORA concepts. - byte code is intermediate represenations of java                                                                                  programs allows jvm to transfer byte code into machine level assemebly instrcution.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 78)Is Empty.Java file name valid source file name?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1488,12 +1491,12 @@ C)Protected   -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 81)What is this keyword in java? and 81)What is uses of this keyword in java? and 93)Can we assign referene to this variable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                 This is reference variable that refer current instance of class. This keyword used to call current class method, variable and constructor. No we can't assign reference to 
+                                                                                 This is reference variable that refer current instance of class. This keyword used to                                                                                  call current class method, variable and constructor. No we can't assign reference to 
                                                                                  because this is final reference variable.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 82)Why doesn't java support pointers?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                 Pointer create consufusion in the program and increase ambugity. We know that java is simple language.
+                                                                                 Pointer create consufusion in the program and increase ambugity. We know that java is                                                                                  simple language.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 83)What is super in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1502,14 +1505,16 @@ C)Protected   -
 84) Can we have virtual function in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                   Yes we have virtual function in java.
+										  All non static method are virtual function.only final and private method are 
+										  non virtual.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 85)Why java is not 100% pure object orinted?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                 Because java support primitive data type which are not objects such as int,byte,short ot etc.
+                                                                                 Because java support primitive data type which are not objects such as int,byte,short                                                                                   etc.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 86) What is product based and service based companies?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                 Product based companies design their own product or application before client approch them or reaches them. whereas service based companies work only if
+                                                                                 Product based companies design their own product or application before client approch                                                                                  them or reaches them. whereas service based companies work only if
                                                                                  client reaches them approche them for specific reuqiements and needs.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 87)What is procudure language?
@@ -1518,11 +1523,12 @@ C)Protected   -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 88) What is the difference between equals() and (==)equal to?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                equals() method is used for content comparision where as equal to(==) operator is used for address comparision.
+                                                                                equals() method is used for content comparision where as equal to(==) operator is used                                                                                  for address comparision.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 89)What is wrapper class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                Wrapper class is used to convert primitive data type into object. 
+                                                                                Wrapper class is used to convert primitive data type into object.
+										All Wrapper classes are Immutable classes.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                  Primitive data type                                             objects
                                                                                  1) int                                                                1)Integer
@@ -1535,365 +1541,362 @@ C)Protected   -
                                                                                  8)char                                                               8)Character
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                89- A)What is autoboxing and unboxing?
-                                                                               Autoboxing means the automatic conversion of primitive data type into objects called as autoboxing 
+                                                                               Autoboxing means the automatic conversion of primitive data type into objects called as                                                                                  autoboxing 
                                                                                for eg- int to Integer
                                                                                Unboxing means at automatic conversion of object into primitive data type
                                                                                for eg- character to char
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 90)What is setter and getter in Java?
-                                                                                                                                                 ----------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 setter and getter are two convetional methods in java. setter is used to set the values whereas getter is used to read the values.
+-------------------------------------------------------------------------------------------------- 
+                                                                                setter and getter are                                                                                                                                                 two convetional methods in java. setter is used to set the values whereas getter is                                                                                   used to read the values.
                                                                                                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 91) What is Java instance of operator?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                  Instance of operator means comparision operator compare instance with type.
+                                                                               Instance of operator means comparision operator compare instance with type.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 92) How to make read only class in java? and How to make Write only class in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 To make class read only make all member of class is private and use only getter method. So we don't have setter method to write                                                                                                                                                  the values. whereas
-                                                                                                                                                 To make class write only we need to make all member of class is private and use only setter method. so we are not able to read                                                                                                                                                  the values.
+                                                                              To make class read only make all member of class is private and use only getter method.                                                                               So we don't have setter method to write the values. whereas To make class write only we                                                                               need to make all member of class is private and use only setter method. so we are not                                                                                  able to read the values.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 93) How can we access same class in another class in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) By using relative path.or by using fully qulified name.  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                 1) By using relative path.or by using fully qulified name.                            ----------------------------------------------------------------
 94) Do I need to import Java lang. package?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 No, we don't need to improve java. lang package it import by default.
+                                                                              No, we don't need to improve java. lang package it import by default.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 95) What is static import ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                  static import provide static class dictionary or direclty . so we can import static member class directly.
+                                                                              static import provide static class dictionary or direclty . so we can import static                                                                                    member class directly. We don't need to write Interface or class name to access 
+									      the static varible,methods.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 96) Why charArray() is used to stored the password over the string?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                  If you store the password in string in saves for long time and if anyone have dump memory access they can access it make it                                                                                                                                                       clear. But if you char array() to store the password it allows to make it clear after done with it.
+                                                                              If you store the password in string in saves for long time and if anyone have dump                                                                                     memory access they can access it make it clear. But if you char array() to store the                                                                                   password it allows to make it clear after done with it.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 97) Name of some classes present in java util.regex package?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 1) Pattern classes                                                                                                                                                                                                                                                                                                                       2)Matcher classes
+                                                                              1) Pattern classes                                                                                                                                                                                                                                                                                                                           2)Matcher classes
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 98) How metacharacter different from ordinary character?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Metacharacter has special meaning in regular expression language. To behave metacharacter as ordinary character we need to                                                                                                                                                   escape them with back   slash                                                                                                                                                        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-99)What are the advantages of java inner classes?
+                                                                             Metacharacter has special meaning in regular expression language. To behave metacharacter                                                                              as ordinary character we need to  escape them with back   slash                            -----------------------------------------------------------------------------------------------------------------------------
+99) What are the advantages of java inner classes?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                    1) Inner classes makes code more redable and maintainable.
-                                                                                                                                                    2) Code optimization - we need to write less code.                                                                                                                  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-100)What is nested class?
+                                                                             1) Inner classes makes code more redable and maintainable.
+                                                                             2) Code optimization - we need to write less code.                                        -------------------------------------------------------------------------------------------
+100) What is nested class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1)nested class means a class declared inside another class. it can access any outside class member or method including private                                                                                                                                                  also. 
+                                                                                  1)nested class means a class declared inside another class. it can access any                                                                                           outside class member or method including private also. 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-101)What is the disadvantage of nested class?
+101) What is the disadvantage of nested class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                     1) Nested class increase no. of classes used by developer.
-                                                                                                                                                 2) IDE software less support to nested class that's why developer not able to work on it.
+                                                                                  1) Nested class increase no. of classes used by developer.
+                                                                                  2) IDE software less support to nested class that's why developer not able to work                                                                                       on it.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 102) What type inner and non static nested classes in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) Local inner class             -  A class declared inside method
-                                                                                                                                                  2) Member inner class         - A class declared outside the method and inside the class
-                                                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 102- I) what is anonymous inner class?
-                                                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 3) Anonymous inner class    - A class declared without using name and jvm decides it's name.It used to provides support to                                                                                                                                                              imeplementaion for    interface, extends a class. 
+                                                                                  1) Local inner class             -  A class declared inside method
+                                                                                  2) Member inner class         - A class declared outside the method and inside the                                                                                        class
+                                                ----------------------------------------------------------------------------------------------------------------------
+                                                                                  102- I) what is anonymous inner class?
+                                                ----------------------------------------------------------------------------------------------------------------------
+                                                                                  3) Anonymous inner class    - A class declared without using name and jvm decides                                                                                      it's name. It used to provides support to implementaion for interface, extends a                                                                                      class. 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 103) Is there any difference betweeen nested class and inner class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) We can say that inner class is part of nested class
+                                                                                 1) We can say that inner class is part of nested class
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 104) Can we access non final local variable inside local inner class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1) No we can't access non final local variable inside local inner class
-                                                                                                                                                  2) Local variable used with only final keyword no any other
+                                                                                1) No we can't access non final local variable inside local inner class
+                                                                                2) Local variable used with only final keyword no any other
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 105)What is nested interface?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1)nested interface means a interface declared inside another interface called nested interface.
+                                                                               1)nested interface means a interface declared inside another interface called nested                                                                                  interface.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 106)Can a class have a interface?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1)Yes a class have an interface
+                                                                               1)Yes a class have an interface
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 107)Can a interface have a class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1)Yes they are static internally
+                                                                               1)Yes they are static internally
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 108)What is garabage collection?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) Garbage collection is part of jvm.
-                                                                                                                                                 2) In java we don't need to remove unreferenced object automatically, garbage collector automatically remove that and make free                                                                                                                                                  space for jvm
+                                                                               1) Garbage collection is part of jvm.
+                                                                               2) In java we don't need to remove unreferenced object automatically, garbage collector                                                                                  automatically remove that and make free  space for jvm
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 109)What is gc() method?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                                                                                                                                                                                 1) gc() method called garbage collector
-                                                                                                                                                 2) Garbage collector is process of cleaning or remove unreferenced automatically and make free space for jvm.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                                                                                                                                                     1) gc() method called garbage collector
+                                                                              2) Garbage collector is process of cleaning or remove unreferenced automatically and                                                                                     make free space for jvm.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 110)How garbage collection is controlled?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                   1) Garbage collection is controlled by jvm
-                                                                                                                                                 2) If there is no enough space or memory running slow then jvm automatically calls garbage collector and remove unreferenced                                                                                                                                                  object. and make free space 
-                                                                                                                                                     3) Also we can externally class system.gc() method
+                                                                              1) Garbage collection is controlled by jvm
+                                                                              2) If there is no enough space or memory running slow then jvm automatically calls                                                                                       garbage collector and remove unreference object. and make free space 
+                                                                              3) Also we can externally class system.gc() method
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 111)How can an object unreferenced?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) By assingin one null to reference
-                                                                                                                                                 for eg- Employee e =new Employee(); e=null;
-                                                                                                                                                  2) By assinging one object to another 
-                                                                                                                                                  for eg- Employee e1=new Employee();
-                                                                                                                                                 Employee e2=new Employee(); 
-                                                                                                                                                  e1=e2;
-                                                                                                                                                 3) By annonyous object.
+                                                                              1) By assingin one null to reference
+                                                                               for eg- Employee e =new Employee(); e=null;
+                                                                              2) By assinging one reference variable to another reference variable
+                                                                              for eg- Employee e1=new Employee();
+                                                                              Employee e2=new Employee(); 
+                                                                              e1=e2;
+                                                                               3) By annonyous object.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 112) What is the purpose of finalize method?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) finalize method executed just before the object is garbage collected.
-                                                                                                                                                 2) It is process of cleaning when we create object without using new keyword that time finilize method used.I tTo make free                                                                                                                                                                   space for JVM 
-                                                                                                                                                 3) It remove unreferenced object automatically make free space for JVM 
+                                                                              1) finalize method executed just before the object is garbage collected.
+                                                                              2) It is process of cleaning when we create object without using new keyword that time                                                                                   finilize method used.I tTo make free space for JVM 
+                                                                              3) It remove unreferenced object automatically make free space for JVM 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 113) What is the purpose of runtime class ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) Runtime class is introduced in java to interact with runtime enviroment
+                                                                              1) Runtime class is introduced in java to interact with runtime enviroment
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 114) What do you understand by IO stream?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) IO stream stands for input output stream.
-                                                                                                                                                 2) Stream means element flows from source to the destination 
-                                                                                                                                              //   3) It remove unreferenced object automatically make free space for JVM 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-115) What the difference between reader writter class hierarchy and input output stream class hierarchy?
+                                                                             1) IO stream stands for input output stream.
+                                                                             2) Stream means element flows from source to the destination 
+                                                                              //   3) It remove unreferenced object automatically make free space for JVM 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------  115) What the difference between reader writter class hierarchy and input output stream class hierarchy?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) reader/wrtiter class hierarchy is  character oriented
-                                                                                                                                                 2) input output stream class hierachy is byte oriented.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-116) Can we call main method of class from another class ?
+                                                                             1) reader/wrtiter class hierarchy is  character oriented
+                                                                             2) input output stream class hierachy is byte oriented.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------  116) Can we call main method of class from another class ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) Yes we can call main method of class from another class ny classname.main()
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-117) Why setter and getter method better than the directly chaining and retrieving fields?
+                                                                             1) Yes we can call main method of class from another class ny classname.main()
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------  117) Why setter and getter method better than the directly chaining and retrieving fields?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                   1) Because methods are participate in runtime polymorphism member are not.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+                                                                            1) Because methods are participate in runtime polymorphism member are not.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 118) How to generate setter and getter method direclty on eclipse?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1) Right click ---> source----> generate setter and getter    
+                                                                            1) Right click ---> source----> generate setter and getter    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 119) What type of parameter passing does java support?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) pass by value or call by value
+                                                                            1) pass by value or call by value
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 120) Primitive data type are passed by values or passed by reference?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1)primitive data type are paased by values.
+                                                                            1)primitive data type are paased by values.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 121) Are object passes by values or passed by references?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1)Objects passed by values.
+                                                                            1)Objects passed by values.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 122) What modifier used with inner class that memeber of outer class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1)We can use public ,private,protected,final,static,abstract etc
+                                                                            1)We can use public ,private,protected,final,static,abstract etc
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 123) What is the difference between public and non public class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1)public means access within the package and outside the package also whereas
-                                                                                                                                                  non public means we can't access from outside 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-124) What modifier used with top level class?
+                                                                            1)public means access within the package and outside the package also whereas
+                                                                            non public means we can't access from outside 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------  124) What modifier used with top level class? // *****
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1)Public, final and abstract 
+                                                                           1)Public, final and abstract 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 125)What's name of  top level class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1)object class is top level class in java
+                                                                          1)object class is top level class in java
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 126)What's upcasting in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) Reference variable of parent class referes to the objects of child class
+                                                                         1) Reference variable of parent class referes to the objects of child class
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 127)What is most common predefined final class object used in your code?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                   1) String
+                                                                         1) String
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 128)When we need to use implement and extends?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 1) A class extends class
-                                                                                                                                                 1) A class implements interface
-                                                                                                                                                 1) A interface extends interface
+                                                                           1) A class extends class
+                                                                           1) A class implements interface
+                                                                           1) A interface extends interface
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 129)What is JAX-B?(java architecture for xml binding)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 JAXB stands for java architecture for xml binding, It provide two mechnism marshling and unmarshling.
-                                                                                                                                                  marshling(write) means convert java object into xml. whereas unmarshling(read) means convert  xml into java object.                                                                                                                                                                                                                                                                                                                                            
+                                                                           JAXB stands for java architecture for xml binding, It provide two mechnism marshling and                                                                              unmarshling.
+                                                                           marshling(write) means convert java object into xml. whereas unmarshling(read) means                                                                                  convert  xml into java object.                                                                                                                                                                                                                                                                                                                                            
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 130) What is the reflection in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  Reflection means modifiy the behavoiur of class,method,interface at a runtime. 
+                                                                          Reflection means modifiy the behavoiur of class,method,interface at a runtime. 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 131) How to not allow serilization of attributes of class in java ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 How to prevent serilization of subclass. There is no direct way to avoid serilization of subclass we need to implement 
-                                                                                                                                                 writeObject and readObject methods and throws NotSerilizableException.
+                                                                           How to prevent serilization of subclass. There is no direct way to avoid serilization of                                                                              subclass we need to implement 
+                                                                           writeObject and readObject methods and throws NotSerilizableException.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 132) What happens if there are multiple main methods inside one class in Java??
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  Yes , we have multiple main method in java class. But jvm find the singnature such as public static void main(String agrs[]) and                                                                                                                                                       igonre other dependecy.
+                                                                          Yes , we have multiple main method in java class. But jvm find the singnature such as public                                                                            static void main(String agrs[]) and igonre other dependecy.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 133) Is it possible to import the same class or package twice in Java and what
       happens to it during runtime?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                 Yes, you can import same package or class twice in the application.But JVM loads only one at a time.
+                                                                          Yes, you can import same package or class twice in the application.But JVM loads only one at                                                                            a time.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 134)  What are the possible ways of making object eligible for garbage collection (GC)
        in Java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  1) By assigining one reference varibale to another reference variable
-                                                                                                                                                  Employee e1=new Employee();
-                                                                                                                                                  Employee e2=new Employee():
-                                                                                                                                                  e1=e2;
+                                                                         1) By assigining one reference varibale to another reference variable
+                                                                         Employee e1=new Employee();
+                                                                         Employee e2=new Employee():
+                                                                         e1=e2;
 
-                                                                                                                                                   2)Assiging null to the referene
-                                                                                                                                                  Employee e1=null;
+                                                                         2)Assiging null to the referene
+                                                                         Employee e1=null;
                                                                                                                                         
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 135) What is desgin pattern?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  Design pattern is predefined solutins for specific task and problems.
-                                                                                                                                                 Types of design pattern such as
-                                                                                                                                                 1)Core java design pattern
-                                                                                                                                                 2) JEE design pattern
+                                                                         Design pattern is predefined solutins for specific task and problems.
+                                                                         Types of design pattern such as
+                                                                         1)Core java design pattern
+                                                                         2) JEE design pattern
 
-                                                                                                                                                 1)Core java design pattern
-                                                                                                                                                  A)Strucutoral desing pattern
-                                                                                                                                                  I)Singleton desing pattern
-                                                                                                                                                  II)Factory design pattern- Interface of class convert into another interface if client wants.
-                                                                                                                                                  B)Creational design pattern
-                                                                                                                                                  c)Adapter desgin pattern - A subclass is responsible for create an object of instance class.
-                                                                                                                                                  C)Behavoirual desing pattern
-                                                                                                                                     I)
+                                                                         1)Core java design pattern
+                                                                         A)Strucutoral desing pattern
+                                                                         I)Singleton desing pattern
+                                                                         II)Factory design pattern- 
+									 Interface of class convert into another interface if client wants.
+                                                                         B)Creational design pattern
+                                                                         c)Adapter desgin pattern - A subclass is responsible for create an object of instance class.
+                                                                         C)Behavoirual desing pattern
+                                                                         I)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 136) When we should use if statement over if along with else if?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                  multiple if statement used when we want to check multiple condition no matter if previous if statement was true or false.
-                                                                                                                                                  When we want to use if along with else that time we check previous mutilple condition based on previous one.
+                                                                         multiple if statement used when we want to check multiple condition no matter if previous if                                                                          statement was true or false.
+                                                                         When we want to use if along with else that time we check previous mutilple condition based                                                                            on previous one.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 137) What are the immutable class in java ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                  All Wrapper class are immutable in java such as Boolean,short,Byte,Integer,Long,Double,Character and String
+                                                                         All Wrapper class are immutable in java such as                                                                                                                        Boolean,short,Byte,Integer,Long,Double,Character and String
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 138) What is serializable and deserilization in java and it's advantages?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 To perfrom serilizable we need to convert object into byte stream if you have primitive data type by using wrapper class
-                                                                                                                                                  we can convert it into object.
-                                                                                                                                                 The main purpose of serlizable is travel the state of object over the network.
-                                                                                                                                                 Deserilization is reverese process of serilization, to perform deserilization we need to convert byte stream into object.
+                                                                        To perfrom serilizable we need to convert object into byte stream if you have primitive data                                                                           type by using wrapper class we can convert it into object.
+                                                                        The main purpose of serlizable is travel the state of object over the network.
+                                                                         Deserilization is reverese process of serilization, to perform deserilization we need to                                                                              convert byte stream into object.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 139) What are types of marker interface ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                1) serilizable interface
-                                                                                                                                                2) clonable interface
-                                                                                                                                                3) remote interface
-                                                                                                                                                we don't need to implements any method from this interface because it's empty interface. 
+                                                                        1) serilizable interface
+                                                                        2) clonable interface
+                                                                        3) remote interface
+                                                                        we don't need to implements any method from this interface because it's empty interface. 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 140) What is JSON ?
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                JSON stands for java script object notations it is light weight format for storing and transporating the data.
+                                                                              JSON stands for java script object notations it is light weight format for storing and                                                                                 transporating the data. REST mailny used JOSN format to transfer the data.
+																																				
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 141) What is the latest version of java and which one are you used ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 I have worked on java 1.7 and latest version of java is 16
+                                                                               I have worked on java 1.7 and latest version of java is 16
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 142) Which version of springboot and hibernate are you worked?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Spring Boot 2.6.2 and hibernate orm(5.4.0)
+                                                                               Spring Boot 2.6.5 and hibernate orm(5.4.0)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 143) If i have 1 lakh element and i want to find out the index of any element how can you do that?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 we can indexOf() method.
+                                                                               we can indexOf() method.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 144 What would you rate yourself in java ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 I rate myselt 8 out of 10 in java
+                                                                               I rate myselt 8 out of 10 in java.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 145) What is generic ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 generic means parameterized type. It is type safe,checked at compile time. we don't need of typecasting. 
-                                                                                                                                                 It is represnted by angular bracket
+                                                                               generic means parameterized type. It is type safe,checked at compile time. we don't                                                                                    need of typecasting. 
+                                                                               It is represnted by angular bracket
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is JSP ?
+146) What is JSP ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                JSP stands for java sever pages. 
+                                                                               JSP stands for java sever pages.It used to create the web application just like servlet
+									       technology.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) We need to create object of both parameterized and default constructor ? or any one can call both?
+147) We need to create object of both parameterized and default constructor ? or any one can call both?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 
+                                                                                Yes we required both to create both of objects.                                                                 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) How to use logger in java program also in spring Boot application?
+148) How to use logger in java program also in spring Boot application?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 In spring Boot application simply we need to add dependency lombok and to reduce the boiler plate code.also 
-                                                                                                                                                 we simpley we @slf4j annonations.
-                                                                                                                                                 In normal java class we need to use Logger.
+                                                                          In spring Boot application simply we need to add dependency lombok and to reduce the                                                                                   boiler plate code.also we use @slf4jannonations. 
+									  In normal java class if you using logger then you need to one logger class.
+									  public LoggerImpl{
+									  public static getLogger(Class className){
+									  return Logger.getLogger(Logger.Global_Logger_Name);
+									  }
+									  }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is coupling and it's types?
+149) What is coupling and it's types?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 coupling describe realtions between the two models. 
-                                                                                                                                                 There are two types of coupling loose coupling and tight coupling.
-                                                                                                                                                 1)loose coupling - A class doesn't dependes upon any other class 
-                                                                                                                                                 2) Tight coupling - A class dependes upon another class.
+									  coupling describe realtions between the two models. There are two types of coupling loose 									      coupling and tight coupling.
+									  1)loose coupling - A class doesn't dependes upon any other class 
+									  2) Tight coupling - A class dependes upon another class.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is Cohesion?
+150) What is Cohesion?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 cohesion decribe how single class is created so it's become easy to test or manage your application.
+                                                                     cohesion decribe how single class is created so it's become easy to test or manage your 									     application.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is adhesion ?
+151) What is adhesion ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Adhesion glues different things together.
+									   Adhesion glues different things together.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is apache tomcat?
+152) What is apache tomcat?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Apache tomcat is most common predefined sever for an internet tp serve the java sever pages.
-
-
-144) what is scalling in java
+									  Apache tomcat is most common predefined sever for an internet tp serve the java sever pages.
+153) what is scalling in java
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is DTO?
+154) What is DTO?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                               DTO stands for data tranfer object. It carries data between the process.
+									  DTO stands for data tranfer object. It carries data between the process.
 							 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137)How many ways to call garbage collector in java?
+155)How many ways to call garbage collector in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                              There are two ways to call garbage collector in java
-							      1) By using runtime class - we can call the getRuntime() method
-							      2) By using System class - we need to call system call static gc() method
+									  There are two ways to call garbage collector in java
+									  1) By using runtime class - we can call the getRuntime() method
+									  2) By using System class - we need to call system call static System.gc() method
 							      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is Externlization?
+156) What is Externlization?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                               Externalization is used because serlization is not more effective. Externlization means custom
-							       serilization. It useful when we want to serilizable a part of an object.
+									  Externalization is used because serlization is not more effective. Externlization means 									    custom serilization. It useful when we want to serilizable a part of an object.
 							       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is the difference between serilization and externlization?
+157) What is the difference between serilization and externlization?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                Serilization means marker interface we don't have any methods or fileds. whereas externilization                                                                      interface contains two methods writeExternal() and readExternal() methods .
 							       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) Which method is used for serlization of an object?
+158) Which method is used for serlization of an object?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                WriteObject() method of objectOutputStreamClass() used to serlize an object.	
 							       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is thread safe and unthread safe?
+159) What is thread safe and unthread safe?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                Thread safe means only one thread execute at a time.(Sychronized)
 							       Non thread safe means multiple thread execute at a time.(Non Snychroized)
 							       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) How can one do custom serilization ?
+160) How can one do custom serilization ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                transient keyword is used to skip member while serlizing an object. So if you are using transient 
 							       it may be chnances of data loss.So we need to use custom serlization and to enable custom seriliza
@@ -1901,55 +1904,53 @@ C)Protected   -
 							       public void readObject() throws Exception methods.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-138) How to avoid serialization of child class ?
+161) How to avoid serialization of child class ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                There is no direct way to avoid serlization of child class. we need to use writeObject() and                                                                          readObject() methods and throws NoSerilizationExpetion.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-139)What are the benifits of immutable?
+162) What are the benifits of immutable?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                1) Thread safe
 							       2) immutable means easier to desing and implements.
 							       
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-139)What are the difference between length and legnth() method in java?
+163)What are the difference between length and legnth() method in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                length property is used in array to check the length of array whereas
 							       length() method is used to check length of String objects.
 							       
-							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-139) How to measure length of arrayList?
+164) How to measure length of arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                if we want to measure length of array then we will use length property but in case arrayList
 							       length is not supported so we use size() method.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-139) What is ASCII Code?
+165) What is ASCII Code?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                ASCII standa for americian standard code for information interchange. In thid user uses number 
 							       to represent character.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-139) What is the difference between character constant and String constant?
+166) What is the difference between character constant and String constant?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                Character constant means written in single quatos whereas String constants means written in double                                                                    quatos.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-139) What are constants and how to create constants in java? ?
+167) What are constants and how to create constants in java? ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                Constant means once we assign the values we are not able to change it. to make constant
 							       use static and final .
 							       for eg- static final String collegeName="Sinhgad";
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-141) Explain Java Coding Standards for classes or Java coding conventions for 
- classes?
-141) Explain Java Coding standards for interfaces?
-141) Explain Java Coding standards for Methods?
-141) Explain Java Coding Standards for variables ?
-141) Explain Java Coding Standards for Constants?
+168) Explain Java Coding Standards for classes or Java coding conventions for classes?
+168) Explain Java Coding standards for interfaces?
+168) Explain Java Coding standards for Methods?
+168) Explain Java Coding Standards for variables ?
+168) Explain Java Coding Standards for Constants?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Classes name always start with uppercase letter it and it must be noun. 
 Interface name always start with Uppercase letter.
@@ -1957,118 +1958,113 @@ Method name always start with lowercase letter and it follow the camelcase.
 variable always start with lowercase letter
 Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-142) What is Instance of operator?
+169) What is Instance of operator?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                Instance of operator means compare instance with type.It also known as comparision operator.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-143) What is null in java or null is keyowrd in java?
+170) What is null in java or null is keyowrd in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                Null is not keyword in java.Null means nothing is there even no space also.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-144) Can we have multiple classes in single file?
+171) Can we have multiple classes in single file?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                Yes we have mutiple classes in single file.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-145) Can we have more than one package statement in source file?
+172) Can we have more than one package statement in source file?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                No, we don't have more than one package statement in source file. If you try to declare it will show 
 							       compile time error.
 							       
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-145) Can we have more than one package statement in source file?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                               No, we don't have more than one package statement in source file. If you try to declare it will show 
-							       compile time error.
-							       
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-145) Can we define package statement after import statement in java?
+174) Can we define package statement after import statement in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                               no we can't define package statement after the import statement.
 							      
 							      
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-145) Explain naming conventions for packages ?
+175) Explain naming conventions for packages ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                              package name always in small letter.
 							     package must be start with reverse company domain name then project name
 							     for eg- com.xoriant.bank.model
 							     							     
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-145) Explain the importance of import keyword in java?
+176) Explain the importance of import keyword in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             import keyword is used to import single class or package in our source file.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-145)What is classpath ?							    
+177) What is classpath ?							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             Classpath means location of your .class file saves.
 							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-145)What is jar?							    
+178) What is jar?							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             jar stands for java archieve file.It contains .class files and other resource files in your application.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145)What is the scope or life time of instance variables ?	
+179) What is the scope or life time of instance variables ?	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             When we create object by using new keyowrd it allocate memeory. instance variable have memory
 							    till they garbage collected.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-146) Explain the scope or life time of class variables or static variables?
+180) Explain the scope or life time of class variables or static variables?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             static variable have memeory till the life cycle time of your application.
 							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145) Explain scope or life time of local variables in java?
+181) Explain scope or life time of local variables in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             local variable is declared inside the method,block,and constructor.
 							    once method is excuted the local varible get deleted from memeory.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145)Explain about static imports in java?
+182) Explain about static imports in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             Static import means we can call static variable with class or interface name.
 							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145)Explain Enumeration ?
+183) Explain Enumeration ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             Enumeration feature added in java 1.5. Enumerations means set of constants. It declared by using
 							    keyword enum. Inside the enum class member public,static and final.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145)Explain restrictions on using enum?
+184)Explain restrictions on using enum?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             we can't instantiate a enum. we can't extends enum.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145)Explain field hiding in java?
+185)Explain field hiding in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             If super class and subclass having same filed then filed hiding happen. To call super class
 							    variable we need to use super keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145)Can we use switch statement with Strings?
+186)Can we use switch statement with Strings?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             yes we can switch statement with strings.							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145) Explain about object oriented programming and its features?
+187) Explain about object oriented programming and its features?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                            object oriented programming language means every is made up of object. it follows bottom
 							   up approch.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-145) List out benefits of object oriented programming language?	
+188) List out benefits of object oriented programming language?	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                           1) code reusablity
 							  2) easy maintance
 							  3) realible
 ------------------------------------------------------------------------------------------------------------------------------------------------------		
-145) Define Iterator and methods in Iterator?							  
+189) Define Iterator and methods in Iterator?							  
 ------------------------------------------------------------------------------------------------------------------------------------------------------ 
-                                                          Iterator is used to travel element in only forword directions.
+                                                          Iterator is used to perfrom remove operations while traversing the element.Iterator is used to travel                                                                 element in only forword directions.
 							  Iterator is used in list,set,map.
 							  The methods of Iterator are
 							  1) boolean --- hasNext()  return true if there is next element
 							  2) Exception --- next() it retunt the next element if ele no there it return noSuchElementException
 							  3) void remove()---It remove the element.
 ------------------------------------------------------------------------------------------------------------------------------------------------------		
-145) Define ListIterator and methods in ListIterator?							  
+190) Define ListIterator and methods in ListIterator?							  
 ------------------------------------------------------------------------------------------------------------------------------------------------------ 
                                                           ListIterator is used to travel element in both forward and reverse direction.
 							  It used in onlt List. 
@@ -2079,7 +2075,7 @@ Constant always write with uppercase and by using _ for new keyword.
 							  
 							  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-145)  What are alternatives to java serialization?
+191)  What are alternatives to java serialization?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                            There are two alternatives of java serialization. 
 							   1) xml based - xml based is done by using JAXB( java architecture for xml binding) 
@@ -2089,34 +2085,38 @@ Constant always write with uppercase and by using _ for new keyword.
 							     and transporting the data.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
- 145) How to make object serializable in java?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------
+192) How to make object serializable in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                            first we need to implement our class by serlizable interface.
 							   objectOutputStream is used for write the objects, wheras objectInputStream is used to read the objects.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
- 146) Can we serialize static variables in java	
+ 193) Can we serialize static variables in java	
  ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                            No we can't seriliaze static variable in java, because static varibale are class variable not an
 							   objects. whereas serlizable mechanism is used for only to travel the state objects over the network
 							   not a class state.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-147) When we serialize an object does the serialization mechanism saves its references too?
+194) When we serialize an object does the serialization mechanism saves its references too?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                          when we serialize an object then the refer must be serilizable> If we don't make this we will get 
 							 NoSerlizableException.
 							 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------	
-148) If we don’t want some of the fields not to serialize How to do that?	
+195) If we don’t want some of the fields not to serialize How to do that?	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                         There is no direct way to avoid serilization of your objects we need to use readObject and writeObject
 							methods and throws NotSerliableException.
 							otherwise we need to use transieny keyword so it zero or null values.
+							
+----------------------------------------------------------------------------------------------------------------------------------------------------------	
+196) How to achieve method hiding?	
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                        method hiding is acheived by using method overding by making method static.							   
 							   
-							   
-======================================================================================================================================================================  ======================================================================================================================================================================    Decision or control making statement,Jump statement
-======================================================================================================================================================================  ======================================================================================================================================================================    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+======================================================================================================================================================================  ======================================================================================================================================================================                                              Decision or control making statement,Jump statement
+======================================================================================================================================================================  ======================================================================================================================================================================  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 109)What's loop?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                       loop means execute set of instruction repeatetively when some condition becomes true.
@@ -2145,7 +2145,7 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                  1)Continue means doesn't terminate the program come to next iteration
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)What's loop?
+109)What is upcasting ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                  1) Reference variable of parent class referes to the objects of child class
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
