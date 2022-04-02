@@ -1756,7 +1756,7 @@ To avoid this problem we need to use Iterator
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2) Stream API
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Stream API used to flow element from source to the destination.Stream API doesn't used to store the element.It takes input from collection and element visited only once in thier life.
+   Stream API used to flow element from source to the destination.Stream API doesn't used to store the element.It takes input from collection and element visited only    once in thier life.It used to modify the resource.
    There are two types of Stream API
    1) Parallel Stream API
     Parallel Stream API means we can perform multiple operations at a time. It is platform dependent. The performs of parallel Stream API is faster than the 
@@ -1765,6 +1765,9 @@ To avoid this problem we need to use Iterator
    2) Sequential Stream API
       Sequential Stream API is used to perform only one operations at a time. It is platform independent. The performs of sequential stream API is slower than the 
       parallel stream API. It maintain the order.
+      
+   The methods of stream such as
+   map(),filter(),disctint(),toarray(),collect(),max(),min(),findfirst(),findAny(),forEach(),limit()
       
    class OddNum{
    public static void main(String args[]){
@@ -1782,9 +1785,9 @@ To avoid this problem we need to use Iterator
    
    Advantages of streamAPI- 1) It reduce lot's of lines of codes.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3) Default and Static Method 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an       interface it must implement in subclass so which is not good. In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
    that default method they can call such as interface.super.method() name.
 
@@ -1844,7 +1847,7 @@ To avoid this problem we need to use Iterator
      }
    }
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 5) For Each Method
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    For Each Method is used to iterate the element.
@@ -1867,9 +1870,9 @@ To avoid this problem we need to use Iterator
       }
    }
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 6) Method Reference
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Method reference is compact and easy form of lambda expression. Method reference is used to reference method of fuctional Interface.
    Types of Method Reference
    1) Reference to the static method 
@@ -1894,9 +1897,10 @@ To avoid this problem we need to use Iterator
    
    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-7) Optional Class- 
+7) Optional Class
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 In java 1.8 Optional class is defined to handel the nullpointer exception. It is final class.
+The method present in optinal class is isPresenet() ,get(), orElse()
 
 for.eg you fetch the data from database by using id,name and the id or name is not present in the database then they will show null pointer exception.
 ======================================================================================================================================================================
@@ -1964,19 +1968,23 @@ public class Interview {
 	}
 }                 
                  
----------------------------------------------------------------------------------------------------------------------------------------------------------------------8) Map 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------      Map is used to perfrom the intermediate operations.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8) Map 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------      Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
      for eg- convert string to lower case to upper case, multiply number by values. etc.
      
      
----------------------------------------------------------------------------------------------------------------------------------------------------------------------9) Predicate 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Predicate is function interface, return type of predicate is boolean.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9) Predicate 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Predicate is function interface, return type of predicate is boolean. It return true or false value
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------10) Stream 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Stream means element flows from source to the desitinations. It doesn't used to store the element, It takes input from the collections.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10) Stream 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Stream means element flows from source to the desitinations. It doesn't used to store the element, It takes input from the collections.It mainly used to modify
+   the resources.
 
-11)What are method present in the optional class?
+11) What are method present in the optional class?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) isPresent()  -------------return type boolean 
 2) get()         
@@ -2024,7 +2032,7 @@ public class Interview {
 
 16) What are the advantages of java 11?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) .class filw will not get create
+1) .class fil3 will not get create
 2) we don't need to compile your application.
 
  17) Can a functional interface extend/inherit another interface?
@@ -2088,7 +2096,7 @@ ValueOf() method convert the data into human readable format. String Valueof() m
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Intermediate operations doesn't produce the end result, it return the Stream.Intermediate operator are lazy loading. 
  intermediate operations methods such as map(),filter(),distinct(),skip()
-2) Terminal operations produce the endd result and it doesn't return the stream. Terminal operator are eargely loading.
+2) Terminal operations produce the end result and it doesn't return the stream. Terminal operator are eargely loading.
 Terminal operations methods such as toarray(),count(),collect(),forEach(),findFirst(),findAny()
 
 27) What are the most commonly used Intermediate operations?
