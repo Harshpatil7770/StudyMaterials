@@ -1304,7 +1304,7 @@ No we can't make main thread as daemon thread.
 
 
 7)Explain Internal working of HashMap with examples?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HashMap represent key,value pair.Hashmap allows no. of null value. Hashmap is non-synchronized and no thread safe.
   Hashmap allows duplicate value but only unique keys.
   When we create the object of HashMap inside the memory table is created with default capacity is 16 and load factor is .75.
@@ -1439,7 +1439,7 @@ No we can't make main thread as daemon thread.
                      HashMap                                                 HashTable
   1)Hashmap is non sychronized                                   1)Hashtable is synchronized
   2)Hashmap is non thread safe                                    2)Hashtable is thread safe
-  3)Hashmap implements abstract class                             3)Hashtable implements dictionary class.
+  3)Hashmap extends  abstract class                             3)Hashtable extends  dictionary class.
   4)Hashmap allows number of null values                          4)Hashtable doesn't allows null values.
 
 20)What is the difference between Collection and Collections?
@@ -1469,35 +1469,35 @@ No we can't make main thread as daemon thread.
   check contains equal or not.
 
 24)How to snychronized list,set and Map?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To synchronized list we use synchronized.list() method 
     for set synchronized.set() method
     for map synchronized.map() method
 
 25)What are the advanatages of generic collection?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) When we use generic collection we don't need to typecasting, It is type safe and checked at compile time.
 
 26)What is Hash Collision in Hash Table?and How to prevent it?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) In hashtable put method first calculate hashcode,hashcode return us index value or integer value. So some times so we will get same index value that time
      has collision will occur to check contain equal or not. 
      By using separate chaining and open addressing.
 
 27)What is dictionary class?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Dictionary class provides capability to store the key value pair   
 
 28)What is default size of load factor in hasing based collection?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Default size is 16 and load factor is 0.75   
 
 29)What do you understand by fail fast?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Fail fast means immediately show concurrent modification expection.It doesn't require any extra space in memory.
 
 30)What is diffrence between Array And ArrayList?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                         Array                                                               ArrayList
  1)Array is fixed in size                                               1)Arraylist is growable in size
  2)Array supports both primitive data type and objects                  2)Arraylist support only objects.
@@ -1517,17 +1517,17 @@ No we can't make main thread as daemon thread.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To make java arraylist read only we need to use Collections class collections.unmodificable() method
 
-34)How to remove duplicate from ArrayList?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+34) How to remove duplicate from ArrayList?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    We can use hashset or linkedhashSet
 
-35)How to reverse arrayList?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   By using revere() method array. inside this method we pass objects.
+35) How to reverse arrayList?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   By using revere() method of collections class , inside this method we pass lists.
 
-36)How to short arrayList in desending order?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  By using reverseOrder()method of Collections class we can short arraylist in descending order
+36) How to short arrayList in desending order?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ first we need to sort arraylist by using Collections.sort() method after that we will use Collections.reverse()method we pass lists inside that
 
 
 37)How to syncronized arrayList?
@@ -1544,22 +1544,22 @@ No we can't make main thread as daemon thread.
     LinkedList is faster than the arraylist for insertion and deletion operations. 
     The time complexity of arraylist for insertion is o(1) ,remove o(n),get o(1) whereas the time complexity for linkedlist is insertion is o(1),remove o(n),get o(n)  
 
-40) If we remove the element from arraylist at the time iterating it will show concurrent Modification exception?
+40) If we remove the element from arraylist (if i use enhanced for loop) at the time iterating it will show concurrent Modification exception?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Yes that error will come sevral time to avoid we need to use Iterator.
 
 41) What is generic?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   generic means paramaneterized type. It is type safe checked at compile time. we don't need to do typecasting.
+   generic means paramaneterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket.
    
-30) What is differnce between hashmap and linkedhashmap?
+42) What is differnce between hashmap and linkedhashmap?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        HashMap                                                      LinkedHashMap
  1) HashMap doesn't maintain any insertion order                      1) Linked hashmap maintain insertion order of keys.
  2) HashMap require less memeory as compare to                        2) LinkedHashMap reuire more memory due to maintaing the order.
     linked hashmap
 
-30) What is differnce between hashmap and HashTable?
+43) What is differnce between hashmap and HashTable?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        HashMap                                                      HashTable
  1) HashMap is non synchronized                                         1) Hashtable is synchronied
@@ -1567,82 +1567,107 @@ No we can't make main thread as daemon thread.
  3) Hashmap is non legacy class                                         3) Hashtable is legacy
  
  
- 30) What is differnce between Treemap and hashtable?
+ 44) What is differnce between Treemap and hashtable?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        TreeMap                                                  HashTable
  1) TreeMap is non synchronized                                       1) HashTable is synchronied
  2) TreeMap is not thread safe                                        2) HashTable is thread safe
  
  
- 30) What are the collections class methods?
+ 45) What are the collections class methods?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) addAll() 2) max() 3) min() 4) sort()
 
-30) What is the difference between equals() and compareTo() method?
+46) What is the difference between equals() and compareTo() method?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 equlas take input parameter as only objects whereas compareTo method take only string.
 
 
-30) How to remove User-defined class objects in Java ArrayList with example?
+47) How to remove User-defined class objects in Java ArrayList with example?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-30) Write code for hashmap and explain everything?
+48) Write code for hashmap and explain everything?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-30)When do we use HashSet over TreeSet?
+     Hashmap represent key,value pair. They allow unique keys and duplicate value. Hashmap is non synchronized and non thread safe.
+     It allows n no. of null values. It implements abstract class.
+     When we create the object of hashmap
+     Map<Integer,String> map=new HashMap<Integer,String>();
+      Inside the memeory a table is created with default capacity is 16 and load factor is 0.75.
+      Each row is called as bucket.
+      Now i will add element into it by using put method.
+      
+      map.put(101,"Smith);
+      map.put(102,"Jonh");
+      map.put(103,"Sandy");
+      
+      so, put first calculate the hashcode.
+      Hashcode return us the index value or integer values.
+      Whatever we passing it stored in doubly linked list.
+      Suppose we will get 7 index it will store the object in 7 buckte as a doubly linked list format.
+      Some times we will get same index value suppose 8,that time hash collosion will occur.
+      and equal() method get overide to check contain equal or not if contain is equal doubly linked list get overide,if contains is not equal
+      then another doubly linked list will get create connected to previous one.
+      Suppose we are passing null values it will store on zeorth index.
+      
+      
+49)When do we use HashSet over TreeSet?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Hashset is used when we want to search element and we don't want any sorting order. whereas
    Treeset is used when we want sorting element ,fast insertion and retrieving the element.
    
- 30)What is Linked HashSet and its features?
+50) What is Linked HashSet and its features?
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Linked hashset implements set interface. Linked hashset similar to the hashset. the main difference that linked hashset maintain insertion order whereas
  hashset doesn't maintain insertion order.
  
-30)What is linked hashmap and its features?
+51)What is linked hashmap and its features?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Linked hashmap maintain insertion order. Linked hashmap is faster for insertion and deletion the element.
  
- 31)What is SortedMap interface?
+52)What is SortedMap interface?
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  SortedMap interface maintaing sorting order of keys,by default sortedmap interface natural order.
  
-30)What is Hashtable and explain features of Hashtable?
+53)What is Hashtable and explain features of Hashtable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Hashtable is synchronized and thread safe. Hashtable extends Dictionary class.Hashtable doesn't allow null value as well as keys.
+ Hashtable is synchronized and thread safe. Hashtable extends Dictionary class.Hashtable doesn't allow null value as well as keys.Hashtable is thread safe.
  
-30)Difference between HashMap and Hashtable?
+54) Difference between HashMap and Hashtable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                       HashMap                                            Hashtable
 	1) Hashmap is non synchronized                   1) Hashtable is synchronized
 	2) Hashmap is thread safe                        2) Hashtable is non thread safe.
 	3) Hashmap allows n number                       3) Hashtable doesn't allow null values or keys. 
 	   null values and only one null keys
+        4) Hashmap is non legacy                         4) Hashtable is legacy.
 	   
-30) What is concurrent hashmap and its features ?
+55) What is concurrent hashmap and its features ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Concurrent hashmap similar to the hashtable and synchronized version of hashmap. It doesn't allows null value and keys.concurrent hashmap allows multiple thread
 to access.
 
-30) Difference between concurrent hashmap and hashtable?
+56) Difference between concurrent hashmap and hashtable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 concurrent hashamap allows mutiple thread access whereas hashtable doesn't allow multiple thread access.
 
-30)Explain about fail safe iterators in java?
+57) Explain about fail safe iterators in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------Fail safe iterator means it doesn't throw concurrentMoficationException. when thread was iterating it doesn't modify the original list it create copy of that
 list. 
 
-30)Explain about concurrentModificationException?
+58)Explain about concurrentModificationException?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+If you  are removing element from enhanced for loop by using remove method so you will get concurrentModification Exception.
 ConcurrentModifcation exception means it doesn't require any extra space in a memory.
 for eg- 
 If you are using arraylist and try to remove object from enhanced for loop or while direclty by 
 remove() method it will throw concurrentModification Exception.
 To avoid this problem we need to use Iterator
 
-
-
+59) When we get the concurrentModifcationException?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+If you are removing element from enhanced for loop by using remove method. We will get concurrentModificationException.
+To avoid this we need to use Iterator.
 
 
 
@@ -1653,7 +1678,7 @@ To avoid this problem we need to use Iterator
  ================================================================================================================================================================== 
  RESTFul web services.(Web services designed for application to application interaction)
  ==================================================================================================================================================================
- 
+ ==================================================================================================================================================================
  
  1) REST-
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1717,12 +1742,12 @@ To avoid this problem we need to use Iterator
 
 ======================================================================================================================================================================
 ======================================================================================================================================================================
-                                                                                !!! Shree Swami Samrath !!!
+                                                                     !!! Shree Swami Samrath !!!
 ======================================================================================================================================================================
 ======================================================================================================================================================================
 
 
-======================================================================================================================================================================                                                                                   JAVA 1.8 Features 
+======================================================================================================================================================================                                                                           JAVA 1.8 Features 
 ======================================================================================================================================================================
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
