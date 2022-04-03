@@ -114,7 +114,7 @@ Synchrnous programming means we send only one request and wait until respose com
 Asynchrouns programming means we can send multiple request at a time and don't need to wait until response come.
 
 
-19)When we need to implment serializable in JAVA?
+19)When we need to implement serializable in JAVA?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To travel the state of object over the network we need to implements serilizable in java.
 To perform serializable we need to convert object into byte-stream if you have primitive data type by using wrapper classes we can convert it into objects.
