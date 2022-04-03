@@ -113,7 +113,7 @@ B) Xpath injection vulnerablity
 x path query language used to select data from xml resource.
 
 C) XSS- cross site scripting vulnerablity 
-Cross site scripting vulnerablity allows an attakcer to inejct malicous code in the form of script.
+Cross site scripting vulnerablity allows an attakcer to inject malicous code in the form of script.
 Types of xss vulnerablity
 1) Stored vulneablity
 2) Reflected vulnerablity
