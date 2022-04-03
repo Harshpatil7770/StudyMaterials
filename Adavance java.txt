@@ -169,9 +169,9 @@
 
 
 2) Exception Handeling
-=======================================================================================================================================================================
-=======================================================================================================================================================================
-=======================================================================================================================================================================
+======================================================================================================================================================================
+======================================================================================================================================================================
+======================================================================================================================================================================
 ---------------------------------------------------------------------------------------------------------------------------------------
 1)What is Expection Handeling in Java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -183,8 +183,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
 3) Hierarchy of Java Exception classes?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                             Throwable
-                                                                                                                                                    |
+                                                                                                                                             Throwable                                                                                                                                                    |
 
                                                                                                                                                    
                                         |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -384,7 +383,7 @@ third statement or catch block?
 ---------------------------------------------------------------------------------------------------------------------------------------
 34)Can we overide super class method which throwing unchecked exception with checked exception in the subclass?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                      No we can't override.                                                                                                                                                                                          
+                                                                                                                                                                      No we can't override. for exception we required same i.e if parenT class thorowing unchecked exception then subclass must be throws unchecked exception                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 35)What is chained exception in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -412,7 +411,7 @@ third statement or catch block?
 ---------------------------------------------------------------------------------------------------------------------------------------
 41)Which class is super class for all error and exception?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Throwable class is super class for all error and exception
+                                                                                                                                                                       Throwable class is super class for all error and exception.(throwable is a class not an interface)
 ---------------------------------------------------------------------------------------------------------------------------------------
 42) A single try block and multiple catch blocks can co-exist in a Java Program.
       Explain.?
@@ -724,7 +723,7 @@ No we can't write any code after throw statement if you try to write it will sho
 
 ---------------------------------------------------------------------------------------------------------------------------------------				    31) What is heap memory and String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
-    heap memeory id runtime data area on which object are allocated. 
+    heap memeory is runtime data area on which object are allocated. 
     whereas String constant pool located inside the heap memory it mainly used to make jvm more memory efficient, when we create obejct of Strign by using
     String literal jvm check wheather object declared or not,if declared it doesn't create new instance.
 
@@ -1132,16 +1131,16 @@ There are two ways to synchronization
  --------------------------------------------------------------------------------------------------------------------------------------- 
    62) What all methods are used to prevent thread execution ?
  ---------------------------------------------------------------------------------------------------------------------------------------
- 1) join()
- 2) sleep()
- 3) yeild()
+ 1) join() - WAIT FOR THRAD TO DIE
+ 2) sleep() - SLEEP THE CURRENTLY EXECUTING THREAD FOR SPECIFC TIME AND EXECUTE IF ANY AVIABLE.
+ 3) yeild() - YEILD METHOD IS USED TO RESTRICT THE USER FROM GETTING WAIT AND SLEEP STATE IT DIRECLTY PUSH TO RUNNNABLE STATE. 
  ---------------------------------------------------------------------------------------------------------------------------------------
  63) When yield () method in thread is executed it?
  ---------------------------------------------------------------------------------------------------------------------------------------
  yeild() method restrict thread going to wait,sleep and block state. It direclty push it into runnable stage.
  ---------------------------------------------------------------------------------------------------------------------------------------
  64) Assume a thread has lock on it, calling sleep() method on that thread will release the 
- lock?
+	 lock?
  ---------------------------------------------------------------------------------------------------------------------------------------
   sleep() method doesn't realease the lock that thread sleep for the specify time.
   ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1181,7 +1180,7 @@ There are two ways to synchronization
     the acquired lock?
   ---------------------------------------------------------------------------------------------------------------------------------------
  wait() ,notify(),notifyAll() methods are called from synchronization block. If try to call or write outside the synchrnonization block it
- will show illegal monitor state exception. when these method called it will release the call.
+ will show illegal monitor state exception. when these method called it will release the lock.
  ---------------------------------------------------------------------------------------------------------------------------------------
   72) Explain which of the following methods releases the lock when yield(), 
     join(),sleep(),wait(),notify(), notifyAll() methods are executed?
