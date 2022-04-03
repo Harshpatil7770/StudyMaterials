@@ -76,7 +76,7 @@
    step 6) select spring boot version
    step 7) add dependencies as per your reqirements
    step 8) generate the zip file
-   step 9) Import the spring boot peject into your IDE(Integrated development enviorment)sofware
+   step 9) Import the spring boot pROject into your IDE(Integrated development enviorment)sofware
 
 
 10) What is springboot CLI& it's advantages?
