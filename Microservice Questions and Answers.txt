@@ -160,10 +160,10 @@
 24) What are the component of microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    1) Spring cloud server-
-    The default port no. of cloud server is 8888. we put git url inside this application.properites file.It works both client and server side.
+    1) Spring config server-
+    The default port no. of config server is 8888. we put git url inside this application.properites file.It works both client and server side.
     also we put common propeties on cloud.
-    To enable cloud server we need to add dependency such as cloud server and use the annotations such ad @EnableConfigServer
+    To enable config server we need to add dependency such as config server and use the annotations such ad @EnableConfigServer
 
     2) Eureka Naming Server-
     The default port no of eureka naming server is 8761. to enable eureka naming server we need to add the depdency such as spring cloud netflix eureka server
@@ -171,7 +171,7 @@
     All Services are register on eureka server.
 
     3) Hystrix Dashboard-
-    Hystrix dahsboard is used to avoid failure of your application by using circuit braker mechnaism. If your application running without any error means circuit
+    Hystrix dashboard is used to avoid failure of your application by using circuit braker mechnaism. If your application running without any error means circuit
     breaker remains closed and if your application occur some error means circuit braker remains open. 
     To use Hystrix dashboard we need to add the dependency spring cloud netfilx hystrix, and add annotations @EnableHystrix @EnableCircuitBreaker
     
@@ -225,7 +225,7 @@
     Spring web dependecies used to develop web application or restful web applications. 
 
 
-31) What is use of spring cloud netflix eureka server and eureka discovery client? or What is the difference between @EnableDiscoveryClient and @EnableEurekaClient?
+31) What is use of spring cloud netflix eureka server and eureka discovery client? or What is the difference between @EnableDiscoveryClient and @EnableEurekaServer?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     spring cloud netflix eureka server is used to build the eureka server. we need to add dependency such as spring cloud netflix eureka server and use
     annotations such as @EnableEurekaServer 
