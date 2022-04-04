@@ -161,6 +161,10 @@
 22)What could be the tradeoff between the usage of an unordered array versus the usage of an ordered array?
 --------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         The advantage of ordered array has serach time complexity is o(log n),wheras unordered array is o(n).
+																				--------------------------------------------------------------------------------------------------------------------------------------	
+22) When index out of bond exception occur?
+--------------------------------------------------------------------------------------------------------------------------------------
+   The no. of element is higher than the index.                                                                                                                                                                   							
 
 
 
