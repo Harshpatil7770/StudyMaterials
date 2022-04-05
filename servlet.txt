@@ -1,0 +1,77 @@
+=====================================================================================================================================
+=====================================================================================================================================                                                                                                                  !!! Shree Swami Samrath !!!
+=====================================================================================================================================
+=====================================================================================================================================
+
+1) What is Servlets?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                           Servlet is web application development technology. The javax.servlet and javax.servlet.http package                                                                                                                              provide classes and interface for writing your own servlet. All servlet must be implemented by using                                                                                                                             javax.servlet.servlet interface define life cycle method of servlet.The http pakage provide method                                                                                                                                 such as doget() and doPost() for handeling your own servlets. most of time web application                                                                                                                                         accessed by http so we extended it has class.
+---------------------------------------------------------------------------------------------------------------------------------------  
+2) What is the difference between get and post method in servlet?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                         get() method                                            Post() method
+                                                                                        1)  get() method is used to send smaller        1)Post() method is used to send larger amount
+                                                                                          smaller amount of data because it send          data because it send on method body.
+                                                                                          on url bar.
+                                                                                        2)  get method is not secured because data   2)Post method is secured because data doesn't exlopre on the url bar. 
+                                                                                        explore on the url bar.
+                                                                                        3)  It can bookmarked                                 3)It can't be bookmarked
+                                                                                        4)  Idompotent                                            4)NonIdompotent
+                                                                                        5)  get method is more efficifient as               5) Post method is less efficient as compare to get method
+                                                                                          compared to post method.
+---------------------------------------------------------------------------------------------------------------------------------------  
+3) What is request dischapatcher?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                     Request dispatcher is front controller class of spring mvc. It recieve the from client and send them resource on the server.
+---------------------------------------------------------------------------------------------------------------------------------------  
+4) What is the difference forward and send redirect method?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                       forword() method                                          sendRedirect() method   
+                                                                                            1) forword() method send same request          1)sendRedirect() method send always new resource because
+                                                                                               to the new resource.                                   it send from url bar.
+                                                                                            2)  forword () method works at client side       2) sendRedirect() method works at server side
+                                                                                            3) forword() method works only within           3) sendRedirect() method workd within and outside the server.
+                                                                                               the server.                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------  
+5) What is the life cycle of servlet?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                     1) servlet loaded
+                                                                                                                     2) servlet initialized
+                                                                                                                     3) servlet instantiated
+                                                                                                                     4)  request to the service
+                                                                                                                     5) servlet destroyed.                                                                                            
+---------------------------------------------------------------------------------------------------------------------------------------  
+6) What is cookies and what does it works?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                     cookies is small piece of information that persist between multiple client request. In this technology we need to add cookies with response from
+                                                                                                                     the servlet. so cookies are stroed on catche browser.
+---------------------------------------------------------------------------------------------------------------------------------------  
+7) What is the difference between servlet context and servlet config?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                     servlet context                                               servlet config
+                                                                                               1)Servlet context object is created by using       1)Servlet config object is created by using getservletconfig() method.
+                                                                                                  getservletcontext() method.
+                                                                                               2)servlet context object is available for              2) servlet config object is available for entire application.
+                                                                                                   single servlet.  
+
+---------------------------------------------------------------------------------------------------------------------------------------  
+8) What are the different methods of session management in servlet?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                      Session management is configurational state between client and server
+                                                                                                                     1) html hidden field
+                                                                                                                     2) url rewriting bar
+                                                                                                                     3) cookies
+                                                                                                                     4) session management API.
+---------------------------------------------------------------------------------------------------------------------------------------  
+9) How many objects of servlet is created?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                     Servlet object is created only once when request from the servlet.
+                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------  
+10) Who is resposible to create the object of servlet?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                     web container or servlet container is responsible for to create the object of servlet.
+---------------------------------------------------------------------------------------------------------------------------------------  
+11) When servlet object is created?
+---------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                     It created only once when requested from the servlet.
