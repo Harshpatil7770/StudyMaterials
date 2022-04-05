@@ -68,7 +68,8 @@ Log only user actitivies it hepls monotoring later
 
 3) Section C
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Vulnerablity assessment and Penetration Testing
+Vulnerablity assessment(
+असुरक्षा मूल्यांकन) and Penetration Testing(प्रवेश चाचणी)
 
 Vulnerability  Assessment
 Vulnerability assessment is the process of defining, identifing classfying priorites of computer application system over the network.
