@@ -14,11 +14,11 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                                                  Jdbc stands for java database connectivity driver. it is used to connect your java application with database.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is JDBC Driver?
+3) What is JDBC Driver?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                                                  Jdbc driver stands for java database connectivity driver .It is used to connect java application with database.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What are the types of JDBC Driver?
+4) What are the types of JDBC Driver?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                                                  There are four types of jdbc driver in java
                                                                                                                                               1) JDBC-ODBC bridge driver
@@ -34,7 +34,7 @@
                                                                                                                                                    Is is also called as partially java driver.It is not entirely writtern in java. It usd to convert jdbc method calls into native calls.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What are the steps to connect jdbc to database in java ?
+5) What are the steps to connect jdbc to database in java ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                                                  There are basically five steps to connect java application to the database.
                                                                                                                                                   1) Register for the driver class 
@@ -49,7 +49,7 @@
                                                                                                                                                   close() method is used for closing the connections.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What are the JDBC API component?
+6) What are the JDBC API component?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                                                  JDBC API component constist of classes and interfaces in java.sql package.
                                                                                                                                                   classes such as clob,blob, driver class, sql exception.
@@ -170,7 +170,7 @@
                                                                                                                                                  clob and blob are classes present in sql. clob stands for character large object whreas blob stands for binary large object
                                                                                                                                                clob is used to read character stream files, whereas blob represent audio,video,images.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What are the diffrent types of locking mechanism in jdbc
+137) What are the diffrent types of locking mechanism in jdbc?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                                                                  Locking is certain types of mechanism applied to restrict the other user from using the database
                                                                                                                                                 1) Page lock- page lock directly applied on the page
