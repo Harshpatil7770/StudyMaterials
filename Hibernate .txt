@@ -44,11 +44,11 @@
 
 6)What are the core interfaces of hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-                                                       1)Session
-                                                       2)Session factory
-                                                       3)Criteria
+                                                       1)Session(session is used to maintain connection with java application and database)
+                                                       2)Session factory ( session factory is an interface which provide factory method to get instance of sesssion)
+                                                       3)Criteria( It is used to fetch data from database based on criteria.)
                                                        4)Query
-                                                       5)Transaction
+                                                       5)Transaction (transactional is used when we want to execute certain method in transaction.)
                                                        6)Configuration
 
 
@@ -73,7 +73,7 @@
                                                        6)Query
 
 
-10)How sql query is created is hibernate?
+10) How sql query is created is hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        By using session.createSqlquery method
 
@@ -187,7 +187,7 @@ Loose coupling- A class doesn't dependes uponn another class is called loose cou
 
 28)What is cohesion?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-Cohesion describe how single is created.
+Cohesion describe how single class is created.
 Adavnatage of cohesion is single class easy for maintance.
 
 
@@ -264,7 +264,7 @@ load() method return object not found exception if object isn't found.
 3)@Table- used to set name of table in database.If you don't write then they consider a class name is table name
 4)@Column- used to set column name in table.If you don't write they they consider variable name is column name
 5)@GeneratedValue(stratergy=GenerationType.IDENTITY) - used to set generating startegy of primary key.
-6)@Transactional- It  used when we perform upadte,insert,delete operations.
+6)@Transactional- It  used when we perform upadte,insert,delete operations.( @Transactional annotations is used to when we want to execute certain method in transaction.
 
 40) What is lazy loading in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
@@ -336,7 +336,7 @@ load() method return object not found exception if object isn't found.
      
  56) What is concurrency stratergy?
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-     concurrency strategry resposible for stroring the item and retrive it from the cache.
+     concurrency strategry resposible for storing the item and retrive it from the cache.
        
  57) What is  single table stratergy?
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -359,10 +359,10 @@ load() method return object not found exception if object isn't found.
  61) what are the session methods?
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) save()
-    2)update()
-    3)delete()
-    4)merge()
-    5)SaveOrUpdate()
+    2) update()
+    3) delete()
+    4) merge()
+    5) SaveOrUpdate()
      
      
   62) What is the difference between crud respository and JPA repository?
@@ -384,3 +384,7 @@ load() method return object not found exception if object isn't found.
    65) How to enable second level catche?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To enable second level catche we need to use @catche and @cacheable annotations
+
+ 66) What is use of @Transactional annotations?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ @Transational annotation is used when we want to execute certain method in transaction.
