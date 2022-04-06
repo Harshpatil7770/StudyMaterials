@@ -1203,6 +1203,11 @@ thread. Yes we call call make non Daemon thread as daemon thread by using setDae
 after the start method it will show IllegalMonitorStateException.
 No we can't make main thread as daemon thread.
 
+ ---------------------------------------------------------------------------------------------------------------------------------------
+74) Importance about Thread class.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+Thread class is static 
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1320,6 +1325,8 @@ No we can't make main thread as daemon thread.
   Sometime hashcode return us same index value that time hashcollision will occur to check contain equal or not. If contain is equal then double linked get overide
   and if the contain isn't equal then another double linked list get created and connected to first one.
   HashMap implemnts abstract class.
+  
+  If you ADDED MORE THAN ONE NULL KEYS IT WILL STARTED REPLACING.IT STORED IT IN ZEROTH INDEX.
 
 
 8)Explain the difference between array and collection?
@@ -1672,11 +1679,19 @@ To avoid this problem we need to use Iterator
 If you are removing element from enhanced for loop by using remove method. We will get concurrentModificationException.
 To avoid this we need to use Iterator.
 
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 60) Difference between concurrent hashmap and synchronized hash map?
+                            concurrent hashmap                               synchronized hashmap
+		   1) concurrent hashmap don't allow null           1) synchrnized hashmap allows null keys(one) and values.
+		   values as well as keys
+                   2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychrnizedMap() we need to use
+		   we have direclty class in java                    
+		   3) accesibility more efficient                   3) In accesibility less efficient
+ 
 
 
- 
- 
- 
+
+
  ==================================================================================================================================================================
  ================================================================================================================================================================== 
  RESTFul web services.(Web services designed for application to application interaction)
