@@ -54,7 +54,12 @@
    Spring boot uses the annotation such as @SpringBootApplication,it used to marks main class of your application. It consist of three annotations such as
    @CompnentScan-(used to scan package for bean),@EnableAutoConfiguration-(Used to config your application automatically based upon their dependencies),
    @Configuration-(Class level annotaions used by spring container act as source bean definations).
-
+  In Spring we have four layers such as
+  1) Presentation layer( JSON Format translation)
+  2) Business layer
+  3) Persistance layer
+  4) Database layer
+  
 
 8) What does stater dependecnies?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -397,7 +402,7 @@
 
 48) What is the latest version of spring boot?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 2.6.4
+    SpringBoot 2.6.5
 
 
 49) What are the diffrent types of scopes of bean?
@@ -449,8 +454,9 @@
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   The class contains annotations such @SpringBootApplication and main method is the main class of our spring boot application. 
   Before going to spring boot architecture we have layers such as -
-  1) dao layer 
-  2)service layer
-  3)database layer
+  1) Presentation layer
+  2) Business layer
+  3) Persitance layer
+  4) database layer
   client send http request that request map in controller,after the controller request comes to service layer inside the service layer we have all business logic,
   after the service layer that request goes to dao layer,dao layer means classes directly communicate with database.
