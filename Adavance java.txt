@@ -1219,12 +1219,12 @@ Thread class is static
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1)What is Collection?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Collection is  framework that provide an architecuture to store and manipulate the group of objects.
+  Collection is framework that provide an architecuture to store and manipulate the group of objects.
 
 
 2)What is collections?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Collections is class which provides method such as sort and synchronized etc.
+ Collections is class which provides method such as sort and synchronized ,max,min,addALL etc.
   
 3)What is collection framework?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1451,12 +1451,13 @@ Thread class is static
   2)Hashmap is non thread safe                                    2)Hashtable is thread safe
   3)Hashmap extends  abstract class                             3)Hashtable extends  dictionary class.
   4)Hashmap allows number of null values                          4)Hashtable doesn't allows null values.
+  5) Hashmap is non legacy                                         5) Hashtable is legacy.
 
 20)What is the difference between Collection and Collections?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                     Collection                                              Collections
   1)Collection is an interface                                    1)Collecctions is a class
-  2)Collection provide data stucture such list,                   2)Collections provide methods such as short,synchronized etc.
+  2)Collection provide data stucture such list,                   2)Collections provide methods such as short(),synchronized() ,min(),max()etc.
    set,map or etc          
 
 21)What is difference between Comparable and Comparator?
@@ -1534,6 +1535,7 @@ Thread class is static
 35) How to reverse arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    By using revere() method of collections class , inside this method we pass lists.
+   Collections.reverse(list)
 
 36) How to short arrayList in desending order?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1618,7 +1620,7 @@ equlas take input parameter as only objects whereas compareTo method take only s
       Some times we will get same index value suppose 8,that time hash collosion will occur.
       and equal() method get overide to check contain equal or not if contain is equal doubly linked list get overide,if contains is not equal
       then another doubly linked list will get create connected to previous one.
-      Suppose we are passing null values it will store on zeorth index.
+      Suppose we are passing null values it will store on zeorth index. If you passing lot's of null keys it will started replacing .
       
       
 49)When do we use HashSet over TreeSet?
@@ -1642,6 +1644,7 @@ equlas take input parameter as only objects whereas compareTo method take only s
 53)What is Hashtable and explain features of Hashtable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Hashtable is synchronized and thread safe. Hashtable extends Dictionary class.Hashtable doesn't allow null value as well as keys.Hashtable is thread safe.
+ Hashtable is legacy.
  
 54) Difference between HashMap and Hashtable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
