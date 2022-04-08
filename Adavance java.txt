@@ -164,7 +164,7 @@
 																				--------------------------------------------------------------------------------------------------------------------------------------	
 22) When index out of bond exception occur?
 --------------------------------------------------------------------------------------------------------------------------------------
-   The no. of element is higher than the index.                                                                                                                                                                   							
+   Index out of bond exception will occur when array index is negative,equal or greather than the length of array.                                                                                                                                                                 							
 
 
 
@@ -473,6 +473,9 @@ finally block then we just write system.exit(0) method at the end of catch block
 Custom exception means user defined exception. It used to catch and provide specific treatment to exisitng java exception. It mainly used in business
 logic exception.
 
+class NewExpection extends Exception
+class NewException extends RuntimeException
+
 class InvalidVotterException extends Exception{
 
 InvalidVotterException(String err){
@@ -644,7 +647,8 @@ No we can't write any code after throw statement if you try to write it will sho
 ---------------------------------------------------------------------------------------------------------------------------------------
 18) How many objects will create in the following code ?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String s1=new String("abc");                                                                                                                                                                                                                                                                                                      String s1="abc";  
+                                                                                                                                                                              String s1=new String("abc");                                                                                                                                                                                                                                                                                                     
+																					String s1="abc";  
                                                                                                                                                                         Two objects created one by using new keyword and another one by uisng String literal.  
 
                                                                                                                                                                         String s1=new String("abc");  
@@ -834,14 +838,14 @@ No we can't write any code after throw statement if you try to write it will sho
 ---------------------------------------------------------------------------------------------------------------------------------------
 16)What does join method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Join method wait until thread get die.
+                                                                                                                                                                        Join method wait for thread to die.
 ---------------------------------------------------------------------------------------------------------------------------------------
 17)What is the purpose and woking of sleep () method?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Sleep method thread class method. It pause the currently executing thread for specific time and execute another 
                                                                                                                                                                         thread if any availabel.
 ---------------------------------------------------------------------------------------------------------------------------------------
-18)what is difference between wait and sleep() method?
+18)what is difference between wait() and sleep() method?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                              Wait() Method                                                           Sleep() Method
                              1)  Wait() method is object class method                                       1)     sleep() method is thread class method                                                                                                                                                                               2) wait() method pause the currently exceuting thread                   2) sleep() method pause the currently executing thread for specific time and execute another thread if any.
@@ -1057,7 +1061,7 @@ thread will call notify and notifyAll() methods.
 47)What is process?
 ---------------------------------------------------------------------------------------------------------------------------------------
  Process means a program in the execution. every process have their own memeory space.
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 47)What are the different types of multitasking?
 ---------------------------------------------------------------------------------------------------------------------------------------
  1) Process based multitasking 2) Thread based multitasking
@@ -1107,6 +1111,7 @@ There are two ways to synchronization
  ---------------------------------------------------------------------------------------------------------------------------------------
  Synchronized means capability to access multiple thread to any shared resources.
  It mainly used to avoid thread interface and consistance problem.
+ Synchronized method is used to avoid thread interface because mutiple thread access method at a time.
   ---------------------------------------------------------------------------------------------------------------------------------------
  57) When do we use synchronized methods in java?
   ---------------------------------------------------------------------------------------------------------------------------------------
