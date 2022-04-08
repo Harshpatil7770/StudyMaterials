@@ -1803,7 +1803,7 @@ To avoid this we need to use Iterator.
    There are two types of Stream API
    1) Parallel Stream API
     Parallel Stream API means we can perform multiple operations at a time. It is platform dependent. The performs of parallel Stream API is faster than the 
-    sequential Stream API. It doesn't maintain the order
+    sequential Stream API. It doesn't maintain the order.( This probelm occur if you are using forEach() To overcome this problem we need to forEachOrdered() loop)
     
    2) Sequential Stream API
       Sequential Stream API is used to perform only one operations at a time. It is platform independent. The performs of sequential stream API is slower than the 
