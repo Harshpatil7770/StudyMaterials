@@ -2178,11 +2178,61 @@ LocalDate means localdate with time zone.
 LocalTime means without any date 
 LocalDateTime - it represent date with time
 
+33) Characterstics of Lambda Expressions?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) If you are using one parameter then theres is no need to use the parenthesis. But if your are using more parameter then you need to use the parenthisi
+2) If there is one statement in method body then there is no need to curly braces.
+
+34) What is the difference betweeen StreamAPI and CollectionAPI?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ StreamAPI- StreamAPI doesn't not iterator and spiltiterator. It is used to modify the resource.
+ CollectionAPI- CollectionAPI use iterator and spiltiterator to perform actionon each element. It is used to store the data.
+ 
+35) How can you create function interface?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create a interface and define only one abstarct method.(abstract means it doesn't have body). Use the annotations such as
+@FunctionalInterface. You can write mulitple default and static methods.
+
+36) What is SAM?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  SAM stands for single abstract method. Functional Interface is also known as SAM.
+  
+37) What is a Predicate? State the difference between a Predicate and a Function?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Predicate and function both are the predifined function in interface.
+2) Predicate return type is boolean i.e it return only true or flase values
+wherase function takes the arguments and return the result. Return type of function is object.
+
+38) What is diffrence between limit and skip?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+limit means it return the specified size, whereas skip means skip the element
+
+39) What is the difference between iterator and spiltiterator?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Iterator -
+1) Iterator is used in Collection API 
+2) Iterator iterate only sequential order
+3) Iterator method such as
+   next() and hasNext() 
+   
+SpiltIterator- 
+1)spiltIterator is used in streamAPI
+2)spiltIterator travels both parallel and sequential order
+3) it has spiltiterator() method.
+
+40) What is the consumer functional Interface?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+consumer function interface is pre-defined function in java. It takes the arguments but doesn't return the values.
+
+41) What is supplier functional interface?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Supplier function interface means it doesn't take the inputs.It return values by usinng get method .
+
+42) What is the difference between java 1.8 internal and external iterations?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Internal iterations supports functional programming.whereas external Iterations supports opps programming styles.
 
 
-
-
-                 
   
   
     
