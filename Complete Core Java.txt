@@ -190,6 +190,7 @@ A)Abstraction
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                abstract class is used to achieve 0 to 100% abstration. If you want to use abstract method then the class must be abstract.
                                                                                                 abstract class is used in larger proejct because it provide common method implementation to all subclasses.
+												By Using abstract class we can show some propeties to the use..
                                                                                                 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                               A- VI)Can we make abstract method static in java?
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                No, we can't make abstract method static in java. Because whatever method declared inside abstract class it must be implements in subclass. if you declare
@@ -308,6 +309,9 @@ A)Abstraction
                                                                                                Rumtime polymorphims is achieved by using method overriding means a classes in java has same method name with same parameter.
                                                                                                Runtime polymorphism performs is slower than the compile time polymorphism because object is determined at runtime.
                                                                                                 The rules for runtime polymorphism is method present in subclass it must be same as method present in parent class
+												
+												*** Runtime polymorphism we required same exception also
+												*** Return type doesn't matter.
         
                                                                                                 B-III)  Real time example of polymorphism is-
                                                                                               ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -335,7 +339,7 @@ A)Abstraction
                                                                                                method oveloading is achieved by two ways
                                                                                                1)By chnaging no. arguments
                                                                                                2)By chnaging no. data type
-                                                                                               But not possible by using or chnaging return type because it create ambugity in the program.
+                                                                                               But not possible by using or chnaging return type because it create ambugity in the program.(Return type is not matter in method overloading we should ensure about the ambugity )
                                                                                                 The performs of method overloading is faster than the method overding because in method overloading case object is determined at compile time.
                                                                                                 It also known as static binding
                                                                                                 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1183,7 +1187,7 @@ C)Protected   -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 32) Is java object oriented or object based pragramming language?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              Java is object oriented programming language because it support the concepts such as abstraction,polymorphism etc. whereas object based programming                                                                                                                       langage doesn't support that things.
+                                                                                              Java is object oriented programming language because it support the concepts such as abstraction,polymorphism etc. whereas object based programming language doesn't support that things.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 33) What is JVM and it's memory areas?
                                                                                                               JVM stands for java virtual machine.
@@ -1237,6 +1241,12 @@ C)Protected   -
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                      Objects are stored in heap memory.
                                                                                                      Heap- heap is run time data area on whch objects are allocated.
+												  
+												  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+49) What is heap memeory
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+        Heap is runtime data area on which object are allocated.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 50) What is memory leak?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1457,7 +1467,7 @@ C)Protected   -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 74)How java enable high performance?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                Java uses JIT compiler. it helps to jvm to improve peformans of application. It hepls                                                                                 to comiple your application at runtime.
+                                                                                Java uses JIT compiler. It helps to jvm to improve peformans of application. It hepls                                                                                 to comiple your application at runtime.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 75)What is the difference between java and c++?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1633,6 +1643,7 @@ C)Protected   -
 109)What is gc() method?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                                                                                                                                                     1) gc() method called garbage collector
                                                                               2) Garbage collector is process of cleaning or remove unreferenced automatically and                                                                                     make free space for jvm.
+									      3) System class have a gc() method
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 110)How garbage collection is controlled?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1671,7 +1682,7 @@ C)Protected   -
                                                                              2) input output stream class hierachy is byte oriented.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  116) Can we call main method of class from another class ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                             1) Yes we can call main method of class from another class ny classname.main()
+                                                                             1) Yes we can call main method of class from another class by classname.main()
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  117) Why setter and getter method better than the directly chaining and retrieving fields?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                             1) Because methods are participate in runtime polymorphism member are not.
@@ -1700,9 +1711,9 @@ C)Protected   -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                             1)public means access within the package and outside the package also whereas
                                                                             non public means we can't access from outside 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------  124) What modifier used with top level class? // *****
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------  124) What modifier used with top level class? // ***** It must be public or no any access modifier.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                           1)Public, final and abstract 
+                                                                           1)Public, final and abstract  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 125)What's name of  top level class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1733,7 +1744,9 @@ C)Protected   -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 131) How to not allow serilization of attributes of class in java ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                           How to prevent serilization of subclass. There is no direct way to avoid serilization of                                                                              subclass we need to implement 
+                                                                          Transient keyword is used to avoid serialization od an object.
+									  
+									  How to prevent serilization of subclass. There is no direct way to avoid serilization of                                                                               subclass we need to implement 
                                                                            writeObject and readObject methods and throws NotSerilizableException.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 132) What happens if there are multiple main methods inside one class in Java??
@@ -1764,15 +1777,17 @@ C)Protected   -
                                                                          1)Core java design pattern
                                                                          2) JEE design pattern
 
-                                                                         1)Core java design pattern
-                                                                         A)Strucutoral desing pattern
+                                                                     
                                                                          I)Singleton desing pattern
+									 
                                                                          II)Factory design pattern- 
-									 Interface of class convert into another interface if client wants.
-                                                                         B)Creational design pattern
-                                                                         c)Adapter desgin pattern - A subclass is responsible for create an object of instance class.
-                                                                         C)Behavoirual desing pattern
-                                                                         I)
+									 A subclass is resposible to create the object of an instance.
+									
+                                                                       
+                                                                         c)Adapter desgin pattern -
+									   An interface of class convert into another interface of client wants.
+                                                                         
+									
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 136) When we should use if statement over if along with else if?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1913,7 +1928,7 @@ C)Protected   -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                1) Thread safe
 							       2) immutable means easier to desing and implements.
-							       
+							       Immutable means once we create we are not able to modify it. It helpful in security concepts.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 163)What are the difference between length and legnth() method in java?
@@ -1930,7 +1945,7 @@ C)Protected   -
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 165) What is ASCII Code?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                               ASCII standa for americian standard code for information interchange. In thid user uses number 
+                                                               ASCII stands for americian standard code for information interchange. In this user uses number 
 							       to represent character.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1939,7 +1954,7 @@ C)Protected   -
                                                                Character constant means written in single quatos whereas String constants means written in double                                                                    quatos.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-167) What are constants and how to create constants in java? ?
+167) What are constants and how to create constants in java? 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                Constant means once we assign the values we are not able to change it. to make constant
 							       use static and final .
@@ -1999,7 +2014,7 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 177) What is classpath ?							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                            Classpath means location of your .class file saves.
+                                                            Class path shows directory where our .class file get saves.
 							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 178) What is jar?							    
@@ -2023,13 +2038,14 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 182) Explain about static imports in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                            Static import means we can call static variable with class or interface name.
-							    
+							    static import means import static class directory.
+							    We can access static member without class or object name.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 183) Explain Enumeration ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             Enumeration feature added in java 1.5. Enumerations means set of constants. It declared by using
 							    keyword enum. Inside the enum class member public,static and final.
+							    We can't instantited enum and we can't extends also.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 184)Explain restrictions on using enum?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2037,8 +2053,9 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 185)Explain field hiding in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                            If super class and subclass having same filed then filed hiding happen. To call super class
-							    variable we need to use super keyword.
+                                                            If super class and subclass having same filed then filed hiding happen. If we create the object of
+							    child class and to access the super class we need to super keyword.
+							 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 186)Can we use switch statement with Strings?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2106,7 +2123,9 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------	
 195) If we don’t want some of the fields not to serialize How to do that?	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                        There is no direct way to avoid serilization of your objects we need to use readObject and writeObject
+                                                        Transient keyword is used to skip member while serializing an object.
+							
+							There is no direct way to avoid serilization of your objects we need to use readObject and writeObject
 							methods and throws NotSerliableException.
 							otherwise we need to use transieny keyword so it zero or null values.
 							
@@ -2143,7 +2162,7 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 109)What's continue?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1)Continue means doesn't terminate the program come to next iteration
+                                                                                                                 1)Continue means doesn't terminate the loop come to next iteration
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 109)What is upcasting ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
