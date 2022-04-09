@@ -2187,3 +2187,11 @@ o2n
 
 
 log(n) best 
+
+
+111) Enhanced for loop-
+     enhanced for loop is used to iterate the array and collection element.
+     advantage - make code more readable
+     it is also know as for each loop traverse element one by one.
+     The main disavantage we can't travel in reverse direction.
+     
