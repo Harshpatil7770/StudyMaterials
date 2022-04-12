@@ -244,7 +244,7 @@
 
 36) Can you explain how to deploy spring boot application on different server?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    To deploy spring boot application on different server first we need to generate jar file of that project and deploy on your favorite server.
+    To deploy spring boot application on different server first we need to generate war file of that project and deploy on your favorite server.
 
 
 37) Why we use spring boot framework?
@@ -334,7 +334,7 @@
     used to update the resource
     16)@GetMapping-
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Used to return the resource
+    Used to return the resource or read the resource
     17)@PostMapping- 
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     create a new resource
