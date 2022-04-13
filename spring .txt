@@ -54,7 +54,7 @@ Autowiring means injecting bean automatically there is no need of explicit logic
 Types of Autowiring
 byName,byType,Constructor
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 9)what are the diffrent types of scopes of bean?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Scopes of bean specified the life cycle bean.
@@ -222,8 +222,8 @@ c schema
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 31)what is the difference between wiring and autowiring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-The injection of dependency object to the dependent object it's done by programmer called wiring whereas
-The injection of dependency object to the dependent object it's done by container called autowiring.
+  The injection of dependency object to the dependent object it's done by programmer called wiring whereas
+  The injection of dependency object to the dependent object it's done by container called autowiring.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 32)what is the use of @Qualifier annotations?
