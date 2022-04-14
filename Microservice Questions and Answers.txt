@@ -67,7 +67,7 @@
    4) High skilled or microservice expertise is needed.
 
 
-9) What is the use of spring boot web starter?
+9) What is the use of spring boot web starter? (Spring Web)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    1) Spring boot web stater provide rapid and easier application developments, aslo it maily used to develop restful applications.
 
@@ -83,7 +83,7 @@
     Spring data JPA is used to acces DAO layer.
 
 
-12) What is eureka server?
+12) What is eureka server? ( portno-8761) @EnableEurekaServer 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
     To use eureka server we need to add the dependency such as netfilx eureka server and use @EnableEurekaServer annoataions.
@@ -100,14 +100,15 @@
     eureka.client.fetch-registry=false
     
 
-15) What is use of lombok?
+15) What is use of lombok? --- @Data,@AllArgConstrument,@NoAllArgConstructor
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Lombok dependency mainly used to reduce the boilerplate code.We don't need to write manaually no arguments,argument constructor as well as we don't need
     to write manually setter and getter methods. 
     Insted of this we can use the annotations such as @Data,@NoargConstructor,@AllArgsConstructor.
 
 
-16) How does your application register with eureka server?
+16) How does your application register with eureka server? @EnableDiscoveryClient
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     To register your application on eureka server first we need to add the dependency netflix eureka client and use the annonations such as @EnabaleDiscoveryClient(
     It picks the implementations of classpath)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -160,7 +161,7 @@
 24) What are the component of microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    1) Spring config server-
+    1) Spring config server- 
     The default port no. of config server is 8888. we put git url inside this application.properites file.It works both client and server side.
     also we put common propeties on cloud.
     To enable config server we need to add dependency such as config server and use the annotations such ad @EnableConfigServer
