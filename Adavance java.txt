@@ -1227,6 +1227,9 @@ Thread class is static
   Collection is framework that provide an architecuture to store and manipulate the group of objects.
 
 
+*** Load factor decided when to increase the size of table.
+
+
 2)What is collections?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Collections is class which provides method such as sort and synchronized ,max,min,addALL etc.
@@ -1235,7 +1238,7 @@ Thread class is static
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Collection framework is combination of classes and interface. Interface such as list,set,map,queue. Classes such as arraylist,linkedlist,Hashset,treeset etc.
 
-4)Explain Internal Working of ArrayList With Exmaples?
+4)Explain Internal Working of ArrayList With Examples?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ArrayList internally uses dyanamic array.Arraylist allows to us to store both homogenous and non homogenoues element. Arraylist support only objects not primitive 
   data type. Arraylist provide random acceess. ArrayList maintain insertion order and allows duplicate values. ArrayList require less space because it store only
@@ -1297,7 +1300,7 @@ Thread class is static
 
 
 6) Explain Internal working of HashSet with examples?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HashSet allow only unique values. Hashset internally uses hashmap. Hashset doesn't maintain any insertion order. It allow only one null value.
   Hashset is synchronized and thread safe.
   When we create the object of hashset suppose
@@ -1329,7 +1332,7 @@ Thread class is static
   Each row of table called as bucket.
   Sometime hashcode return us same index value that time hashcollision will occur to check contain equal or not. If contain is equal then double linked get overide
   and if the contain isn't equal then another double linked list get created and connected to first one.
-  HashMap implemnts abstract class.
+  HashMap extends  abstract class.
   
   If you ADDED MORE THAN ONE NULL KEYS IT WILL STARTED REPLACING.IT STORED IT IN ZEROTH INDEX.
 
@@ -1365,8 +1368,8 @@ Thread class is static
   6)Deque interface
     Deque interface extends queue interface, which is used to perfom insert or remove operation on block wait until operations are performed.
 
-10)Explain the difference between ArrayList and Vector?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10) Explain the difference between ArrayList and Vector?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    ArrayList                                                    Vector
  1)ArrayList is non legacy class.          1)Vector is legacy class.
  2)ArrayList is non synchronized           2)Vector is synchronized.
@@ -1375,7 +1378,7 @@ Thread class is static
   array
  
 
-11)What is the difference between arraylist and linkedlist?
+11) What is the difference between arraylist and linkedlist?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              ArrayList                                LinkedList
   1)ArrayList internally uses dyanamic array      1)LinkedList internally uses doubly linked list.
@@ -1386,16 +1389,16 @@ Thread class is static
   5)ArrayList maily used for searching operation  5)Linked list used for insertion and deletion operations.
  
 
-12)What is the difference between Iterator and listIterator?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12) What is the difference between Iterator and listIterator?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              Iterator                                     ListIterator
  1)Iterator is used to perform reverese operation   1)ListIterator is used to perform insert,remove operation while travesing the element.
      while traversing the element.
  2)Iterator traverse only forword direction         2)ListIterator traverse both forward and reverese direction.
  3)Iteraor is used in list,set,map                  3)ListIterator is used in only list.
 
-13)What is the difference between Iterator and Enumeration?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13) What is the difference between Iterator and Enumeration?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 Iterator                                                                         Enumeration
   1)Iterator is used to perform remove operation while traversing           1)Enumeration is used to perform travesion operation over the element.
     the element 
@@ -1431,7 +1434,7 @@ Thread class is static
   3)Set allows only one null value                                3)Map allows no. of null values
   4) set is synchronized                                          4) Map is non synchrinized 
 
-17)What is the diffrence between HashSet and HashMap?
+17)What is the difference between HashSet and HashMap?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                HashSet                                                              HashMap
    1)Hashset has only one values                                  1) Hashmap represent one values and one key
@@ -1440,7 +1443,7 @@ Thread class is static
    4)Hashset is thread safe                                       4)Hashmap is not thread safe
    5)Hashset is synchronozed                                      5)Hashmap is not synchronized.
 
-18)What is the difference between HashMap and TreeMap?
+18) What is the difference between HashMap and TreeMap?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              HashMap                                                                 TreeMap
   1) HashMap allows n no. of null valeus                         1)Treemap doesn't allows null values
@@ -1449,23 +1452,23 @@ Thread class is static
   4)Hashmap implements hashtables                                4)Treemap implements treestructure
   5)Hashmap sorted by keys and value both.                       6)Treemap shorted by only keys.
 
-19)What is the difference between HashMap and Hashtable?
+19) What is the difference between HashMap and Hashtable?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                      HashMap                                                 HashTable
   1)Hashmap is non sychronized                                   1)Hashtable is synchronized
-  2)Hashmap is non thread safe                                    2)Hashtable is thread safe
-  3)Hashmap extends  abstract class                             3)Hashtable extends  dictionary class.
-  4)Hashmap allows number of null values                          4)Hashtable doesn't allows null values.
-  5) Hashmap is non legacy                                         5) Hashtable is legacy.
+  2)Hashmap is non thread safe                                   2)Hashtable is thread safe
+  3)Hashmap extends  abstract class                              3)Hashtable extends  dictionary class.
+  4)Hashmap allows number of null values                         4)Hashtable doesn't allows null values.
+  5) Hashmap is non legacy                                       5) Hashtable is legacy.
 
-20)What is the difference between Collection and Collections?
+20) What is the difference between Collection and Collections?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                     Collection                                              Collections
   1)Collection is an interface                                    1)Collecctions is a class
   2)Collection provide data stucture such list,                   2)Collections provide methods such as short(),synchronized() ,min(),max()etc.
    set,map or etc          
 
-21)What is difference between Comparable and Comparator?
+21) What is difference between Comparable and Comparator?
                Comparable                                                     Comparator
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1)Comparable provide compare To method for comparasion              1)Comparator provide compare method for comparision.
@@ -1474,45 +1477,45 @@ Thread class is static
   4)Comparable provide only one short                                 4)Copmarator provide multiple sort of sequence
 
 
-22)What do you understand by blocking queue? and why we used?
+22) What do you understand by blocking queue? and why we used?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Blocking is an interface which implements queue interface. The implementation of blocking queue is thread safe.
    The main purpose of blocking queue is due to operation such as insert,remove inside the block or wait util operation are not done.
    
-23)Why we overide equals() method?
+23) Why we overide equals() method? ***equals method take object as input parameter.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Hashcode return us index values or integer value. Sometime we will get same index value that time hashcollision will occur and equlas method get override to
   check contains equal or not.
 
-24)How to snychronized list,set and Map?
+24) How to snychronized list,set and Map?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To synchronized list we use synchronized.list() method 
     for set synchronized.set() method
     for map synchronized.map() method
 
-25)What are the advanatages of generic collection?
+25) What are the advanatages of generic collection?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1) When we use generic collection we don't need to typecasting, It is type safe and checked at compile time.
+  1) When we use generic collection we don't need to typecasting. It is type safe and checked at compile time.
 
-26)What is Hash Collision in Hash Table?and How to prevent it?
+26) What is Hash Collision in Hash Table?and How to prevent it?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) In hashtable put method first calculate hashcode,hashcode return us index value or integer value. So some times so we will get same index value that time
      has collision will occur to check contain equal or not. 
      By using separate chaining and open addressing.
 
-27)What is dictionary class?
+27) What is dictionary class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Dictionary class provides capability to store the key value pair   
 
-28)What is default size of load factor in hasing based collection?
+28) What is default size of load factor in hasing based collection?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Default size is 16 and load factor is 0.75   
 
-29)What do you understand by fail fast?
+29) What do you understand by fail fast?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Fail fast means immediately show concurrent modification expection.It doesn't require any extra space in memory.
 
-30)What is diffrence between Array And ArrayList?
+30) What is diffrence between Array And ArrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                         Array                                                               ArrayList
  1)Array is fixed in size                                               1)Arraylist is growable in size
@@ -1521,15 +1524,15 @@ Thread class is static
  4)Array performs faster than the arraylist                             4)arraylist performs slower than the array
  5)Array doesn't have generice feature                                  5)Arraylist have generic ferure
 
-31)What is the difference between length of array and size of array?
+31) What is the difference between length of array and size of array?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    If you want to measure length of array we use length() property but length property is not supported arrayList so we need to use size method.
 
-32)How to convert ArrayList to Array and Array to ArrayList?
+32) How to convert ArrayList to Array and Array to ArrayList?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   To convert arraylist to array we need to use toarray() method and convert array to arraylist we need to use asList() method.
 
-33)How to make java arrayList read only?
+33) How to make java arrayList read only?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To make java arraylist read only we need to use Collections class collections.unmodificable() method
 
@@ -1567,7 +1570,7 @@ Thread class is static
 
 41) What is generic?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   generic means paramaneterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket.
+   generic means parameterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket.
    
 42) What is differnce between hashmap and linkedhashmap?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1628,17 +1631,17 @@ equlas take input parameter as only objects whereas compareTo method take only s
       Suppose we are passing null values it will store on zeorth index. If you passing lot's of null keys it will started replacing .
       
       
-49)When do we use HashSet over TreeSet?
+49) When do we use HashSet over TreeSet?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Hashset is used when we want to search element and we don't want any sorting order. whereas
    Treeset is used when we want sorting element ,fast insertion and retrieving the element.
    
 50) What is Linked HashSet and its features?
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Linked hashset implements set interface. Linked hashset similar to the hashset. the main difference that linked hashset maintain insertion order whereas
  hashset doesn't maintain insertion order.
  
-51)What is linked hashmap and its features?
+51) What is linked hashmap and its features?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Linked hashmap maintain insertion order. Linked hashmap is faster for insertion and deletion the element.
  
@@ -1688,12 +1691,12 @@ If you are removing element from enhanced for loop by using remove method. We wi
 To avoid this we need to use Iterator.
 
  ---------------------------------------------------------------------------------------------------------------------------------------
- 60) Difference between concurrent hashmap and synchronized hash map?
+ 60) Difference between concurrent hashmap and synchronized hashmap?
                             concurrent hashmap                               synchronized hashmap
 		   1) concurrent hashmap don't allow null           1) synchrnized hashmap allows null keys(one) and values.
-		   values as well as keys
-                   2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychrnizedMap() we need to use
-		   we have direclty class in java                    
+		       values as well as keys
+                   2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychronizedMap() we need to use
+		       we have direclty class in java                    
 		   3) accesibility more efficient                   3) In accesibility less efficient
  
 
