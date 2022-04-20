@@ -10,22 +10,25 @@
 
 1) Array 
 ======================================================================================================================================================================
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 1) On which memory array created in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Array are created in dyanamic memory there is no question about static because varibale,object, array created in 
-                                                                                                                                                                        dyanamic memory.
+Array are created in dyanamic memory there is no question about static because varibale,object, array created in dyanamic memory.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 2) What is array in Java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Array is an object. It is used to store homemgenous element. It support both primitive data type and object. 
-                                                                                                                                                                        Array is fixed in size. The performance of array is fasrer
+Array is an object. It is used to store homomgenous element. It supports both primitive data type and object. 
+Array is fixed in size. The performance of array is faster.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 3) What are the types of array in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         There are two types of arrays in java
                                                                                                                                                                         1) 1D array - It has only one row or only one column
                                                                                                                                                                         2) 2D or 3D array- It has mutiple rows and multiple columns.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 4) What are the advantages of array?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -86,7 +89,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
 16)Can we declare array size negative? 
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        No we can't declare array size negative if you try to declare array size negative it will show negative size                                                                                                                                                                                      expection  error 
+                                                                                                                                                                        No we can't declare array size negative if you try to declare array size negative it will show negative size                                                           expection  error. 
                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) Which method of array class used to serach specific element in an array? 
@@ -99,14 +102,15 @@
                                                                                                                                                                         Array is an object from which we can easily retrieve the class name by using getName() and getclass() method
                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
-19) What is differeence between array and arraylist? 
+19) What is difference between array and arraylist? 
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                               Array                                                                                                      ArrayList
-                                                                                             1) Array is fixed in size                                                                  1)Arraylist is groable in size
+                                                                                                         Array                                                                      ArrayList
+                                                                                             1) Array is fixed in size                                                   1)Arraylist is groable in size
                                                                                              2) Array support both primitive data type and objects                       2)Arraylist is support only objects not primitive data type.
-                                                                                             3) Array store homogenous element                                                3)Arraylist store both homogenous and hetrogenous element
-                                                                                             4) Array perfromance is faster than the arraylist                              4)Arraylist performance is slower than the array
-                                                                                             5) Array doesn't have generic feature                                             5) Arraylist have generic feature.
+                                                                                             3) Array store homogenous element                                           3)Arraylist store both homogenous and hetrogenous element
+                                                                                             4) Array perfromance is faster than the arraylist                           4)Arraylist performance is slower than the array
+                                                                                             5) Array doesn't have generic feature                                       5) Arraylist have generic feature.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 20) How can we check array containd values or not? 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -116,10 +120,11 @@
 21) What is the equilibrium index of array? 
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Equilibrium index of array is sum of lower indices and sum of higher indices.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 22) What is left rotations in an array? 
 --------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Left rotations of array means shifting array from lower index of array come to higher index. ie shift one unit to left                                                                                                                                                                        side 
+                                                                                                                                                                        Left rotations of array means shifting array from lower index of array come to higher index. ie shift one unit to left side 
                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 23) What is advantages and disadvantages array? 
