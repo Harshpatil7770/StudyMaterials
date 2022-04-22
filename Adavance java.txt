@@ -1769,6 +1769,20 @@ To avoid this we need to use Iterator.
 		   3) accesibility more efficient                   3) In accesibility less efficient
  
 
+---------------------------------------------------------------------------------------------------------------------------------------
+61) Remove method works for arraylist and hashset?
+
+arraylist remove element by it's index where hashset remove direclty object.
+
+1) arraylist
+[1,2,3,4,5,6,7]
+list.remove(4);
+output=> [1,2,3,4,6,7];
+
+2)hashset
+[1,2,3,4,5,6,7]
+list.remove(4);
+output=> [1,2,3,5,6,7];
 
 
 
