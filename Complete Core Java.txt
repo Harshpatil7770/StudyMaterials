@@ -21,7 +21,6 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3)What is object oriented programming language?
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                            object orriented programming language menas everything is made of objects.
 											   Object oriented means we organize a application has different combination objects that incorpated with datastucture and behaviour. We can do programming by using
@@ -217,7 +216,7 @@ A)Abstraction
                                                                                                                                                                                                                                                                                                                                                                                                                                                 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                A X)Can interface be final in java?
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Interface is not final is java. because whatever method declare inside the interface we must need to impleemnt subclass.
+                                                                                               Interface is not final is java. because whatever method declare inside the interface we must need to implement subclass.
                                                                                                ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                A XI)Can we define private and protected modifier for the member in interfaces?
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -243,7 +242,7 @@ A)Abstraction
                                                                                                 Because we create a object of subclass and from subclass constructor we can call abstract class constructor even we don't provide any
                                                                                                constructor then also compiler provide by default.
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A XVII) Can you declare anstract method is static?
+                                                                                               A XVII) Can you declare abstract method is static?
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                no, we can't declare abstract method static. because it unnecessary become the part of class.
                                                                                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -645,11 +644,11 @@ Method- function
                                                                                              out- out is static variable of present in class system of type printstream
                                                                                              println() - println is method od the printstream class.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-17)What is the difference between println and print?
+17) What is the difference between println and print?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              Println add new line after message get displayed where as print doesn't add new line after message get displayed.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-18)What is variable and it's type?
+18) What is variable and it's type?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              Variable is separate piece of memory that contain data values specified by an identofier.
                                                                                              Types of variable 
@@ -1229,15 +1228,15 @@ C)Protected   -
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                         String is not keyword in java. String is final class present in java.lang package.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-47)What is reference variable?
+47) What is reference variable?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                         reference variable is associate with the object of that class.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-48)Explain mutuable and immutable object?
+48) Explain mutuable and immutable object?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                        mutuable object means can modified or editiable whereas immutable means can't be modified or editiable.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-49)Where object is stored in memory?
+49) Where object is stored in memory?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                      Objects are stored in heap memory.
                                                                                                      Heap- heap is run time data area on whch objects are allocated.
