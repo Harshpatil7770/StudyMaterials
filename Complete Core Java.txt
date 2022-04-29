@@ -2207,4 +2207,10 @@ log(n) best
      advantage - make code more readable
      it is also know as for each loop traverse element one by one.
      The main disavantage we can't travel in reverse direction.
-     
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) What does assertEqual work?
+assertEqual check wheather two objects equal or not.
+
+
