@@ -1291,13 +1291,10 @@ Thread class is static
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1)What is Collection?
+
+1) What is Collection?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Collection is framework that provide an architecuture to store and manipulate the group of objects.
-
-
-*** Load factor decided when to increase the size of table.
-
 
 2)What is collections?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1389,7 +1386,7 @@ Thread class is static
 
 
 7)Explain Internal working of HashMap with examples?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HashMap represent key,value pair.Hashmap allows no. of null value. Hashmap is non-synchronized and no thread safe.
   Hashmap allows duplicate value but only unique keys.
   When we create the object of HashMap inside the memory table is created with default capacity is 16 and load factor is .75.
@@ -1407,7 +1404,7 @@ Thread class is static
 
 
 8)Explain the difference between array and collection?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                
                Array                                                                            Collection  
 1)Array Supports both primitive data type and objets.                     1)Collection support only primitive data type not objects.
@@ -1476,8 +1473,8 @@ Thread class is static
     extra space in a memory
 
 
-14)What is the difference between List and Set?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14) What is the difference between List and Set?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
               List                                                                                  Set
   1)list allows duplicate values                                            1)Set doesn't allow duplicate values
   2)List provide random access                                              2)Set doesn't provide random access
@@ -1486,8 +1483,8 @@ Thread class is static
   5)List has one legacy class vector                                        5)Set doesn't have a legacy class. 
 
 
-15)What is the difference between HashSet and TreeSet?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15) What is the difference between HashSet and TreeSet?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                          HashSet                                                       TreeSet
   1)Hashset doesn't maintain any insertion order                         1)Treeset maintain ascending order
   2)HashSet implememts hashtables                                        2)Treeset implements tree structure.
@@ -1495,7 +1492,7 @@ Thread class is static
   4)Hashset allows only one null values                                  5)Treeset doesn't allow null values.
   5)Hashset backed by hashmap                                            5)Treeset backed by Treemap.
   
-16)What is the diffrence between Set and Map?
+16) What is the diffrence between Set and Map?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                  Set                                                                 Map
   1)Set has only one value                                        1)Map has one value and one key
@@ -1503,7 +1500,7 @@ Thread class is static
   3)Set allows only one null value                                3)Map allows no. of null values
   4) set is synchronized                                          4) Map is non synchrinized 
 
-17)What is the difference between HashSet and HashMap?
+17) What is the difference between HashSet and HashMap?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                HashSet                                                              HashMap
    1)Hashset has only one values                                  1) Hashmap represent one values and one key
@@ -1513,7 +1510,7 @@ Thread class is static
    5)Hashset is synchronozed                                      5)Hashmap is not synchronized.
 
 18) What is the difference between HashMap and TreeMap?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              HashMap                                                                 TreeMap
   1) HashMap allows n no. of null valeus                         1)Treemap doesn't allows null values
   2)Hashmap doesn't maintain any insertion order                 2)Treemap maintaion insertion order
@@ -1522,7 +1519,7 @@ Thread class is static
   5)Hashmap sorted by keys and value both.                       6)Treemap shorted by only keys.
 
 19) What is the difference between HashMap and Hashtable?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                      HashMap                                                 HashTable
   1)Hashmap is non sychronized                                   1)Hashtable is synchronized
   2)Hashmap is non thread safe                                   2)Hashtable is thread safe
@@ -1531,7 +1528,7 @@ Thread class is static
   5) Hashmap is non legacy                                       5) Hashtable is legacy.
 
 20) What is the difference between Collection and Collections?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                     Collection                                              Collections
   1)Collection is an interface                                    1)Collecctions is a class
   2)Collection provide data stucture such list,                   2)Collections provide methods such as short(),synchronized() ,min(),max()etc.
@@ -1539,7 +1536,7 @@ Thread class is static
 
 21) What is difference between Comparable and Comparator?
                Comparable                                                     Comparator
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1)Comparable provide compare To method for comparasion              1)Comparator provide compare method for comparision.
   2)Copmarable compare with own objects                               2)Comparator compare with two different objects.
   3)Comparable found in java.lang package                             3)Comparator found is java.util package
@@ -1547,7 +1544,7 @@ Thread class is static
 
 
 22) What do you understand by blocking queue? and why we used?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Blocking is an interface which implements queue interface. The implementation of blocking queue is thread safe.
    The main purpose of blocking queue is due to operation such as insert,remove inside the block or wait util operation are not done.
    
