@@ -2234,7 +2234,7 @@ ValueOf() method convert the data into human readable format. String Valueof() m
 26) What are Intermediate and Terminal operations?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Intermediate operations doesn't produce the end result, it return the Stream.Intermediate operator are lazy loading. 
- intermediate operations methods such as map(),filter(),distinct(),skip()
+intermediate operations methods such as map(),filter(),distinct(),skip()
 2) Terminal operations produce the end result and it doesn't return the stream. Terminal operator are eargely loading.
 Terminal operations methods such as toarray(),count(),collect(),forEach(),findFirst(),findAny()
 
