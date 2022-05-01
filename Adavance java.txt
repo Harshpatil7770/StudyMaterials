@@ -1594,15 +1594,15 @@ Thread class is static
  5)Array doesn't have generice feature                                  5)Arraylist have generic ferure
 
 31) What is the difference between length of array and size of array?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    If you want to measure length of array we use length() property but length property is not supported arrayList so we need to use size method.
 
 32) How to convert ArrayList to Array and Array to ArrayList?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   To convert arraylist to array we need to use toarray() method and convert array to arraylist we need to use asList() method.
 
 33) How to make java arrayList read only?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To make java arraylist read only we need to use Collections class collections.unmodificable() method
 
 34) How to remove duplicate from ArrayList?
@@ -1620,16 +1620,16 @@ Thread class is static
 
 
 37)How to syncronized arrayList?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   By using synchrnized.list() method 
 
-38)When we use ArrayList vs LinkedList?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+38) When we use ArrayList vs LinkedList?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ArrayList mainly used for searching operation because it provide random access where as linkedlist is used for insertion and deletion operation because simple 
   node will get create and delete.
   
 39) What is time complexity of arraylist and linkedlist? which one is faster?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     LinkedList is faster than the arraylist for insertion and deletion operations. 
     The time complexity of arraylist for insertion is o(1) ,remove o(n),get o(1) whereas the time complexity for linkedlist is insertion is o(1),remove o(n),get o(n)  
 
@@ -1642,14 +1642,14 @@ Thread class is static
    generic means parameterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket.
    
 42) What is differnce between hashmap and linkedhashmap?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        HashMap                                                      LinkedHashMap
  1) HashMap doesn't maintain any insertion order                      1) Linked hashmap maintain insertion order of keys.
  2) HashMap require less memeory as compare to                        2) LinkedHashMap reuire more memory due to maintaing the order.
     linked hashmap
 
 43) What is differnce between hashmap and HashTable?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        HashMap                                                      HashTable
  1) HashMap is non synchronized                                         1) Hashtable is synchronied
  2) HashMap is non thread safe                                          2) HashTable is thread safe.
@@ -1761,12 +1761,12 @@ To avoid this we need to use Iterator.
 
  ---------------------------------------------------------------------------------------------------------------------------------------
  60) Difference between concurrent hashmap and synchronized hashmap?
-                            concurrent hashmap                               synchronized hashmap
-		   1) concurrent hashmap don't allow null           1) synchrnized hashmap allows null keys(one) and values.
-		       values as well as keys
-                   2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychronizedMap() we need to use
-		       we have direclty class in java                    
-		   3) accesibility more efficient                   3) In accesibility less efficient
+                                 concurrent hashmap                               synchronized hashmap
+			   1) concurrent hashmap don't allow null           1) synchrnized hashmap allows null keys(one) and values.
+		              values as well as keys
+                           2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychronizedMap() we need to use
+		              we have direclty class in java                    
+		           3) accesibility more efficient                   3) In accesibility less efficient
  
 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1784,6 +1784,13 @@ output=> [1,2,3,4,6,7];
 list.remove(4);
 output=> [1,2,3,5,6,7];
 
+62)What does mean by asList() method?
+---------------------------------------------------------------------------------------------------------------------------------------
+asList() method means size of array become fixed.
+
+63) What means by load factor?
+---------------------------------------------------------------------------------------------------------------------------------------
+Load factor is decided when to increase the size of list.
 
 
  ==================================================================================================================================================================
@@ -1837,8 +1844,12 @@ output=> [1,2,3,5,6,7];
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Internal server error
  
+ 3)What is webseries and why it required?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Web services is desined for application to application interaction.
  
-  3) What is the difference between REST and SOAP?
+ 
+  4) What is the difference between REST and SOAP?
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                SOAP                                         REST
                1) SOAP stands for simple object        1) REST stands for representational state transfer.
