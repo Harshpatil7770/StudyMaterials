@@ -460,3 +460,9 @@
   4) database layer
   client send http request that request map in controller,after the controller request comes to service layer inside the service layer we have all business logic,
   after the service layer that request goes to dao layer,dao layer means classes directly communicate with database.
+
+ 58) How to create war file of your spring boot application?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1) Open pom.xml file and write packaging<War>packaging
+ 2) Right click on your application run as maven build ---> mvn clean install 
+ 3) select skipTest option
