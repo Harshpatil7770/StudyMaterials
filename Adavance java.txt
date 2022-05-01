@@ -822,21 +822,21 @@ For eg- suppose five reference variable referes to the one object and i want to 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-1)What is multithreading?
+1) What is multithreading?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Multithreading means execute multiple thread simultaneously at a same time. Mutlthreading is way to achieve multitasking.                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
-2)What is thread?
+2) What is thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Thread is light weight subprocess.Thread execute independently. i.e exception occur in single thread doesn't                                                                                                                                                                                   affect in other thread.
+                                                                                                                                                                        Thread is light weight subprocess.Thread execute independently. i.e exception occur in single thread doesn't affect in other thread.
 ---------------------------------------------------------------------------------------------------------------------------------------
-3)What is the difference between thread and process?
+3) What is the difference between thread and process?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                   Thread                                                                                       Process
-                                          1) Thread is light weight subprocess.                                                                                   1)A program in the execution called as process.
-                                          2)  Thread require shared addrees space memeory                                                               2) process require separate address space memory.
-                                          3)  Inter thread communication is faster                                                                               3) Inter process communication is slower.
-                                          4)   Context swithcing in thread is faster                                                                               4) Context swithching in process is slower
+                               Thread                                                               Process
+    1) Thread is light weight subprocess.                                                 1)A program in the execution called as process.
+    2)  Thread require shared addrees space memeory                                       2) process require separate address space memory.
+    3)  Inter thread communication is faster                                              3) Inter process communication is slower.
+    4)   Context swithcing in thread is faster                                            4) Context swithching in process is slower
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 4) What do you understand by inter threads communication?
@@ -844,19 +844,19 @@ For eg- suppose five reference variable referes to the one object and i want to 
                                                                                                                                                                         The communication between synchronized thread is called as inter thread communication.
                                                                                                                                                                         It is used to avoid thread pollling in java.                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
-5)How thread communication happen?
+5) How thread communication happen?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Thread communicate with each other by using notify,notify all mehtods . notify meas unblock only one waiting                                                                                                                                                                          thread ,wheras notifyall() means unblock all waiting thread.                                                                                                                                                                                  
+Thread communicate with each other by using notify,notify all mehtods . notify meas unblock only one waiting thread ,wheras notifyall() 
+means unblock all waiting thread.                                                                                                                                     ---------------------------------------------------------------------------------------------------------------------------------------
+6) What is the purpose of wait method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-6)What is the purpose of wait method?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        wait method is object class method. It is used to pause the currently excecuting thread and wait until                                                                                                                                                                                             another thread will call notify  and notify all methods.
+                                                                                                                                                                        wait method is object class method. It is used to pause the currently excecuting thread and wait until another thread will call notify and notify all methods.
 ---------------------------------------------------------------------------------------------------------------------------------------
 7) why must wait method called from the synchronized block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Because synchronization block makes clear proper communication.If you try to use wait method from outside                                                                                                                                                                                the block it will show an error such as java.lang.illegalmoniter state exception
+                                                                                                                                                                        Because synchronization block makes clear proper communication.If you try to use wait method from outside the block it will show an error such as java.lang.illegalmoniter state exception
 ---------------------------------------------------------------------------------------------------------------------------------------
-8)What are the advantages of multithreading?
+8) What are the advantages of multithreading?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Mulitthreading means execute mutilple thread simultaneously. It is process to achieve multitasking.
                                                                                                                                                                         The advantages of multithreading is
@@ -865,42 +865,43 @@ For eg- suppose five reference variable referes to the one object and i want to 
                                                                                                                                                                         3) We can perform mutiple task simultaneously at a same time.
                                                                                                                                                                         4) Inter thread communication cost is slower.                                                                                                                                                                                   
 ---------------------------------------------------------------------------------------------------------------------------------------
-9)What is the life cycle of thread?
+9) What is the life cycle of thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Life cycle of Thread
-                                                        1) New - In this state thread object is created. but thread is not live until start() method called.
-                                                        2) Ruunable-In this state thread is ready to run. but not running until picked from thread scheduler.
-                                                        3) Running- In this state thread is started running.
-                                                        4) Waited/Blocked-In this state thread is not running but still live and execute another thread if any available.
-                                                        5) dead- In this state thread is get died after exisitng the run method.
+Life cycle of Thread
+1) New - In this state thread object is created. but thread is not live until start() method called.
+2) Ruunable-In this state thread is ready to run. but not running until picked from thread scheduler.
+3) Running- In this state thread is started running.
+4) Waited/Blocked-In this state thread is not running but still live and execute another thread if any available.
+5) dead- In this state thread is get died after exisitng the run method.
 ---------------------------------------------------------------------------------------------------------------------------------------
-10)What is the difference between preemptive sheduling and time slicing?
+10) What is the difference between preemptive sheduling and time slicing?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Thread sheduler is part of jvm which decided which thread executed first based on some proriety and other facts.                                                                                                                                                                           There are two types of thread sheculer 1)Preemptive sheduling- Preemptive sheduling means execute high                                                                                                                                                                                   prioriety thread first and wait until another high prioriety thread comes into exisitance. 2)Time slicing -time slicing 
-                                                                                                                                                                       means time taken by cpu for execution.                                                                                                                                                                          
+Thread sheduler is part of jvm which decided which thread executed first based on some proriety and other facts.                                                       There are two types of thread sheculer 
+1)Preemptive sheduling- Preemptive sheduling means execute high prioriety thread first and wait until another high prioriety thread comes into exisitance.
+2)Time slicing -time slicing means time taken by cpu for execution.                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
-11)What is context swithching?
+11) What is context swithching?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         context switching means time taken by cpu for exceution                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
-12)What is thread class?
+12) What is thread class?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        thread class is way to achieve thread object. once we extends thread class we are not able to extends other class.                                                                                                                                                                         extending thread class means tighlty coupled and it doesn't provide any code reusblity other than copy and paste.                                                                                                                                                                            Maintance cost of thread class very high                                                                                                                                                                                  
+thread class is way to achieve thread object. once we extends thread class we are not able to extends other class.                                                     extending thread class means tighlty coupled and it doesn't provide any code reusblity other than copy and paste.                                                      Maintance cost of thread class very high                                                                                                                                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------
-13)What is difference between thread class and runable interface for creating thread? or What are the different ways of threads usage?
+13) What is difference between thread class and runable interface for creating thread? or What are the different ways of threads usage?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                       Thread object is created by using two ways.
-                                                                                        1) Thread class( extending thread class)
-                                                                                         2) Runnable Interface (implementing runable interface)
-                                                           Thread class                                                                        Runnable Interface
-                   1) Once we extends thread class we are not able to extends other class                1)  Once we implement runable interface we can extends other class.
-                   2)  extending thread is tightly copuled                                                                  2)Implementing runable interface is loosely coupled.
-                   3)Thread class don't provide any code reusablity other than copy and paste           3)runable interface provide better code reuseability.
-                   4)Thread class maintanice is high                                                                        4)maintance if runable interface is low
-                   5)Each thread create new object so it require high memory                                   5)It has shared address space memory.                                                        
+Thread object is created by using two ways.
+1) Thread class( extending thread class)
+2) Runnable Interface (implementing runable interface)
+                                    Thread class                                                                        Runnable Interface
+            1) Once we extends thread class we are not able to extends other class                1)  Once we implement runable interface we can extends other class.
+            2)  extending thread is tightly copuled                                               2)Implementing runable interface is loosely coupled.
+            3)Thread class don't provide any code reusablity other than copy and paste            3)runable interface provide better code reuseability.
+            4)Thread class maintanice is high                                                     4)maintance if runable interface is low
+            5)Each thread create new object so it require high memory                             5)It has shared address space memory.                                                        
                                                                                                                           
 ---------------------------------------------------------------------------------------------------------------------------------------
-14)What is user thread?
+14) What is user thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         User thread means user defined thread. JVM doesn't terminate until user thread get execute.                                                                                                                                                                       
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -908,55 +909,54 @@ For eg- suppose five reference variable referes to the one object and i want to 
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Runable interface means functional interface , it has only one abstract method, run method.                                                                                                                                                                                                           
 ---------------------------------------------------------------------------------------------------------------------------------------
-16)What does join method?
+16) What does join method?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Join method wait for thread to die.
 ---------------------------------------------------------------------------------------------------------------------------------------
-17)What is the purpose and woking of sleep () method?
+17) What is the purpose and woking of sleep () method?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Sleep method thread class method. It pause the currently executing thread for specific time and execute another 
                                                                                                                                                                         thread if any availabel.
 ---------------------------------------------------------------------------------------------------------------------------------------
-18)what is difference between wait() and sleep() method?
+18) what is difference between wait() and sleep() method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                             Wait() Method                                                           Sleep() Method
-                             1)  Wait() method is object class method                                       1)     sleep() method is thread class method                                                                                                                                                                               2) wait() method pause the currently exceuting thread                   2) sleep() method pause the currently executing thread for specific time and execute another thread if any.
-                                  and wait until another thread will call notify and notify all 
-                                  method                                                                                                  
+       Wait() Method                                                 Sleep() Method
+1)  Wait() method is object class method                        1)sleep() method is thread class method                                                              2) wait() method pause the currently exceuting thread           2) sleep() method pause the currently executing thread for specific time and execute another thread if any. and wait until another thread will call notify and notify all 
+ method                                                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------
-19)Is it possible to start thread twice?
+19) Is it possible to start thread twice?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         No,It's not possible to start thread twice it will show illegalMoniterThreadstateException                                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
-20)Can we call run method instead of start?
+20) Can we call run method instead of start?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Yes, we can run method insted of start but it doesn't behave like thred it behave like normal method                                                                                                                                                                                         When we call start() method internally it will call run method
+                                                                                                                                                                        Yes, we can run method insted of start but it doesn't behave like thred it behave like normal method                                                                   When we call start() method internally it will call run method
 ---------------------------------------------------------------------------------------------------------------------------------------
-21)What is daemon thread?
+21) What is daemon thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Daemon thread means low prioriety thread it used to proivde service and suppport to user. a java program auto
                                                                                                                                                                         matically terminate if there is remains only daemon thread. There are two types of daemon thread
                                                                                                                                                                         1)isDaemon() 2)setDaemon()
 ---------------------------------------------------------------------------------------------------------------------------------------
-22)What is user thread?
+22) What is user thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         User thread means user defined thread jvm doesn't terminate until user thread get execute.                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
-23)can we make the user thread as daemon thread if thread is started?
+23) can we make the user thread as daemon thread if thread is started?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         No we can't make user thread as daemon thread if thread is started it will shows illegalMoniterstateExcpetion                                                                                                                                                                                         
 ---------------------------------------------------------------------------------------------------------------------------------------
-24)What is shutdown hook?
+24) What is shutdown hook?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                                                                                                                                                                                 also it is process of cleaning.
+                                                                                                                                                                        Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                                                         also it is process of cleaning.
 ---------------------------------------------------------------------------------------------------------------------------------------
-25)When should we interrupt thread?
+25) When should we interrupt thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         When we want break out the state of thread from sleep and wait state then we interrupt the thread                                                                                                                                                                                       
 ---------------------------------------------------------------------------------------------------------------------------------------
 26) What is synchronization? or Why synchronization is neccesary?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Synchronization means capability to access mutiple thread to any shared resource.                                                                                                                                                                                                                        There are two types of synchronization 
+                                                                                                                                                                        Synchronization means capability to access mutiple thread to any shared resource.                                                                                     There are two types of synchronization 
                                                                                                                                                                         1)Synchronization method  
                                                                                                                                                                         2)Synchronization block
                                                                                                                                                                         Adavtangets  of synchronization
@@ -966,31 +966,31 @@ For eg- suppose five reference variable referes to the one object and i want to 
                                                         
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-27)What is the purpose of synchronization block?
+27) What is the purpose of synchronization block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Synchronization block is used to perform synchronization on specific resoure of that method                                                                                                                                                                                                         Suppose i have 50 lines of code and i want synchronize five lines of them that time we use synchronization block
+                                                                                                                                                                        Synchronization block is used to perform synchronization on specific resoure of that method                                                                            Suppose i have 50 lines of code and i want synchronize five lines of them that time we use synchronization block
                                                                                                                                                                         But if i put all lines of code of method in synchronization block it will behave same as synchronization method
                                                                                                                                                                         The scope of synchronization block is smaller.
 ---------------------------------------------------------------------------------------------------------------------------------------
-28)Can java object locked down for exclusive use by a given thread?
+28) Can java object locked down for exclusive use by a given thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Yes java object locked for execusive use just we put it in synchronization block.                                                                                                                                                                              
 ---------------------------------------------------------------------------------------------------------------------------------------
-29)What is static synchronization?
+29) What is static synchronization?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         If suppose i applied synchronization before an method means lock an object but suppose i use synchronization 
                                                                                                                                                                         before static method it means lock for an class.
 ---------------------------------------------------------------------------------------------------------------------------------------
-30)What is the difference between notify and notifyAll() method?
+30) What is the difference between notify and notifyAll() method?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Notify and notifyAll() method is used to occur communcation between the to threads.
                                                                                                                                                                          notify() meand unblock only one waiting thread whereas notifyall() means unblock all waiting thread
 ---------------------------------------------------------------------------------------------------------------------------------------
-32)What is deadlock?
+31) What is deadlock?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                                                                                                                                                                     
 ---------------------------------------------------------------------------------------------------------------------------------------
-33) How to detect deadlock condition ? and how can you avoid it?
+32) How to detect deadlock condition ? and how can you avoid it?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                                                                                                                                                                            
 To avoid deadlock condition 
@@ -998,17 +998,17 @@ To avoid deadlock condition
                                                                                                                                                                         2)Avoid nested lock
                                                                                                                                                                         3)Using thread join
 ---------------------------------------------------------------------------------------------------------------------------------------
-34)What is thread sheduler?
+33) What is thread sheduler?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Thread scheduler is part of jvm which decides which thread execute first based on some proority and other facts.                                                                                                                                                                           Such as time sclining and preemptive sheduling.
-                                                                                                                                                                         Preemptive sheduling means high priority thread execute first and wait until high priority thread comes into 
-                                                                                                                                                                        exisitance. time sclining means time taken by cpu for execution
+                                                                                                                                                                        Thread scheduler is part of jvm which decides which thread execute first based on some proority and other facts.                                                       Such as time sclining and preemptive sheduling.
+Preemptive sheduling means high priority thread execute first and wait until high priority thread comes into exisitance. 
+time sclining means time taken by cpu for execution
 ---------------------------------------------------------------------------------------------------------------------------------------
-35) Does each thread has stack in mutlithreaded program?
+34) Does each thread has stack in mutlithreaded program?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
-36)How safety thread achieved?
+35) How safety thread achieved?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Safety thread achieved by using following ways 
                                                                                                                                                                         1)Using volatile keyword
@@ -1016,42 +1016,42 @@ To avoid deadlock condition
                                                                                                                                                                         3)Automatic wrapper class ( All wrapper classes are final classes in java)
                                                                                                                                                                         4)Using lock based mechanism
 ---------------------------------------------------------------------------------------------------------------------------------------
-37)What is race condition?
+36) What is race condition?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Race condition generally occur when mutiple thread execute at a same time                                                                                                                                                                                                                                 To avoid race condition we need to use synchronization.
+                                                                                                                                                                        Race condition generally occur when mutiple thread execute at a same time                                                                                             To avoid race condition we need to use synchronization.
 ---------------------------------------------------------------------------------------------------------------------------------------
-38)What is volatile keyword is java?
+37) What is volatile keyword is java?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         volatile meas value read from main memory not a specific memory.  
                                                                                                                                                                         Volatile keyword mainly used to achieve safety threads.              
 ---------------------------------------------------------------------------------------------------------------------------------------
-39)What do you understand by thread pool?
+38) What do you understand by thread pool?
 ---------------------------------------------------------------------------------------------------------------------------------------                               Thread pool is group of waited thread waiting for task to be allocated
 ---------------------------------------------------------------------------------------------------------------------------------------
-40) what is synchronization block?
+39) what is synchronization block?
 -------------------------------------------------------------------------------------------------------------------------------------                                  Synchronization block is used to perform synchronization on specific resource of method. Suppose i have 50 line code i want syncronozed 5 lines of them then i will use synchronization block . The scope of synchronization block is smaller than the sychronization method. 
 The main purpose of synchronization is avoid thread constistance and thread interface problems.
 ---------------------------------------------------------------------------------------------------------------------------------------
-41) What are the method of thread?
+40) What are the method of thread?
 --------------------------------------------------------------------------------------------------------------------------------------                                    1) start() 2)run() 3)setDaemon() 4)IsDaemon() 5)setPriority() 6)getProority()  7)yeild()  8)join()  9)sleep() 10)currentThread()
    11)run() 12)isAlive() 13)setName() 14)getName()
 ---------------------------------------------------------------------------------------------------------------------------------------
-42) What is pass by value and pass by referecne?
+41) What is pass by value and pass by referecne?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         pass by value means pass eaxct cpoy value if changes occur oroginal value doesn't get changed,
                                                                                                                                                                         pass by reference means pass an refrecne value if changes occur then it afftect in all places.
 ---------------------------------------------------------------------------------------------------------------------------------------
-43) What is difference between synchronization block and synchronization method?
+42) What is difference between synchronization block and synchronization method?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Synchronozation block is used to perform synchronzation on specific resource of the method. If suppose i have 50 lines of code i want synchronization 5 lines of them then we will use synchronization block.
                                                                                                                                                                         The scope of synchronization block is smaller than the synchronization method. But suppose if i put all lines of synchronization method in synchronization block then the work of both remain same.
 																			
 ---------------------------------------------------------------------------------------------------------------------------------------
-44)What is deadlock?
+43) What is deadlock?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Deadlock is situation occur when two process waiting for each other to complete and wait endlessly.
 ---------------------------------------------------------------------------------------------------------------------------------------
-45)What is maker interface and it's use and can we create our own marker interface?
+44) What is maker interface and it's use and can we create our own marker interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Marker interface meas empty interface. It doesn't have field and method. It is called as tagiing interface
 maker interface proivde hint to jvm i.r we are implemting some important feature.
@@ -1059,7 +1059,7 @@ maker interface proivde hint to jvm i.r we are implemting some important feature
                                                                                                                                                                        yes we can create our own marker interface just create an interface and don't write anything inside it.
                                                                                                                                                                        1) serilizable,clonable,remote are the marker interface
 ---------------------------------------------------------------------------------------------------------------------------------------
-46)How to create immutable class in java and example?
+45) How to create immutable class in java and example?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         TO make immutable class in java we need to make class is final and all member of class is final,and private
                                                                                                                                                                         Use only getter method.
@@ -1086,7 +1086,7 @@ maker interface proivde hint to jvm i.r we are implemting some important feature
                                                                }
                                                   }
 ---------------------------------------------------------------------------------------------------------------------------------------
-47)What is singleton class and example?
+46) What is singleton class and example?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Singleton class is used to restrict the user from creating object of that class. To make class singleton we need 
                                                                                                                                                                          make constructor private,so we are not able to crete object of that class. Only one object of that is created 
@@ -1111,38 +1111,38 @@ maker interface proivde hint to jvm i.r we are implemting some important feature
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-44) What is the difference between join and wait method?
+47) What is the difference between join and wait method?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another 
 thread will call notify and notifyAll() methods.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-45) Who calls the run method?
+48) Who calls the run method?
 ---------------------------------------------------------------------------------------------------------------------------------------
  once we called the start method it internally calls the run method.
  
  ---------------------------------------------------------------------------------------------------------------------------------------
-46) What is object and class level lock?
+49) What is object and class level lock?
 ---------------------------------------------------------------------------------------------------------------------------------------
  if we put synchronization before a method lock for an object whereas i we put snchronization before a static method means lock for a class.
 ---------------------------------------------------------------------------------------------------------------------------------------
-47) What is process?
+50) What is process?
 ---------------------------------------------------------------------------------------------------------------------------------------
  Process means a program in the execution.Every process have their own memory space.
 ---------------------------------------------------------------------------------------------------------------------------------------
-47) What are the different types of multitasking?
+51) What are the different types of multitasking?
 ---------------------------------------------------------------------------------------------------------------------------------------
  1) Process based multitasking 2) Thread based multitasking
 ---------------------------------------------------------------------------------------------------------------------------------------
-48) Explain about main thread in java?
+52) Explain about main thread in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
 main thread is first thread it starts immediately after program is started.
 ---------------------------------------------------------------------------------------------------------------------------------------
-49)Explain about main thread in java?
+53)Explain about main thread in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
 main thread is first thread it starts immediately after program is started.
 ---------------------------------------------------------------------------------------------------------------------------------------
-50) Which is the best approach for creating thread ? 
+54) Which is the best approach for creating thread ? 
 ---------------------------------------------------------------------------------------------------------------------------------------
  Thread is created by using two ways
  1) extending a thread class
@@ -1153,114 +1153,114 @@ main thread is first thread it starts immediately after program is started.
  whereas implementing runable interface means loosely copuled, we can extends another class also and maintaince cost is also low, and it
  provide better code reusablity.
 ---------------------------------------------------------------------------------------------------------------------------------------
- 51) Can we restart a dead thread in java?
+ 55) Can we restart a dead thread in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
  No we can't restart dead thread in java if you try it will show runtime exception i.e thread is not live.
   ---------------------------------------------------------------------------------------------------------------------------------------
- 52) Can one thread block the other thread?
+ 56) Can one thread block the other thread?
   ---------------------------------------------------------------------------------------------------------------------------------------
  no, one thread can't block another thread.
   ---------------------------------------------------------------------------------------------------------------------------------------
- 53) Can we overload run() method in java?
+ 57) Can we overload run() method in java?
   ---------------------------------------------------------------------------------------------------------------------------------------
  Yes we can overload the run() method in java ,but start method call run() method with no arguments.
   ---------------------------------------------------------------------------------------------------------------------------------------
- 54) What is a lock or purpose of locks in java?
+ 58) What is a lock or purpose of locks in java?
   ---------------------------------------------------------------------------------------------------------------------------------------
- lock is an moniter used to prevent access of multiple thread to any shared resource
+ lock is an moniter used to prevent access of multiple thread to any shared resource.
   ---------------------------------------------------------------------------------------------------------------------------------------
- 55) In how many ways we can do synchronization in java?
+ 59) In how many ways we can do synchronization in java?
  ---------------------------------------------------------------------------------------------------------------------------------------
 There are two ways to synchronization 
 1) Synchronization block
 2) Synchronization method
   ---------------------------------------------------------------------------------------------------------------------------------------
- 56) What are synchronized methods?
+ 60) What are synchronized methods?
  ---------------------------------------------------------------------------------------------------------------------------------------
  Synchronized means capability to access multiple thread to any shared resources.
  It mainly used to avoid thread interface and consistance problem.
  Synchronized method is used to avoid thread interface because mutiple thread access method at a time.
  ---------------------------------------------------------------------------------------------------------------------------------------
- 57) When do we use synchronized methods in java?
+ 61) When do we use synchronized methods in java?
  ---------------------------------------------------------------------------------------------------------------------------------------
  IF you want to lock full object then we will use synchronization block.
  If multiple thread tries to access method so to avoid thread interface or consistance problem we need to use synchronization method.
  It makes clear and proper communication between the thread.
  ---------------------------------------------------------------------------------------------------------------------------------------
- 58) Can we use synchronized block for primitives?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+ 62) Can we use synchronized block for primitives?
+ ---------------------------------------------------------------------------------------------------------------------------------------
  No, we can't use synchronized block for primitive we can use only for objects.
  ---------------------------------------------------------------------------------------------------------------------------------------
- 59) Explain different types of thread priorities ?
+ 63) Explain different types of thread priorities ?
  ---------------------------------------------------------------------------------------------------------------------------------------
   Thread priorities decidesc when to execute thread 
   1) min priority -1
   2) Norm priority -5
   3) max priority -10
  ---------------------------------------------------------------------------------------------------------------------------------------
-  60) How to change the priority of thread or how to set priority of thread?
+  64) How to change the priority of thread or how to set priority of thread?
  ---------------------------------------------------------------------------------------------------------------------------------------
   By using setPriority method we can set priority of thread
  ---------------------------------------------------------------------------------------------------------------------------------------
-   61) If two threads have same priority which thread will be executed first ?
+  65) If two threads have same priority which thread will be executed first ?
  ---------------------------------------------------------------------------------------------------------------------------------------
     we don't give garranty which thread is exceute
     either it execute any thread first nor it will give equal opporutunity.
  --------------------------------------------------------------------------------------------------------------------------------------- 
-   62) What all methods are used to prevent thread execution ?
+ 66) What all methods are used to prevent thread execution ?
  ---------------------------------------------------------------------------------------------------------------------------------------
  1) join() - WAIT FOR THRAD TO DIE
  2) sleep() - SLEEP THE CURRENTLY EXECUTING THREAD FOR WAIT SPECIFC TIME AND EXECUTE IF ANY AVIABLE.
  3) yeild() - YEILD METHOD IS USED TO RESTRICT THE USER FROM GETTING WAIT AND SLEEP STATE IT DIRECLTY PUSH TO RUNNNABLE STATE. 
  ---------------------------------------------------------------------------------------------------------------------------------------
- 63) When yield () method in thread is executed it?
+ 67) When yield () method in thread is executed it?
  ---------------------------------------------------------------------------------------------------------------------------------------
  yeild() method restrict thread going to wait,sleep and block state. It direclty push it into runnable stage.
  ---------------------------------------------------------------------------------------------------------------------------------------
- 64) Assume a thread has lock on it, calling sleep() method on that thread will release the 
+ 68) Assume a thread has lock on it, calling sleep() method on that thread will release the 
 	 lock?
  ---------------------------------------------------------------------------------------------------------------------------------------
   sleep() method doesn't realease the lock that thread sleep for the specify time.
   ---------------------------------------------------------------------------------------------------------------------------------------
-  65)Can sleep() method causes another thread to sleep?
+ 69)Can sleep() method causes another thread to sleep?
   ---------------------------------------------------------------------------------------------------------------------------------------
   No sleep() method cause only current thread no any other.
   ---------------------------------------------------------------------------------------------------------------------------------------
-  66) Explain about interrupt() thread?
+ 70) Explain about interrupt() thread?
   ---------------------------------------------------------------------------------------------------------------------------------------
   when we want to break out the wait and sleep position of thread we interrupt a thread.But it doesn't mean to stop immediatelty ,it polite way
   to request.
   ---------------------------------------------------------------------------------------------------------------------------------------
-  67) Explain about interthread communication and how it takes place in java?
+  71) Explain about interthread communication and how it takes place in java?
   ---------------------------------------------------------------------------------------------------------------------------------------
  Interthread communication happpens by using 
  1) wait() 
  2) notify()Explain wait(), notify() and notifyAll() methods of object class ?Explain wait(), notify() and notifyAll() methods of object class ?
  3) notifyAll()
   ---------------------------------------------------------------------------------------------------------------------------------------
-  68) Explain wait(), notify() and notifyAll() methods of object class ?
+  72) Explain wait(), notify() and notifyAll() methods of object class ?
   ---------------------------------------------------------------------------------------------------------------------------------------
   wait () ,notify,notifyAll() are object class methods.
   wait() - pause the currently executing thread,wait until another thread will call notify and notifyAll() method.
   notify()- notify means unblock only one waiting thread
   notifyAll() - notifyAll means unblock all waiting thread.
   ---------------------------------------------------------------------------------------------------------------------------------------
-  69) Explain why wait(),notify() and notifyAll() methods are in Object class rather than in 
+  73) Explain why wait(),notify() and notifyAll() methods are in Object class rather than in 
       thread class?
   ---------------------------------------------------------------------------------------------------------------------------------------
   because wait(),notify(),notifyAll() methods are object level methods and these called on same objects.
   ---------------------------------------------------------------------------------------------------------------------------------------
-  70) Explain IllegalMonitorStateException and when it will be thrown?  
+  74) Explain IllegalMonitorStateException and when it will be thrown?  
   ---------------------------------------------------------------------------------------------------------------------------------------
    If you try to write wait ,notify,notifyAll() methods out the side synchrinzation context at runtime you will get IllegelMonitorStateException.
   ---------------------------------------------------------------------------------------------------------------------------------------
-  71) when wait(), notify(), notifyAll() methods are called does it releases the lock or holds 
+  75) when wait(), notify(), notifyAll() methods are called does it releases the lock or holds 
     the acquired lock?
   ---------------------------------------------------------------------------------------------------------------------------------------
  wait() ,notify(),notifyAll() methods are called from synchronization block. If try to call or write outside the synchrnonization block it
  will show illegal monitor state exception. when these method called it will release the lock.
  ---------------------------------------------------------------------------------------------------------------------------------------
-  72) Explain which of the following methods releases the lock when yield(), 
+  76) Explain which of the following methods releases the lock when yield(), 
     join(),sleep(),wait(),notify(), notifyAll() methods are executed?
  ---------------------------------------------------------------------------------------------------------------------------------------
  1) yeild() -No (the main purpose of yield method to restrict the thread going into wait,sleep or block state.It direclty push into runable state.
@@ -1269,17 +1269,17 @@ There are two ways to synchronization
  4) wait() - Yes( pause the currently executing thread or wait until another thread will call notify() ,notifyAll() methods.
  5) notify() - Yes(unblock only one waiting thread)
  6) notifyAll() - Yes( unblock all waiting thread)
- ---------------------------------------------------------------------------------------------------------------------------------------
-73)What are daemon threads in java? and How to make a non daemon thread as daemon? and How to make a non daemon thread as daemon?
+---------------------------------------------------------------------------------------------------------------------------------------
+ 77) What are daemon threads in java? and How to make a non daemon thread as daemon? and How to make a non daemon thread as daemon?
 ---------------------------------------------------------------------------------------------------------------------------------------
 daemon thread is low priority thread, it maily used to support to user thread. JVM will automatically terminate if there is only remaning daemon
 thread. Yes we call call make non Daemon thread as daemon thread by using setDaemon() method. just write this method before start() method , if you write
 after the start method it will show IllegalMonitorStateException.
 No we can't make main thread as daemon thread.
 
- ---------------------------------------------------------------------------------------------------------------------------------------
-74) Importance about Thread class.
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+78) Importance about Thread class.
+---------------------------------------------------------------------------------------------------------------------------------------
 Thread class is static 
 
 
