@@ -35,7 +35,7 @@ Array is fixed in size. The performance of array is faster.
                                                                                                                                                                         1) Random access
                                                                                                                                                                           array provide random access so by using it's index we can access any element
                                                                                                                                                                         2) Code optimization 
----------------------------------------------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------------------------------------------
 5) Is it possible to declare array size negative?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         No it's not possible to declare array size negative if you declare array size negative it compile succesfully.
