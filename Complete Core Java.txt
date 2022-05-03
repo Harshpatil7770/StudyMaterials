@@ -2145,7 +2145,7 @@ Constant always write with uppercase and by using _ for new keyword.
 198) Distingwhich between .java file and .class file?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 .java file is writed by human .ie source code.
-.class file generated file jvm i.e byte code.
+.class file generated file compiler i.e byte code.
 							
 							   
 ======================================================================================================================================================================  ======================================================================================================================================================================                                              Decision or control making statement,Jump statement
