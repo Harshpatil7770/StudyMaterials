@@ -466,3 +466,13 @@
  1) Open pom.xml file and write packaging<War>packaging
  2) Right click on your application run as maven build ---> mvn clean install 
  3) select skipTest option
+ 
+ 59) Status code 
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1) 200 - Ok
+ 2) 201- Succesful
+ 3) 202- created
+ 4) 400 -Method Not Found
+ 5) 404 -Bad Request
+ 6) 500-Internal Server error
+ 
