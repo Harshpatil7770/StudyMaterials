@@ -484,3 +484,17 @@
  5) 404 -Bad Request
  6) 500-Internal Server error
  
+ 60) How to genearate jar /war file of your springboot application?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A) Generate Jar file
+Right click on project -----> Export ---->java----> Runnable jar file --->select destination--->ok
+or
+1) Run as maven build
+goal- clean package
+skip Tests
+
+B) Generate war file
+2) Run as maven build
+In pom.xml
+<packaging>war<\packaging>
+run as maven build ---> clean package --->skip Tests
