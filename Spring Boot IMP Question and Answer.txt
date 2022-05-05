@@ -494,7 +494,29 @@ goal- clean package
 skip Tests
 
 B) Generate war file
-2) Run as maven build
-In pom.xml
+1) first extends main class as SpringBootServletInitializer
+2) Overide the configure method
+3)In pom.xml
 <packaging>war<\packaging>
+4) 
 run as maven build ---> clean package --->skip Tests
+
+61) How to deploy your application on external server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) First generate war file of your application
+   pom.xml --> <packaging>war<\packaging>
+   main class extends SpringBootServlerInitilizr, and configure override in that class.
+   run your application as maven build ----> goal - clean package  and SkipTests
+   
+2) Now check your machine whether jre instanlled or not.
+   install tomcat 9.
+   copy war file and paste it in webapp of tomcat folder
+   open bin folder of tomcat then open cmd on that path
+   and write startup.bat 
+   so application direclty run on tomcat
+   then open webapp folder and check that web file get unzipped i.e means you have succesfully deployed your application
+   on tomcat server.
+   now copy the file name unzipped folder and open browser.
+   type http://localhost:8080/name_of_unzipped_folder/
+   
+   
