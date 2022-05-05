@@ -4,14 +4,14 @@
 
 1)What is Hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                         Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
+Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                         
 
 
 2)What is JPA?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                        JPA stands for java persistence API.
-                                                        It provide platform to work directly with objects instead of sql statements.
+JPA stands for java persistence API.
+It provide platform to work directly with objects instead of sql statements.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3)What is the diffrence between hibernate and JPA?
@@ -29,7 +29,7 @@
 
 4)What is ORM?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-                                                       ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
+ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
 
 
 5)Explain hibernate architecture?
@@ -65,10 +65,10 @@
 
 9)List of key component of Hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-                                                       1)session
-                                                       2)Session factory
-                                                       3)Transaction
-                                                       4)Criteria
+                                                       1)session(Session is used to maintain the relation between hibernate application and database).
+                                                       2)Session factory(Session factory is an interface which provides factory method to get instance of session)
+                                                       3)Transaction (Transaction is used when we want execute certain method in transaction)
+                                                       4)Criteria (Criteria is used to fetch record from database based on the specified criteria)
                                                        5)Configuration
                                                        6)Query
 
@@ -100,7 +100,7 @@
 
 15)What is mean by Thread safe?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-                                                       Thread safe means we can access only one thread at a time.
+                                                      Thread safe means only one thread execute at a time.
 
 16)What is session factory?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
@@ -109,7 +109,7 @@
 
 17)Is session-factory object is thread safe?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-                                                       yes,session factory object is thread safe.
+                                                       yes,session factory object is thread safe.because it share with only one thread at a time.
 
 
 18)What is session?
@@ -117,12 +117,12 @@
                                                        Session is an interface which is used to maintain the relation between hibernate application and database layer.
 
 
-19)Is session object is thread safe? why noy?
+19)Is session object is thread safe? why not?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        no, session object is not thread safe. Because We can share session between multiple threads.
                                                        (Thread safe means we can perform only one task at a time)
                                                        (Non thread safe means we can execute multiple thread at a time)
-
+  
 
 20)What is the diffrence between update() and merge() method?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
@@ -191,7 +191,7 @@ Cohesion describe how single class is created.
 Adavnatage of cohesion is single class easy for maintance.
 
 
-29)What is adhesion?
+29) What is adhesion?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 Adhesion helps to glues different things together. 
 
@@ -244,7 +244,7 @@ load() method return object not found exception if object isn't found.
                                                        2)Simple to learn
 
 
-38)What is the difference between first level cache and second level cache?
+38) What is the difference between first level cache and second level cache?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 
                                                        Catche improve performance fo your application by pooling object in catche. It helpful when we have to fetch same data 
