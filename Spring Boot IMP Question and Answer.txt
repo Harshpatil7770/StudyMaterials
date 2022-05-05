@@ -11,9 +11,11 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    A) Spring application
    B) web development
-   c) Logging
+   c) Logging ( Logging means log file include in this such as time and date, thread name,logger name,log levels .
+              ( If you want to print log file you can write the properties in application.properties file such as
+                logging.file = /var/tmp/mylog.log)
    d) Security
-   e) Admin features
+   e) Admin features -( admin feature is web application, It helps to managaing and monotoring spring boot. 
 
 
 3) What are the advantages of springBoot?
@@ -245,7 +247,12 @@
 36) Can you explain how to deploy spring boot application on different server?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     To deploy spring boot application on different server first we need to generate war file of that project and deploy on your favorite server.
-
+    If you want to create war file then the follow steps such as
+    1) pom.xml file add <packaging>war</packaging> packaging style as war
+    2) Maven clean 
+    3) Mavne build ( mvn clean install (skiptests))
+    
+    
 
 37) Why we use spring boot framework?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -376,13 +383,13 @@
 
 
 44) What is spring boot application.properties files?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     A spring boot come with built in mechanism application configuration using files called application.properties.It located inside the src/main/resource folder.
     the main advantage of spring boot application.properties file is provide platform to run your application on different environments. for eg. QA,dev,deployment
 
 
 45) What are diffrent ways to create spring boot project?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1)Spring stater project
     2)Maven Project
     3)Spring boot CLI
@@ -390,23 +397,23 @@
 
 
 46) How to add dependencies?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     It is very simple to add the dependecies at the time project creation but suppose you forget any dependecies to add you copy form outside (i.e MVN Repo is very
     famoues for that) and add in pom.xml file
 
 
 47) What is the diffrenece between bootstrap file and application.properties file?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Bootstarp file is eargely loading ie. bean are already loading where as application.properties file lazy loading it will server when request comes.
 
 
 48) What is the latest version of spring boot?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 2.6.5
+    SpringBoot 2.6.7
 
 
 49) What are the diffrent types of scopes of bean?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- scope of bean specify the life cycle of bean
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------     scope of bean specify the life cycle of bean
     @Scope annotations used to mark scoper of the bean
     1)Singleton- only one instance is created.
     2)Prototype- every reqest new instance is created
@@ -416,42 +423,43 @@
 
 
 50) Explain the meaning of dependency and dependent object?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     class A required other class object to do it's opeations i.e class B
     Then class A-dependent object
     class B-dependency obejct
 
 
 51) What is purpose of spring web dependecies?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring web dependecies is used to develop web application or restful web application.
     
     
 52) What are the springboot dependecy management?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-     Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency will get       automatically update.
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency         will get automatically update.
      
  53) What are the basic annotations that spring boot offers?
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
      @SpringBootApplication -It include three annotations such as 1)@ComponentScan 2)@EnableAutoConfiguration 3)Configuration
      
  54) How to enable Actuator in Spring boot application?
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
      To enable actuator in spring boot first we need to add the dependency ie. spring boot actuator. 
+     Inside the application.properties file write such as
+     management.endpoints.web.exposure.include=*
      
-  55) what is profile in spring boot?
-     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 55) what is profile in spring boot?
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
      profile means provide seggration of your application that opetate on specific enviornment. for eg- QA,Dev,Production etc
      we put spring.active.profile=qa so it will work for qa.
 
-  56) What are the combinations of spring Boot?
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-       Spring Boot combination of spring application and embeded server.
+56) What are the combinations of spring Boot?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+     Spring Boot combination of spring framework and embeded server.
   
   
-  57) Explain architecture of Spring Boot?
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+57) Explain architecture of Spring Boot?
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
   The class contains annotations such @SpringBootApplication and main method is the main class of our spring boot application. 
   Before going to spring boot architecture we have layers such as -
   1) Presentation layer
