@@ -8,198 +8,199 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 1) What is the relation between JDBC and MYSQL ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Mysql is database used to store the data. Whereas JDBC is used to perform operation on database.
+Mysql is database used to store the data. Whereas JDBC is used to perform operation on database.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 2) What  is JDBC?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Jdbc stands for java database connectivity driver. it is used to connect your java application with database.
+Jdbc stands for java database connectivity driver. it is used to connect your java application with database.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 3) What is JDBC Driver?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Jdbc driver stands for java database connectivity driver .It is used to connect java application with database.
+Jdbc driver stands for java database connectivity driver .It is used to connect java application with database.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 4) What are the types of JDBC Driver?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 There are four types of jdbc driver in java
-                                                                                                                                              1) JDBC-ODBC bridge driver
-                                                                                                                                                  - jdbc-odbc bridge driver stands for java database connectivity to open database connectivity,It convert jdbc method calls
-                                                                                                                                                    into odbc function calls. 
-                                                                                                                                              2) Network API driver
-                                                                                                                                                   - It is called as fully java driver. It is entirely writtern in java. It is used to convert jdbc method calls directly  or indireclty
-                                                                                                                                                     into vedor-specific database protocols.
-                                                                                                                                              3) Thin driver-
-                                                                                                                                                  Thin driver means partially java driver.It is not entirely writtern in java. It is used to convert jdbc methods calls direclty into
-                                                                                                                                                   vendor specific database protocol.
-                                                                                                                                              4) Native protocol driver-
-                                                                                                                                                   Is is also called as partially java driver.It is not entirely writtern in java. It usd to convert jdbc method calls into native calls.
+There are four types of jdbc driver in java
+1) JDBC-ODBC bridge driver
+- jdbc-odbc bridge driver stands for java database connectivity to open database connectivity,It convert jdbc method calls
+  into odbc function calls. 
+2) Network API driver
+- It is called as fully java driver. It is entirely writtern in java. It is used to convert jdbc method calls directly  or indireclty
+into vedor-specific database protocols.
+3) Thin driver-
+hin driver means partially java driver.It is not entirely writtern in java. It is used to convert jdbc methods calls direclty into
+vendor specific database protocol.
+ 4) Native protocol driver-
+Is is also called as partially java driver.It is not entirely writtern in java. It usd to convert jdbc method calls into native calls.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 5) What are the steps to connect jdbc to database in java ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 There are basically five steps to connect java application to the database.
-                                                                                                                                                  1) Register for the driver class 
-                                                                                                                                                   forName() method is used to register for the driver class.
-                                                                                                                                                  2) Creating Connection
-                                                                                                                                                  getConnection() method is used for creating the connection.
-                                                                                                                                                  3) Creating Statement
-                                                                                                                                                   createStatement() method is used for creating the statement.
-                                                                                                                                                  4) executeQuery
-                                                                                                                                                  executeQuery() method used for executing the queires.
-                                                                                                                                                  5) closing conncetion
-                                                                                                                                                  close() method is used for closing the connections.
+There are basically five steps to connect java application to the database.
+1) Register for the driver class 
+forName() method is used to register for the driver class.
+2) Creating Connection
+getConnection() method is used for creating the connection.
+3) Creating Statement
+createStatement() method is used for creating the statement.
+4) executeQuery
+executeQuery() method used for executing the queires.
+5) closing conncetion
+close() method is used for closing the connections.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 6) What are the JDBC API component?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 JDBC API component constist of classes and interfaces in java.sql package.
-                                                                                                                                                  classes such as clob,blob, driver class, sql exception.
-                                                                                                                                                  1) clob-
-                                                                                                                                                   clob stands for character large object .it is used to read character stream files.
-                                                                                                                                                  2)Blob-
-                                                                                                                                                  Blob stands for binary large object. It is used to represent audio,video,images files
-                                                                                                                                                  3) Driver class-
-                                                                                                                                                  Driver class is used to manage all the register and unregistred drivers.It has serval method to maintain the relation between 
-                                                                                                                                                  user and driver.
-                                                                                                                                                  4) SQL Exception - SQL Exception gives details information of error occured.
+JDBC API component constist of classes and interfaces in java.sql package.
+classes such as clob,blob, driver class, sql exception.
+1) clob-
+clob stands for character large object .it is used to read character stream files.
+2)Blob-
+Blob stands for binary large object. It is used to represent audio,video,images files
+3) Driver class-
+Driver class is used to manage all the register and unregistred drivers.It has serval method to maintain the relation between 
+user and driver.
+4) SQL Exception - SQL Exception gives details information of error occured.
 
-                                                                                                                                                  Interfaces such as ResultSet,ResultSet dababase metda interface. database metadata interface, connection, statement, prepared
-                                                                                                                                                  statement, collable statement.
-                                                                                                                                                  1) Connection interface
-                                                                                                                                                  - connection object is created by using getConnection() method. 
-                                                                                                                                                  2) Statement -
-                                                                                                                                                   Statement object is created by using createStatement() method.It is used to run the static queires. When we use statement 
-                                                                                                                                                  we are not able to add parameter at runtime.
-                                                                                                                                                  3) ResultSet interface-
-                                                                                                                                                  ResultSet interface represnt no. rows in the table also changing cusrsor point we will get information from database.
-                                                                                                                                                  4) ResultSet MetaData-
-                                                                                                                                                   ResultSet MetaData interface represnt no. of columns ,column names etc.
-                                                                                                                                                  5) Database metadata interface
-                                                                                                                                                   Database metadata interface represent the information such as no. of view, column name,column type, username and drive
-                                                                                                                                                  name
-                                                                                                                                                  6)PreparedStatement() - PreparedStatemet object is created by using PreparedStatement method. We can add parameter
-                                                                                                                                                   at a runtime.
-                                                                                                                                                  7) CollableStatement- CollableStatment is used to call the stored procedure and functions. 
+Interfaces such as ResultSet,ResultSet dababase metda interface. database metadata interface, connection, statement, prepared
+statement, collable statement.
+1) Connection interface
+- connection object is created by using getConnection() method. 
+2) Statement -
+Statement object is created by using createStatement() method.It is used to run the static queires. When we use statement 
+we are not able to add parameter at runtime.
+3) ResultSet interface-
+ResultSet interface represnt no. rows in the table also changing cusrsor point we will get information from database.
+4) ResultSet MetaData-
+ResultSet MetaData interface represnt no. of columns ,column names etc.
+5) Database metadata interface
+Database metadata interface represent the information such as no. of view, column name,column type, username and drive
+name
+6)PreparedStatement() - PreparedStatemet object is created by using PreparedStatement method. We can add parameter
+at a runtime.
+7) CollableStatement- CollableStatment is used to call the stored procedure and functions. 
                                                                                                                                                    
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is the difference between table and view ?
+7) What is the difference between table and view ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                          Table                                                         View
+ Table                                                         View
 
-                                                1) Table is physical entity                                                 1)View is virual entity.
-                                                2) Table required space in memeory                                 2)View doesn't require space in memeory.
-                                                3) Table generate faster result                                          3) view generate slower result
-                                                4) Table is used to store the data                                       4) View doesn't store the data
+1) Table is physical entity                                     1)View is virual entity.
+2) Table required space in memeory                              2)View doesn't require space in memeory.
+3) Table generate faster result                                 3) view generate slower result
+4) Table is used to store the data                              4) View doesn't store the data
 
 
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What are the JDBC Statements ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                  There are three types of JDBC statement
-                                                                                                                                                 1  ) Statement-
-                                                                                                                                                  Statment object is created by using CreateStatement() method. It is used to run the static quries.
-                                                                                                                                                  if we use statement we are not able to add parameter at runtime.
-                                                                                                                                                 2) PreparedStatement-
-                                                                                                                                                 PreparedStatement object is created by using PreapredStatement() method.We can add parameter at a  runtime.
-                                                                                                                                                 3) Collable Statement- 
-                                                                                                                                                 Collable statement is used to call the stored procedures and functions.                                               
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) How can we set null value in jdbc prepared statement?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 By using setNull() method we can set null value in jdbc Prepared statement.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What are the benefites of prepared statement over statement ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 We can add parameter at a runtime whereas by using statement we can run only static quries.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is the difference between execute,executeQuery and executeUpdate ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 execute - execute is used for any sql statement.
-                                                                                                                                                 executeQuery- executeQeury is used for selected queires.
-                                                                                                                                                 executeUpdate is used for insert/update/delete operations
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is ResultSet and what are the different types?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 ResultSet is an interface which return the information such as no. of rows also changing cursor point we will get information 
-                                                                                                                                                 from the database.
-                                                                                                                                                1) ResultSet type forward only - cursor moves only forward direction
-                                                                                                                                                2) ResultSet type scroll sensitive -cursor moves both both and reverese direction but scroll sensitive.
-                                                                                                                                                3) ResultSet type scroll insensitive - cursor moves both forward and reverese but scroll insensitive.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is the difference between ResultSet and Rowset ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                    ResultSet                                                    RowSet
-                                                    1) ResultSet object is not java bean object                                1) RowSet object is java bean object.
-                                                    2)ResutlSet object is bydefault non                                          2) RowSet object are updatable and scroable.
-                                                      updatable and scrobale
-                                                    3) ResultSet maintain connection                                            3) RowSet is used to disconnecting from the database
-                                                       with database.
-                                                    4) ResulSet can't serialize                                                      4) RowSet serialize.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is the role of jdbc driver manager class?
+8) What are the JDBC Statements ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                Jdbc Driver manager class manage all the registred as well as unregistred driver class. It has servral method to maintain
-                                                                                                                                               relation with used and driver.
+There are three types of JDBC statement
+1) Statement-
+ Statment object is created by using CreateStatement() method. It is used to run the static quries.
+if we use statement we are not able to add parameter at runtime.
+2) PreparedStatement-
+PreparedStatement object is created by using PreapredStatement() method.We can add parameter at a  runtime.
+3) Collable Statement- 
+Collable statement is used to call the stored procedures and functions.                                               
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+9) How can we set null value in jdbc prepared statement?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+By using setNull() method we can set null value in jdbc Prepared statement.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+10) What are the benefites of prepared statement over statement ?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+We can add parameter at a runtime whereas by using statement we can run only static quries.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+11) What is the difference between execute,executeQuery and executeUpdate ?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+execute - execute is used for any sql statement.
+executeQuery- executeQeury is used for selected queires.
+executeUpdate is used for insert/update/delete operations
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+12) What is ResultSet and what are the different types?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+ResultSet is an interface which return the information such as no. of rows also changing cursor point we will get information 
+from the database.
+1) ResultSet type forward only - cursor moves only forward direction
+2) ResultSet type scroll sensitive -cursor moves both both and reverese direction but scroll sensitive.
+3) ResultSet type scroll insensitive - cursor moves both forward and reverese but scroll insensitive.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+13) What is the difference between ResultSet and Rowset ?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+ ResultSet                                                    RowSet
+1) ResultSet object is not java bean object                 1) RowSet object is java bean object.
+2)ResutlSet object is bydefault non                         2) RowSet object are updatable and scroable.
+ updatable and scrobale
+3) ResultSet maintain connection                            3) RowSet is used to disconnecting from the database
+with database.
+4) ResulSet can't serialize                                 4) RowSet serialize.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is jdbc connection interface?
+14) What is the role of jdbc driver manager class?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Connection object is created by using getConnection() method. It makes connection to the database.
+
+Jdbc Driver manager class manage all the registred as well as unregistred driver class. It has servral method to maintain
+relation with used and driver.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is jdbc resultset interface ?
+15) What is jdbc connection interface?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 JDBC ResultSet interface return the information such as no. of rows also chaning cursor point we will get information from 
-                                                                                                                                                 the database.
+Connection object is created by using getConnection() method. It makes connection to the database.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is jdbc resultSet metadata interface?
+16) What is jdbc resultset interface ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 JDBC ResultSet Metadata interface return the information such as column name,column type etc.
+JDBC ResultSet interface return the information such as no. of rows also chaning cursor point we will get information from 
+the database.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+17) What is jdbc resultSet metadata interface?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+JDBC ResultSet Metadata interface return the information such as column name,column type etc.
                                                                                                                                                
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) Which interface responsible for transaction management in jdbc ?
+18) Which interface responsible for transaction management in jdbc ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 JDBC Connection Interface is responsible for transcation mangement.
+JDBC Connection Interface is responsible for transcation mangement.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is batch processing and how to perform in jdbc?
+19) What is batch processing and how to perform in jdbc?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Batch Processing means group of sql statement.execute in group instead of single it increse it's performas.
+Batch Processing means group of sql statement.execute in group instead of single it increse it's performas.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is clob and blob in jdbc?
+20) What is clob and blob in jdbc?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 clob and blob are classes present in sql. clob stands for character large object whreas blob stands for binary large object
-                                                                                                                                               clob is used to read character stream files, whereas blob represent audio,video,images.
+clob and blob are classes present in sql. clob stands for character large object whreas blob stands for binary large object
+clob is used to read character stream files, whereas blob represent audio,video,images.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What are the diffrent types of locking mechanism in jdbc?
+21) What are the diffrent types of locking mechanism in jdbc?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 Locking is certain types of mechanism applied to restrict the other user from using the database
-                                                                                                                                                1) Page lock- page lock directly applied on the page
-                                                                                                                                                2) Table lock - table lock direclty applied on table.
+Locking is certain types of mechanism applied to restrict the other user from using the database
+1) Page lock- page lock directly applied on the page
+2) Table lock - table lock direclty applied on table.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is the difference between stored procedure and function?
+22) What is the difference between stored procedure and function?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                             Stored Procedure                                                                 Function
-                                                 1) Stored Procedure doesn't return any value                                                           1)Function return value
-                                                  2) Stored procedure support both input and                                                             2) Function support only input parameter.
-                                                   output parameter.                                  
-                                                  3)Stored Procedure is used for business                                                                 3)Function is used for calculation
-                                                   loginc  
-                                                  4) It return one or more value                                                                                4) Function return only one value.
+Stored Procedure                                                                 Function
+1) Stored Procedure doesn't return any value                               1)Function return value
+2) Stored procedure support both input and                                 2) Function support only input parameter.
+output parameter.                                  
+3)Stored Procedure is used for business                                    3)Function is used for calculation
+loginc  
+4) It return one or more value                                            4) Function return only one value.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) How to maintain integrity of database by using jdbc?
+23) How to maintain integrity of database by using jdbc?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 To maintain integrity of database we need to folow ACID properties.
+To maintain integrity of database we need to folow ACID properties.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is jdbc RowSet?
+24) What is jdbc RowSet?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                JDBC Rowset is java bean object. It is used to disconnecting from database. By default JDBC Rowset object is scroable and 
-                                                                                                                                                updatable. RowSet is serilizable.                                                  
+JDBC Rowset is java bean object. It is used to disconnecting from database. By default JDBC Rowset object is scroable and 
+ updatable. RowSet is serilizable.                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What is the difference between java.util.Date and java.sql.Date?
+25) What is the difference between java.util.Date and java.sql.Date?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                Java.util.Date represent both data and time whereas java.sql represent date without time.
+Java.util.Date represent both data and time whereas java.sql represent date without time.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-137) What does JDBC SETMAX method  do?
+26) What does JDBC SETMAX method  do?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                                                                 JDBC SETMAX method used to limit the no. of rows.
+JDBC SETMAX method used to limit the no. of rows.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
