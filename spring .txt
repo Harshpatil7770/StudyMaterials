@@ -6,23 +6,23 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1)what is spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                  Spring is web application development based on java.
-                                                                                  Spring is mainly used to develop loosely coupled application so it's become easy to                                                                                     test and manage your application. when we use we need to add dependecny manually 
-                                                                                  also we need to write xml file.                                                                                 
+Spring is web application development based on java.
+Spring is mainly used to develop loosely coupled application so it's become easy to                                                                                     test and manage your application. when we use we need to add dependecny manually 
+also we need to write xml file.                                                                                 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------                2)what is the advantages of spring framework?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                  1)Spring maily used to develop loosely coupled application.
-                                                                                  2)Light weight application.
-                                                                                  3)Spring framework provide predefined template.
-                                                                                  4)Easy to test and manage your application.
+1)Spring maily used to develop loosely coupled application.
+2)Light weight application.
+3)Spring framework provide predefined template.
+4)Easy to test and manage your application.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------               3)what is lazy loading?
 --------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                 Lazy loading means it will server when request comes.
+Lazy loading means it will server when request comes.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------               4)what is eagerly loading?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                 Eargely loading means the beans are loaded form.
+Eargely loading means the beans are loaded form.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -35,12 +35,12 @@ When we use spring we need to add dependency manually as well as we need to writ
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 6)what are the module of Spring framework?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                               1)Spring AOP
-                                                                               2)Spring ORM
-                                                                               3)Spring JDBC
-                                                                               4)Spring JPA
-                                                                               5)Beans
-                                                                               6)Web Servlet
+1)Spring AOP
+2)Spring ORM
+3)Spring JDBC
+4)Spring JPA
+5)Beans
+6)Web Servlet
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 7)what is the role of IOC container in spring?
@@ -72,48 +72,48 @@ Singleton is used in EJB stateless session where prototypes is used in EJB state
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 11)what are types of transaction management supported by spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                       Spring support two types of transaction management
-                                                                                      1)Programatic Type transaction management-
-                                                                                      It support for few transaction.
+Spring support two types of transaction management
+1)Programatic Type transaction management-
+It support for few transaction.
 
-                                                                                      2)Declarative Type Transaction management-
-                                                                                      It supports for multiple transaction.
+2)Declarative Type Transaction management-
+It supports for multiple transaction.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 12)what are AOP Terminology?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                      AOP stands Aspect orinted Programming.
-                                                                                      There are seven AOP Terminology
-                                                                                      1)Aspect - Aspect means class contains advice and join point.
-                                                                                      2)Advice- Action taken by aspect.
-                                                                                      3)Join Point - Any point in the program such as method execution or exception                                                                                            handeling.                                                                      
-                                                                                      4)Introduction- Introduction represent new fileds and methods.
-                                                                                      5)Weaving - Weaving means linking aspect with other application.
-                                                                                      6)Proxy object -Proxy is combination of advice and business logic
-                                                                                      7)Point cut- Expression language of spring AOP.
+AOP stands Aspect orinted Programming.
+There are seven AOP Terminology
+1)Aspect - Aspect means class contains advice and join point.
+2)Advice- Action taken by aspect.
+3)Join Point - Any point in the program such as method execution or exception                                                                                            handeling.                                                                      
+4)Introduction- Introduction represent new fileds and methods.
+5)Weaving - Weaving means linking aspect with other application.
+6)Proxy object -Proxy is combination of advice and business logic
+7)Point cut- Expression language of spring AOP.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 13)what are types of advice?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                     1)Before advice
-                                                                                     2)After advice
-                                                                                     3)Through advice
-                                                                                     4)Around advice
+1)Before advice
+2)After advice
+3)Through advice
+4)Around advice
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------              14)what are types of IOC container in spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                     There are two types of IOC container in spring
-                                                                                     1)Bean factory
-                                                                                     2)Application context
+There are two types of IOC container in spring
+1)Bean factory
+2)Application context
 
-                                                                                     1)Bean factory- Bean factory is root interface for all spring bean container.
-                                                                                     Bean factory means basic container.
-                                                                                     2)Application context- All beans are loaded inside an application context.
-                                                                                      application context means advance container.
+1)Bean factory- Bean factory is root interface for all spring bean container.
+                Bean factory means basic container.
+2)Application context- All beans are loaded inside an application context.
+                application context means advance container.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 15)what is main difference between bean factory and application context?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                     Bean factory meand basic container whereas application context means advanced                                                                                          container.
+Bean factory meand basic container whereas application context means advanced                                                                                          container.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 16)Explain the meaning of dependency and dependent object?
@@ -159,12 +159,12 @@ A class not dependes upon primitive data type as well as collection then referen
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 22)which type of list spring provided by default?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                  Spring provide by default arraylist.
+Spring provide by default arraylist.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 23)which type of set spring provided by default?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                  Spring provide by default hashset.
+Spring provide by default hashset.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 24)what are the ways to injecting primitive values by setter injection?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
