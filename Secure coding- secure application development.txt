@@ -24,7 +24,7 @@ Every application is made following sdlc steps. It has basically seven steps suc
 
 Owasp Top 10 web application proactive or sequrity risks
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Defiining Security Requirements
+1) Defining Security Requirements
 2) leverage of framworks and libraries
 3) Sucure database access
 4) Ecaspe and enable data
@@ -84,7 +84,7 @@ Types of vulnerablity assessments
 7) Wireless based assessments
 8) Application assessments
 
-Penetration Testing
+ Penetration Testing
 Penestration testing is the process of hacking System with the permission from owner of that system to evaluate performance,hack values,attcaks other components
 such as threat daisy chaining
 
