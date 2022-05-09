@@ -16,25 +16,25 @@ GWT stands for google web toolkit.
 It is open source platform to build web application as well it mainly used it make or deveop ajax application easily.
 
 
-2)What is adavntages of GWT?
+2) What is adavntages of GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1)It allows to write in application java and run in javasript.
 2)It allows us to client side code in java.
 
 
-3)What is main class of GWT application?
+3) What is main class of GWT application?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The class whose implements entry is the main class of GWT application.GWT Application started loading from this class first.
 
 
-4)What are the features of GWT?
+4) What are the features of GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The feature of GWT are
 1)It allows to write code in java and run  as javaScript
-2)It allows us to write clint side code in java.
+2)It allows us to write client side code in java.
 
 
-5)What are the core component of GWT?
+5) What are the core component of GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1)GWT Java to JavaScript compiler
 2)JRE Emulation library
@@ -42,44 +42,44 @@ The feature of GWT are
 4)UI Class library
 
 
-6)What are the modes provided by GWT?
+6) What are the modes provided by GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 There are two modes provided by GWT
 1)Web mode- It allows us deploy our application on server
 2)Super dev mode- It allows to run our application as std. java debugger.
 
 
-7)What is the super dev mode in GWT?
+7) What is the super dev mode in GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Super dev mode helps to qucikly compile your gwt application and immediately see result on browser.
 
 
-8)What is the latest version of GWT?
+8) What is the latest version of GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 GWT 2.9.0
 
 
-9)What is RPC?
+9) What is RPC?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RPC stands for remote procudure calls, It hepls to communicate client to the server.
 
 
-10)Why GWT RPC calls made asynchrouns?
+10) Why GWT RPC calls made asynchrouns?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To avoid browser hanging gwt rpc made asynchronus.
 
 
-11)What is async callback?
+11) What is async callback?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Async callback means provide two methods on success and on failure.Also in this class recieve feedback from server and provide functionality.
 
 
-12)What is default name of GWT Widgets?
+12) What is default name of GWT Widgets?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 gwt-(hypn) is default name of GWT Widgets.
 
 
-13)What are the types of panel in GWT?
+13) What are the types of panel in GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1)Root Panel- It is top most panel where all widgets are attached.
 2)HTMLPanel- HTMLPanel provide basic layout of panel.
@@ -88,39 +88,39 @@ gwt-(hypn) is default name of GWT Widgets.
 5)scroll panel- scroll panel provide scroable area.
 
 
-14)What is UI Binder?
+14) What is UI Binder?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 UI Binder is framework allows us create web application with HTML Pages.
 
 
-15)What are the module descriptor in GWT?
+15) What are the module descriptor in GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Module descriptor provide setup of gwt application.
 
 
-16)What are the disavantages of GWT?
+16) What are the disavantages of GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1)Require high compile time
 2) Reuire more memory to run on dev mode 
 
 
-17)What is synchronus programming?
+17) What is synchronus programming?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Synchrnous programming means we send only one request and wait until respose come. We are not able to other operation until first response come.
 
 
-18)What is asynchrouns programming?
+18) What is asynchrouns programming?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Asynchrouns programming means we can send multiple request at a time and don't need to wait until response come.
 
 
-19)When we need to implement serializable in JAVA?
+19) When we need to implement serializable in JAVA?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To travel the state of object over the network we need to implements serilizable in java.
 To perform serializable we need to convert object into byte-stream if you have primitive data type by using wrapper classes we can convert it into objects.
 
 
-20)GWT Front End in JAVA
+20) GWT Front End in JAVA
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1)For Line Brake
