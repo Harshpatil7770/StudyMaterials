@@ -19,6 +19,7 @@
                                            A) Spring backlog-
      
                                            Spring backlog means contains list of requirments and feature functionlity.
+                                           Inside the backlog we have user stories.
 
                                            B) Spring planning-
 
@@ -65,8 +66,68 @@
 3) Story-
 
    Story means smaller project requirements that written in perspective end of user.
+   Stories further more break into development task or testing tasks. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)Create ---  A) Epic - purpole colour ( battery charging symbol)
+              B) story - green colour
+              c) Bug - red colour
+              d) Task - blue colour
+              
+              ------------------------------------------------------------------------------
+              
+              RoadMap - means planning large piece of information into epic level.
+              
+              Whenever we create anything it will first goes to the backlog.
+              backlog means list of requirement or feature functionlity
+     
+              first create the epic.
+     
+              Now click on create sprint.
+              drag the backlog and drop out in spring section.
+               
+               
+              Backlog click on start sprint then only you can the spring on your board.
+              
+              Now first it in ToDo coloumn now if you want to start your work then click on
+              inprogress in backlog Now in board you can see that task goes into
+              InProgress column.
+              Once your work is complete then click on DOne.
+              so board your task goes into third column i.e Done.
+              and Jira number come with underline on it.
+              
+              Now on backlog click on the complete sprint then the sprint will get remove.
+              
+              --------------------------------------------------------------------------------
+               
+              Board
+              Under the board we can see the ToDo,InProgressIssues,Done
+              
+              In Greeen colour for e.g- ProjectName-Number is the number of your
+              jira tasks.
+              
+              If you are going to start your work first change the ToDO into
+              Inprogress status.
+              
+              Board - Now on borad we can we the issue goes into next column i.e from ToDo to InProgress
+              
+              Once you complete the task click on done
+              The Jira tickit name come with underscore on it.
+              
+              after that you can check on board your work will get complete.
+              
+              Once every sprint is complete then click on complete sprint options.
+              
+              If anyone is remaining it will shows us not able to complete sprint.
+              
+              
+              
+              
+              
+              
+
+
 
 
 
@@ -106,9 +167,8 @@ Software development life cycle
 =======================================================================================================================================================================
   
 Waterfall -
- Waterfall means put all functionlity into single process,that means we work application to application, we are not able to work new feaute until previous one 
- is complete succesfully. whereas as agile we work parallely takss it hepls us to complete work fast as compare to waterfall model. 
- After done with the complete process or model we will put it in front of product owner in waterfall model.
+ 
+ Waterfall means put all functionlity into single process. After done with the complete process or model we will put it in front of product owner.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
