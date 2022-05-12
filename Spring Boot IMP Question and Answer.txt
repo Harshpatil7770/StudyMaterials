@@ -528,4 +528,13 @@ run as maven build ---> clean package --->skip Tests
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
  When we run our project or applicationa maven clean so inside all files of target folder get removed.
  
+ 64) How to execute test cases in spring boot?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Run your application as maven clean
+ then maven install
+ (If you face some kind of isuue at the time of maven install
+  Please go to Window ---> preferences---> JRE ---> Installed JRE ---> then check path of you JDK file not JRE.
+  
+ 
+ 
  
