@@ -106,8 +106,9 @@ Software development life cycle
 =======================================================================================================================================================================
   
 Waterfall -
- 
- Waterfall means put all functionlity into single process. After done with the complete process or model we will put it in front of product owner.
+ Waterfall means put all functionlity into single process,that means we work application to application, we are not able to work new feaute until previous one 
+ is complete succesfully. whereas as agile we work parallely takss it hepls us to complete work fast as compare to waterfall model. 
+ After done with the complete process or model we will put it in front of product owner in waterfall model.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
