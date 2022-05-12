@@ -519,4 +519,13 @@ run as maven build ---> clean package --->skip Tests
    now copy the file name unzipped folder and open browser.
    type http://localhost:8080/name_of_unzipped_folder/
    
-   
+  
+ 62) What is lognform of POM.xml file?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Project object model
+ 
+ 63) What happens we we run our proejct as maven clean?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ When we run our project or applicationa maven clean so inside all files of target folder get removed.
+ 
+ 
