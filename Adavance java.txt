@@ -2336,6 +2336,9 @@ Supplier function interface means it doesn't take the inputs.It return values by
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Internal iterations supports functional programming.whereas external Iterations supports oops programming styles.
 
+43) What is the advantage of java 1.8?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+We require less code to write.
 
   
   
