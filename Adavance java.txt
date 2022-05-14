@@ -1951,7 +1951,7 @@ The main objective of java 1.8 introduce is to enable function programming in ja
    1)Reduce boiler plate code.
    2) Code lot's of lines of code
    3) Enable Function Programming in java.
-   
+   4) Easy to use
     
     
 
@@ -1986,12 +1986,13 @@ The main objective of java 1.8 introduce is to enable function programming in ja
    }
    
    Advantages of streamAPI- 1) It reduce lot's of lines of codes.
+                            2) TO mofify the resource.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3) Default and Static Method 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an       interface it must implement in subclass so which is not good. In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
-   that default method they can call such as interface.super.method() name.
+Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an interface it must implement in subclass so which is not good. In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
+that default method they can call such as interface.super.method() name.
 
    Interface Bike{
    void  start();
@@ -2103,6 +2104,7 @@ c) Correct
 5) For Each Method
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    For Each Method is used to iterate the element.
+   It used to iterate the array and collections.
    For Each Method is introduced in iterable and stream Interface. 
    The main advantage of for each loop is to reduce lot's of code.
    The disadvantage of this loop is we can't travel in reverse direction.
@@ -2219,9 +2221,19 @@ public class Interview {
 
 	}
 }                 
-                 
+  
+  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+8) Predefined Function 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-8) Map 
+1) Predicate - Predicate return type is boolean.It takes the arguments and return the true or false value.
+2) Function - Function return type is object. It takes the argument and return the result.
+3) Consumer - It takes the arguments, but doesn't return anything,
+4) Suppiler - It doesn't take the argument but return the result.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9) Map 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------      Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
      for eg- convert string to lower case to upper case, multiply number by values etc.
      
@@ -2265,7 +2277,7 @@ public class Interview {
 5) For each method
 6) Functional Interface
 7) Optional class
-
+8) Predefined Function
 
 14) In StreamAPI what is the difference between parallel and sequential stream?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2283,11 +2295,13 @@ public class Interview {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) It reduce lots of lines of code
 2) Increase productivity
+3) To enable function programming in java
 
 16) What are the advantages of java 11?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) .class file will not get create
 2) We don't need to compile your application.
+3) private method we can use inside the interface.
 
  17) Can a functional interface extend/inherit another interface?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2303,7 +2317,7 @@ public class Interview {
 
 19)  What are the various categories of pre-defined function interfaces?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Funtion-  It takes arguments and return the result
+1) Funtion-  It takes arguments and return the result. It return type is object.
 2) Consumer- It passes the arguments but not return the values
 3) Supplier- no arguments but return result
 4) Predicate- It return true or false value ( boolean return type)
@@ -2393,6 +2407,7 @@ LocalDateTime - it represent date with time
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) If you are using one parameter then theres is no need to use the parenthesis. But if your are using more parameter then you need to use the parenthisis
 2) If there is one statement in method body then there is no need to curly braces.
+3) If you are using return keyword then curly braces are compulsory we need to use.
 
 34) What is the difference betweeen StreamAPI and CollectionAPI?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2416,7 +2431,7 @@ wherase function takes the arguments and return the result. Return type of funct
 
 38) What is diffrence between limit and skip?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-limit means it return the specified size, whereas skip means skip the element
+limit means it return the specified size, whereas skip means skip the element.
 
 39) What is the difference between iterator and spiltiterator?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2430,7 +2445,7 @@ SpiltIterator-
 1)spiltIterator is used in streamAPI
 2)spiltIterator travels both parallel and sequential order
 3)It has spiltiterator() method.
-
+	
 40) What is the consumer functional Interface?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 consumer function interface is pre-defined function in java. It takes the arguments but doesn't return the values.
