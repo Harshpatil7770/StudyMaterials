@@ -846,7 +846,7 @@ For eg- suppose five reference variable referes to the one object and i want to 
 ---------------------------------------------------------------------------------------------------------------------------------------
 5) How thread communication happen?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Thread communicate with each other by using notify,notify all mehtods . notify meas unblock only one waiting thread ,wheras notifyall() 
+Thread communicate with each other by using notify(),notify all() mehtods . notify meas unblock only one waiting thread ,wheras notifyall() 
 means unblock all waiting thread.                                                                                                                                     ---------------------------------------------------------------------------------------------------------------------------------------
 6) What is the purpose of wait method?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1043,8 +1043,12 @@ The main purpose of synchronization is avoid thread constistance and thread inte
 ---------------------------------------------------------------------------------------------------------------------------------------
 42) What is difference between synchronization block and synchronization method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Synchronozation block is used to perform synchronzation on specific resource of the method. If suppose i have 50 lines of code i want synchronization 5 lines of them then we will use synchronization block.
-                                                                                                                                                                        The scope of synchronization block is smaller than the synchronization method. But suppose if i put all lines of synchronization method in synchronization block then the work of both remain same.
+SYnchronization means capability to access multiple thread to any shared resources.
+Synchronization mainly used to avoid thread interface and consistance problem. 
+Synchronization method is used to perform synchronization on complete resource whereas Synchronization block is used to perform synchronization
+on specific resource of method. suppose i have 50 lines of code and i want to synchronize 5 lines of them then i will use synchronization block.
+The scope of synchronization block is smaller than the synchronization method,but i put all lines of synchronzation method used the synchronization
+method it will work as same.
 																			
 ---------------------------------------------------------------------------------------------------------------------------------------
 43) What is deadlock?
@@ -1057,7 +1061,7 @@ Marker interface meas empty interface. It doesn't have field and method. It is c
 maker interface proivde hint to jvm i.r we are implemting some important feature.
                                                                                                                                                                        It is used to mark capabaility of class while impleemnting interface at runtime. 
                                                                                                                                                                        yes we can create our own marker interface just create an interface and don't write anything inside it.
-                                                                                                                                                                       1) serilizable,clonable,remote are the marker interface
+                                                                                                                                                                       1) serilizable,clonable,remote are the marker interface.
 ---------------------------------------------------------------------------------------------------------------------------------------
 45) How to create immutable class in java and example?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1320,7 +1324,7 @@ Thread class is static
    list.add("Taral");
    list.add("Shreya");
    list.add("Shirke");
-   list.add("SHruti");
+   list.add("Shruti");
    list.add("Kore");
    list.add("Roy");
    list.add("Peeter");
@@ -1341,7 +1345,7 @@ Thread class is static
    So arraylist mainly used for searching operation. we are not able to perform insertion and deletion operation in an arraylist because lot's shifting is required. 
    
       
-5)Explain Internal Working of LinkedList with examples?
+5) Explain Internal Working of LinkedList with examples?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   When we create object on linkedlist inside the memory doubly linked list is created.
@@ -1563,7 +1567,7 @@ Thread class is static
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) When we use generic collection we don't need to typecasting. It is type safe and checked at compile time.
 
-26) What is Hash Collision in Hash Table?and How to prevent it?
+26) What is Hash Collision in Hash Table? and How to prevent it?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) In hashtable put method first calculate hashcode,hashcode return us index value or integer value. So some times so we will get same index value that time
      has collision will occur to check contain equal or not. 
@@ -1668,12 +1672,10 @@ Thread class is static
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 equlas take input parameter as only objects whereas compareTo method take only string.
 
-
 47) How to remove User-defined class objects in Java ArrayList with example?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-48) Write code for hashmap and explain everything?
+48) Write code for Hashmap and explain everything?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
      Hashmap represent key,value pair. They allow unique keys and duplicate value. Hashmap is non synchronized and non thread safe.
      It allows n no. of null values. It implements abstract class.
@@ -1711,11 +1713,11 @@ equlas take input parameter as only objects whereas compareTo method take only s
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Linked hashmap maintain insertion order. Linked hashmap is faster for insertion and deletion the element.
  
-52)What is SortedMap interface?
+52) What is SortedMap interface?
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  SortedMap interface maintaing sorting order of keys,by default sortedmap interface natural order.
  
-53)What is Hashtable and explain features of Hashtable?
+53) What is Hashtable and explain features of Hashtable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Hashtable is synchronized and thread safe. Hashtable extends Dictionary class.Hashtable doesn't allow null value as well as keys.Hashtable is thread safe.
  Hashtable is legacy.
@@ -1951,7 +1953,7 @@ The main objective of java 1.8 introduce is to enable function programming in ja
    1)Reduce boiler plate code.
    2) Code lot's of lines of code
    3) Enable Function Programming in java.
-   4) Easy to use
+   
     
     
 
@@ -1986,13 +1988,12 @@ The main objective of java 1.8 introduce is to enable function programming in ja
    }
    
    Advantages of streamAPI- 1) It reduce lot's of lines of codes.
-                            2) TO mofify the resource.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3) Default and Static Method 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an interface it must implement in subclass so which is not good. In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
-that default method they can call such as interface.super.method() name.
+   Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an       interface it must implement in subclass so which is not good. In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
+   that default method they can call such as interface.super.method() name.
 
    Interface Bike{
    void  start();
@@ -2104,7 +2105,6 @@ c) Correct
 5) For Each Method
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    For Each Method is used to iterate the element.
-   It used to iterate the array and collections.
    For Each Method is introduced in iterable and stream Interface. 
    The main advantage of for each loop is to reduce lot's of code.
    The disadvantage of this loop is we can't travel in reverse direction.
@@ -2221,19 +2221,9 @@ public class Interview {
 
 	}
 }                 
-  
-  
---------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-8) Predefined Function 
+                 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Predicate - Predicate return type is boolean.It takes the arguments and return the true or false value.
-2) Function - Function return type is object. It takes the argument and return the result.
-3) Consumer - It takes the arguments, but doesn't return anything,
-4) Suppiler - It doesn't take the argument but return the result.
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-9) Map 
+8) Map 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------      Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
      for eg- convert string to lower case to upper case, multiply number by values etc.
      
@@ -2277,7 +2267,7 @@ public class Interview {
 5) For each method
 6) Functional Interface
 7) Optional class
-8) Predefined Function
+
 
 14) In StreamAPI what is the difference between parallel and sequential stream?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2295,13 +2285,11 @@ public class Interview {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) It reduce lots of lines of code
 2) Increase productivity
-3) To enable function programming in java
 
 16) What are the advantages of java 11?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) .class file will not get create
 2) We don't need to compile your application.
-3) private method we can use inside the interface.
 
  17) Can a functional interface extend/inherit another interface?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2317,7 +2305,7 @@ public class Interview {
 
 19)  What are the various categories of pre-defined function interfaces?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Funtion-  It takes arguments and return the result. It return type is object.
+1) Funtion-  It takes arguments and return the result
 2) Consumer- It passes the arguments but not return the values
 3) Supplier- no arguments but return result
 4) Predicate- It return true or false value ( boolean return type)
@@ -2407,7 +2395,6 @@ LocalDateTime - it represent date with time
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) If you are using one parameter then theres is no need to use the parenthesis. But if your are using more parameter then you need to use the parenthisis
 2) If there is one statement in method body then there is no need to curly braces.
-3) If you are using return keyword then curly braces are compulsory we need to use.
 
 34) What is the difference betweeen StreamAPI and CollectionAPI?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2431,7 +2418,7 @@ wherase function takes the arguments and return the result. Return type of funct
 
 38) What is diffrence between limit and skip?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-limit means it return the specified size, whereas skip means skip the element.
+limit means it return the specified size, whereas skip means skip the element
 
 39) What is the difference between iterator and spiltiterator?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2445,7 +2432,7 @@ SpiltIterator-
 1)spiltIterator is used in streamAPI
 2)spiltIterator travels both parallel and sequential order
 3)It has spiltiterator() method.
-	
+
 40) What is the consumer functional Interface?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 consumer function interface is pre-defined function in java. It takes the arguments but doesn't return the values.
