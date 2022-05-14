@@ -267,7 +267,7 @@ Checked Expetion                                     Uncheked Exception         
                                                                                                                                                                        Inside the try we should place exception. after the try block we use catch block that means we can't use                                                                try block alone.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-7)Catch Block?
+7) Catch Block?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        afert the try block we should use catch block.that means we can't use catch block alone.A exception occur
                                                                                                                                                                          in try block it must be handel in catch block .
@@ -616,9 +616,37 @@ No we can't write any code after throw statement if you try to write it will sho
  1) printStackTraceMethod() - gives deatils explanation of error occured.
  2) getMessage()- gives description of expcetion occur.
  
+ ---------------------------------------------------------------------------------------------------------------------------------------	
+ 55) Global Exception Handeler
+ ---------------------------------------------------------------------------------------------------------------------------------------	
+1) Create class extends as RepsonseEntityExceptionHandeler
+2)Use @ControllerAdvice Annotations as class level
 
- 
+ for eg
+ @ControllerAdvice
+ class GLobalExceptionHandeler extends RepsonseEntityExceptionHandeler{
 
+@ExceptionHandeler(UserInputException.class)
+ public ResponseEntity<String> userInputExcpetionHandeler(UserInputException exception){
+ return new ResponseEntity<String>("Please enter valid input data ",HttpStatus.BAD_REQUEST);
+ }
+
+
+3) What ever custom exception you want to create they extends as Expection or RuntimeException
+4) write @Component annotatios above that exception.
+
+@Component
+@Data
+@AllArgConstructor
+@NoAllArgConstructor
+class UserInputException extends RuntimeException{
+private String error code;
+private String errorMsg;
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+56) When index out of bond exception arise?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+If you try to access array index negative ,greather or equal to length we will get this excpetion.
 
 
 ======================================================================================================================================================================
