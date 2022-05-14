@@ -82,12 +82,12 @@ Array is fixed in size. The performance of array is faster.
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Yes, it's possible to make array volatile but only those elements poining to array volatile.                                                                                                                                                                     
 ---------------------------------------------------------------------------------------------------------------------------------------
-15)What happen if you declare array without assigining size? 
+15) What happen if you declare array without assigining size? 
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         It will shows comiple time error.
                                                                                                                                                                         
 ---------------------------------------------------------------------------------------------------------------------------------------
-16)Can we declare array size negative? 
+16) Can we declare array size negative? 
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         No we can't declare array size negative if you try to declare array size negative it will show negative size                                                           expection  error. 
                                                                                                                                                                        
