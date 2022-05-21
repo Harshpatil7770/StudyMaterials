@@ -205,3 +205,7 @@ we can connect all over world developers.
 5) git remote add origin gitrepository_link
 6) git push -u origin main/master
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5) ON GitHub we can upload a file size is 50mb 
+   If you want to upload large file then go for gitlab
+
