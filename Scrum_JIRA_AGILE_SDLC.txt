@@ -208,4 +208,13 @@ we can connect all over world developers.
 
 5) ON GitHub we can upload a file size is 50mb 
    If you want to upload large file then go for gitlab
+   
+6) Upload large fill on github
+  A) Open Gitdesktop
+  B) Create git repository on github
+  C) Create folder 
+  D) Clone reposiotory ---> Select the repository and folder
+  E) Paste Application on git
+  F) Write down summary
+  G) commit
 
