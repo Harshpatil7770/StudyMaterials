@@ -2504,3 +2504,7 @@ JAVA 1.9 Feature
 1) .class file will not get created.
 2) inside the interface we can write private method also.
 
+
+ 47) What is data structure
+ 
+ 48) What is the difference between collection and data structure?
