@@ -535,6 +535,8 @@ run as maven build ---> clean package --->skip Tests
  (If you face some kind of isuue at the time of maven install
   Please go to Window ---> preferences---> JRE ---> Installed JRE ---> then check path of you JDK file not JRE.
   
- 
+  65) What is postman?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Postman is a rest client.
  
  
