@@ -1328,15 +1328,15 @@ Thread class is static
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Collection is framework that provide an architecuture to store and manipulate the group of objects.
 
-2)What is collections?
+2) What is collections?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Collections is class which provides method such as sort and synchronized ,max,min,addALL etc.
   
-3)What is collection framework?
+3) What is collection framework?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Collection framework is combination of classes and interface. Interface such as list,set,map,queue. Classes such as arraylist,linkedlist,Hashset,treeset etc.
 
-4)Explain Internal Working of ArrayList With Examples?
+4) Explain Internal Working of ArrayList With Examples?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   ArrayList internally uses dyanamic array.Arraylist allows to us to store both homogenous and non homogenoues element. Arraylist support only objects not primitive 
   data type. Arraylist provide random acceess. ArrayList maintain insertion order and allows duplicate values. ArrayList require less space because it store only
@@ -1505,7 +1505,7 @@ Thread class is static
     extra space in a memory
 
 
-14) What is the difference between List and Set?
+14) What is the difference between List and Set? ///////////////////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
               List                                                                                  Set
   1)list allows duplicate values                                            1)Set doesn't allow duplicate values
@@ -1515,7 +1515,7 @@ Thread class is static
   5)List has one legacy class vector                                        5)Set doesn't have a legacy class. 
 
 
-15) What is the difference between HashSet and TreeSet?
+15) What is the difference between HashSet and TreeSet? /////////////////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                          HashSet                                                       TreeSet
   1)Hashset doesn't maintain any insertion order                         1)Treeset maintain ascending order
@@ -1524,7 +1524,7 @@ Thread class is static
   4)Hashset allows only one null values                                  5)Treeset doesn't allow null values.
   5)Hashset backed by hashmap                                            5)Treeset backed by Treemap.
   
-16) What is the diffrence between Set and Map?
+16) What is the diffrence between Set and Map? /////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                  Set                                                                 Map
   1)Set has only one value                                        1)Map has one value and one key
@@ -1541,7 +1541,7 @@ Thread class is static
    4)Hashset is thread safe                                       4)Hashmap is not thread safe
    5)Hashset is synchronozed                                      5)Hashmap is not synchronized.
 
-18) What is the difference between HashMap and TreeMap?
+18) What is the difference between HashMap and TreeMap? //////////////////////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
              HashMap                                                                 TreeMap
   1) HashMap allows n no. of null valeus                         1)Treemap doesn't allows null values
@@ -1591,7 +1591,7 @@ Thread class is static
     for set synchronized.set() method
     for map synchronized.map() method
 
-25) What are the advanatages of generic collection?
+25) What are the advanatages of generic collection? //////////////////////////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1) When we use generic collection we don't need to typecasting. It is type safe and checked at compile time.
 
@@ -1607,7 +1607,9 @@ Thread class is static
 
 28) What is default size of load factor in hasing based collection?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Default size is 16 and load factor is 0.75   
+   Default size is 16 and load factor is 0.75  
+   
+   Load factor decided when to increse the size of table.
 
 29) What do you understand by fail fast?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1629,6 +1631,9 @@ Thread class is static
 32) How to convert ArrayList to Array and Array to ArrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   To convert arraylist to array we need to use toarray() method and convert array to arraylist we need to use asList() method.
+
+
+Arrays.asList() size of array become get fixed, so we are not able to add more element.
 
 33) How to make java arrayList read only?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1664,7 +1669,8 @@ Thread class is static
 
 40) If we remove the element from arraylist (if i use enhanced for loop) at the time iterating it will show concurrent Modification exception?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Yes that error will come sevral time to avoid we need to use Iterator.
+  Yes if you are using enhanced for loop and try to remove element form that loop so, we will get the concurrentModification Exception.
+  To avoid this type of error we need to use Iterator.
 
 41) What is generic?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1683,14 +1689,15 @@ Thread class is static
  1) HashMap is non synchronized                                         1) Hashtable is synchronied
  2) HashMap is non thread safe                                          2) HashTable is thread safe.
  3) Hashmap is non legacy class                                         3) Hashtable is legacy
- 
+ 4) Hashmap allows n. number of null values                             4) Hashtable doesn't allows null values as well as keys. 
+ and only one null keys
  
  44) What is differnce between Treemap and hashtable?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        TreeMap                                                  HashTable
  1) TreeMap is non synchronized                                       1) HashTable is synchronied
  2) TreeMap is not thread safe                                        2) HashTable is thread safe
- 
+ 3) Tree is non legacy class                                          3) Hashtable is legacy class
  
  45) What are the collections class methods?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1741,7 +1748,7 @@ equlas take input parameter as only objects whereas compareTo method take only s
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Linked hashmap maintain insertion order. Linked hashmap is faster for insertion and deletion the element.
  
-52) What is SortedMap interface?
+52) What is SortedMap interface? /////////////////////////////////////////////
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  SortedMap interface maintaing sorting order of keys,by default sortedmap interface natural order.
  
@@ -1768,11 +1775,11 @@ to access.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 concurrent hashamap allows mutiple thread access whereas hashtable doesn't allow multiple thread access.
 
-57) Explain about fail safe iterators in java?
+57) Explain about fail safe iterators in java? //////////////////////////////////////////
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------Fail safe iterator means it doesn't throw concurrentMoficationException. when thread was iterating it doesn't modify the original list it create copy of that
 list. 
 
-58)Explain about concurrentModificationException?
+58) Explain about concurrentModificationException?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you  are removing element from enhanced for loop by using remove method so you will get concurrentModification Exception.
 ConcurrentModifcation exception means it doesn't require any extra space in a memory.
@@ -1822,13 +1829,19 @@ Load factor is decided when to increase the size of list.
 
  ==================================================================================================================================================================
  ================================================================================================================================================================== 
- RESTFul web services.(Web services designed for application to application interaction)
+ RESTFul web services.
+ 1) Web services designed for application to application interaction
+ 2) Interpolations - suppose Application A installed in java , application B installed on dotNet and application c installed on php so they can communicate 
+                     with each other with the help of web services
+ 3) It allows communicate over the network.		     
  ==================================================================================================================================================================
  ==================================================================================================================================================================
  
  1) REST-
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Rest stands for Representational state transfer. It developed by roy fielding to make web services most effective.
+ { Roy fileding also develops the Http protocol ) Hyper text tranfer protocol.
+ 
  
  It developed four methods.
  
@@ -1874,6 +1887,8 @@ Load factor is decided when to increase the size of list.
  3)What is webseries and why it required?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Web services is desined for application to application interaction.
+  Interoperable. suppose application A installed on java, application B installed on dotnet and application c build on php so they communicate over the webservies.
+  It allows communicate over the network
  
  
   4) What is the difference between REST and SOAP?
@@ -2020,7 +2035,8 @@ The main objective of java 1.8 introduce is to enable function programming in ja
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3) Default and Static Method 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an       interface it must implement in subclass so which is not good. In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
+   Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any      method inside an interface it must implement in subclass so number of lines of code are unneccesarly increases. 
+   In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
    that default method they can call such as interface.super.method() name.
 
    Interface Bike{
@@ -2052,11 +2068,14 @@ The main objective of java 1.8 introduce is to enable function programming in ja
    Functional interface means it has only one abstract method.In java 1.8 one annotation also added @FunctionInterface.
    (This annotations helps us to write interface as per the rules).
    It is also called as SAM i.e single abstarct method.
-   if you add this annotation above the interface you are not able to add any other method inside an interface if you try to add it will show compile time error.
-   But we can add n number od  default and static inside the functional Interface also.
-   If you add default method it call by Interface.super.method() name
+  
+  if you add this annotation above the interface you are not able to add any other method inside an interface if you try to add it will show compile time error.
+   But we can add n number of  default and static inside the functional Interface also.
+ 
+  If you add default method it call by Interface.super.method() name
    whereas Static method called Interface.methodName() 
-   In functional Interface we have only one abstract method but we have mutiple default method
+ 
+ In functional Interface we have only one abstract method but we have mutiple default methodand static method.
  
  1)
        @FunctionInterface // It is optional...... if you want you can use. It helps us to write method inside the function interface as per rule.
@@ -2134,7 +2153,7 @@ c) Correct
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    For Each Method is used to iterate the element.
    For Each Method is introduced in iterable and stream Interface. 
-   The main advantage of for each loop is to reduce lot's of code.
+   The main advantage of for each loop is to reduce lot's lines of code.
    The disadvantage of this loop is we can't travel in reverse direction.
    
    class{
@@ -2153,7 +2172,7 @@ c) Correct
    }
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-6) Method Reference
+6) Method Reference ///////////////////////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Method reference is compact and easy form of lambda expression. Method reference is used to reference method of fuctional Interface.
    Types of Method Reference
@@ -2251,8 +2270,8 @@ public class Interview {
 }                 
                  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-8) Map 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------      Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
+8) Map  ////////////////////////////////////
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------      Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
      for eg- convert string to lower case to upper case, multiply number by values etc.
      
      
@@ -2266,7 +2285,7 @@ public class Interview {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Stream means element flows from source to the desitinations. It doesn't used to store the element, It takes input from the collections.It mainly used to modify
    the resources.
 
-11) What are method present in the optional class?
+11) What are method present in the optional class? ///////////////////////////////////
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) isPresent()  -------      return type boolean 
 2) get()         
@@ -2313,11 +2332,13 @@ public class Interview {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) It reduce lots of lines of code
 2) Increase productivity
+3) Enable FUnction programming in java
 
 16) What are the advantages of java 11?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) .class file will not get create
 2) We don't need to compile your application.
+3) We have private method inside an interface.
 
  17) Can a functional interface extend/inherit another interface?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2335,7 +2356,7 @@ public class Interview {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Funtion-  It takes arguments and return the result
 2) Consumer- It passes the arguments but not return the values
-3) Supplier- no arguments but return result
+3) Supplier- no arguments but return result{get method}
 4) Predicate- It return true or false value ( boolean return type)
 
 20) How does a lambda expression relate to a functional interface?
@@ -2424,7 +2445,7 @@ LocalDateTime - it represent date with time
 1) If you are using one parameter then theres is no need to use the parenthesis. But if your are using more parameter then you need to use the parenthisis
 2) If there is one statement in method body then there is no need to curly braces.
 
-34) What is the difference betweeen StreamAPI and CollectionAPI?
+34) What is the difference betweeen StreamAPI and CollectionAPI? /////////////////////////////////////////
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
  StreamAPI- StreamAPI doesn't use iterator and spiltiterator. It is used to modify the resource.
  CollectionAPI- CollectionAPI use iterator and spiltiterator to perform action on each element. It is used to store the data.
@@ -2448,7 +2469,7 @@ wherase function takes the arguments and return the result. Return type of funct
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 limit means it return the specified size, whereas skip means skip the element
 
-39) What is the difference between iterator and spiltiterator?
+39) What is the difference between iterator and spiltiterator? //////////////////////////////////////////////////
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Iterator -
 1) Iterator is used in Collection API 
@@ -2476,18 +2497,23 @@ Internal iterations supports functional programming.whereas external Iterations 
 43) What is the advantage of java 1.8?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 We require less code to write.
+Enable Function Programming.
 
 44) What is the main objective to introduce Java 1.8?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 The main objective of Java 1.8 is enable function programming, so require to write lesser code.
 
 
-45) Functional Interface in Java (SAM)
+45) What are the different Functional Interface in Java (SAM)?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Runnable  ( run() method)
 2) Comparabale ( compareTo() method)
 3) comparator (compare() method)
 
+/////////////////
+Marker interface
+1) Remote interface
+2) Clonable interface
   
  46)Comparision concepets
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
