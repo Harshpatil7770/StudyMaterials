@@ -867,7 +867,7 @@ For eg- suppose five reference variable referes to the one object and i want to 
     4)   Context swithcing in thread is faster                                            4) Context swithching in process is slower
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-4) What do you understand by inter threads communication?
+4) What do you understand by inter threads communication? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         The communication between synchronized thread is called as inter thread communication.
                                                                                                                                                                         It is used to avoid thread pollling in java.                                                                                                                                                                                        
@@ -884,7 +884,7 @@ means unblock all waiting thread.                                               
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Because synchronization block makes clear proper communication.If you try to use wait method from outside the block it will show an error such as java.lang.illegalmoniter state exception
 ---------------------------------------------------------------------------------------------------------------------------------------
-8) What are the advantages of multithreading?
+8) What are the advantages of multithreading? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Mulitthreading means execute mutilple thread simultaneously. It is process to achieve multitasking.
                                                                                                                                                                         The advantages of multithreading is
@@ -935,7 +935,7 @@ Thread object is created by using two ways.
 ---------------------------------------------------------------------------------------------------------------------------------------
 15) What is runable interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Runable interface means functional interface , it has only one abstract method, run method.                                                                                                                                                                                                           
+                                                                                                                                                                        Runable interface means functional interface , it has only one abstract method, run method . It is also known as single argument method.
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) What does join method?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -946,7 +946,7 @@ Thread object is created by using two ways.
                                                                                                                                                                         Sleep method thread class method. It pause the currently executing thread for specific time and execute another 
                                                                                                                                                                         thread if any availabel.
 ---------------------------------------------------------------------------------------------------------------------------------------
-18) what is difference between wait() and sleep() method?
+18) what is difference between wait() and sleep() method? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
        Wait() Method                                                 Sleep() Method
 1)  Wait() method is object class method                        1)sleep() method is thread class method                                                              2) wait() method pause the currently exceuting thread           2) sleep() method pause the currently executing thread for specific time and execute another thread if any. and wait until another thread will call notify and notify all 
@@ -1071,7 +1071,7 @@ The main purpose of synchronization is avoid thread constistance and thread inte
 ---------------------------------------------------------------------------------------------------------------------------------------
 42) What is difference between synchronization block and synchronization method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-SYnchronization means capability to access multiple thread to any shared resources.
+Synchronization means capability to access multiple thread to any shared resources.
 Synchronization mainly used to avoid thread interface and consistance problem. 
 Synchronization method is used to perform synchronization on complete resource whereas Synchronization block is used to perform synchronization
 on specific resource of method. suppose i have 50 lines of code and i want to synchronize 5 lines of them then i will use synchronization block.
@@ -1162,7 +1162,7 @@ thread will call notify and notifyAll() methods.
 ---------------------------------------------------------------------------------------------------------------------------------------
  Process means a program in the execution.Every process have their own memory space.
 ---------------------------------------------------------------------------------------------------------------------------------------
-51) What are the different types of multitasking?
+51) What are the different types of multitasking? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
  1) Process based multitasking 2) Thread based multitasking
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1185,7 +1185,7 @@ main thread is first thread it starts immediately after program is started.
  whereas implementing runable interface means loosely copuled, we can extends another class also and maintaince cost is also low, and it
  provide better code reusablity.
 ---------------------------------------------------------------------------------------------------------------------------------------
- 55) Can we restart a dead thread in java?
+ 55) Can we restart a dead thread in java? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
  No we can't restart dead thread in java if you try it will show runtime exception i.e thread is not live.
   ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1194,11 +1194,11 @@ main thread is first thread it starts immediately after program is started.
  no, one thread can't block another thread.
   ---------------------------------------------------------------------------------------------------------------------------------------
  57) Can we overload run() method in java?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  Yes we can overload the run() method in java ,but start method call run() method with no arguments.
-  ---------------------------------------------------------------------------------------------------------------------------------------
- 58) What is a lock or purpose of locks in java?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 58) What is a lock or purpose of locks in java? ######################
+ ---------------------------------------------------------------------------------------------------------------------------------------
  lock is an moniter used to prevent access of multiple thread to any shared resource.
   ---------------------------------------------------------------------------------------------------------------------------------------
  59) In how many ways we can do synchronization in java?
@@ -1283,7 +1283,7 @@ There are two ways to synchronization
   because wait(),notify(),notifyAll() methods are object level methods and these called on same objects.
   ---------------------------------------------------------------------------------------------------------------------------------------
   74) Explain IllegalMonitorStateException and when it will be thrown?  
-  ---------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
    If you try to write wait ,notify,notifyAll() methods out the side synchrinzation context at runtime you will get IllegelMonitorStateException.
   ---------------------------------------------------------------------------------------------------------------------------------------
   75) when wait(), notify(), notifyAll() methods are called does it releases the lock or holds 
