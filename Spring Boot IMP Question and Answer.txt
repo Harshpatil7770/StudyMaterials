@@ -577,7 +577,17 @@ run as maven build ---> clean package --->skip Tests
    
    
    
-   69) 
+   69) What is main purpose of Repository?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    The main purpose of repository is to communicate with database.
+    
+  70) URL criteria
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Use always plural 
+   for eg- api/users correct
+           api/user wrong
+   
+  
   
   
 
