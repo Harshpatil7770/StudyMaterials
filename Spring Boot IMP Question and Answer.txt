@@ -538,5 +538,15 @@ run as maven build ---> clean package --->skip Tests
   65) What is postman?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Postman is a rest client.
+  
+  66) Which data foramtion is famous? How to represent data in XML form?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Now a day's JSON is very famous for data representation.
+   Ans XML is very rare used,
+   If you want to represent the data in XML form
+   you need to add the jackson-Dataformat-xml dependency.
+   If you are using postman just go the header.
+   select key as Accept and Value as application/xml
+  
  
  
