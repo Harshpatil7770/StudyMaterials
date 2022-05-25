@@ -484,8 +484,9 @@
  2) 201- Succesful
  3) 202- created
  4) 400 -Method Not Found
- 5) 404 -Bad Request
- 6) 500-Internal Server error
+ 5)401- unauthorized
+ 6) 404 -Bad Request
+ 7) 500-Internal Server error
  
  60) How to genearate jar /war file of your springboot application?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
