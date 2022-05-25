@@ -547,6 +547,28 @@ run as maven build ---> clean package --->skip Tests
    you need to add the jackson-Dataformat-xml dependency.
    If you are using postman just go the header.
    select key as Accept and Value as application/xml
+   
+   
+  67)What is swagger? Why is it used or How your consumer get to know how to use the url?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Swagger is used to build,documents and Consume Rest API.
+  RestAPI documentations.
+  It shows all url on Swagger UI.
+  so consumer exact get information i.e how to use that url.
   
+  To make documentations by using spring doc or swagger first we need to add the
+  spring doc open api dependency.
+  http://localhost:8080/swagger-ui.html
+  
+  so we can see all RestAPI Url also the schema's.
+  
+  ======================================================================================================================================================================
+1) JMS
+2) Unit and Intergration Testing
+3) XML Response
+4) Swagger
+5) Logger
+6) Response Entity
+7) Global Exception Handeler
  
  
