@@ -156,7 +156,10 @@
 
 22) What is actuator & it's adantages?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Actuator is sub proejct of spring boot framework.It acts as monitor of your application. It describe health information of your running application.
+    Actuator is sub proejct of spring boot framework.It acts as monitor of your application. It describe health information of your running application(i.e
+    up and running)
+    To use actuator in your proejct first you need to add the SpringBoot-Actuator dependency and inside the application.properties file we need to 
+    write such as management.endpoints.web.exposure.include=*
 
 
 23) How to debug or enable debug log in spring boot application?
@@ -562,7 +565,16 @@ run as maven build ---> clean package --->skip Tests
   
   so we can see all RestAPI Url also the schema's.
   
-  ======================================================================================================================================================================
+
+  68) How to do static filtering of RestAPI Resources?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Whatever field you don't want to show your consumer just make @JsonIgonore annotations above that filed.
+  For eg- If you have userName and Password filed and you don't want to show password that time we will use JSON Ignore.
+  
+  
+
+
+======================================================================================================================================================================
 1) JMS
 2) Unit and Intergration Testing
 3) XML Response
