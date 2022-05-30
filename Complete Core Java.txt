@@ -1825,13 +1825,13 @@ C)Protected   -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 142) Which version of springboot and hibernate are you worked?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                               Spring Boot 2.6.7 and hibernate orm(5.4.0)
+                                                                               Spring Boot 2.6.7 and hibernate orm(5.6.0)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 143) If i have 1 lakh element and i want to find out the index of any element how can you do that?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                we can indexOf() method.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-144 What would you rate yourself in java ?
+144) What would you rate yourself in java ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                I rate myselt 8 out of 10 in java.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1886,24 +1886,24 @@ C)Protected   -
 									  DTO stands for data tranfer object. It carries data between the process.
 							 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-155)How many ways to call garbage collector in java?
+155) How many ways to call garbage collector in java? ####################################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 									  There are two ways to call garbage collector in java
 									  1) By using runtime class - we can call the getRuntime() method
 									  2) By using System class - we need to call system call static System.gc() method
 							      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-156) What is Externlization?
+156) What is Externlization? ####################################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 									  Externalization is used because serlization is not more effective. Externlization means 									    custom serilization. It useful when we want to serilizable a part of an object.
 							       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-157) What is the difference between serilization and externlization?
+157) What is the difference between serilization and externlization? ####################################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                Serilization means marker interface we don't have any methods or fileds. whereas externilization                                                                      interface contains two methods writeExternal() and readExternal() methods .
 							       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-158) Which method is used for serlization of an object?
+158) Which method is used for serlization of an object? ####################################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                WriteObject() method of objectOutputStreamClass() used to serlize an object.	
 							       
@@ -1911,10 +1911,12 @@ C)Protected   -
 159) What is thread safe and unthread safe?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                Thread safe means only one thread execute at a time.(Sychronized)
+							       or Thread safe means we can access only one thread at  a time.
 							       Non thread safe means multiple thread execute at a time.(Non Snychroized)
-							       
+							       Non Thread safe means we can access multiple thread at a time.
+								       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-160) How can one do custom serilization ?
+160) How can one do custom serilization ? WHy we need of custom serialization?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                transient keyword is used to skip member while serlizing an object. So if you are using transient 
 							       it may be chnances of data loss.So we need to use custom serlization and to enable custom seriliza
@@ -1927,14 +1929,14 @@ C)Protected   -
                                                                There is no direct way to avoid serlization of child class. we need to use writeObject() and                                                                          readObject() methods and throws NoSerilizationExpetion.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-162) What are the benifits of immutable?
+162) What are the benifits of immutable? ####################################
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                1) Thread safe
 							       2) immutable means easier to desing and implements.
 							       Immutable means once we create we are not able to modify it. It helpful in security concepts.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-163)What are the difference between length and legnth() method in java?
+163) What are the difference between length and legnth() method in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                length property is used in array to check the length of array whereas
 							       length() method is used to check length of String objects.
@@ -1946,7 +1948,7 @@ C)Protected   -
 							       length is not supported so we use size() method.
 							       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-165) What is ASCII Code?
+165) What is ASCII Code? ####################################
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                ASCII stands for americian standard code for information interchange. In this user uses number 
 							       to represent character.
@@ -1976,7 +1978,7 @@ Method name always start with lowercase letter and it follow the camelcase.
 variable always start with lowercase letter
 Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-169) What is Instance of operator?
+169) What is Instance of operator? ####################################
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                Instance of operator means compare instance with type.It also known as comparision operator.
 							       
@@ -2011,7 +2013,7 @@ Constant always write with uppercase and by using _ for new keyword.
 							     for eg- com.xoriant.bank.model
 							     							     
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-176) Explain the importance of import keyword in java?
+176) Explain the importance of import keyword in java? ####################################
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             import keyword is used to import single class or package in our source file.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2020,11 +2022,11 @@ Constant always write with uppercase and by using _ for new keyword.
                                                             Class path shows directory where our .class file get saves.
 							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-178) What is jar?							    
+178) What is jar? ####################################							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             jar stands for java archieve file.It contains .class files and other resource files in your application.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-179) What is the scope or life time of instance variables ?	
+179) What is the scope or life time of instance variables ? ####################################	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             When we create object by using new keyowrd it allocate memeory. instance variable have memory
 							    till they garbage collected.
@@ -2180,37 +2182,37 @@ Just right click on your project
 
 ======================================================================================================================================================================  ======================================================================================================================================================================                                              Decision or control making statement,Jump statement
 ======================================================================================================================================================================  ======================================================================================================================================================================  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-109)What's loop?
+1) What's loop?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                      loop means execute set of instruction repeatetively when some condition becomes true.
+ loop is used to execute set of instruction repeatetively when some condition becomes true.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)When will you use for loop?
+2) When will you use for loop?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1) If the number of iteration is fixed we will use for loop 
+1) If the number of iteration is fixed we will use for loop 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)When will you use while loop?
+3) When will you use while loop?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1) While loop used when no of iteration is not fixed
+1) While loop used when no of iteration is not fixed
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)When will you use do-while loop?
+4) When will you use do-while loop?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1)do while loop is used when the no. of iteration is not fixed and you want to execute one statement.
+1)do while loop is used when the no. of iteration is not fixed and you want to execute one statement.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)What's switch case?
+5) What's switch case?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1) Switch case is used to execute one condition from multiple.
+1) Switch case is used to execute one condition from multiple.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)What's break?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1) Break is used to directly terminate the loop,It used in loop and switch case
+6) What's break?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------- Break is used to directly terminate the loop,It used in loop and switch case.
+Break comes under the jump statement.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)What's continue?
+7) What's continue?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1)Continue means doesn't terminate the loop come to next iteration
+Continue means doesn't terminate the loop come to next iteration.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-109)What is upcasting ?
+8) What is upcasting ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                 1) Reference variable of parent class referes to the objects of child class
+Reference variable of parent class referes to the objects of child class
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 110) 
 for( int i=0;i<=5;i++)
