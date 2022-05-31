@@ -42,7 +42,7 @@
 7) What is the types of Database?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        RDBMS- 
-                                                                                                                                                                       1) RDBMS stands for relational database management system,it isused to store and retrive data 
+                                                                                                                                                                       1) RDBMS stands for relational database management system,it is used to store and retrive data 
                                                                                                                                                                        from database also organize in tabular format i.e row and column form.
                                                                                                                                                                         for- oracle,mysql,microsoft
 
@@ -224,7 +224,6 @@ truncate means once we delete we are not able to do rollback. delete means we do
                                                                                                                                                                        MySQL default port number is 3306.  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 31) What is query ?
-
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 query is request used to fetch data on specified criteria.                                                                                                                                                                                                                                                                                                                                                                 
 
