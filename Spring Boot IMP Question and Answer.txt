@@ -550,11 +550,22 @@ B) Run as maven build
   66) Which data foramtion is famous? How to represent data in XML form?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Now a day's JSON is very famous for data representation.
+   
    Ans XML is very rare used,
    If you want to represent the data in XML form
    you need to add the jackson-Dataformat-xml dependency.
+   
    If you are using postman just go the header.
    select key as Accept and Value as application/xml
+   
+   Also If we want to send the data in XML format just 
+   select Body ----> raw ---> XML 
+  
+   for eg-
+   <item>
+   <categoryId>1</categoryId>
+   <categoryName>Watch</categoryName>
+   </item>
    
    
   67)What is swagger? Why is it used or How your consumer get to know how to use the url?
