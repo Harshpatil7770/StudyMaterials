@@ -65,12 +65,12 @@ Scopes of bean specified the life cycle bean.
 5)global session- object is created as per the http global session request.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-10)In which scenario you will use singleton and prototype?
+10) In which scenario you will use singleton and prototype?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Singleton is used in EJB stateless session where prototypes is used in EJB stateful session.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-11)what are types of transaction management supported by spring?
+11) what are types of transaction management supported by spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Spring support two types of transaction management
 1)Programatic Type transaction management-
@@ -80,7 +80,7 @@ It support for few transaction.
 It supports for multiple transaction.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-12)what are AOP Terminology?
+12) what are AOP Terminology?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 AOP stands Aspect orinted Programming.
 There are seven AOP Terminology
@@ -123,12 +123,12 @@ Class A require other class object to do it's operation then class A- dependent 
 class B-dependency object
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-17)what is AOP?
+17) what is AOP?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 AOP stands for apsect oriented programming means divide your application into distinct parts it mainly used or hepls in logging security in the application.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-18)what are the component of spring module?
+18) what are the component of spring module?########################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1)Spring AOP
 2)Test
@@ -136,17 +136,17 @@ AOP stands for apsect oriented programming means divide your application into di
 4)Web
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-19)what is spring container?
+19) what is spring container?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Spring container is core part of spring framework it allows us to create the object assemble the object and manage their entire life cycle.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-20)what are the spring configuration file?
+20) what are the spring configuration file?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 XML file is spring configuration file, this file contains information about classes and describe the process of configuration.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-21)what are the data type dependecies in spring?
+21) what are the data type dependecies in spring?########################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 There are three data type dependecies in spring
 1) By Primitive data type
@@ -157,16 +157,16 @@ list,set,map
 A class not dependes upon primitive data type as well as collection then reference type used.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-22)which type of list spring provided by default?
+22) which type of list spring provided by default?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Spring provide by default arraylist.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-23)which type of set spring provided by default?
+23) which type of set spring provided by default?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Spring provide by default hashset.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-24)what are the ways to injecting primitive values by setter injection?
+24) what are the ways to injecting primitive values by setter injection?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1)by primitive type
 value as element
@@ -179,7 +179,7 @@ map
 3)by reference type
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-25)what are the life cycle method of spring?
+25) what are the life cycle method of spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 There are two life cycle method of spring
 1)public void init()
@@ -189,7 +189,7 @@ There are two life cycle method of spring
 2)public void destroy()-Means we put all closing connection inside destroy method,it execute just before the object is destroyed.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-26)How to config spring life cycle?
+26) How to config spring life cycle?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Spring life cycle config by 
 1) Using Interface - we need to implements initializing and disposable bean.
@@ -197,22 +197,22 @@ Spring life cycle config by
 3) Using xml configuration -(xml file contain information about the classes and describe the process of configuration)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-27)which annotation used for dependency check?
+27) which annotation used for dependency check?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 @Required annotations is used for dependency check.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-28)which xml elements can be used to enable annotations support in spring?
+28) which xml elements can be used to enable annotations support in spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 <Context:annotations-config>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-29)which spring bean scope used to create multiple instance of an object in non web application?
+29) which spring bean scope used to create multiple instance of an object in non web application?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Prototype bean
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-30)what are the ways to injecting constructor based dependency injection?
+30) what are the ways to injecting constructor based dependency injection?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Primitive type
 value as element 
@@ -220,18 +220,18 @@ value as attribute
 c schema
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-31)what is the difference between wiring and autowiring?
+31) what is the difference between wiring and autowiring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
   The injection of dependency object to the dependent object it's done by programmer called wiring whereas
   The injection of dependency object to the dependent object it's done by container called autowiring.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-32)what is the use of @Qualifier annotations?
+32) what is the use of @Qualifier annotations?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 @Qualifier annotations is used to choose correct one bean from multiple.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-33)what is AJAX?
+33) what is AJAX?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 AJAX stands for asynchronus javascript xml.It communicate with server without refreshing web pages.
 
@@ -241,19 +241,19 @@ AJAX stands for asynchronus javascript xml.It communicate with server without re
 Synchrous means we send only one request at a time and wait until respond come. we are not able to do other operations until response come.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-35)what is asynchronous?
+35) what is asynchronous?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Asynchronous means we send mutilple request at a time and don't need to wait for respose we can do other operations also.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-36)what are the ways of implementing AOP terminology?
+36) what are the ways of implementing AOP terminology?########################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1)JBOSS
 2)Spring AOP
 3)Aspect J
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-37)Annotations in spring
+37) Annotations in spring
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1)@Required 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -278,7 +278,7 @@ ModelAttribute is used to bind the method parameter
 =======================================================================================================================================================================
                                                                       Spring JDBCTemplate
 =======================================================================================================================================================================
-1)What is JDBC Template and it's advantages?
+1) What is JDBC Template and it's advantages?########################
 JDBC Tempalte is powerful mechanism that used to connect database and execure sql quries.
 JDBCTemplate internally used JDBCAPI but reduce lot's of internal problem of JDBCAPI
 Adavantages of JDBCTemplate
@@ -286,7 +286,7 @@ Adavantages of JDBCTemplate
 2)Reduce lot's of code such as we don't need to write create connection,creating statement etc.
 
 
-2)What are the classes of spring JDBCAPI?
+2) What are the classes of spring JDBCAPI?########################
 1)JDBC Template
 2)SimleJDBC Call
 3)SimpleJDBC Insert
@@ -297,10 +297,10 @@ Adavantages of JDBCTemplate
 By using RowSetExactor and rowMapper.
 
 
-4)What is advantages of Named Parameter JDBC Template?
+4)What is advantages of Named Parameter JDBC Template?########################
 Named Parameter JDBC Template is used to pass the value in Named Parameter.
 
 
-5)What is the advantages of simple jdbc Template?
+5)What is the advantages of simple jdbc Template?########################
 1)No need to perform exception handeling on database logic
 2)Reduce lot's code such as we don't need to write creating connection,creating statement etc.
