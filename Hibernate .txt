@@ -1,5 +1,13 @@
 =======================================================================================================================================================================
-                                                                    Hibernate(ORM 5.4.0)
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+                                                                !!! Shree Swami Samarth !!!
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+
+=======================================================================================================================================================================
+                                                                    Hibernate(ORM 5.6.0)
 =======================================================================================================================================================================
 
 1)What is Hibernate?
@@ -13,7 +21,6 @@ Hibernate is open source object relational mapping tool is used to store and ret
 JPA stands for java persistence API.
 It provide platform to work directly with objects instead of sql statements.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 3)What is the diffrence between hibernate and JPA?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                             JPA                                                    Hibernate
@@ -24,10 +31,7 @@ It provide platform to work directly with objects instead of sql statements.
                                2) JPA defined in java.persitance package                  2)Hibernate defined in org.hibernate package.
                                3) JPA uses JPQL pava persistance query                     3)Hibernate uses Hibernate query langugae.
                                language.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                       
-
-
-4)What is ORM?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------      4)What is ORM?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
 
@@ -42,7 +46,7 @@ ORM stands for object relational mapping. It simplies data creation,data manupal
                                                        4)Java Application layer
 
 
-6)What are the core interfaces of hibernate?
+6) What are the core interfaces of hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        1)Session(session is used to maintain connection with java application and database)
                                                        2)Session factory ( session factory is an interface which provide factory method to get instance of sesssion)
@@ -52,18 +56,18 @@ ORM stands for object relational mapping. It simplies data creation,data manupal
                                                        6)Configuration
 
 
-7)Mention some advantages of using ORM over JDBC?
+7) Mention some advantages of using ORM over JDBC?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        1)Details of sql quries are hidden
                                                        2)Application development is fast
 
 
-8)What are some database supported by hibernate?
+8) What are some database supported by hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        1)Mysql,oracle
 
 
-9)List of key component of Hibernate?
+9) List of key component of Hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        1)session(Session is used to maintain the relation between hibernate application and database).
                                                        2)Session factory(Session factory is an interface which provides factory method to get instance of session)
@@ -98,38 +102,38 @@ ORM stands for object relational mapping. It simplies data creation,data manupal
                                                        The class whose objects direclty stored in database called persistence class.
 
 
-15)What is mean by Thread safe?
+15) What is mean by Thread safe?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                       Thread safe means only one thread execute at a time.
 
-16)What is session factory?
+16) What is session factory?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        Session factory is an interface proide factory method to get instance of class.
 
 
-17)Is session-factory object is thread safe?
+17) Is session-factory object is thread safe?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        yes,session factory object is thread safe.because it share with only one thread at a time.
 
 
-18)What is session?
+18) What is session?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        Session is an interface which is used to maintain the relation between hibernate application and database layer.
 
 
-19)Is session object is thread safe? why not?
+19) Is session object is thread safe? why not?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        no, session object is not thread safe. Because We can share session between multiple threads.
                                                        (Thread safe means we can perform only one task at a time)
                                                        (Non thread safe means we can execute multiple thread at a time)
   
 
-20)What is the diffrence between update() and merge() method?
+20) What is the diffrence between update() and merge() method?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        Update means editing something whereas merger means combine something.
 
 
-21)What are states of objects in hibernate?
+21) What are states of objects in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 There are three states of objects in hibernate
 1)Transient- The object is transient state means they don't have primary key and not associated with session.
@@ -137,12 +141,12 @@ There are three states of objects in hibernate
 3)Detahced - The object is detached state means object is destoryed.
 
 
-22)How to make immutable class in hibernate?
+22) How to make immutable class in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 Mark mutable=false which class want to make immutable because by default they are mutable=true
 
 
-23)How many type of association mapping supported in hibernate?
+23) How many type of association mapping supported in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 1)One to one - Only one record of table A is associted with only one records of table B and vice versa.
  eg- Country - capital city,Person - their fingerprints.
@@ -167,25 +171,25 @@ It's not to possible to perform collection mapping with one to one and many to o
 It's possible only with many to many and one to many
 
 
-25)What is logger?
+25) What is logger?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 Logger hepls to detect error in the application.
 We can simple slf4j logger(simple logger forcascade for java)
 
 
-26)What is API?
+26) What is API?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 API stands application programming interface it helps to communicate two software.
 
 
-27)What is coupling& Realtionship?
+27) What is coupling& Realtionship?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 Coupling describe realtionship between the module.
 Tight coupling- A class dependeds upon another class called tight coupling.
 Loose coupling- A class doesn't dependes uponn another class is called loose coupling
 
 
-28)What is cohesion?
+28) What is cohesion?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 Cohesion describe how single class is created.
 Adavnatage of cohesion is single class easy for maintance.
@@ -196,7 +200,7 @@ Adavnatage of cohesion is single class easy for maintance.
 Adhesion helps to glues different things together. 
 
 
-30)What is JPQL?
+30) What is JPQL?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 JPQL stands for java persistance query language,i.e not a native query. JPA uses jpql.
 
@@ -207,17 +211,17 @@ JPQL stands for java persistance query language,i.e not a native query. JPA uses
 2)Database connection
 
 
-32)What is the diffrence between session.save() method and session.persist()method?
+32) What is the diffrence between session.save() method and session.persist()method?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 session.save() return current identifier of an instance where as session.persist() method doesn't return anything because return type is void.
 
-33)What is the diffrence between get and load method in hibernate?
+33) What is the diffrence between get and load method in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 get() method return null if object is not found whereas
 load() method return object not found exception if object isn't found.
 
 
-34)What are the states of objects in hibernate?
+34) What are the states of objects in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        There are three states of objects in hibernate
                                                        Transient- The object is transient state means it doesn't have primary key and not associated the session.
@@ -225,18 +229,18 @@ load() method return object not found exception if object isn't found.
                                                        Detached-  Detached state means after destroying the object.
 
 
-35)What is Apache Tomcat?
+35) What is Apache Tomcat?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        Apache Tomcat is most common predefined server for an internet.
                                                        Tomacat is used to server java server pages.
 
 
-36)What is Automatic dirty checking in hibernate?
+36) What is Automatic dirty checking in hibernate? ##############################
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        Automatic dirty checking is feaures of hibernate,calls update statement automatically when changes occur in database.
 
 
-37)What is HQL?
+37) What is HQL?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        HQL stands for hibernate query language it is not native query. Hibernate uses Hibernate query language.
                                                        The main advantage of HQL is 
@@ -247,8 +251,7 @@ load() method return object not found exception if object isn't found.
 38) What is the difference between first level cache and second level cache?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 
-                                                       Catche improve performance fo your application by pooling object in catche. It helpful when we have to fetch same data 
-                                                       mutiple times. 
+                                                       Catche improve performance fo your application by pooling object in catche. It helpful when we have to fetch                                                            same data mutiple times. 
                                                        First level catche is asscociate with session,and it available for only single session not entire application. whereas
                                                        Second level catche is associate with session factory it avaiable for all entire application.
 
@@ -274,16 +277,16 @@ load() method return object not found exception if object isn't found.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        Hibernate configuration file located inside the src/main/resource folder ie. hibernate.cfg.xml file.By using this file hibernate makes connection with database server.
     
- 42) Explain hibernate mapping files?
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+42) Explain hibernate mapping files? ##############################
+------------------------------------------------------------------------------------------------------------------------------------------------------------------   
      Hibernate mapping file is used by hibernate framework to get information about the mapping pojo classes and database table.
      
  43) Can you tell difference between openSession and getCurrentSession() methods?
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-     openSession() method always create new session and after done with operation we need to close them. sessionFactory.getCurrentSession() method return session you don't need
-     close them.
+     openSession() method always create new session and after done with operation we need to close them. sessionFactory.getCurrentSession() method return 
+     session you don't need close them.
      
- 44) Differecne between save() and saveOrUpdate() methods?
+ 44) Difference between save() and saveOrUpdate() methods?
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
      save() method insert new records in the database whereas saveOrUpdate() methods insert or update records based on exisiting records.
      
@@ -295,69 +298,69 @@ load() method return object not found exception if object isn't found.
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
      criteria is used to fetch the records from database based on specified criteria.
     
-  47) What is criteria API in hibernate?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+  47) What is criteria API in hibernate?##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
       Criteria API is predefined API which is used define queries for entities.
      
-  48) What does session.lock() method in hibernate?
+  48) What does session.lock() method in hibernate?##############################
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
       session.lock() method reattached the object which has been detached earlier.
       
   49) What is hibernate catching?
-   ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
       catching improve performane of your application by pooling object in catche. when we want fetch same data multiple times 
       There are two types of catche
       1)First level catche -First level catche is associate with session. It doesn't used for entire application, it used  for only single session
       2) Second level catche - Second level catche is assocaite with session factory. It used for entire application. but we need to enable them explicityly.
       
  50) Does hibernate support native SQL queries?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
      yes, hibernate support native sql queries.
      
  51) What happens if you don't write no argument constructor in bean of hibernate?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
      No argument constructor is used to create new instance by using newInstance() method .If you don't write it will throws InstantiationException.
      
  52) Can we declare the Entity class final in hibernate?
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------
       There is no sense for final because persistance bean means directly stored in database.
       
- 53) Explain Query catche?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 53) Explain Query catche? ##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
      Query catche is used to retrive faster data from database.
      
- 54) What is N+1 problem in an hibernate?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 54) What is N+1 problem in an hibernate? ##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
      N+1 problems such as first query retreive parent entity whereas n quries retrives child entity.
      
- 55) How to solve N+1 problems?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 55) How to solve N+1 problems? ##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
      By using Criteria Query and HQL qeuries.
      
- 56) What is concurrency stratergy?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 56) What is concurrency stratergy? ##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
      concurrency strategry resposible for storing the item and retrive it from the cache.
        
- 57) What is  single table stratergy?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 57) What is  single table stratergy?##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
      single table stratergy is one of the simplest and easiest way to implements inheritance.
      
  58) Can you tell something about table per class strategry?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                              Table per class strategy means per entity new table is generated.
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Table per class strategy means per entity new table is generated.
      
- 59) Can you tell something about Named SQL Query?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                Named sql query are predefined unchageable query String.
+ 59) Can you tell something about Named SQL Query? ##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Named sql query are predefined unchangeable query String.
       
- 60) What are the advatanges of NamedQuery?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 60) What are the advatanges of NamedQuery? ##############################
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                 1) Reusable
                                                                                 2)Fail fast
      
       
- 61) what are the session methods?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 61) what are the session methods? ##############################
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) save()
     2) update()
     3) delete()
@@ -365,26 +368,26 @@ load() method return object not found exception if object isn't found.
     5) SaveOrUpdate()
      
      
-  62) What is the difference between crud respository and JPA repository?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  62) What is the difference between crud respository and JPA repository? ##############################
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
       crud repository provides methods such as save(), saveAll(),findAll() whereas JPA repository provides some extra methods as compare to crud repository such as
       saveAndflush(), flush,saveAllAndFlush() (flush means),delete in batch.
       flush means save the object instance in the database.
       
-  63) What is cascade?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  63) What is cascade? ##############################
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
      cascade is used to manage state of mapped entity.
      
   64) What is the difference between save() ,saveOrupdate or persisit() method?
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
    save() method insert new record and it return current identifier of an instance whereas persist() method save new record but doesn't return anything because
    it's return type is void.
    saveOrUpdate method insert new record or update the record based on there existing records. 
    
-   65) How to enable second level catche?
+  65) How to enable second level catche? ##############################
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-To enable second level catche we need to use @catche and @cacheable annotations
+   To enable second level catche we need to use @catche and @cacheable annotations
 
  66) What is use of @Transactional annotations?
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
  @Transational annotation is used when we want to execute certain method in transaction.
