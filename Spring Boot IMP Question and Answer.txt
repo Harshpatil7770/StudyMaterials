@@ -561,11 +561,24 @@ B) Run as maven build
    Also If we want to send the data in XML format just 
    select Body ----> raw ---> XML 
   
-   for eg-
+   for eg- Sending 1 record
    <item>
    <categoryId>1</categoryId>
    <categoryName>Watch</categoryName>
    </item>
+   
+   for eg- sending mutiple records
+   
+ <List>
+   <item>
+      <categoryId>3</categoryId>
+      <categoryName>Watch</categoryName>
+   </item>
+   <item>
+      <categoryId>5</categoryId>
+      <categoryName>Car</categoryName>
+   </item>
+</List>
    
    
   67)What is swagger? Why is it used or How your consumer get to know how to use the url?
