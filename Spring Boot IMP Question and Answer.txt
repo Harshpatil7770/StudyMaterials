@@ -253,7 +253,7 @@
     If you want to create war file then the follow steps such as
     1) pom.xml file add <packaging>war</packaging> packaging style as war
     2) Maven clean 
-    3) Mavne build ( mvn clean install (skiptests))
+    3) Mavne build ( mvn clean install (skiptests)) //Instead of this use maven install
     
     
 
@@ -281,7 +281,8 @@
 
 41) What is maven ? how to create spring boot project using maven?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Maven is powerful project management tool used to create spring boot project.
+    Maven is powerful project management tool used to create spring boot project, spring and spring mvc application.
+    or we can say maven is build tool.
     step 1) Click on New
     step 2) New Project
     step 3) Maven
@@ -437,7 +438,7 @@
     Spring web dependecies is used to develop web application or restful web application.
     
     
-52) What are the springboot dependecy management?
+52) What are the springboot dependency management?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency         will get automatically update.
      
@@ -477,8 +478,10 @@
  1) Open pom.xml file and write packaging<War>packaging
  2) Right click on your application run as maven build ---> mvn clean install 
  3) select skipTest option
- 
- 59) Status code 
+### Run Maven clean ( Target folder get cleaned) 
+    then run as maven install
+
+59) Status code 
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
  1) 200 - Ok
  2) 201- Succesful
@@ -503,7 +506,8 @@ B) Generate war file
 3)In pom.xml
 <packaging>war<\packaging>
 4) 
-run as maven build ---> clean package --->skip Tests
+A)1Run as maven clean
+B) Run as maven build
 
 61) How to deploy your application on external server.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -512,7 +516,7 @@ run as maven build ---> clean package --->skip Tests
    main class extends SpringBootServlerInitilizr, and configure override in that class.
    run your application as maven build ----> goal - clean package  and SkipTests
    
-2) Now check your machine whether jre instanlled or not.
+2) Now check your machine wheather jre instanlled or not.
    install tomcat 9.
    copy war file and paste it in webapp of tomcat folder
    open bin folder of tomcat then open cmd on that path
