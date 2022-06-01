@@ -62,7 +62,7 @@ Driver class is used to manage all the register and unregistred drivers.It has s
 user and driver.
 4) SQL Exception - SQL Exception gives details information of error occured.
 
-Interfaces such as ResultSet,ResultSet dababase metda interface. database metadata interface, connection, statement, prepared
+Interfaces such as ResultSet,ResultSet database metda interface. database metadata interface, connection, statement, prepared
 statement, collable statement.
 1) Connection interface
 - connection object is created by using getConnection() method. 
@@ -70,7 +70,7 @@ statement, collable statement.
 Statement object is created by using createStatement() method.It is used to run the static queires. When we use statement 
 we are not able to add parameter at runtime.
 3) ResultSet interface-
-ResultSet interface represnt no. rows in the table also changing cusrsor point we will get information from database.
+ResultSet interface represent no. rows in the table also changing cursor point we will get information from database.
 4) ResultSet MetaData-
 ResultSet MetaData interface represnt no. of columns ,column names etc.
 5) Database metadata interface
@@ -140,7 +140,7 @@ with database.
 14) What is the role of jdbc driver manager class?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
-Jdbc Driver manager class manage all the registred as well as unregistred driver class. It has servral method to maintain
+Jdbc Driver manager class manage all the registred as well as unregistred driver class. It has several method to maintain
 relation with used and driver.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
