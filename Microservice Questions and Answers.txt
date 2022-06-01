@@ -147,6 +147,7 @@
 22) What do you understand by spring cloud?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud framework maily used to build cloud applications.
+    It Helps to build the common feature,
     The main feautere of cloud framework such as
     1)Service to service call
     2)load balancing
