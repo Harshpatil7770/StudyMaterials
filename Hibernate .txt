@@ -391,3 +391,5 @@ load() method return object not found exception if object isn't found.
  66) What is use of @Transactional annotations?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
  @Transational annotation is used when we want to execute certain method in transaction.
+ 
+ When we specify the annotations @Joincolumn is used to map the foreign key
