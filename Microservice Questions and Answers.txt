@@ -18,7 +18,7 @@
 2) What is monolithic?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Monolithic means put functionality into single process.It becomes easy to deploy as single jar/war file. It maily used to make smaller projects also build the
-   proof of concepts. and if there is expertisize in microservices. 
+   proof of concepts. and if there is no expertisize in microservices. 
 
 
 3) What are the advantages of monolothic?
@@ -80,13 +80,14 @@
 11) What is use of spring data JPA?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    Spring data JPA is used to acces DAO layer.
+    Spring data JPA is used to acces DAO layer.To communicate with database
 
 
 12) What is eureka server? ( portno-8761) @EnableEurekaServer 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
     To use eureka server we need to add the dependency such as netfilx eureka server and use @EnableEurekaServer annoataions.
+    By using eurka server we will can see which service is up or down.
 
 13) Which annotations needed in springBoot application class to enable eureka server?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -144,7 +145,7 @@
     2) Hystrix Dashboard
     3) Eureka Server
 
-22) What do you understand by spring cloud?
+  22) What do you understand by spring cloud?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud framework maily used to build cloud applications.
     It Helps to build the common feature,
@@ -156,29 +157,36 @@
 23) In which case microservice is best suited?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     1) To make more complex and scabale application microservice architecure is good.
-    so we can use in mobile, smart Tvs ,web desktop etc.
+       so we can use in mobile, smart Tvs ,web desktop etc.
 
 
 24) What are the component of microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    1) Spring config server- 
-    The default port no. of config server is 8888. we put git url inside this application.properites file.It works both client and server side.
-    also we put common propeties on cloud.
-    To enable config server we need to add dependency such as config server and use the annotations such ad @EnableConfigServer
+    1) Spring Cloud config server- 
+       To use spring cloud config server we need to add the config server dependency, and use @EnableConfigServer annotations.
+       The default port number of config server is 8888. 
+       It act as common service or centralized service. We put git url inside the application.properties and stroe all common connection on git,such 
+       as database connection or jms connections or etc.
+    
 
     2) Eureka Naming Server-
-    The default port no of eureka naming server is 8761. to enable eureka naming server we need to add the depdency such as spring cloud netflix eureka server
-    and we need to add the annotations such as @EnableEurekaServer
-    All Services are register on eureka server.
-
+       To use eureka naming server we need to add spring cloud netflix eureka server dependency and we required to use @EnableEurekaServer annotations.
+       The default port number of eureka naming server is 8761.
+       It act as monitor of your application we can see which application is up and down.
+       So Eureka server doesn't register it self as client we need to add the some properties in 
+       application.properties files such as
+       eureka.client.register-with-eureka=false
+       eureka.client.fetch-registry=false
+    
+    
     3) Hystrix Dashboard-
     Hystrix dashboard is used to avoid failure of your application by using circuit braker mechnaism. If your application running without any error means circuit
     breaker remains closed and if your application occur some error means circuit braker remains open. 
     To use Hystrix dashboard we need to add the dependency spring cloud netfilx hystrix, and add annotations @EnableHystrix @EnableCircuitBreaker
     
     4) API- GATEWAY
-    It is acts as router of your application. We don't need to write separate url for each service calling we call it by using common url ie api gateway url
+    It is acts as router of your application. We don't need to write separate url for each service calling we call it by using common url i.e. api gateway url
     Inside the application.propeties files of api gateway we put all services with their id and prefix. so services call goes throgh gateway url and services 
     prefix.
     To enable API-GATEWAY we need to add dependency such as cloud stater gateway .
@@ -192,8 +200,9 @@
 26) What is RabbitMQ?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     RabbitMQ is acts as message broker. Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ implements
-    AMQP protocols (advanced messaging queue protocols)
-
+    AMQP protocols (advanced messaging queue protocols).
+    Queue- Quque has pool to store the message. Once consumer listen that message it will gone forever.
+    
 
 27) What is spring cloud bus?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -201,23 +210,24 @@
 
 28) What are the most commmon dependecies using in microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    1) Cloud server
-    2) Eureka Server
+    1) Spring cloud config server
+    2) Spring cloud netflix eureka server
+    3) Spring cloud netflix eureka client
     3) Spring Data JPA
     4) spring JDBC
     5) Mysql Connector
     6) RabbitMq
     7) Open feign
-    8) Eureka discovery client
-    9) cloud bootstraps
-    10) Cloud bus
-    11) Spring Boot deevtools
+    8) cloud bootstraps
+    9) Spring cloud bus
+    10) Spring Boot devtools
+    
    
 
 
 29) What is feign?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Feign is one of the most popular cloud component. If you want to use feign create an interface use annotations such as @Feignclient(name=)
+    Feign is one of the most popular spring cloud component. If you want to use feign create an interface use annotations such as @Feignclient(name=)
     we neeed add the dependecny such as openFeign and in tha main application we need to add the annotations such as @EnableFeignClients
     The main purpose of feign client is without writing detailed rest template code microservices communicate with each other.
 
@@ -229,13 +239,13 @@
 
 31) What is use of spring cloud netflix eureka server and eureka discovery client? or What is the difference between @EnableDiscoveryClient and @EnableEurekaServer?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    spring cloud netflix eureka server is used to build the eureka server. we need to add dependency such as spring cloud netflix eureka server and use
-    annotations such as @EnableEurekaServer 
-    whereas eureka discovery client is used to pick the implementations of class path. all services must be registerd on eureka server.
-    For that we need to add depdendecies such as spring cloud netflix eureka client and use the annotations such as
-    @EnableDiscoveryClient
-
-
+    If you want to use eureka server first you need to add the spring cloud netflix eureka server depedency. Eureka server act as monitor of your application.
+    So to enable eureka server we need to add @EnableEurekaServer annotations.
+    also all services we need to register on eureka server for that we need to add spring cloud netflix eureka client depedency and for enabling we need to use 
+    @EnableEurekaClient dependency. and eureka server does't register itself as cleint we need to add
+    eureka.client-register-with-eureka=false
+    eureka.cleint-registry=false
+   
 32) What is use of devtools dependecies?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Devtools dependecies detect changes automatically and restart the server automatically. we don't need to restart server manually.
@@ -243,9 +253,10 @@
 
 34) What is Fallback Method?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Fallback Method called when error occurs in the programms. 
-    To avoid failure of application fallback method used ,suppose service a ,b,and c dependes upon each other suppose service b goes down then all application becomes
-    down to avoid this fallback method called to server atleast service a.
+    Fallback method called when error occurs in your program.
+    Suppose service A,B and C depedends upon each other and B service get down, so by using circuit breaker mechanism we send the response like
+    service may be down plaese try again later.
+   
 
 35) What is APIGATEWAY?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
