@@ -462,13 +462,10 @@ PrintstackTrace() method is used to declare details information if exception occ
 ---------------------------------------------------------------------------------------------------------------------------------------
 39) Give some example of unchcked exception?
 ---------------------------------------------------------------------------------------------------------------------------------------
-1)Index out of bond exception 2)AithmeticExcpetion 3)NullPointerException                                                                                                                                                                               
-
----------------------------------------------------------------------------------------------------------------------------------------
+1)Index out of bond exception 2)AithmeticExcpetion 3)NullPointerException                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------
 40) What is try with resource statement in java and it's advantages?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       a try statement is declared with one or more resource is called as try with resource.                                                                                 when we use try with resource we don't need to use finally block.
-
+a try statement is declared with one or more resource is called as try with resource.                                                                                 when we use try with resource we don't need to use finally block.
 ---------------------------------------------------------------------------------------------------------------------------------------
 41) Which class is super class for all error and exception?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -499,7 +496,7 @@ PrintstackTrace() method is used to declare details information if exception occ
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 45) Will the finally block be executed if the code System.exit(0) is written at the end
-    of try block??
+    of try block?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        NO, then finally block will not get execute.
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -610,7 +607,7 @@ No we can't write any code after throw statement if you try to write it will sho
 
 ---------------------------------------------------------------------------------------------------------------------------------------	 
  54) Explain the importnce of throwable class and it's method?
- ---------------------------------------------------------------------------------------------------------------------------------------	
+---------------------------------------------------------------------------------------------------------------------------------------	
  Throwable is root class of all error and exception. 
  There are following methods of exception such as
  1) printStackTraceMethod() - gives deatils explanation of error occured.
@@ -684,9 +681,8 @@ If you try to access array index negative ,greather or equal to length we will g
 ---------------------------------------------------------------------------------------------------------------------------------------
  7) What is String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String constant pool is special space reserved in heap memeory to store the string objects. When we create obj
-without using new keyword it will store in string constant pool                                                                                                                                                                  
----------------------------------------------------------------------------------------------------------------------------------------
+String constant pool is special space reserved in heap memeory to store the string objects. When we create obj
+without using new keyword it will store in string constant pool                                                                                                       ---------------------------------------------------------------------------------------------------------------------------------------
 8) What is special about String objects as compares other objects.
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         String objects are created without using new keyword and store in special memory i.e String constant pool,                                                             JVM check whether the objects already  declared or not in this way they make JVM more memory efficient. 
@@ -806,6 +802,7 @@ For eg- suppose five reference variable referes to the one object and i want to 
    results?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Because length() method count only number of character from the String.                                                            
+
 31) What is String Buffer?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         String buffer is introduced to make mutable objects. When we object by using String buffer it will strore in 
@@ -867,10 +864,10 @@ For eg- suppose five reference variable referes to the one object and i want to 
     4)   Context swithcing in thread is faster                                            4) Context swithching in process is slower
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-4) What do you understand by inter threads communication? ######################
+4) What do you understand by inter threads communication? 
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         The communication between synchronized thread is called as inter thread communication.
-                                                                                                                                                                        It is used to avoid thread pollling in java.                                                                                                                                                                                        
+                                                                                                                                                                        It is used to avoid thread polling in java.                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 5) How thread communication happen?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -884,7 +881,7 @@ means unblock all waiting thread.                                               
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Because synchronization block makes clear proper communication.If you try to use wait method from outside the block it will show an error such as java.lang.illegalmoniter state exception
 ---------------------------------------------------------------------------------------------------------------------------------------
-8) What are the advantages of multithreading? ######################
+8) What are the advantages of multithreading? 
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Mulitthreading means execute mutilple thread simultaneously. It is process to achieve multitasking.
                                                                                                                                                                         The advantages of multithreading is
@@ -935,16 +932,15 @@ Thread object is created by using two ways.
 ---------------------------------------------------------------------------------------------------------------------------------------
 15) What is runable interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Runable interface means functional interface , it has only one abstract method, run method . It is also known as single argument method.
+Runable interface means functional interface , it has only one abstract method, run method . It is also known as single argument method.
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) What does join method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Join method wait for thread to die.
+Join method wait for thread to die.
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) What is the purpose and woking of sleep () method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Sleep method thread class method. It pause the currently executing thread for specific time and execute another 
-                                                                                                                                                                        thread if any availabel.
+Sleep method thread class method. It pause the currently executing thread for specific time and execute another                                                        thread if any availabel.
 ---------------------------------------------------------------------------------------------------------------------------------------
 18) what is difference between wait() and sleep() method? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -976,7 +972,7 @@ Thread object is created by using two ways.
 ---------------------------------------------------------------------------------------------------------------------------------------
 24) What is shutdown hook?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                                                         also it is process of cleaning.
+Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                                                         also it is process of cleaning.
 ---------------------------------------------------------------------------------------------------------------------------------------
 25) When should we interrupt thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1016,19 +1012,17 @@ Thread object is created by using two ways.
 ---------------------------------------------------------------------------------------------------------------------------------------
 31) What is deadlock?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                                                                                                                                                                     
----------------------------------------------------------------------------------------------------------------------------------------
+Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                                                 ---------------------------------------------------------------------------------------------------------------------------------------
 32) How to detect deadlock condition ? and how can you avoid it?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                                                                                                                                                                            
-To avoid deadlock condition 
+To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                                                   To avoid deadlock condition 
 1)Avoid unnecessary lock
-                                                                                                                                                                        2)Avoid nested lock
-                                                                                                                                                                        3)Using thread join
+2)Avoid nested lock
+3)Using thread join
 ---------------------------------------------------------------------------------------------------------------------------------------
 33) What is thread sheduler?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Thread scheduler is part of jvm which decides which thread execute first based on some proority and other facts.                                                       Such as time sclining and preemptive sheduling.
+Thread scheduler is part of jvm which decides which thread execute first based on some prority and other facts.                                                       Such as time sclining and preemptive sheduling.
 Preemptive sheduling means high priority thread execute first and wait until high priority thread comes into exisitance. 
 time sclining means time taken by cpu for execution
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1046,7 +1040,7 @@ time sclining means time taken by cpu for execution
 ---------------------------------------------------------------------------------------------------------------------------------------
 36) What is race condition?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Race condition generally occur when mutiple thread execute at a same time                                                                                             To avoid race condition we need to use synchronization.
+Race condition generally occur when mutiple thread execute at a same time                                                                                             To avoid race condition we need to use synchronization.
 ---------------------------------------------------------------------------------------------------------------------------------------
 37) What is volatile keyword is java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1054,7 +1048,7 @@ time sclining means time taken by cpu for execution
                                                                                                                                                                         Volatile keyword mainly used to achieve safety threads.              
 ---------------------------------------------------------------------------------------------------------------------------------------
 38) What do you understand by thread pool?
----------------------------------------------------------------------------------------------------------------------------------------                               Thread pool is group of waited thread waiting for task to be allocated
+---------------------------------------------------------------------------------------------------------------------------------------                               Thread pool is group of waited thread waiting for task to be allocated.
 ---------------------------------------------------------------------------------------------------------------------------------------
 39) what is synchronization block?
 -------------------------------------------------------------------------------------------------------------------------------------                                  Synchronization block is used to perform synchronization on specific resource of method. Suppose i have 50 line code i want syncronozed 5 lines of them then i will use synchronization block . The scope of synchronization block is smaller than the sychronization method. 
@@ -1200,7 +1194,7 @@ main thread is first thread it starts immediately after program is started.
  58) What is a lock or purpose of locks in java? ######################
  ---------------------------------------------------------------------------------------------------------------------------------------
  lock is an moniter used to prevent access of multiple thread to any shared resource.
-  ---------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  59) In how many ways we can do synchronization in java?
  ---------------------------------------------------------------------------------------------------------------------------------------
 There are two ways to synchronization 
@@ -1329,7 +1323,7 @@ Thread class is static
   Collection is framework that provide an architecuture to store and manipulate the group of objects.
 
 2) What is collections?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Collections is class which provides method such as sort and synchronized ,max,min,addALL etc.
   
 3) What is collection framework?
@@ -1381,7 +1375,7 @@ Thread class is static
   list.add("Harsh");
   we know that the doubly linked list means
   [ Previous connnection node][ Stored element ][Next connecting node]
-  This is format of double linked list. Doubly linked list require more space because it store object with there address. Also it does n't maintain insertion order.
+  This is format of double linked list. Doubly linked list require more space because it store object with there address. Also it doesn't maintain insertion order.
   [P][HARSH][N] inside the memory getstored.
   Now suppose i have add two more object so 
   such as
@@ -1641,7 +1635,7 @@ Arrays.asList() size of array become get fixed, so we are not able to add more e
 
 34) How to remove duplicate from ArrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   We can use hashset or linkedhashSet
+   We can use hashset or linkedhashSet or Treeset
 
 35) How to reverse arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1653,7 +1647,7 @@ Arrays.asList() size of array become get fixed, so we are not able to add more e
  first we need to sort arraylist by using Collections.sort() method after that we will use Collections.reverse()method we pass lists inside that
 
 
-37)How to syncronized arrayList?
+37) How to syncronized arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   By using synchrnized.list() method 
 
@@ -1884,7 +1878,7 @@ Load factor is decided when to increase the size of list.
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Internal server error
  
- 3)What is webseries and why it required?
+ 3)What is web service and why it required?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Web services is desined for application to application interaction.
   Interoperable. suppose application A installed on java, application B installed on dotnet and application c build on php so they communicate over the webservies.
@@ -2153,6 +2147,7 @@ c) Correct
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    For Each Method is used to iterate the element.
    For Each Method is introduced in iterable and stream Interface. 
+   It is used to iterate the array and collections.
    The main advantage of for each loop is to reduce lot's lines of code.
    The disadvantage of this loop is we can't travel in reverse direction.
    
