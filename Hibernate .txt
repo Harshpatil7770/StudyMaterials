@@ -165,7 +165,7 @@ Mark mutable=false which class want to make immutable because by default they ar
 4)Many to one- Many records of table A is related to one record of table B.
   eg- student and college
 
-24)Is it possible to collection mapping one to one and many to one?
+24) Is it possible to collection mapping one to one and many to one?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 It's not to possible to perform collection mapping with one to one and many to one.
 It's possible only with many to many and one to many
@@ -205,7 +205,7 @@ Adhesion helps to glues different things together.
 JPQL stands for java persistance query language,i.e not a native query. JPA uses jpql.
 
 
-31)Mentions two component of hibernate configuration object?
+31) Mentions two component of hibernate configuration object?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 1)class Mapping setup
 2)Database connection
