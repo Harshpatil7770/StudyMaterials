@@ -898,6 +898,7 @@ Life cycle of Thread
 3) Running- In this state thread is started running.
 4) Waited/Blocked-In this state thread is not running but still live and execute another thread if any available.
 5) dead- In this state thread is get died after exisitng the run method.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 10) What is the difference between preemptive sheduling and time slicing?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -919,7 +920,7 @@ Thread object is created by using two ways.
 1) Thread class( extending thread class)
 2) Runnable Interface (implementing runable interface)
                                     Thread class                                                                        Runnable Interface
-            1) Once we extends thread class we are not able to extends other class                1)  Once we implement runable interface we can extends other class.
+            1) Once we extends thread class we are not able to extends other class                1) Once we implement runable interface we can extends other class.
             2)  extending thread is tightly copuled                                               2)Implementing runable interface is loosely coupled.
             3)Thread class don't provide any code reusablity other than copy and paste            3)runable interface provide better code reuseability.
             4)Thread class maintanice is high                                                     4)maintance if runable interface is low
@@ -940,7 +941,7 @@ Join method wait for thread to die.
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) What is the purpose and woking of sleep () method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Sleep method thread class method. It pause the currently executing thread for specific time and execute another                                                        thread if any availabel.
+Sleep method thread class method. It pause the currently executing thread for specific time and execute another                                                        thread if any available.
 ---------------------------------------------------------------------------------------------------------------------------------------
 18) what is difference between wait() and sleep() method? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1235,9 +1236,9 @@ There are two ways to synchronization
  --------------------------------------------------------------------------------------------------------------------------------------- 
  66) What all methods are used to prevent thread execution ?
  ---------------------------------------------------------------------------------------------------------------------------------------
- 1) join() - WAIT FOR THRAD TO DIE
- 2) sleep() - SLEEP THE CURRENTLY EXECUTING THREAD FOR WAIT SPECIFC TIME AND EXECUTE IF ANY AVIABLE.
- 3) yeild() - YEILD METHOD IS USED TO RESTRICT THE USER FROM GETTING WAIT AND SLEEP STATE IT DIRECLTY PUSH TO RUNNNABLE STATE. 
+ 1) join() -   WAIT FOR THRAD TO DIE
+ 2) sleep() -  SLEEP THE CURRENTLY EXECUTING THREAD FOR WAIT SPECIFC TIME AND EXECUTE IF ANY AVIABLE.
+ 3) yeild() -  YEILD METHOD IS USED TO RESTRICT THE USER FROM GETTING WAIT AND SLEEP STATE IT DIRECLTY PUSH TO RUNNNABLE STATE. 
  ---------------------------------------------------------------------------------------------------------------------------------------
  67) When yield () method in thread is executed it?
  ---------------------------------------------------------------------------------------------------------------------------------------
