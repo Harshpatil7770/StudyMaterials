@@ -1442,23 +1442,23 @@ Thread class is static
 
 9)Explain various interfaces used in collection framework?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1)Collection interface
-   Collection interface is primary interface. It extedns iterable interface.
+  1) Collection interface
+     Collection interface is primary interface. It extedns iterable interface.
    
-  2)List Interface
-  List interface extends collection interface. list interface allows duplicate values and provide random access.
+  2) List Interface
+     List interface extends collection interface. list interface allows duplicate values and provide random access.
   
-  3)Set Interface
-  set interface allows only unique values.set interface extends collection interface.
+  3) Set Interface
+     set interface allows only unique values.set interface extends collection interface.
    
-  4)Map interface
-  map interface represents key,value pair. Map interface extends collection interface
+  4) Map interface
+     map interface represents key,value pair. Map interface extends collection interface
   
-  5)Queue interface
-  queue interface extends collection interface. queue interface follow first in first out manner
+  5) Queue interface
+     queue interface extends collection interface. queue interface follow first in first out manner.
   
-  6)Deque interface
-    Deque interface extends queue interface, which is used to perfom insert or remove operation on block wait until operations are performed.
+  6) Deque interface
+     Deque interface extends queue interface, which is used to perfom insert or remove operation on block wait until operations are performed.
 
 10) Explain the difference between ArrayList and Vector?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1599,7 +1599,7 @@ Thread class is static
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Dictionary class provides capability to store the key value pair   
 
-28) What is default size of load factor in hasing based collection?
+28) What is default size of load factor in hashing based collection?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Default size is 16 and load factor is 0.75  
    
@@ -1710,22 +1710,22 @@ equlas take input parameter as only objects whereas compareTo method take only s
      It allows n no. of null values. It implements abstract class.
      When we create the object of hashmap
      Map<Integer,String> map=new HashMap<Integer,String>();
-      Inside the memeory a table is created with default capacity is 16 and load factor is 0.75.
-      Each row is called as bucket.
-      Now i will add element into it by using put method.
+     Inside the memeory a table is created with default capacity is 16 and load factor is 0.75.
+     Each row is called as bucket.
+     Now i will add element into it by using put method.
       
-      map.put(101,"Smith);
-      map.put(102,"Jonh");
-      map.put(103,"Sandy");
+     map.put(101,"Smith);
+     map.put(102,"Jonh");
+     map.put(103,"Sandy");
       
-      so, put first calculate the hashcode.
-      Hashcode return us the index value or integer values.
-      Whatever we passing it stored in doubly linked list.
-      Suppose we will get 7 index it will store the object in 7 buckte as a doubly linked list format.
-      Some times we will get same index value suppose 8,that time hash collosion will occur.
-      and equal() method get overide to check contain equal or not if contain is equal doubly linked list get overide,if contains is not equal
-      then another doubly linked list will get create connected to previous one.
-      Suppose we are passing null values it will store on zeorth index. If you passing lot's of null keys it will started replacing .
+     so, put first calculate the hashcode.
+     Hashcode return us the index value or integer values.
+     Whatever we passing it stored in doubly linked list.
+     Suppose we will get 7 index it will store the object in 7 buckte as a doubly linked list format.
+     Some times we will get same index value suppose 8,that time hash collosion will occur.
+     and equal() method get overide to check contain equal or not if contain is equal doubly linked list get overide,if contains is not equal
+     then another doubly linked list will get create connected to previous one.
+     Suppose we are passing null values it will store on zeorth index. If you passing lot's of null keys it will started replacing .
       
       
 49) When do we use HashSet over TreeSet?
