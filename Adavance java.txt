@@ -58,7 +58,7 @@ Array is fixed in size. The performance of array is faster.
 9) What do you understand by jagged array? 
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Jagged array is combination of multidimensional array, In which arrays has different size.
-                                                                                                                                                                        for eg- int a[][]=new int[3][];
+                                                                                                                                                                       for eg- int a[][]=new int[3][];
 ---------------------------------------------------------------------------------------------------------------------------------------
 10) What is anonymous array and it's examples? 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -341,7 +341,7 @@ If we don't handel the exception program will get direclty terminated.
 exception propagation means exception thrown from top of the stack to the bottom of the stack if not catched                                                           then drop down again main method called as exception propagation.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-20)What is custom exception and How to create and why we need ?
+20) What is custom exception and How to create and why we need ?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Custom exception means user defined exception.It is used to catch and provide specific treatment to exiting java exception. 
 Business logic exception 
@@ -562,7 +562,7 @@ checkEligiblityCriteria(age);
 Class not found exception occur when we load the class and the class is not present in the path.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-48) Who is responsible for runnable to running transition??
+48) Who is responsible for runnable to running transition? ##########################
 ---------------------------------------------------------------------------------------------------------------------------------------
 Thread sheduler.
 
