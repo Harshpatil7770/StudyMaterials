@@ -23,9 +23,8 @@
 3) What is object oriented programming language?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                            object orriented programming language menas everything is made of objects.
-											   Object oriented means we organize a application has different combination                                                                                               objects that incorpated with datastucture and behaviour. We can do                                                                                                     programming by using object oriented.
+											   Object oriented means we organize a application has different combination                                                                                              objects that incorpated with datastucture and behaviour. We can do                                                                                                    programming by using object oriented.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 4) What are the feature of Java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  A) Java is simple   
@@ -39,12 +38,10 @@
                                                                                              Platform -Hardware or software environment on byte code runs
                                                                                              Hardware- Physical entity related to our machine
                                                                                              Software- collection of codes which is installed on your hard drive.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-c)robust  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------  c)robust  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------           
                                                                                     -       Robust means it has very powerful and strong transaction management                                                                                                   capability.   
----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-d)multithreaded    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------  d)multithreaded    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
                                                                                      -       Multithreaded means multiple thread execute simultaneously at a same time.We can achieve multitaking with the help of multithreaded.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -214,7 +211,7 @@ A) Abstraction
                                                                                                                                                                                                                                                                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                A X)Can interface be final in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Interface is not final is java. because whatever method declare inside the interface we must need to implement subclass.
+	                                                                                               Interface is not final is java. because whatever method declare inside the interface we must need to implement subclass.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                                A XI)Can we define private and protected modifier for the member in interfaces?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2232,6 +2229,13 @@ log(n) best
      advantage - make code more readable
      it is also know as for each loop traverse element one by one.
      The main disavantage we can't travel in reverse direction.
+     
+     
+112) What happen if i write
+     Map<Integer> map=new HashMap<Integer>();
+     
+     It will show compile time error because HashMap represent key value pair
+     
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
