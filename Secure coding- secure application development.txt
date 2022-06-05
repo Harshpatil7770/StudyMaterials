@@ -22,7 +22,7 @@ Every application is made following sdlc steps. It has basically seven steps suc
 6) Deployment
 7) Maintance
 
-Owasp Top 10 web application proactive or sequrity risks
+Owasp Top 10 web application proactive or sequrity risks[ open web application security proactive]
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Defining Security Requirements
 2) leverage of framworks and libraries
