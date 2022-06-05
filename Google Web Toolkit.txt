@@ -15,7 +15,7 @@
 GWT stands for google web toolkit.
 It is open source platform to build web application as well it mainly used it make or deveop ajax application easily.
 
-
+	
 2) What is adavntages of GWT?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1)It allows to write in application java and run in javasript.
