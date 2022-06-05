@@ -12,7 +12,7 @@
                                                                        Spring MVC
 ======================================================================================================================================================================
 
-1)What is the front controller class of spring MVC? expaing the architecure of spring mvc?
+1) What is the front controller class of spring MVC? expaing the architecure of spring mvc?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Dispatcher servelet is front controller class of Spring MVC. It recieve the request from client and send them resource on the server.
 
