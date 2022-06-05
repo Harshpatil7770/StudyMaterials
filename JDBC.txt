@@ -126,7 +126,7 @@ from the database.
 2) ResultSet type scroll sensitive -cursor moves both both and reverese direction but scroll sensitive.
 3) ResultSet type scroll insensitive - cursor moves both forward and reverese but scroll insensitive.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-13) What is the difference between ResultSet and Rowset ?
+13) What is the difference between ResultSet and Rowset ?#######################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
  ResultSet                                                    RowSet
 1) ResultSet object is not java bean object                 1) RowSet object is java bean object.
