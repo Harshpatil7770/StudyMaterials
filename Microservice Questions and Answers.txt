@@ -271,7 +271,14 @@
     depenedency and use the annotations such @ EnableHystrix and @EnableCircuitBreaker.
 
 37) How to indepedent microservices communicate with each other?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Microservices communicate with each other by using Http protocol or AMQP i.e advanced messaging queue protocol.
+    
+38) Which desgin pattern microservices follows?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A) API Gateway
+B) circuit breaker
+C) Asynchrnouns messaging
    
   
 
