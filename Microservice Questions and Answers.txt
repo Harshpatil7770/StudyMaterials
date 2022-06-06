@@ -270,5 +270,9 @@
     remains closed whereas if your application occurs some error then circuit breaker remains open.To use hystrix dashboard we need yo add spring cloud hystrix 
     depenedency and use the annotations such @ EnableHystrix and @EnableCircuitBreaker.
 
+37) How to indepedent microservices communicate with each other?
+    Microservices communicate with each other by using Http protocol or AMQP i.e advanced messaging queue protocol.
+   
+  
 
 
