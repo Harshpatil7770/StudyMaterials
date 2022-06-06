@@ -14,8 +14,6 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                         
-
-
 2)What is JPA?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 JPA stands for java persistence API.
@@ -34,7 +32,6 @@ It provide platform to work directly with objects instead of sql statements.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------      4)What is ORM?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
-
 
 5)Explain hibernate architecture?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
@@ -82,22 +79,22 @@ ORM stands for object relational mapping. It simplies data creation,data manupal
                                                        By using session.createSqlquery method
 
 
-11)What does HQL stands for?
+11) What does HQL stands for?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        HQL stands for hibernate query language
 
 
-12)How HQL Query is created?
+12) How HQL Query is created?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        HQL query created by session.createQuery
 
 
-13)How can we add criteria to sql query?
+13) How can we add criteria to sql query?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        Session.createCriteria
 
 
-14)Define persistance class?
+14) Define persistance class?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        The class whose objects direclty stored in database called persistence class.
 
@@ -311,7 +308,7 @@ load() method return object not found exception if object isn't found.
       catching improve performane of your application by pooling object in catche. when we want fetch same data multiple times 
       There are two types of catche
       1)First level catche -First level catche is associate with session. It doesn't used for entire application, it used  for only single session
-      2) Second level catche - Second level catche is assocaite with session factory. It used for entire application. but we need to enable them explicityly.
+      2)Second level catche - Second level catche is assocaite with session factory. It used for entire application. but we need to enable them explicityly.
       
  50) Does hibernate support native SQL queries?
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
