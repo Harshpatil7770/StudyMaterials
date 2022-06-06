@@ -294,14 +294,14 @@ Adavantages of JDBCTemplate
 4)SimpleJDBC Template
 
 
-3)How can you fetch record by using jdbcTemplate?
-By using RowSetExactor and rowMapper.
+3) How can you fetch record by using jdbcTemplate?
+   By using RowSetExactor and rowMapper.
 
 
-4)What is advantages of Named Parameter JDBC Template?########################
-Named Parameter JDBC Template is used to pass the value in Named Parameter.
+4) What is advantages of Named Parameter JDBC Template?########################
+  Named Parameter JDBC Template is used to pass the value in Named Parameter.
 
 
-5)What is the advantages of simple jdbc Template?########################
+5) What is the advantages of simple jdbc Template?########################
 1)No need to perform exception handeling on database logic
 2)Reduce lot's code such as we don't need to write creating connection,creating statement etc.
