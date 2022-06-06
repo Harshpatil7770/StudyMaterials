@@ -2235,6 +2235,93 @@ log(n) best
      Map<Integer> map=new HashMap<Integer>();
      
      It will show compile time error because HashMap represent key value pair
+
+113) How to acheive inheritance in java?
+     By using extends keywords in java
+     
+     class Bank{
+     }
+     class SBI Extends Bank{
+     
+     }
+
+     SBI IS-A Bank
+
+114) How to achieve associtation?
+     Associtation we can achieve direclty or by using new keyword.
+     Association means all object have their own life and there is no owner.
+     
+     class Student {
+         private int rollNo;
+     
+         private String name;
+     
+     }
+     
+     student has a rollNo;
+     student has a name;
+     
+     Class Car{
+         private Engine engine;
+     
+         public Car(){
+                 engine=new Engine();
+                     }
+         }
+     Class Engine{
+
+     }
+     
+     
+     
+     Inside the association we have two concepts like
+     1) Aggregation  (Weak relationship) Car has music player
+     
+        Class Employee{
+	      private int id;
+	      
+	      private String name;
+	      
+	      Address address;
+	     
+	 }
+ 
+       Class Address{
+       
+       }
+	      
+     
+     
+     2) Composition  (Strong relationship) Car has a Engine
+     
+        Class Car{
+	 private Engine engine;
+	 
+	 public Car(){
+	     engine=new Engine();
+	     
+	   }
+	   
+	 }
+	
+	class Engine{
+	
+	}
+	
+	 
+     
+     
+     
+       Association means no tightly coupled where as inheritance means tightly copuled.
+       for eg- A Car has a music system
+       Compostion Car has a engine
+       
+     
+ 115) Inheritance is tightly coupled because classed dependes upon each other or we can say blood relations.
+
+     
+     
+     
      
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
