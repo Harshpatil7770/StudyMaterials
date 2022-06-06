@@ -278,13 +278,13 @@ load() method return object not found exception if object isn't found.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
      Hibernate mapping file is used by hibernate framework to get information about the mapping pojo classes and database table.
      
- 43) Can you tell difference between openSession and getCurrentSession() methods?
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+43) Can you tell difference between openSession and getCurrentSession() methods?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------   
      openSession() method always create new session and after done with operation we need to close them. sessionFactory.getCurrentSession() method return 
      session you don't need close them.
      
- 44) Difference between save() and saveOrUpdate() methods?
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+44) Difference between save() and saveOrUpdate() methods?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------   
      save() method insert new records in the database whereas saveOrUpdate() methods insert or update records based on exisiting records.
      
  45) What is the difference between get() and load() method?
