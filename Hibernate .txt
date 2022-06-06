@@ -390,3 +390,8 @@ load() method return object not found exception if object isn't found.
  @Transational annotation is used when we want to execute certain method in transaction.
  
  When we specify the annotations @Joincolumn is used to map the foreign key
+ 
+ 67) What is dialect in hibernate?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Dialect specify which database are you using in hibernate.
+ 
