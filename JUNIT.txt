@@ -1,7 +1,7 @@
 ===================================================================================================================================================
 ===================================================================================================================================================
 ===================================================================================================================================================
-                                                                                                                                                  !!! Shree Swami Samarth !!!
+                                                    !!! Shree Swami Samarth !!!
 ===================================================================================================================================================
 ===================================================================================================================================================
 ===================================================================================================================================================
@@ -10,14 +10,10 @@
 1)  What is Junit?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
    Junit is open source framework for writing test cases in java. It is combination of java and unit testing.
-  
-   
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 2) What is latest version of junit?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
      Junit 5
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 3) What is Unit Test?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,7 +24,6 @@
     Types of unit testing
     1) Manual Testing  - Manual Testing means execute test cases manually without any tool support. It is time consuming and less realiable.
     2) Automated Testing - Automated Testing means exceute test cases by tool support.It is fast and more reliable.
-
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 4) What is the advatanges of Unit Testing?
@@ -140,18 +135,18 @@ click on add
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 1)@ExtendsWith(MockitoExtension.class) Provide mock object for you
 2)@Mock annotations is used to mock the objects
-3) @InjectMock - used to create the instance and inject all necessary mocks
+3)@InjectMock - used to create the instance and inject all necessary mocks
 
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-7) What is advantages of mockito?
+8) What is advantages of mockito?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
  1) It support exception.
  2) No need to write mock object manually.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-7) What is limitations of Mockito?
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+9) What is limitations of Mockito?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 We can't mock out the cases such as
 1) Constructor
@@ -162,17 +157,17 @@ We can't mock out the cases such as
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-7) What is Testing?
+10) What is Testing?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
     Testing means check the functionality of application wheather fulfill the requirements or not.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-8) What is Junit?
+11) What is Junit?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
    Junit is combination of java_unit testing. It is open source platform to write test cases in java.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-9) What is unit Testing?
+12) What is unit Testing?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
    Unit Testing means first level of testing. It is combination of input data and expected output.
    Unit Testing means check or ensure that the specific function works as they designed.   
@@ -372,7 +367,7 @@ No we use expected attribute to assert an exception,
 1) stubbing and setting the exceptions
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-43) The assumtions of mocking 	is that each unit is tested in?
+43) The assumtions of mocking is that each unit is tested in?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Isolations
 
@@ -397,9 +392,9 @@ No we use expected attribute to assert an exception,
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
  Coverage shows number of lines are tested when your unit test cases run against the source code.
  We can use EclipseEmma or JTest tool.
-  We need to EclipseEmma plugins from eclipse martketplce.
-  Whatever lines we see in green colour means they tested or write good way otherwise we see red colour
-  that means they not good. Normally we need to maintain 80 to 90 %. code coverage
+ We need to EclipseEmma plugins from eclipse martketplce.
+ Whatever lines we see in green colour means they tested or write good way otherwise we see red colour
+ that means they not good. Normally we need to maintain 80 to 90 %. code coverage
  Once we add the plugin we will see run as coverage .
 
  
