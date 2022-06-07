@@ -611,9 +611,20 @@ B) Run as maven build
     
   70) URL criteria
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Use always plural 
-   for eg- api/users correct
-           api/user wrong
+   1) when you write the url use noun instead of verb or adjectives.
+   for eg- api/products correct
+           api/prouctr wrong
+   2) Use clear name
+       /api/products/save
+   3) use lowercase letter
+   4) avoid special character 
+      expect forword slash and rounded bracket
+   5) separate words with hypen(-) don't use underscore
+      because hypen makes more clear
+   6) avoid file extension
+   7) use camecase for parameter
+ 
+  
    
   
   
