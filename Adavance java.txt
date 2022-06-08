@@ -2398,7 +2398,7 @@ ValueOf() method convert the data into human readable format. String Valueof() m
 1) Intermediate operations doesn't produce the end result, it return the Stream.Intermediate operator are lazy loading. 
    intermediate operations methods such as map(),filter(),distinct(),skip()
 2) Terminal operations produce the end result and it doesn't return the stream. Terminal operator are eargely loading.
-Terminal operations methods such as toarray(),count(),collect(),forEach(),findFirst(),findAny()
+   Terminal operations methods such as toarray(),count(),collect(),forEach(),findFirst(),findAny()
 
 27) What are the most commonly used Intermediate operations?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2510,8 +2510,9 @@ The main objective of Java 1.8 is enable function programming, so require to wri
 Marker interface
 1) Remote interface
 2) Clonable interface
+3) Serialliable
   
- 46)Comparision concepets
+ 46) Comparision concepets
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
  (obj1,obj2) 
  +ve when obj1 is come before obj2
