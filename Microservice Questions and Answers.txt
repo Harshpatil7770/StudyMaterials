@@ -116,7 +116,7 @@
     
 17) How microservice communicate with each other?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Microservice communicates with each other by using lightweight http rest or messaging protocols.
+    Microservice communicates with each other by using lightweight http rest or messaging protocols(advanced messaging queue protocol)
 
 
 18) What are the principle of microservice?
@@ -145,7 +145,7 @@
     2) Hystrix Dashboard
     3) Eureka Server
 
-  22) What do you understand by spring cloud?
+22) What do you understand by spring cloud?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud framework maily used to build cloud applications.
     It Helps to build the common feature,
@@ -199,14 +199,14 @@
 
 26) What is RabbitMQ?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    RabbitMQ is acts as message broker. Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ implements
-    AMQP protocols (advanced messaging queue protocols).
+  RabbitMQ is open source message broker.Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ       implement AMQP protocols (advanced messaging queue protocols).
     Queue- Quque has pool to store the message. Once consumer listen that message it will gone forever.
     
 
 27) What is spring cloud bus?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud bus dependecies mainly used to send only one refresh other changes happens automatically.
+    Suppose if you are changing the configuration.
 
 28) What are the most commmon dependecies using in microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
