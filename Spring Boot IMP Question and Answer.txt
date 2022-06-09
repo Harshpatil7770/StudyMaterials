@@ -642,6 +642,18 @@ B) Run as maven build
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
   @RequestMapping is used to at class level whereas @GetMapping is used at method level.
   
+  74) What is the difference between depedency management and depedenies?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Dependency management is one way to manage all the required depenceies in one place.
+  where dependecies deals with managing and sheduling of project tasks.
+  
+  75) What is the difference between @Bean and @Component annotations?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+  @Bean is method level annotations used by spring container act as source bean java definations.
+  @Component is class level annotations used to scan package for bean.
+  
+  
+  
   
   
    
