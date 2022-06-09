@@ -1648,7 +1648,7 @@ Arrays.asList() size of array become get fixed, so we are not able to add more e
  first we need to sort arraylist by using Collections.sort() method after that we will use Collections.reverse()method we pass lists inside that
 
 
-37) How to syncronized arrayList?
+37) How to synchronized arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   By using synchrnized.list() method 
 
@@ -1813,13 +1813,17 @@ output=> [1,2,3,4,6,7];
 list.remove(4);
 output=> [1,2,3,5,6,7];
 
-62)What does mean by asList() method?
+62) What does mean by asList() method?
 ---------------------------------------------------------------------------------------------------------------------------------------
 asList() method means size of array become fixed.
 
 63) What means by load factor?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Load factor is decided when to increase the size of list.
+
+64) How can you make hashmap synchronized?
+---------------------------------------------------------------------------------------------------------------------------------------
+By using Collections.synchronizedMap() method we can make hashmap sychronized.
 
 
  ==================================================================================================================================================================
