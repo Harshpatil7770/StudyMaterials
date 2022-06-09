@@ -84,12 +84,12 @@ Array is fixed in size. The performance of array is faster.
 ---------------------------------------------------------------------------------------------------------------------------------------
 15) What happen if you declare array without assigining size? 
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        It will shows comiple time error.
+It will shows comiple time error.
                                                                                                                                                                         
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) Can we declare array size negative? 
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        No we can't declare array size negative if you try to declare array size negative it will show negative size                                                           expection  error. 
+No we can't declare array size negative if you try to declare array size negative it will show negative size                                                           expection  error. 
                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) Which method of array class used to serach specific element in an array? 
