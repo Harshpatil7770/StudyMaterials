@@ -2340,7 +2340,7 @@ public class Interview {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
  Yes, Funtion interface extends another interface but only when it doesn't have any abstract methods.
  
- 18) What are pre-defined function in java?
+ 18) What are pre-defined function interfaces in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 1) Runnable 
 2) consumer
@@ -2503,8 +2503,10 @@ The main objective of Java 1.8 is enable function programming, so require to wri
 45) What are the different Functional Interface in Java (SAM)?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Runnable  ( run() method)
-2) Comparabale ( compareTo() method)
-3) comparator (compare() method)
+2) Consumer
+3) Predicate
+4)Supplier
+5) Function
 
 /////////////////
 Marker interface
