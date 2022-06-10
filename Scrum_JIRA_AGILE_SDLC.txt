@@ -228,4 +228,13 @@ we can connect all over world developers.
   E) Paste Application on git
   F) Write down summary
   G) commit
+  
+ 7) What is the main purpose of branching ?
+   To work parallel base system.
+   also we don't want to change the already deployed code on production environment.
+   
+ 8) Why we need to merge the branches?
+    To work parallel as well as suppose once i solve the issue or develop feature test it then
+    supppose you want to merge it into original branch
+    
 
