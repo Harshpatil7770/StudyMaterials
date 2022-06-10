@@ -222,7 +222,10 @@ truncate means once we delete we are not able to do rollback. delete means we do
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 31) What is query ?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-query is request used to fetch data on specified criteria.                                                                                                                                                                                                                                                                                                                                                                 
+query is request used to fetch data on specified criteria.                                                                                                              
+32) select max salary from each  department?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select * from department where (departmentId,salary) In(select depaartmentId,Max(salary) from department groupby departmentId); 
 
                                                                                          
                                                                                                                                                                                         
