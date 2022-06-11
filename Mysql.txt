@@ -227,6 +227,9 @@ query is request used to fetch data on specified criteria.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 select * from department where (departmentId,salary) In(select depaartmentId,Max(salary) from department groupby departmentId); 
 
+33) What is aggregator is sql?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Aggregator is function in sql is used to perform calculation on multiple values and return single values.
                                                                                          
                                                                                                                                                                                         
                                                                                    
