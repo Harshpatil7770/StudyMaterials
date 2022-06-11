@@ -354,15 +354,14 @@ Business logic exception
                                                                                                                                                                        No we can't keep other statement in try catch and fianlly block                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 22) There are three statement in try block and if exception occure in second statement then does control go to
-third statement or catch block?
+    third statement or catch block?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                       If exception occur in secod statment of try block then control directly goes to catch block and third the statement                                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
 23) What is unreachable catch block error?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       If you are keeping mutliple catch block then it must be placed in order such as first subclass and then super class
-                                                                                                                                                                       It you keep first super class then subclass it shows unreachaable catch block error
-
+If you are keeping mutliple catch block then it must be placed in order such as first subclass and then super class
+It you keep first super class then subclass it shows unreachaable catch block error.
 ---------------------------------------------------------------------------------------------------------------------------------------
 24) What are the runtime exception in java & give example?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -412,8 +411,7 @@ it's value.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 31) What is class cast exception in java?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Class cast exeption means jvm unable to cast exection one object type over another type.                                      
+--------------------------------------------------------------------------------------------------------------------------------------                                  Class cast exeption means jvm unable to cast exection one object type over another type.                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 32) What is the difference between throw,throws and throwable in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1029,11 +1027,10 @@ time sclining means time taken by cpu for execution
 ---------------------------------------------------------------------------------------------------------------------------------------
 34) Does each thread has stack in mutlithreaded program?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                                                                                                                                                                        
----------------------------------------------------------------------------------------------------------------------------------------
+yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                                                        ---------------------------------------------------------------------------------------------------------------------------------------
 35) How safety thread achieved?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Safety thread achieved by using following ways 
+                                                                                                                                                                     Safety thread achieved by using following ways 
                                                                                                                                                                         1)Using volatile keyword
                                                                                                                                                                         2)Synchronization
                                                                                                                                                                         3)Automatic wrapper class ( All wrapper classes are final classes in java)
@@ -1137,6 +1134,7 @@ maker interface proivde hint to jvm i.r we are implemting some important feature
 
 }
 
+However times you try to create the object you will get same hashcode.
 ---------------------------------------------------------------------------------------------------------------------------------------
 47) What is the difference between join and wait method?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1183,25 +1181,25 @@ main thread is first thread it starts immediately after program is started.
  55) Can we restart a dead thread in java? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
  No we can't restart dead thread in java if you try it will show runtime exception i.e thread is not live.
-  ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  56) Can one thread block the other thread?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  no, one thread can't block another thread.
-  ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  57) Can we overload run() method in java?
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  Yes we can overload the run() method in java ,but start method call run() method with no arguments.
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  58) What is a lock or purpose of locks in java? ######################
  ---------------------------------------------------------------------------------------------------------------------------------------
  lock is an moniter used to prevent access of multiple thread to any shared resource.
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  59) In how many ways we can do synchronization in java?
  ---------------------------------------------------------------------------------------------------------------------------------------
 There are two ways to synchronization 
 1) Synchronization block
 2) Synchronization method
-  ---------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  60) What are synchronized methods?
  ---------------------------------------------------------------------------------------------------------------------------------------
  Synchronized means capability to access multiple thread to any shared resources.
@@ -1249,8 +1247,8 @@ There are two ways to synchronization
  ---------------------------------------------------------------------------------------------------------------------------------------
   sleep() method doesn't realease the lock that thread sleep for the specify time.
   ---------------------------------------------------------------------------------------------------------------------------------------
- 69)Can sleep() method causes another thread to sleep?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+ 69) Can sleep() method causes another thread to sleep?
+ ---------------------------------------------------------------------------------------------------------------------------------------
   No sleep() method cause only current thread no any other.
   ---------------------------------------------------------------------------------------------------------------------------------------
  70) Explain about interrupt() thread?
@@ -1288,7 +1286,7 @@ There are two ways to synchronization
  will show illegal monitor state exception. when these method called it will release the lock.
  ---------------------------------------------------------------------------------------------------------------------------------------
   76) Explain which of the following methods releases the lock when yield(), 
-    join(),sleep(),wait(),notify(), notifyAll() methods are executed?
+      join(),sleep(),wait(),notify(), notifyAll() methods are executed?
  ---------------------------------------------------------------------------------------------------------------------------------------
  1) yeild() -No (the main purpose of yield method to restrict the thread going into wait,sleep or block state.It direclty push into runable state.
  2) join() -No ( join method wait for thread to die)
