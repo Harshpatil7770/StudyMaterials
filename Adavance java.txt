@@ -1306,8 +1306,19 @@ No we can't make main thread as daemon thread.
 78) Importance about Thread class.
 ---------------------------------------------------------------------------------------------------------------------------------------
 Thread class is static 
-
-
+---------------------------------------------------------------------------------------------------------------------------------------
+79) What is the difference between Runable and callable interface?
+---------------------------------------------------------------------------------------------------------------------------------------
+Runable Interface                      Callable Interface
+1) Runable interface                  1)callable interface found is 
+found is java.lang package            java.util.concurrent package.
+2) Runable interface we               2) In collable interface we need
+   need to overide the                   to overide the call()
+   run() method.                         method.
+3) Runable interface is              3) callable interface can throw
+   can't throw                          checked exception.
+   checked exception.
+    
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1823,7 +1834,7 @@ Load factor is decided when to increase the size of list.
 
 64) How can you make hashmap synchronized?
 ---------------------------------------------------------------------------------------------------------------------------------------
-By using Collections.synchronizedMap() method we can make hashmap sychronized.
+By using collections.synchnronizedmap() used to make hashmap synchronized.
 
 65) Who is faster hashmap or hastable?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1835,6 +1846,12 @@ require less memory.
 66) Can we take object as key in hashmap?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Yes we can take custom class object as a key in hashmap.
+
+67) What is the use of Concurrrent HashMap?
+---------------------------------------------------------------------------------------------------------------------------------------
+It allows to access multiple thread at a time.
+
+
 
 
 
