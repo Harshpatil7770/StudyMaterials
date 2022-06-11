@@ -1827,6 +1827,19 @@ Load factor is decided when to increase the size of list.
 ---------------------------------------------------------------------------------------------------------------------------------------
 By using Collections.synchronizedMap() method we can make hashmap sychronized.
 
+65) Who is faster hashmap or hastable?
+---------------------------------------------------------------------------------------------------------------------------------------
+Hashmap is non sychronized and non thread safe i.e hashmap is faster than the hashtable also hashmap 
+require less memory.
+
+*** Remainder always non synchronized thread is faster than the synchronized thread.
+
+66) Can we take object as key in hashmap?
+---------------------------------------------------------------------------------------------------------------------------------------
+Yes we can take custom class object as a key in hashmap.
+
+
+
 
  ==================================================================================================================================================================
  ================================================================================================================================================================== 
