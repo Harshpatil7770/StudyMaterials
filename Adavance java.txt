@@ -1318,6 +1318,13 @@ found is java.lang package            java.util.concurrent package.
 3) Runable interface is              3) callable interface can throw
    can't throw                          checked exception.
    checked exception.
+   
+ 80) What is the difference between fail fast and fail safe?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+               Fail fast                                                                       Fail safe
+1) Fail fast means immediately throw concurrent throw        1) Fail safe means it doesn't throw concurrent modification
+   cocurrent modification Exception.                            Exception.
+2) Fail fast doesn't occupies space in memory                2) Fail fast means occupies space in memory.
     
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
