@@ -2530,6 +2530,13 @@ Marker interface
  47) What 1.8 Hashmap changes?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 They remove linked list and added binary tree
+
+ 48) What are the in-built functional interfaces in Java?
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1) Function Interface - It take the input and return the result as object
+ 2) Consumer Interface - It take the input but doesn't return anything.
+ 3) Supplier interface- It take the doesn't take the input but return the result ( get method )
+ 4) Predicate Interface - Predicate return type is boolean . It return true or false values.
  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------   
