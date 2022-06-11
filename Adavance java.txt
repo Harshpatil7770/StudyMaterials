@@ -1428,6 +1428,8 @@ Thread class is static
   HashMap extends  abstract class.
   
   If you ADDED MORE THAN ONE NULL KEYS IT WILL STARTED REPLACING.IT STORED IT IN ZEROTH INDEX.
+  
+  Note - In java 1.8 instead of doubly linked list they replaced as binary tree.
 
 
 8)Explain the difference between array and collection?
