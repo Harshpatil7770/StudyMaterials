@@ -1771,11 +1771,12 @@ C)Protected   -
 									 only one instance of that class is created due to class defination.
 									 To make class singleton we need to make constructor private.
 									 Singleton class mainly used to restrict the user from creating object of that class
-                                                                         II)Factory design pattern- 
-									 A subclass is resposible to create the object of an instance.
+                                                                        
+									 II)Factory design pattern- 
+									    A subclass is responsible to create the object of an instance.
 									
                                                                        
-                                                                         c)Adapter design pattern -
+                                                                         III)Adapter design pattern -
 									   An interface of class convert into another interface of client wants.
                                                                          
 									
