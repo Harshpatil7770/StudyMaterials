@@ -16,6 +16,7 @@
   B) Behavorial Design Pattern
   C) Creational Design Pattern
   
+  
   1) Singleton Design Pattern
   
   2) Factory Desing Pattern -
@@ -27,3 +28,6 @@
      
   4) Builder Design Pattern -
      Builder desing pattern is used when the construction of object of process is very complex.
+     
+   5) Proxy design Patter-
+      Proxy Design Pattern is used represents functionality of another class.
