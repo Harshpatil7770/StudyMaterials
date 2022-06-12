@@ -2588,6 +2588,21 @@ Where to use for loop we need to write the three steps such as
 1) define iterator for eg- int i=0;
 2) Define end point for eg i<array.length
 3) define how should the loop is iterate i++
+
+51) What are the methods of stream?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Max
+2) Min
+3) ForEach
+4) Filter
+5) Map
+6) Reduce
+7) limit 
+8) Sorted
+9) Collectors
+
+While Iterating the Stream it doesn't modify the original list it create the copy of list.
+
  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------   
