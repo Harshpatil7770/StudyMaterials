@@ -2186,6 +2186,11 @@ volatile keyword is used to acheive the safety thread.
 Volatile is non- access modifier in java.
 If you write volatile keyword with variable mean value read from main memory not a specific memeory.
 
+205) What will happen if we define constructor as private?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+If you define constructor so object access only within the class.
+To restrict the others creating objects from outside the class.
+
 
 
 
