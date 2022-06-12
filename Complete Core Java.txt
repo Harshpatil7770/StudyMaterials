@@ -2179,6 +2179,13 @@ l- luskov principle -
 i- interface seggreagation priciple - spilt larger interface into smaller one
 d- dependency inversion principle - Depedency inversion principle said that we must have to use abstract class or interface instead
                                     of concrete method.
+	
+204) What is volatile keyword in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+volatile keyword is used to acheive the safety thread.
+Volatile is non- access modifier in java.
+If you write volatile keyword with variable mean value read from main memory not a specific memeory.
+
 
 
 
