@@ -218,9 +218,11 @@ we can connect all over world developers.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5) ON GitHub we can upload a file size is 50mb 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    If you want to upload large file then go for gitlab
    
 6) Upload large fill on github
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   A) Open Gitdesktop
   B) Create git repository on github
   C) Create folder 
@@ -230,11 +232,29 @@ we can connect all over world developers.
   G) commit
   
  7) What is the main purpose of branching ?
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    To work parallel base system.
    also we don't want to change the already deployed code on production environment.
    
  8) Why we need to merge the branches?
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     To work parallel as well as suppose once i solve the issue or develop feature test it then
     supppose you want to merge it into original branch
+    
+ 9) How to create new branch and why it is required and how to merge it?
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) First clone all your code.
+2) Import it into your IDE.
+3) Create a new branch on git( git is open source distrubuted version control system.) Distributed version control system means we track our changes in code as per the
+                               time.
+4) git checkout branch_name ( start working on this new Branch)
+5) git status 
+5) git add.
+6) git commit -m "first_commit"
+7) git merge branch_name
+
+
+10) What is difference between pull and fetch?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
 
