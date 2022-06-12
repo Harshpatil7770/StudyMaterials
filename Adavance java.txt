@@ -2580,6 +2580,14 @@ They remove linked list and added binary tree
  49) Can we resuse the stream?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 No , we can't reuse the stream. Because element visited only once in their life.
+
+50) Why forEach() if we have for() already?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Because forEach() easy to use & redable.
+Where to use for loop we need to write the three steps such as
+1) define iterator for eg- int i=0;
+2) Define end point for eg i<array.length
+3) define how should the loop is iterate i++
  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------   
