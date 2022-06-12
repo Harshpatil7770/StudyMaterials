@@ -2577,6 +2577,10 @@ They remove linked list and added binary tree
  3) Supplier interface- It take the doesn't take the input but return the result ( get method )
  4) Predicate Interface - Predicate return type is boolean . It return true or false values.
  
+ 49) Can we resuse the stream?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+No , we can't reuse the stream.
+ 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------   
 JAVA 1.9 Feature  
