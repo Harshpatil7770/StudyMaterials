@@ -1114,7 +1114,9 @@ maker interface proivde hint to jvm i.r we are implemting some important feature
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         Singleton class is used to restrict the user from creating object of that class. To make class singleton we need 
                                                                                                                                                                          make constructor private,so we are not able to crete object of that class. Only one object of that is created 
-                                                                                                                                                                          due to it's class defination. 
+  due to it's class defination.
+  
+  Once we make constructor is private we can access object within the class only.
                   class Singleton{
                             public static Singleton singleton=null;
                             private Singleton(){
@@ -1163,7 +1165,7 @@ thread will call notify and notifyAll() methods.
 ---------------------------------------------------------------------------------------------------------------------------------------
 main thread is first thread it starts immediately after program is started.
 ---------------------------------------------------------------------------------------------------------------------------------------
-53)Explain about main thread in java?
+53) Explain about main thread in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
 main thread is first thread it starts immediately after program is started.
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1191,7 +1193,7 @@ main thread is first thread it starts immediately after program is started.
  Yes we can overload the run() method in java ,but start method call run() method with no arguments.
 ---------------------------------------------------------------------------------------------------------------------------------------
  58) What is a lock or purpose of locks in java? ######################
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  lock is an moniter used to prevent access of multiple thread to any shared resource.
 ---------------------------------------------------------------------------------------------------------------------------------------
  59) In how many ways we can do synchronization in java?
@@ -1432,7 +1434,7 @@ found is java.lang package            java.util.concurrent package.
   If contain is equal then they get overide otherwise new doubly linked list created connceted to previous one.
 
 
-7)Explain Internal working of HashMap with examples?
+7) Explain Internal working of HashMap with examples?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HashMap represent key,value pair.Hashmap allows no. of null value. Hashmap is non-synchronized and no thread safe.
   Hashmap allows duplicate value but only unique keys.
@@ -1854,7 +1856,7 @@ require less memory.
 
 *** Remainder always non synchronized thread is faster than the synchronized thread.
 
-66) Can we take object as key in hashmap?
+66) Can we take custom class object as key in hashmap?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Yes we can take custom class object as a key in hashmap.
 
