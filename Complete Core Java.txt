@@ -2191,6 +2191,10 @@ If you write volatile keyword with variable mean value read from main memory not
 If you define constructor so object access only within the class.
 To restrict the others creating objects from outside the class.
 
+206) Can a class extends more than one class in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+No, a class can't extends more than one class in java. But a class implements more than one interface in java.
+
 
 
 
