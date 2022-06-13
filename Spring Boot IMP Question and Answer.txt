@@ -445,7 +445,7 @@
     
     
 52) What are the springboot dependency management?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency         will get automatically update.
      
  53) What are the basic annotations that spring boot offers?
@@ -587,7 +587,7 @@ B) Run as maven build
 </List>
    
    
-  67)What is swagger? Why is it used or How your consumer get to know how to use the url?
+  67) What is swagger? Why is it used or How your consumer get to know how to use the url?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Swagger is used to build,documents and Consume Rest API.
   RestAPI documentations.
@@ -611,11 +611,11 @@ B) Run as maven build
    
    
    
-   69) What is main purpose of Repository?
+   69) What is main purpose of Repository or dao layer?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
     The main purpose of repository is to communicate with database.
     
-  70) URL criteria
+  70) URL criteria or namming convection for url?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
    1) when you write the url use noun instead of verb or adjectives.
    for eg- api/products correct
@@ -642,7 +642,7 @@ B) Run as maven build
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Yes i have desinged both. Function of both API is same the main difference that such as
   1) External API- External API means desgined to intergate the third party resource.
-  2) Internal API- Internal API means desined to communicate consitute part of application.
+  2) Internal API- Internal API means desgined to communicate consitute part of application.
   
   73) What is the difference between @RequestMapping and @GetMapping?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -656,7 +656,7 @@ B) Run as maven build
   75) What is the difference between @Bean and @Component annotations?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------\
   @Bean is method level annotations used by spring container act as source bean java definations.
-  @Component is class level annotations used to scan package for bean.
+  @Component is class level annotation used to mark a java class as bean.
   
   
   
