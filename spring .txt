@@ -19,7 +19,7 @@ also we need to write xml file.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------               3)what is lazy loading?
 --------------------------------------------------------------------------------------------------------------------------------------------------------- 
-Lazy loading means it will server when request comes.
+Lazy loading means it will serve when request comes.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------               4)what is eagerly loading?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -44,7 +44,7 @@ When we use spring we need to add dependency manually as well as we need to writ
 6)Web Servlet
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-7)what is the role of IOC container in spring?
+7) what is the role of IOC container in spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 IOC stands for inversion of controller, it allows us to create the object assemble the object and manage their entire life cycle.
 
@@ -237,7 +237,7 @@ c schema
 AJAX stands for asynchronus javascript xml.It communicate with server without refreshing web pages.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-34)what is synchronous?
+34) what is synchronous?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Synchrous means we send only one request at a time and wait until respond come. we are not able to do other operations until response come.
 
@@ -275,7 +275,7 @@ exeute before the business method
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ModelAttribute is used to bind the method parameter
 
-38)Can we use RestAPI with Spring?
+38) Can we use RestAPI with Spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
