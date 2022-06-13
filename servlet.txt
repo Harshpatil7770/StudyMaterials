@@ -38,7 +38,7 @@ Request dispatcher is front controller class of spring mvc. It recieve the reque
                                                                                                                      1) servlet loaded
                                                                                                                      2) servlet initialized
                                                                                                                      3) servlet instantiated
-                                                                                                                     4)  request to the service
+                                                                                                                     4) request to the service
                                                                                                                      5) servlet destroyed.                                                                                            
 ---------------------------------------------------------------------------------------------------------------------------------------  
 6) What is cookies and what does it works?
