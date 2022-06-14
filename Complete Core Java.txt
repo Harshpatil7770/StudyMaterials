@@ -2195,6 +2195,27 @@ To restrict the others creating objects from outside the class.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 No, a class can't extends more than one class in java. But a class implements more than one interface in java.
 
+207) What is type casting in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Type Casting means conversion of one data type to another type.
+for eg String to Integer
+
+208) What is mean by decloning in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+209) What is co-variant return type in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+210) What is deep copy() and shallow copy() methods?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Clone() method is used to create the shallow copy(). Shallow Copy() means create the new object and copy all fileds and methods related to the object.
+
+211) What happen if we create the object by using clone method?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+212) 
+
 
 
 
