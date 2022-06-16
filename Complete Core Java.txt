@@ -2222,7 +2222,12 @@ deep copy() means copy primitive data as well as object reference. shallow copy(
 clone method is used to create the shallow copy of object. shallow copy means create the new object and copy all fileds and method related to the object.
 
 
-212) 
+212) What are the fetaure of oops?
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Inheritance
+2) Abstraction
+3) Polymorphishm
+4) Encapsulation
 
 
 
