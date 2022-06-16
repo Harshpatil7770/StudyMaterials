@@ -257,10 +257,11 @@ we can connect all over world developers.
 
 10) What is difference between pull and fetch?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- git fetch means fetch the required information from local repository.
+ git fetch means feched information comes into local repository.
  
  git pull means fetch the required information from your currently working workspace.
  
  11) What is mean by version control system?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Version control system means track changes mades in code as per the times.
+
