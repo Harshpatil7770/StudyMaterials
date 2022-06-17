@@ -658,8 +658,37 @@ B) Run as maven build
   @Bean is method level annotations used by spring container act as source bean java definations.
   @Component is class level annotation used to mark a java class as bean.
   
+  76) What is the difference between put and patch method or if we can update by using put then why we required patch?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+Basically put is used to perfrom upsert operation i.e mean you can create a new resource ( if you have authority suppuse create new id) or 
+you can update the existing resouce.
+
+But sometimes i just want to update partial data for eg - i have 100 of fileds and i want to change only 2or 3 from that we can you patch.
+
+77) What are the advantages of springboot over spring?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+1) The main advantage of springboot is it provide autocofiguration.
+2) Spring boot offer server such as jetty, tomcat etc.
+3) provide serval plugin with embeded server and in memory database like h2.
+
+78) How java map the request comes in JSON format?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+when we use springboot web starter dependecy it internally pulls server dependecies like springboot- stater-json.
+The spring object automatically converted into json with jackson library.
+
+79) What will happen if i don't write the @Restcontroller annotations?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+If you don't provide the @RestController annotations then spring will not identity the class makes for handeling the http calls.
+
+80) WHat is the difference between @RequestParam and @pathvarible?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+@Pathvariable annotations when to access the value from uri template or path.
+@Requestparam annotations is used to access the value from query string.
+
   
   
+81) If i want to send the data or fetch in csv form how can you do that?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------\
   
   
    
