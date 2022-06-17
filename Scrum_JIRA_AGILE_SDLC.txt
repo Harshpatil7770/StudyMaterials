@@ -244,11 +244,15 @@ we can connect all over world developers.
     
  9) How to create new branch and why it is required and how to merge it?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) First clone all your code.
+1) First clone all your code. git clone
 2) Import it into your IDE.
 3) Create a new branch on git( git is open source distrubuted version control system.) Distributed version control system means we track our changes in code as per the
                                time.
-4) git checkout branch_name ( start working on this new Branch)
+                               
+    git branch branch_name
+4) Git log ( check the changes in file)
+5) git branch ( check how many branches on your git)
+6) git checkout branch_name ( start working on this new Branch)
 5) git status 
 5) git add.
 6) git commit -m "first_commit"
@@ -264,4 +268,17 @@ we can connect all over world developers.
  11) What is mean by version control system?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Version control system means track changes mades in code as per the times.
+
+12) Can we work more than one developer on same repository?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Yes we can work more than one developer on same repository.
+
+13) If two developer working on same repo and first one commit is changes and now second developer going to commit their chnages then what
+will happen?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+If one developer commit their changes and now second developer going to commit their changes they getting error like the file has 
+been already changed in remote repository.
+
+To prevent this type of problem or conflict we need to work on isolated branches.
+so git merge commond combine the branches and resolve the conflicting edits.
 
