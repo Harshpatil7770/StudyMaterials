@@ -2229,6 +2229,10 @@ clone method is used to create the shallow copy of object. shallow copy means cr
 3) Polymorphishm
 4) Encapsulation
 
+213) When we get null pointer exception in java?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+when java program try to access an object reference which has null values.
+
 
 
 
@@ -2382,6 +2386,9 @@ log(n) best
        
      
  115) Inheritance is tightly coupled because classed dependes upon each other or we can say blood relations.
+ 
+ 116) When we get null pointer exception in java?
+ 
 
      
      
