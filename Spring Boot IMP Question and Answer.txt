@@ -689,6 +689,19 @@ If you don't provide the @RestController annotations then spring will not identi
   
 81) If i want to send the data or fetch in csv form how can you do that?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+
+82) Spring Boot validation?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+Spring Boot with hibernate validator.
+1) First we need to add the dependecy such as
+   SpringBoot stater validator.
+   ex- 1) If you don't want to column not null then you can write nullable=false
+       2) @NotNull- so can specify the filed should not be null or empty.
+       3) @Valid - @Valid annotations used when we need to use  
+   
+83) What is ResponseEntity?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  
   
   
    
