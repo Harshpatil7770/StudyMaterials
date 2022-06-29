@@ -701,7 +701,36 @@ Spring Boot with hibernate validator.
    
 83) What is ResponseEntity?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-  
+  '
+ 
+84) What is mean by stand alone application?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+85) What happen if i don't use pom.xml file?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+86) Can i use lombok without their dependency?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+87) What is the difference between @pathvariable and @Requestparam ? when to use it and eg?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+1) @Pathvatiable is used to access the value from uri template.
+
+for eg: @GetMapping("/find/{id}")
+        public String fetchById(@pathvariable int id)
+        
+        http://localhost:8080/find/4
+        
+ 2) @Requestparam is used to access value from query parameter.
+    In query param we pass key value pair.
+ 
+for eg:  @GetMapping("/find")
+         public String fetchById(@RequestParam int id)
+         
+         http://localhost:8080/find/?id=4
+         
+         
+Both return us same data just differnce of url.
   
   
    
