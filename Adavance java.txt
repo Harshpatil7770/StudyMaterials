@@ -1243,6 +1243,8 @@ There are two ways to synchronization
  67) When yield () method in thread is executed it?
  ---------------------------------------------------------------------------------------------------------------------------------------
  yeild() method restrict thread going to wait,sleep and block state. It direclty push it into runnable stage.
+ 
+ Yeild() method is static method of thread class, it direclty push thread state from runable to running.
  ---------------------------------------------------------------------------------------------------------------------------------------
  68) Assume a thread has lock on it, calling sleep() method on that thread will release the 
 	 lock?
@@ -1332,6 +1334,24 @@ found is java.lang package            java.util.concurrent package.
  ---------------------------------------------------------------------------------------------------------------------------------------
  Thread executor is an interface allows to execute taks on thread asynchrnounsly.
     
+82) What is need of thread?
+---------------------------------------------------------------------------------------------------------------------------------------
+To perfom operations parallely we require thread.
+
+83) Synchronization basic concepts?
+---------------------------------------------------------------------------------------------------------------------------------------
+synchronized int getSum(int a1,int a2, int a3){
+cell1= a1;
+sleepforsometime();
+cell2= a2;
+sleepforsometime();
+cell3= a3;
+sleepforsometime();
+return cell1+cell2+cell3;
+}
+
+Once you make method is synchronized only one thread access it at time. wait another thread.
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
