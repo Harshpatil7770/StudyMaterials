@@ -189,12 +189,36 @@ Exception handeling is mechanism that used to handel the runtime exception in ja
 ---------------------------------------------------------------------------------------------------------------------------------------
 2) What is Expection?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Exception means abnormal condition occurs due to human error and bad input.                                                                                           If you don't handel it program will get direclty terminated.                                                                                          
+                                                                                                                                                                       Exception means abnormal condition occurs due to human error and bad input.  
+
+---------------------------------------------------------------------------------------------------------------------------------------
+What is the purpose of exception handeling?
+---------------------------------------------------------------------------------------------------------------------------------------
+If you don't handel it program will get direclty terminated.   
+To maintain normal flow of the program.
+
+
+class Test{
+
+   public static void main(String args[]){
+    System.out.println(1);
+    System.out.println(1/0);    
+    System.out.println(1);
+     System.out.println(1);
+    System.out.println(1);
+    
+      }
+      
+  }
+  
+   output - 1
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 3) Hierarchy of Java Exception classes?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                Throwable                                                                                                                                                                   |
+                                                                   object
+								    |
+                                                                Throwable  (class)                                                                                                                                                                  |
 
                                                                                                                                                    
       |---------------------------------------------------------------------------------------------------------------------------------------------|
@@ -229,15 +253,19 @@ Checked Expetion                                     Uncheked Exception         
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        There are two types of exception in java 
                                                                                                                                                                                            1)Checked Exception -
-                                                                                                                                                                                           The exception directly inherit from throwable exception except runime called as checked exception.
-                                                                                                                                                                                           Checked excetion handel at compile time.
+																					             Checked exception means compile time exception, we can handel it by using try and catch block.
+		     Compile time exception means compiler able to find that exception during compile time.
+		     The exception direclty inherit from throwable classes except runtime called as checked exception.
+							                                                                                                                                   Checked excetion handel at compile time.
                                                                                                                                                                                            eg-
 																						    1) IOException
                                                                                                                                                                                            2) SQLException
                                                                                                                                                                                            3)ClassNotFoundException
 
                                                                                                                                                                                            2)Unchecked Exception
-                                                                                                                                                                                           1)The exception directly inherit from runtime exception called as unchecked expection 
+																					              Unchecked exception is also known as runtime exception. Compiler not able to 
+		      find that exception during compile time called as compile time exception.																	
+			                                                                                                                                                                   1)The exception directly inherit from runtime exception called as unchecked expection 
                                                                                                                                                                                            Unchecked Expection handeled at runtime
                                                                                                                                                                                            eg-1)Index out of Bond Exception( Index out of bond exception occur if you try to acccess index negative, equal to or greather than the
 																							   length).
@@ -253,6 +281,21 @@ Checked Expetion                                     Uncheked Exception         
                                                                                                                                                                                            1)Virtual m/c error -Jar file
                                                                                                                                                                                            2)Stackoverflow - recurion time
                                                                                                                                                                                            3)OutofMemeotyerror- occur in loop always evalute true
+																							   
+												
+--------------------------------------------------------------------------------------------------------------------------------------- 			
+What is the difference between exception and error?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+Exception occurs due bad input or human error.
+It is recoverable or we can handel it.
+There are two types of exception
+1) compile time exception ( checked exception) 
+2) Runtime exception (unchecked exception)
+
+Error means irrecoverable.
+It occurs due to lack of system resource.
+
+
                                                                                                                                                                                            
 ---------------------------------------------------------------------------------------------------------------------------------------
 5) Keywords of Exception? 
@@ -320,12 +363,14 @@ If we don't handel the exception program will get direclty terminated.
 16) What is the difference between throw and throws?
 ---------------------------------------------------------------------------------------------------------------------------------------
                            throw                                                                                         throws
-       1)  throw keyword is used to thrown an exception                                    1) throws keyowrd is used to declarw an exception 
-       2)  throw keyword is follwed by an instance                                         2) throws keyoword is followed by a class
-       3) Cheked exception can't propagetes by using throw keyword                         3) checked exception propagates by using throws keyowrd 
-       4) by using throw keyword we can't declare multiple exception                       4)By using throws keyword we can declare multiple exception
-       5) throw keyword is declare within the body                                         5) throws keyowrd is declared within the method signature
-
+ 1) throw keyword follws an instance.                               1) throws keywords follows as class.
+ 2) checked exception can't propagate by using throw                2) by using throws keyword we can propagate the checked 
+    keyword.                                                           exception.
+ 3) we are not able to declare multiple exception by using          3) we can declare multiple exception by using throws keyword.
+    throw keyword                                                      for eg-
+    for eg- throw new UserNotFoundExceptio();                          public void getResult() FileNotFoundException,ClassNotFoundException{
+ 4) throw keyword is declare within the method                         }
+    body.                                                            4) throws keyword declared within the method singnature.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) Which exception bydefault handeled in calling chain?
@@ -642,6 +687,96 @@ private String errorMsg;
 56) When index out of bond exception arise?
 --------------------------------------------------------------------------------------------------------------------------------------- 
 If you try to access array index negative ,greather or equal to length we will get this excpetion.
+
+--------------------------------------------------------------------------------------------------------------------------------------- 
+57) What will happen if first i keep parent exception then child exception?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+It will shows compile time exception.
+If you are keeping mutiple catch block then first keep
+child class then parent class.
+
+58) Who is the parent class of throwable class?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+object class the parent class of throwable class.
+
+59) Can we use finally block instead of catch block?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+Yes we can use finally block instead of catch block but we can't handel the exception.
+
+try{
+
+   }finally{
+   
+       }
+       
+60) Can we write try and catch block inside the finally block?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+Yes we can write try and catch block inside the finally block.
+
+61) Wrong scenario or not possible snenario of try,catch and finally block?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+A) 
+try{
+
+  }finally{
+  
+   }catch{
+   
+    }
+    
+B)
+ try{
+     
+     }
+     System.out.print("hi");
+     catch{
+     
+     }
+ try without catch exception we will get.
+ 
+
+62) Possible scenario for try catch and finally block?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+A)
+try{
+         try{
+	      }catch{
+	      
+	            }
+		    
+   }catch{
+   
+   }
+ 
+B) try{
+
+      }catch{
+               try{
+	       
+	          }catch{
+		   }
+    }
+    
+C) try{
+
+       }finally{
+            }try{
+	    
+	     }catch{
+	     
+	     }
+	     
+	     
+   
+
+63) Can we declare or write any statement after throw keyword?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+No, we can't write any statement after throw keyword.
+
+64) Custom exception is part of checked or unchecked exception?
+--------------------------------------------------------------------------------------------------------------------------------------- 
+Custom exception is part of checked exception. 
+We can  declare it by using new keyword.
 
 
 ======================================================================================================================================================================
@@ -1351,6 +1486,9 @@ return cell1+cell2+cell3;
 }
 
 Once you make method is synchronized only one thread access it at time. wait another thread.
+
+
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
