@@ -230,6 +230,128 @@ select * from department where (departmentId,salary) In(select depaartmentId,Max
 33) What is aggregator is sql?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Aggregator is function in sql is used to perform calculation on multiple values and return single values.
+
+34) What is constraints?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Constraints is used to set the limit on datatype.
+for eg- Not null.
+
+35) What are the different types of SQL Commonds?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Basically there are four types of different commond in SQL.
+1)DDL - data defination language
+        A) alter
+	B) truncate
+	C) drop
+	D) merge
+	
+2)DML -data manupalation language
+       A) update
+       B) Insert 
+       C) delete
+ 
+3)DQL - data query language
+       A) select
+       
+4)DCL- data constraist languagae
+       A) Grant
+       B) revoke
+       
+36) What is primary key?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary key is used to identify unique records from the table it never allows duplicate values as well as null values.
+
+37) What is foreign key?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+foreign key is used to mark primary key of another table. we make relation between two
+tables with the help of foreign key.
+
+38) How to find out higest and lowest salary from employee table?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select max(salary) from employee;
+
+select min(salary) from employee;
+
+select avg(salary) from employee;
+
+max,min,avg are the aggreators.
+aggregator is used to perform calculation on multiple values and return single values.
+
+39) find out second higest salary from employee table?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select max(salary) from employee where salary< (select max(salary) from employee);
+
+select salary from employee order by salary desc limit 1,1;
+
+40) find out third highest salary from employee?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select disctint top 3 salary from employee order by desc;
+
+41) What is the difference between delete and truncate?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Truncate is used to delete all records inside the table, but table structure remain same.
+once we do truncate we are not able do to the rollback.
+
+whereas delete means delete one or more rows from the tables.
+Once we use delete we can do the rollback.
+
+42) What is RDBMS?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RDBMS stands for relations database management system. It's store the data in tabular
+format and organize in row and column form.
+
+43) What is the difference between group by and order by?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+order by is used to sort the data in asc and desc order.
+
+select * from employee order by id desc;
+select * from employee order by salary asc;
+select * from employee order by age asc;
+whereas 
+
+group by is used to fetch data based on common attributes.
+
+emp_id   emp_name   department_name   age   salary
+
+1)       harsh       Mechanical       24     42000
+2)       vijay       IT               29     90000
+3)       Ajit        IT               26     70000
+4)       Laskha      Civil            29     45000
+5)       Rija        Civil            38     56000
+6)       David       Mechanical       39     67000
+
+
+1) select max salary as per their department
+   select max(salary) from employee group by department_name;
+   
+
+
+
+44) How to use rollback and what is means by rollback?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rollback means comes to the previous stage .
+
+for using rollback we just need to follows the steps such as
+1) commit;
+2) set autocommit=0;
+3) delete from employee where emp_id=8;
+4) select * from employee;
+5) rollback;
+
+45) What is aggreator?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+aggreator is function is sql used to perfrom operation on multiple values and return single values.
+
+46) What is transaction in database?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Transaction is collection of operations that perform one single logic unit of work.
+
+
+
+
+
+
+
                                                                                          
                                                                                                                                                                                         
                                                                                    
