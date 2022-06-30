@@ -1250,7 +1250,8 @@ C)Protected   -
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 52) Exaplain the concept of singleton class with examples?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                       singleton class is created to restrict other user from creating object of that class. To make                                                                          singleton class we need to make constrcutor private.so we are not able to create object of that                                                                        class. 
+Sinleton class created to restrict the user from creating object of that class. We can create only one object of that class.
+To make class is singelton we need define private and static as field , private constructor.
       
                        public class Singleton {
 
@@ -1275,6 +1276,33 @@ C)Protected   -
 
 	                  }
                        }
+		       
+		       
+		       or
+		       
+		     class Singleton{
+		     
+		     private static Singelton single=new Singleton();
+		     private Singleton(){
+
+                     }
+		     
+		     public static Singelton getInstane(){
+		     return singel;
+		          }
+		     }
+		     class Test{
+		      public static void main(String args[]){
+		           Singleton s1=Singleton.getInstance();
+			   System.out.println(s1.hashcode());
+			   Singelton s2=Singleton.getInstance();
+			   System.out.println(s2.hashcode());
+			  }
+		     }
+			  
+			  
+		       
+		      
             
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2232,6 +2260,11 @@ clone method is used to create the shallow copy of object. shallow copy means cr
 213) When we get null pointer exception in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 when java program try to access an object reference which has null values.
+
+214) How to restrict the user to inherit the class without using final keyword.
+--------------------------------------------------------------------------------------------------------------------------------------- 
+To restrict the user make parent class constructor as private , whenever you try to inherit
+the subclass the super keyword from subclass construtor not able to access it.
 
 
 
