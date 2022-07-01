@@ -104,7 +104,7 @@ A) Abstraction
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                               A -II)What is abstarct class?
                                                                                                Abstract class is used to achieve 0 to 100% abstraction.  If you want to use abstract method then the class must be abstract. whatever method                                                                                                                                      declare inside an abstract class it must be implement in subclass. abstract class have constructor, static member and method also it support both                                                                                                                                     method declaration and defiantion. abstract class never instantiated.
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                A -III) Can there abstract method  without abstract class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                               No, if you want to use abstract method then class must be abstract.
@@ -177,9 +177,9 @@ A) Abstraction
                                                                                                 1) If you want to use abstract method then the class must be abstract.
                                                                                                 2)Abstract class never instantiated.
                                                                                                3)Abstract class have a constructor, static variable and method also.
-                                                                                                4)Whatever method declare an abstract class it must be implements in subclass.
-                                                                                                5)If you declare a class is abstract then it not neccesarry it have atleast one abstract method
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                4)Whatever method declare an abstract class it must be implements in                                                                                                     subclass.
+                                                                                                5)If you declare a class is abstract then it not neccesarry it have                                                                                                      atleast one abstract method
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                  A- V)Why we use abstract class?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                abstract class is used to achieve 0 to 100% abstration. If you want to use abstract method then the class must be abstract.
@@ -254,7 +254,7 @@ A) Abstraction
                                                                                                No, we can't declare abstract method as synchronized
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                A IXX) Can we declare local inner class as abstract  ?
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                Yes,we can declare local inner class as abstract
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                 A IXX) Can abstract method include declaration of throws clause  ?
@@ -787,10 +787,12 @@ C)Protected   -
                                                                                              21-F) Top level class can be private or protected?
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                               No, a top level class can't be private or protected it must be public or no any other acess modifier..
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
  2)Non access modifier
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              In java there are seven non access modifier keyoword used to transfer information of there behavoiur to JVM.
+											     1) final 2) static 3) abstract 4) synchronized 5) natice 6) volatile
+											     7) transient
                                                                       ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  1)static - 
                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1412,16 +1414,46 @@ To make class is singelton we need define private and static as field , private 
 	-------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                       Association means all objects have there own life and there is no owner
                                                                                       for eg- A single teacher is assocaited with all student and mutiple teachers                                                                                           assocaited with one student, but both have there own life there is no owner.
+										      
+										      for eg-
+										      class Student{
+										      private int id;
+										      private String name;
+										      }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                      64- B)What is aggregation?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                        Aggregation is specilized form of association means all objects have there own                                                                                       life but there is owner.
                                                                                       for eg- A single teacher is associated with all student but not with all                                                                                               department, if i delete one deparment then student will not get destroy.
+										      
+										     for eg- class Student{
+										      private int id;
+										      private String name;
+										      Address address;
+										      }
+										      class Address{
+										      
+										      }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                      64- C)What is composition?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                       Composition is specilized form of aggregation. It also called as death                                                                                                 relationship. Composition represent has-a relationship. ie. child object doesn't                                                                                       have there own life
                                                                                       If i delete parent object then child object get delete automatically.
+										      
+										      for eg-
+										      class Car{
+										      private String carName;
+										      
+										      private Engine engine;
+										      
+										      public Car(){
+                                                                                        engine=new Engine();
+										      }
+										      }
+										      class Engine{
+										      
+										      }
+										      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                      64- D)How many ways to implement relation in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1452,7 +1484,8 @@ To make class is singelton we need define private and static as field , private 
 66) What is object cloning in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                    Object cloning means create an exact copy of an object. In java we have clone()                                                                                        method.
-										   If you want to clone clone () method then we need implements class by clonable                                                                                        interface
+										   clone() method is object class method.
+										   Without using new keyword we can create the object.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 67) Write a syntax for creating the subclass of class? 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1615,7 +1648,7 @@ To make class is singelton we need define private and static as field , private 
                                                                              2) Code optimization - we need to write less code.                                        -------------------------------------------------------------------------------------------
 100) What is nested class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                  1)nested class means a class declared inside another class. it can access any                                                                                           outside class member or method including private also. 
+                                                                              1)nested class means a class declared inside another class. it can access any                                                                                           outside class member or method including private also. 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 101) What is the disadvantage of nested class?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1627,7 +1660,7 @@ To make class is singelton we need define private and static as field , private 
                                                                                   1) Local inner class             -  A class declared inside method
                                                                                   2) Member inner class         - A class declared outside the method and inside the                                                                                        class
                                                 ----------------------------------------------------------------------------------------------------------------------
-                                                                                  102- I) what is anonymous inner class?
+	                                                                                  102- I) what is anonymous inner class?
                                                 ----------------------------------------------------------------------------------------------------------------------
                                                                                   3) Anonymous inner class    - A class declared without using name and jvm decides                                                                                      it's name. It used to provides support to implementaion for interface, extends a                                                                                      class. 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1668,7 +1701,7 @@ To make class is singelton we need define private and static as field , private 
                                                                               2) If there is no enough space or memory running slow then jvm automatically calls                                                                                       garbage collector and remove unreference object. and make free space 
                                                                               3) Also we can externally class system.gc() method
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-111)How can an object unreferenced?
+111) How can an object unreferenced?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                               1) By assingin one null to reference
                                                                                for eg- Employee e =new Employee(); e=null;
@@ -1842,7 +1875,7 @@ To make class is singelton we need define private and static as field , private 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 142) Which version of springboot and hibernate are you worked?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                               Spring Boot 2.6.7 and hibernate orm(5.6.0)
+                                                                               Spring Boot 2.7.1 and hibernate orm(5.6.0)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 143) If i have 1 lakh element and i want to find out the index of any element how can you do that?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -2073,13 +2106,13 @@ Constant always write with uppercase and by using _ for new keyword.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             we can't instantiate a enum. we can't extends enum.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-185)Explain field hiding in java?
+185) Explain field hiding in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             If super class and subclass having same filed then filed hiding happen. If we create the object of
 							    child class and to access the super class we need to super keyword.
 							 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-186)Can we use switch statement with Strings?
+186) Can we use switch statement with Strings?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             yes we can switch statement with strings.							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2228,7 +2261,7 @@ No, a class can't extends more than one class in java. But a class implements mo
 Type Casting means conversion of one data type to another type.
 for eg String to Integer
 
-208) What is mean by deep cloning in java?
+208) What is mean by deep cloning in java? deep copy?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 deep cloning means copy primitive data type as well as reference.
 
@@ -2421,6 +2454,11 @@ log(n) best
  115) Inheritance is tightly coupled because classed dependes upon each other or we can say blood relations.
  
  116) When we get null pointer exception in java?
+      When your object reference refer to the null values.
+      
+ 117) What is typecasting?
+ ----------------------------------------------------------------------------------------
+ Convert one data type into another data type.
  
 
      
