@@ -2299,6 +2299,18 @@ when java program try to access an object reference which has null values.
 To restrict the user make parent class constructor as private , whenever you try to inherit
 the subclass the super keyword from subclass construtor not able to access it.
 
+215) Who broke the singelton design pattern.
+---------------------------------------------------------------------------------------------------------------------------------------
+1) Serilization - 
+   serilization means travel the state of object over the network or save the file and send over the network.
+   if you do the de-serilization it will create the new object and broke the singelton pattern.
+   To overcome this we need to use readresolve() method.
+
+2) Reflection - reflection also broke the singleton pattern. 
+                To overcome this issue we need to use enum.
+		
+3)  
+
 
 
 
