@@ -21,7 +21,8 @@
 3) What are the advantages of springBoot?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    A)Spring boot used to develope stand alone application that you can just run it.
-   B)It provide no. of plugin
+   B)It provide no. of plugin to us. 
+      for eg - apache maven plugin - it provide feauture like create jar and war file
    c)It reduce the cost and time of deveoplment
    d)Spring boot increases the productivity
    e)There is no need of xml configurations
@@ -152,7 +153,7 @@
 21) What is profile in spring boot?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Profile provide seggration of your application i.e they operate in specific environments. for eg- dev,QA,Test,stage,production etc.
-
+    //spring.profile
 
 22) What is actuator & it's adantages?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -323,10 +324,18 @@
     It is class level annotations. Used to mark a class is java bean
     9)@RequestParam 
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    -It is used to access the values from query parameter
+    -It is used to access the values from query parameter.
+    We pass key value pair
+    for eg-
+    @GetMapping("/find")
+    public Employee getEmployeeDetails(@RequestParam int id)
+    
     10)@pathvariable 
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - It is used to acces value from URI template 
+    @GetMapping("/find/{id}")
+    public Employee getEmployeeDetails(@pathvariable int id)
+    
     11)@RequestBody-
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     used to send the data in form of JSON
@@ -334,55 +343,74 @@
     12)@ResponseBody -
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     used to return data in form of JSON
+    
     13)@Controller-
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     class level annotations used to mark spring mvc application.When we use controller we need to add explicitly response body.
+    
     14)@Restcontroller-
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     it is combination of @Controller and @Responsebody annotaions. it used to handel restful web serices
+    
     15)@PutMapping-
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     used to update the resource
+    
     16)@GetMapping-
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Used to return the resource or read the resource
+    
     17)@PostMapping- 
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     create a new resource
+    
     18)@PatchMapping
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -used to partially update the resource
+    for eg- suppose i have 20 attribute and i want to update only two of them that time will
+    go for patchmapping.
+    
     19)@deleteMapping 
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -used to delete the resource
+    
     20)@Autowired
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - used when we want instance of a class
+    
     21)@Bean -
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     It is method level annotations, method produced by bean and managed by spring container.
+    
     22)@Scope 
     -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -used to specify scope of the bean
+    
     23)@value 
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -used to specify value of object
+    
     24)@RequestMapping 
      ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     -used to map the web requests
+    
     25)@lombok-
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
     when we use @lombok dependecy we don't need to create setter and getter manually also no need to specify default as well as parameterized constructor 
     we   can use @data , @NoArguConstructor and @AllArguConstructor annotations
+    
     26)@RefreshScope -
      ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
     27)@Crossorigin-
      ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     securityconcept
-    28) @Qualifier
+   
+   28) @Qualifier
      -----------------------------------------------------------------------------------------------------------------------------------------------------------------
      @Qualifier annotations is used to choose correct one bean from multiple cases.
-    29) @Primary
+   
+   29) @Primary
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------
      @Primary annotation is used to give high prioerity to one bean if there are multiple same beans.
     
@@ -419,7 +447,7 @@
 
 48) What is the latest version of spring boot?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 2.7
+    SpringBoot 2.7.1
 
 
 49) What are the diffrent types of scopes of bean?
@@ -683,7 +711,7 @@ If you don't provide the @RestController annotations then spring will not identi
 80) WHat is the difference between @RequestParam and @pathvarible?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------\
 @Pathvariable annotations when to access the value from uri template or path.
-@Requestparam annotations is used to access the value from query string.
+@Requestparam annotations is used to access the value from query string. ( use fetch the data based key value pair)
 
   
   
@@ -706,6 +734,7 @@ Spring Boot with hibernate validator.
 84) What is mean by stand alone application?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
+
 85) What happen if i don't use pom.xml file?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
@@ -713,6 +742,7 @@ Spring Boot with hibernate validator.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 87) What is the difference between @pathvariable and @Requestparam ? when to use it and eg?
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 1) @Pathvatiable is used to access the value from uri template.
 
