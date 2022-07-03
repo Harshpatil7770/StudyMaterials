@@ -1390,9 +1390,12 @@ To make class is singelton we need define private and static as field , private 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                             Class loader is subsystem of jvm. when you run the program it loaded first.
                                                             Types of class loader
-                                                            1) application class loader 
-                                                            2)bootsstrap  class loader
-                                                            3)extension class loader
+                                                            1) application class loader  - It loads all the classes  from currentclasspath
+							        System class loader-  
+                                                            2)bootsstrap  class loader -
+							       bootstrap class loader is parent class of all class loader.
+							       it loads rt.jar file. and loads jdk internal classes.
+                                                            3)extension class loader - extension class loader loads jdk extension directory ,
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 62) How classloader works in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
