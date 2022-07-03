@@ -74,7 +74,7 @@ Array is fixed in size. The performance of array is faster.
                                                                                                                                                                         In array we can perform operation such as insertion,sorting,searching,deletion,treaversal operations.
 ---------------------------------------------------------------------------------------------------------------------------------------
 13) Can a set be an array?                                                                                                                                 
----------------------------------------------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         - In java a set can be array but it not neccessary that array is set because, array allows duplicate values,
                                                                                                                                                                            set cann't allows duplicates values. for eg l,o,o,p in allows in array where in set it become l,o,p.
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ No we can't declare array size negative if you try to declare array size negativ
                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 19) What is difference between array and arraylist? 
----------------------------------------------------------------------------------------------------------------------------------------
+		---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                          Array                                                                      ArrayList
                                                                                              1) Array is fixed in size                                                   1)Arraylist is groable in size
                                                                                              2) Array support both primitive data type and objects                       2)Arraylist is support only objects not primitive data type.
@@ -166,7 +166,7 @@ No we can't declare array size negative if you try to declare array size negativ
 22)What could be the tradeoff between the usage of an unordered array versus the usage of an ordered array?
 --------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         The advantage of ordered array has serach time complexity is o(log n),wheras unordered array is o(n).
-																				--------------------------------------------------------------------------------------------------------------------------------------	
+																				------	--------------------------------------------------------------------------------------------------------------------------------	
 22) When index out of bond exception occur?
 --------------------------------------------------------------------------------------------------------------------------------------
    Index out of bond exception will occur when array index is negative,equal or greather than the length of array.                                                                                                                                                                 							
@@ -284,7 +284,7 @@ Checked Expetion                                     Uncheked Exception         
 																							   
 												
 --------------------------------------------------------------------------------------------------------------------------------------- 			
-What is the difference between exception and error?
+4) What is the difference between exception and error?
 --------------------------------------------------------------------------------------------------------------------------------------- 
 Exception occurs due bad input or human error.
 It is recoverable or we can handel it.
@@ -800,7 +800,7 @@ We can  declare it by using new keyword.
                                                                                                                                                                        When we use object by using to String literal JVM checks whether the object already declared or not                                                                    If declared it doesn't create new object in this way they makes JVM more memeory efficient.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-4) What are the method of String?
+	4) What are the method of String?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         1)toUppercase() 2)toLowercase() 3)toCharArray() 4)toCharAt() 5)equals() 6)length() 7)toStrim() 8)                                                                      9)equalIgnorecase() 10) join()   11)subString()  12)IsEmpty() 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1369,7 +1369,7 @@ There are two ways to synchronization
     we don't give garranty which thread is exceute
     either it execute any thread first nor it will give equal opporutunity.
  --------------------------------------------------------------------------------------------------------------------------------------- 
- 66) What all methods are used to prevent thread execution ?
+ 66) What all methods are used to prevent thread execution ? ////////////////////////////
  ---------------------------------------------------------------------------------------------------------------------------------------
  1) join() -   WAIT FOR THRAD TO DIE
  2) sleep() -  SLEEP THE CURRENTLY EXECUTING THREAD FOR WAIT SPECIFC TIME AND EXECUTE IF ANY AVIABLE.
@@ -1592,15 +1592,31 @@ Once you make method is synchronized only one thread access it at time. wait ano
   If contain is equal then they get overide otherwise new doubly linked list created connceted to previous one.
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Size of hashmap....
+
+ Map<String,Integer> map= new HashMap<String,Integer>();
+ map.put("Harsh",101);
+ map.put("Vinay",131);
+ map.put("Harsh",141);
+ 
+ map.size();
+ 
+ output = 2
+ 
+ 
+
 7) Explain Internal working of HashMap with examples?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HashMap represent key,value pair.Hashmap allows no. of null value. Hashmap is non-synchronized and no thread safe.
   Hashmap allows duplicate value but only unique keys.
   When we create the object of HashMap inside the memory table is created with default capacity is 16 and load factor is .75.
+  {once your memeory or table sized filled upto 12 it will increase the the size of table) (0.75*16=12)
   HashMap<Integer,String> map=new HashMap<Integer,String>();
   map.put(101,"Smith");
   map.put(102,"Sagar");
-  so put method first calculate the hashcode, hashcode return us the index value or integer value.
+  so put method first calculate the hashcode, 
+  hashcode return us the index value or integer value it generated by hashing algorithm.
   Suppose it will return index value 7 so the element stored as double linked list format.
   Each row of table called as bucket.
   Sometime hashcode return us same index value that time hashcollision will occur to check contain equal or not. If contain is equal then double linked get overide
@@ -1610,6 +1626,32 @@ Once you make method is synchronized only one thread access it at time. wait ano
   If you ADDED MORE THAN ONE NULL KEYS IT WILL STARTED REPLACING.IT STORED IT IN ZEROTH INDEX.
   
   Note - In java 1.8 instead of doubly linked list they replaced as binary tree.
+
+  
+  
+  for eg - Iteration of Hashmap in java
+  
+  public class Employee{
+
+  public static void main(String args[]){
+      Map<Integer,String> map=new HashMap<Integer,String>();
+             map.put(101,"Smith");
+	     map.put(102,"Jonh");
+	     map.put(101,"Danny");
+	     
+	     System.out.println(map.size());
+	     
+	     for(Map.Entry e: map.entrySet()){
+              System.out.println(e);
+	       }
+	  }
+	  
+ }
+
+output= 2
+        102=Jonh
+	101=Danny
+
 
 
 8)Explain the difference between array and collection?
@@ -1715,8 +1757,8 @@ Once you make method is synchronized only one thread access it at time. wait ano
    1)Hashset has only one values                                  1) Hashmap represent one values and one key
    2)Hashset allows only unique values                            2)Hashmap allows unique keys but duplicate values
    3)Hashset allows only one null values                          3)Hashmap allows number of null values. 
-   4)Hashset is thread safe                                       4)Hashmap is not thread safe
-   5)Hashset is synchronozed                                      5)Hashmap is not synchronized.
+   4)Hashset is thread safe                                       4)Hashmap is non thread safe
+   5)Hashset is synchronozed                                      5)Hashmap is non synchronized.
 
 18) What is the difference between HashMap and TreeMap? //////////////////////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1752,6 +1794,72 @@ Once you make method is synchronized only one thread access it at time. wait ano
   4)Comparable provide only one short                                 4)Copmarator provide multiple sort of sequence
 
 
+   Ex 1) Employee for Comparable order by empId;
+   Ex 2) Employee for Comparator order by empName;
+   
+   
+   1) Comparable provide only one sort of sequence
+   
+      class Employee implements Comparable<Employee>{
+          private int id;
+          private String name;
+      
+                 public Employee(int id,String name){
+		             this.id=id;
+			     this.name=name;
+			     }
+	         public void setId(int id){
+		        thid.id=id;
+			}
+	         public void setName(String name){
+		        this.name=name;
+			}
+	         public int getId(){
+		         return id;
+			 }
+	         public String getName(){
+		         return name;
+			 }
+                @override	
+	        public String toString(){
+		    return " id : "+id+" name: "+name;
+		    }
+	 
+
+           public int compareTo(Employee e){
+	   
+	         if(e.getId()>this.getId()){
+                       return 1;
+		       }
+		 if(e.getId()<this.getId()){
+		       return -1;
+		       }
+		 return 0;
+		 
+        }
+	
+	class Test{
+            public static void main(String args[]){
+	         List<Employee> empLists=new ArrayList<Employee>();
+		    empLists.add(new Employee(101,"Smith");
+		    empLists.add(new Employee(11,"Roy");
+		    empLists.add(new Employee(20,"Danny");
+		    empLists.add(new Employee(121,"David");
+		    
+		    Comparator<Employee> emp=Comparator.comparing(Employee::getId);
+		    Collections.sort(empLists,emp);
+		    for(Employee sortedEmp:empLists){
+		    System.out.println(sortedEmp);
+		    }
+	      }
+	
+	}
+	
+	
+	
+	2) Comparator
+	    
+
 22) What do you understand by blocking queue? and why we used?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Blocking is an interface which implements queue interface. The implementation of blocking queue is thread safe.
@@ -1759,7 +1867,7 @@ Once you make method is synchronized only one thread access it at time. wait ano
    
 23) Why we overide equals() method? ***equals method take object as input parameter.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Hashcode return us index values or integer value. Sometime we will get same index value that time hashcollision will occur and equlas method get override to
+  Hashcode return us index values or integer value based on hashing algorithim. Sometime we will get same index value that time hashcollision will occur and equlas     method get override to
   check contains equal or not.
 
 24) How to snychronized list,set and Map?
@@ -1774,7 +1882,8 @@ Once you make method is synchronized only one thread access it at time. wait ano
 
 26) What is Hash Collision in Hash Table? and How to prevent it?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1) In hashtable put method first calculate hashcode,hashcode return us index value or integer value. So some times so we will get same index value that time
+  1) In hashtable put method first calculate hashcode,hashcode return us index value or integer value based on hashing alogorithm.
+     So some times so we will get same index value that time
      has collision will occur to check contain equal or not. 
      By using separate chaining and open addressing.
 
@@ -1791,6 +1900,7 @@ Once you make method is synchronized only one thread access it at time. wait ano
 29) What do you understand by fail fast?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Fail fast means immediately show concurrent modification expection.It doesn't require any extra space in memory.
+   Suppose in arraylist you are performing add or remove operations underlying of anything we will get concurrent modification exception.
 
 30) What is diffrence between Array And ArrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1849,9 +1959,15 @@ Arrays.asList() size of array become get fixed, so we are not able to add more e
   Yes if you are using enhanced for loop and try to remove element form that loop so, we will get the concurrentModification Exception.
   To avoid this type of error we need to use Iterator.
 
+ // If you are using arraylist and try to use the methods such as add or remove underlying of any methods
+    so you will get concurrent modification exception.
+    
+    To avoid this you need to use iterator.
+
+
 41) What is generic?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   generic means parameterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket.
+   generic means parameterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket <>.
    
 42) What is differnce between hashmap and linkedhashmap?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1902,7 +2018,7 @@ equlas take input parameter as only objects whereas compareTo method take only s
      map.put(103,"Sandy");
       
      so, put first calculate the hashcode.
-     Hashcode return us the index value or integer values.
+     Hashcode return us the index value or integer values based on hashing alogorithm.
      Whatever we passing it stored in doubly linked list.
      Suppose we will get 7 index it will store the object in 7 buckte as a doubly linked list format.
      Some times we will get same index value suppose 8,that time hash collosion will occur.
@@ -1960,6 +2076,10 @@ list.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you  are removing element from enhanced for loop by using remove method so you will get concurrentModification Exception.
 ConcurrentModifcation exception means it doesn't require any extra space in a memory.
+
+// If you are using arraylist and tryig to peform add, remove operations under the lying of any method 
+    we will get concurrent modification exception.
+    To avoid that we need to use Iterator.
 for eg- 
 If you are using arraylist and try to remove object from enhanced for loop or while direclty by 
 remove() method it will throw concurrentModification Exception.
@@ -2118,7 +2238,7 @@ It allows to access multiple thread at a time.
 The main objective of java 1.8 introduce is to enable function programming in java.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Lambda Expression
+1) Lambda Expression 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Lambda expression is used to provide the implementations of functional interface. It is function so .class file will not get created. It is anonymous function.
    { anonymous means it doesn't have any return type, method name and modifier also }.
