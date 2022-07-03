@@ -195,6 +195,8 @@ session.save() return current identifier of an instance where as session.persist
 get() method return null if object is not found whereas
 load() method return object not found exception if object isn't found.
 
+get() method hit database immediately. wherase load method() doesn't hit the database it return proxy by default.
+
 34) What are the states of objects in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
                                                        There are three states of objects in hibernate
@@ -267,6 +269,7 @@ load() method return object not found exception if object isn't found.
 45) What is the difference between get() and load() method?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
      get() method return null if object is not found where as load method return object not found exception.
+     get() method hit to the database. whereas load() method doesn't hit to the database 
      
 46) What is criteria in hibernate?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
@@ -327,7 +330,7 @@ load() method return object not found exception if object isn't found.
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Named sql query are predefined unchangeable query String.
       
- 60) What are the advatanges of NamedQuery? ##############################
+  60) What are the advatanges of NamedQuery? ##############################
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                 1) Reusable
                                                                                 2)Fail fast
