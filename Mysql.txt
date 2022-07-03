@@ -9,6 +9,9 @@
 1) sql query for second highest salary of employee table.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 select salary from employee order by salary desc limit 1,1;
+
+select max(salary) from employee where salary< (select max(salary) from employee);
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2) sql query for find unique name in employee table. (there is lots of same name of employee find unique name of employee)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -144,7 +147,7 @@ alter table table_name drop coloumn_name;
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        TRUCATE means delete all records from the table and structure remains same. we can't 
                                                                                                                                                                        rollback once we do truncate.
-                                                                                                                                                                        Delete means delete complete table and records also but we can rollbcak after the delete
+                                                                                                                                                                        Delete means delete existing row from that table and records also but we can rollbcak after the delete
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 14) What is Normlization?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- Normalization means organize data in database. types of normlization such as 1NF,2NF,3NF
