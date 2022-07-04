@@ -281,7 +281,7 @@ B) circuit breaker
 C) Asynchrnouns messaging
    
    
- 39) What is snychronus and asychrnous in microservice messaging system?
+39) What is snychronus and asychrnous in microservice messaging system?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 snychronus means tightly coupled. 
 Client send only one request at a time and wait until the response comes we are not able to another work.
@@ -290,7 +290,7 @@ Cleint send multiple request at a time and they don't need to wait until the res
 
 40) Where you deploy your microservice application?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-In my project we have deploy it on docker. There was devops team for deployment.
+In my project we have deploy it on azure. There was devops team for deployment.
 
 41) Can i have both application.properties file and yaml.properties file in one application?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
