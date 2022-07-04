@@ -455,6 +455,21 @@ C)Inheritance
 											     for eg- Maruti suzuki IS-A car and 
 											             Maruti Suzuki HAS-A Engine
 												     
+												     
+												     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)  Method overdiing rules
+
+    A) Same method signature required.i.e same method name with same argument
+    B) Return type same required before java 1.4 
+       from 1.5 covariant return allowed.
+       covariant return type- Child variable return type doesn't need to match with parent variable
+                              return type.
+			      Covariant return type applicable for only object not primitive type.
+       Return type not matter
+       
+
+												     
 											 
 											     
 											     
@@ -2312,7 +2327,32 @@ the subclass the super keyword from subclass construtor not able to access it.
 2) Reflection - reflection also broke the singleton pattern. 
                 To overcome this issue we need to use enum.
 		
-3)  
+216) What are the rules for method overiding?
+---------------------------------------------------------------------------------------------------------------------------------------
+1) Method singnature required same.
+   same method name with same parameter or arguement reuqired.
+   
+2) Return type not matter from java 1.5 
+   We have covariant return type.
+   
+ 217) What is mean by covariant return type?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ Covariant return type means child class variable return type not need to match with
+ parent class varible return type.
+ 
+ Covariant return type applicable for only objects.
+ 
+ 
+ 218) Return Type with access modifier rule?
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 
+  1) It possible to increae the scope of access modifier in subclaas but not posible to decrese that.
+  2) Protected - Protected,Protected - public === True
+  3) protected- default , private === wrong scenario    ( Compile time errror) 
+  4) Public - Public True   Public - Protected = False scenario
+  5) Public - default, public - private - false scenario
+  6) default- default True scenario, default- public True scenario
+  7) default- protected True, default -private false
 
 
 
