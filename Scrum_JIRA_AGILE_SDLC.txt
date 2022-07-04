@@ -32,6 +32,9 @@
                                            1) what was done yesterday?
                                            2) What is plan for today?
                                            3) Is there any abstacle to complete your work?
+                                           
+                                           
+             
 
                                            D) Sprint review-
 
@@ -287,4 +290,37 @@ been already changed in remote repository.
 
 To prevent this type of problem or conflict we need to work on isolated branches.
 so git merge commond combine the branches and resolve the conflicting edits.
+
+
+6)Swagger 
+=======================================================================================================================================================================
+Swagger is used to build and consume the restful api resources.
+so client get exact information like to to consume that api.
+
+We need to add open api maven depedency for that ans use the url
+for eg http://localhost:8080/swagger-ui/index.html
+
+
+7) Sonar qube 
+=======================================================================================================================================================================
+Sonar qube is open source testing tool. It helps to solve the
+issue as soon as they appear.
+WIth the help of sonar qube we can see the bugs, depdency isssue in 
+your application.
+
+default port number is 9000
+first we need to run startsonar
+TO use the sonar qube we need add
+plugin
+1) jacaco maven plugin
+2) sonar maven plugin
+
+1) first run your application as maven build
+clean org.jacoco:jacoco-maven-plugin:prepare-agent install 
+
+genrate the token on sonar qube
+
+2) then run your application as maven install
+
+sonar:sonar -Dsonar.login=2e617cf34ac2531ea92e7aeb73f395a7f12be229
 
