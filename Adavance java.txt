@@ -778,6 +778,80 @@ No, we can't write any statement after throw keyword.
 Custom exception is part of checked exception. 
 We can  declare it by using new keyword.
 
+65) Exception Handeling concepts
+--------------------------------------------------------------------------------------------------------------------------------------- 
+
+1) If parent class doesn't throw any exception and then subclass doesn't throws checked exception.
+   If you try to declare you will get compile time error.
+   
+   class A{
+      public void getResult(){
+          System.out.println("Hello");
+	    }
+	} 
+    class B{
+       public void getResult() throws IOException{
+          System.out.println("Hi");
+	    }
+	}
+	
+	
+2) IF Parent class doesn't throw any exception and child class can throw unchecked exception.
+
+     class A{
+          public void getResult(){
+            System.out.println("Hello");
+	    }
+	 } 
+     class B{
+           public void getResult() throws AirthemticExceptio{
+             System.out.println("Hi");
+	      }
+	  }
+
+
+3) If Parent class throws child exception and subclass throws Exception you will get compile time error
+
+      class A{
+         public void getResult() throws IOException{
+            System.out.println("HI");
+	    }
+	 }
+      class B{
+          public void getResult() throws Exception{
+            System.out.println("Hello");
+	    }
+        }
+	
+	
+4)   Gives Error
+
+     class A{
+         public void getResult() throws ArithmeticException{
+            System.out.println("HI");
+	    }
+	 }
+      class B{
+          public void getResult() throws Exception{
+            System.out.println("Hello");
+	    }
+        }
+
+
+
+5) Class A{
+     public void getInfo() throws Exception{
+          System.out.println("Hello");
+	  } 
+   Class B extends A{
+           public void getInfo()throws ArithmeticException{
+           System.out.println("Hi");
+	   }
+	 }
+	 
+	 
+	 It will work 
+	 
 
 ======================================================================================================================================================================
 ======================================================================================================================================================================
