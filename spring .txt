@@ -8,7 +8,7 @@
 1)what is spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Spring is web application development based on java.
-Spring is mainly used to develop loosely coupled application so it's become easy to                                                                                     test and manage your application. when we use we need to add dependecny manually 
+Spring is mainly used to develop loosely coupled application so it's become easy to                                                                                     test and manage your application. when we use we need to add dependency manually 
 also we need to write xml file.                                                                                 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------                2)what is the advantages of spring framework?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -101,7 +101,7 @@ There are seven AOP Terminology
 3)Through advice
 4)Around advice
 
----------------------------------------------------------------------------------------------------------------------------------------------------------              14)what are types of IOC container in spring?
+---------------------------------------------------------------------------------------------------------------------------------------------------------              14) what are types of IOC container in spring?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 There are two types of IOC container in spring
 1)Bean factory
