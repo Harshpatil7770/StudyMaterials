@@ -181,6 +181,8 @@ Software development life cycle
 Waterfall -
  
  Waterfall means put all functionlity into single process. After done with the complete process or model we will put it in front of product owner.
+ In Waterfall we don't move forward until finish the current work or model.
+ But in agile we can work parallely.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -196,6 +198,8 @@ Waterfall -
 1) What is Git?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Git is open source distrubuted version control sysytem it handel small as well as large project with speed and efficieny.
+ 
+ .git folder provide required version to the client if you have like v1,v2 .
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2) What is GitHub?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -210,7 +214,7 @@ we can connect all over world developers.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4) Steps to push code on github?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Git init
+1) Git  init -- make the folder as git repository.
 2) Git status
 3) Git add .
 4)Git commit -m "first commit"
@@ -234,7 +238,8 @@ we can connect all over world developers.
   
  7) What is the main purpose of branching ?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   To work parallel base system.
+   To work parallely on the application we required branching.
+   
    also we don't want to change the already deployed code on production environment.
    
  8) Why we need to merge the branches?
@@ -261,11 +266,12 @@ we can connect all over world developers.
 
 10) What is difference between pull and fetch?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- git fetch means feched information comes into local repository.
+ git fetch means fetch the changes into your local repository.
+ Where as git pull is combination of git fetch+git merge. I.e fetch
+ changes into your working directory.
  
- git pull means fetch the required information from your currently working workspace.
- 
- 11) What is mean by version control system?
+
+11) What is mean by version control system?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Version control system means track changes mades in code as per the times.
 
