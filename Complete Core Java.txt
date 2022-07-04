@@ -2353,6 +2353,11 @@ the subclass the super keyword from subclass construtor not able to access it.
   5) Public - default, public - private - false scenario
   6) default- default True scenario, default- public True scenario
   7) default- protected True, default -private false
+  
+  219) What is the difference between adapter design pattern and builder desing pattern?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  Adapter desing pattern is used when the entire object is easily created.
+  Where builder design pattern is used when construction of object process is difficult.
 
 
 
