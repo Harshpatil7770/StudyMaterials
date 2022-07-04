@@ -381,3 +381,18 @@ get() method hit database immediately. wherase load method() doesn't hit the dat
  2) EclipseLink
  3) OpenJPA
  
+ 69) What is the difference between lazy and fetch type in hibernate.
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Lazy loading means improve performance of your application it loads child objects as per your demands.
+ 
+ Where as eager loading means it load child entity along with parent.
+ 
+ 70) What are the types of cascades?
+     Cascade is used to manage the state of mapped entities.
+     Cascade Type
+     1) Remove - In cascade operation if you remove parent entity then all related entity also get removed.
+     2) Refresh - In cascade operation if you refresh the parent entity then  all related entity also refreshed.
+     3) Persist - Persist means if parent entity is persisted then all entity realted to them persisted.
+     4) Merge - Merge means if parent entity is merged then all entity also get merged.
+     5) Detach - If parent entity is detached then all entity related to that also detached.
+     6) All- ( include remove, detached, merge, persist,refreseh) cascade operations applied on parent entity,
