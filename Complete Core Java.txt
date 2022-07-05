@@ -2358,7 +2358,28 @@ the subclass the super keyword from subclass construtor not able to access it.
   ---------------------------------------------------------------------------------------------------------------------------------------
   Adapter desing pattern is used when the entire object is easily created.
   Where builder design pattern is used when construction of object process is difficult.
-
+  
+  220) What is scala language?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  scala is a scalable language. 
+  It doesn't have any boiler plate code.
+  It is function programming.
+  
+  221) What is groovy language?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  1) Groovy language means static and dyanamic language. ( static language means variable with their data type checked at compile time.
+     where dyanamic language means variable with thier data type checked at runtime).
+  2) Groovy language is used for scripting language for java platform.
+  
+ 
+  222) What is transpiler?
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  Transpiler means convert one source code into another source code.
+  or convert one lagungage into another langauge.
+  or migration of laguage as per thier version.
+  
+  223) 	
+  
 
 
 
