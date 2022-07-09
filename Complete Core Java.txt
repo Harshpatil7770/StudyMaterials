@@ -2378,7 +2378,100 @@ the subclass the super keyword from subclass construtor not able to access it.
   or convert one lagungage into another langauge.
   or migration of laguage as per thier version.
   
-  223) 	
+  223) What is serilization?
+  ----------------------------------------------------------------------------------------------
+ Serilization is used to travel the state of object over the network.
+ Serilization means convert the object into byte stream.
+ To use serilization we need to implement our class as serlizable
+ then  for serlizable we can use
+ 1) FOS= file output  stream - 
+ 2) OOS- Object output stream
+ we have write object() method 
+ It is present in io package
+ 
+ for deserilization we have
+ 1) FIS- file input stream
+ 2) OIS- object input stream
+ we have read object() method
+ 
+ 
+ // Real world example of serilization like
+ If you have boolean and you want to send as gift to someone which live in other city.
+ If you try to send with filled air it may chances of damage, or it will 
+ occupies more space.Instead of this we can send it without filled air.once that recieve
+ they can filled air for using purpose.
+ 
+ 
+ 224) Why we need of custom serilization ?
+ ----------------------------------------------------------------------------------------------
+ When we use transient keyword there may be chances of data losses.
+ To avoid this we required custome serlization.
+ for eg -
+ class A{
+ int id=10
+ String username="harsh";
+ transient String password="23213";
+ 
+ }
+
+10 harsh null
+
+TO avoid this we have
+private void writeObject()
+private void readObject() methods
+
+ ----------------------------------------------------------------------------------------------
+ 
+ 225) Can we serilize the static variable?
+ ----------------------------------------------------------------------------------------------
+  No we can't serilize the static variable. because static belong to the class and 
+  serlize belong to the object.
+  
+ 226) static and final with serilization?
+  ----------------------------------------------------------------------------------------------
+  final variable direclty serilize there value so there is no use of transient keyword.
+  No we can't serilize the static varible in java.
+  
+  
+ 227) Steps procudure to use the rabbitmq?
+  ---------------------------------------------------------------------------------------------
+  1) For using rabbit mq we need to install the erlang software
+  2) We can use also on web i.e https://customer.cloudamqp.com/login
+  cloudamqp
+  3) we need to copy that url and paste into your application.properties folder.
+  4) Then we need to add the dependecy 
+     RabbitMQ
+    
+  5) @Autowired
+      RabbitTemplate rabbitTemplate;
+      
+      Queue-means pool of messaging.
+      we need to use the quque from advanced messaging queue protocol.
+      and send anc convert message is used for the sending messaging.
+      
+     @Autowired
+     RabbitListner(queueu="queue_name")
+     RabbitListner is used to listening the messages.
+     
+     Once the message is listen is will gone forever.
+     
+   
+  228) Steps required to use the activemq?
+   ---------------------------------------------------------------------------------------------
+   1) First we need to lownload the activemq.
+   2) Then we need to run activemq on cmd ( Or inside that folder we have 
+      axtivemq start file we need to start it.
+   3) specifiy the properties inside the application.properties file of your application.
+   4) JMSTemplate we used to send the message in the form of queue.
+   5) For listening the message we have 
+      JMSListner we need to use
+     
+   
+  
+
+
+
+ 
   
 
 
