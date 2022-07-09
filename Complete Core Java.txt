@@ -2445,6 +2445,8 @@ private void readObject() methods
   5) @Autowired
       RabbitTemplate rabbitTemplate;
       
+      we need pass queue name in the send and convert method.
+      
       Queue-means pool of messaging.
       we need to use the quque from advanced messaging queue protocol.
       and send anc convert message is used for the sending messaging.
