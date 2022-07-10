@@ -371,3 +371,9 @@ Open and copy that contains
 ----------------------------------------------------------------------------------------
 Fork means copy of your project.  
 Fork allows us to make chnages without affecting on origin project.
+
+7) What is gitlab runner?
+----------------------------------------------------------------------------------------
+1) Gitlab runner is used in gitlab CI.
+
+
