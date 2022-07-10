@@ -324,3 +324,50 @@ genrate the token on sonar qube
 
 sonar:sonar -Dsonar.login=2e617cf34ac2531ea92e7aeb73f395a7f12be229
 
+
+8) GITLAB
+=======================================================================================================================================================================
+
+1) What is Git?
+----------------------------------------------------------------------------------------
+Git is version controller system. It manage all the version 3.It allows to track changes made in your application.
+
+2) What is Github?
+----------------------------------------------------------------------------------------
+Github hold source code of your application into different languages.
+Once you register on github you can upload your application on it.
+So other can access it use it, and connect with you for feedback.
+so basically on github we can connect with all over world developers.
+
+3) What is git stash?
+----------------------------------------------------------------------------------------
+Git stash allows to  switch the branch without commiting the current branch.
+
+4) WHat is HEAD?
+----------------------------------------------------------------------------------------
+HEAD represent last commit in the current checkout branch.
+
+5) How to generate SSH key?
+----------------------------------------------------------------------------------------
+SSH stands for secured shell.
+Basically it used for authentication.
+I.e we can connect with gitlab server without
+writing username and password each time.
+
+1) Open gitbash
+2) ssh-keygen
+3) then enter
+{file generate inside the default specified folder}
+Open and copy that contains
+4) Open gitLab
+5) Profile
+6) Preferences
+7) SSH Keys
+8) Paste in that box
+9) generate ssh keys
+
+
+6) What is fork ?
+----------------------------------------------------------------------------------------
+Fork means copy of your project.  
+Fork allows us to make chnages without affecting on origin project.
