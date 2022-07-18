@@ -2468,6 +2468,10 @@ private void readObject() methods
    5) For listening the message we have 
       JMSListner we need to use
      
+  229) What is the use of serial version id?
+  ---------------------------------------------------------------------------------------------
+  Serial version id is unique identification for that class.
+  
    
   
 
