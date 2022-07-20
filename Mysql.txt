@@ -216,8 +216,14 @@ Mysql direclty doesn't support to the outer join. so need to use union for that.
 13) What is the difference between truncate and delete which one rollback?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                        TRUCATE means delete all records from the table and structure remains same. we can't 
-                                                                                                                                                                       rollback once we do truncate.
+rollback once we do truncate.
                                                                                                                                                                         Delete means delete existing row from that table and records also but we can rollbcak after the delete
+Before this we need to use the commond such as
+1) commit; 
+2) set autocommit=0;
+3) delete from table_name where column_name;
+4) rollback;
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 14) What is Normlization?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- Normalization means organize data in database. types of normlization such as 1NF,2NF,3NF
