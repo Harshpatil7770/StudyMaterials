@@ -134,14 +134,84 @@ alter table table_name drop coloumn_name;
                                                                                                                                                                        Types of join
                                                                                                                                                                        1) Left join means it return records from left table and matching reocrds from right table.
 
-                                                                                                                                                                       2)Right Join
+    A) TABLE- products                                   B) TABLE- brands
+   product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
+     
+     
+     
+     
+    select * from products p left join brands b on p.brand_id=b.brand_id;
+    product_id     product_name    brand_id     brand_id     brand_name
+     1)            Oppo F1f          1             1           Oppo
+     2)            Oppo F17          1             1           Oppo
+     3)            One Plus Nord     null          null        null
+     
+     
+     i.e means if there is no values then it will take null.
+																				       
+																				        2)Right Join
                                                                                                                                                                         right join meand it return all records from right table and matching reocrds from left table.
 
-                                                                                                                                                                       3)Inner join
-                                                                                                                                                                        it return all common records between the two tables.
+ A) TABLE- products                                   B) TABLE- brands
+   product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
 
-                                                                                                                                                                       4)outer join
+ 
+
+ select * from products p right join brands b on p.brand_id=b.brand_id;
+ product_id  product_name   brand_id   brand_id    brand_name
+   1)         Oppo F1f        1        1           Oppo
+   2)         Oppo F17        1        1           Oppo
+   3)         Null           Null      2)          I phone
+
+
+3)Inner join
+  it return all common records between the two tables.
+  
+   A) TABLE- products                                       B) TABLE- brands
+   product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
+  
+   
+   select * from products p inner join brands b on p.brand_id=b.brand_id;
+   
+   product_id  product_name brand_id  brand_id  brand_name
+      1)        Oppo F1f      1         1        Oppo
+      2)        Oppo F17      1         1        Oppo
+
+   
+                                                                                                                                                                        4)outer join
                                                                                                                                                                        It return all reocrds from the tables even no matches with left side or right side table.
+Mysql direclty doesn't support to the outer join. so need to use union for that.
+
+ A) TABLE- products                                       B) TABLE- brands
+   product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
+  
+  
+  select * from products p left join brands b on p.brand_id=b.brand_id UNION
+  select * from products p right join brands b on p.brand_id=b.brand_id;
+  
+   product_id   product_name    brand_id  brand_id         brand_name
+     1)         Oppo F1f          1          1                Oppo
+     2)         Oppo F17          1          1                Oppo
+     3)         One Plus Nord     null       null             null
+     4)         null              null       2                Iphone
+  
+  
+
+																				       
+																				       
+																				       
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 13) What is the difference between truncate and delete which one rollback?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
