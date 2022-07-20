@@ -874,7 +874,7 @@ We can  declare it by using new keyword.
                                                                                                                                                                        When we use object by using to String literal JVM checks whether the object already declared or not                                                                    If declared it doesn't create new object in this way they makes JVM more memeory efficient.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-	4) What are the method of String?
+4) What are the method of String?
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         1)toUppercase() 2)toLowercase() 3)toCharArray() 4)toCharAt() 5)equals() 6)length() 7)toStrim() 8)                                                                      9)equalIgnorecase() 10) join()   11)subString()  12)IsEmpty() 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1482,6 +1482,8 @@ There are two ways to synchronization
   wait() - pause the currently executing thread,wait until another thread will call notify and notifyAll() method.
   notify()- notify means unblock only one waiting thread
   notifyAll() - notifyAll means unblock all waiting thread.
+  In java each object has a only one lock or monitor. And wait, notify and notifyAll() methods act as monitor.
+  That's why wait, notify, notifyAll are object class methods.
   ---------------------------------------------------------------------------------------------------------------------------------------
   73) Explain why wait(),notify() and notifyAll() methods are in Object class rather than in 
       thread class?
@@ -1591,6 +1593,7 @@ Once you make method is synchronized only one thread access it at time. wait ano
   data type. Arraylist provide random acceess. ArrayList maintain insertion order and allows duplicate values. ArrayList require less space because it store only
   object not address.
   When we create object of arraylist inside the memory a dyanamic array is created with default capacity is 10 and load factor is 0.75 .
+  It consider the capacity such = Initialsize* loadfactor.
   Ex-
   Class Employee{
    public static void main(String args[]){
@@ -1621,6 +1624,11 @@ Once you make method is synchronized only one thread access it at time. wait ano
    ArrayList Provide random access so we can access any value by it's index.
    So arraylist mainly used for searching operation. we are not able to perform insertion and deletion operation in an arraylist because lot's shifting is required. 
    
+      
+      
+    List<String> list=new ArrayList<>(10);
+    It become fixed sized of lists.
+      
       
 5) Explain Internal Working of LinkedList with examples?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1970,6 +1978,8 @@ output= 2
    Default size is 16 and load factor is 0.75  
    
    Load factor decided when to increse the size of table.
+   
+   It knows the to increase the size by formaula such as= intial capacity* load factor= 16*0.75=12
 
 29) What do you understand by fail fast?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2016,7 +2026,9 @@ Arrays.asList() size of array become get fixed, so we are not able to add more e
 
 37) How to synchronized arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  By using synchrnized.list() method 
+  By using synchrnizedlist() method 
+  Collections.sychronizedlist() method
+  We need to pass lists inside this method
 
 38) When we use ArrayList vs LinkedList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2211,11 +2223,23 @@ require less memory.
 66) Can we take custom class object as key in hashmap?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Yes we can take custom class object as a key in hashmap.
+But we know that collections only support the objects, wrapper classes and
+all wrapper classes are immutable in java.
+We need to make it immutable.
+We need to override the equals and hashcode() method of object class.
 
 67) What is the use of Concurrrent HashMap?
 ---------------------------------------------------------------------------------------------------------------------------------------
 It allows to access multiple thread at a time.
 
+68) Scenario's if we pass custom class object as key.
+---------------------------------------------------------------------------------------------------------------------------------------
+Scenarios 1) Suppose if we are passing custom class object as key first we need to make it as immtable.
+          2) Because collection support only objects not a primitive data type.
+	  3) All wrapper class are immutble.
+	  4) To make custom class as object first we need to make them immutable by using or
+	      overding hashcode and equal method.
+	  5) Where we can specifiy the the key.
 
 
 
@@ -2297,7 +2321,11 @@ It allows to access multiple thread at a time.
                  implements 
                  
 
-
+ 5) What is differecne between put and patch?
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Put used when we want to update the complete resource. but 
+ suppose if you have 50 of attribute and you want to change onlt one or two value of 
+ them we will go for patch.
 
 ======================================================================================================================================================================
 ======================================================================================================================================================================
@@ -2904,7 +2932,7 @@ The main objective of Java 1.8 is enable function programming, so require to wri
 1) Runnable  ( run() method)
 2) Consumer
 3) Predicate
-4)Supplier
+4) Supplier
 5) Function
 
 /////////////////
