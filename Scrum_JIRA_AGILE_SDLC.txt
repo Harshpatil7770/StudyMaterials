@@ -305,8 +305,9 @@ for eg http://localhost:8080/swagger-ui/index.html
 =======================================================================================================================================================================
 Sonar qube is open source testing tool. It helps to solve the
 issue as soon as they appear.
-WIth the help of sonar qube we can see the bugs, depdency isssue in 
-your application.
+Sonar qube helps to write clean and secure code.
+On sonar qube we can see the bugs, vunerlability, code smells,
+code coverage, duplicate lines.
 
 default port number is 9000
 first we need to run startsonar
@@ -376,4 +377,8 @@ Fork allows us to make chnages without affecting on origin project.
 ----------------------------------------------------------------------------------------
 1) Gitlab runner is used in gitlab CI.
 
-
+8)What is git rebash
+---------------------------------------------------------------------------------------
+  Git rebash is commnd that us integrate changes from one branch to another branch.
+  
+  whereas git merge allows to git branches on git.
