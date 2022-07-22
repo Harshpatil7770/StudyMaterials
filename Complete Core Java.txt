@@ -22,7 +22,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3) What is object oriented programming language?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                           object orriented programming language menas everything is made of objects.
+                                                                                           object oriented programming language menas everything is made of objects.
 											   Object oriented means we organize a application has different combination                                                                                              objects that incorpated with datastucture and behaviour. We can do                                                                                                    programming by using object oriented.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4) What are the feature of Java?
@@ -458,7 +458,7 @@ C)Inheritance
 												     
 												     
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-1)  Method overdiing rules
+1)  Method overding rules
 
     A) Same method signature required.i.e same method name with same argument
     B) Return type same required before java 1.4 
