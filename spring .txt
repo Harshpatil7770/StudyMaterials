@@ -240,12 +240,12 @@ AJAX stands for asynchronus javascript xml.It communicate with server without re
 34) what is synchronous?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Synchrous means we send only one request at a time and wait until respond come. we are not able to do other operations until response come.
-
+for er- rest api calls
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 35) what is asynchronous?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Asynchronous means we send mutilple request at a time and don't need to wait for respose we can do other operations also.
-
+for eg- message broker rabbitmq
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 36) what are the ways of implementing AOP terminology?########################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
