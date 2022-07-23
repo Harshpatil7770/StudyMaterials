@@ -14,6 +14,7 @@
    c) Logging ( Logging means log file include in this such as time and date, thread name,logger name,log levels .
               ( If you want to print log file you can write the properties in application.properties file such as
                 logging.file = /var/tmp/mylog.log)
+                or logging .file.name=mylog.log
    d) Security
    e) Admin features -( admin feature is web application, It helps to managaing and monotoring spring boot. 
 
@@ -447,7 +448,7 @@
 
 48) What is the latest version of spring boot?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 2.7.1
+    SpringBoot 2.7.2
 
 
 49) What are the diffrent types of scopes of bean?
@@ -683,7 +684,7 @@ B) Run as maven build
   
   75) What is the difference between @Bean and @Component annotations?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------\
-  @Bean is method level annotations used by spring container act as source bean java definations.
+  @Bean is method level annotations method produced by bean and managed by spring container.
   @Component is class level annotation used to mark a java class as bean.
   
   76) What is the difference between put and patch method or if we can update by using put then why we required patch?
@@ -729,14 +730,15 @@ Spring Boot with hibernate validator.
    
 83) What is ResponseEntity?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-  '
+  'Response body represent the header response including status code, body.
  
 84) What is mean by stand alone application?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-
+stand alone application means execute itself without need of anyother.
 
 85) What happen if i don't use pom.xml file?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Then project will not get build. TO build the maven we required pom.xml
 
 86) Can i use lombok without their dependency?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
