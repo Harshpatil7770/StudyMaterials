@@ -7,7 +7,7 @@
 =======================================================================================================================================================================
 
 =======================================================================================================================================================================
-                                                                    Hibernate(ORM 5.6.0)
+                                                                    Hibernate(ORM 6.1)
 =======================================================================================================================================================================
 
 1)What is Hibernate?
@@ -166,7 +166,9 @@ API stands application programming interface it helps to communicate two softwar
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 Coupling describe realtionship between the module.
 Tight coupling- A class dependeds upon another class called tight coupling.
-Loose coupling- A class doesn't dependes uponn another class is called loose coupling
+                If i make changes in subclass then i need to make changes in parent class also.
+Loose coupling- A class doesn't dependes uponn another class is called loose coupling.
+                If i make changes in subclass then i dont' to make changes in parent class.
 
 28) What is cohesion?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------   
