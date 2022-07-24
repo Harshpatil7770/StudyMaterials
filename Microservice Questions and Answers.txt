@@ -202,6 +202,14 @@
   RabbitMQ is open source message broker.Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ       implement AMQP protocols (advanced messaging queue protocols).
     Queue- Quque has pool to store the message. Once consumer listen that message it will gone forever.
     
+ To use rabbit mq wwe need to register on amqp cloud. Rabbitmq writtern in erlang language.
+ To use the rabbitmq we need to add rabbitmq dependecies.
+ We can RabitTemplate for sending the messages. By using queue we set name of the queue.
+ 
+ basically queue means we place message over the queue and send it.
+ convertAndsend method we can use to send the message with with queue.
+ 
+ @RabbitListener annotations required to listen the messages.
 
 27) What is spring cloud bus?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -285,8 +293,11 @@ C) Asynchrnouns messaging
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 snychronus means tightly coupled. 
 Client send only one request at a time and wait until the response comes we are not able to another work.
+Such as like our rest api callss.
+
 Asychronus means loosly coupled.
-Cleint send multiple request at a time and they don't need to wait until the response come they can do another work.
+Client send multiple request at a time and they don't need to wait until the response come they can do another work.
+for eg - amqp.
 
 40) Where you deploy your microservice application?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
