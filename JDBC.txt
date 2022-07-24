@@ -28,7 +28,7 @@ There are four types of jdbc driver in java
 - It is called as fully java driver. It is entirely writtern in java. It is used to convert jdbc method calls directly  or indireclty
 into vedor-specific database protocols.
 3) Thin driver-
-hin driver means partially java driver.It is not entirely writtern in java. It is used to convert jdbc methods calls direclty into
+Thin driver means partially java driver.It is not entirely writtern in java. It is used to convert jdbc methods calls direclty into
 vendor specific database protocol.
  4) Native protocol driver-
 Is is also called as partially java driver.It is not entirely writtern in java. It usd to convert jdbc method calls into native calls.
@@ -97,7 +97,7 @@ at a runtime.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 There are three types of JDBC statement
 1) Statement-
- Statment object is created by using CreateStatement() method. It is used to run the static quries.
+ Statement object is created by using CreateStatement() method. It is used to run the static quries.
 if we use statement we are not able to add parameter at runtime.
 2) PreparedStatement-
 PreparedStatement object is created by using PreapredStatement() method.We can add parameter at a  runtime.
