@@ -405,6 +405,7 @@ T- stands for timely - always write test case before the production code.
 48) What is the purpose of verify() method?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 It check the method is called or not.
+For void method testing we use verify() method.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 49) @RunWIth annotations use?
