@@ -763,6 +763,12 @@ for eg:  @GetMapping("/find")
          
          
 Both return us same data just differnce of url.
+
+88) How to add validation for fields in springboot?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+We need to add springboot validator depedency.
+after that we can use @Valid, @Pattern(regexp=) we can use.
+
   
   
    
