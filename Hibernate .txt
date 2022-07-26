@@ -408,3 +408,18 @@ get() method hit database immediately. wherase load method() doesn't hit the dat
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
  @Joincolumn basically used to do physical mapping at owning side.
  
+ 73) Entity class.
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ If we provide variable name is camelCase format, so at the time of column name creating, for upper case letter
+ it will add underscore.
+ for eg- private String employeeName;
+         
+          coloumn created- employee_name
+          
+          
+ 74) @crossOrigin
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ @crossOrigin - annotations used to connect your application to the front end side.
+                 for eg- we place origin=http://localhost:4200
+                 
+ 
