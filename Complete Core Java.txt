@@ -2504,6 +2504,25 @@ private void readObject() methods
   deserilization object similar to the serilization object.
   If not it will show class Invalid class exception. 
   
+  230) How divison and mode operator works?
+  ----------------------------------------------------------------------------------------------
+  1) division for integer
+     int a=26,int b=15;
+     int c=a/b;
+          =26/15 =1.7
+	  
+     c will print only 1 because integer values.
+     division consider quetioent only. 
+     
+  2) modulus operator 
+     int a=26,int b=15
+     
+     int c=a%b;
+           =25%16= 1 /25-16= 11
+	   
+	  c will gives us 11 as a output
+	  It will consider the remainder.
+  
   
   
   
