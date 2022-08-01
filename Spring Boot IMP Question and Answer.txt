@@ -769,6 +769,79 @@ Both return us same data just differnce of url.
 We need to add springboot validator depedency.
 after that we can use @Valid, @Pattern(regexp=) we can use.
 
+89) What is depedency injecton?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Depdency injection is design pattern that remove depdency of your application and make them loosely coupled.
+Without depedency injection suppose i make changes in subclass i need to make changes in parent class also.
+This problem avoided by D.I and DI (depedency inversion)
+Types of depedency injection 
+1) Constructor based depedency injection
+2) Setter method based depedency injection
+
+1) Constructor based depedency injection means injecting dependency object to the depedency object via constructor.
+
+     for eg-
+     @service
+     public class BrandService{
+
+     BrandRepo brandRepo;
+     public BrandService(BrandRepo repo)    { 
+      this.repo=repo;
+       }
+
+      public void addNewBrand(Brand brand){
+         repo.save(brand);
+      }
+
+2) Setter method based depedency injection mean injecting depdency object to the dependency object via setter.
+ 
+   for eg-
+   
+   public class BrandService{
+
+    BrandRepo brandRepo;
+    
+    public void setBrandRepo(BrandRepo repo){
+    this.repo=repository;
+    }
+    
+    void save(Brand brand){
+     repo.save(brand);
+     }
+     
+     
+     }
+
+
+90) @Compnent-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     @Compnonet annotations is used to mark a class is java bean or mark a class is spring component.
+     
+91) @Transactional-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    @Transactional annotations provides transaction consist methods.
+    A) commit()
+    B) rollback();
+    
+ 92) What is the ResponseEntity ?
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ResponseEntity consist of Httpstatus,header,and response body.
+ We can control http response easily.
+ 
+ 93) How to create immutable final classes in springBoot?
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ we need to use @value annotations.
+ It similar to the data annotations but create immutable classes.
+ 
+ 94) How to read values from application.properties file?
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ By using @value annotations we read the values from application.properties file.
+ 
+ 
+    
+ 
+
+
   
   
    
