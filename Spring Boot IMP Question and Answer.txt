@@ -837,7 +837,14 @@ Types of depedency injection
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
  By using @value annotations we read the values from application.properties file.
  
+ 95) What is use of @Postconstruct annotions?
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  @Postconstruct annotation used with method and method called only once just after the initiation of bean.
  
+ 96) What is use of @PreDestroy annotations?
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  @PreDestroy annotations is used to mark the method  executed only once just before the object is destroy by spring container.
+  
     
  
 
