@@ -845,6 +845,12 @@ Types of depedency injection
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   @PreDestroy annotations is used to mark the method  executed only once just before the object is destroy by spring container.
   
+  97) Can we use mutiple database with one springboot application?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+yes we can use mutliple database with one springboot application. we need add the depedency of that database and write the configuration
+inside the application.properties file.
+
+  
     
  
 
