@@ -425,6 +425,13 @@ aggreator is function is sql used to perfrom operation on multiple values and re
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Transaction is collection of operations that perform one single logic unit of work.
 
+47) How to select last three records from the table?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select * from table_name order by column_namr desc limit 3;
+
+48) How to select only inbetween id=20 to id=30 out of total 100?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select * from table_name where column_name>=20 and column_name<=30;
 
 
 
