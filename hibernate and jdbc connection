@@ -37,3 +37,5 @@ spring.kafka.producer.value-serializer=org.springframework.kafka.support.seriali
 spring.kafka.topic=settlement
 
 spring.kafka.topic-json=settlement-json
+
+logging.file.name=mylog.log
