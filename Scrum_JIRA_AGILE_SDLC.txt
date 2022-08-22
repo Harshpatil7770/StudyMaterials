@@ -291,6 +291,19 @@ been already changed in remote repository.
 To prevent this type of problem or conflict we need to work on isolated branches.
 so git merge commond combine the branches and resolve the conflicting edits.
 
+14) How to check what are the different branches present in the repository?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+git branch -a
+
+by using this commond we can check how many branches present in the repository.
+
+15) How to clone the code?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) git clone repository
+2) cd foldername
+3) git branch branch_name(which you have all the code) { you can check the tree flow }
+
+
 
 6)Swagger 
 =======================================================================================================================================================================
