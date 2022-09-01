@@ -395,3 +395,7 @@ Fork allows us to make chnages without affecting on origin project.
   Git rebash is commnd that us integrate changes from one branch to another branch.
   
   whereas git merge allows to git branches on git.
+  
+ 9) How to delete .git folder?
+ -----------------------------------------------------------------------------------------
+ rmn -fr .git
