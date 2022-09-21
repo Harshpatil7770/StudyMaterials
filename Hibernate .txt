@@ -421,5 +421,20 @@ get() method hit database immediately. wherase load method() doesn't hit the dat
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
  @crossOrigin - annotations used to connect your application to the front end side.
                  for eg- we place origin=http://localhost:4200
-                 
+ 
+ 75) What is cache? why we required ?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Suppose if you are fetching data from database lot's of times it or suppose if you are hitting your database and fetch the records it makes
+ slow performane of your application.
+ So basically cache is used to improve performance of your application.
+ Cache reduce the number of database queries.
+ 
+ Types of caching
+ 1) First level caching
+ 2) Second level caching
+ 
+ 1) First level caching- associate with session object -by default enabled in hibernate
+ 2) Second level caching- asscicate with session factory -- thread safe -- manually enabale we need to do 
+                          
+ 
  
