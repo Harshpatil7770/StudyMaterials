@@ -2525,10 +2525,17 @@ private void readObject() methods
   
   
   
-  
-   
+   231) How to through manual exception check our logic?
+  ----------------------------------------------------------------------------------------------
+   just create one method where or which method you want to get or occur the exception 
+   testMethod();
 
-
+   Now provide the method or create the method
+   private void testMethod(){
+    String s=null;
+    s.toString();
+     }
+  }
 
  
   
@@ -2694,7 +2701,7 @@ log(n) best
  Convert one data type into another data type.
  
 
-     
+   
      
      
      
@@ -2739,5 +2746,6 @@ System.out.println(a);//38
 
 1) What does assertEqual work?
 assertEqual check wheather two objects equal or not.
+
 
 
