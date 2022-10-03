@@ -302,6 +302,11 @@ by using this commond we can check how many branches present in the repository.
 1) git clone repository
 2) cd foldername
 3) git branch branch_name(which you have all the code) { you can check the tree flow }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16) How to delete a specific class form github?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+git rm target/classes/test/java/NewTest$1.class
 
 
 
@@ -399,3 +404,12 @@ Fork allows us to make chnages without affecting on origin project.
  9) How to delete .git folder?
  -----------------------------------------------------------------------------------------
  rmn -fr .git
+ 
+ 10) 
+ 
+ Eclise ---> Team ---> for pull{ first one}
+ 
+ Eclipse ---> Team  ----> Commit ----> Commit and push directly
+ 
+ Eclipse ---> Team ----> swith To --> Newbranch
+ 
