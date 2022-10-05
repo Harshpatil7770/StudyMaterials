@@ -436,5 +436,20 @@ get() method hit database immediately. wherase load method() doesn't hit the dat
  1) First level caching- associate with session object -by default enabled in hibernate
  2) Second level caching- asscicate with session factory -- thread safe -- manually enabale we need to do 
                           
+  
+ 76) How to implement ehcache in your application and what is purpose of that?
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 77) What the use of @Transactional annotations?
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ The main purpose of @Transactional annotations is to make the unit of work.
+ or basically this annotations decides boundaries of your work.
+ for eg- suppose i have a one unit of work ... in that i have five methods A,B,C,D and E.
+ so if A,B executed succesfully and exception occur in method c then it work get rollback.
+ 
+ 
+ 78) 
  
  
