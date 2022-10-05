@@ -362,6 +362,9 @@ so basically on github we can connect with all over world developers.
 ----------------------------------------------------------------------------------------
 Git stash allows to  switch the branch without commiting the current branch.
 
+
+
+
 4) WHat is HEAD?
 ----------------------------------------------------------------------------------------
 HEAD represent last commit in the current checkout branch.
@@ -413,3 +416,15 @@ Fork allows us to make chnages without affecting on origin project.
  
  Eclipse ---> Team ----> swith To --> Newbranch
  
+ 11) What is the purpose of git stash?
+ ---------------------------------------------------------------------
+ Git stash allows us to switch other branch without commiting the changes.
+ for eg-
+ A) suppose i am working on branch B and i have make some changes on it,
+ now someone says like go to branch A and fix that issue and then work 
+ on branch B.
+ so whatever changes i made in branch B i need to save them on local somewhere.... for 
+ that purpose i will do git stash and move to branch A.
+ once i complete my work then i will switch back the branch B
+ and i will use the git commit such as git stash pop.
+ then all stages changes get back to my local code.
