@@ -1,3 +1,16 @@
+#how to give name to service
+spring.application.name=manager-service
+
+#how to active the actuator
+management.endpoints.web.exposure.include=*
+
+
+#profile allow us to work on that env
+spring.profiles.active:dev
+ 
+#generate the logs
+logging.file=/var/tmp/mylog.log
+
 #spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 #This is database connection properties
 spring.datasource.url=jdbc:mysql://localhost:3306/technosignia
@@ -7,6 +20,9 @@ spring.datasource.tomcat.max-wait=20000
 spring.datasource.tomcat.max-active=50
 spring.datasource.tomcat.max-idle=20
 spring.datasource.tomcat.min-idle=15
+
+#changeport number
+server.port
 
 #this is hibernate properties 
 spring.jpa.hibernate.ddl-auto=update
