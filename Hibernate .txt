@@ -444,6 +444,14 @@ get() method hit database immediately. wherase load method() doesn't hit the dat
  
  77) What the use of @Transactional annotations?
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ @Transactional annotations maily used in service layer at method level.
+ for eg- to make a one unit of work, we use this annotations.
+ Suppose you have five method i.e A,B,C,D and E in one unit of work and 
+ you will get exception at c method then a whole process get rollback.
+ so we can declare @Transactional(propagation=Propagation.RequiredNew,rollbackFor=Exception.class)
+ rollbackFor means if exception occur it will get rollback.
+ also we can declare isolation, timeout like dbconnection,readonly,rollbackFor,norollBack,noRollBackForClassName
+ 
  The main purpose of @Transactional annotations is to make the unit of work.
  or basically this annotations decides boundaries of your work.
  for eg- suppose i have a one unit of work ... in that i have five methods A,B,C,D and E.
