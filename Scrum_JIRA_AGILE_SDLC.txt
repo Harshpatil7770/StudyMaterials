@@ -453,4 +453,23 @@ Fork allows us to make chnages without affecting on origin project.
   ---------------------------------------------------------------------
   Go to eclipse , write click on project ---> Team ---> 
   pull(first and second) use first one.
+  
+  
+  15) How to create or add tag ?
+  ---------------------------------------------------------------------
+  1) Go to main branch or switch branch you want to make tag.
+   git show
+   git tag
+   git tag <tagName>
+   git push --tags
+   git tag -d <tagName>
+   git push origin -d <tagName>
+   
+  
+  16) Why we need ti create the tags?
+ ---------------------------------------------------------------------
+ Basically tags created to make upto that part release.
+ Or we can say upto this point code is stable.
+ 
+   
     
