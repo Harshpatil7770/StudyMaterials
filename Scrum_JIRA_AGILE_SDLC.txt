@@ -442,3 +442,15 @@ Fork allows us to make chnages without affecting on origin project.
     pull all the changes.
     create new branch form master and start working
     
+  13) How to delete branch from eclipse?
+  ---------------------------------------------------------------------
+  If you want to delete any branch first you need to switch the main 
+  branch.
+  go to eclipse --> Team ---> Advanced ---> DeleteBranch ---> select the branch name.
+  
+  
+  14) How to send pull request from eclipse?
+  ---------------------------------------------------------------------
+  Go to eclipse , write click on project ---> Team ---> 
+  pull(first and second) use first one.
+    
