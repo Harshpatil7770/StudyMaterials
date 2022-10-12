@@ -432,3 +432,13 @@ Fork allows us to make chnages without affecting on origin project.
  some time you will see that the changes to be committed
  to restore them you need to use git restore --stages <put the files name>
  
+ 12) How to switch other branches?
+ ---------------------------------------------------------------------
+ 1) suppose you have lot's of branches and master is your main branch of project,
+    and you are working on branch B and suppose your work is completed.
+    Now you need to commit your changes and push it into the master branch.
+    
+ 2) Now you need to work of another taks so first switch the master branch
+    pull all the changes.
+    create new branch form master and start working
+    
