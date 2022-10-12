@@ -428,3 +428,7 @@ Fork allows us to make chnages without affecting on origin project.
  once i complete my work then i will switch back the branch B
  and i will use the git commit such as git stash pop.
  then all stages changes get back to my local code.
+ 
+ some time you will see that the changes to be committed
+ to restore them you need to use git restore --stages <put the files name>
+ 
