@@ -466,10 +466,30 @@ Fork allows us to make chnages without affecting on origin project.
    git push origin -d <tagName>
    
   
-  16) Why we need ti create the tags?
+  16) Why we need to create the tags?
  ---------------------------------------------------------------------
  Basically tags created to make upto that part release.
  Or we can say upto this point code is stable.
  
+ 
+ 17) How to delete the branch from bitbucket or github as well as from local?
+  ---------------------------------------------------------------------
+  A) git branch or git branch --list
+     to check how many branches present
+ B) git checkout <mainbranch>
+ C) deleting from github or bitbucket
+    git push origin --delete <branchName>
+ d) check the git branch
+ e) deleting from local
+    git branch -d stage
+    
+ 
+ 
+8) FISHEYE
+=======================================================================================================================================================================
+ 1) How to raise code review on fisheye
+ 
+ A) create review --- > select project name ----> browsw changes ---> select branch name and click onn check box ---> done
+                      ---> click on edit option ----> add the review names
    
     
