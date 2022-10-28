@@ -2013,7 +2013,7 @@ To make class is singelton we need define private and static as field , private 
 							       Immutable means once we create we are not able to modify it. It helpful in security concepts.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-163) What are the difference between length and legnth() method in java?
+163) What are the difference between length and length() method in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                length property is used in array to check the length of array whereas
 							       length() method is used to check length of String objects.
@@ -2538,7 +2538,9 @@ private void readObject() methods
   }
 
  
-  
+  231) What is the difference between equal and hashcode method explain with some examples?
+  ----------------------------------------------------------------------------------------------
+ 1)   
 
 
 
