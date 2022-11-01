@@ -2540,7 +2540,24 @@ private void readObject() methods
  
   231) What is the difference between equal and hashcode method explain with some examples?
   ----------------------------------------------------------------------------------------------
- 1)   
+ 1) 
+ 
+ 
+ 
+ 
+ 232) How to find out non required or non used depedecies in our project?
+  ----------------------------------------------------------------------------------------------
+  1) Open pom.xml file 
+  2) check dependencies heirarchy.
+  3) click on it check it used or not.
+  
+  
+  233) How to check or where we can check jvm params?
+   ----------------------------------------------------------------------------------------------
+   1) right click on project
+   2) we can check out it on our workspace - A) Run As - configuration B) Arguments or VM arguments.
+   3) How to check form putty session - using below commond
+                                        ps -ef | grep -i <applName>
 
 
 
