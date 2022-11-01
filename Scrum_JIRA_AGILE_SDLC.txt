@@ -493,3 +493,15 @@ Fork allows us to make chnages without affecting on origin project.
                       ---> click on edit option ----> add the review names
    
     
+
+8) Outook
+=======================================================================================================================================================================
+1) How to recall the message and sent new again?
+------------------------------------------------------------------------------------------------------------------------------------
+1) Go to sent box
+2) Double click on message new window get opened.
+3) Click on File
+4) Recall or resend
+5) click on recall
+    A) delete unread copies and replace with new one.
+6) Edit and sent it again
