@@ -1,0 +1,17 @@
+1) How to run your java application thorugh cmd
+
+class Car{
+
+public static void main(String args[]){
+         System.out.println("Hello JVM");
+         
+       }
+}
+
+2) always save your file name using class name which contains main method.
+  Car.java
+  
+3) Open cmd on it.
+4) type javac Car.java
+5) If no error it will proceed successfully
+6) java Car
