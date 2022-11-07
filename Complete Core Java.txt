@@ -1507,9 +1507,10 @@ To make class is singelton we need define private and static as field , private 
 										   
 										   
 										   1) shallow copy-
-										                   shallow copy means create new reference variable that refer
-												   original object of class.We can direclty use clone method for 
-												   shallow copy.
+										                   Shallow copy means copy filed related to primitive data
+												   type and a object reference. By using clone method we can do
+												   shallow copy. To use clone method we need to implements cloneable
+												   interface.
 										      
 										   2) deep copy- deep copy means create exact copy of your object.
 										                  for this purpose we need to override the clone method.
@@ -2546,20 +2547,106 @@ private void readObject() methods
  
  
  232) How to find out non required or non used depedecies in our project?
-  ----------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------
   1) Open pom.xml file 
   2) check dependencies heirarchy.
   3) click on it check it used or not.
   
   
   233) How to check or where we can check jvm params?
-   ----------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------
    1) right click on project
    2) we can check out it on our workspace - A) Run As - configuration B) Arguments or VM arguments.
    3) How to check form putty session - using below commond
                                         ps -ef | grep -i <applName>
+					
 
+ 234) How to use clone() method in java?
+  ----------------------------------------------------------------------------------------------
+  Clone() method is object class method. It is used to create exact copy of an object. To use clone method we need to implements cloneable interface.
+  The return type of clone method is object. 
+  
+  for eg -
+  
+  class Employee{
+  
+  private long id;
+  
+  private String name;
+  
+  public Employee(long id,String name){
+       this.id=id;
+       this.name=name;
+       }
+  
+  public void setId(long id){
+         this.id=id;
+	 }
+  public long getId(){
+        return id;
+	}
+  public void setName(String name){
+     this.name=name;
+     }
+  public String getName(){
+       return name;
+       }
+  
+  public object cloneable() throws cloneNotSupportableException{
+         return super.clone();
+      }
+  public static void main(String args[]) throws cloneNotSupportableException{
+      Employee e1=new Employee(101,"Sham");
+      Employee e2=(Employee)e1.clone();
+     
+  }
 
+235) What is shallow copy?
+----------------------------------------------------------------------------------------------
+Shallow copy means copy only filed related to primitive data type not a object reference.
+By using clone() method we can acheive shallow copy. To use clone() method we need to implements
+Cloneable interface. 
+
+for eg-
+
+class Employee{
+   private long id;
+   private String name;
+   
+   public Employee(long id, String name){
+           this.id=id;
+	   this.name=name;
+   }
+   public void setId(long id){
+      this.id=id;
+   }
+   
+   public long getId(){
+       return id;
+      }
+   public void setName(String name){
+         this.name=name;
+     }
+   public String getName(){
+         return name;
+     }
+     
+   public Object cloneable() CloneNotSupportedException{
+     return super.clone();
+   }
+   
+   public static void main(String args[]) throws CloneNotSupportedException{
+     Employee e1=new Employee(101,"sham");
+     System.out.println("Original values");
+     System.out.println(e1.getId()+" "+e2.getName());
+     System.out.println("Copied values");
+     Employee e2=(Employee)e1.clone();
+     System.out.println(e2.getId()+" +e2.getName());
+     
+     }
+   }
+   
+   
 
 ======================================================================================================================================================================  ======================================================================================================================================================================                                              Decision or control making statement,Jump statement
 ======================================================================================================================================================================  ======================================================================================================================================================================  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
