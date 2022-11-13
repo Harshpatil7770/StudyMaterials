@@ -196,15 +196,17 @@ A) Abstraction
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                 A -VIII)What is the difference between abstract class and interface?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                 abstract class                                                                                         Interface
-                                       1) abstract class is used to achive 0 to 100% abstraction.                              1)Interface is used to achieve 100% abstration
-                                       2)abstact class have constructor                                                                  2)Interface don't have constructor
-                                       3)abstract class have both method declaration and method                            3)Interface has only method declaration
-                                          defination 
-                                        4)In abstract class we can use static variable and members                          4)Interface we can't use static variable and member.
-                                        5) abstract class is uesd in larger project because it provide common             5) Interface used in smaller project if we want add or force some method.
-                                           method implementations to all subclasses.  
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+               abstract class                                                                                         Interface
+1) abstract class is used to achive 0 to 100% abstraction.                              1)Interface is used to achieve 100% abstration
+2)abstact class have constructor                                                        2)Interface don't have constructor
+3)abstract class have both method declaration and method                                3)Interface has only method declaration
+  defination 
+4)In abstract class we can use static variable and members                              4)Interface by default member are public static and final whereas method are     public and abstract.
+5) abstract class is uesd in larger project because it provide common                   5) Interface used in smaller project if we want add or force some method.
+  method implementations to all subclasses.                                                (If you want to hide all feature then will go for interface)
+  ( If you want to hide some feature and show some then 
+    will go for abstract class.)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                 A IX)Can you declare interface method is static?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                No we can't declare interface method is static because they default public and abstract.
@@ -258,9 +260,9 @@ A) Abstraction
                                                                                                Yes,we can declare local inner class as abstract
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                 A IXX) Can abstract method include declaration of throws clause  ?
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                Yes,abstract method declaration include through clauses.
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 												
 												
 												  A XX) Can we have constructor in abstract class and what is the use of that ?
@@ -270,7 +272,7 @@ A) Abstraction
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                   A IX) If we achieve 100% abstraction by using interface then why 
 												  we using abstract class?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                abstract class used to show some properties to the customer
 											       and hide rest of all that's why we require abstract class.  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -354,29 +356,28 @@ B)Polymorphism
 
                                                                                                B-X)What is the difference between method overloading and method overriding?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                     method overloading                                                                                      method overriding
-                               1) method overloading is used to achieve compile time polymorphism                 1)method overriding is used to acheive runtime polymorphism.
-                               2) method overloading means a class in java has multiple same                          2)method overriding means a classes in java has same method  
-                                   method name with different parameter                                                           name with same arguements 
-                               3)It is also called as static binding                                                                     3) It is called as dyanamic binding
-                               4)performs of method overloading is faster than the method overdidng                4)Performs of method overiding is slower than the method overloading               
-                                  beacause object is determined at compile time                                                  because object determined at runtime.
+        method overloading                                                                                      method overriding
+ 1) method overloading is used to achieve compile time polymorphism                 1)method overriding is used to acheive runtime polymorphism.
+ 2) method overloading means a class in java has multiple same                      2)method overriding means a classes in java has same method  
+    method name with different parameter                                            name with same arguements 
+ 3)It is also called as static binding                                              3) It is called as dyanamic binding
+ 4)performs of method overloading is faster than the method overdidng               4)Performs of method overiding is slower than the method overloading                  beacause object is determined at compile time                                         because object determined at runtime.
                                
                
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                B-XI) What is the difference between compile time polymorphism and runtime polymorphism?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                           1) Compile time polymorphsim                                                                              1)Runtime Time polymorphism                                                                                                                                                            1)Compile time polymorphism means call an method overload to reslove           1)Runtime ploymorphism means call an method overide to
-                                                                                                                                 compile time rather than the runtime.                                                                to resolve runtime rather than compile time.
-                                                                                                                              2) Compile time polymorphism is achieved by method overloading                    2) Runtime ploymorphism is achieved by method overididng
-                                                                                                                              3)Compile time ploymorphsim called static binding.                                         3) Runtime polymorphism called dyanamic binding.
-                                                                                                                              4) compilet time polymorphism provide faster method exceution .                     4)Runtime polymorphism provide slower method excution.
+     1) Compile time polymorphsim                                                                              1)Runtime Time polymorphism                             1)Compile time polymorphism means call an method overload to reslove           1)Runtime ploymorphism means call an method overide to
+  compile time rather than the runtime.                                          to resolve runtime rather than compile time.
+2) Compile time polymorphism is achieved by method overloading                 2) Runtime ploymorphism is achieved by method overididng
+3)Compile time ploymorphsim called static binding.                             3) Runtime polymorphism called dyanamic binding.
+ 4) compilet time polymorphism provide faster method exceution .               4)Runtime polymorphism provide slower method excution.
                                                                                                                              
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                 B-XII) How to achieve static and dyanamic polymorphism in java?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                static polymorphism is achieve by using method overloading whereas dyanamic polymorphism is achieved by method overriding                      
-                                                                                               ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 C)Inheritance
@@ -405,18 +406,18 @@ C)Inheritance
                                                                                                 4) Multiple Inheritnace
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                 A class has more than one parent class, Java doesn't support multiple inheritance in class.
----------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                5) Hybrid Inheritance
                                                                                                 or
                                                                                                What is hybrid inheritance in java?
- ------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                Hybrid inheritance is combination of single and multiple inheritance.due to ambugity or diamond shape java doesn't support hybrid inheritance.
  
                                                                                                C-II) Advantages of Inheritance
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                1)Without inheritance we can't achieve runtime polymporphism
                                                                                                2)code redusablity.
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                                                                                                C-III) The real life example of inheritance
 ----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -425,7 +426,8 @@ C)Inheritance
                                                                                                C-IV) Why we use inheritance?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                1)Without inheritance we can't achieve runtime polymorphism. 
-                                                                                               2)Code reusablitiy.-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                               2)Code reusablitiy.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                                C-V) How does multiple inheritance implements in java?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -500,7 +502,7 @@ C)Inheritance
                    1) Abstraction is the process of hiding the details or                       1) Encapsulation means wrapping up data or hide a data as single entity.
                         implementaions by showing main services.
                    2) Abstration solve the problem upto design level                           2) Encapsulation solve the problem upto implementation level
-                   3) For eg- sending sms to someone you just type and                     3) for eg- java bean, capsule
+                   3) For eg- sending sms to someone you just type and                         3) for eg- java bean, capsule
                         send it you don't know the internal process,
                         Automible sterring, automobile break,ATM machine
  
