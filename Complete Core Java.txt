@@ -2648,6 +2648,115 @@ class Employee{
      }
    }
    
+  236) What is deep copy?
+---------------------------------------------------------------------------------------------- 
+   
+   
+   
+  
+  237) When to use logger.info(),logger.debug(),logger.error()?
+  --------------------------------------------------------------------------------------------
+  Logger class has these method, we have logging api also.
+  logger.info() used to log info message.
+  
+  logger.error() used to log error message 
+  {for eg.if any exception occured we will use it in catch block).
+  
+  logger.debug() we used to see logs while debuging some problems.
+  
+  
+  238) Difference between logger.info() and logger.debug()?
+  --------------------------------------------------------------------------------------------
+  logger.info() gives us information like application is in best state.
+  where as logger.debug() gives us information while debugging some problems.
+  
+  239) How to add parameters in log?
+  ---------------------------------------------------------------------------------------------
+  import org.slf4j.Logger;
+  import org.slf4j.LoggerFactory;		
+  
+  Logger logger=LoggerFactory.getLogger(CLASSNAME.class);
+  
+  logger.info("We are excepection the number {} ",number);
+  
+  240) Callback if exception occured some scenarioes also rollback the transaction 
+  ---------------------------------------------------------------------------------------------
+  class A{
+     
+     B b=new B();
+     @Transaction(propagation=Propagation.REQUIRED_NEW,rollbackFor=Exception.class)
+     public void a(A a){
+     try{
+          b.b(a);
+	  }catch(Exception e){
+
+               }
+         }
+    }
+  
+  
+  class B {
+   C c=new C();
+  @Transaction(propagation=Propagation.REQUIRED,rollbackFor=Exception.class)
+   public void b(A a) throws Exception{
+      c.b(a);     
+       }
+   }
+   
+   class C {
+  
+  //suppose this method is common and calling from lot's of classes so instead of modifing all
+  //classes we can use try with catch block.
+  D d=new D();
+  @Transaction(propagation=Propagation.REQUIRED,rollbackFor=Exception.class)
+   public void b(A a) {
+         
+	  try{
+	   d.b(a);
+	   }catch(Exception e){
+             throw new RuntimeException(e);
+            }
+       }
+   }
+   
+   Also some where if you are not able to handle throws exception then you can use try and catch block just throw new RuntimeException(e); in
+   catch block.
+   
+   
+   class D{
+   @Transaction(propagation=Propagation.REQUIRED,rollbackFor=Exception.class)
+    public void b(A a) throws Exception {
+    
+     }
+   }
+   
+   
+   The main purpose like if any exception occured call goes back to collor of the method i.e starting point
+   ----------------------------------------------------------------------------------------------------------
+   
+   
+   241) What is @PostConstruct and @PreDestroy annotations?
+   ----------------------------------------------------------------------------------------------------------
+    @PostConstruct annotations is used for init() method.that means this method executed only once
+    just after the initilization bean.(method level anntoations)
+    
+    
+    @PreDestroy annotations is method level annotations. The method executed just before the object get
+    destroyed.
+    
+    
+    242) How to compare a time is lies between two times or not ? how to getprevious day or future day?
+   ----------------------------------------------------------------------------------------------------------
+   public Date getResult(){
+   Calendor calendor=
+   
+   
+   }
+   
+   
+   
+   
+   
    
 
 ======================================================================================================================================================================  ======================================================================================================================================================================                                              Decision or control making statement,Jump statement
