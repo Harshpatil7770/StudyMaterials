@@ -2149,6 +2149,10 @@ equlas take input parameter as only objects whereas compareTo method take only s
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Concurrent hashmap similar to the hashtable and synchronized version of hashmap. It doesn't allows null value and keys.concurrent hashmap allows multiple thread
 to access.
+Cocurrent hashmap is thread safe. i.e multiple thread can operate single object without any issues.
+Peformancewise concurrent hashmap is better than the hashmap.
+The default concurrent hashmap size is 16, load factor is 0.75.
+ConcurrentHashMap<K,V> map=new ConcurrentHashMap<k,V>(DEFINE_SIZE_ALSO_HERE);
 
 56) Difference between concurrent hashmap and hashtable?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
