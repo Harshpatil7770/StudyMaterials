@@ -458,6 +458,83 @@ get() method hit database immediately. wherase load method() doesn't hit the dat
  so if A,B executed succesfully and exception occur in method c then it work get rollback.
  
  
- 78) 
+ 78) How to use Ehcache or how to implements Ehcache in your application?
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ step - 1) To use ehcache in your application first you need to add two maven depedencies
+ A) <dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.10.9.2</version>
+		</dependency>
+ B)	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+    
+ step - 2) Specified ehcache.xml file in your src/main/resource folder
+ <?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMSSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd"
+         updateCheck="true" monitoring="autodetect" dynamicConfig="true">
+         
+         <cache name="ecart-cache"
+          maxEntriesLocalHeap="10000"
+          maxEntriesLocalDisk="1000"
+          eternal="true"
+          overflowToDisk="false"
+          transactionalMode="off"
+          memoryStoreEvictionPolicy="LFU">>
+         </cache>
+</ehcache>
+
+step - 3) Create EhCacheConfiguration class  
+          use @Configuration
+              @EnableCaching annotations
+              
+              import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.ehcache.EhCacheCacheManager;
+import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+
+/*
+ * @Component annotations is used to mark a class is a java bean
+ * @EnableCaching is used to enable the cache.
+ * @Bean is method level annotations, method used by bean manager by spring container. 
+ */
+
+@Configuration
+@EnableCaching
+public class EhCacheConfiguration {
+
+	@Bean
+	public CacheManager cacheManager() {
+		return new EhCacheCacheManager(cacheManagerFactory().getObject());
+	}
+
+	@Bean
+	public EhCacheManagerFactoryBean cacheManagerFactory() {
+		EhCacheManagerFactoryBean bean = new EhCacheManagerFactoryBean();
+		bean.setConfigLocation(new ClassPathResource("ehchcahe.xml"));
+		bean.setShared(true);
+		return bean;
+	}
+}
+
+
+step 4)Service package you can defined the annotations
+@cacheable(value="ecart-cache")
+public List<Product> findAllProducts(){
+ 
+}
+ 
+@cacheable(value="ecart-cache",key="#productId")
+public Product findProductById(long productId){
+
+}
+
+ 
  
  
