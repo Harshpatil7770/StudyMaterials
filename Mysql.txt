@@ -434,6 +434,11 @@ select * from table_name order by column_namr desc limit 3;
 select * from table_name where column_name>=20 and column_name<=30;
 
 
+49) Suppose we have a table in which mechanical,IT,Civil Stream student names.Now i want to see how many student belong to IT
+or required count of them ? write a query  for that?
+
+select count(branch) from table_name where branch='IT';
+
 
 
 
