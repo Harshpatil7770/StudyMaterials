@@ -1,0 +1,9 @@
+1) How to get current date in string format.
+
+
+Date date=new Date();
+SimpleDateFormatter simpleDateFormater=new SimpleDateFormatter("yyyy-MM-dd");
+String currentDate=simpleDateFormater.format(date);
+
+
+-------------------------------------------------------------------------------------
