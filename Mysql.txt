@@ -440,8 +440,14 @@ or required count of them ? write a query  for that?
 select count(branch) from table_name where branch='IT';
 
 
+50) How to check how many records present in table?
+---------------------------------------------------------------
+select count(*) from tableName;
 
 
+51) How to read blob data from db? <OTHER>
+----------------------------------------------------------------
+select cast(coumnname as varchar) from tableName;
 
                                                                                          
                                                                                                                                                                                         
