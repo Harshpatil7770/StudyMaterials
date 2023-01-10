@@ -2756,6 +2756,15 @@ class Employee{
    
    
    
+   243) How to improve performance of your application?
+   ------------------------------------------------------------------------------------------------------------
+   1) If you are not going to modify any things, simply fethching use old for loop for(int i=0;i<n;i++)
+   don't use new enhanced for loop.
+   
+   
+   
+   
+   
    
    
 
