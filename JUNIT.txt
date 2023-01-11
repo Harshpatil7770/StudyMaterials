@@ -435,6 +435,23 @@ if you are using junit5 use or import @Test,@BeforeEach annotations from jupiter
 if you are using junit4 import it into normal package.
 
 
+53) How to check overall code coverage?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run your holes application as junit with coverage.
+For coverage you have to add jacoco maven plugin in your IDE.
+Click on coverage ---> select all service -----> right click ----->Export session ---> finish ---> open index page
+
+54) What is purpose of ReflectionTestUtil()?
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+With the help of ReflectionTestUtil we injecting instane. 
+for ex --> in your class a instance shows null , then you need to create
+or mock or injectmock instace in your test class.
+And ReflectionTestUtil.SetFiled(clasNameWhereNameValuePresent,"NullInstance",CreateNewInstanceWhichWantToInject);
+
+In this way you can replace or inject the instance.
+
+
+
 
 1) custom arraylist --> How to define,
 2) how to select employee name,city by using stream api.
