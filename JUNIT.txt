@@ -451,6 +451,23 @@ And ReflectionTestUtil.SetFiled(clasNameWhereNameValuePresent,"NullInstance",Cre
 In this way you can replace or inject the instance.
 
 
+55) @InjectMock
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+@InjectMock actually create an instance of class.
+If you want to another class method you required inject Mock.
+We never used InjectMock on top of interface.
+
+56)@Mock
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+If you want to mock object, dont' want to do actual call to that method.
+THat time we use @Mock.
+
+57) @ExtendWith
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ExtendWith allows us to create an instance.
+
+
+
 
 
 1) custom arraylist --> How to define,
