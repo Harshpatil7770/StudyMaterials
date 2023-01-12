@@ -483,6 +483,28 @@ Fork allows us to make chnages without affecting on origin project.
  e) deleting from local
     git branch -d stage
     
+  
+ 
+ 18) How to changes alreday commit mesasage?
+ -----------------------------------------------------------------------
+ git revert commitId
+ 
+ blue screen get opened press Esp+i
+ mouse will not work use only up down arrow.
+ put modify message in double quatos.
+ 
+ ctrl+c save
+ Esp+wq!
+ exit.
+ 
+19) How to take back your commited files on github?
+-----------------------------------------------------------------------
+git reset --soft commit Id. (please enter commit id below that commit,so
+what ever files present above it will get add into staging area)
+
+
+ 
+    
  
  
 8) FISHEYE
