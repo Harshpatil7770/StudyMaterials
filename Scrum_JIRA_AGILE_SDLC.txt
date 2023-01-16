@@ -537,6 +537,9 @@ Fork allows us to make chnages without affecting on origin project.
  Esp+wq!
  exit.
  
+ But the file also get deleted copy that files and paste it into workspcae.
+ and push again
+ 
 19) How to take back your commited files on github?
 -----------------------------------------------------------------------
 git reset --soft commit Id. (please enter commit id below that commit,so
