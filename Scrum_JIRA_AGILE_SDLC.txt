@@ -546,6 +546,12 @@ git reset --soft commit Id. (please enter commit id below that commit,so
 what ever files present above it will get add into staging area)
 
 
+20) How to check who and when is commited the changes or files?
+
+-----------------------------------------------------------------------
+Go to class --> Team ---> Show in histroy ---> select 2 comments ---> Compare with each other
+
+
  
     
  
