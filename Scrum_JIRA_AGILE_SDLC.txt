@@ -406,6 +406,9 @@ so basically on github we can connect with all over world developers.
 ----------------------------------------------------------------------------------------
 Git stash allows to  switch the branch without commiting the current branch.
 
+git stash filename
+
+git pop filename (to come back)
 
 
 
@@ -437,6 +440,8 @@ Open and copy that contains
 ----------------------------------------------------------------------------------------
 Fork means copy of your project.  
 Fork allows us to make chnages without affecting on origin project.
+Go to repository which want to fork , select fork option and create fork.
+
 
 7) What is gitlab runner?
 ----------------------------------------------------------------------------------------
@@ -452,13 +457,15 @@ Fork allows us to make chnages without affecting on origin project.
  -----------------------------------------------------------------------------------------
  rmn -fr .git
  
- 10) 
+ 10) How to use Git  from eclipse itself?
+ -----------------------------------------------------------------------
  
  Eclise ---> Team ---> for pull{ first one}
  
  Eclipse ---> Team  ----> Commit ----> Commit and push directly
  
  Eclipse ---> Team ----> swith To --> Newbranch
+ 
  
  11) What is the purpose of git stash?
  ---------------------------------------------------------------------
@@ -476,6 +483,7 @@ Fork allows us to make chnages without affecting on origin project.
  some time you will see that the changes to be committed
  to restore them you need to use git restore --stages <put the files name>
  
+ 
  12) How to switch other branches?
  ---------------------------------------------------------------------
  1) suppose you have lot's of branches and master is your main branch of project,
@@ -485,6 +493,13 @@ Fork allows us to make chnages without affecting on origin project.
  2) Now you need to work of another taks so first switch the master branch
     pull all the changes.
     create new branch form master and start working
+    
+    git branch branchName
+    
+    git branch --list
+    
+    git checkout branchName
+    
     
   13) How to delete branch from eclipse?
   ---------------------------------------------------------------------
@@ -554,6 +569,28 @@ what ever files present above it will get add into staging area)
 
 -----------------------------------------------------------------------
 Go to class --> Team ---> Show in histroy ---> select 2 comments ---> Compare with each other
+
+21) What is the difference between git soft and git hard commond?
+-----------------------------------------------------------------------
+git reset -- soft commit id (takes back file to working area from staging area)
+git reset -- hard commit id (it delte the files)
+
+22) How to check remote origin added or not?
+-----------------------------------------------------------------------
+git remote -v
+
+
+23) How to modify files on it?
+-----------------------------------------------------------------------
+open the file
+vi filesName
+ESP+i (add your changes)
+ctrl+c(save) ESP:wq!
+
+
+24) How to come back previous version of modify code or class?
+-----------------------------------------------------------------------
+git reset HEAD fileName
 
 
  
