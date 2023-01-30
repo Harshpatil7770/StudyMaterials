@@ -592,6 +592,10 @@ ctrl+c(save) ESP:wq!
 -----------------------------------------------------------------------
 git reset HEAD fileName
 
+25) How to move file from staging area to working area? (green to red)?
+-----------------------------------------------------------------------
+git reset HEAD -- filepath
+
 
  
     
