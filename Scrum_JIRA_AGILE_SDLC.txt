@@ -596,6 +596,13 @@ git reset HEAD fileName
 -----------------------------------------------------------------------
 git reset HEAD -- filepath
 
+OR
+
+git reset filePath
+
+26) How to remove unwanted chnages? or target file create? When you take new branch pull?
+-----------------------------------------------------------------------
+git clean -d -f
 
  
     
