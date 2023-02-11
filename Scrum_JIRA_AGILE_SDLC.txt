@@ -600,9 +600,16 @@ OR
 
 git reset filePath
 
+git reset Config-server (gives  a module name If want to move all files)
+
+git reset filepath (it will reset a single file)
+
+
 26) How to remove unwanted chnages? or target file create? When you take new branch pull?
 -----------------------------------------------------------------------
 git clean -d -f
+
+
 
  
     
