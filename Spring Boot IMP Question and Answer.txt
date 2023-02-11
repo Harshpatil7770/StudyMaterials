@@ -861,6 +861,15 @@ Types of depedency injection
 yes we can use mutliple database with one springboot application. we need add the depedency of that database and write the configuration
 inside the application.properties file.
 
+98) How to kill running process Id?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Open cmd as a administator.
+
+1) netstat -aon | findstr <portNumber>
+
+2) taskkill /f /pid <PIDNumber>
+
+
   
     
  
