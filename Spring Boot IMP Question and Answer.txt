@@ -154,7 +154,11 @@
 21) What is profile in spring boot?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Profile provide seggration of your application i.e they operate in specific environments. for eg- dev,QA,Test,stage,production etc.
-    //spring.profile
+    
+    
+    spring.profiles.active=dev
+    
+    worked
 
 22) What is actuator & it's adantages?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -501,7 +505,11 @@
  55) what is profile in spring boot?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
      profile means provide seggration of your application that opetate on specific enviornment. for eg- QA,Dev,Production etc
-     we put spring.active.profile=qa so it will work for qa.
+     we put spring.profiles.active  so it will work for qa.
+     
+     spring.profiles.active=dev
+     
+     worked
 
 56) What are the combinations of spring Boot?
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
