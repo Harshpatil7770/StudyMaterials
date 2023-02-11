@@ -870,6 +870,13 @@ Open cmd as a administator.
 2) taskkill /f /pid <PIDNumber>
 
 
+99) mvn commond
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mvn clean compile package install -Dmaven.skip.test=true
+
+mvn clean compile package install -Dmaven.skip.test=false
+
+
   
     
  
