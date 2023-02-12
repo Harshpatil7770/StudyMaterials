@@ -1,0 +1,4 @@
+To start and stop java jar file
+
+
+https://superuser.com/questions/776948/shell-script-to-start-and-stop-an-executable-jar-in-linux-environment#:~:text=%23%21%2Fbin%2Fbash%20java%20-jar%20executable.jar%20%26%20%23%20You%20send,the%20PID%20of%20that%20process%20on%20the%20screen.
