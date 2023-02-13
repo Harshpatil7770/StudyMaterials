@@ -16,3 +16,11 @@ echo "kill $MyPID" > MyStop.sh  # Write the the command kill pid in MyStop.sh
 
 
 kill PID
+
+
+
+
+To give full permission to file
+1) chmod -R 777 fileName
+
+7 -> read write exeucute 4,2,1
