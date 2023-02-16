@@ -2762,6 +2762,12 @@ class Employee{
    don't use new enhanced for loop.
    
    
+ 
+  244) Enum
+  ------------------------------------------------------------------------------------------------------------
+  Enum constructor is always private
+   
+   
    
    
    
