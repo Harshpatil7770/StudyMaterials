@@ -885,6 +885,13 @@ mvn clean compile package install -Dmaven.skip.test=true
 mvn clean compile package install -Dmaven.skip.test=false
 
 
+100) WHat will happpen ?
+if will provide server.port=9090 in application.properties file and server.port=9091 on application.yml? Which one 
+spring will pickup and why?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------'
+spring will pick up properties from application.properties file, by  default spring provide us application.properties file so it will give high prioriety to this.
+
+
   
     
  
