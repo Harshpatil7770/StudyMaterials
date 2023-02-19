@@ -891,7 +891,34 @@ spring will pickup and why?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------'
 spring will pick up properties from application.properties file, by  default spring provide us application.properties file so it will give high prioriety to this.
 
+101) Log level in spring boot?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------'
+1) logging.path=C:/app/
 
+   Log file create on the above location with default name spring.log
+
+
+2) logging.file.name=C:/app/mylog.log
+
+   log file create on the above location with specified file name.
+
+3) By default spring boot set log info as a level of log.
+
+error   
+warn
+info (enable upper will print automatically)
+debug
+trace 
+
+4) How to print debug logs on console
+   logging:
+    level:
+     com.cli.*=DEBUG
+     
+5) Custom log pattern
+pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+    file: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
   
     
  
