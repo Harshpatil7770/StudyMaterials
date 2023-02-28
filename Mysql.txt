@@ -449,6 +449,10 @@ select count(*) from tableName;
 ----------------------------------------------------------------
 select cast(coumnname as varchar) from tableName;
 
+52) Queury to column present in table?
+----------------------------------------------------------------
+select columns from table_name;
+
                                                                                          
                                                                                                                                                                                         
                                                                                    
