@@ -2765,7 +2765,9 @@ class Employee{
  
   244) Enum
   ------------------------------------------------------------------------------------------------------------
-  Enum constructor is always private
+  Enum constructor is always private.
+  Whatever filed declared inside the enum it by default public static and final.
+  
    
    
    
