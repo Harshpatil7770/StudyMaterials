@@ -9,3 +9,8 @@
 1) DataIntegratyViolation.error
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Check all the fields with their type...... because whatever you are passing that not able to parse properly.
+
+
+2) The select jre not supported inside the eclipse
+--------------------------------------------------------------------------------------------------
+windows ---> preference ---->java --> compiler change the version
