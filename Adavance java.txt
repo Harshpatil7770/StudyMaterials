@@ -1563,6 +1563,12 @@ return cell1+cell2+cell3;
 
 Once you make method is synchronized only one thread access it at time. wait another thread.
 
+84) What is the best or practial way to start a thread by setting name?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Date date=new Date();
+TimeStamp timeStamp=new TimeStamp(date.getTime());
+Thread.currentThread().setName("ClassName-"+timeStamp.getTime()+"-Thread")
+
 
 
 
