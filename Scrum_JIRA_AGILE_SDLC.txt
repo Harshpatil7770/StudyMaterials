@@ -604,6 +604,11 @@ git reset Config-server (gives  a module name If want to move all files)
 
 git reset filepath (it will reset a single file)
 
+config/eureka/com/cli/
+git reset config
+(if it give ambigious as erro)
+git reset config/eureka
+
 
 26) How to remove unwanted chnages? or target file create? When you take new branch pull?
 -----------------------------------------------------------------------
