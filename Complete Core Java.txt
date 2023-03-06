@@ -2768,6 +2768,23 @@ class Employee{
   Enum constructor is always private.
   Whatever filed declared inside the enum it by default public static and final.
   
+  245) Loop
+  ------------------------------------------------------------------------------------------------------------
+  if(contion 1){
+   --------
+  }else if(condition 2){
+  *****
+  }else if(condtion 3){
+  ####
+  }else{
+  _______
+  }
+  
+  If condtion 1 satisfied then controller direclty goes out
+  If condition 1fail then controller goes to check second con
+  if second is true then it direclty becomes out.
+   
+  
    
    
    
