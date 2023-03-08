@@ -2819,6 +2819,16 @@ class Employee{
    2) always throws the exception
    3) if you are using try and catch block
       then throw new RuntimeException(); in catch block
+      
+   247) How to make blue color comments in eclipse?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  /**
+  *
+  */
+  use two star you will get blue line of comment.
+  
+  
+ 
   
    
    
