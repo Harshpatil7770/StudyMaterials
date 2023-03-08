@@ -2783,7 +2783,37 @@ class Employee{
   If condtion 1 satisfied then controller direclty goes out
   If condition 1fail then controller goes to check second con
   if second is true then it direclty becomes out.
+  
+  
+  
+  
+  if(){
+  
+  }else if(){
+  
+  }else if(){
+  
+  }
+  if(){
+  
+  }if(){
+  
+  }else{
+  
+  }
    
+   
+   
+   1)The above method we can see first if method condition first get checked, 
+   if it is true , 
+   then call go to
+   2) direct if() method ,
+      then if() method
+      
+  *****Imp here is if and else if call 
+   
+   
+   246) 
   
    
    
