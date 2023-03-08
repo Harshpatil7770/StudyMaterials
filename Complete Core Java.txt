@@ -2813,7 +2813,12 @@ class Employee{
   *****Imp here is if and else if call 
    
    
-   246) 
+   246) How to take call back to collar of method if any exception occurs?
+   --------------------------------------------------------------------------------------------------------------------------------------------------------------
+   1) don't handle the exception
+   2) always throws the exception
+   3) if you are using try and catch block
+      then throw new RuntimeException(); in catch block
   
    
    
