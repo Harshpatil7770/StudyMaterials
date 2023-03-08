@@ -14,3 +14,17 @@ Check all the fields with their type...... because whatever you are passing that
 2) The select jre not supported inside the eclipse
 --------------------------------------------------------------------------------------------------
 windows ---> preference ---->java --> compiler change the version
+
+
+3) If your project not selecting or picking up the mentioned profiles?
+--------------------------------------------------------------------------------------------------
+Run
+1)maven clean
+2)maven install
+
+4)No spring config properties has been defined?
+--------------------------------------------------------------------------------------------------
+Open Run as Run as configuration --->
+select project name --> main class
+go to vm arguments --> -Dspring.config.location=projectpath/src/main/resources/
+
