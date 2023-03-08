@@ -614,6 +614,14 @@ git reset config/eureka
 -----------------------------------------------------------------------
 git clean -d -f
 
+27) How to move file from staging area to working area? (green to red)
+-----------------------------------------------------------------------
+git reset file-path      CLSManagement/src/main
+half path also suffient to move all changes , for specific enter full path.
+
+
+
+
 
 
  
