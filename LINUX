@@ -1,0 +1,7 @@
+1) How to delete file
+
+   rm -rf fileName
+   
+2) How to execute scripit
+   using sh or ./
+   
