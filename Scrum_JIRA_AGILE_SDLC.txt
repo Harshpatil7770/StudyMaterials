@@ -619,6 +619,10 @@ git clean -d -f
 git reset file-path      CLSManagement/src/main
 half path also suffient to move all changes , for specific enter full path.
 
+28) How to push empty or new branch in stash?
+-----------------------------------------------------------------------
+git push --set-upstream origin new_branch_name
+
 
 
 
