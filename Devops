@@ -24,3 +24,11 @@ To give full permission to file
 1) chmod -R 777 fileName
 
 7 -> read write exeucute 4,2,1
+
+
+
+Need to install netstat on linux server
+-------------------
+https://linuxconfig.org/bash-netstat-command-not-found-debian-ubuntu-linux
+
+instead of apt use yum
