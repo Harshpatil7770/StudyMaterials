@@ -453,6 +453,9 @@ select cast(coumnname as varchar) from tableName;
 ----------------------------------------------------------------
 select columns from table_name;
 
+53) How to check the number of records present in db?
+----------------------------------------------------------------
+select count(*) from TABLE_NAME;
                                                                                          
                                                                                                                                                                                         
                                                                                    
