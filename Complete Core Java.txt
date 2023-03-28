@@ -2827,6 +2827,13 @@ class Employee{
   */
   use two star you will get blue line of comment.
   
+  248) How to convert String into jsonObject?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Using GSON we can convert String to Json Object.
+  
+  GSON is main class of Google library.
+  
+  
   
  
   
