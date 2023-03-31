@@ -456,6 +456,14 @@ select columns from table_name;
 53) How to check the number of records present in db?
 ----------------------------------------------------------------
 select count(*) from TABLE_NAME;
+
+54) How to find out unique record from the table?
+----------------------------------------------------------------
+select DISTICNT(COLUMN_NAME) from tableName;
+
+select DISTICNT(STATE) from employee;
+
+select UNIQUE(STATE) from employee;
                                                                                          
                                                                                                                                                                                         
                                                                                    
