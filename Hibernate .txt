@@ -535,6 +535,12 @@ public Product findProductById(long productId){
 
 }
 
+
+79) When ConstraintViolationException occures?
+---------------------------------------------------------------------------------------------------------------
+1) ConstraintViolationException occures while performing update and insert operations.
+2) If the primary alreday exist and you try to enter another same you got an excpetion.
+
  
  
  
