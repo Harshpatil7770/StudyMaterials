@@ -623,6 +623,10 @@ half path also suffient to move all changes , for specific enter full path.
 -----------------------------------------------------------------------
 git push --set-upstream origin new_branch_name
 
+29) How to check user name and email of git bash?
+-----------------------------------------------------------------------
+git config --list
+
 
 
 
