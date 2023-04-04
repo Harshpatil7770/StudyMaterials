@@ -32,3 +32,18 @@ Need to install netstat on linux server
 https://linuxconfig.org/bash-netstat-command-not-found-debian-ubuntu-linux
 
 instead of apt use yum
+
+
+1) How to start service?
+-----------------------------------------------------------------------------------------------------------------------
+./script.py --action start --component CLSManagement
+
+
+2) How to stop service?
+-----------------------------------------------------------------------------------------------------------------------
+./script.py --action stop component CLSManagment
+
+3) How to check all service status?
+-----------------------------------------------------------------------------------------------------------------------
+./script.py --action status
+
