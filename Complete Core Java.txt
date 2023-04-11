@@ -2834,6 +2834,13 @@ class Employee{
   GSON is main class of Google library.
   
   
+  249) What is the use of ObjectMapper in java?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ObjectMapper is used to convert java object inot json string.
+  ObjectMapper objectMapper=new ObjectMapper();
+  objectMapper.writeValueAsAString(paramter);	
+  
+  
   
  
   
