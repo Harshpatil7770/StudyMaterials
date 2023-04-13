@@ -627,6 +627,20 @@ git push --set-upstream origin new_branch_name
 -----------------------------------------------------------------------
 git config --list
 
+30) How to resolve merge conflicts?
+-----------------------------------------------------------------------
+Merge conflicts we have to reslove manually.
+1) First will discuss when merge conflicts occurs, suppose two or more
+devolper working on same branch, same class we will got merge conflict issue.
+becuase both of them modified same lines.
+
+2) Step first should be -suppose opposite developer pushed thier
+changes first take pull, now you got merge conflict, discuss with him/her
+about that keep required changes, remove non required and then you can
+push final changes.
+
+3) Now test the changes or confirm it's working fine or not
+
 
 
 
