@@ -925,6 +925,11 @@ pattern:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------'
  logging.file.path=C:/app/log Files/CBNK-ManagementService/DEBUG/
  logging.file.name=C:/app/log Files/CBNK-ManagementService/DEBUG/management.log
+ 
+ 
+ 102) How to create new module in springboot? if you want to create under the parent pom?
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ select file --> new --> other --->Maven --> New Module --> create ---> Manual depedency
 
 
   
