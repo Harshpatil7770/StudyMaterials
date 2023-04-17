@@ -464,6 +464,10 @@ select DISTICNT(COLUMN_NAME) from tableName;
 select DISTICNT(STATE) from employee;
 
 select UNIQUE(STATE) from employee;
+
+55) How to delete records from table?
+----------------------------------------------------------------
+delete from Table_name;
                                                                                          
                                                                                                                                                                                         
                                                                                    
