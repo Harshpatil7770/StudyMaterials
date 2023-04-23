@@ -306,6 +306,34 @@ In my project we have deploy it on azure. There was devops team for deployment.
 41) Can i have both application.properties file and yaml.properties file in one application?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Yes you can keep both.
- 
+
+42) Why we need microservice why not monolothic?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Monolothic means very complex application architecture structure.
+   It's not like that monolithic means they don't have different kind of services,
+   they have but every service is depends upon each other.
+   practially we can say , once we from reciving new input, validation,
+   and their operations and saving to db operatiosn get performed at only service.
+   
+   Suppose we recived any bad message then whole application get's down.
+   even there is no any cause of other services.
+   
+   Monolothic we have mutliple services but only in one platform.
+   
+   
+ 2) Microservice small, small function have own separate service.
+ such as Input-Gateway, Validation-Service, Output-Gateway,
+ so if any bad message comes Input-Gateway goes down.
+other service will up and running fine.
 
 
+43) Practical purpose of eureka server?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Eureka -Server acts as monitor of your application,
+we can easily see their which service is up and down
+
+44) How to build our project using mvn commond?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean compile package install -Dmaven.test.skip=true -p profile
+
+ -Dmaven.wagon.http.ssl.insecure=true to protect from vulnerability
