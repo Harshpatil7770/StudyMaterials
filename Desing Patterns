@@ -1,0 +1,52 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                       !!! Shree Swami Samarth !!!
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) What is desing pattern?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Desing pattern is predefined solutions for specific tasks or problems.
+A) Core Java Desing pattern B) Java EE Desing pattern
+
+A) Core Java Desing pattern
+
+B) Java EE Desing Pattern
+
+
+
+2) What is Factory Desing pattern? What is the purpose of it  and How can we implements? What kind of practical scenarios we have to implement it?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Factory desing pattern -
+
+
+1) Suppose you have single interface which implements in multiple classes that time to avoid
+creating of lot's of instantions we can use factory desing pattern.
+What will do will make one abstract class , those implemnt the interface, and will create the
+class which extends the abstract class to use method of abstract class.
+
+/******** Interface **********/
+Interface A{
+public void processInput(Input input);
+}
+
+/********* Abstract class implements interface ********/
+
+abstract class AC implements A{
+
+@Overide
+public void processInput(Input input){
+
+}
+
+}
+
+/******** Class extends Abstract class ******/
+
+class NewInputProcessor extends classAC{
+
+
+}
+
