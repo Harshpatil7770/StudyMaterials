@@ -2840,6 +2840,20 @@ class Employee{
   ObjectMapper objectMapper=new ObjectMapper();
   objectMapper.writeValueAsAString(paramter);	
   
+  250) How are you going to method of singleton and abstrract class?
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  A) Singleton class means only one instance of that class is created, 
+     Also we can create object of class within the class only.
+     We can't create object of class from outside, so to use methods
+     inside the singleton class we have to make method od this class
+     as static. also don't use setter methods and make sure that varible
+     declared inside this method is private .
+     
+     
+  B) Abstract class.
+  First thing whatever method declared inside the abstract class we have to implement it.
+  Suppose you defined one method inside the abstract class and you want to access it in 
+  your class then you have to extends the abstract class.
   
   
  
