@@ -641,6 +641,15 @@ push final changes.
 
 3) Now test the changes or confirm it's working fine or not
 
+31) How to do replace with head revision using git commond?
+-----------------------------------------------------------------------
+What is replace with head revision?
+Replace with head revision means suppose you have made changes in class,
+but you don't want it , you want to make the as it is like previous or before
+modify.
+
+git checkout -- completeClassPath
+
 
 
 
