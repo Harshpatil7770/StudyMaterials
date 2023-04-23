@@ -2856,7 +2856,11 @@ class Employee{
   your class then you have to extends the abstract class.
   
   
- 
+ 251) What is typecasting error in java?
+ ----------------------------------------------------------------------------------------------------------
+ Typecasting error occures when jvm unable to convert one data type to another data type.
+ suppose a one attributes want int type data and you are passing string so you will get 
+ java.lang.typecastexpection
   
    
    
@@ -3023,6 +3027,8 @@ log(n) best
  117) What is typecasting?
  ----------------------------------------------------------------------------------------
  Convert one data type into another data type.
+ 
+ 118) 
  
 
    
