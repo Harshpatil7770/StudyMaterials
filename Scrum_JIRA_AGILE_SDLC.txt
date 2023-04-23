@@ -651,6 +651,20 @@ modify.
 git checkout -- completeClassPath
 
 
+32) How to git merge?
+-----------------------------------------------------------------------
+git merge origin/branchName
+
+
+33) suppose you have create branch from developement ,i.e inbound-gateway.
+And other teams also create new branch from developement i.e outbound-gatway
+they made their changes and pushed back into developement branch then how will you get those changes in your branch i.e inbound-gateway?
+-----------------------------------------------------------------------
+simply we can do git merge origin/development
+
+
+
+
 
 
 
