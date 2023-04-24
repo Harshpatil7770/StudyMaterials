@@ -929,7 +929,16 @@ pattern:
  
  102) How to create new module in springboot? if you want to create under the parent pom?
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- select file --> new --> other --->Maven --> New Module --> create ---> Manual depedency
+ select file --> new --> other --->Maven --> New Module --> create ---> Manual depedency.
+ 
+ If you want to create new module under the parent pom, we required to creqate as
+ Maven ---> maven module -->create simple artificate--->parent as bsl --->
+ 
+ 103) WHat is the difference between NewModule or New Project?
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  New Module allows us to create new module under the parent project or parent pom,
+  where when we create new project it act as separete project
+ 
  
  
 103) How to create profile in springboot application? why we need that ?
