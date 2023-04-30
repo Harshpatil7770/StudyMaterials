@@ -2250,6 +2250,16 @@ Scenarios 1) Suppose if we are passing custom class object as key first we need 
 	  4) To make custom class as object first we need to make them immutable by using or
 	      overding hashcode and equal method.
 	  5) Where we can specifiy the the key.
+	  
+69) Practial scenarioes when to use HashMap vs concurrent HashMap?
+---------------------------------------------------------------------------------------------------------------------------------------
+1) HashMap is thread safe, means only one thread access at a time. So basically in single thread enviroment
+   will use HashMap.
+   If you put it into multithreaded enviornment it give us bad result or correct result.
+   It's give better and faster performance as compate to hashmap.
+
+2) Cocurrent hashmap is not thread safe. so multiple thread can access at a time.Basically in multithreaded environment
+  will use concurrent hashmap.
 
 
 
