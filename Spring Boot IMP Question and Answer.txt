@@ -939,6 +939,8 @@ pattern:
   New Module allows us to create new module under the parent project or parent pom,
   where when we create new project it act as separete project
  
+ A) While creating new module, right click on the project mentioned uner the parent pom.
+ B) If you create maven proect it will create outside
  
  
 103) How to create profile in springboot application? why we need that ?
