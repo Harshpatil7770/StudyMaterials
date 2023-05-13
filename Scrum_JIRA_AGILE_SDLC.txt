@@ -662,6 +662,18 @@ they made their changes and pushed back into developement branch then how will y
 -----------------------------------------------------------------------
 simply we can do git merge origin/development
 
+34) How to remove staged file into working directory?
+-----------------------------------------------------------------------
+1) first use
+git checkout -- filePath.
+
+But sometimes it won't be work.
+Don't worry use below commond first
+
+2) git reset HEAD filePath
+check 
+if not move then use git checkout --filePath
+
 
 
 
