@@ -944,10 +944,19 @@ pattern:
  
  
 103) How to create profile in springboot application? why we need that ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Under the pom file we have profiles, that means we can use common module in different component.
+<profile><profile> we can create profile related module we can add under that
 
 
 104) How to rename module name in springboot application?
+--------------------------------------------------------------------------------------------------------------------------------------------------
+1) change name in pom file.
+2) If your module has parent pom then change that also.
+3) delete you project from workspace only , please don't delete permanetatly.
+4) Go to workspace location rename the module name
+5) import your project again
+6) build your project
 
 
 
