@@ -959,6 +959,13 @@ Under the pom file we have profiles, that means we can use common module in diff
 6) build your project
 
 
+105) When you initiliaze values using constructor vs setter method?
+------------------------------------------------------------------------------------------------------------------------------
+Suppose class A and Class B.
+Class B total depdends uopn class A attributes, consider class A have 50 attrubiute and class B have 10 attributes, that time will refere the construor.
+Springboot by default used construor
+
+
 
   
   
