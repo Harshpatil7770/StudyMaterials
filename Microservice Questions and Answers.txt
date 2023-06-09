@@ -1,36 +1,32 @@
-======================================================================================================================================================================
-======================================================================================================================================================================
+=========================================================================================================================================
+=========================================================================================================================================
                                                                     !!! Shree Swami Samarth !!!
-======================================================================================================================================================================
-======================================================================================================================================================================
-
-======================================================================================================================================================================
+=========================================================================================================================================
+=========================================================================================================================================
+=========================================================================================================================================
                                                                           Microservice
-======================================================================================================================================================================
+=========================================================================================================================================
 
 1) What is microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-   Micorservice means small small services work together.It must cloud enable.Each service has own database and business layer. Service must be indepdenet deployable.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Micorservice means small small services work together.It must cloud enable.Each service has own database and business layer. Service must be indepdenet deployable.
    It maily follows the principle such as a one service has only one resposibility.
 
 
 2) What is monolithic?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Monolithic means put functionality into single process.It becomes easy to deploy as single jar/war file. It maily used to make smaller projects also build the
+-----------------------------------------------------------------------------------------------------------------------------------------
+Monolithic means put functionality into single process.It becomes easy to deploy as single jar/war file. It maily used to make smaller projects also build the
    proof of concepts. and if there is no expertisize in microservices. 
 
 
 3) What are the advantages of monolothic?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------------------------------------------------
    1)A single file get easily deploy as jar/war file.
    2)TO build proof of concepts.
 
 
 4) What are the disadvantges of monolothic?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------------------------------------------------
    1)Application become Tightly coupled. 
    2)Difficult to manage as well as maintain
    3)Size of application becomes too much large do diffucult to understand.
@@ -38,29 +34,25 @@
 
 
 5) When to use monolitic?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------------------------------------------------
    1) To build proof of concepts.
    2) To make smaller project if team size small.
 
 
 6) When to use microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------------------------------------------------
    1) To make more complex and scable application.
  
 
 7) What the advantages of microservices?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------------------------------------------------
    1) Each service indepedent deployable
    2) loosely coupled easy to test
    3) Each service has own respobility i.e changes occurs in single service doesn't affect other services.
 
  
 8) What are the disadvantages of microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------------------------------------------------
    1) Developer need to solve the problem such as load balancer.
    2) No. of services increase high chances of failure.
    3) Development cost is very high
@@ -68,64 +60,64 @@
 
 
 9) What is the use of spring boot web starter? (Spring Web)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
    1) Spring boot web stater provide rapid and easier application developments, aslo it maily used to develop restful applications.
 
 
 10) Which embeded database can be used in Spring Boot?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     In springboot we use H2 database as a embeded database.
 
 
 11) What is use of spring data JPA?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 
     Spring data JPA is used to acces DAO layer.To communicate with database
 
 
 12) What is eureka server? ( portno-8761) @EnableEurekaServer 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
     To use eureka server we need to add the dependency such as netfilx eureka server and use @EnableEurekaServer annoataions.
     By using eurka server we will can see which service is up or down.
 
 13) Which annotations needed in springBoot application class to enable eureka server?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     To enable eureka server we need to use @EnableEurekaServer annotations. 
 
 
 14) Which properties we need to add in application.properties so that eureka server doesn't register itself?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     Eureka server doesn't register itself as client we need to add the some properties inside the application.properties file such as
     eureka.client.register-with-eureka=false
     eureka.client.fetch-registry=false
     
 
 15) What is use of lombok? --- @Data,@AllArgConstrument,@NoAllArgConstructor
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     Lombok dependency mainly used to reduce the boilerplate code.We don't need to write manaually no arguments,argument constructor as well as we don't need
     to write manually setter and getter methods. 
     Insted of this we can use the annotations such as @Data,@NoargConstructor,@AllArgsConstructor.
 
 
 16) How does your application register with eureka server? @EnableDiscoveryClient
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     To register your application on eureka server first we need to add the dependency netflix eureka client and use the annonations such as @EnabaleDiscoveryClient(
     It picks the implementations of classpath)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
 17) How microservice communicate with each other?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     Microservice communicates with each other by using lightweight http rest or messaging protocols(advanced messaging queue protocol)
 
 
 18) What are the principle of microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     The main principle of microservice is a sinle service has single resposiblity.
 
 
 19) What are the main component of microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     1) Spring config Server
     2) Eureka naming server
     3) Hystrix dashboard
@@ -134,19 +126,19 @@
 
 
 20) What are the challenges in microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     1) Pack of cards- suppose serivce a,b,and c depends upon each other and one service get failed all application become failed.
     2) Bouded context- decinding boudries of microservice
 
 
 21) What are the micorservice monotoring tool?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     1) Spring Boot dashboard
     2) Hystrix Dashboard
     3) Eureka Server
 
 22) What do you understand by spring cloud?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud framework maily used to build cloud applications.
     It Helps to build the common feature,
     The main feautere of cloud framework such as
@@ -155,13 +147,13 @@
     3)distrubuting servcies
 
 23) In which case microservice is best suited?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     1) To make more complex and scabale application microservice architecure is good.
        so we can use in mobile, smart Tvs ,web desktop etc.
 
 
 24) What are the component of microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 
     1) Spring Cloud config server- 
        To use spring cloud config server we need to add the config server dependency, and use @EnableConfigServer annotations.
@@ -310,7 +302,18 @@ Yes you can keep both.
 42) Why we need microservice why not monolothic?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Monolothic means very complex application architecture structure.
-   It's not like that monolithic means they don't have different kind of services,
+   Basically we can say monolothic means all component comes under one springboot serivces.
+   for eg - component name like -> manager,participant,transaction details like that.
+   
+   Drawback - code complexity , lot's of package and classes available, as a devolper it's
+              very difficult to work on it.
+              If you change slight in one class then also you have to test all complete application,
+              Tight coupling and business logic is very difficult to understand. tight coupling ,
+              and one component donw everything goes down.
+              for scalabiltiy purpose we have to increse the number of instance which is costly.
+              
+              
+    It's not like that monolithic means they don't have different kind of services,
    they have but every service is depends upon each other.
    practially we can say , once we from reciving new input, validation,
    and their operations and saving to db operatiosn get performed at only service.
@@ -321,7 +324,16 @@ Yes you can keep both.
    Monolothic we have mutliple services but only in one platform.
    
    
- 2) Microservice small, small function have own separate service.
+ 2) Microo service means number of small small service, for each componet we hae
+    differnt service. 
+    Scalability, if any service goes down it's not going to imapact on other services.
+    ON cloud it is very easy to scale up and down the services,
+    for eg - student admission in clg, exams, result portal.
+    at admission time we can scale down the exam and result portal.
+    on other hand on monolothic we have to scale up all complete application.
+    
+  
+ Microservice small, small function have own separate service.
  such as Input-Gateway, Validation-Service, Output-Gateway,
  so if any bad message comes Input-Gateway goes down.
 other service will up and running fine.
@@ -337,3 +349,14 @@ we can easily see their which service is up and down
 mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean compile package install -Dmaven.test.skip=true -p profile
 
  -Dmaven.wagon.http.ssl.insecure=true to protect from vulnerability
+ 
+ 45) What is postman? why we need?
+ ----------------------------------------------------------------------------------------------------------------------------------------
+ Postman is a tool. basically it is used to hit the rest api's.
+ 
+ 46) Whne we go for feign client vs message broker?
+ ----------------------------------------------------------------------------------------------------------------------------------------
+ feign client used when the communication between service pattern like request and response , low volume of request.
+ If your application is going to handle multiple or large number of inputs, then always go with mq.
+ 
+ 
