@@ -75,11 +75,12 @@ Monolithic means put functionality into single process.It becomes easy to deploy
     Spring data JPA is used to acces DAO layer.To communicate with database
 
 
-12) What is eureka server? ( portno-8761) @EnableEurekaServer 
+12) What is eureka server? ( portno-8761) @EnableEurekaServer /spring cloud netflix eureka server.
 -----------------------------------------------------------------------------------------------------------------------------------------
     Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
     To use eureka server we need to add the dependency such as netfilx eureka server and use @EnableEurekaServer annoataions.
     By using eurka server we will can see which service is up or down.
+    basically we need unique-service name because service commiunicate with each other based on application-name.
 
 13) Which annotations needed in springBoot application class to enable eureka server?
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -358,5 +359,16 @@ mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true cl
  ----------------------------------------------------------------------------------------------------------------------------------------
  feign client used when the communication between service pattern like request and response , low volume of request.
  If your application is going to handle multiple or large number of inputs, then always go with mq.
+ 
+ 47) What topic comes under spring cloud?
+----------------------------------------------------------------------------------------------------------------------------------------
+1) Spring clound netflix eureka server --> Acts as monitor of your application, each service required uniqueu name, so communication can happer. 
+2) Spring cloud config server --> It acts as centraliezed server, will keep common properties in it.  consider 100 of service,
+ fatabase name, useenamw and password, dev, prod, cit21, st and sit env.
+3) Spring cloud load balancer --> To handler client side load will use it.
+4) Spring cloud API gateway  --> Entry point of your spring boot application, will do same basic authenication or validation here or add somming logging info.
+5) Fault tolerance --> Used when one service goes down does not going to impact on another service.
+6) sleuth and zipkin --> zipkin is ui to see the communication flow beitween the services, sleuth means trace request which comminf to your microservice.
+
  
  
