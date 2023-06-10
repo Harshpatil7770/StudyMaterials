@@ -1,0 +1,16 @@
+1) What is NDF?
+NDF means non deliveriable forward.
+Suppose CTTI BNK is part of or onboarded into CLS. now citibnk wants to do settlement with
+SBI BANK. SBI BANK is not part of CLS.
+What cls is going to do ,  add SBI data as private data , and allows to citibnk to
+perform it's trading.
+whatever member is onboarded onto cls called as global static data.
+
+
+2) Netting group.
+
+Netting group means group of bics and funds.
+suppose CITIBNK is available in india, in different state like mh,up or dl etc.
+each bank have their own bic(bank identification code). 
+one state means all branch have same cut of time, so netting group means will
+all bic code into one group of that bank.
