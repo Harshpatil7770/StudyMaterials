@@ -5,3 +5,17 @@
 2) How to execute scripit
    using sh or ./
    
+3) How to extract tar file
+   tar -xvf fileNameOftar
+   
+4) How to check previous entered commond
+   ctrl+R
+   
+5) How to change permission of file?
+   chmod -R 777 fileName
+   
+6) How to cp file and paste into another dir?
+   cp fileName /c/app/use
+   
+   cp fileName /c/app/use/fileName
+   
