@@ -50,3 +50,61 @@ class NewInputProcessor extends classAC{
 
 }
 
+
+3) Have you implemented singletion desing pattern in your project and what is the use for it?
+_____________________________________________________________________________________________________________________________________
+1) yes we have implemented singelton desing pattern in our project.
+2) what we doing we want only one value for pagination , it will pick value from properties file and generate one value.
+   we want to generate this value only once and only once time that object of class is get created. 
+   what we did we make constructor private and static , created static variable of class.
+   we arre checking if class object is created or not , if not we will created , so after that it not going to create
+   new object.
+
+for eg
+
+public class TransactionSizeLimitService extends AbstractTransactionSizeLimitService{
+
+    private static  TransactionSizeLimitService transactionSizeLimitService=null;
+
+    private static TransactionSizeLimitService getInstance(){
+         if(transactionSizeLimitService==null){
+            transactionSizeLimitService=new   TransactionSizeLimitService();
+           }
+        return transactionSizeLimitService;
+     }
+
+   public void generateSendNotificationPerPageBasedOnPaginationFactor(){
+
+ 
+   }
+}
+
+
+
+public abstract class AbstractTransactionSizeLimitService{
+
+}
+
+public class GenerateNotificationServiceImpl{
+
+   TransactionSizeLimitService transactionSizeLimitService=null;
+   transactionSizeLimitService =getInstance();
+   transactionSizeLimitService.generateSendNotificationPerPageBasedOnPaginationFactor();
+}
+
+so basically only one object get created first time , when costructor get called, after that the object we will
+use until the life cycle of our application , so it won't create new object.
+Saves memorry , advantage.
+
+
+
+2) Have you implemented factory desing pattern in your application ? what is the use for that ? 
+_________________________________________________________________________________________________________________________
+Yes, we have implemented factory desing pattern in our application.
+so basically we use to reduce the number of instantions. we used.
+what we did create one a interface added or declared method inside it.
+create one abstract class and implemented interface that.
+Cretead required number of classes and extendds them with abstract class.
+
+So what we can do we will put common method under the abstract class.
+so rest of all class will use it.
