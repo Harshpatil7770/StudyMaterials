@@ -965,6 +965,14 @@ Suppose class A and Class B.
 Class B total depdends uopn class A attributes, consider class A have 50 attrubiute and class B have 10 attributes, that time will refere the construor.
 Springboot by default used construor
 
+106) Which property file has highest prioriety in springboot?
+------------------------------------------------------------------------------------------------------------------------------
+Scenarios 1) suppose we have application.properties, application.yaml and bootstrap.properties file
+will keep server.port =1001 , server.port=1002, server.port=1003.
+Which one should get picked by springboot application.
+
+1) when you run spring boot application it will run on the port number mentioned in application.yaml file.
+
 
 
   
