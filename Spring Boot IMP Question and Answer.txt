@@ -973,6 +973,9 @@ Which one should get picked by springboot application.
 
 1) when you run spring boot application it will run on the port number mentioned in application.yaml file.
 
+2) If you have application.yaml and bootstrap.properties file. then springboot pick port number from
+   application.yaml file
+
 
 
   
