@@ -370,5 +370,21 @@ mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true cl
 5) Fault tolerance --> Used when one service goes down does not going to impact on another service.
 6) sleuth and zipkin --> zipkin is ui to see the communication flow beitween the services, sleuth means trace request which comminf to your microservice.
 
+47) Which design pattern microservice follows?
+----------------------------------------------------------------------------------------------------------------------------------------
+Microservice follows circuit breaker desing pattern.
+
+48) How to implement circuit breaker in your microservice?
+----------------------------------------------------------------------------------------------------------------------------------------
+A) Now we will implement circuit breaker using resilence4j because hystrix now days goes as deprecated.
+
+49) How to handel microservice if there is any fault tolerance?
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+50) WHat is the return type of fallback methods?
+----------------------------------------------------------------------------------------------------------------------------------------
+On which api you applied circuit breaker annotations, those api return return is the return type of circuit breaker.
+
  
  
