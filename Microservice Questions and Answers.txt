@@ -378,6 +378,17 @@ Microservice follows circuit breaker desing pattern.
 ----------------------------------------------------------------------------------------------------------------------------------------
 A) Now we will implement circuit breaker using resilence4j because hystrix now days goes as deprecated.
 
+Steps A) Add spring-boot-starter-actuator,spring-boot-starter-aop and resilience4j-spring-boot2 depedency.
+      B) use @CircuitBreaker annotations on method which calling another service api.
+        for eg- @CircuitBreaker(name="proxyServiceCircuitBreaker" , fallbackMethod="proxyServiceFallbackMethod")
+      C) now implement fallback method, fallbackmethod name use as it is mentioend on front of fallbackMethood,
+        and return type must be same as the api return type.
+      D)add Exception e as parameter in fallback method
+
+  
+                                         
+
+
 49) How to handel microservice if there is any fault tolerance?
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -385,6 +396,12 @@ A) Now we will implement circuit breaker using resilence4j because hystrix now d
 50) WHat is the return type of fallback methods?
 ----------------------------------------------------------------------------------------------------------------------------------------
 On which api you applied circuit breaker annotations, those api return return is the return type of circuit breaker.
+
+51) What is closed, open and half open state in circuite breaker desing pattern?
+----------------------------------------------------------------------------------------------------------------------------------------
+
+52) What are the properties actuator is going to show? How to implement actactor in your project?
+----------------------------------------------------------------------------------------------------------------------------------------
 
  
  
