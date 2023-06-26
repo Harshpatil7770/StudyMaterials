@@ -675,6 +675,10 @@ check
 if not move then use git checkout --filePath
 
 
+35) How to delete any file?
+_____________________________________________________________________________________________________________________________
+rm -r filePath/name
+
 
 
 
