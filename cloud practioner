@@ -1,0 +1,30 @@
+1) How website works?
+----------------------------------------------------------------------------------------------------
+ clinet send https request to server and server sends sends response to client request.
+ Server is composition of cpu, memory, storage, database and network etc.
+
+2) What is the problem before cloud in IT sector?
+----------------------------------------------------------------------------------------------------
+1) 24*7 hrs team required to monitor server.
+2) Need to pay rent for datacenter , power supply,scalling is limited.
+3) Also if someone starts is IT startup he need to buy unnecessary server, even
+  they don't know businees will grow or not.
+4) No scalability , sometime i need to more server and sometimes i need less it's not.
+
+
+3) How cloud solve the above problems?
+----------------------------------------------------------------------------------------------------
+1) Cloud provides pay as you go services, means suppose i need more server and after sometime i need
+  less so it's provide scalablity.
+2) It's reduce the unnecessary things like maintance , moniter team or etc.
+3) We don't need build our own datacenter instead of that we use cloud.
+4) In cloud we have server available as we go and as we need.
+
+
+4) What is cloud computing?
+----------------------------------------------------------------------------------------------------
+1) Cloud computing basically provide on demand availabilty of essentialy resources in IT sector such as storage, network, application or database.
+2) It works pay as you go basis service.
+3) It is simple way to access server, storage , database and application services or etc.
+
+5) 
