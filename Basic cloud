@@ -83,4 +83,15 @@ IAAS, SAAS, PASS
 AWS Regions is nothing but geographical area.
 Regions is nothing but cluster of data centers.
 
+11) How to choose AWS regions?
+---------------------------------------------------------------------------------------
+1) There are certain factor we have to check to choose aws regions.
+A) Pricing- pricing of regions is various or it's not same for the regions.
+B) latency - latency means supposse you deployed your services on australiya regions
+            and using from india so you will face same lack.
+C) Avaible services- new features aren't immdiately avilable for 
+                     all regions, or we can say a big region first have
+                     updated feature as compare to small regions.
+
+
 
