@@ -1,1 +1,38 @@
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+                                               !!! Shree Swami Samarth !!!
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
+1) How websites works?
+---------------------------------------------------------------------------------------
+client sends http request to server and server sends response to the client request.
+
+server is composition of storage, memory,cpu, database or etc.
+
+2) What is issues before cloud in IT sector?
+---------------------------------------------------------------------------------------
+1) Before cloud , we have to build our own data center.
+2) 24*7 hrs need to monitor team.
+3) Required server room , electicity.
+4) It is not scalable. If someone start their startup even they don't know it will
+  grow up or not still they have to spent lot's money on it.
+
+3) What cloud provides us?
+---------------------------------------------------------------------------------------
+Cloud provides different types of services such as storage, network , application or etc.
+It provides pay as you go basic services.
+It is scalable , means when you required more server you can increase also reduce whenever 
+you don't need.
+
+4) What is cloud computing?
+---------------------------------------------------------------------------------------
+Cloud computing provides on demands availablity of resources in IT Sector such as
+stroage, network and application or etc.
+It provides pay as you go basis services.
+It is scalabale.
+
+
 
