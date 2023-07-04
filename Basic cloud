@@ -34,5 +34,41 @@ stroage, network and application or etc.
 It provides pay as you go basis services.
 It is scalabale.
 
+5) What are the deployement models of cloud?
+---------------------------------------------------------------------------------------
+1) Private cloud.
+private cloud used by single organazation to keep something private they don't want to disclose over the public. On private cloud
+we can say it's on complete control condition.
+
+for eg- dell cloud, 
+
+2) Public cloud.
+public cloud means anyone can use it .
+for eg - google cloud, amzon web service, microsoft cloud.
+
+3) Hybrid cloud
+Hybrid cloud is combination of private and public cloud.
+
+
+6) Five characterstics of cloud computing?
+---------------------------------------------------------------------------------------
+1) On demand service.
+As we know that cloud provides on demand service ie you have to pay as you used only.
+
+2) Broad network access
+Broad access network means resources available on network, so client can access diverse platfrom.
+
+3) Scalablitiy
+It is scale based on your demands.
+
+7) Advantages of cloud?
+---------------------------------------------------------------------------------------
+1) Don't need to buy hardware.
+2) No human interpution on aws while using it.
+3) Scalable.
+4) Available on pay as you go basics.
+5) broad network - so clinet can access from diverse platfrom.
+
+
 
 
