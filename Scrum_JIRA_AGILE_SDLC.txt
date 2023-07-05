@@ -679,6 +679,12 @@ if not move then use git checkout --filePath
 _____________________________________________________________________________________________________________________________
 rm -r filePath/name
 
+36) How to change or modify the commited message?
+_____________________________________________________________________________________________________________________________
+git commit --amend -m "New Commit Message"
+
+git push --force
+
 
 
 
