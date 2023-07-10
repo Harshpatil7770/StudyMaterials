@@ -572,8 +572,8 @@ Go to class --> Team ---> Show in histroy ---> select 2 comments ---> Compare wi
 
 21) What is the difference between git soft and git hard commond?
 -----------------------------------------------------------------------
-git reset -- soft commit id (takes back file to working area from staging area)
-git reset -- hard commit id (it delte the files)
+git reset --soft commit id (takes back file to working area from staging area)
+git reset --hard commit id (it delte the files)
 
 22) How to check remote origin added or not?
 -----------------------------------------------------------------------
