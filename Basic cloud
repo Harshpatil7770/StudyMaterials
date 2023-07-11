@@ -95,3 +95,1440 @@ C) Avaible services- new features aren't immdiately avilable for
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                !!! Shree Swami Samarth !!!
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) AWS
+---------------------------------------------------------------------------
+Aws stands for amazon web services.
+
+Aws is a cloud provider.
+
+
+2)What is means by cloud computing or cloud provider?
+---------------------------------------------------------------------------
+Cloud computing means provide on demand delivery of IT resources over the 
+internet pay as you go pricing.
+
+
+3)Why cloud is famous now days?
+---------------------------------------------------------------------------
+Because previously we need to buy servers, also we need to maintain that like
+providing man power and ac or etc. also sometimes we need to more servers
+that times also we need to but unnecessarly.
+
+whereas cloud provides as all essential resource over the internet so we don't 
+need to maintain anything.
+
+4)What are the types of cloud services?
+---------------------------------------------------------------------------
+Basically three types of cloud services.
+A) IAAS
+B) PAAS
+C) SAAS
+
+A) IAAS- stands for Infrastructure as a services.
+         It provide essential resources like stroage,network, server,virtualization.
+		 
+		 
+		 os
+		 virtualization
+		 server
+		 storage
+		 network
+		 
+B) PAAS - stands for platform as a services.
+          If you are using paas then by default you are using IAAS also.
+          It allows us to create,deloy,run and test your web application.
+		  
+		 
+		  runtime
+		  middleware
+		  os
+		  virtulization
+		  server
+		  storage
+		  network
+
+C) SAAS - stands for software as a services.
+          If you are using SAAS means by deault you are using IAAS and PASS also.
+          If you don't want to install or maintain the application in user end , or
+		  want to access only thorugh internet or url basics.
+          then we go for SAAS.	
+
+
+
+5)Deployment model in cloud or deployment services in cloud or types of cloud?
+--------------------------------------------------------------------------------------	
+A) Public cloud
+B) Private cloud
+C) Hybrid cloud
+
+A) Public cloud -
+   public cloud service mean any one can use it or all customer want a similar
+   services then go for publiic cloud.
+
+   public cloud provides such as amazon,azure
+
+B) Private cloud -
+   private cloud means a single end user controller over the application.
+   
+   private cloud providers such as dell,hp,redhat
+   
+ 
+C) Hybrid cloud 
+   Hybrid cloud means combination of public and private cloud.
+   we go for hybrid cloud when we don't want to give our database to other, we 
+   want to maintain our end.
+   
+   hybrid cloud provides such as amazon, google,cisco,netapp
+   
+
+6) Virtulization
+---------------------------------------------------------------------------------------
+If you want to use cloud then first you need to virtulization of IAAS.
+without this we are not able to use cloud.
+
+
+hypervisor
+virtulization
+server
+storage
+network   
+
+
+ 
+7) EC2  (IMP TOPIC)
+---------------------------------------------------------------------------------------
+EC2 stands for elastic cloud computing.
+
+Amazon EC2 provides scalable computing capacity in aws cloud.
+
+scalable computing means suppose you have small scale company required 4 server now and 
+in future it will grow as large scale that time you required more server to buy. But amazon EC2
+provide scalable cloud computing means you can upgrade the previous server don't need to buy others.
+Or sometime you for few days you required more server and apart from that you required less
+that time you don't need to buy more server you can upgrade your server easily.
+(for eg use case- big billin days on amazon,flipkart)
+
+In amazon virtual machine know as instances.
+
+Basically with the help of amazon EC2 you can launch few and more server easily.also configuring
+security, storage and maintance , network.
+
+If you are using amazon server you need to pay bill as you used, basic of min,sec.
+If you are not using they don't charage anything.
+
+Amazon EC2 has two storage option A) EBS B) instance store
+
+In which preconfigured template are available so you can use it.
+
+
+8) Is there any limit in amazon account to create an instance?
+---------------------------------------------------------------------------------------------
+1) Yes by default limit to create an instance is 20 for one region.
+   But We can increate it.
+   
+
+9)What are the types of EC2 instances?
+----------------------------------------------------------------------------------------------
+There are seven types of EC2 instance
+A) General purpose - 
+   General purpose means balanced memory and cpu.
+   Not too much required.
+   
+B) compute optimized
+   It will use when more cpu you want.
+   
+C) Memory optimized
+   It will use when you required more memory.
+   
+D) accelarated computing
+  It will use when you want more graphic card.
+ 
+E) storage optimized 
+  when you will use database server (when you required more storage)
+  
+F) high memory optimized 
+   when you required more memory. (it has nitro system- means increase performance
+   of your ram)
+   
+
+
+
+
+EC2 - nothing but virtual server
+-----------------------------------------------------------------------------------------------------
+Practially will see the EC2 dashboard.
+On EC2 Dashboad will able to see the running instances, elastic IP's(Elastic IP means static IP which never get changes, whereas normal
+IP get changes that called dyanamic IP's),load balancers, instances, snapshots.
+
+
+EC2 is virual server in cloud.
+
+----------------------------------------------------------------------------------------------------
+A) Lauch EC2 Dashboard
+-----------------------------------------------------------------------------------------------------
+
+Lauch and instance
+
+Name and tags
+
+Name -->  for eg- webserver
+
+Applications and os Images(Amazon machine Image)
+----------------------------------------------------------------------------------------------------
+AIM application image machine is nothing but a applications server or database.
+
+Quickstart
+-----------------------------------------------------------------------------------------------------
+select redhat ( redhat,ubntu linux server ) 
+
+
+Instance types
+-----------------------------------------------------------------------------------------------------
+t series used for testing not prod.
+
+m-series 
+r-series
+
+t2micro( 1 cpu) 
+t2 medium ( 2cpu) 
+
+Key pair login
+-----------------------------------------------------------------------------------------------------
+Without key login we can't connect to our EC2 instance.
+key pair login is used to connect securly your instances.
+( connect our ec2 machine required key pair) 
+
+
+
+Region
+-----------------------------------------------------------------------------------------------------
+1) Aws is geographical separate as region.
+2) India _ Mumbai
+3) Each own region has avaiblity zones ( mumbai has 3 avaibllitiy region)
+
+
+VPC
+-----------------------------------------------------------------------------------------------------
+Virtual private cloud.
+
+
+Firewall
+-----------------------------------------------------------------------------------------------------
+ALlow service on partical port
+
+
+SSH ( secure shell) 
+-----------------------------------------------------------------------------------------------------
+ssh default port 22 (Secure shell)
+
+
+
+secuirty group company
+----------------------------------------------------------------------------------------------------
+Custom
+
+
+ssh key to coonnect our ec2 machine
+----------------------------------------------------------------------------------------------------
+1) ssh
+2) putty ( public ip)
+
+
+
+Linux commond
+---------------------------------------------------------------------------------------------------
+1) pwd
+
+2) ls
+
+3) cd downloads
+
+4) ls
+
+5) $ --->normal user 
+
+6) # --->root user
+
+7) who am i
+
+8) whoami
+
+9) switch normal user to root user
+   sudo -i
+   
+10) date
+
+11) cal
+
+12) yum install nginx ( to install nginx webapplication ( read only )
+
+    ( systemctl is linux commond)
+13) systemctl enable nginx 
+
+14) systemctl start nginx
+
+15) systemctl status nginx
+
+
+16) control c + enter  (come out required)
+
+# How to check nginx started
+     take public ip - --> paste on browser
+	 
+17) systemctl stop nginx
+
+18) yum install httpd
+
+19) systemctl enable httpd
+
+20) systemctl start httpd
+
+21) 
+
+
+
+How to install application server
+
+How to install webapplication server
+
+
+How to identify public and private ip?
+-------------------------------------------------------
+172,192,19 ---> always private ip start
+
+
+other       ---> public 
+
+
+How to create our own VPC?
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+what is VPC
+-----------------------------------------------------------------------------------------------------
+VPC stands for virtual private cloud.
+
+
+
+How to create Ec2  instance and connect it?
+----------------------------------------------------------------------------------------------------
+
+
+1) .pem file
+ssh clinet direct connect with gitbash if not then try using putty.
+
+2) putty
+1) first open puttygen 
+   load your files(your are not able to see files then select all as extension)
+   ---------
+   save as private key
+   ---------
+   gives name and save it.
+  
+2) open putty
+   -------------
+   paste i/p address (public ip address)
+   left side check ssh option --> click on ssh(double click) --> click pn auth (double click) -->click on broswe click on private file -->
+    open
+	
+3) username ---> ec2-user
+
+
+Steps as per session
+------------------------------------------------------------------------------------------------------
+1) Able to create EC2 machine and connect to terminal.
+
+2)
+
+
+
+Websever
+-------------------------------------------------------------------------------------------------------
+apache, nginx
+
+1) What is nginx?
+------------------------------------------------------------------------------------------------------
+nginx is a webserver.
+default port 80
+
+yum install nginx
+
+
+webapplication
+--------------------------------------------------------
+read the contain 
+httpd,nginx
+
+
+application 
+--------------------------------------------------------
+gives the input 
+tomcat,weblogic,webservr  --8080
+
+
+
+1) How to install nginx webserver?
+-------------------------------------------------------------------------------------------------------
+
+1) connect to your ec2 machine
+2) switch the user (sudo -i) { switch on root user }
+3) yum install nginx           (yum - yellodoc update ma)
+4) enable nginx 
+   ---> systemctl enable nginx
+5) start nginx
+   ---> systemctl start nginx
+6) Check stauts
+   ---> systemctl status nginx
+7) systemctl stop nginx
+
+
+2) How to install apache (httpd)?
+-------------------------------------------------------------------------------------------------------
+1) yum install httpd
+2) systemctl start httpd
+3) systemctl start httpd
+4) systemctl stop httpd
+
+
+3) How to install java 11?
+-------------------------------------------------------------------------------------------------------
+1) sudo yum -y install java-11-openjdk java-11-openjdk-devel
+
+check java -version
+
+4) How to install apache tomcat? or any file outsides?
+------------------------------------------------------------------------------------------------------
+1) wget download tomcat
+2) wget https://dlcdn.apache.org/tomcat/tomcunzipat-8/v8.5.84/bin/apache-tomcat-8.5.84.zip
+3) yum install wget zip unzip
+4) wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.zip
+5) ls
+6) unzip apache-tomcat-8.5.84.zip
+7) mv  apache-tomcat-8.5.84 /opt/tomcat
+7)chmod -R 755 /opt/tomcat   {this commond give file permission)
+8) /opt/tomcat/bin/startup.sh
+
+How to check tomcat running or not / also in our project jvm param how to see?
+
+ps -ef | grep tomcat
+
+(grep regular expression)
+
+How to stop tomcat
+/opt/tomcat/bin/shutdown.sh
+
+
+
+chmod -R 755 /opt/tomcat
+what is 755?
+
+   - file permission
+   dr - directory permission   
+           4    2       1   
+7- user { read write execute }
+5- group{ 
+5- other 
+
+
+How to create file 
+touch file1.txt
+
+{777 full permission}
+
+how to change permission
+
+chmod 777 file1.txt
+
+------------------------------------------------------------------------------------------------------
+ 
+
+1) ls -lrt
+2) ls -ltra
+
+
+
+
+
+
+
+
+5) How to install jenkins or how to add jenkins inside the tomcat?
+------------------------------------------------------------------------------------------------------
+
+   wget jenkinw war file 
+   (https://updates.jenkins.io/download/war/)
+  1)wget https://updates.jenkins.io/download/war/2.384/jenkins.war
+
+  (to install any package we required wget)
+
+  2) ls 
+  
+  3) cp jenkins.war /opt/tomcat/webapp
+  
+  4) go to browser
+     public url:8080/jenkins
+	
+  5) copy red line
+    /root/.jenkins/secrets/initialAdminPassword
+	
+	cat /root/.jenkins/secrets/initialAdminPassword
+	
+  6) configure plugin ( to communicate with diff servet we need to configure pluggin ( docker,terraform)
+  
+     installed suggested plugin
+	
+  7) enter user name Harsh password Harsh7770@
+  
+  8) Go to browser 
+  
+     public i/p:8080/jenkins
+	 
+  9) New items
+  
+  10) enter name of an item 
+  
+      first project
+	  
+	  free style project
+	  
+	  biuld - shell script ( date) 
+	  
+	  click on build see green marks
+	  
+	  
+	  Where to see the project 
+   11) Go to putty
+    ls -ltra
+	
+	cd .jenkins
+	
+	cd workspace/
+	
+	ls
+	
+	able to see the build projects
+	
+
+
+  11) check the build project
+  
+  cd ~
+  
+  cd .jenkins
+  
+  cd workpace
+  
+  
+  12) How to default configuration/JVM configuration/JVM
+ 
+     ps -ef | grep -i tomcat
+	 
+	 grep ---> regular expression
+	 
+  
+  13) Start billing when your we by infrastructure.
+  
+     
+  
+
+  
+
+---------------------------------------------------------------------------------------------------
+	  
+  
+  
+  
+6) Git  
+---------------------------------------------------------------------------------------------------
+enter enter click if not working may be disconnected case.
+
+1) How to create file through git?
+---------------------------------------------------------------------------------------------------
+1) cat >> file.txt
+
+  ctrl+D  enter
+
+2) How to modify access of files
+  
+   chmod 777 file1.txt
+   
+3) How to read data from the file
+  
+  cat file.txt
+  
+4) git log
+
+   git log means generated 40 diGit code.
+   
+5) git push 
+
+ means push file from local to central
+ 
+6) In realtime project git repo is always private.
+
+7)How to check our repo name or which repo we are pushing?
+
+  git remote -v
+  
+  
+8) How to add new branch 
+
+   git branch branchName
+   
+   git checkout branchName
+   
+   git push --set-upstream origin branchName
+   
+9) 
+ 
+8) 
+
+
+
+
+7) Real time scenario
+----------------------------------------------------------------------------------
+(Only on aws account is there)
+( but not give full access to you)
+when you join any organization they are not going to create a separate aws account 
+for you. They will different username and password.
+So multiple people can use it.
+
+
+8) IAM 
+----------------------------------------------------------------------------------
+Every day we are login as root, but in compnay we are not going to login as a
+root.
+
+Once you join company how they are going to create  a separate username and password.
+
+IAM stands for Identity access management
+1) What is programatic access?
+   Programatic access means you can access your account throgh cli.
+   
+2) Password Aws console access
+Every day we required login .
+
+
+How admin add permission to existing user?
+------------------------------------------------------------------------------------
+1) Login AWS account
+2) Search IAM (identity access management)
+3) user
+4) Add user
+5) user name - (for eg- dev)
+6) yes - programatic access
+7) yes - password aws management console
+8) yes- Autogenerated password
+9) Next
+10)create group --- Group name (for eg- dev)
+11) filter policies (for eg- S3FULLACCESS)
+12) Next: 	Tags
+13) Add tags key- NAME Value - IAM
+14) Create user
+15) copy username - rbhuse
+    Access key id - AKIAT7RNEMRPRIIYDTWI
+	screte access key- bO6RSDlQw7Bz8C4owuLRHH9LktQJwvUW+M/uk9mQ
+	password - ZVz'ge+{Ae&uaky
+	
+	Account id =273898824799
+	
+16) usr to user
+   https://273898824799.signin.aws.amazon.com/console
+
+
+user only able to access the s3 bucket
+
+
+How to delete IAM user account? or how admin is going to delete it?
+---------------------------------------------------------------------------------------
+1) Login admin
+2) Search IAM
+3) User
+4) select checkbox
+5) delete
+
+
+
+
+Inside aws
+EC2 instance
+
+
+9) Multifactor authentication
+------------------------------------------------------------------------------------
+
+1) click on username
+2) Assing MFA
+3) app you get number then you able to login your account.
+
+
+How to delete ? 
+------------------------------------------------------------------------------------
+
+
+
+
+
+10) WHat is S3 Bucket? or what's purpose?
+------------------------------------------------------------------------------------
+S3 Bucket means simple storage (scalable stroage in cloud), you can save pdf, images, videos
+
+1) one s3 bucket size is 5 TB
+   you can create upto 100 TB
+   
+2) s3 bucket access globle even if you create under one region.
+
+3) s3 standard in frequent -gives immediate data (it is more expensive)
+   s3 glacier means give data after one , two or may be some delay period. ( it has less cost)
+   
+   life cycle policies reduce the bill means some days s3 standard switch into s3 glacier and then so on.
+   
+   also if you don't want contain after 100 days you can specify that period automatically contain
+   goes delete.
+
+
+steps to create s3 bucket   
+How to create s3 bucket?
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+1) Search s3
+   
+2)create bucket
+
+3) buckername
+
+4)choose aws regions
+
+5) acls enabled
+
+6) bucket ownership prefered
+
+7) block all public access
+
+8) click tunring all block notification
+
+9) bucket versioning - enabled
+
+10) create bucket
+
+11) click on circle --> click on bucker name -->
+
+    upload
+
+12) add files
+
+13) upload
+
+14) click on buckets
+
+15) click on circle and click bucket name
+
+16) click on file name
+
+17) click on object action ---	>make public using ACL
+
+18) make public
+
+19) object url ( anyone can access it)
+
+
+How to delete s3 bucket file?
+---------------------------------------------------------------
+1) delete files contains s3 bucKet
+
+2) delete s3 bucket
+
+
+
+
+
+Bucket classification?
+------------------------------------------------------------------------------------
+Standard 
+
+Standard frequesnt
+
+glacier
+
+
+Object
+------------------------------------------------------------------------------------
+
+
+what is Bucket versioning and why we required?
+------------------------------------------------------------------------------------
+Bucket versioning means keep multiple variant of object.
+bucket replacing we required 
+
+For this we need two bucket.
+
+
+What is mean by s3 bucket reflecting or how to create it?
+------------------------------------------------------------------------------------
+Two create s3 bucket reflection we required min 2 buckets.
+1) bucket A ( mubai region)
+2) bucket B (norway region)
+
+basically reflection allows us to create or reflect files on another regin or destination when we add into our base region.
+
+
+2) Bucket B (base)
+
+   1)upload file
+   2)management
+   3)create replication rule
+     select our desitination name
+   4) Sometimes it will take a time to replecate
+
+
+
+
+
+
+
+
+
+11) VPC
+------------------------------------------------------------------------------------
+VPC stands for virtual private cloud.
+VPC is combincation of subnets.
+Advantages VIMP
+
+1) it provide secuirty.
+
+Main component-
+1) NAT Gateway -  gives internet to private subnet
+2) Route table - network flow direction
+3) Internet gateway -internet gateway gives internet access to public subnet
+
+
+
+1)Subnet - Bignetwork divided into small small multiple subnetworsks.
+
+       1) private subnet --in    --->1c
+	                             --->1d
+	  
+	   2) public subnet  --out   --->1a
+	                             ---> 1b
+								 
+				
+2) IGT - Internet gateway ---> 
+
+3) NET - NAT gateway always public to get internet.
+
+4) route table - gives network flow direction (here is public and private) 
+
+5) CIDR - cidr range company desides practially.
+
+
+
+what is elastic ip?
+------------------------------------------------------------------------------------
+Elastic ip is static ip, never changed
+
+
+what is normal ip?
+-------------------------------------------------------------------------------------
+Normal public ip is dyanamic  ip ,it will change once you stop ec2 means.
+
+
+
+
+
+How to create VPC
+-------------------------------------------------------------------------------------
+North virgina ( multiple availabiltiy zones)
+
+***********
+    VPC
+***********
+
+1) Search vpc
+
+2) resource to create -- VPC only
+
+3) Name tag - hrp-vpc
+
+4) IPV4 CIDR block
+
+5) IPV4 CIDR
+   (check cidr.xyz)
+  10.10.0.0/16
+
+6) IPV6 CIDR block
+   No IPv6  CIDR block
+
+7) Tenancy 
+    Default
+   (dedicate it's too costly but in real company using it)
+
+8) Create VPC.
+
+
+***********
+  SUBNET
+***********  
+
+1) Create subnet 
+
+   A) select your vpc.
+
+   B) subnet setting 
+      
+      subnet name - hrp-public-subnet-1a
+	  
+	  avaiblilty zone - 1a
+	  
+	  cidr block
+	  
+	  10.10.0.0/24
+	  
+	  add new subnet
+	  
+	  add two public subnet   ---> 1a,1b
+
+      add two private subnet  ---> 1c,1d
+
+
+******************
+Internet gateways
+******************
+
+1) 	create internt gateway
+
+2) Attach vpc
+
+
+******************
+NAT gateway
+******************  
+1) hrp -ngt
+
+2)subnet
+1a
+
+3) connectivyt= types
+public
+
+4)elastic ip allowxation 
+	  
+
+
+
+
+12) Load Balancer?
+-------------------------------------------------------------------------------------
+Why we required load balancer?
+See suppose a user gives number hits we required load balance. sometime a huge hits 
+there might be chances to down the application.
+
+What type of load?
+User hits, data transfer.
+
+Types of load Balancer
+-------------------------------------------------------------------------------------
+1) Classic load balancer  ( descopeed before 2 years ) (Elastic load balancer)
+2) Application load Balanacer( Nowday everyone use appliation load balancer it has huge advantages)
+3)  Gateway load balancer 
+4) Network load balancer
+
+
+
+How to create Classic loadbalancer (Steps to create classis loadbalancer)
+------------------------------------------------------------------------------------
+
+
+	   
+
+
+Network load balancer
+------------------------------------------------------------------------------------
+1) Netowork load balancer used a huge number request you recived.
+
+
+
+Gateway load balancer
+------------------------------------------------------------------------------------
+When you are using third party application then gateway load balancer is good.	
+
+
+
+
+SSL Certificate for load balancer.
+------------------------------------------------------------------------------------
+
+
+
+Application Load Balancer ( How to create it )
+------------------------------------------------------------------------------------
+1) application load balancer mostly used in http and https.
+Application load balancer supports microservice and containers also.
+
+
+
+
+
+
+
+Difference between application load balancer and classic load balancer?
+------------------------------------------------------------------------------------
+
+
+	   
+
+
+
+
+
+196840608
+3
+
+18002026161
+
+1860
+
+
+
+10) What before the cloud?
+------------------------------------------------------------------------------------
+1) Before cloud on princes is there i.e they are using there own data centres.
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------
+
+02189-234024
+
+
+
+
+
+1) First requiremnt of your project?
+-------------------------------------------------------------------------------------
+server , network , 
+
+
+2)server names?
+------------------------------------------------------------------------------------
+Instance, EC2 ,Virtual machine 
+
+3) EC2 
+------------------------------------------------------------------------------------
+Elastic cloud computing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======================================================================================================================================================================
+                                                      Secure coding- sucure application development
+=======================================================================================================================================================================
+
+1) Section A
+
+secure coding-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+secure coding is a way to writing application or software that shileded from cyber attacks.
+
+
+2) Section B
+
+SDLC- Software development life cycle
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Every application is made following sdlc steps. It has basically seven steps such as
+1) Analysis of Requirments
+2) Defining
+3) Desigign
+4) Coding
+5) Testing
+6) Deployment
+7) Maintance
+
+Owasp Top 10 web application proactive or sequrity risks[ open web application security proactive]
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Defining Security Requirements
+2) leverage of framworks and libraries
+3) Sucure database access
+4) Ecaspe and enable data
+5) Validate All input
+6) Implements digital Identity
+7) TLS Transport layer security
+8) Handel all error and exception
+9) Implement security logging and monotoring
+10)Protect data everywhere
+
+1)Defining security requirments
+Every software makes by following SDLC steps. Nowdays agile is very famous to develop actual software in an industry.But they don't follow security concepts.
+After making application then work on security is not good. We need to implements security from sratch.
+
+2)Leverage of framework and libraries
+whatever libraries we are using are they internally secured.That's why we need to use updated one and we have Owasp depedency check to check all dependenies updated 
+and secured.
+
+3) Secure database access
+Change default configuaration such as password, avoid sql injection use prepared statement.and commmunication between sever and database server must be encrypted.
+
+4) Validate All Inputs
+All Inputs must be sanitized or whatever input receving from client it must be santized.
+
+5) Escape and enable data
+We have libraries for escape and enable data
+
+6) Implement digital Identity
+Use Cryptographic identity and multifactor authentication like OTP.
+
+7) Protect data Everywhere
+Use https not http
+
+8) Handel all error and exceptions
+
+9) Implements security logging and monotoring
+Log only user actitivies it hepls monotoring later
+
+10) TLS - Transport layer security
+
+
+
+
+
+
+
+Owasp
+------------------------------------------------------------------------
+Open web application security project.
+
+Top 10 means common vulnerability related to software.
+
+
+1) Injection
+------------------------------------------------------------------------
+
+A) SQL Injection 
+B) Commond Injection
+
+
+
+2) Broken Authentication
+------------------------------------------------------------------------
+
+A)
+
+
+3) Broken Access Control
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) Section C
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vulnerablity assessment(
+असुरक्षा मूल्यांकन) and Penetration Testing(प्रवेश चाचणी)
+
+Vulnerability  Assessment
+Vulnerability assessment is the process of defining, identifing classfying priorites of computer application system over the network.
+
+Types of vulnerablity assessments
+1) Active Assessments - We do directly assessment
+2) Passive Assessments - We do Indirectly Assessments
+3) Hot based assessements - We do assesment for particular system
+4) Internal assessments- Inside member find out the vulnerablity 
+5) External Assessments- Outside the member find out the vulnerablity
+6) Network based assessments
+7) Wireless based assessments
+8) Application assessments
+
+ Penetration Testing
+Penestration testing is the process of hacking System with the permission from owner of that system to evaluate performance,hack values,attcaks other components
+such as threat daisy chaining
+
+Types of penetrstion Testing
+1)Black Box- Black box testing means blind testing pentester doesn't have information about the system.
+2)Gray Box- Gray box testing means pentester has some information about the system such as port no.
+3) White Box- White box testing means pentestert has complete infomration about the system.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) Section -D
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Input Validation  
+All input must be sanitized or don't trust on user input.
+
+A) SQL(Structured query language) Vulnerablity 
+SQL Injection vulnerablity allows an attakcer to inject malicious input through sql statement.
+Types of SQL Injection 
+1) Error based sql injection
+2) Boolean based sql injection
+3) Time based sql injection
+4) Out of band based sql injection
+
+Prevetation from sql injection
+Use prepared statement, becaouse whatever input we passing it act as string literal not sql statements.Use placeholder.
+
+B) Xpath injection vulnerablity
+x path query language used to select data from xml resource.
+
+C) XSS- cross site scripting vulnerablity 
+Cross site scripting vulnerablity allows an attakcer to inject malicous code in the form of script.
+Types of xss vulnerablity
+1) Stored vulneablity
+2) Reflected vulnerablity
+3) DOM based vulnerablity
+
+d)OS commond injection Vulnerablity
+OS Commod injection vulnerability allows an attacker to execute arbitary commond.This type of vulnerablity generally occur when input isn't properly sanitized.
+
+e)Local File Inclusion(LFI)
+Local file inclusion exposes the sensitive information. It is listed on owasp top ten security web application riks or proactive.
+
+f)Remote file inclusion(RFI)
+Remote file inclusion is very serious vulnerablity. If vulnerablity exist attacker insert malicious external files and later run on web application.The most efficient 
+way to detect RFI by using automated scanner such as acunetix. To avoid remote file inclusion we need to follow the steps like never trust on user input 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Devolper commit the code on stash
+2) jenkins(cicd tool) pull the code from stash
+3) cicd job -A)git clone 
+             B)mvn clean package (maven as build tool -- generate java artifact)
+			 c)docker build  ( with the help of docker file)
+			 d)docker image push
+             e)deploy docker image in k8s(kubernetes)			 
+4) private docker hub repository (image will avaible here)	 
+
+
+5) kubernet cluster   ( role - if a pod has any issue then it will replace with another pod)
+   A) master mc   (from jenkins we will not directly interact with worker machine)
+   B) worker mc   (pod - inside pod our application is running)
+   C) NodePort    (to access cluster from outside)
+
+6) End user get respose from pod only.
+
+
+--------------------------------------------------------------------------------------
+# Implement CICD with - jenkins,docker,kubernetes
+
+Step 1)
+--------------------------------------------------------------------------------------
+1) Install jenkins on ubuntu machine
+   docker support on ubuntu.
+   docker communicate cann't install on redhat.
+   
+   
+
+2) -------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+                                                 !!! Shree Swami Samarth !!!
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
+1) What is AWS?
+_______________________________________________________________
+AWS stands for amazon web services.
+It is cloud provider.
+It provide different types of services and server pay as you go 
+basics.
+
+
+2) What is histroy of AWS?
+_______________________________________________________________
+Aws internally launched in 2002.
+Currenctly AWS has 31 region and 99 availabity zones.
+
+3) What is use of AWS Cloud?
+______________________________________________________________
+Aws cloud is used to make scalable application.
+it is also used for storage and backup, hosting the websites,
+mobile and social apps, gaming or etc.
+
+4) What is region in aws?
+_______________________________________________________________
+Region is nothing but geographical area.
+for eg- Europe,Asia
+
+5) What is availability zone in aws?
+_______________________________________________________________
+Availabitiy zone nothing but a local data centres.
+under the region we have availability zones.
+Each region has min 3 and max 6 local data centre are available.
+for eg- us-east-1, us-east-2
+
+6) How can we connect aws regions?
+_______________________________________________________________
+Using network or private network we can connect to aws regions.
+
+7) Why under the regions more than one zone are available?
+_______________________________________________________________
+A customer application stand event if complete failure of zones.
+
+8) How to choose AWS regions?
+_______________________________________________________________
+1) Latency - Latency is most imp fact while choosing the aws regions.
+             for eg - suppose your application is deployed on your 
+			 local region, i.e mumbai. If you try to access it from mumbai region 
+			 you get faster performance,but if you are going to access it 
+			 from another region you will get smaller latency.
+			 
+2) Pricing - Pricing of region vary, it's not similar.
+
+3) Larger zones get newly updated feauture first as compared to 
+   smaller zone .
+
+9) How many ways we can access our aws account?
+_______________________________________________________________
+1) There are three different ways to access your aws account.
+A) aws maangement console
+B) aws cli (commond line interface)
+C) aws sdk(software developem	ent kit)
+
+   
+   
+	
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+                                          !!! Shree Swami Samarth !!!
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+1) IAM 
+______________________________________________________________
+1)IAM Stands for Identity Access management.
+2)Aws provide IAM service.
+3)IAM is a global service i.e it is available globaly, not a specific
+region.
+4)The main purpose of IAM service to restrict the users , allow them
+only required access, also to launch unnessary new service it will
+make cost i.e IAM is very impl.
+
+
+2) Group
+________________________________________________________________
+Group means basically number of people works together like dev,QA,SCM,
+engineering team,db team or etc.
+Inside the group we can specify the number of service allow to use.
+
+3) Users
+_____________________________________________________________________________
+Under the User we can specify the names of people want to allocate the group,
+like users hpatil group dev
+another rthambe group QA
+
+4) Practial How to create User Group?
+_____________________________________________________________________________
+1) IAM
+2) Group
+3) Create Group
+4) Name of the group - QA
+5) Attach permission policy - AwsS3FullAccess
+6) Create group
+
+
+5) How to create user and assing in group?
+______________________________________________________________________________
+1) IAM
+2) Users
+3) User name --> rthambe
+4) provide user to access aws management console optional
+5) I want to create IAM user
+6) Autogenrated password
+7) User must create new password
+8) Next
+9) Add user group
+10) select the group name - QA
+11) Next
+12) Create user
+13) Email, download the username and password
+14) Return to the user lists
+
+
+6) Dashboard
+_________________________________________________________________________________
+1)Account alias
+2)Edit
+3)Enter the allias name
+
+
+7) What are the policies in IAM?
+_________________________________________________________________________________
+1) Policies nothing but a lists of service. Like adminfullaccess,s3buckets.
+2) While creating group admin will decides which policy want to add in that group,
+   that group member can access those services.
+   
+/**************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************/
+                                                               !!! Shree Swami Samarth !!!
+/**************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************/
+
+
+1) CLOUD PRACTONER
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+What is cloud?
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+What is server? and what contain inside the server?
+------------------------------------------------------------------------------------------------------------------------------------
+Server means basically designed to handle request from client.
+Server is composed of CPU, RAM ,STORAGE ,DATABASE,NETWORK ASSPETS.
+
+
+
+
+
