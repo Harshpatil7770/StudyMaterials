@@ -1,0 +1,193 @@
+# maintain master as a central branch on git 
+# Use tortoize git  or git bash
+#Every 15 branches make one release Tag
+
+
+
+********** Need To Implement Below things *************
+
+A) Need to implement hibernate caching 
+     I) ehcache
+     II) second level cache
+	 
+	 Cache using one fileds , two filed(findByFirstAndListName(String firstName,String lastName))
+
+B) Wrap @Transactional annotations wherever required(make unit of work) 
+         if exception occur it starts from first unit of work. 
+		 With difffrent properties
+
+C) Define a unit of work
+
+D) Make communication between two services with the help of MQ i.e
+     service A send or put msg into mq then service b listen that msg
+     and processed further.
+
+E) Write Test cases for both positive and negative scenarios
+
+F) If required try to use serilizable
+
+G) Try to use java 1.8 feature and reduce the code
+
+H) Need to make one poc with hibernate cache
+
+I) Use swagger
+
+J) Generate the logs on specified path
+
+K) When you send msg to queue make it final on local variable
+
+L) Use serilizable while sending msg over the network or queues
+
+M) Try to put queue name in properties files and take it with the help of @Value annotations use it  **** not sure about this point 
+       but must need to try.
+
+N) check How much time taken to put msg or send msg over the queue
+      long start=System.currentTimeMills();
+      rabbitTemplate.convertAndSend (destination,msg);
+      
+O) Need to crete different queues
+     such as add new branch send queue,
+                  assing branch 
+     modifiy as per requirement
+
+P) Try to implement thread executor framework
+
+Q) Try to use Thread
+
+R) Validte JVM arguements ( How to check or how to add jvm arguments)
+
+S) Use custom HashMap or Implement custom hashmap
+
+T) Remove unused jar from build path ( How to remove unwanted jar or unused jar from project)
+
+U) use equals and contains methods wherever required.
+
+V) JSON Formatter online ( check json corrected format or not)
+
+W) Create jar file of your application or create war file of your application.
+
+X) Try to implement Mapper or ObjectMapper
+
+Z) How to use retry logic 
+
+A) How to compare the time lies between two other time or not ? also check for date? How to add or minus day.
+
+B) Use logger with info,debug and error. How to use parameterized logs ( need to create Logger logger=LoggerFactory.getLogger(CLASSNAME.class);
+
+C)1) How to get specific location or how to read file form specific location
+
+D) Write Junit with mockito test cases.
+
+E) Set Name to the thread while executing method 
+for eg- Thread.currentThread().setName("ProxyInboundMsgListener-Thread");
+
+F) How to use Custom HashMap? (How to overide equals and HashCode method)
+
+G) How to push your changes , How to create new branch , How to take pull , How to merge your changes , How to take back your pushed and merged changes,
+   How to switch new branch , How to resolve merge conflicts
+   
+H) Create a project add Date related things on it.
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+1) Config Server  - port no-8888
+     A) Put all configuration on server { use git to store all common application properties }
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+2) Eureka Server - port no-8761
+    A) Register all services on eureka server.
+    B) Add properties to eureka doesn't register itself as client
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+3) Admin service
+   A) Add Bank details   -  Add, update,delete, read {Enpoints}
+   B) Manager Account  - Add,update,delete,read {Endpoints}
+                                         When account created sent msg to rabbitmq
+   C) Generate Password for every new Customer account
+   D) Take fileds as per your requirements
+
+   E) Table - I) Manager_Basic_details
+                    II) Customer_account_basic_deatils
+                    III) branch_details
+                    IV)  Address
+  F) Branch -  Table - branch_details, common_address. 
+                   -  Add, update, delete, read { endpoints }
+                   -  Add one branch details 
+                   -  RestApi endpoints - 1) addNewBranch
+                                                        2) updateBranchDetails
+                                                        3) findAllBranchesWithAddressDetails
+                                                        4) findByBranchId
+                                                        5) findBranchByName
+                                                        6) deleteBranch  
+
+-----------------------------------------------------------------------------------------------------------------------------------
+4)  Manager Service -
+     i) Create,update,delete and read the customer account
+     ii) account relatated details such as saving or current
+     iii) Transaction type creadited ,debited , fund transfer.
+     ii) when manager add new customer details get stored on manager sides customer table as well as 
+          customer service sides customer table
+
+-----------------------------------------------------------------------------------------------------------------------------------
+5) Customer service -
+     i) update account related details
+     ii) check balance
+     iii) change password
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+6) API Gateway -
+    i) make all services call from here or act as router
+
+-----------------------------------------------------------------------------------------------------------------------------------
+7) Hystrix dashboard or zool
+  i) check currently working on not
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------------
+1) How to raise code review request on fisheye
+
+
+
+
+
+How to do recovery
+previous day hee (1 am ko gross report)
+2) clsnet-proxy-services --- test-files - .rec
+
+     
+
+
+--------------------
+gross cls1obo - 02/Dec  911
+
+------------
+mockito core
+junit
+
+
+
+
+
