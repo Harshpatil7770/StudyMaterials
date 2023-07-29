@@ -1543,6 +1543,87 @@ Purpose of MFA is to protect your root and IAM account.
 4) Download microsoft authenticator app
 5) scan it , use two times password
 
+____________________________________________________________________________________________________________________________________
+What is IAM in AWS?
+a) Instance Access Manager
+b) Identity and Account Manager
+c) Identity and Access Management
+d) Internet Access Manager
+
+Answer: c) Identity and Access Management
+
+Which AWS service is used for managing users, groups, and permissions?
+a) AWS S3
+b) AWS IAM
+c) AWS EC2
+d) AWS RDS
+
+Answer: b) AWS IAM
+
+What does an IAM policy allow you to do?
+a) Allocate more storage for your S3 buckets
+b) Access and manage AWS services and resources
+c) Manage billing and payments for AWS services
+d) Connect to your EC2 instances using SSH
+
+Answer: b) Access and manage AWS services and resources
+
+What is the best practice for IAM user access keys?
+a) Create one access key for each IAM user and rotate them frequently.
+b) Create multiple access keys for each IAM user and share them among team members.
+c) Use the root user's access key for all IAM user activities.
+d) Disable IAM user access keys as they are not required.
+
+Answer: a) Create one access key for each IAM user and rotate them frequently.
+
+Which of the following allows you to grant temporary access to your AWS resources to users and applications outside of your AWS account?
+a) User Groups
+b) IAM Policies
+c) Cross-Account Access
+d) Roles
+
+Answer: d) Roles
+
+What is the purpose of IAM roles?
+a) To manage IAM users and groups
+b) To provide permission for AWS services
+c) To define billing and cost management
+d) To delegate permissions to AWS resources
+
+Answer: d) To delegate permissions to AWS resources
+
+Which of the following is NOT an authentication method supported by IAM?
+a) Username and password
+b) Access keys
+c) Multi-factor authentication (MFA)
+d) Biometric authentication
+
+Answer: d) Biometric authentication
+
+What is the AWS service used to enable federation to allow users to access the AWS Management Console or AWS CLI using their existing corporate credentials?
+a) AWS Cognito
+b) AWS SSO (Single Sign-On)
+c) AWS Directory Service
+d) AWS IAM Access Analyzer
+
+Answer: b) AWS SSO (Single Sign-On)
+
+What is the root user in AWS IAM?
+a) The user with the highest permissions in an IAM group
+b) The default user created when setting up an AWS account
+c) The user responsible for managing IAM roles
+d) The user who can access the root directory of an EC2 instance
+
+Answer: b) The default user created when setting up an AWS account
+
+Which of the following best describes IAM policies?
+a) A set of rules for managing AWS resource limits
+b) A document that defines permissions for an AWS user or group
+c) A mechanism to control network access to EC2 instances
+d) A tool for managing storage volumes in AWS
+
+Answer: b) A document that defines permissions for an AWS user or group
+
 
 
 
