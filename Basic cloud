@@ -1704,6 +1704,86 @@ d) AWS CloudWatch
 
 Answer: c) AWS GuardDuty
 
+What is cloud computing?
+a) Hosting websites on dedicated servers
+b) Running applications on local machines
+c) Accessing and managing resources over the internet
+d) Storing data on physical storage devices
+
+Answer: c) Accessing and managing resources over the internet
+
+What are the three main service models in cloud computing?
+a) Infrastructure as a Service (IaaS), Data as a Service (DaaS), and Software as a Service (SaaS)
+b) Platform as a Service (PaaS), Network as a Service (NaaS), and Storage as a Service (STaaS)
+c) Software as a Service (SaaS), Platform as a Service (PaaS), and Function as a Service (FaaS)
+d) Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)
+
+Answer: d) Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)
+
+Which AWS service provides resizable compute capacity in the cloud?
+a) Amazon S3
+b) Amazon RDS
+c) Amazon EC2
+d) Amazon CloudFront
+
+Answer: c) Amazon EC2
+
+What does the AWS Simple Storage Service (S3) provide?
+a) Virtual machines for running applications
+b) A content delivery network for distributing content
+c) Object storage for storing and retrieving data
+d) Managed databases for storing structured data
+
+Answer: c) Object storage for storing and retrieving data
+
+What is the pricing model for AWS Lambda?
+a) Pay-as-you-go
+b) Flat monthly fee
+c) One-time purchase
+d) Free of charge
+
+Answer: a) Pay-as-you-go
+
+Which AWS service enables you to create and manage a virtual network in the cloud?
+a) Amazon VPC
+b) Amazon S3
+c) Amazon EC2
+d) Amazon RDS
+
+Answer: a) Amazon VPC
+
+What AWS service can be used to automatically distribute incoming traffic across multiple instances?
+a) Amazon CloudFront
+b) Amazon Route 53
+c) Amazon S3
+d) Amazon EC2 Auto Scaling
+
+Answer: b) Amazon Route 53
+
+Which AWS service allows you to set up rules to automatically respond to events in your AWS environment?
+a) AWS Lambda
+b) Amazon RDS
+c) Amazon S3
+d) Amazon EC2
+
+Answer: a) AWS Lambda
+
+Which AWS service is used for creating and managing relational databases in the cloud?
+a) Amazon S3
+b) Amazon RDS
+c) Amazon EC2
+d) Amazon DynamoDB
+
+Answer: b) Amazon RDS
+
+What AWS service allows you to run code without provisioning or managing servers?
+a) Amazon EC2
+b) Amazon S3
+c) AWS Lambda
+d) Amazon RDS
+
+Answer: c) AWS Lambda
+
 
 
 
