@@ -1528,6 +1528,21 @@ What is server? and what contain inside the server?
 Server means basically designed to handle request from client.
 Server is composed of CPU, RAM ,STORAGE ,DATABASE,NETWORK ASSPETS.
 
+2) What is means by MFA?
+------------------------------------------------------------------------------------------------------------------------------------
+1) MFA stands for multi factor authentication.
+2) It is the security for your Root as well as IAM account login.
+MFA can be done by using OTP. 
+Purpose of MFA is to protect your root and IAM account.
+
+3) How to assing MFA practially steps?
+------------------------------------------------------------------------------------------------------------------------------------
+1) Go to security creditional
+2) serach Multi-factor authentication (MFA)
+3) Assing MFA
+4) Download microsoft authenticator app
+5) scan it , use two times password
+
 
 
 
