@@ -1624,6 +1624,86 @@ d) A tool for managing storage volumes in AWS
 
 Answer: b) A document that defines permissions for an AWS user or group
 
+What is the main purpose of an IAM group in AWS?
+a) To enable cross-account access for IAM users
+b) To associate IAM users with IAM roles
+c) To define permissions and policies for multiple IAM users
+d) To manage billing and cost allocation for AWS services
+
+Answer: c) To define permissions and policies for multiple IAM users
+
+When using IAM, what does "least privilege" mean?
+a) Giving all IAM users full administrative access
+b) Giving IAM users access to only one AWS service
+c) Providing the fewest privileges necessary to perform a task
+d) Giving IAM users access to a specific geographical region
+
+Answer: c) Providing the fewest privileges necessary to perform a task
+
+Which AWS service allows you to provide cross-account access to resources?
+a) AWS IAM Access Analyzer
+b) AWS CloudTrail
+c) AWS S3
+d) AWS Organizations
+
+Answer: d) AWS Organizations
+
+How can you secure your root AWS account?
+a) Create IAM users with full administrative access
+b) Use multi-factor authentication (MFA)
+c) Disable IAM roles for the root account
+d) Allow public access to the root account for convenience
+
+Answer: b) Use multi-factor authentication (MFA)
+
+What is an IAM access key used for?
+a) It is used to authenticate to the AWS Management Console.
+b) It is used to sign in to the root AWS account.
+c) It is used to identify IAM users and interact with AWS APIs.
+d) It is used to encrypt data in AWS S3 buckets.
+
+Answer: c) It is used to identify IAM users and interact with AWS APIs.
+
+Which AWS service enables you to control access to your AWS resources by allowing or denying incoming traffic based on rules?
+a) AWS IAM
+b) AWS S3
+c) AWS EC2
+d) AWS VPC (Virtual Private Cloud)
+
+Answer: d) AWS VPC (Virtual Private Cloud)
+
+What is the maximum number of IAM users you can create per AWS account by default?
+a) 50
+b) 100
+c) 500
+d) There is no default limit
+
+Answer: c) 500
+
+Which of the following statements about IAM roles is true?
+a) IAM roles can only be assumed by IAM users from the same AWS account.
+b) IAM roles have permanent credentials that cannot be rotated.
+c) IAM roles are associated with IAM groups to manage permissions.
+d) IAM roles can be assumed by IAM users from different AWS accounts.
+
+Answer: d) IAM roles can be assumed by IAM users from different AWS accounts.
+
+What is the purpose of an IAM policy condition?
+a) To specify the region where an IAM user can access resources
+b) To specify the IP address from which an IAM user can access resources
+c) To specify the duration for which permissions are granted in a role
+d) To specify the actions that an IAM user is allowed to perform
+
+Answer: b) To specify the IP address from which an IAM user can access resources
+
+Which AWS service provides a global view of your resources' access and helps you identify and troubleshoot security risks?
+a) AWS Inspector
+b) AWS IAM Access Analyzer
+c) AWS GuardDuty
+d) AWS CloudWatch
+
+Answer: c) AWS GuardDuty
+
 
 
 
