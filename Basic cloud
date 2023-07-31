@@ -1785,6 +1785,24 @@ d) Amazon RDS
 Answer: c) AWS Lambda
 
 
+10) EC2?
+----------------------------------------------------------------------------------------------------------------
+EC2 is nothing but a virtual server.
+
+11) IAM Role
+----------------------------------------------------------------------------------------------------------------
+IAM Role no one is going to use physically, aws servies is goint t use.
+On other hand user are the physical users.
+
+12) In IAM role who is responsible to activate MFA?
+----------------------------------------------------------------------------------------------------------------
+IAM user only responsible to activate MFA.
+
+13) What is the purpose of AWS CLI?
+----------------------------------------------------------------------------------------------------------------
+Using aws cli we can the aws services throgh cli.
+
+
 
 
 
