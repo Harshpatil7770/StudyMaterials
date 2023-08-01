@@ -1802,6 +1802,61 @@ IAM user only responsible to activate MFA.
 ----------------------------------------------------------------------------------------------------------------
 Using aws cli we can the aws services throgh cli.
 
+14) Billing dashboard
+----------------------------------------------------------------------------------------------------------------
+Charges by service basically gives us an information i.e which service is taking money or charges.
+
+15) Is there any way to get notification from aws for some amount is charged or you crossed the limit whatever you 
+    expected for period or day ?
+----------------------------------------------------------------------------------------------------------------
+In aws --> aws budget is avaiable to set budget based on daily , monthly or etc like
+some amount in dolllar , you will get notification on email once you pass the limit.
+
+16) EC2
+----------------------------------------------------------------------------------------------------------------
+EC2 stands for elastic cloud computing.
+It is virtual machine.
+operating system for this such as linux, unix, os.
+Based on the requiremrnt we can take the RAM , CPU , network i.e public or private also firewall rules.
+
+17) What are the types of EC2 instance?
+----------------------------------------------------------------------------------------------------------------
+1) t2 micro - avaible in free tier, 1 cpu , 1 gb memory , ebs storage, 
+2) t2 medium  - 2 cpu
+3) t2 large - 4 cpu
+
+18) EC2 instance lauching
+----------------------------------------------------------------------------------------------------------------
+A) First we will lauch EC2 instance on linux.
+
+B) AMI -Amazon machine image --> base m/c of your operating system.
+
+i.e on which operating system you want to lanuch the EC2 instance.
+
+C) What is instance type?
+Instance type basically suggest us the number of cpu or memeory is available for that the instance.
+for eg- t2 micro -- 1 cpu  and 1 gb memory is avalaible.
+
+d) what is the purpose of key-pair?
+----------------------------------------------------------------------------------------------------------------
+key-pair we need to connect securily to ec2 instance.
+
+19) EC2 Instance Types
+----------------------------------------------------------------------------------------------------------------
+There are basically seven types of EC2 instance
+A) General purpose EC2 instance.
+General purpose EC2 instance get's created using t2 micro.
+
+B) Compute optimized 
+Compute optimized EC2 instance get's used if batch processing, gaming servers, high performnance web servces.
+
+C) Memory optimized
+fast performance of workloads that process large dataset memory,
+
+
+
+
+
 
 
 
