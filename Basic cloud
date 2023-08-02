@@ -1822,8 +1822,8 @@ Based on the requiremrnt we can take the RAM , CPU , network i.e public or priva
 17) What are the types of EC2 instance?
 ----------------------------------------------------------------------------------------------------------------
 1) t2 micro - avaible in free tier, 1 cpu , 1 gb memory , ebs storage, 
-2) t2 medium  - 2 cpu
-3) t2 large - 4 cpu
+2) t2 medium  - 2 vCPU
+3) t2 large - 4 vCPU
 
 18) EC2 instance lauching
 ----------------------------------------------------------------------------------------------------------------
@@ -1851,8 +1851,17 @@ B) Compute optimized
 Compute optimized EC2 instance get's used if batch processing, gaming servers, high performnance web servces.
 
 C) Memory optimized
-fast performance of workloads that process large dataset memory,
+fast performance of workloads that process large dataset memory, relation/non relation database.
 
+D) Storage Optimized
+Storage optimized EC2 instance get's used if there is sequential read and write access on large set of local storage.
+
+20) Security groups
+----------------------------------------------------------------------------------------------------------------
+security group is the fundamental network security in AWS.
+It's control into or out traffic in EC2 instance.
+It control only allow rules.
+Security group acts as firewall on EC2 instance
 
 
 
