@@ -685,6 +685,11 @@ git commit --amend -m "New Commit Message"
 
 git push --force
 
+37) Suppose you took merge from other branch or parent branch and it's showing conflicts, you don't want to merge it.
+    you want to reset the as it is , which cmd you are going to use?
+_____________________________________________________________________________________________________________________________
+git merge --abort
+
 
 
 
