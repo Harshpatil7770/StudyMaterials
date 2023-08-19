@@ -41,6 +41,11 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
    Because spring boot is good platform for developer to develope stand alone application and production ready features that you can just run it.
    and spring boot mainly focus on business logic not any other things.whereas if we use spring we need to add depencies manually as well as deployment descriptor.
+1) It provide prodcution ready future.
+2) Embeded server , like tomcat , jetty
+3) microservice support.
+
+basically springboot built on the top of spring only.
 
 
 6) What are stater dependencies of spring boot module?
@@ -182,8 +187,11 @@
     2)Setter method based dependency injection
 
     1)Constructor based dependency injection means injecting dependency object to the dependent object via constructor.If chnages occur it will create new instance.
+
     2)Setter method based dependency injection means injecting dependency object to the dependent object by using setter method. If changes occur it doesn't create
     new instance. 
+
+By default springboot uses constructor based dependency injections.
 
 
 25) What is IOC?
@@ -272,6 +280,8 @@
 38) What are the limitations of spring boot?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     Spring boot uses dependecies and after that they are not going to use in the project so size of application increase unnecessarily.
+
+1) springboot takes a long time at startup as compared to other light weight framework. for eg - flask framework for python
 
 
 39) What is framework?
@@ -463,7 +473,7 @@
 
 48) What is the latest version of spring boot?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 2.7.2
+    SpringBoot 3.2
 
 
 49) What are the diffrent types of scopes of bean?
