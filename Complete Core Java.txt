@@ -98,7 +98,7 @@ A) Abstraction
                                                                                               1)by using interface
                                                                                               2)by using abstract class
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A-I) what is the difference between abstract and final method?
+3                                                                                               A-I) what is the difference between abstract and final method?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                               abstract method must be implement in subclass whereas final method never override.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -493,7 +493,7 @@ C)Inheritance
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              D-II) Advantage of encapsulation
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	                                                                                             1)To make read only or write only application.
+		                                                                                             1)To make read only or write only application.
                                                                                                      2)control over the data and data security
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------    
                                                                                              7 -  A)What is differnce between abstraction and encapsulation?       
@@ -555,6 +555,7 @@ C)Inheritance
                                                                                               1)Variable
                                                                                              2) Member
                                                                                              3)Fileds
+                                                                                             4) attribute
 
 
 
@@ -1271,7 +1272,7 @@ C)Protected   -
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sinleton class created to restrict the user from creating object of that class. We can create only one object of that class.
 To make class is singelton we need define private and static as field , private constructor.
-      
+3      
                        public class Singleton {
 
                 	private static Singleton singleton = null;
@@ -1864,6 +1865,7 @@ To make class is singelton we need define private and static as field , private 
                                                                         
 									 II)Factory design pattern- 
 									    A subclass is responsible to create the object of an instance.
+                                                                            Factory desing pattern is suitable if there is one interface implemented in more than one diffrent classes. in switch we can get the object of class. main purpose to reduce the number of interface and object creations
 									
                                                                        
                                                                          III)Adapter design pattern -
@@ -1900,11 +1902,11 @@ To make class is singelton we need define private and static as field , private 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 141) What is the latest version of java and which one are you used ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                               I have worked on java 1.7 and latest version of java is 16
+                                                                               I have worked on java 1.8 and latest version of java is 17 / 20
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 142) Which version of springboot and hibernate are you worked?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                               Spring Boot 2.7.1 and hibernate orm(5.6.0)
+                                                                               Spring Boot 3.2 and hibernate orm(5.6.0)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 143) If i have 1 lakh element and i want to find out the index of any element how can you do that?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1928,6 +1930,9 @@ To make class is singelton we need define private and static as field , private 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                Yes need to create object only one one constructor. By using this keyword 
 									        we can call to the another constructor of same class.
+
+                                                                               Yes we can call both i.e. parameterized and default constructor using only one 
+                                                                               object . If instead of resuing the object , if you are using constrctor behaviour is different then better to create separate constructor.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 148) How to use logger in java program also in spring Boot application?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1938,6 +1943,9 @@ To make class is singelton we need define private and static as field , private 
 									  return Logger.getLogger(Logger.Global_Logger_Name);
 									  }
 									  }
+
+A) you can use simple slf4j logger .
+B) you can use Logger form apache log4j.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 149) What is coupling and it's types?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -1969,13 +1977,14 @@ To make class is singelton we need define private and static as field , private 
 155) How many ways to call garbage collector in java? ####################################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 									  There are two ways to call garbage collector in java
-									  1) By using runtime class - we can call the getRuntime() method
+									  1) By using runtime class - we can call the Runtime.getRuntime().gc() method
 									  2) By using System class - we need to call system call static System.gc() method
 							      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 156) What is Externlization? ####################################
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-									  Externalization is used because serlization is not more effective. Externlization means 									    custom serilization. It useful when we want to serilizable a part of an object.
+									  Externalization is used because serlization is not more effective. Externlization means 									   custom serilization. It useful when we want to serilizable a part of an object.
+                                                                           We can make control over the serilization with the help of externalizarion readEXternal and writeExteral() methods.
 							       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 157) What is the difference between serilization and externlization? ####################################
@@ -1992,8 +2001,10 @@ To make class is singelton we need define private and static as field , private 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                Thread safe means only one thread execute at a time.(Sychronized)
 							       or Thread safe means we can access only one thread at  a time.
+                                                               It will gives us consistance result or correct result
 							       Non thread safe means multiple thread execute at a time.(Non Snychroized)
 							       Non Thread safe means we can access multiple thread at a time.
+                                                               It will gives us unconsistance result or data corruption.
 								       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 160) How can one do custom serilization ? WHy we need of custom serialization?
@@ -2096,6 +2107,7 @@ Constant always write with uppercase and by using _ for new keyword.
 176) Explain the importance of import keyword in java? ####################################
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                             import keyword is used to import single class or package in our source file.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 177) What is classpath ?							    
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2192,6 +2204,9 @@ Constant always write with uppercase and by using _ for new keyword.
                                                            first we need to implement our class by serlizable interface.
 							   objectOutputStream is used for write the objects, wheras objectInputStream is used to read the objects.
 
+What is the purpose of serialVersionId in serilization?
+The main purpose of serialVersionId is to main version compability during serilization and deserilization.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 193) Can we serialize static variables in java	?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2248,6 +2263,9 @@ length() - for length!=0 we can restrict the user.
 2) ctrl+shift+f = format of code
 3) ctrl+d= delete to-do generate line
 4) ctrl+shift+o = organzation import
+4) ctrl+l = go to line
+5) ctrl+g on method = to check call hierar
+6) ctrl+f = to find 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 202) How to change JDK version in java? 
@@ -2266,7 +2284,7 @@ Just right click on your project
 There are basically 5 solid principle in java
 S- Single responsiblity principle - A java must be perfrom a single fucntion
 o- open closed principle - The model is open for extension and closed for modification.
-l- luskov principle - 
+l- Liskov Substitution Principle -  liskov principle encourage to use polymorphism , code reusuablity or etc. 
 i- interface seggreagation priciple - spilt larger interface into smaller one
 d- dependency inversion principle - Depedency inversion principle said that we must have to use abstract class or interface instead
                                     of concrete method.
@@ -2276,6 +2294,11 @@ d- dependency inversion principle - Depedency inversion principle said that we m
 volatile keyword is used to acheive the safety thread.
 Volatile is non- access modifier in java.
 If you write volatile keyword with variable mean value read from main memory not a specific memeory.
+
+Volatile keyword is used with filed . If the filed value is going to chnage multiple times. to visible filed value
+easily to other thread volatile keyword get used no need to use explicitly synchronization.
+
+
 
 205) What will happen if we define constructor as private?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2343,6 +2366,15 @@ clone method is used to create the shallow copy of object. shallow copy means cr
 when java program try to access an object reference which has null values.
 If you assign null to the reference varaible you will get the null
 pointer exception.
+
+if your reference variable refer to the null values , you will get the null pointer exxception.
+
+for eg- Employee e =new Employee();
+
+and e is suppose null
+e.getId();
+will throw the null pointer exception.
+
 
 214) How to restrict the user to inherit the class without using final keyword.
 --------------------------------------------------------------------------------------------------------------------------------------- 
@@ -2488,8 +2520,14 @@ private void readObject() methods
      RabbitListner is used to listening the messages.
      
      Once the message is listen is will gone forever.
-     
-   
+
+to make the connection we need 
+queue manager name
+ip address
+port number
+after that you can create your own queuee .ie local quques or remote queuq
+
+
   228) Steps required to use the activemq?
    ---------------------------------------------------------------------------------------------
    1) First we need to lownload the activemq.
@@ -2502,6 +2540,9 @@ private void readObject() methods
      
   229) What is the use of serial version id?
   ---------------------------------------------------------------------------------------------
+serialVersionId basically need in serilizqation and deserilization.
+To avoid the version compability problems.
+
   Serial version id is unique identification for that class.
   Serial version id is used in deserilization to verify the sender and reciever 
   deserilization object similar to the serilization object.
@@ -2605,6 +2646,10 @@ private void readObject() methods
 
 235) What is shallow copy?
 ----------------------------------------------------------------------------------------------
+shallow copy you can use if you want to transfer the immutable objects.
+if there is refrecne variable and some one change it's value then original
+value also get changed.
+
 Shallow copy means copy only filed related to primitive data type not a object reference.
 By using clone() method we can acheive shallow copy. To use clone() method we need to implements
 Cloneable interface. 
@@ -2836,7 +2881,7 @@ class Employee{
   
   249) What is the use of ObjectMapper in java?
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ObjectMapper is used to convert java object inot json string.
+  ObjectMapper is used to convert java object into json string.
   ObjectMapper objectMapper=new ObjectMapper();
   objectMapper.writeValueAsAString(paramter);	
   
@@ -2891,9 +2936,10 @@ class Employee{
 5) What's switch case?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Switch case is used to execute one condition from multiple.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 6) What's break?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- Break is used to directly terminate the loop,It used in loop and switch case.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------Break is used to directly terminate the loop,It used in loop and switch case.
 Break comes under the jump statement.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 7) What's continue?
