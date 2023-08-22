@@ -129,3 +129,6 @@ Operating System Issues: Sometimes, the operating system itself can cause an app
 
 To prevent your Java application from crashing without any error, it's important to design your application with error handling and logging in mind. You should also regularly monitor your application's performance and usage to identify any issues before they cause your application to crash.
 
+18) What is EBS in aws?
+-----------------------------------------------------------------------------------------------------------------------
+Ebs stands for elastic block store. It is newtork drieve not a physicall dive,
