@@ -461,10 +461,20 @@ use case - big data, data ware house , log processing
 1 GB to 1 TB
 
 
+43) EFS 
+-----------------------------------------------------------------------------------------------------------------------------------------
+EFS Stands for elastic file system.
+EFS is mutliregion network file.
+EFS is great way to share the data into different zones.
 
+44) EBS Vs EFS
+-----------------------------------------------------------------------------------------------------------------------------------------
+EBS stands for elastic block storage volume whereas EFS stands for elastic file system.
+EBS get attched at a time one instance expect multi-attched feature.
+For migration we need to take the spanshot and restore it to the another AZ.
 
-
-
+The main difference between EBS and EFS is EBS is used to persist the data , not for reflectons whereas 
+EFS is used to to replicate data across all the Azones.
 
 
 
