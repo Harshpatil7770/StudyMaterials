@@ -433,6 +433,33 @@ you have to manage data replication or backup solution to own, scalling is more 
 2) AMI basically used to create virtual server on aws cloud.It has operating system, software and setting
 alreday setup.
 
+41) EC2 Instance store
+-----------------------------------------------------------------------------------------------------------------------------------------
+EC2 Instance store basically used for temp storage inside your virtual server, for important storage you can go with EBS or USD drive etc.
+
+42) EC2 Instance volume types
+-----------------------------------------------------------------------------------------------------------------------------------------
+1) General purpose SSD
+1 gb to 16 TB
+If need balanaced performance.
+usecase ; every day application , small database in dev/test env.
+
+2) Provisioned IOPS SSD
+4 gb to 16 TB
+high performance
+usecase : critical databaase,high performance applications.
+
+3) Throughout optimized SSD. (High throughout)
+-----------------------------------------------------------------------------------------------------------------------------------------
+size 500 GB to 16 TB
+use case - big data, data ware house , log processing 
+
+4) COLD SSD (Infrequest access)
+500 GB - 16 TB
+
+5) Managetic (on budget) 
+1 GB to 1 TB
+
 
 
 
