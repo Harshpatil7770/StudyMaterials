@@ -475,6 +475,200 @@ For migration we need to take the spanshot and restore it to the another AZ.
 
 The main difference between EBS and EFS is EBS is used to persist the data , not for reflectons whereas 
 EFS is used to to replicate data across all the Azones.
+But primary focus of EFS is provide scalable and shared file storage within a single region.
+where as S3 bucket provide data replicate and storage across all the avaibablity zones.
+
+
+AWS History
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+When was AWS officially launched?
+a) 2001
+b) 2004
+c) 2006
+d) 2010
+
+What was the first service offered by AWS?
+a) Amazon S3
+b) Amazon EC2
+c) Amazon RDS
+d) Amazon DynamoDB
+
+Which AWS product was introduced as a fully managed Hadoop framework?
+a) Amazon S3
+b) Amazon EC2
+c) Amazon EMR
+d) Amazon Redshift
+
+Which AWS service provides a scalable and managed message queue for microservices?
+a) Amazon SQS
+b) Amazon SNS
+c) AWS Lambda
+d) Amazon RDS
+
+What is the global content delivery network (CDN) service provided by AWS?
+a) Amazon S3
+b) Amazon CloudFront
+c) Amazon Route 53
+d) Amazon VPC
+
+AWS Lambda, introduced in 2014, is a service that allows you to:
+a) Deploy Docker containers
+b) Run serverless functions
+c) Create virtual machines
+d) Store and retrieve data
+
+Which AWS database service offers a fully managed in-memory cache?
+a) Amazon RDS
+b) Amazon Redshift
+c) Amazon DynamoDB
+d) Amazon ElastiCache
+
+In 2015, AWS announced a new service for Internet of Things (IoT) applications. What is it called?
+a) AWS IoT Core
+b) AWS IoT Analytics
+c) AWS IoT Device Defender
+d) AWS IoT Events
+
+Which AWS service provides serverless computing capabilities?
+a) Amazon EC2
+b) Amazon S3
+c) Amazon RDS
+d) AWS Lambda
+
+What is the AWS service that helps you create and manage virtual private networks (VPNs)?
+a) Amazon VPC
+b) Amazon EC2
+c) Amazon RDS
+d) AWS Direct Connect
+
+Answers:
+
+c) 2006
+b) Amazon EC2
+c) Amazon EMR
+a) Amazon SQS
+b) Amazon CloudFront
+b) Run serverless functions
+d) Amazon ElastiCache
+a) AWS IoT Core
+d) AWS Lambda
+a) Amazon VPC
+
+How many AWS regions are there globally (as of my last update in September 2021)?
+a) 6
+b) 12
+c) 16
+d) 24
+E) These data centers are or will be arranged into 34 regions 
+
+Each AWS region is made up of multiple isolated locations called:
+a) Availability Zones
+b) Data Centers
+c) Edge Locations
+d) Points of Presence
+
+Which of the following is true about AWS Global Accelerator?
+a) It allows you to deploy applications globally.
+b) It provides regional load balancing only.
+c) It is used to accelerate data transfer within a single region.
+d) It is a replacement for Amazon Route 53.
+
+AWS's edge locations, which are used by Amazon CloudFront, are part of the broader network of __________.
+a) Availability Zones
+b) Regions
+c) Data Centers
+d) Amazon VPCs
+
+Which AWS service helps you manage multiple AWS accounts and workloads across regions centrally?
+a) Amazon CloudFront
+b) AWS Organizations
+c) Amazon VPC
+d) Amazon Route 53
+
+Each AWS region is physically isolated from others to ensure:
+a) High-speed communication between regions
+b) Data consistency across regions
+c) Low-latency communication within regions
+d) Fault tolerance and data sovereignty
+
+AWS's compliance with data residency requirements is facilitated through:
+a) AWS CloudTrail
+b) AWS Direct Connect
+c) AWS Regions and Availability Zones
+d) AWS IAM
+
+Answers:
+
+b) 12
+a) Availability Zones
+a) It allows you to deploy applications globally.
+b) Regions
+b) AWS Organizations
+d) Fault tolerance and data sovereignty
+d) To provide fault tolerance and high availability.
+c) AWS Regions and Availability Zones
+
+
+Availability Zones (AZs) are isolated locations within an AWS region that provide:
+a) Different versions of AWS services
+b) Data sovereignty for customer data
+c) Fault tolerance and high availability
+d) Separate physical networks for each customer
+
+How many Availability Zones are typically present in an AWS region?
+a) 1
+b) 2
+c) 3
+d) 4
+
+
+What is the main purpose of using multiple Availability Zones for an application's architecture?
+a) To minimize data transfer costs between regions
+b) To achieve low-latency communication between instances
+c) To ensure high availability and fault tolerance
+d) To enable global distribution of the application
+
+Within an AWS region, each Availability Zone is equipped with its own:
+a) Set of AWS services
+b) Internet Gateway
+c) Virtual Private Cloud (VPC)
+d) Redundant power supply and networking equipment
+
+How can you improve the fault tolerance of an application deployed in a single Availability Zone?
+a) By using Amazon CloudFront to distribute content
+b) By configuring an Application Load Balancer
+c) By creating cross-region backups
+d) By deploying resources across multiple Availability Zones
+
+In which AWS service do you configure a subnet to be associated with a specific Availability Zone?
+a) Amazon RDS
+b) Amazon S3
+c) Amazon VPC
+d) AWS Lambda
+
+What is the purpose of a cross-region read replica in Amazon RDS?
+a) To offload read traffic from the primary database
+b) To provide high availability for write operations
+c) To improve data transfer speeds between regions
+d) To enable global distribution of the database
+
+Which AWS service enables you to replicate data across multiple Availability Zones and regions?
+a) Amazon EFS
+b) Amazon S3
+c) Amazon RDS
+d) Amazon DynamoDB
+
+c) Fault tolerance and high availability
+c) 3
+c) To ensure high availability and fault tolerance
+b) Internet Gateway
+d) By deploying resources across multiple Availability Zones
+c) Amazon VPC
+a) To offload read traffic from the primary database
+b) Amazon S3
+
+
 
 
 
