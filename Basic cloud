@@ -417,6 +417,25 @@ When you start your instance it will start from the resumed place only. Whenever
 
 When you are going to create EC2 instance that time, you have select hibernate option as enable.
 
+39) What is EBS?
+-----------------------------------------------------------------------------------------------------------------------------------------
+EBS Stands for elastic block storage service provided by aws . You can attach to it to your EC2 instance, it's like a 
+virtual hard drive for your virtual server.
+EBS will store the data even if you stop or terminate the EC2 instance.
+
+Without EBS what will happesn , if you stop or terminate the EC2 instance then local data get lost forever.
+you have to manage data replication or backup solution to own, scalling is more complicated.
+
+40) AMI
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+1) AMI stands for amazon machine image.
+2) AMI basically used to create virtual server on aws cloud.It has operating system, software and setting
+alreday setup.
+
+
+
+
 
 
 
