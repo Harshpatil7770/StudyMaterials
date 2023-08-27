@@ -407,10 +407,17 @@ D. Access the data through a VPC endpoint for Amazon S3
 37) What is the difference between EC2 Instance stop vs EC2 instance hibernate?
 -----------------------------------------------------------------------------------------------------------------------------------------
 EC2 Instance stop fully shut down the instance. Whenever you do this then RAM content is getting are lost.
- When you start it again it will from fully startup process.
+ When you start it again it will from fully startup process. Wheneved you do this it will take 2 min start the process
 Whereas 
 EC2 Instance hibernate means instance goes on hibernate mode. When you do this then RAM content is getting stored.
-When you start your instance it will start from the resumed place only.
+When you start your instance it will start from the resumed place only. Whenever ypu do this it will take zero minute to start it
+
+38) How to enable hibernate on EC2 instance?
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+When you are going to create EC2 instance that time, you have select hibernate option as enable.
+
+
 
 
 
