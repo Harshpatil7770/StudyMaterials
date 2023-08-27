@@ -669,6 +669,225 @@ a) To offload read traffic from the primary database
 b) Amazon S3
 
 
+Scenario: You are designing an application that requires users to authenticate using their existing corporate credentials. Which AWS service should you use for this purpose?
+
+a) Amazon Cognito
+b) AWS Single Sign-On (AWS SSO)
+c) AWS Identity and Access Management (IAM)
+d) Amazon Identity and Directory Service
+
+Scenario: You are building a web application that will allow customers to log in using their social media accounts. What AWS service can you leverage to simplify this integration?
+
+a) AWS Single Sign-On (AWS SSO)
+b) Amazon Cognito
+c) AWS Identity and Access Management (IAM)
+d) Amazon Simple Notification Service (SNS)
+
+Scenario: You have a team of developers working on different components of your application. You want to ensure that each developer has access only to the resources they are responsible for. What principle of IAM should you follow?
+
+a) Least Privilege
+b) Need to Know
+c) Shared Responsibility
+d) Defense in Depth
+
+Scenario: Your organization has multiple AWS accounts, and you want to provide centralized control and management of these accounts. Which AWS service can help you achieve this?
+
+a) Amazon Cognito
+b) AWS Single Sign-On (AWS SSO)
+c) AWS Identity and Access Management (IAM)
+d) Amazon Route 53
+
+Scenario: You need to grant a third-party service temporary access to upload files to your S3 bucket. What is the recommended approach to achieve this?
+
+a) Share your AWS root credentials
+b) Create an IAM user with full S3 access and share its credentials
+c) Create an IAM role with appropriate S3 permissions and assign it to the third-party service
+d) Give the third-party service access to your AWS account directly
+
+Answers:
+
+b) AWS Single Sign-On (AWS SSO)
+b) Amazon Cognito
+a) Least Privilege
+b) AWS Single Sign-On (AWS SSO)
+c) Create an IAM role with appropriate S3 permissions and assign it to the third-party service
+
+
+What is the primary purpose of AWS Identity and Access Management (IAM)?
+
+a) To manage your Amazon Elastic Compute Cloud (Amazon EC2) instances
+b) To manage and secure your AWS resources by controlling access
+c) To automate deployment of Amazon Web Services (AWS) resources
+d) To manage your Amazon Simple Storage Service (Amazon S3) buckets
+
+Which statement best describes IAM users?
+
+a) IAM users are physical individuals who have access to the AWS Management Console.
+b) IAM users are virtual entities that represent applications and services within your AWS account.
+c) IAM users are automatically created for all AWS accounts and cannot be modified.
+d) IAM users are only used for billing and subscription purposes.
+
+What is the principle of "Least Privilege" in the context of IAM?
+
+a) Giving users maximum permissions to avoid access issues.
+b) Assigning every user the same permissions to simplify management.
+c) Providing temporary access to all resources for a limited period.
+d) Giving users only the permissions they need to perform their tasks.
+
+You have a group of administrators who need full access to AWS services for management purposes. What is the recommended approach?
+
+a) Share the root user credentials with the administrators.
+b) Create an IAM user for each administrator with full permissions.
+c) Use a single IAM user for all administrators to simplify management.
+d) Grant permissions directly to the administrators' personal Amazon accounts.
+
+What is the purpose of an IAM role?
+
+a) It defines a set of permissions for an IAM user.
+b) It provides authentication for AWS services.
+c) It represents a physical person accessing AWS resources.
+d) It grants temporary permissions to entities like AWS services and applications.
+
+Answers:
+
+b) To manage and secure your AWS resources by controlling access
+b) IAM users are virtual entities that represent applications and services within your AWS account.
+d) Giving users only the permissions they need to perform their tasks.
+b) Create an IAM user for each administrator with full permissions.
+d) It grants temporary permissions to entities like AWS services and applications.
+
+What is the primary purpose of an IAM role in AWS?
+
+a) To represent a physical person accessing AWS services.
+b) To assign static permissions directly to an EC2 instance.
+c) To delegate permissions to AWS services or applications without sharing long-term credentials.
+d) To manage billing and subscription information for the AWS account.
+
+
+How does an application running on an EC2 instance assume an IAM role?
+
+a) By using the IAM user's access keys.
+b) By providing the IAM user's password.
+c) By temporarily acquiring security tokens associated with the IAM role.
+d) By attaching the IAM role directly to the application.
+
+What is the advantage of using IAM roles for EC2 instances instead of embedding access keys?
+
+a) IAM roles provide long-term credentials, improving application performance.
+b) IAM roles do not require any permissions to be granted.
+c) IAM roles can be shared across multiple AWS accounts.
+d) IAM roles offer automatic and secure rotation of temporary credentials.
+
+Which AWS service relies on IAM roles for granting permissions to AWS resources?
+
+a) Amazon RDS
+b) Amazon S3
+c) Amazon CloudFront
+d) Amazon EC2
+
+When creating an IAM role, what is the recommended approach for attaching permissions policies?
+
+a) Attach full AdministratorAccess policy for flexibility.
+b) Attach multiple policies to grant each permission individually.
+c) Attach a policy with the principle of least privilege.
+d) Attach policies directly to IAM users for better control.
+
+c) To delegate permissions to AWS services or applications without sharing long-term credentials.
+c) By temporarily acquiring security tokens associated with the IAM role.
+d) IAM roles offer automatic and secure rotation of temporary credentials.
+d) Amazon EC2
+c) Attach a policy with the principle of least privilege.
+
+
+What is the primary purpose of an IAM user in AWS?
+
+a) To represent an AWS service accessing resources.
+b) To provide authentication for end-users accessing the AWS Management Console.
+c) To delegate permissions to AWS services and applications.
+d) To manage billing and subscription information for an AWS account.
+
+How can you allow an IAM user to access the AWS Management Console?
+
+a) Share the root user's credentials with the IAM user.
+b) Share the access key ID and secret access key with the IAM user.
+c) Create a password for the IAM user and share it.
+d) Create an IAM user and grant them console access using permissions.
+
+IAM users are used for which of the following purposes?
+
+a) To assign permissions to resources like Amazon S3 buckets.
+b) To manage access to AWS resources and services.
+c) To automatically scale applications based on traffic.
+d) To create and manage Amazon EC2 instances.
+
+What is the recommended practice for giving permissions to IAM users?
+
+a) Assign full AdministratorAccess policy to all IAM users.
+b) Attach policies directly to IAM users for maximum control.
+c) Use IAM roles instead of IAM users for better security.
+d) Attach policies to IAM groups and then add IAM users to those groups.
+
+You have an application that needs to interact with multiple AWS services. What is the most secure way to provide credentials to the application?
+
+a) Use your AWS root account credentials.
+b) Embed an access key directly in the application's code.
+c) Create an IAM user, assign an appropriate policy, and use its access key.
+d) Use temporary security credentials provided by AWS Identity Federation.
+
+b) To provide authentication for end-users accessing the AWS Management Console.
+d) Create an IAM user and grant them console access using permissions.
+b) To manage access to AWS resources and services.
+d) Attach policies to IAM groups and then add IAM users to those groups.
+c) Create an IAM user, assign an appropriate policy, and use its access key.
+Please note that AWS services and features might have evolved since my last update in September 2021. Always refer to the latest AWS documentation for accurate and up-to-date information.
+
+
+What is the primary purpose of an IAM user in AWS?
+
+a) To represent an AWS service accessing resources.
+b) To provide authentication for end-users accessing the AWS Management Console.
+c) To delegate permissions to AWS services and applications.
+d) To manage billing and subscription information for an AWS account.
+
+How can you allow an IAM user to access the AWS Management Console?
+
+a) Share the root user's credentials with the IAM user.
+b) Share the access key ID and secret access key with the IAM user.
+c) Create a password for the IAM user and share it.
+d) Create an IAM user and grant them console access using permissions.
+
+IAM users are used for which of the following purposes?
+
+a) To assign permissions to resources like Amazon S3 buckets.
+b) To manage access to AWS resources and services.
+c) To automatically scale applications based on traffic.
+d) To create and manage Amazon EC2 instances.
+
+What is the recommended practice for giving permissions to IAM users?
+
+a) Assign full AdministratorAccess policy to all IAM users.
+b) Attach policies directly to IAM users for maximum control.
+c) Use IAM roles instead of IAM users for better security.
+d) Attach policies to IAM groups and then add IAM users to those groups.
+
+You have an application that needs to interact with multiple AWS services. What is the most secure way to provide credentials to the application?
+
+a) Use your AWS root account credentials.
+b) Embed an access key directly in the application's code.
+c) Create an IAM user, assign an appropriate policy, and use its access key.
+d) Use temporary security credentials provided by AWS Identity Federation.
+
+Answers:
+
+b) To provide authentication for end-users accessing the AWS Management Console.
+d) Create an IAM user and grant them console access using permissions.
+b) To manage access to AWS resources and services.
+d) Attach policies to IAM groups and then add IAM users to those groups.
+c) Create an IAM user, assign an appropriate policy, and use its access key.
+
+
+
+
 
 
 
