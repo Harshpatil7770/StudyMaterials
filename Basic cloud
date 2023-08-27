@@ -264,6 +264,7 @@ THis is most expensive option.
 -----------------------------------------------------------------------------------------------------------------------------------------
 public ipv4 - It's always unique, mc identify over the www . It will get changes once you stop and start the ec2 instance.
               To keep one then you have to use elastic ip.
+              You have to allocate elastic ip to public ip.
 private ipv6 - THe mc get's identify over the proviate network only. Two different prviate network has same ip address.
 
 
@@ -401,6 +402,19 @@ A. Access the data through an Internet Gateway.
 B. Access the data through a VPN connection.
 C. Access the data through a NAT Gateway.
 D. Access the data through a VPC endpoint for Amazon S3
+
+
+37) What is the difference between EC2 Instance stop vs EC2 instance hibernate?
+-----------------------------------------------------------------------------------------------------------------------------------------
+EC2 Instance stop fully shut down the instance. Whenever you do this then RAM content is getting are lost.
+ When you start it again it will from fully startup process.
+Whereas 
+EC2 Instance hibernate means instance goes on hibernate mode. When you do this then RAM content is getting stored.
+When you start your instance it will start from the resumed place only.
+
+
+
+
 
 
 
