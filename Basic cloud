@@ -417,8 +417,7 @@ D. Access the data through a VPC endpoint for Amazon S3
 
 37) What is the difference between EC2 Instance stop vs EC2 instance hibernate?
 -----------------------------------------------------------------------------------------------------------------------------------------
-EC2 Instance stop fully shut down the instance. Whenever you do this then RAM content is getting are lost.
- When you start it again it will from fully startup process. Wheneved you do this it will take 2 min start the process
+EC2 Instance stop fully shut down the instance. Whenever you do this then RAM content is getting are lost. When you start it again it will from fully startup process. Wheneved you do this it will take 2 min start the process
 Whereas 
 EC2 Instance hibernate means instance goes on hibernate mode. When you do this then RAM content is getting stored.
 When you start your instance it will start from the resumed place only. Whenever ypu do this it will take zero minute to start it
@@ -443,6 +442,9 @@ you have to manage data replication or backup solution to own, scalling is more 
 1) AMI stands for amazon machine image.
 2) AMI basically used to create virtual server on aws cloud.It has operating system, software and setting
 alreday setup.
+
+AMI is template of virtual server. when you want to create new server , so instead creating form scrach link , os and software installing,
+things simple you can use AMI  for thatr.
 
 41) EC2 Instance store
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -475,6 +477,8 @@ use case - big data, data ware house , log processing
 43) EFS 
 -----------------------------------------------------------------------------------------------------------------------------------------
 EFS Stands for elastic file system.
+EFS is scalable and managed file storage services in AWS.
+Managed storage service means user don't need to worry about the hardware and sotware of complexity to store the data
 EFS is mutliregion network file.
 EFS is great way to share the data into different zones.
 
@@ -590,6 +594,10 @@ a) Availability Zones
 b) Regions
 c) Data Centers
 d) Amazon VPCs
+
+What is edge location in AWS?
+________________________________________________________________________
+Edge location is content delivery network that cache content in edge location.
 
 Which AWS service helps you manage multiple AWS accounts and workloads across regions centrally?
 a) Amazon CloudFront
