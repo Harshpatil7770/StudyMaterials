@@ -908,7 +908,8 @@ c) Create an IAM user, assign an appropriate policy, and use its access key.
 -------------------------------------------------------------------------------------------------------------------------------
 Question #1 
 
-A company is planning to run a global marketing application in the AWS Cloud. The application will feature videos that can be viewed by users. The company must ensure that all users can view these videos with low latency.
+A company is planning to run a global marketing application in the AWS Cloud. The application will feature videos that can be viewed by users.
+The company must ensure that all users can view these videos with low latency.
 Which AWS service should the company use to meet this requirement?
 
     A. AWS Auto Scaling
@@ -916,20 +917,28 @@ Which AWS service should the company use to meet this requirement?
     C. Elastic Load Balancing
     D. Amazon CloudFront
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 8, 12:39
 The best option for the company to ensure that users can view videos with low latency would be to use Amazon CloudFront. 
 
 CloudFront is a content delivery network (CDN) that speeds up the delivery of static and dynamic web content, such as HTML, CSS, JavaScript, and images, as well as videos.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #2
 
-Which pillar of the AWS Well-Architected Framework refers to the ability of a system to recover from infrastructure or service disruptions and dynamically acquire computing resources to meet demand?
+Which pillar of the AWS Well-Architected Framework refers to the ability of a system to recover from infrastructure or service disruptions 
+and dynamically acquire computing resources to meet demand?
 
     A. Security
     B. Reliability
     C. Performance efficiency
     D. Cost optimization
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Amith Bhanudas Aug 8, 13:43
 B. Reliability
@@ -948,6 +957,8 @@ Six pillars for AWS Well-Architected Framework
 6-Sustainability
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #3
 
 Which of the following are benefits of migrating to the AWS Cloud? (Choose two.)
@@ -958,6 +969,8 @@ Which of the following are benefits of migrating to the AWS Cloud? (Choose two.)
     D. Business excellence
     E. Increased staff retention
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 8, 13:48
 Correct Answers
 
@@ -965,6 +978,7 @@ A. Operational resilience: The AWS Cloud is designed to be highly available and 
 
 C. Business agility: Migrating to the AWS Cloud can help organizations to increase their business agility by allowing them to quickly and easily deploy new applications and services, scale their infrastructure up or down as needed, and experiment with new technologies
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #5
 
@@ -978,6 +992,8 @@ Which AWS service or tool should the company use to meet these requirements?
     C. AWS Trusted Advisor
     D. AWS Organizations
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 8, 14:01
 Correct Answers is D.
 
@@ -988,14 +1004,20 @@ With AWS Organizations, you can create a "Consolidated Billing" family, which al
 By sharing Reserved Instances through AWS Organizations, departments that do not fully utilize their Reserved Instances can allocate those resources to other departments that need more Reserved Instances, optimizing the use of these cost-saving commitments.
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservation-sharing.html
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #6 
 
 Which component of the AWS global infrastructure is made up of one or more discrete data centers that have redundant power, networking, and connectivity?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
     A. AWS Region
     B. Availability Zone
     C. Edge location
     D. AWS Outposts
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Amith Bhanudas Aug 8, 14:29
 Correct Answer is B - Availability Zone
@@ -1005,6 +1027,8 @@ An Availability Zone (AZ) is a physically separate data center within an AWS Reg
 The purpose of Availability Zones is to provide fault tolerance and high availability for applications and services hosted in the AWS cloud. By deploying resources across multiple Availability Zones, organizations can ensure that their systems remain operational even if an individual Availability Zone experiences an outage.
 https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #7
 
@@ -1016,6 +1040,8 @@ Which duties are the responsibility of a company that is using AWS Lambda? (Choo
     D. Writing and updating of code
     E. Security of underlying infrastructure
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 8, 14:35
 Correct answers are A and D
 
@@ -1024,6 +1050,8 @@ A. Security inside of code: It is the company's responsibility to ensure the sec
 D. Writing and updating of code: The company is responsible for developing and maintaining the code that runs within the Lambda functions. This involves writing the code, testing it, and making any necessary updates or modifications over time.
 https://aws.amazon.com/compliance/shared-responsibility-model/
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #8 Topic 1
 
@@ -1035,6 +1063,8 @@ Which AWS services or features provide disaster recovery solutions for Amazon EC
     D. AWS Shield
     E. Amazon GuardDuty
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 8, 14:42
 Correct Answers B and C
 
@@ -1042,6 +1072,7 @@ B. Amazon Machine Images (AMIs): An AMI is a pre-configured virtual machine imag
 
 C. Amazon Elastic Block Store (Amazon EBS) snapshots: Amazon EBS is a block storage service for use with Amazon EC2 instances. EBS snapshots are point-in-time copies of an EBS volume that can be used to create a new volume or restore an existing volume. EBS snapshots can be used to recover data in the event of an instance failure, or to create a new instance in a different region or Availability Zone.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #9
 
@@ -1053,6 +1084,8 @@ Which of the following are advantages of this migration? (Choose two.)
     C. Ability to deploy globally in minutes
     D. Elimination of the cost of IT staff members
     E. Redundancy by default for all compute services
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Amith Bhanudas Aug 8, 14:46
 Correct Answers are B and C
@@ -1071,15 +1104,20 @@ The six advantages of cloud computing are:
 •	Go global in minutes.  Option C
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Question #10 
 
-A user is comparing purchase options for an application that runs on Amazon EC2 and Amazon RDS. The application cannot sustain any interruption. The application experiences a predictable amount of usage, including some seasonal spikes that last only a few weeks at a time. It is not possible to modify the application.
+A user is comparing purchase options for an application that runs on Amazon EC2 and Amazon RDS.
+The application cannot sustain any interruption. The application experiences a predictable amount of usage, 
+including some seasonal spikes that last only a few weeks at a time. It is not possible to modify the application.
 Which purchase option meets these requirements MOST cost-effectively?
 
     A. Review the AWS Marketplace and buy Partial Upfront Reserved Instances to cover the predicted and seasonal load.
     B. Buy Reserved Instances for the predicted amount of usage throughout the year. Allow any seasonal usage to run on Spot Instances.
     C. Buy Reserved Instances for the predicted amount of usage throughout the year. Allow any seasonal usage to run at an On-Demand rate.
     D. Buy Reserved Instances to cover all potential usage that results from the seasonal usage.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Amith Bhanudas Aug 8, 14:50
 C is the right Answer. Reserved Instances and On-Demand instances.
@@ -1091,11 +1129,15 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.
 A company is planning to replace its physical on-premises compute servers with AWS serverless compute services. The company wants to be able to take advantage of advanced technologies quickly after the migration.
 Which pillar of the AWS Well-Architected Framework does this plan represent?
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
     A. Security
     B. Performance efficiency
     C. Operational excellence
     D. Reliability
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 8, 13:53
 Correct Answer is B. Performance efficiency: The performance efficiency pillar focuses on the efficient use of computing resources to meet requirements, and how to maintain efficiency as demand changes and technologies evolve.
 Reference: https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/
@@ -1105,6 +1147,7 @@ Not C - Operational Excellence: The operational excellence pillar includes how y
 
 Key consideration is technology change to serverless, which is covered by Performance efficiency. Whereas, Operational Excellence is focused on continuous improvements.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #11
 
@@ -1116,6 +1159,7 @@ Which AWS service or tool provides this information?
     C. Amazon Forecast
     D. Amazon CloudWatch
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 9, 12:01
 B. Cost Explorer
 
@@ -1123,16 +1167,20 @@ After you enable Cost Explorer, AWS prepares the data about your costs for the c
 
 https://docs.aws.amazon.com/cost-management/latest/userguide/ce-enable.html
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #12
 
-A company wants to migrate a critical application to AWS. The application has a short runtime. The application is invoked by changes in data or by shifts in system state. The company needs a compute solution that maximizes operational efficiency and minimizes the cost of running the application.
+A company wants to migrate a critical application to AWS. The application has a short runtime. The application is invoked by changes in data or 
+by shifts in system state. The company needs a compute solution that maximizes operational efficiency and minimizes the cost of running the application.
 Which AWS solution should the company use to meet these requirements?
 
     A. Amazon EC2 On-Demand Instances
     B. AWS Lambda
     C. Amazon EC2 Reserved Instances
     D. Amazon EC2 Spot Instances
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Amith Bhanudas Aug 9, 12:05
 Correct Answer - B. AWS Lambda
@@ -1144,6 +1192,8 @@ From: https://aws.amazon.com/lambda/
 2. Automatically respond to code execution requests at any scale, from a dozen events per day to hundreds of thousands per second.
 
 3. Save costs by paying only for the compute time you use—by per-millisecond—instead of provisioning infrastructure upfront for peak capacity.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #13
 
@@ -1161,6 +1211,8 @@ https://aws.amazon.com/developer/tools/
 B. AWS Cloud9 --> is an IDE provided by AWS
 C. AWS CodePipeline --> for achieving CI/CD
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #14
 
 A company plans to create a data lake that uses Amazon S3.
@@ -1171,6 +1223,8 @@ Which factor will have the MOST effect on cost?
     C. The addition of S3 bucket policies
     D. S3 ingest fees for each request
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 9, 12:16
 Correct Answer - A The selection of S3 storage tiers
 
@@ -1178,6 +1232,7 @@ https://aws.amazon.com/s3/storage-classes/
 B and D don't apply - AWS does not charge for incoming traffic - https://aws.amazon.com/s3/pricing/
 
 Question #16
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Which AWS service or feature can a company use to determine which business unit is using specific AWS resources?
 
@@ -1190,9 +1245,16 @@ Amith Bhanudas Aug 9, 12:30
 Correct Answer - A. Cost allocation tags
 
 https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html
-Cost allocation tags are a mechanism provided by AWS to assign metadata to AWS resources for cost tracking and categorization purposes. By applying cost allocation tags to resources, companies can associate custom metadata to identify and categorize resources based on different criteria, such as business unit, department, project, or application.
+Cost allocation tags are a mechanism provided by AWS to assign metadata to AWS resources for cost tracking and categorization purposes. 
+By applying cost allocation tags to resources, companies can associate custom metadata to identify and categorize resources based on different criteria, 
+such as business unit, department, project, or application.
 
-When using cost allocation tags, companies can track and analyze their AWS costs based on the assigned tags. This allows them to determine the cost distribution among different business units or any other relevant categorization. Cost allocation tags provide granular visibility into resource usage and expenditure, enabling accurate cost attribution and analysis.
+When using cost allocation tags, companies can track and analyze their AWS costs based on the assigned tags. This allows them to determine the
+cost distribution among different business units or any other relevant categorization. Cost allocation tags provide granular visibility into 
+resource usage and expenditure, enabling accurate cost attribution and analysis.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #18
 
@@ -1202,6 +1264,8 @@ Which AWS service or tool should a company use to centrally request and track se
     B. Service Quotas
     C. AWS Service Catalog
     D. AWS Budgets
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Hema Talele Aug 9, 12:38
 C. AWS Service Catalog
@@ -1216,6 +1280,8 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 Service Quotas is an AWS service that helps you manage your quotas for many AWS services, from one location. Along with looking up the quota values, you can also request a quota increase from the Service Quotas console.
 By using Service Quotas, a company can centrally manage its service limits and request increases when needed. It provides visibility into the current limits, usage, and available quota for each service. The service includes an interface to submit requests for limit increases, track the status of the requests, and receive notifications on updates.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #19
 
 Which documentation does AWS Artifact provide?
@@ -1225,10 +1291,14 @@ Which documentation does AWS Artifact provide?
     C. A history of a company's AWS spending
     D. A list of previous-generation Amazon EC2 instance types
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 9, 12:43
 Correct Answer - B. AWS ISO certifications
 https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html
 AWS Artifact provides on-demand downloads of AWS security and compliance documents, such as AWS ISO certifications, Payment Card Industry (PCI) reports, and Service Organization Control (SOC) reports.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #20
 
@@ -1239,12 +1309,16 @@ Which task requires using AWS account root user credentials?
     C. Starting and stopping Amazon EC2 instances
     D. Opening an AWS Support case
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Hema Talele Aug 9, 12:43
 B?
 
 Amith Bhanudas Aug 9, 12:48
 Correct. B. Changing the AWS Support plan
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #17
 
@@ -1255,6 +1329,8 @@ Which AWS service or feature will help the company with its migration?
     B. AWS Consulting Partners
     C. AWS Artifacts
     D. AWS Managed Services
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Kumar Arya Aug 9, 12:32
 A
@@ -1279,6 +1355,8 @@ Amith Bhanudas Aug 9, 13:07
 Correct Answer - B. AWS Consulting Partners
 More appropriate answer is AWS Professional Services, but since that is not an option to choose from, Consulting Partners is the best available option
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #15
 
 A company is launching an ecommerce application that must always be available. The application will run on Amazon EC2 instances continuously for the next
@@ -1289,6 +1367,8 @@ What is the MOST cost-effective instance purchasing option that meets these requ
     B. Savings Plans
     C. Dedicated Hosts
     D. On-Demand Instances
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Amith Bhanudas Aug 9, 12:20
 Correct Answer - B. Savings Plans
@@ -1315,6 +1395,8 @@ Amith Bhanudas Aug 10, 11:40
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #21 Topic 1
 
 A company needs to simultaneously process hundreds of requests from different users.
@@ -1324,6 +1406,8 @@ Which combination of AWS services should the company use to build an operational
     B. AWS Data Pipeline and Amazon EC2
     C. Amazon Kinesis and Amazon Athena
     D. AWS Amplify and AWS AppSync
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Hema Talele Aug 10, 11:46
 A. Amazon Simple Queue Service (Amazon SQS) and AWS Lambda
@@ -1337,8 +1421,10 @@ AWS Lambda is a serverless compute service that allows you to run code without p
 By combining Amazon SQS and AWS Lambda, the company can achieve asynchronous message processing, reliable message delivery, and automatic scaling to handle the high volume of requests from different users efficiently.
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #22
+
 
 What is the scope of a VPC within the AWS network?
 
@@ -1346,6 +1432,8 @@ What is the scope of a VPC within the AWS network?
     B. A VPC must span at least two subnets in each AWS Region.
     C. A VPC must span at least two edge locations in each AWS Region.
     D. A VPC can span all Availability Zones within an AWS Region.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Amith Bhanudas Aug 10, 11:52
 Correct answer D. A VPC can span all Availability Zones within an AWS Region.
@@ -1357,6 +1445,7 @@ A VPC is a logically isolated piece of AWS cloud dedicated to your company. This
 * A Subnet is tied to a single availability zone.
 * EC2 instances launch into subnets.
 More about VPC - https://aws.amazon.com/vpc/features/
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Question #23
@@ -1369,6 +1458,8 @@ Which of the following are components of an AWS Site-to-Site VPN connection? (Ch
     D. Customer gateway
     E. Internet gateway
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 10, 12:00
 Correct Answers
 B. Virtual private gateway
@@ -1378,9 +1469,12 @@ B. Virtual private gateway: A virtual private gateway is the AWS side of the VPN
 D. Customer gateway: A customer gateway is the customer's side of the VPN connection. It represents the physical device or software application located in the customer's on-premises network.
 https://docs.aws.amazon.com/vpn/latest/s2svpn/Examples.html
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #24
 
-A company needs to establish a connection between two VPCs. The VPCs are located in two different AWS Regions. The company wants to use the existing infrastructure of the VPCs for this connection.
+A company needs to establish a connection between two VPCs. The VPCs are located in two different AWS Regions.
+The company wants to use the existing infrastructure of the VPCs for this connection.
 Which AWS service or feature can be used to establish this connection?
 
     A. AWS Client VPN
@@ -1388,9 +1482,12 @@ Which AWS service or feature can be used to establish this connection?
     C. AWS Direct Connect
     D. VPC endpoints
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 10, 12:10
 Correct Answer - B. VPC peering
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #25
 
@@ -1400,6 +1497,8 @@ According to the AWS shared responsibility model, what responsibility does a cus
     B. Install Microsoft SQL Server
     C. Design encryption-at-rest strategies
     D. Apply minor database patches
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Prashant Thakkar Aug 10, 12:11
 C - Design encryption-at-rest strategies
@@ -1411,6 +1510,8 @@ Amazon RDS offers encryption-at-rest for database storage by default. It handles
 Amith Bhanudas Aug 10, 12:16
 Correct Answer - A. Manage connections to the database
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #26
 
 What are some advantages of using Amazon EC2 instances to host applications in the AWS Cloud instead of on premises? (Choose two.)
@@ -1420,6 +1521,8 @@ What are some advantages of using Amazon EC2 instances to host applications in t
     C. EC2 has a 100% service level agreement (SLA).
     D. EC2 has a flexible, pay-as-you-go pricing model.
     E. EC2 has automatic storage cost optimization.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Prashant Thakkar Aug 10, 12:12
 D - EC2 has a flexible, pay-as-you-go pricing model.
@@ -1434,6 +1537,8 @@ B. EC2 integrates with Amazon VPC, AWS CloudTrail, and AWS Identity and Access M
 
 D. EC2 has a flexible, pay-as-you-go pricing model.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #27
 
 A user needs to determine whether an Amazon EC2 instance's security groups were modified in the last month.
@@ -1444,10 +1549,14 @@ How can the user see if a change was made?
     C. Use AWS CloudTrail to see if the security group was changed.
     D. Use Amazon CloudWatch to see if the security group was changed.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 10, 12:23
 Correct Answer - C. Use AWS CloudTrail to see if the security group was changed.
 https://aws.amazon.com/cloudtrail/features/
 "CloudTrail records user activity and API calls across AWS services as events. CloudTrail events help you answer the questions of "who did what, where, and when?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #28
 
@@ -1458,11 +1567,16 @@ Which AWS service will help protect applications running on AWS from DDoS attack
     C. AWS Shield
     D. Amazon Inspector
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 10, 12:25
 Correct Answer is C. AWS Shield
 https://aws.amazon.com/shield/
 
 Maximize application availability and responsiveness with managed DDoS protection
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #29
 
@@ -1473,14 +1587,20 @@ Which AWS service or feature acts as a firewall for Amazon EC2 instances?
     C. Amazon VPC
     D. Security group
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 10, 12:26
 Correct Answer - D. Security group
 Security group - instance level
 NACL  - subnet level
-"A security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic. Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance. When you launch an instance, you can specify one or more security groups. "
+"A security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic.
+Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance. 
+When you launch an instance, you can specify one or more security groups. "
 
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #30
 
@@ -1491,9 +1611,13 @@ How does the AWS Cloud pricing model differ from the traditional on-premises sto
     C. There are no upfront cost commitments
     D. There are no software licensing costs
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 10, 12:28
 Correct Answer - C. There are no upfront cost commitments
 B is incorrect because we do incur Opex. C relates to Capex which we don't incur when using AWS
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #31
 
@@ -1505,6 +1629,7 @@ What can the company do to meet this requirement?
     C. Purchase an EC2 Dedicated Instance.
     D. Change the EC2 instance family to a compute optimized instance.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 11, 11:59
 Correct Answer - B. Scale horizontally across multiple Availability Zones.
 
@@ -1512,6 +1637,8 @@ Amith Bhanudas Aug 11, 12:04
 A "horizontally scalable" system is one that can increase capacity by adding more computers to the system. This is in contrast to a "vertically scalable" system, which is constrained to running its processes on only one computer; in such systems the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage.
 
 Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #32
 
@@ -1523,6 +1650,9 @@ Which benefit has this company experienced by moving to the AWS Cloud?
     C. Agility
     D. Resilience
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Hema Talele Aug 11, 12:00
 C. Agility
 
@@ -1530,6 +1660,8 @@ Amith Bhanudas Aug 11, 12:07
 Correct Answer - C. Agility
 https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
 Increase speed and agility – In a cloud computing environment, new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes. This results in a dramatic increase in agility for the organization, since the cost and time it takes to experiment and develop is significantly lower.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #33
 
@@ -1541,6 +1673,8 @@ Which of the following are included in AWS Enterprise Support? (Choose two.)
     D. Support of third-party software integration to AWS
     E. 5-minute response time for critical issues
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 11, 12:13
 Correct Answers 
 
@@ -1549,6 +1683,8 @@ A. AWS technical account manager (TAM)
 D. Support of third-party software integration to AWS
 https://aws.amazon.com/premiumsupport/plans/enterprise/
 Response times for business critical system down is less than 15 minutes.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #34
 
@@ -1559,6 +1695,8 @@ Which AWS service or feature can the company use to limit the access to AWS serv
     B. Service control policies (SCPs)
     C. Organizational units (OUs)
     D. Access control lists (ACLs)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Hema Talele Aug 11, 12:05
 B. Service control policies (SCPs)
@@ -1577,6 +1715,8 @@ SCPs are available only in an organization that has all features enabled.
 SCPs aren't available if your organization has enabled only the consolidated billing features.
 Correct Answer - B. Service control policies (SCPs)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question #35
 
 A company wants to limit its employees' AWS access to a portfolio of predefined AWS resources.
@@ -1587,18 +1727,24 @@ Which AWS solution should the company use to meet this requirement?
     C. AWS Service Catalog
     D. AWS AppSync
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Hema Talele Aug 11, 12:08
 C. AWS Service Catalog
 
 Amith Bhanudas Aug 11, 12:22
 Correct Answer - C. AWS Service Catalog
 Why AWS Service Catalog?
-Create, organize, and govern a curated catalog of AWS resources that can be shared at the permissions level so you can quickly provision approved cloud resources without needing direct access to the underlying AWS services.
+Create, organize, and govern a curated catalog of AWS resources that can be shared at the permissions level so you can quickly 
+provision approved cloud resources without needing direct access to the underlying AWS services.
 https://aws.amazon.com/servicecatalog/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #36
 
-An online company was running a workload on premises and was struggling to launch new products and features. After migrating the workload to AWS, the company can quickly launch products and features and can scale its infrastructure as required.
+An online company was running a workload on premises and was struggling to launch new products and features. 
+After migrating the workload to AWS, the company can quickly launch products and features and can scale its infrastructure as required.
 Which AWS Cloud value proposition does this scenario describe?
 
     A. Business agility
@@ -1606,10 +1752,15 @@ Which AWS Cloud value proposition does this scenario describe?
     C. Security
     D. Centralized auditing
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 11, 12:25
 Correct Answer - A. Business agility
 https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
-Increase speed and agility – In a cloud computing environment, new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes. This results in a dramatic increase in agility for the organization, since the cost and time it takes to experiment and develop is significantly lower
+Increase speed and agility – In a cloud computing environment, new IT resources are only a click away, 
+which means that you reduce the time to make those resources available to your developers from weeks to just minutes.
+This results in a dramatic increase in agility for the organization, since the cost and time it takes to experiment and develop is significantly lower
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #37
 
@@ -1621,6 +1772,7 @@ Which of the following are advantages of the AWS Cloud? (Choose two.)
     D. Increased deployment time to market
     E. Increased fixed expenses
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 11, 12:27
 Correct Answers 
 
@@ -1631,6 +1783,7 @@ https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cl
 Benefit from massive economies of scale – By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers is aggregated in the cloud, providers such as AWS can achieve higher economies of scale, which translates into lower pay as-you-go prices.
 Stop guessing capacity – Eliminate guessing on your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity. With cloud computing, these problems go away. You can access as much or as little capacity as you need, and scale up and down as required with only a few minutes’ notice.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #38
 
@@ -1642,10 +1795,15 @@ This describes which advantage of the AWS Cloud?
     C. High economies of scale
     D. No guessing about compute capacity
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 11, 12:30
 Correct Answer is C - High economies of scale
-Benefit from massive economies of scale – By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers is aggregated in the cloud, providers such as AWS can achieve higher economies of scale, which translates into lower pay as-you-go prices.
+Benefit from massive economies of scale – By using cloud computing, you can achieve a lower variable cost than you can get on your own.
+Because usage from hundreds of thousands of customers is aggregated in the cloud, 
+providers such as AWS can achieve higher economies of scale, which translates into lower pay as-you-go prices.
 https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #39
 
@@ -1657,14 +1815,19 @@ Which EC2 instance purchasing option will meet these requirements MOST cost-effe
     C. Spot Instances
     D. Convertible Reserved Instances
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
 Hema Talele Aug 11, 12:17
 A. Standard Reserved Instances : as it will be most cost effective for continuous use
 
 Amith Bhanudas Aug 11, 12:31
 Correct Answer - A. Standard Reserved Instances
-"Standard Reserved Instances provide you with a significant discount (up to 72%) compared to On-Demand Instance pricing, and can be purchased for a 1-year or 3-year term. Customers have the flexibility to change the Availability Zone, the instance size, and networking type of their Standard Reserved Instances.
+"Standard Reserved Instances provide you with a significant discount (up to 72%) compared to On-Demand Instance pricing, and can be purchased
+for a 1-year or 3-year term. Customers have the flexibility to change the Availability Zone, the instance size, and networking type of their
+Standard Reserved Instances.
 
 Purchase Convertible Reserved Instances if you need additional flexibility, such as the ability to use different instance families, operating systems, or tenancies over the Reserved Instance term. Convertible Reserved Instances provide you with a significant discount (up to 66%) compared to On-Demand Instances and can be purchased for a 1-year or 3-year term
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question #40
 
@@ -1677,6 +1840,10 @@ Which AWS services could the company use for this database? (Choose two.)
     D. Amazon DocumentDB (with MongoDB compatibility)
     E. Amazon DynamoDB
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Hema Talele Aug 11, 12:15
 D & E : as both are No-SQL databases and hence fast in performance
 
@@ -1688,6 +1855,8 @@ E. Amazon DynamoDB
 Amazon DocumentDB (with MongoDB compatibility): Amazon DocumentDB is a fully managed, highly scalable, and highly available document database service that is compatible with MongoDB. It is designed to provide high performance and durability for NoSQL workloads. The company can leverage the familiar MongoDB API and ecosystem while benefiting from the scalability and managed nature of Amazon DocumentDB.
 Amazon DynamoDB is a fully managed NoSQL database service that offers fast and predictable performance at any scale. It provides low-latency access to data and automatically scales to handle millions of requests per second. DynamoDB is suitable for high-performance, low-latency applications and can handle demanding workloads with ease.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 Question #41
 
 Which tasks are the responsibility of AWS, according to the AWS shared responsibility model? (Choose two.)
@@ -1698,12 +1867,14 @@ Which tasks are the responsibility of AWS, according to the AWS shared responsib
     D. Maintain the physical security of edge locations.
     E. Maintain least privilege access to the root user account.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 14, 12:03
 Correct Answers
 
 B. Upgrade the firmware of the network infrastructure.
 D. Maintain the physical security of edge locations.
 https://aws.amazon.com/compliance/shared-responsibility-model/
+--------------------------------------------------------------------------------------------------------------------------------------
 
 Question #42
 
@@ -1715,6 +1886,8 @@ Which of the following are features of network ACLs as they are used in the AWS 
     D. They process rules in order, starting with the lowest numbered rule, when deciding whether to allow traffic.
     E. They operate at the instance level.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 Amith Bhanudas Aug 14, 12:05
 Correct Answers
 A. They are stateless.
@@ -1724,17 +1897,19 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html
 Network ACLs are stateless, which means that responses to allowed inbound traffic are subject to the rules for outbound traffic (and vice versa).
 
 Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it.
+--------------------------------------------------------------------------------------------------------------------------------------
 
 Question #43
 
-A company has designed its AWS Cloud infrastructure to run its workloads effectively. The company also has protocols in place to continuously improve supporting processes.
+A company has designed its AWS Cloud infrastructure to run its workloads effectively. The company also has protocols in place to continuously
+improve supporting processes.
 Which pillar of the AWS Well-Architected Framework does this scenario represent?
 
     A. Security
     B. Performance efficiency
     C. Cost optimization
     D. Operational excellence
-
+--------------------------------------------------------------------------------------------------------------------------------------
 Hema Talele Aug 14, 12:05
 B & D
 
@@ -1742,8 +1917,9 @@ Amith Bhanudas Aug 14, 12:08
 Correct answer  is D - Operational excellence
 https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.pillar.operationalExcellence.en.html
 
-The Operational Excellence pillar includes the ability to support development and run workloads effectively, gain insight into their operations, and to continuously improve supporting processes and procedures to deliver business value.
-
+The Operational Excellence pillar includes the ability to support development and run workloads effectively, gain insight into their operations, 
+and to continuously improve supporting processes and procedures to deliver business value.
+--------------------------------------------------------------------------------------------------------------------------------------
 Question #44
 
 Which AWS service or feature can be used to create a private connection between an on-premises workload and an AWS Cloud workload?
@@ -1753,6 +1929,7 @@ Which AWS service or feature can be used to create a private connection between 
     C. AWS Direct Connect
     D. AWS PrivateLink
 
+--------------------------------------------------------------------------------------------------------------------------------------
 Hema Talele Aug 14, 12:09
 D. AWS PrivateLink
 
@@ -1767,7 +1944,7 @@ Correct Answer - D. AWS PrivateLink
 Please ignore earlier comment. Sorry about the confusion
 AWS PrivateLink provides private connectivity between virtual private clouds (VPCs), supported AWS services, and your on-premises networks without exposing your traffic to the public internet. Interface VPC endpoints, powered by PrivateLink, connect you to services hosted by AWS Partners and supported solutions available in AWS Marketplace.
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 Question #45
 
 A company needs to graphically visualize AWS billing and usage over time. The company also needs information about its AWS monthly costs.
@@ -1778,6 +1955,7 @@ Which AWS Billing and Cost Management tool provides this data in a graphical for
     C. AWS Cost and Usage Report
     D. AWS Budgets
 
+--------------------------------------------------------------------------------------------------------------------------------------
 Kumar Arya Aug 14, 12:11
 B
 
@@ -1786,10 +1964,11 @@ Correct Answers - B. Cost Explorer
 AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time. Get started quickly by creating custom reports that analyze cost and usage data. Analyze your data at a high level (for example, total costs and usage across all accounts), or dive deeper into your cost and usage data to identify trends, pinpoint cost drivers, and detect anomalies.
 
 https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
-
+--------------------------------------------------------------------------------------------------------------------------------------
 Question #46
 
-A company wants to run production workloads on AWS. The company needs concierge service, a designated AWS technical account manager (TAM), and technical support that is available 24 hours a day, 7 days a week.
+A company wants to run production workloads on AWS. The company needs concierge service, a designated AWS technical account manager (TAM), 
+and technical support that is available 24 hours a day, 7 days a week.
 Which AWS Support plan will meet these requirements?
 
     A. AWS Basic Support
@@ -1797,6 +1976,7 @@ Which AWS Support plan will meet these requirements?
     C. AWS Business Support
     D. AWS Developer Support
 
+--------------------------------------------------------------------------------------------------------------------------------------
 Kumar Arya Aug 14, 12:10
 B
 
@@ -1809,7 +1989,7 @@ A Technical Account Manager (TAM) provides consultative architectural and operat
 With Enterprise Support, you get 24/7 technical support from high-quality engineers, tools and technology to automatically manage health of your environment.
 
 https://aws.amazon.com/premiumsupport/plans/enterprise/
-
+--------------------------------------------------------------------------------------------------------------------------------------
 Question #47
 
 Which architecture design principle describes the need to isolate failures between dependent components in the AWS Cloud?
@@ -1819,13 +1999,15 @@ Which architecture design principle describes the need to isolate failures betwe
     C. Design for single points of failure.
     D. Loosely couple components.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 Kumar Arya Aug 14, 12:08
 D
 
 Amith Bhanudas Aug 14, 12:28
 Correct Answer - D. Loosely couple components.
 https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/loosely-coupled-scenarios.html
-
+--------------------------------------------------------------------------------------------------------------------------------------
 Question #48
 
 Which AWS services are managed database services? (Choose two.)
@@ -1835,6 +2017,7 @@ Which AWS services are managed database services? (Choose two.)
     C. Amazon RDS
     D. Amazon Elastic File System (Amazon EFS)
     E. Amazon DynamoDB
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Kumar Arya Aug 14, 12:08
 C & E
@@ -1844,10 +2027,17 @@ Correct Answers
 
 C. Amazon RDS
 E. Amazon DynamoDB
-C. Amazon RDS: Amazon RDS (Relational Database Service) is a fully managed database service that supports popular relational database engines such as MySQL, PostgreSQL, Oracle, SQL Server, and Amazon Aurora. It handles administrative tasks such as database setup, patching, backups, and automated backups, allowing users to focus on their applications rather than database management.
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
-E. Amazon DynamoDB: Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It offers automatic scaling, built-in security, and automated backups, making it an ideal choice for applications that require low-latency data access and flexible scaling.
+C. Amazon RDS: Amazon RDS (Relational Database Service) is a fully managed database service that supports popular relational database engines such 
+as MySQL, PostgreSQL, Oracle, SQL Server, and Amazon Aurora. It handles administrative tasks such as database setup, patching, backups, and
+automated backups, allowing users to focus on their applications rather than database management.
 
+E. Amazon DynamoDB: Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
+It offers automatic scaling, built-in security, and automated backups, making it an ideal choice for applications that require low-latency data access
+and flexible scaling.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
 Question #49
 
 A company is using the AWS Free Tier for several AWS services for an application.
@@ -1858,18 +2048,18 @@ What will happen if the Free Tier usage period expires or if the application use
     C. The company will be charged for the services it consumed during the Free Tier period, plus additional charges for service consumption after the Free Tier period.
     D. The company's AWS account will be frozen and can be restarted after a payment plan is established.
 
-Kumar Arya Aug 14, 12:07
-A
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 Amith Bhanudas Aug 14, 12:32
 Correct answer - A. The company will be charged the standard pay-as-you-go service rates for the usage that exceeds the Free Tier usage.
-When your free tier expires or if your application use exceeds the free tier limits, you simply pay standard, pay-as-you-go service rates (see each service page for full pricing details). Restrictions apply; see offer terms for more details.
+When your free tier expires or if your application use exceeds the free tier limits, you simply pay standard, pay-as-you-go service rates
+(see each service page for full pricing details). Restrictions apply; see offer terms for more details.
 
 https://aws.amazon.com/free/free-tier-faqs/
 
 Question #50
 
-A company recently deployed an Amazon RDS instance in its VPC. The company needs to implement a stateful firewall to limit traffic to the private corporate network.
+A company recently deployed an Amazon RDS instance in its VPC. The company needs to implement a stateful firewall to limit traffic to the private 
+corporate network.
 Which AWS service or feature should the company use to limit network traffic directly to its RDS instance?
 
     A. Network ACLs
@@ -1887,22 +2077,8 @@ Security Groups are Stateful (retains state of incoming traffic and allows recip
 NACLs are stateless (need to configure for both incoming and outgoing traffic separately.
 
 WAFs are for Web applications and although they can be used, they are not the most appropriate for this use case.
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Security groups - secuirty group is nothing but stateful firewall.
+                  security group basically maintain the allow rules.
+                  basically the main purpose of firewall to control in and out trafic in aws resources.
