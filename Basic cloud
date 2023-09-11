@@ -2082,3 +2082,28 @@ WAFs are for Web applications and although they can be used, they are not the mo
 Security groups - secuirty group is nothing but stateful firewall.
                   security group basically maintain the allow rules.
                   basically the main purpose of firewall to control in and out trafic in aws resources.
+
+
+1) High availablity and scalability
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Vertical scalability - means increase the size of instance. for eg t2 micro to t2 medium. RDS , elasticCache scale veritically.
+                          
+2) Horizontal scalability - means increase the number of instances / system for your applications.
+
+2) Load Balancing
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Load balancing means forward traffic to the multiple servers.
+The main purpose of load balancing is to spread the load across all the instances.
+Types of load balancer
+classis load balancer (deprecated from aws )  
+Application load balancer (V2) 
+Network load balancer
+gateway load balancer
+
+3) Elastic load balancer
+---------------------------------------------------------------------------------------------------------------------------------------------------
+elastic load balancer is fully managed load balancer.
+AWS give fully garranty , it will be work. also provide the upgrade , maintance and high availablity.
+
+
