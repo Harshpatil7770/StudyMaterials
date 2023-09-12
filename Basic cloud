@@ -2106,4 +2106,294 @@ gateway load balancer
 elastic load balancer is fully managed load balancer.
 AWS give fully garranty , it will be work. also provide the upgrade , maintance and high availablity.
 
+4) Application load balancer
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Application load balancer handel the http and https request.
+if you deploy same instance of your application will use application load balancer.
+
+
+Question:
+Which of the following commands can be used with the AWS CLI to list all Amazon S3 buckets in your AWS account?
+---------------------------------------------------------------------------------------------------------------------------------------------------
+A) aws s3 create-bucket
+B) aws s3 ls
+C) aws s3 make-bucket
+D) aws s3 list-buckets
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Answer:
+B) aws s3 ls
+
+
+Question 1:
+Which AWS CLI command is used to create a new Amazon EC2 instance?
+---------------------------------------------------------------------------------------------------------------------------------------------------
+A) aws ec2 create-instance
+B) aws ec2 launch-instance
+C) aws ec2 run-instances
+D) aws ec2 new-instance
+
+Answer:
+C) aws ec2 run-instances
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+What AWS CLI command can be used to delete a specific Amazon S3 object?
+---------------------------------------------------------------------------------------------------------------------------------------------------
+A) aws s3 delete-object
+B) aws s3 remove-object
+C) aws s3 delete-file
+D) aws s3 remove-file
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Answer:
+A) aws s3 delete-object
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Question 3:
+Which AWS CLI command is used to describe the details of an Amazon RDS database instance?
+---------------------------------------------------------------------------------------------------------------------------------------------------
+A) aws rds list-instances
+B) aws rds describe-db-instances
+C) aws rds get-db-instance-details
+D) aws rds show-db-instance
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Answer:
+B) aws rds describe-db-instances
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+You are tasked with automating the process of launching Amazon EC2 instances and attaching them to an existing Elastic Load Balancer (ELB). You need to use the AWS CLI to accomplish this. Which AWS CLI command should you use to launch an EC2 instance and associate it with an ELB?
+
+A) aws ec2 create-instance
+B) aws ec2 run-instances
+C) aws elb attach-instance
+D) aws elb create-instances
+
+Answer:
+B) aws ec2 run-instances
+
+Explanation:
+
+To launch Amazon EC2 instances and associate them with an Elastic Load Balancer (ELB) using the AWS CLI, you should use the aws ec2 run-instances command. This command allows you to create EC2 instances and specify options such as the ELB to associate them with.
+Option A (aws ec2 create-instance) is not a valid AWS CLI command for launching EC2 instances.
+
+Option C (aws elb attach-instance) and Option D (aws elb create-instances) are not valid AWS CLI commands for attaching instances to an ELB. You typically use the aws elbv2 register-targets command to associate instances with an Application Load Balancer or Network Load Balancer.
+
+This question tests your ability to select the appropriate AWS CLI command based on a specific scenario.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question:
+AWS CloudShell is a browser-based shell environment that provides on-demand access to an AWS-managed Linux terminal. What is one of the key benefits of using AWS CloudShell?
+
+A) It requires no AWS account access and is available for free.
+B) It allows direct access to the AWS Management Console.
+C) It provides a Windows-based terminal for compatibility.
+D) It supports SSH access to your EC2 instances.
+
+Answer:
+B) It allows direct access to the AWS Management Console.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is AWS CloudShell primarily used for?
+
+A) Running containerized applications.
+B) Managing AWS resources from the AWS Management Console.
+C) Developing mobile applications.
+D) Providing SSH access to EC2 instances.
+
+Answer:
+B) Managing AWS resources from the AWS Management Console
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Is AWS CloudShell available for free to AWS customers?
+
+A) Yes, it's always free.
+B) No, it has an additional cost.
+C) Yes, but only for the first hour of usage.
+D) Yes, but only for certain AWS regions.
+
+Answer:
+A) Yes, it's always free.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Which type of terminal environment does AWS CloudShell provide?
+
+A) Windows-based terminal.
+B) Mac-based terminal.
+C) Linux-based terminal.
+D) Web-based terminal.
+
+Answer:
+C) Linux-based terminal.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 4:
+In AWS CloudShell, which AWS CLI version is pre-installed and available for use?
+
+A) AWS CLI version 1.
+B) AWS CLI version 2.
+C) AWS CLI version 3.
+D) AWS CLI version 4.
+
+Answer:
+B) AWS CLI version 2.
+
+Question 5:
+Which programming languages are supported by AWS CloudShell for development?
+
+A) Python and Ruby.
+B) Java and C++.
+C) Node.js and Go.
+D) PHP and Perl.
+
+Answer:
+C) Node.js and Go.
+
+Question 6:
+Can you use AWS CloudShell to deploy and manage Docker containers?
+
+A) Yes, it fully supports Docker container management.
+B) No, it does not have Docker support.
+C) Yes, but only in certain AWS regions.
+D) Yes, but only for Amazon ECR.
+
+Answer:
+A) Yes, it fully supports Docker container management.
+
+Question 7:
+Which of the following is NOT a benefit of using AWS CloudShell?
+
+A) Access to AWS documentation.
+B) Persistent storage for your data.
+C) A pre-configured CLI environment.
+D) Integration with AWS services.
+
+Answer:
+B) Persistent storage for your data.
+
+Question 8:
+How long is an AWS CloudShell session active before it times out?
+
+A) 5 minutes.
+B) 15 minutes.
+C) 30 minutes.
+D) 60 minutes.
+
+Answer:
+C) 30 minutes.
+
+Question 9:
+Which AWS service is used to provide AWS CloudShell?
+
+A) Amazon EC2.
+B) AWS Lambda.
+C) AWS Fargate.
+D) AWS CodeBuild.
+
+Answer:
+A) Amazon EC2.
+
+Question 10:
+What is the maximum duration for an AWS CloudShell session?
+
+A) 1 hour.
+B) 3 hours.
+C) 6 hours.
+D) 12 hours.
+
+Answer:
+A) 1 hour.
+
+These questions should help you test your knowledge of AWS CloudShell for the AWS Solutions Architect - Associate exam.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Question 4:
+In AWS CloudShell, which AWS CLI version is pre-installed and available for use?
+-----------------------------------------------------------------------------------------------------------------------------------
+A) AWS CLI version 1.
+B) AWS CLI version 2.
+C) AWS CLI version 3.
+D) AWS CLI version 4
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Question 5:
+Which programming languages are supported by AWS CloudShell for development?
+
+A) Python and Ruby.
+B) Java and C++.
+C) Node.js and Go.
+D) PHP and Perl.
+
+Answer:
+C) Node.js and Go.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Can you use AWS CloudShell to deploy and manage Docker containers?
+
+A) Yes, it fully supports Docker container management.
+B) No, it does not have Docker support.
+C) Yes, but only in certain AWS regions.
+D) Yes, but only for Amazon ECR.
+
+Answer:
+A) Yes, it fully supports Docker container management.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Question 7:
+Which of the following is NOT a benefit of using AWS CloudShell?
+
+A) Access to AWS documentation.
+B) Persistent storage for your data.
+C) A pre-configured CLI environment.
+D) Integration with AWS services.
+
+Answer:
+B) Persistent storage for your data.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Question 8:
+How long is an AWS CloudShell session active before it times out?
+
+A) 5 minutes.
+B) 15 minutes.
+C) 30 minutes.
+D) 60 minutes.
+
+Answer:
+C) 30 minutes.
+---------------------------------------------------------------------------------------------------------------------------------
+
+Question 9:
+Which AWS service is used to provide AWS CloudShell?
+
+A) Amazon EC2.
+B) AWS Lambda.
+C) AWS Fargate.
+D) AWS CodeBuild.
+
+Answer:
+A) Amazon EC2.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Question 10:
+What is the maximum duration for an AWS CloudShell session?
+
+A) 1 hour.
+B) 3 hours.
+C) 6 hours.
+D) 12 hours.
+
+Answer:
+A) 1 hour.
+
 
