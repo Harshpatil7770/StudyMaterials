@@ -1,0 +1,3 @@
+!!! MAVEN BUILD CMD !!!
+
+mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean compile package install -Dmaven.test.failure.ignore=true -Dmaven.test.skip=true profiles
