@@ -18,4 +18,8 @@
    cp fileName /c/app/use
    
    cp fileName /c/app/use/fileName
-   
+
+7) To search
+
+zgrep "KEYWORD" *.gz
+    
