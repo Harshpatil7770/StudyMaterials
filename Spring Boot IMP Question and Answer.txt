@@ -1,6 +1,6 @@
-=======================================================================================================================================================================
+===============================================================================================================================================================
                                                                           SpringBoot 
-=======================================================================================================================================================================
+===============================================================================================================================================================
 
 1) What is springBoot?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -364,24 +364,25 @@ By default springboot uses constructor based dependency injections.
     class level annotations used to mark spring mvc application.When we use controller we need to add explicitly response body.
     
     14)@Restcontroller-
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------
     it is combination of @Controller and @Responsebody annotaions. it used to handel restful web serices
     
     15)@PutMapping-
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    used to update the resource
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------
+    used to update the entire resource.
     
     16)@GetMapping-
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------
     Used to return the resource or read the resource
     
     17)@PostMapping- 
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------
     create a new resource
     
     18)@PatchMapping
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------
     -used to partially update the resource
+
     for eg- suppose i have 20 attribute and i want to update only two of them that time will
     go for patchmapping.
     
@@ -422,21 +423,36 @@ By default springboot uses constructor based dependency injections.
     securityconcept
    
    28) @Qualifier
-     -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+     ----------------------------------------------------------------------------------------------------------------------------------------------------------
      @Qualifier annotations is used to choose correct one bean from multiple cases.
    
    29) @Primary
-    -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------
      @Primary annotation is used to give high prioerity to one bean if there are multiple same beans.
      
-   30) @Transaction
-   -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+   30) @Transactional
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------
+   @Transactional annotations is used to manage the transaction,  spring itself is not managing the tranasactional.
+   To make proper transaction i.e commiting and rollback we need transactional annotation.
+   Without transaction we might face inconsitency in application while performing the operation
+
+
+  A) Transactional(readOnly=true)
+  If there is read only operation then we have to use this annotation, it will not allow us to operation write operations.
+  you can use on above the method like findBy....
+
+  B) Transaction(Propogation=Progation.required)
+     or Transaction
+     both are same even if you don't write anything related to propation by default it will consider as propogation.required that means
+     if there is already running transaction it will join that otherwise if there is no any running transaction it will start new transactional.
+
+ 
    
    31) @EnableTransactionManagement
-   -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------
    
    32) @EnableScheduling
-   -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------
    
   
   
@@ -985,6 +1001,22 @@ Which one should get picked by springboot application.
 
 2) If you have application.yaml and bootstrap.properties file. then springboot pick port number from
    application.yaml file
+
+107) Why do we need @PatchMapping because we can do update using @PutMapping already?
+The main difference between @PatchMapping and PutMapping here are
+A) PatchMapping is used to update the partial resource.
+B) PutMapping is used to udpate the completed or entire entity.
+
+Yes technically we can do partial update using putMapping but when client see Path required that means
+some filed get's update not entire resoure.
+
+108) @Cascade
+Cascade annotations is getting used to manage the entity transaction, parent - child.
+Cascade(CascadeType.All) 
+it allow us to perfrom multiple operations.
+
+109) @Cascade(CascadeType.All , orphanRemoval=true)
+orphan removal true mean when you delete parent entity automatically child entity also get deleted.
 
 
 
