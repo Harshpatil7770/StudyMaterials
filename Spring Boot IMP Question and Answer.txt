@@ -1018,6 +1018,13 @@ it allow us to perfrom multiple operations.
 109) @Cascade(CascadeType.All , orphanRemoval=true)
 orphan removal true mean when you delete parent entity automatically child entity also get deleted.
 
+110) Suppose i want to load a class during startup or when my application brings up that class execution shoud start ?
+
+you need to use @EventListener(value=ApplicationReadyEvent.class)
+it will start the execuction of methods,
+
+also @PostConstruct 
+you can use it will call the method loading your applications
 
 
   
