@@ -685,12 +685,33 @@ git commit --amend -m "New Commit Message"
 
 git push --force
 
+
 37) Suppose you took merge from other branch or parent branch and it's showing conflicts, you don't want to merge it.
     you want to reset the as it is , which cmd you are going to use?
 _____________________________________________________________________________________________________________________________
 git merge --abort
 
 
+38) How can we update previous commmit messages?
+_____________________________________________________________________________________________________________________________
+
+i) git rebash -i HEAD~n  
+###n means the number of commit message you want to update, like if you want modify 17 number of commit messsage , enter 17 as n value
+for eg - git rebash -i HEAD~17
+
+ii) once you press enter button , automatically text editior will get opened like this
+pick<commit1_hash> First commit message
+pick<commit2_hash> Second commit message
+pick<commit3_hash> Third commit message
+
+iii) Now the pick to reword ,i.e which commit you want to modify.
+for eg - 
+reword<commit1_hash> First commit message
+pick<commit2_hash> Second commit message
+reword<commit3_hash> Third commit message
+ save the editior.
+
+iv) git push --force
 
 
 
