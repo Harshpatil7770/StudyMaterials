@@ -899,7 +899,60 @@ without using new keyword it will store in string constant pool                 
 ---------------------------------------------------------------------------------------------------------------------------------------
 9) What do you mean by mutable and immutable objects?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Mutable objects means can editable or modify whereas immutable means cannot be modify or editiable.                                                                                                                                                                 
+                                                                                                                                                                Mutable objects means can editable or modify whereas immutable means cannot be modify or editiable.
+
+
+9) Mutuable class vs Immutable class ? 
+---------------------------------------------------------------------------------------------------------------------------------------
+Mutuable class means once you instantiate the class or created the object of class , you can able to modify the variables values.
+
+@AllArgsConstructor
+@Data
+class Emp {
+ private int empId;
+ private String empName;
+}
+
+class Test{
+public static void main(String args[]){
+ Emp emp=new Emp(1,"Harsh");
+
+ system.out.println("Mutuable class before "+emp);
+ 
+ emp.setName("Patil");
+
+ system.out.println("Mutuable class after "+emp);
+}
+
+}
+
+Output -
+         Mutuable class before [1,"Harsh"]
+         Mutuable class after [1,"Patil"]
+
+
+Immutable class means those class object will not change once get intiallzied.
+
+@AllArgusConstructor
+@Getter
+class final Emp {
+ private final int empId;
+ private final String empName;
+}
+
+class Test{
+public static void main(String args[]){
+ Emp emp=new Emp(1,"Harsh");
+
+ //don't have setter method to modify the object.
+
+ Emp emp1=new Emp(2,"Harsh");
+//emp ,emp1 are totally different object, means due to creation of emp1 , it will not affect to
+//  emp object.
+
+}
+}
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 10) Which is the final class in between String ,StringBuffer,StringBuilder?
 ---------------------------------------------------------------------------------------------------------------------------------------
