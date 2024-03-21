@@ -1809,6 +1809,9 @@ Size of hashmap....
   synchronization for that to avoid this kind of stuff, synchronization means only one thread will access at a time so it will avoid 
   inconstitency of result.)
   Hashmap allows duplicate values but only unique keys.
+  By default hashmap is good for singlesided thread environment. 
+  If you try to access hashmap in mutlithread env you will get inconsistent result , so avoid this you need
+  to use synchronization.
 
   {once your memeory or table sized filled upto 12 it will increase the the size of table)
   (0.75*16=12)
