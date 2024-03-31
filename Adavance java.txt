@@ -1301,7 +1301,34 @@ Shutdown hook is part of jvm called before the jvm shut down normally or abruptl
                                                                                                                                                                         1) To avoid thread interface
                                                                                                                                                                         2)To avoid constistance problem 
                                                                                                                                                                         The main purpose of synchronization is to make clear and proper communication between the thread.
-                                                        
+
+
+
+Synchronization means basically , if multiple trying to access one method at a time , so it will allow to access only
+one thread at a time .
+1) it will help to avoid data inconsitency , mean you will get proper result.
+2) It will avoid data corruption.
+ 
+**********************  **********************  **********************
+
+practically , consider in your project there is one method , and you want to synchorinzation small piece of code of that,
+so that time you will go with synchronization block. means if there is another thread is comming or calling the same method a time ,
+it will execute the code above the synchronization block , and if there is any thread is alreday present inside the synchronization block.
+so the outer thread will wait until the execution of inside the synchronization block.
+
+the synchronization block and method has same purpose then what is the purpose of synchronization block,
+what will happen if i use synchronization method instead of synchronization block?
+I know if there is small piece of code we go with synchronization block , but what will happen if we put 
+method as synchronized ? 
+(** reason performane , it is not like that it synchronization will take time to exeute the code, 
+    but synchronization will not allow to call it until the execution of first thread is completed.
+)
+let us consider you have 10 lines of code you want to synchronize 1 and 2 line number or only 8,9 line number of
+rest all code will get executed , and rest all multiple thread trying to execute or access the synchronization block, it will
+wait until the first thread will finish finish the execution of synchronization block. 
+
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 27) What is the purpose of synchronization block?
