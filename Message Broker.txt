@@ -1,0 +1,25 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                             !!! Shree Swami Samarth !!!
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Why we need message broker ?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To scale your application , or to make your application highly scalable, we need to use message broker.
+means the communication between the services will happnes via queues.
+you can send multiple message at a time , you don't need to wait for response.
+your service responsiblity is to put the message over that or another service queue.
+
+
+2) If there is bad message or let's consider you have 1000 message which contain 5 as bad message, now how can you remove it?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) connect with mq guys , support person.
+2) ask them to share the queue data contain txt file.
+3) Here you can search the bad message and similar to that rest all
+4) give them the number of message also
+5) one important thing like support 4 message you have bad message, you found the message number 12 after that, then the 12 will come
+   on 11 th position.
+6) IBM MQ only one you can remove throgh smr. or you can modify them also
