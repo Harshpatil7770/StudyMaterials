@@ -2035,7 +2035,8 @@ output= 2
   2)Copmarable compare with own objects                               2)Comparator compare with two different objects.
   3)Comparable found in java.lang package                             3)Comparator found is java.util package
   4)Comparable provide only one short                                 4)Copmarator provide multiple sort of sequence
-
+  5)Comparable is getting used when you want natural                  5) Comparator is getting used when you want custom order 
+    Order of sequnce.                                                     of objet sequnce.
 
    Ex 1) Employee for Comparable order by empId;
    Ex 2) Employee for Comparator order by empName;
