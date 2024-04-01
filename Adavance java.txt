@@ -2030,13 +2030,17 @@ output= 2
 
 21) What is difference between Comparable and Comparator?
                Comparable                                                     Comparator
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   1)Comparable provide compare To method for comparasion              1)Comparator provide compare method for comparision.
   2)Copmarable compare with own objects                               2)Comparator compare with two different objects.
   3)Comparable found in java.lang package                             3)Comparator found is java.util package
   4)Comparable provide only one short                                 4)Copmarator provide multiple sort of sequence
   5)Comparable is getting used when you want natural                  5) Comparator is getting used when you want custom order 
     Order of sequnce.                                                     of objet sequnce.
+  6) It will provide only one sort of sequence means ,                6) It iwll provide multiple sort of sequence means , if you have 
+     suppose you have three attribute in your pojo class,                class has three new attribute id, name and address,
+     id, name and address.                                               you can sort over it.
+     so you can use only one to sort it.
 
    Ex 1) Employee for Comparable order by empId;
    Ex 2) Employee for Comparator order by empName;
