@@ -2522,7 +2522,7 @@ The main objective of java 1.8 introduce is to enable function programming in ja
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) Lambda Expression 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Lambda expression is used to provide the implementations of functional interface. It is function so .class file will not get created. It is anonymous function.
+   Lambda expression is used to provide the implementations of functional interface. It is function so .class file will not get created. It is anonymous function. It is used to iterate the collection , filter and extraction purpose.
    { anonymous means it doesn't have any return type, method name and modifier also }.
    Lambda expression only applicable for function interface.
    Types of lambda expression such as
