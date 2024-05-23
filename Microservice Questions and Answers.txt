@@ -111,36 +111,33 @@ dependencies such as spring web , spring cloud config server.
 
 14) Which properties we need to add in application.properties so that eureka server doesn't register itself?
 -----------------------------------------------------------------------------------------------------------------------
-    Eureka server doesn't register itself as client we need to add the some properties inside the application.properties file such as
-    eureka.client.register-with-eureka=false
-    eureka.client.fetch-registry=false
+Eureka server doesn't register itself as client we need to add the some properties inside the application.properties file such as eureka.client.register-with-eureka=false eureka.client.fetch-registry=false
     
 
 15) What is use of lombok? --- @Data,@AllArgConstrument,@NoAllArgConstructor
 -----------------------------------------------------------------------------------------------------------------------
-    Lombok dependency mainly used to reduce the boilerplate code.We don't need to write manaually no arguments,argument constructor as well as we don't need
-    to write manually setter and getter methods. 
-    Insted of this we can use the annotations such as @Data,@NoargConstructor,@AllArgsConstructor.
+Lombok dependency mainly used to reduce the boilerplate code.We don't need to write manaually no arguments,argument constructor as well as we don't need to write manually setter and getter methods. 
+Insted of this we can use the annotations such as @Data,@NoargConstructor,@AllArgsConstructor.
 
 
 16) How does your application register with eureka server? @EnableDiscoveryClient
 -----------------------------------------------------------------------------------------------------------------------
-    To register your application on eureka server first we need to add the dependency netflix eureka client and use the annonations such as @EnabaleDiscoveryClient(
+To register your application on eureka server first we need to add the dependency netflix eureka client and use the annonations such as @EnabaleDiscoveryClient(
     It picks the implementations of classpath)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     
 17) How microservice communicate with each other?
------------------------------------------------------------------------------------------------------------------------------------------
-    Microservice communicates with each other by using lightweight http rest or messaging protocols(advanced messaging queue protocol)
+-----------------------------------------------------------------------------------------------------------------------
+Microservice communicates with each other by using lightweight http rest or messaging protocols(advanced messaging queue protocol)
 
 
 18) What are the principle of microservice?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     The main principle of microservice is a sinle service has single resposiblity.
 
 
 19) What are the main component of microservice?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     1) Spring config Server
     2) Eureka naming server
     3) Hystrix dashboard
@@ -149,19 +146,20 @@ dependencies such as spring web , spring cloud config server.
 
 
 20) What are the challenges in microservice?
------------------------------------------------------------------------------------------------------------------------------------------
-    1) Pack of cards- suppose serivce a,b,and c depends upon each other and one service get failed all application become failed.
-    2) Bouded context- decinding boudries of microservice
+-----------------------------------------------------------------------------------------------------------------------
+   1)  Pack of cards- suppose serivce a,b,and c depends upon each other and one service get failed all application 
+     become failed.
+   2) Bouded context- decinding boudries of microservice
 
 
 21) What are the micorservice monotoring tool?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     1) Spring Boot dashboard
     2) Hystrix Dashboard
     3) Eureka Server
 
 22) What do you understand by spring cloud?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     Spring cloud framework maily used to build cloud applications.
     It Helps to build the common feature,
     The main feautere of cloud framework such as
@@ -170,7 +168,7 @@ dependencies such as spring web , spring cloud config server.
     3)distrubuting servcies
 
 23) In which case microservice is best suited?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     1) To make more complex and scabale application microservice architecure is good.
        so we can use in mobile, smart Tvs ,web desktop etc.
 
