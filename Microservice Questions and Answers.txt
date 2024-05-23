@@ -1,58 +1,61 @@
-=========================================================================================================================================
-=========================================================================================================================================
+=======================================================================================================================
+=======================================================================================================================
                                                                     !!! Shree Swami Samarth !!!
-=========================================================================================================================================
-=========================================================================================================================================
-=========================================================================================================================================
-                                                                          Microservice
-=========================================================================================================================================
+=======================================================================================================================
+=======================================================================================================================
+=======================================================================================================================                                                                          Microservice
+=======================================================================================================================
 
 1) What is microservice?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 Micorservice means small small services work together.It must cloud enable.Each service has own database and business layer. Service must be indepdenet deployable.
-   It maily follows the principle such as a one service has only one resposibility.
+It maily follows the principle such as a one service has only one resposibility.
 
 
 2) What is monolithic?
------------------------------------------------------------------------------------------------------------------------------------------
-Monolithic means put functionality into single process.It becomes easy to deploy as single jar/war file. It maily used to make smaller projects also build the
-   proof of concepts. and if there is no expertisize in microservices. 
+-----------------------------------------------------------------------------------------------------------------------
+Monolithic means put functionality into single process.It becomes easy to deploy as single jar/war file. 
+It maily used to make smaller projects also build the
+proof of concepts. and if there is no expertisize in microservices. 
 
 
 3) What are the advantages of monolothic?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
    1)A single file get easily deploy as jar/war file.
    2)TO build proof of concepts.
 
 
 4) What are the disadvantges of monolothic?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
    1)Application become Tightly coupled. 
    2)Difficult to manage as well as maintain
    3)Size of application becomes too much large do diffucult to understand.
    4)For small small changes we need to redeploy the whole application. 
+   5)For small small changes we need re-test whole application , becuase it becomes
+    too much tightely coupled.
+
 
 
 5) When to use monolitic?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
    1) To build proof of concepts.
    2) To make smaller project if team size small.
 
 
 6) When to use microservice?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
    1) To make more complex and scable application.
  
 
 7) What the advantages of microservices?
------------------------------------------------------------------------------------------------------------------------------------------
-   1) Each service indepedent deployable
-   2) loosely coupled easy to test
-   3) Each service has own respobility i.e changes occurs in single service doesn't affect other services.
-
- 
+-----------------------------------------------------------------------------------------------------------------------
+   1) Each service indepedent deployable.
+   2) loosely coupled easy to test.
+   3) Each service has their own respobility i.e changes occurs in single service doesn't affect other services.
+   4) To make more complex complex.
+   
 8) What are the disadvantages of microservice?
------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
    1) Developer need to solve the problem such as load balancer.
    2) No. of services increase high chances of failure.
    3) Development cost is very high
@@ -60,49 +63,68 @@ Monolithic means put functionality into single process.It becomes easy to deploy
 
 
 9) What is the use of spring boot web starter? (Spring Web)
------------------------------------------------------------------------------------------------------------------------------------------
-   1) Spring boot web stater provide rapid and easier application developments, aslo it maily used to develop restful applications.
+-----------------------------------------------------------------------------------------------------------------------
+1) Spring boot web stater provide rapid and easier application developments, also it maily used to develop restful applications.
 
 
 10) Which embeded database can be used in Spring Boot?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     In springboot we use H2 database as a embeded database.
 
 
 11) What is use of spring data JPA?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
     Spring data JPA is used to acces DAO layer.To communicate with database
 
+12) What is Spring Cloud Config Server ?  Advantages , Why do we need it ?
+-----------------------------------------------------------------------------------------------------------------------
+i)  Spring cloud config server is acts as centralized server for our services.
+ii) So bascially we will keep common properties on spring cloud config server , so rest all
+    service can access it and use it.
+iii) So we don't need to right similar properties repetatively.
+iv) We will keep those properties on cloud server and rest all service will provide the the path of that server.
+
+Advantage 
+i) It reduce the repetation of common properties from the service.
+
+13) How to use or develop the spring cloud config server ?
+-----------------------------------------------------------------------------------------------------------------------
+1) To use spring cloud config server or create service in your project first you need add the
+dependencies such as spring web , spring cloud config server.
+2) @EnableSpringCloudConfig annotation you need to use.
+3) Default port number of spring-cloud-config-server application is 8888.
+4) You need to keep properties file on server and provide the server path or url in properties file of
+   spring cloud config server.
 
 12) What is eureka server? ( portno-8761) @EnableEurekaServer /spring cloud netflix eureka server.
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
     To use eureka server we need to add the dependency such as netfilx eureka server and use @EnableEurekaServer annoataions.
     By using eurka server we will can see which service is up or down.
     basically we need unique-service name because service commiunicate with each other based on application-name.
 
 13) Which annotations needed in springBoot application class to enable eureka server?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     To enable eureka server we need to use @EnableEurekaServer annotations. 
 
 
 14) Which properties we need to add in application.properties so that eureka server doesn't register itself?
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     Eureka server doesn't register itself as client we need to add the some properties inside the application.properties file such as
     eureka.client.register-with-eureka=false
     eureka.client.fetch-registry=false
     
 
 15) What is use of lombok? --- @Data,@AllArgConstrument,@NoAllArgConstructor
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     Lombok dependency mainly used to reduce the boilerplate code.We don't need to write manaually no arguments,argument constructor as well as we don't need
     to write manually setter and getter methods. 
     Insted of this we can use the annotations such as @Data,@NoargConstructor,@AllArgsConstructor.
 
 
 16) How does your application register with eureka server? @EnableDiscoveryClient
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
     To register your application on eureka server first we need to add the dependency netflix eureka client and use the annonations such as @EnabaleDiscoveryClient(
     It picks the implementations of classpath)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -341,18 +363,18 @@ other service will up and running fine.
 
 
 43) Practical purpose of eureka server?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 1) Eureka -Server acts as monitor of your application,
 we can easily see their which service is up and down
 
 44) How to build our project using mvn commond?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean compile package install -Dmaven.test.skip=true -p profile
 
  -Dmaven.wagon.http.ssl.insecure=true to protect from vulnerability
  
  45) What is postman? why we need?
- ----------------------------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------------------
  Postman is a tool. basically it is used to hit the rest api's.
  
  46) Whne we go for feign client vs message broker?
