@@ -13,7 +13,7 @@ logging.file=/var/tmp/mylog.log
 
 #spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 #This is database connection properties
-spring.datasource.url=jdbc:mysql://localhost:3306/technosignia
+spring.datasource.url=jdbc:mysql://localhost:3306/tech
 spring.datasource.username=root
 spring.datasource.password=Harsh7770@
 spring.datasource.tomcat.max-wait=20000
