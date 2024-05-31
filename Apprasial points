@@ -6,7 +6,7 @@
 
 4) Taking requirment from client, fixing the bugs, helping qa and engg team with component /service related issuse.
 
-5) POC
+5) POC ( 1 Performance improvement over the application ) 
 A) JMSTemplate we are using to send msg over the queue.
   The performance of JmsTemplate is very low ,
   it took almost 45 min to process the 30K msg.
