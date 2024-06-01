@@ -55,3 +55,7 @@ spring.kafka.topic=settlement
 spring.kafka.topic-json=settlement-json
 
 logging.file.name=mylog.log
+
+
+#Build commond
+mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean compile package install -Dmaven.test.skip=true 
