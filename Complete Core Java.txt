@@ -1,362 +1,295 @@
-======================================================================================================================================================================
-======================================================================================================================================================================
+======================================================================================================================
+======================================================================================================================
                                                                     !!!  Shree Swami Samarth  !!!
-======================================================================================================================================================================
-======================================================================================================================================================================
+======================================================================================================================
+======================================================================================================================
 
 
 1)What is Java and explain histroy of JAVA?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              Java is object oriented programming lanaguage. Java developed by james gosling and 
-                                                                                              first run by sun microsystem.Java is derived by language c++.
-                                                                                              Java is simple langauage. It follow the WORA Concepts i.e write once run anywhere.
-                                                                                              In java we don't need to remove unrefernced object automatically because java
-                                                                                              Uses garbage collector to remove unreferenced object automatically.
+----------------------------------------------------------------------------------------------------------------------
+Java is object oriented programming lanaguage. Java developed by james gosling and 
+first run by sun microsystem.Java is derived by language c++.
+Java is simple langauage. It follow the WORA Concepts i.e write once run anywhere.
+In java we don't need to remove unrefernced object automatically because java
+Uses garbage collector to remove unreferenced object automatically.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 2) Why Java is simple language?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Java is simply derived from c++ language. Java doesn't support pointer and operator overload.There is no need to remove unreferenced object manually because java
-                                                                                             Uses garbage collector to remove unreference object automatically.
+----------------------------------------------------------------------------------------------------------------------
+Java is simply derived from c++ language. Java doesn't support pointer and operator overload.
+There is no need to remove unreferenced object manually because java Uses garbage collector to remove unreference object automatically.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 3) What is object oriented programming language?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                           object oriented programming language menas everything is made of objects.
-											   Object oriented means we organize a application has different combination                                                                                              objects that incorpated with datastucture and behaviour. We can do                                                                                                    programming by using object oriented.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-4) What are the feature of Java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- A) Java is simple   
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------    
-                                                                                       -       Java is simple because it simply based on language c++.Java doesn't support concepts such as pointer and explicit overloading.
-                                                                                               There is no need to remove unreferenced object manually it removed by garbage collector automatically.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
- B) Platform Indepdent  
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                   -         Platform independent means it's byte code run on mutiple platfrom.
-                                                                                             Platform -Hardware or software environment on byte code runs
-                                                                                             Hardware- Physical entity related to our machine
-                                                                                             Software- collection of codes which is installed on your hard drive.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------  c)robust  
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------           
-                                                                                    -       Robust means it has very powerful and strong transaction management                                                                                                   capability.   
----------------------------------------------------------------------------------------------------------------------------------------------------------------------  d)multithreaded    
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-                                                                                     -       Multithreaded means multiple thread execute simultaneously at a same time.We can achieve multitaking with the help of multithreaded.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-e)secure 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-                                                                                    -        It's byte code run inside the jvm. Remove many confisuion such as operator overloading and explicit pointers.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-f) architectural netrual or Why java is architectural neutral?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                    -        There is no implementation dependent feaures.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-g) High perfomance   
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-                                                                                    -        Java uses just time compiler to make performance fast. It is better and faster than other traditional interpreter. 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-h) distributed    
----------------------------------------------------------------------------------------------------------------------------------------------------------------------     
-                                                                                         -     we can create distributed application with the help of RMI and EJB.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-i)portable
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------             
-                                                                                         -     Portable means we can run it's byte code on multiple platform.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-4) What is byte code?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               byte code is intermediate between the java programs allows JVM to convert byte code into machine level assembly instruction.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-5) What is POJO?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              POJO stands for plain old java object. it also called as java bean. It has only fields and methods.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-6) Where JAVA is used?
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               According to sun microsystem more than 3 billions devices uses java. Java used in many cases such as things on mobile games,trading apps,business app etc.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-7) What are the Oops concepts?or Explain oops methodology?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  
-                                                                                               Oops stands for object oriented programming language. oops methodlogy has been derived single concepts i.e objects.
-                                                                                               In Java Basically we have four oops concepts or we have four pillars of java
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-A) Abstraction
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                Abstraction is the process of hiding the implementations or details by showing main services.
-                                                                                               abstraction solve the problem upto design level.
-    
-                                                                                               for eg-
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              1)Sending sms to someone you just type and send it you don't know the internal process.
-                                                                                              2)Automoile steering,brake,ATM machine
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              How to achieve abstraction in java
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              1)by using interface
-                                                                                              2)by using abstract class
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3                                                                                               A-I) what is the difference between abstract and final method?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              abstract method must be implement in subclass whereas final method never override.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              A -II)What is abstarct class?
-                                                                                               Abstract class is used to achieve 0 to 100% abstraction.  If you want to use abstract method then the class must be abstract. whatever method                                                                                                                                      declare inside an abstract class it must be implement in subclass. abstract class have constructor, static member and method also it support both                                                                                                                                     method declaration and defiantion. abstract class never instantiated.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A -III) Can there abstract method  without abstract class?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              No, if you want to use abstract method then class must be abstract.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A-IV) Can we use abstract and final both with method?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              No we can't use abstract and final both with method because abstract method must be implement in subclass. 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A-V) Is it possible to instiated abstract class?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              No, abstract class never instantited.
+----------------------------------------------------------------------------------------------------------------------object oriented programming language menas everything is made of objects.
+Object oriented means we organize a application has different combination objects that incorpated with datastucture and behaviour. We can do programming by using object oriented.
+----------------------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------  A-I)Interface
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4) What are the feature of Java?
+----------------------------------------------------------------------------------------------------------------------
+ A) Java is simple   
+----------------------------------------------------------------------------------------------------------------------
+Java is simple because it simply based on language c++.Java doesn't support concepts such as pointer and explicit overloading. There is no need to remove unreferenced object manually it removed by garbage collector automatically.
+--------------------------------------------------------------------------------------------------------------------  
+ B) Platform Indepdent  
+----------------------------------------------------------------------------------------------------------------------
+Platform independent means it's byte code run on mutiple platfrom.
+Platform -Hardware or software environment on byte code runs
+Hardware- Physical entity related to our machine
+Software- collection of codes which is installed on your hard drive.
+----------------------------------------------------------------------------------------------------------------------
+c)robust  
+----------------------------------------------------------------------------------------------------------------------Robust means it has very powerful and strong transaction management capability.   
+----------------------------------------------------------------------------------------------------------------------d)multithreaded    
+--------------------------------------------------------------------------------------------------------------------- Multithreaded means multiple thread execute simultaneously at a same time.We can achieve multitaking with the help of multithreaded.
+----------------------------------------------------------------------------------------------------------------------
+e)secure 
+--------------------------------------------------------------------------------------------------------------------- It's byte code run inside the jvm. Remove many confisuion such as operator overloading and explicit pointers.
+----------------------------------------------------------------------------------------------------------------------
+f) architectural netrual or Why java is architectural neutral?
+--------------------------------------------------------------------------------------------------------------------- There is no implementation dependent feaures.
+----------------------------------------------------------------------------------------------------------------------
+g) High perfomance   
+--------------------------------------------------------------------------------------------------------------------- Java uses just time compiler to make performance fast. It is better and faster than other traditional interpreter. 
+----------------------------------------------------------------------------------------------------------------------
+h) distributed    
+--------------------------------------------------------------------------------------------------------------------- we can create distributed application with the help of RMI and EJB.
+----------------------------------------------------------------------------------------------------------------------
+i) portable
+--------------------------------------------------------------------------------------------------------------------  Portable means we can run it's byte code on multiple platform.
+----------------------------------------------------------------------------------------------------------------------
+4) What is byte code?
+----------------------------------------------------------------------------------------------------------------------byte code is intermediate between the java programs allows JVM to convert byte code into machine level assembly instruction.
+----------------------------------------------------------------------------------------------------------------------
+5) What is POJO?
+----------------------------------------------------------------------------------------------------------------------
+POJO stands for plain old java object. it also called as java bean. It has only fields and methods.
+----------------------------------------------------------------------------------------------------------------------
+6) Where JAVA is used?
+ ---------------------------------------------------------------------------------------------------------------------According to sun microsystem more than 3 billions devices uses java. Java used in many cases such as things on mobile games,trading apps,business app etc.
+----------------------------------------------------------------------------------------------------------------------
+7) What are the Oops concepts?or Explain oops methodology?
+---------------------------------------------------------------------------------------------------------------------
+Oops stands for object oriented programming language. oops methodlogy has been derived single concepts i.e objects.
+In Java Basically we have four oops concepts or we have four pillars of java
+----------------------------------------------------------------------------------------------------------------------
+A) Abstraction
+----------------------------------------------------------------------------------------------------------------------Abstraction is the process of hiding the implementations or details by showing main services.
+abstraction solve the problem upto design level.
+or eg-
+ ---------------------------------------------------------------------------------------------------------------------
+1)Sending sms to someone you just type and send it you don't know the internal process.
+2)Automoile steering,brake,ATM machine
+----------------------------------------------------------------------------------------------------------------------How to achieve abstraction in java
+----------------------------------------------------------------------------------------------------------------------
+1)by using interface
+2)by using abstract class
+----------------------------------------------------------------------------------------------------------------------
+A-I) what is the difference between abstract and final method?
+----------------------------------------------------------------------------------------------------------------------abstract method must be implement in subclass whereas final method never override.
+----------------------------------------------------------------------------------------------------------------------
+ A -II)What is abstarct class?
+Abstract class is used to achieve 0 to 100% abstraction.  If you want to use abstract method then the class must be abstract. whatever method  declare inside an abstract class it must be implement in subclass. abstract class have constructor, static member and method also it support both method declaration and defiantion. abstract class never instantiated.
+----------------------------------------------------------------------------------------------------------------------
+ A -III) Can there abstract method  without abstract class?
+----------------------------------------------------------------------------------------------------------------------
+No, if you want to use abstract method then class must be abstract.
+----------------------------------------------------------------------------------------------------------------------
+A-IV) Can we use abstract and final both with method?
+----------------------------------------------------------------------------------------------------------------------
+No we can't use abstract and final both with method because abstract method must be implement in subclass. 
+----------------------------------------------------------------------------------------------------------------------
+A-V) Is it possible to instiated abstract class?
+----------------------------------------------------------------------------------------------------------------------No, abstract class never instantited.
+
+----------------------------------------------------------------------------------------------------------------------A-I)Interface
+----------------------------------------------------------------------------------------------------------------------
                                                                                               or
-                                                                                              A-I)What do you mean by interface in java?
-                                                                                               or
-                                                                                               A-I )What is Interface?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Interface same like as class the main difference that interface doesn't have body and constrctor also.
-                                                                                              Interface also represent IS-A relationship.
-                                                                                              Interface is used to achieve 100% abstraction.
-                                                                                               Interface have only method declaration not method defination.By default interface method are public and abstract and variables are public,static and final
-                                                                                              Whatever method declare an interface we must need to implements in subclass.We need to initilize variable at that time of declarations.
-                                                                                               Interface never instantiated.
-                                                                                              Interface is achieve achieve multiple inheritance.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A-II)Is interface inherited to subclass?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              No, interface never inherit in subclass.An interface can inherit multiple interfaces but cannot inherit a class. 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A- III)Why we use interface?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               1)Interface mainly used to acieve 100% abstraction.
-                                                                                               2)By using interface we can achieve multiple inheritance.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A-IV) Can we declare interface as final?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No we can't declare interface as final. 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A-IV)What will happen if we define concrete method inside an interface?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               It will shown compile time errror
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A-IV)What will happen if we not intialized variable inside an interface?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               It will shown compile time errror
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A-IV)What is tightly encapsuled bond in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                To make all variable of class private is tightly encapsulated class in java
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A-I)What do you mean by interface in java?
+ or
+A-I )What is Interface?
+----------------------------------------------------------------------------------------------------------------------
+Interface same like as class the main difference that interface doesn't have body and constrctor also.
+Interface also represent IS-A relationship.
+Interface is used to achieve 100% abstraction.
+Interface have only method declaration not method defination.By default interface method are public and abstract and variables are public,static and final Whatever method declare an interface we must need to implements in subclass.We need to initilize variable at that time of declarations.Interface never instantiated.Interface is achieve achieve multiple inheritance.
+----------------------------------------------------------------------------------------------------------------------
+A-II)Is interface inherited to subclass?
+----------------------------------------------------------------------------------------------------------------------
+ No, interface never inherit in subclass.An interface can inherit multiple interfaces but cannot inherit a class. 
+----------------------------------------------------------------------------------------------------------------------
+A- III) Why we use interface?
+----------------------------------------------------------------------------------------------------------------------
+1)Interface mainly used to acieve 100% abstraction.
+2)By using interface we can achieve multiple inheritance.
+----------------------------------------------------------------------------------------------------------------------
+A-IV) Can we declare interface as final?
+----------------------------------------------------------------------------------------------------------------------
+No we can't declare interface as final. 
+----------------------------------------------------------------------------------------------------------------------A-IV) What will happen if we define concrete method inside an interface?
+----------------------------------------------------------------------------------------------------------------------It will shown compile time errror
+----------------------------------------------------------------------------------------------------------------------
+ A-IV) What will happen if we not intialized variable inside an interface?
+----------------------------------------------------------------------------------------------------------------------
+It will shown compile time errror.
+----------------------------------------------------------------------------------------------------------------------
+A-IV) What is tightly encapsuled bond in java?
+----------------------------------------------------------------------------------------------------------------------
+To make all variable of class private is tightly encapsulated class in java
+----------------------------------------------------------------------------------------------------------------------
  A-II) abstract class
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               If want to declare abstract method then the class must be abstract.abstract class is used to achieve 0 to 100% abstraction. 
-                                                                                                In abstract class we have both method declaration and defination. In abstract class have static varible and static method also.
-                                                                                               What ever method declare an abstract class it must to implement in subclass.
-                                                                                                abstract class never instatiated. Abstract class have constructor. 
-                                                                                               If you don't provide any constructor in abstract class then compile provide default constructor.
+----------------------------------------------------------------------------------------------------------------------If want to declare abstract method then the class must be abstract.abstract class is used to achieve 0 to 100% abstraction. 
+In abstract class we have both method declaration and defination. In abstract class have static varible and static method also.
+What ever method declare an abstract class it must to implement in subclass.
+abstract class never instatiated. Abstract class have constructor. 
+If you don't provide any constructor in abstract class then compile provide default constructor.
      
-                                                                                                A-III)When to use abstract class and interface?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                abstract class mainly used in larger project.because it provide common method implementations to all subclasses.where as interface is used in smaller project
-                                                                                                if you want to force or add some method that time interface is used.
-												also when we want hide all the details and just show main service that time we use interface and if you want show some propeties to the client and hide some then we use abstract class.
+A-III)When to use abstract class and interface?
+----------------------------------------------------------------------------------------------------------------------
+abstract class mainly used in larger project.because it provide common method implementations to all subclasses.where as interface is used in smaller project
+if you want to force or add some method that time interface is used.
+also when we want hide all the details and just show main service that time we use interface and if you want show some propeties to the client and hide some then we use abstract class.
 												
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A- IV)What are the rules for abstract class?    
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                1) If you want to use abstract method then the class must be abstract.
-                                                                                                2)Abstract class never instantiated.
-                                                                                               3)Abstract class have a constructor, static variable and method also.
-                                                                                                4)Whatever method declare an abstract class it must be implements in                                                                                                     subclass.
-                                                                                                5)If you declare a class is abstract then it not neccesarry it have                                                                                                      atleast one abstract method
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                 A- V)Why we use abstract class?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               abstract class is used to achieve 0 to 100% abstration. If you want to use abstract method then the class must be abstract.
-                                                                                                abstract class is used in larger proejct because it provide common method implementation to all subclasses.
-												By Using abstract class we can show some propeties to the use..
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                  A- VI)Can we make abstract method static in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No, we can't make abstract method static in java. Because whatever method declared inside abstract class it must be implements in subclass. if you declare
-                                                                                               abstract method is static so it's unnecessary become the part of class.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A -VII)Can we declare the static variable and methods in an abstract class?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                yes, we can declare static variable and static method inside an abstract class.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A -VIII)What is the difference between abstract class and interface?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-               abstract class                                                                                         Interface
-1) abstract class is used to achive 0 to 100% abstraction.                              1)Interface is used to achieve 100% abstration
-2)abstact class have constructor                                                        2)Interface don't have constructor
-3)abstract class have both method declaration and method                                3)Interface has only method declaration
+----------------------------------------------------------------------------------------------------------------------
+A- IV) What are the rules for abstract class?    
+----------------------------------------------------------------------------------------------------------------------
+1) If you want to use abstract method then the class must be abstract.
+2)Abstract class never instantiated.
+3)Abstract class have  static variable and method also.
+4)Whatever method declare an abstract class it must be implements in subclass.
+5)If you declare a class is abstract then it not neccesarry it have atleast one abstract method
+-------------------------------------------------------------------------------------------------------------------- A- V)Why we use abstract class?
+----------------------------------------------------------------------------------------------------------------------
+abstract class is used to achieve 0 to 100% abstration. If you want to use abstract method then the class must be abstract.abstract class is used in larger proejct because it provide common method implementation to all subclasses.
+By Using abstract class we can show some propeties to the use..
+--------------------------------------------------------------------------------------------------------------------- A- VI)Can we make abstract method static in java?
+----------------------------------------------------------------------------------------------------------------------No, we can't make abstract method static in java. Because whatever method declared inside abstract class it must be implements in subclass. if you declare abstract method is static so it's unnecessary become the part of class.
+----------------------------------------------------------------------------------------------------------------------A -VII) Can we declare the static variable and methods in an abstract class?
+----------------------------------------------------------------------------------------------------------------------
+yes, we can declare static variable and static method inside an abstract class.
+--------------------------------------------------------------------------------------------------------------------- A -VIII) What is the difference between abstract class and interface?
+----------------------------------------------------------------------------------------------------------------------
+               abstract class                                         Interface
+1) abstract class is used to achive 0 to 100% abstraction.      1)Interface is used to achieve 100% abstration
+2)abstact class have constructor                                2)Interface don't have constructor
+3)abstract class have both method declaration and method        3)Interface has only method declaration
   defination 
-4)In abstract class we can use static variable and members                              4)Interface by default member are public static and final whereas method are     public and abstract.
-5) abstract class is uesd in larger project because it provide common                   5) Interface used in smaller project if we want add or force some method.
+4)In abstract class we can use static variable and members      4)Interface by default member are public static and final whereas method are     public and abstract.
+5) abstract class is uesd in larger project because it provide common  5) Interface used in smaller project if we want add or force some method.
   method implementations to all subclasses.                                                (If you want to hide all feature then will go for interface)
   ( If you want to hide some feature and show some then 
     will go for abstract class.)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A IX)Can you declare interface method is static?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No we can't declare interface method is static because they default public and abstract.
-                                                                                                                                                                                                                                                                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A X)Can interface be final in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	                                                                                               Interface is not final is java. because whatever method declare inside the interface we must need to implement subclass.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                               A XI)Can we define private and protected modifier for the member in interfaces?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No we can define because they default public,static and final.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A XII)  When Can an object reference cast an interface reference?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               When object imeplement reference variable
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A XIII)Can you declare interface method is static?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               no we can't declare interface method is static because they by default public and abstract.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A IVX) Is it compulsory a class declared abstract class it has atleast one abstract method?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No it's not compulsory a class declared abstract it has atleast one abstract method.                                                                                                                                                       ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A XV) Can we use abstract keyword with constructor,instance intializr block,static initilization block?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No we can't use.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                                A XVI) We can't instantiated an abstract class then why constrctor allowed in abstract class?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                Because we create a object of subclass and from subclass constructor we can call abstract class constructor even we don't provide any
-                                                                                               constructor then also compiler provide by default.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A XVII) Can you declare abstract method is static?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               no, we can't declare abstract method static. because it unnecessary become the part of class.
-]=----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A XVII) Can a class contain abstract class as member?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                Yes a class contain abstract class as a member.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A XVII) Abstract class can be nested?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               yes, abstract class nested i.e we can declare one abstract class inside another abstract class
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A XVIII) Can we declare abstract method as synchronized  ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No, we can't declare abstract method as synchronized
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A IXX) Can we declare local inner class as abstract  ?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Yes,we can declare local inner class as abstract
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A IXX) Can abstract method include declaration of throws clause  ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Yes,abstract method declaration include through clauses.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-												
-												
-												  A XX) Can we have constructor in abstract class and what is the use of that ?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Yes, we have constructor in abstract class. It is used to intilize 
-											       a object.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                  A IX) If we achieve 100% abstraction by using interface then why 
-												  we using abstract class?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               abstract class used to show some properties to the customer
-											       and hide rest of all that's why we require abstract class.  
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A X)What are the abstarct method in java  ?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               A method declared without using body is called abstract method.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+A IX) Can you declare interface method is static?
+----------------------------------------------------------------------------------------------------------------------No we can't declare interface method is static because they default public and abstract.
+                                                                                                                                                                                                                                            --------------------------------------------------------------------------------------------------------------------   A X)Can interface be final in java?
+----------------------------------------------------------------------------------------------------------------------Interface is not final is java. because whatever method declare inside the interface we must need to implement 
+ subclass.
+------------------------------------------------------------------------------------------------------------------- A XI) Can we define private and protected modifier for the member in interfaces?
+---------------------------------------------------------------------------------------------------------------------
+No we can define because they default public,static and final.
+----------------------------------------------------------------------------------------------------------------------A XII)  When Can an object reference cast an interface reference?
+----------------------------------------------------------------------------------------------------------------------
+ When object imeplement reference variable
+----------------------------------------------------------------------------------------------------------------------
+A XIII)Can you declare interface method is static?
+---------------------------------------------------------------------------------------------------------------------- no we can't declare interface method is static because they by default public and abstract.
+---------------------------------------------------------------------------------------------------------------------- A IVX) Is it compulsory a class declared abstract class it has atleast one abstract method?
+----------------------------------------------------------------------------------------------------------------------
+No it's not compulsory a class declared abstract it has atleast one abstract method.                                                                                                                                                       ----------------------------------------------------------------------------------------------------------------------- A XV) Can we use abstract keyword with constructor,instance intializr block,static initilization block?
+----------------------------------------------------------------------------------------------------------------------
+No we can't use.
+---------------------------------------------------------------------------------------------------------------------- A XVI) We can't instantiated an abstract class then why constrctor allowed in abstract class?
+----------------------------------------------------------------------------------------------------------------------
+Because we create a object of subclass and from subclass constructor we can call abstract class constructor even we don't provide any constructor then also compiler provide by default.
+Basically constructor allows in abstract class to initiialze the attribute values.
+We can't instantite abstract class because it has some incompleted methods.
+---------------------------------------------------------------------------------------------------------------------- A XVII) Can you declare abstract method is static?
+----------------------------------------------------------------------------------------------------------------------no, we can't declare abstract method static. because it unnecessary become the part of class.
+----------------------------------------------------------------------------------------------------------------------
+A XVII) Can a class contain abstract class as member?
+----------------------------------------------------------------------------------------------------------------------
+Yes a class contain abstract class as a member.
+----------------------------------------------------------------------------------------------------------------------
+A XVII) Abstract class can be nested?
+----------------------------------------------------------------------------------------------------------------------yes, abstract class nested i.e we can declare one abstract class inside another abstract class
+----------------------------------------------------------------------------------------------------------------------A XVIII) Can we declare abstract method as synchronized  ?
+---------------------------------------------------------------------------------------------------------------------- No, we can't declare abstract method as synchronized
+--------------------------------------------------------------------------------------------------------------------- A IXX) Can we declare local inner class as abstract  ?
+----------------------------------------------------------------------------------------------------------------------Yes,we can declare local inner class as abstract
+----------------------------------------------------------------------------------------------------------------------A IXX) Can abstract method include declaration of throws clause  ?
+----------------------------------------------------------------------------------------------------------------------Yes,abstract method declaration include through clauses.
+----------------------------------------------------------------------------------------------------------------------
+A XX) Can we have constructor in abstract class and what is the use of that ?
+----------------------------------------------------------------------------------------------------------------------Yes, we have constructor in abstract class. It is used to intilize a object.
+----------------------------------------------------------------------------------------------------------------------
+A IX) If we achieve 100% abstraction by using interface then why we using abstract class?
+----------------------------------------------------------------------------------------------------------------------abstract class used to show some properties to the customer and hide rest of all that's why we require abstract class.  
+---------------------------------------------------------------------------------------------------------------------- A X)What are the abstarct method in java  ?
+----------------------------------------------------------------------------------------------------------------------
+A method declared without using body is called abstract method.
+----------------------------------------------------------------------------------------------------------------------
 												
 B)Polymorphism
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               polymorphims is greek word poly means many and morphs means forms,
-                                                                                                i.e polymorphism means many forms. we can perfoms a single action into multiple forms.
-                                                                                               There are two types of polymorphism 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               B)What are the types of polymorphism in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        
-                                                                                               B-I)   Compile Time polymorphism-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                Compile time polymorphism means call an method overload to resolve compile time rather than runtime.
-                                                                                                Compile time polymorphism is achieved by used by using method overloading means a class in java has has 
-                                                                                                method name with different parameter.Compile time polymorphism is also called as static binding
-                                                                                                The performance of compile time ploymorphism is faster than the runtime polymorphism becuase object is determined at compile time.
+----------------------------------------------------------------------------------------------------------------------polymorphims is greek word poly means many and morphs means forms,
+i.e polymorphism means many forms. we can perfoms a single action into multiple forms.
+There are two types of polymorphism 
+----------------------------------------------------------------------------------------------------------------------B)What are the types of polymorphism in java?
+----------------------------------------------------------------------------------------------------------------------B-I)   Compile Time polymorphism-
+----------------------------------------------------------------------------------------------------------------------Compile time polymorphism means call an method overload to resolve compile time rather than runtime.
+Compile time polymorphism is achieved by used by using method overloading means a class in java has has 
+method name with different parameter.Compile time polymorphism is also called as static binding.The performance of compile time ploymorphism is faster than the runtime polymorphism becuase object is determined at compile time.
        
-                                                                                                B-II)   Runtime Polymorphism(Return type is not matter in runtime poly
-												morphims due to covarinat return type).
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Runtime polymorphism means call an method override to resolve runtime rather than compile time. 
-                                                                                               Runtime polymorphism is also known as dynamic binding.
-                                                                                               Rumtime polymorphims is achieved by using method overriding means a classes in java has same method name with same parameter.
-                                                                                               Runtime polymorphism performs is slower than the compile time polymorphism because object is determined at runtime.
-                                                                                                The rules for runtime polymorphism is method present in subclass it must be same as method present in parent class
+B-II)   Runtime Polymorphism(Return type is not matter in runtime polymorphims due to covarinat return type).
+----------------------------------------------------------------------------------------------------------------------
+Runtime polymorphism means call an method override to resolve runtime rather than compile time. 
+Runtime polymorphism is also known as dynamic binding.
+Rumtime polymorphims is achieved by using method overriding means a classes in java has same method name with same parameter.
+Runtime polymorphism performs is slower than the compile time polymorphism because object is determined at runtime.
+The rules for runtime polymorphism is method present in subclass it must be same as method present in parent class
 												
-												*** Runtime polymorphism we required same exception also
-												*** Return type doesn't matter.
+*** Runtime polymorphism we required same exception also
+*** Return type doesn't matter.
         
-                                                                                                B-III)  Real time example of polymorphism is-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                a person some time it act as father,son,employee,husband or etc.
+B-III)  Real time example of polymorphism is-
+----------------------------------------------------------------------------------------------------------------------a person some time it act as father,son,employee,husband or etc.
        
-        
-                                                                                               B-IV)   Advantages of Polymorphism                                     ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                I) Reduce lot's of lines of code
-                                                                                                II)Debug application easily
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                B-V) Can we override the overloded method? 
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Yes, we can override the overloaded method.
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                B-VI)How can we achieve concept of polymorphism in java?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               By using method overloading and method overriding we can achieve the concept of polymorphism in java.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               B-VII)What is method overloading?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A class in java has multiple same method name with different parameter called as method overloading.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               B-VII)How can we achieve method overloading?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               method oveloading is achieved by two ways
-                                                                                               1)By chnaging no. arguments
-                                                                                               2)By chnaging no. data type
-                                                                                               But not possible by using or chnaging return type because it create ambugity in the program.(Return type is not matter in method overloading we should ensure about the ambugity )
-                                                                                                The performs of method overloading is faster than the method overding because in method overloading case object is determined at compile time.
-                                                                                                It also known as static binding
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                B-VIII)What are advantages of method overloading?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                1) Method overloading increase readablity of the program.
-                                                                                                2) cleanliness of the code.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               B-IX)Why method overloading is not possible by chaining the return type of method only?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               because it create amgubity in the program.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                B-X))What is method overriding?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                Method overriding means classes in java has same method name with same parameter. method overrding is way to achieve runtime polymorphism.
-                                                                                               It is also calles dyanamic biding.Method overrding means call an method override to reslove runtime rather than the comiple time.( Different return type also)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-                                                                                               B-X)What is the difference between method overloading and method overriding?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        method overloading                                                                                      method overriding
+B-IV)   Advantages of Polymorphism                                   
+----------------------------------------------------------------------------------------------------------------------
+ I) Reduce lot's of lines of code
+ II)Debug application easily
+----------------------------------------------------------------------------------------------------------------------B-V) Can we override the overloded method? 
+---------------------------------------------------------------------------------------------------------------------
+Yes, we can override the overloaded method.
+----------------------------------------------------------------------------------------------------------------------B-VI) How can we achieve concept of polymorphism in java?
+----------------------------------------------------------------------------------------------------------------------By using method overloading and method overriding we can achieve the concept of polymorphism in java.
+----------------------------------------------------------------------------------------------------------------------B-VII) What is method overloading?
+----------------------------------------------------------------------------------------------------------------------A class in java has multiple same method name with different parameter called as method overloading.
+----------------------------------------------------------------------------------------------------------------------B-VII) How can we achieve method overloading?
+----------------------------------------------------------------------------------------------------------------------method oveloading is achieved by two ways
+1)By chnaging no. arguments
+2)By chnaging no. data type
+
+But not possible by using or chnaging return type because it create ambugity in the program.
+(Return type is not matter in method overloading we should ensure about the ambugity )
+The performs of method overloading is faster than the method overding because in method overloading case object is determined at compile time.
+It also known as static binding
+----------------------------------------------------------------------------------------------------------------------B-VIII) What are advantages of method overloading?
+----------------------------------------------------------------------------------------------------------------------
+1) Method overloading increase readablity of the program.
+2) cleanliness of the code.
+----------------------------------------------------------------------------------------------------------------------
+B-IX)Why method overloading is not possible by chaining the return type of method only?
+----------------------------------------------------------------------------------------------------------------------
+because it create amgubity in the program.
+----------------------------------------------------------------------------------------------------------------------
+ B-X) What is method overriding?
+----------------------------------------------------------------------------------------------------------------------Method overriding means classes in java has same method name with same parameter. method overrding is way to achieve runtime polymorphism.
+It is also calles dyanamic biding.Method overrding means call an method override to reslove runtime rather than the comiple time.( Different return type also)
+----------------------------------------------------------------------------------------------------------------------B-X) What is the difference between method overloading and method overriding?
+----------------------------------------------------------------------------------------------------------------------
+        method overloading                                                                   method overriding
  1) method overloading is used to achieve compile time polymorphism                 1)method overriding is used to acheive runtime polymorphism.
  2) method overloading means a class in java has multiple same                      2)method overriding means a classes in java has same method  
     method name with different parameter                                            name with same arguements 
@@ -364,8 +297,8 @@ B)Polymorphism
  4)performs of method overloading is faster than the method overdidng               4)Performs of method overiding is slower than the method overloading                  beacause object is determined at compile time                                         because object determined at runtime.
                                
                
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               B-XI) What is the difference between compile time polymorphism and runtime polymorphism?
+----------------------------------------------------------------------------------------------------------------------
+B-XI) What is the difference between compile time polymorphism and runtime polymorphism?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
      1) Compile time polymorphsim                                                                              1)Runtime Time polymorphism                             1)Compile time polymorphism means call an method overload to reslove           1)Runtime ploymorphism means call an method overide to
   compile time rather than the runtime.                                          to resolve runtime rather than compile time.
@@ -373,88 +306,61 @@ B)Polymorphism
 3)Compile time ploymorphsim called static binding.                             3) Runtime polymorphism called dyanamic binding.
  4) compilet time polymorphism provide faster method exceution .               4)Runtime polymorphism provide slower method excution.
                                                                                                                              
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                B-XII) How to achieve static and dyanamic polymorphism in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               static polymorphism is achieve by using method overloading whereas dyanamic polymorphism is achieved by method overriding                      
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+B-XII) How to achieve static and dyanamic polymorphism in java?
+----------------------------------------------------------------------------------------------------------------------static polymorphism is achieve by using method overloading whereas dyanamic polymorphism is achieved by method overriding                      
+----------------------------------------------------------------------------------------------------------------------
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 C)Inheritance
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                            
-                                                                                               Inheritance means inherit properties from one class to another class. Inheritance represnt IS-A relatioship or parent child relatioship.
-                                                                                               parent class- The class inherit properties from another class called parent class.
-                                                                                                child class- The class inherit feature of parent class called child class.
-                                                                                               C-I)Types of Inheriance 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               1) Single Inheritance
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               single inhertiance means only one child class derived from the parent class
-                                                                                               for eg. class Bank, class SBI extends Bank
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               2) Multilevel Inheritance
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               only one child class derived from the parent class now the child class act as parent class of another class.
-                                                                                               Class Person , class Employee extends Person, class Manager extends Employee
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                3) Hierarchical Inheritance
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                Hierarchical inheritance means a class has more than one child class.
-                                                                                                for eg class Bank,class SBI extends Bank, class HDFC extends Bank
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                4) Multiple Inheritnace
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                A class has more than one parent class, Java doesn't support multiple inheritance in class.
---------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               5) Hybrid Inheritance
+----------------------------------------------------------------------------------------------------------------------
+Inheritance means inherit properties from one class to another class. Inheritance represnt IS-A relatioship or parent child relatioship.
+parent class- The class inherit properties from another class called parent class.
+child class- The class inherit feature of parent class called child class.
+C-I)Types of Inheriance 
+--------------------------------------------------------------------------------------------------------------------1) Single Inheritance
+----------------------------------------------------------------------------------------------------------------------single inhertiance means only one child class derived from the parent class
+for eg. class Bank, class SBI extends Bank
+----------------------------------------------------------------------------------------------------------------------
+2) Multilevel Inheritance
+----------------------------------------------------------------------------------------------------------------------
+only one child class derived from the parent class now the child class act as parent class of another class.
+Class Person , class Employee extends Person, class Manager extends Employee
+----------------------------------------------------------------------------------------------------------------------
+3) Hierarchical Inheritance
+Hierarchical inheritance means a class has more than one child class.
+for eg class Bank,class SBI extends Bank, class HDFC extends Bank
+-------------------------------------------------------------------------------------------------------------------
+4) Multiple Inheritnace
+A class has more than one parent class, Java doesn't support multiple inheritance in class.
+--------- ---------------------------------------------------------------------------------------------------------
+5) Hybrid Inheritance
                                                                                                 or
-                                                                                               What is hybrid inheritance in java?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               Hybrid inheritance is combination of single and multiple inheritance.due to ambugity or diamond shape java doesn't support hybrid inheritance.
+ What is hybrid inheritance in java?
+---------------------------------------------------------------------------------------------------------------------- Hybrid inheritance is combination of single and multiple inheritance.due to ambugity or diamond shape java doesn't support hybrid inheritance.
  
-                                                                                               C-II) Advantages of Inheritance
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               1)Without inheritance we can't achieve runtime polymporphism
-                                                                                               2)code redusablity.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                                               C-III) The real life example of inheritance
-----------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                1) Parent and child, child inherite all propeties of his father
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               C-IV) Why we use inheritance?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               1)Without inheritance we can't achieve runtime polymorphism. 
-                                                                                               2)Code reusablitiy.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               C-V) How does multiple inheritance implements in java?
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                                              Multiple inheritance is implements by using interface.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              C-VI)Can children class inherit the properties constructor of it's parent class?
-                                                                                                No,children class not inherit properties constructor of it's parent class.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-											        C-V) What is ‘IS-A ‘ relationship in java?
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                                             Inheritance represent IS-A relationship i.e parent child relations.
-											     The class inherit properites from another class.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-											      C-V) What is ‘HAS-A ‘ relationship in java?
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                                             Has-A relationship represnt death relationship. i.e child object 
-											     doesn't have there own life ,I delete parent object then child object
-											     will get automatically delete.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-											      C-V) What is diffrence between IS-A and HAS-A relations?
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                                             Inheritance represnt IS-A relationship whereas Composition reprent
-											     HAS-A relationshiop. 
-											     for eg- Maruti suzuki IS-A car and 
+ C-II) Advantages of Inheritance
+----------------------------------------------------------------------------------------------------------------------
+1)Without inheritance we can't achieve runtime polymporphism
+2)code redusablity.
+----------------------------------------------------------------------------------------------------------------------
+C-III) The real life example of inheritance
+----------------------------------------------------------------------------------------------------------------------1) Parent and child, child inherite all propeties of his father
+----------------------------------------------------------------------------------------------------------------------C-IV) Why we use inheritance?
+----------------------------------------------------------------------------------------------------------------------1)Without inheritance we can't achieve runtime polymorphism. 
+ 2)Code reusablitiy.
+----------------------------------------------------------------------------------------------------------------------C-V) How does multiple inheritance implements in java?
+---------------------------------------------------------------------------------------------------------------------- Multiple inheritance is implements by using interface.
+----------------------------------------------------------------------------------------------------------------------C-VI)Can children class inherit the properties constructor of it's parent class?
+ No,children class not inherit properties constructor of it's parent class.
+----------------------------------------------------------------------------------------------------------------------C-V) What is ‘IS-A ‘ relationship in java?
+----------------------------------------------------------------------------------------------------------------------Inheritance represent IS-A relationship i.e parent child relations.
+The class inherit properites from another class.
+----------------------------------------------------------------------------------------------------------------------C-V) What is ‘HAS-A ‘ relationship in java?
+----------------------------------------------------------------------------------------------------------------------
+Has-A relationship represnt death relationship. i.e child object doesn't have there own life ,I delete parent object then child object will get automatically delete.
+----------------------------------------------------------------------------------------------------------------------C-V) What is diffrence between IS-A and HAS-A relations?
+---------------------------------------------------------------------------------------------------------------------- Inheritance represnt IS-A relationship whereas Composition reprent HAS-A relationshiop. 
+for eg- Maruti suzuki IS-A car and 
 											             Maruti Suzuki HAS-A Engine
 												     
 												     
