@@ -22,7 +22,9 @@ JtaTransactionManager [DEBUG] - pariticipating in existing transaction
 
 3) @Transaction(propogatation=Required_NEW , rollbackFor=Exception.class) 
 -----------------------------------------------------------------------------------------------------------------
-propogation.Required_NEw menas baiscally it iwll start new transactiion from the method which you used this annotation or propogation type.
+propogation=Required_NEW , means basically it will suspend the current running transaction and it will
+start new from here.
+
 
 4) @Transaction(propogation=READ_ONLY) 
 -----------------------------------------------------------------------------------------------------------------
