@@ -1,6 +1,9 @@
-1)@Transaction 
+************** Where We need Transaction annotations **********************
+1) Those operation will change your database state , those type of work you need transaction annotations
 
-@Transaction is gettin used to make the consistency the transaction.
+1)@Transaction 
+-----------------------------------------------------------------------------------------------------------------
+@Transaction is getting used to make the consistency the transaction.
 If there is any DB or Mq call the your service flows, it iwll commmit the DB or DB only 
 if the transaction get's commpleted.
 
@@ -10,17 +13,32 @@ SO avoid this type of inconsistency we have @Transaction ananotation
 
 
 2) @Transaction(propogatation=required, rollbackFor=Exception.class)
+-----------------------------------------------------------------------------------------------------------------
+propagative=required meand basically it will support the if there is any running transaction , if there is no active running transaction then
+it will start new transactio from the method you mentioned this annotations.
 
-propagative=required meand basically it iwll support the if there is any running transaction , if there is no active running transaction then
-it will start new transactio from the method you mentioned this annotations
+if you enable debug log you can see the below logs
+JtaTransactionManager [DEBUG] - pariticipating in existing transaction
 
 3) @Transaction(propogatation=Required_NEW , rollbackFor=Exception.class) 
-propogation.Required_NEw menas baiscally it iwll start new transactyion from the method which you used this annotation or propogation type.
+-----------------------------------------------------------------------------------------------------------------
+propogation.Required_NEw menas baiscally it iwll start new transactiion from the method which you used this annotation or propogation type.
 
 4) @Transaction(propogation=READ_ONLY) 
-It allow to perform read only operation pn DB , if you try to perfrom the right then it will throw an exceptioj 
+-----------------------------------------------------------------------------------------------------------------
+It allow to perform read only operation pn DB , if you try to perfrom the right then it will throw an exception. 
 
 5) @Transaxction(propogation=Mandotory) 
+-----------------------------------------------------------------------------------------------------------------
 propagation=Mandotory means basially it  will execute the service within the existing running transaction , it will thorow an exception if there is no any running trnasaction 
 
+if you enable debug log you can see the below log
+JtaTransactionManager [DEBUG] participiting in existing transaction
+
 6) @Transaction(propapagation=Support) 
+It will support the existing running transaction , if there is no any running transaction then it will execute without any tranasaction.
+
+if you enable debug log the below log you can see 
+[DEBUG] JtaTransactionManager - participating in existing transaction.
+-----------------------------------------------------------------------------------------------------------------
+
