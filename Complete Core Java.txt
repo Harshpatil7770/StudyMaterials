@@ -559,37 +559,33 @@ Method- function
                                                                                              System- System is final class present in java.lang package
                                                                                              out- out is static variable of present in class system of type printstream
                                                                                              println() - println is method od the printstream class.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 17) What is the difference between println and print?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Println add new line after message get displayed where as print doesn't add new line after message get displayed.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+Println add new line after message get displayed where as print doesn't add new line after message get displayed.
+----------------------------------------------------------------------------------------------------------------------
 18) What is variable and it's type?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Variable is separate piece of memory that contain data values specified by an identifier.
-                                                                                             Types of variable 
-1)Local variable                                                                            - local varibale means declared within the method,block and constructor. 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              18-I)What is the default value of local variable?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             default value of loacal variable is null in java
-                                                                                                                                                                        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             18-II)Can you make the local variable is final?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             yes local variable we can make final and main thing is that no any other modifier we can use with local variable.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-2) Global variable                                                                  - global variable is also known as instance variable. it declared outside the method, block , constructor and inside the class.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             18-B)What will be the initial value of an object refernce which is defined as an instance variable?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              for int,byte,short.long is 0, boolean is false, object is null,float,double 0.0.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3)static variable                                                                   - static variable is also known as class variable, because it allocate memory at the time of creation of objects. It mainly used for
-                                                                                            memory mangement
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             18  -A)What is the diffrence between global and local variable?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                  Local variable                                                                Global variable
+----------------------------------------------------------------------------------------------------------------------Variable is separate piece of memory that contain data values specified by an identifier.
+Types of variable 
+1)Local variable                                                                           
+- local varibale means declared within the method,block and constructor. 
+----------------------------------------------------------------------------------------------------------------------
+ 18-I)What is the default value of local variable?
+----------------------------------------------------------------------------------------------------------------------default value of loacal variable is null in java
+                                                                                                                      ----------------------------------------------------------------------------------------------------------------------18-II)Can you make the local variable is final?
+----------------------------------------------------------------------------------------------------------------------yes local variable we can make final and main thing is that no any other modifier we can use with local variable.
+----------------------------------------------------------------------------------------------------------------------
+2) Global variable                                                                 
+- global variable is also known as instance variable. it declared outside the method, block , constructor and inside the class.
+----------------------------------------------------------------------------------------------------------------------
+18-B)What will be the initial value of an object refernce which is defined as an instance variable?
+----------------------------------------------------------------------------------------------------------------------for int,byte,short.long is 0, boolean is false, object is null,float,double 0.0.
+----------------------------------------------------------------------------------------------------------------------
+3)static variable                                                                   
+- static variable is also known as class variable, because it allocate memory at the time of creation of objects. It mainly used for memory mangement
+----------------------------------------------------------------------------------------------------------------------
+18  -A)What is the diffrence between global and local variable?
+---------------------------------------------------------------------------------------------------------------------- Local variable                                                                Global variable
                                                                                               1) Local variable is declared inside the method,                1)Global variable is declared outside the method, variable, constructor and inside the class
                                                                                               block and constructor.
                                                      
