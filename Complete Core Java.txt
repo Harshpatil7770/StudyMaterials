@@ -586,187 +586,137 @@ Types of variable
 ----------------------------------------------------------------------------------------------------------------------
 18  -A)What is the diffrence between global and local variable?
 ---------------------------------------------------------------------------------------------------------------------- Local variable                                                                Global variable
-                                                                                              1) Local variable is declared inside the method,                1)Global variable is declared outside the method, variable, constructor and inside the class
+1) Local variable is declared inside the method,                1)Global variable is declared outside the method, variable, constructor and inside the class
                                                                                               block and constructor.
                                                      
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             18 -B)What is the difference between global and static variable
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             global variable                                                                     static variable
-                                                                                             1) Global variable also known as instance varible.           1)static variable is also known as class variable.
-                                                                                             2) global variable doesn't allocated memory at the           2)static variable allocated memory at time of creation.
-                                                                                              time of creation of varible 
+ ---------------------------------------------------------------------------------------------------------------------18 -B)What is the difference between global and static variable
+----------------------------------------------------------------------------------------------------------------------global variable                                                          static variable
+1) Global variable also known as instance varible.           1)static variable is also known as class variable.
+2) global variable doesn't allocated memory at the           2)static variable allocated memory at time of creation.
+ time of creation of varible 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 20)What is Data type and explain it's ?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Data type specified size and type value that can specified by an identifier.
-                                                                                             There are two types of data types
+----------------------------------------------------------------------------------------------------------------------
+Data type specified size and type value that can specified by an identifier.
+There are two types of data types
  A)Primitive data type  -
-                                                                                             1)Primitive data type means predefined in java
-                                                                                             2)It always start with lowercase letter
-                                                                                             3)size of primitive data type depends uopn the type of the data
-                                                                                             4)It never null.
+ 1)Primitive data type means predefined in java
+ 2)It always start with lowercase letter
+ 3)size of primitive data type depends uopn the type of the data
+ 4)It never null.
 
-                                                                                             In java there are eight primitive data type
-                                                                                             1)byte 
-                                                                                             2)short
-                                                                                             3)int
-                                                                                             4)long
-                                                                                              5)float
-                                                                                             6)double
-                                                                                              7)boolean
-                                                                                             8)char
+In java there are eight primitive data type
+1)byte 
+2)short
+3)int
+4)long
+5)float
+6)double
+7)boolean
+8)char
 
  
-                                                                                              B)Non primitive data type
-                                                                                              Non primirive data type means they are not predefined in java.
-                                                                                             1)It may or may not be empty
-                                                                                             2)Size of all primitive data type are same
-                                                                                             3)It start with uppercase letter
+B)Non primitive data type
+Non primirive data type means they are not predefined in java.
+1)It may or may not be empty
+2)Size of all primitive data type are same
+3)It start with uppercase letter
                           
-                                                                                             Types of non primitive data types
-                                                                                              1)Array  - Array is an object, which is stored the homegenous element. It holds both primitive data type and objects. 
-                                                                                             2)Class   - Class is blue print from which objects are created.Class is logical entity. It doesn't require any space in the memeory. 
-                                                                                             3)interface - Interface same like as class the main difference that interface doesn't have body and constructor also. Interface also represent IS-A relationship.
-                                                                                             4)String  - String represent sequence of character. String is final class present in java lang package.
+ Types of non primitive data types
+1) Array  - Array is an object, which is stored the homegenous element. It holds both primitive data type and objects. 
+2) Class   - Class is blue print from which objects are created.Class is logical entity. It doesn't require any space 
+           in the memeory. 
+3) interface - Interface same like as class the main difference that interface doesn't have body and constructor also. Interface also represent IS-A relationship.
+4) String  - String represent sequence of character. String is final class present in java lang package.
                          
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------  21) What is Modifier and it's types?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              Modifier specifies scope of the class,methods,block and constructors
-                                                                                             There are two types of modifier in Java
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------											     1) What is difference between access modifier and access specifier?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-											There is no difference between access modifier and access specifier 
-											both are same. It specifies scope of class,method,variable,constructor.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------21) What is Modifier and it's types?
+----------------------------------------------------------------------------------------------------------------------Modifier specifies scope of the class,methods,block and constructors.
+There are two types of modifier in Java
+---------------------------------------------------------------------------------------------------------------------1) What is difference between access modifier and access specifier?
+----------------------------------------------------------------------------------------------------------------------There is no difference between access modifier and access specifier both are same. It specifies scope of class,method,variable,constructor.
+----------------------------------------------------------------------------------------------------------------------
 1)Access Modifier-
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Access modifier specifies scope of the class,method,block and constructor.
-                                                                                             There are four access modifier in java
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------           
+ --------------------------------------------------------------------------------------------------------------------- Access modifier specifies scope of the class,method,block and constructor.
+There are four access modifier in java
+-------------------------       
 A)Public          -
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             public means access from anywhere within the class, outside the class within the package outside the package also.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+public means access from anywhere within the class, outside the class within the package outside the package also.
+----------------------------------------------------------------------------------------------------------------------
 B)Private      -  
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             private means access only within the class.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             B-I)   Can we inherit private members of base class to it's subclass?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             No, we can't inherit private memeber of base class to it's subclass.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             B-II)   Can we override the private method?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             No, we can't override the private method.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             B-III) If varibale is declared private where may be they accessed ?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              It access only within the class.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+-------------------------------------------------------------
+private means access only within the class.
+----------------------------------------------------------------------------------------------------------------------B-I)   Can we inherit private members of base class to it's subclass?
+----------------------------------------------------------------------------------------------------------------------B-II)   Can we override the private method?
+----------------------------------------------------------------------------------------------------------------------No, we can't override the private method.
+----------------------------------------------------------------------------------------------------------------------
+ B-III) If varibale is declared private where may be they accessed ?
+----------------------------------------------------------------------------------------------------------------------It access only within the class.
+ -------------------------
 C)Protected   - 
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             protected means access within the package outside the package but only thorugh inheritance.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             C-I) Can a class declared as protected?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             No, we can't declare a class is protected.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             C-I) What is the access scope of protected method?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              It access within the class within the package and outside the package but only thorough inheritance.
-                                                                                               ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------                                                      
+protected means access within the package outside the package but only thorugh inheritance.
+---------------------------------------------------------------------------------------------------------------------- C-I) Can a class declared as protected?
+---------------------------------------------------------------------------------------------------------------------- No, we can't declare a class is protected.
+----------------------------------------------------------------------------------------------------------------------C-I) What is the access scope of protected method?
+---------------------------------------------------------------------------------------------------------------------- It access within the class within the package and outside the package but only thorough inheritance.
+----------------------------------------------------------------------------------------------------------------------
  D)Default       -                                            
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
-                                                                                             default means access only within the class and package only.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              21-A) Can we change the scope of the overidden method in the subclass ?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              Yes, we can change the scope of overridden method in subclass. But take care that the scope can't decrese
-                                                                                             for eg. public remains public  
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              21-B) Can we modify throws clause of the subclass method while overriding it in the subclass?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              Yes, we can modify throws clause of subclass method while overrding in the subclass.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             21-C )How will you restrict the member of class from inheriting it's subclass?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             To make all member of class is private.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              21-d )Write access modifier increase with there visiablity?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              .private--->default--->protected---->public
-
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              21-E )How many public clases a.java file have?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             It has maximum one public class
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             21-F) Top level class can be private or protected?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              No, a top level class can't be private or protected it must be public or no any other acess modifier..
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------- default means access only within the class and package only.
+---------------------------------------------------------------------------------------------------------------------- 21-A) Can we change the scope of the overidden method in the subclass ?
+----------------------------------------------------------------------------------------------------------------------Yes, we can change the scope of overridden method in subclass. But take care that the scope can't decrese
+for eg. public remains public  
+----------------------------------------------------------------------------------------------------------------------21-B) Can we modify throws clause of the subclass method while overriding it in the subclass?
+----------------------------------------------------------------------------------------------------------------------Yes, we can modify throws clause of subclass method while overrding in the subclass.
+----------------------------------------------------------------------------------------------------------------------21-C )How will you restrict the member of class from inheriting it's subclass?
+----------------------------------------------------------------------------------------------------------------------To make all member of class is private.
+-----------------------------------------------------------------------------------------------------------------------21-d )Write access modifier increase with there visiablity?
+----------------------------------------------------------------------------------------------------------------------.private--->default--->protected---->public
+----------------------------------------------------------------------------------------------------------------------21-E )How many public clases a.java file have?
+----------------------------------------------------------------------------------------------------------------------It has maximum one public class
+----------------------------------------------------------------------------------------------------------------------21-F) Top level class can be private or protected?
+---------------------------------------------------------------------------------------------------------------------- No, a top level class can't be private or protected it must be public or no any other acess modifier..
+ ---------------------------------------------------------------------------------------------------------------------
  2)Non access modifier
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             In java there are seven non access modifier keyoword used to transfer information of there behavoiur to JVM.
-											     1) final 2) static 3) abstract 4) synchronized 5) natice 6) volatile
-											     7) transient
-                                                                      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------In java there are seven non access modifier keyoword used to transfer information of there behavoiur to JVM.
+1) final 2) static 3) abstract 4) synchronized 5) natice 6) volatile 7) transient
+----------------------------------------------------------------------------------------------------------------------
  1)static - 
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               2- A)What is static?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             static keyword or non access modifier mainly used for memory management.
-                                                                                              static means belong to class not an object.
-                                                                                             static keyoword used with method, block and variable.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             2- A)Are static member inherited to subclass?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             No, static member isn't inherit to subclass.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              2- A)What is static variable?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1-A)static variable
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              If you declare a variable is static it allocate memory at the time of decalration.
-                                                                                              static variable is mainly used for memory management. for eg. student college name.
-                                                                                              Once you declare a varible static and intialized it we can change it value in static block.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                  
-                                                                                             2- A)What are the restrication applied to java static method?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             1)Once you declare a method by using keyword static is called static method. static method we can't access this and super keywords.
-                                                                                              ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                             2- A)Can we override static methods?                                                                                                                                                                                          ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                              No,we can't override the static method.
-                                                                                               ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                             2- A) Can this keyword be used to refer static member?
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            yes, this keyword is used to refer static member.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------2- A) What is static?
+----------------------------------------------------------------------------------------------------------------------static keyword or non access modifier mainly used for memory management.
+static means belong to class not an object.
+static keyoword used with method, block and variable.
+----------------------------------------------------------------------------------------------------------------------2- A)Are static member inherited to subclass?
+---------------------------------------------------------------------------------------------------------------------- No, static member isn't inherit to subclass.
+----------------------------------------------------------------------------------------------------------------------2- A)What is static variable?
+----------------------------------------------------------------------------------------------------------------------
+1-A) static variable
+----------------------------------------------------------------------------------------------------------------------If you declare a variable is static it allocate memory at the time of decalration.
+static variable is mainly used for memory management. for eg. student college name.
+Once you declare a varible static and intialized it we can change it value in static block.
+----------------------------------------------------------------------------------------------------------------------2- A)What are the restrication applied to java static method?
+----------------------------------------------------------------------------------------------------------------------1)Once you declare a method by using keyword static is called static method. static method we can't access this and super keywords.
+----------------------------------------------------------------------------------------------------------------------2- A) Can we override static methods?                                                                                ------------------------------------ 
+ No,we can't override the static method.
+---------------------------------------------------------------------------------------------------------------------- 2- A) Can this keyword be used to refer static member?
+----------------------------------------------------------------------------------------------------------------------yes, this keyword is used to refer static member.
+----------------------------------------------------------------------------------------------------------------------
 1-B)static method
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            If you declare a method is static means we don't need to create object of that class to call it. we can directly to static method.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            2- I)What is purpose of static method?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            once we declare a method by using keyword static we don't need to crete object of that class to call it. 
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            2 -II)What is the difference between static and instance method?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------     
-                                                                                                 static method                                                                        instance method
-                                                                                             1) a method declare by using keyword static          1)a method dosen't required to declared by using any keyword called instance method.
-                                                                                             called static method.
-                                                                                             2)static method don't need to create the object       2)instance method required to create object of that class to call it.
-                                                                                             of that class to call it. we can call direclty.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-                                                                                              2-III)Why we can't override static method? or 2-III) Can we overide method marked as static? or 2-III )Can we override static method in java?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                            once we declare a method by using keyword static is called static method, so it's become part of the class. or static means belong to class not an object. 
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-                                                                                             2-IV)Can we overload static method in java?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------------------If you declare a method is static means we don't need to create object of that class to call it. we can directly to static method.
+----------------------------------------------------------------------------------------------------------------------2- I)What is purpose of static method?
+----------------------------------------------------------------------------------------------------------------------once we declare a method by using keyword static we don't need to crete object of that class to call it. 
+----------------------------------------------------------------------------------------------------------------------2 -II) What is the difference between static and instance method?
+----------------------------------------------------------------------------------------------------------------------static method                                                                        instance method
+1) a method declare by using keyword static          1)a method dosen't required to declared by using any keyword 
+                                                      called instance method.
+called static method.
+2)static method don't need to create the object       2)instance method required to create object of that class to call it.
+                                                           of that class to call it. 
+we can call direclty.
+----------------------------------------------------------------------------------------------------------------------2-III) Why we can't override static method? or 2-III) Can we overide method marked as static? or 2-III )Can we override static method in java?
+----------------------------------------------------------------------------------------------------------------------once we declare a method by using keyword static is called static method, so it's become part of the class. or static means belong to class not an object. 
+----------------------------------------------------------------------------------------------------------------------2-IV)Can we overload static method in java?
+-------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                             yes, we can overload the static method in java.
                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                               2-V)What is the difference between static method and non static method?
