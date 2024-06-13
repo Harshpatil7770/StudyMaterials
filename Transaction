@@ -44,3 +44,6 @@ if you enable debug log the below log you can see
 [DEBUG] JtaTransactionManager - participating in existing transaction.
 -----------------------------------------------------------------------------------------------------------------
 
+7) If you don't provide any propogation in Transaction then what is by default?
+-----------------------------------------------------------------------------------------------------------------
+By default it is Required.
