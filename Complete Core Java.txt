@@ -715,53 +715,34 @@ called static method.
 we can call direclty.
 ----------------------------------------------------------------------------------------------------------------------2-III) Why we can't override static method? or 2-III) Can we overide method marked as static? or 2-III )Can we override static method in java?
 ----------------------------------------------------------------------------------------------------------------------once we declare a method by using keyword static is called static method, so it's become part of the class. or static means belong to class not an object. 
-----------------------------------------------------------------------------------------------------------------------2-IV)Can we overload static method in java?
--------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                            yes, we can overload the static method in java.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                              2-V)What is the difference between static method and non static method?
-                                                                                             static method called without called without creating object of that class whereas non static method require object of that class to call it.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-                                                                                            2-VI)Can we override private and static method in java? 
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------             
-                                                                                             No, we can't override private and static method in java.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                            2-VII)Can we declare static method is private? 
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------             
-                                                                                             Yes we can declare static method is private.
-                                                                      ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-1-C)static block
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            If you declare a block is static we can chnage static variable values inside the block. Static block allows only static variable and it
-                                                                                             execute before the main method.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             2 -A)What is the difference between static block and instance block?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------     
-                                                                                            static block                                                                                      instance block
-                                                                                            1) a block declared by using keyword static is called static block.       1)A block doesn't reuired any keyword to declare it called instance block.
-                                                                                              2)In static block we access static variable                                                    2)In an instance block we can access the instance variable.
-                                                                                             3)static block executed before the main method.                                        3)instance block executed when object of class is created
+----------------------------------------------------------------------------------------------------------------------2-IV) Can we overload static method in java?
+----------------------------------------------------------------------------------------------------------------------
+yes, we can overload the static method in java.
+----------------------------------------------------------------------------------------------------------------------
+ 2-V) What is the difference between static method and non static method?
+static method called without called without creating object of that class whereas non static method require object of that class to call it.
+----------------------------------------------------------------------------------------------------------------------2-VI) Can we override private and static method in java? 
+---------------------------------------------------------------------------------------------------------------------- No, we can't override private and static method in java.
+---------------------------------------------------------------------------------------------------------------------- 2-VII) Can we declare static method is private? 
+----------------------------------------------------------------------------------------------------------------------Yes we can declare static method is private.
+---------------------------------------------------------------------------------------------------------------------- 1-C) static block
+----------------------------------------------------------------------------------------------------------------------If you declare a block is static we can chnage static variable values inside the block. Static block allows only static variable and it execute before the main method.
+----------------------------------------------------------------------------------------------------------------------2 -A) What is the difference between static block and instance block?
+----------------------------------------------------------------------------------------------------------------------static block                                                                                      instance block
+1) a block declared by using keyword static is called static block.       1)A block doesn't reuired any keyword to declare it called instance block.
+2)In static block we access static variable                               2)In an instance block we can access the instance variable.
+3)static block executed before the main method.                           3)instance block executed when object of class is created
 
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             2 -A)What is static block?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             A block declared by using keyword static is called static block. we can assecc only static variable inside the static block and it execute
-                                                                                             before the main method.                                                                                                                                                                                        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                                             >>> Adavantage of static keyword
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             1)static keyword mainly used for memory management.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------2 -A)What is static block?
+----------------------------------------------------------------------------------------------------------------------A block declared by using keyword static is called static block. we can assecc only static variable inside the static block and it execute before the main method.                                                                          ---------------------------------------------------------------------------------------------------------------------- >>> Adavantage of static keyword
+----------------------------------------------------------------------------------------------------------------------1)static keyword mainly used for memory management.
+----------------------------------------------------------------------------------------------------------------------
  2)final -
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            2- A)What is final keyword in java?      or    2-A)What is final variable in java?
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             final is non access modifier keyword is used to restrict the user.
-                                                                                              final is used with class,variable,method.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            2-A)Can we extends final class?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------2- A)What is final keyword in java?      or    2-A)What is final variable in java?
+----------------------------------------------------------------------------------------------------------------------final is non access modifier keyword is used to restrict the user.
+final is used with class,variable,method.
+----------------------------------------------------------------------------------------------------------------------2-A)Can we extends final class?
+---------------------------------------------------------------------------------------------------------------------------------------------
                                                                                               No, we can't extends final class.
                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  >>>>> final Class
