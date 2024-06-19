@@ -770,245 +770,156 @@ final is used with class,variable,method.
                                                                                              If you declare a variable is final and not initilized it so it's called final blank variable. we can initilize it in constructor only.
                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
                                                                                              2-A)What is final blank variable? or    2-A)Can we initialize final blank variable? or  21 -A)Can we intialize final static blank variable?
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                 A variable is declared final and without intializing it's value called as final blank variable. It initialize in constructor only.  
+----------------------------------------------------------------------------------------------------------------------A variable is declared final and without intializing it's value called as final blank variable. It initialize in constructor only.  
 
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------                          
-                                                                                             2- A)Can a final method overridden?
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                               No, once we declare method is final we can't override it.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------         
-                                                                                            2- )Can a final variable serialized in java?
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            yes final variable serialized in java.
-
-                                                                                            3- ) what is static final variable in java?
-                                                                                           ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                           static final variable means constant.
-                                                                                           ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------- 2- A)Can a final method overridden?
+---------------------------------------------------------------------------------------------------------------------- No, once we declare method is final we can't override it.
+----------------------------------------------------------------------------------------------------------------------2- )Can a final variable serialized in java?
+----------------------------------------------------------------------------------------------------------------------yes final variable serialized in java.
+3- ) what is static final variable in java?
+----------------------------------------------------------------------------------------------------------------------static final variable means constant.
+----------------------------------------------------------------------------------------------------------------------
  >>> final method
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-                                                                                              If you declare method is final we can't override it in subclass. But final method get overload.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            20 -B)What is final method?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            A method declared by using keyowrd final called as final method. Once we declare method is final we can't inherit it in subclass. final method get                                                                                                                                   overloaded.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             20) Can we overide method marked as final?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             No, we can't overide metthod marked as final.
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             20) Can final method overloded in java?
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              Yes final method overloaded in java.
-                                                                                               ----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                                             
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             20-I) What is the difference between static keyword  and final keyword?
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              static keyword                                                                                    final keyword
-                                                                                              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              1)  static keyword is used for memeory management                                                 1) final keyword is used to restrict the user.                                                                                                                                                      2)   static keyoword is used with variable,method and block                                       2) final keyword is used with class, variable ,method
-                                                                                              3) static method called without creating object of that class                                        3) To call final method we need to create object of that                                                                                                                                                                                                                                                                       class.
-                                                                                             3) once we declare a variable is static and initilzed it we can change it                          3) once we declare variable is final and initilize it called 
-                                                                                                                               chnage it value in static block.                                                                                 we are not able to change it's value                        
-                                                                                             4) static variable is loaded at the time of declaration                                                    4) final variable doesn't load at the time of declaration
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------If you declare method is final we can't override it in subclass. But final method get overload.
+----------------------------------------------------------------------------------------------------------------------20 -B)What is final method?
+----------------------------------------------------------------------------------------------------------------------A method declared by using keyowrd final called as final method. Once we declare method is final we can't inherit it in subclass. final method get overloaded.
+----------------------------------------------------------------------------------------------------------------------20) Can we overide method marked as final?
+----------------------------------------------------------------------------------------------------------------------No, we can't overide metthod marked as final.
+----------------------------------------------------------------------------------------------------------------------20) Can final method overloded in java?
+---------------------------------------------------------------------------------------------------------------------- Yes final method overloaded in java.
+
+20-I) What is the difference between static keyword  and final keyword?
+---------------------------------------------------------------------------------------------------------------------static keyword                                                                 final keyword
+-
+1)  static keyword is used for memeory management                   1) final keyword is used to restrict the user.    2)   static keyoword is used with variable,method and block         2) final keyword is used with class, variable ,method
+3) static method called without creating object of that class       3) To call final method we need to create object of that  class.
+ 3) once we declare a variable is static and initilzed it we can change it  4) once we declare variable is final and 
+                                                                                        initilize it called 
+chnage it value in static block.                                                                                 we are not able to change it's value                        
+4) static variable is loaded at the time of declaration                                                    4) final variable doesn't load at the time of declaration
+----------------------------------------------------------------------------------------------------------------------
 3) abstract
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            If you want to declare a method abstract then the class must be abstract class. abstract is used to achieve 0 to 100% abstraction.
+---------------------------------------------------------------------------------------------------------------------- If you want to declare a method abstract then the class must be abstract class. abstract is used to achieve 0 to 100% abstraction.
 
-
-                                                                                           ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                           3-I) What is the difference between abstract class and final class
-                                                                                           ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                              abstract class                                                                                          final class
-                                                                                          ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                          1) abstrct class is declared by using keyword abstract                                      1) final class is declared by using final
-                                                                                          2) abstract class never instantited                                                                   2) final class instantiaited
-                                                                                          3) abstract class declared method must be implement in subclass                       3) final method can't override
-                                                                                          4) abstract class is used to achieve abstraction                                                4) final class is used to restrict the user.
+----------------------------------------------------------------------------------------------------------------------3-I) What is the difference between abstract class and final class
+----------------------------------------------------------------------------------------------------------------------abstract class                                               final class
+----------------------------------------------------------------------------------------------------------------------1) abstrct class is declared by using keyword abstract        1) final class is declared by using final
+ 2) abstract class never instantited                           2) final class instantiaited
+3) abstract class declared method must be implement in subclass 3) final method can't override
+4) abstract class is used to achieve abstraction               4) final class is used to restrict the user.
                                                                                                                               
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------                
+----------------------------------------------------------------------------------------------------------------------
  4) synchronized
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             synchronization means capability to access mutliple thread to any shared resource.
+----------------------------------------------------------------------------------------------------------------------
+synchronization means capability to access mutliple thread to any shared resource.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
  5) transient
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             transient keyword is to skip member while seriliazing an object.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------transient keyword is to skip member while seriliazing an object.
+----------------------------------------------------------------------------------------------------------------------
   6) volatile
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             volatile means value read from main memory not a specific memory.
-											     Volatile keyword mainly used to achieve safety threads
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------volatile means value read from main memory not a specific memory.
+Volatile keyword mainly used to achieve safety threads
+----------------------------------------------------------------------------------------------------------------------
   7) native
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            native means they came from old version.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------native means they came from old version.
+----------------------------------------------------------------------------------------------------------------------
 22)  What is method?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             method is block code it run when it calls.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------- method is block code it run when it calls.
+----------------------------------------------------------------------------------------------------------------------
 23) What is constructor and explain in brief?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Constructor is special technique used to initialize the object. constructor called automatically when object of that class is created. 
-                                                                                            If you don't provide any constructor in the class then comipler provides default constructor.
-                                                                                            There are two tyeps of constructor 
-                                                                                            1)Parameterized constructor-A constructor with an argument called parameterized constrctor
-                                                                                            2)Non parameterized constructor-A constructor with no argument called non-paramerterized constructor.
+----------------------------------------------------------------------------------------------------------------------
+Constructor is special technique used to initialize the object. constructor called automatically when object of that class is created. 
+If you don't provide any constructor in the class then comipler provides default constructor.
+There are two tyeps of constructor 
+1)Parameterized constructor-A constructor with an argument called parameterized constrctor
+2)Non parameterized constructor-A constructor with no argument called non-paramerterized constructor.
 
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- A) Why it is called constructor?
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                           because it construct the value at the time of object creation.
-                                                                                             ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- B) Does constructor return any value? 
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Explicitly constructor doesn't return anything but internally constructor return current instance of that class.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- C) Can we have two constructor in java?
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Yes we have two constructor in java class called constructor overloading means same constructor name with different parameter.
-                                                                                            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- D) What are the rules for constructor?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            1) Constructor name same as the class name.
-                                                                                             2)Constructor first line shoud be this or super keyword.
-                                                                                            3)Constructor internally return current instance of that class 
-                                                                                             4)Constructor use with only access modifier keyword not non access modifier keyword.
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- E)What is constructor chaining in java?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Constructor chaining means calling one class constructor from another class with current instance of class.
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- F)Which modifier used with constructor?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Constructor used with public,private,protected or default
-                                                                                              ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              23- G)What is the purpose of default constructor?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Default constructor is used to get default values of the objects such as 0,null depends upon the data type.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- H) What is the purpose of parameterized constructor?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Parameterized constructor is used to proivde different values to distinct obejcts.
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- I)What is the use of private constructor in java?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            private constrctor is used to restrict the other user from creating object of that class.
-                                                                                            To make singleton class we use private constructor ie. that class has only one object is created as per the class defination.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- J)Can we have constructor in an Interface?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            No, we can't have constructor in an interface.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- k)Is it possible to call subclass constructor from super class constructor?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            No,it's not possible to call sub class constructor from super class.
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -L)Can we have a class with no constructor in it? what will happens during object creation?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             yes, we have class with no constructor in it, but at time of loading of class compiler provide default constructor.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -M)Will compiler create the deafult constructor when we already have a constructor defined in the class?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              If you already define constructor in class then compiler don't provide anything.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             23- N)What happens if we defined constructor as protected?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Protected constructor means preventing to create object of that class from outside the package.
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -O)Why constructor can't be final in java? or Can we declare constructor final ?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Because constructor never inherit.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23- P)Why constructor can't abstract in java?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            abstract means it doesn't have body. constructor will automatically called when object of class is created and it has body also.
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              23- Q)Why constructor can't be static in java?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            because static menas belong to the class not an object so there is non sense constructor is static.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -R)Are constructor and instance initializr block inherited to subclass?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            No, constructor and instance initilizr block inherited to subclass
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -S)What is order of calling constructor in case inheritance?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Calling one class constructor to another class constructor with current instance of that class.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -T)Is Constructor inherited?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            No, constructor never inherited.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -U)Can we overload the constructor?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            yes, we can overload the constructor, i.e a class in java has same constructor name with different arguments.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -V) Can we make a constructor final?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            No, we can't make constructor final because constructor never inherit.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -W)Does java support copy constructor?
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             copy constructor is method that used to initialize a object by uisng another object of same class.Java doesn't suppoert copy construtor because it create confusion and                                                                                             increase ambugity of the programm.
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             23 -X)What is mean by copy constructor?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             Copy constructor is method that used to intialize one object by using another object of same class
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -Y)Can we make constructor static?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             No, we can't make constructor static. because static means belong to the class not an object and constructor will automatically called when object                                                                                                                                of class is created.
-                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -Z)How can constructor chaining be done using this keyowrd?
-                                                                                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            this keyword is reference variable that refere current instance of that class.
-                                                                                            this keyword is used to call current class costructor,method,variable.
-                                                                                            this keyword is used to calll one class constructor to another class constructor with curreent instance of that class.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -A)Syntax for default and parameterized constructor?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            default constructor 
+----------------------------------------------------------------------------------------------------------------------23- A) Why it is called constructor?
+----------------------------------------------------------------------------------------------------------------------because it construct the value at the time of object creation.
+----------------------------------------------------------------------------------------------------------------------23- B) Does constructor return any value? 
+----------------------------------------------------------------------------------------------------------------------Explicitly constructor doesn't return anything but internally constructor return current instance of that class.
+--------------------------------------------------------------------------------------------------------------------  23- C) Can we have two constructor in java?
+----------------------------------------------------------------------------------
+Yes we have two constructor in java class called constructor overloading means same constructor name with different parameter.
+----------------------------------------------------------------------------------------------------------------------23- D) What are the rules for constructor?
+---------------------------------------------------------------------------------------------------------------------- 1) Constructor name same as the class name.
+ 2)Constructor first line shoud be this or super keyword.
+ 3)Constructor internally return current instance of that class 
+4)Constructor use with only access modifier keyword not non access modifier keyword.
+----------------------------------------------------------------------------------------------------------------------23- E)What is constructor chaining in java?
+----------------------------------------------------------------------------------------------------------------------Constructor chaining means calling one class constructor from another class with current instance of class.
+----------------------------------------------------------------------------------------------------------------------23- F)Which modifier used with constructor?
+----------------------------------------------------------------------------------------------------------------------Constructor used with public,private,protected or default
+----------------------------------------------------------------------------------------------------------------------23- G)What is the purpose of default constructor?
+---------------------------------------------------------------------------------------------------------------------- Default constructor is used to get default values of the objects such as 0,null depends upon the data type.
+----------------------------------------------------------------------------------------------------------------------23- H) What is the purpose of parameterized constructor?
+ ---------------------------------------------------------------------------------------------------------------------Parameterized constructor is used to proivde different values to distinct obejcts.
+----------------------------------------------------------------------------------------------------------------------23- I)What is the use of private constructor in java?
+private constrctor is used to restrict the other user from creating object of that class.
+To make singleton class we use private constructor ie. that class has only one object is created as per the class defination.
+----------------------------------------------------------------------------------------------------------------------23- J)Can we have constructor in an Interface?
+----------------------------------------------------------------------------------------------------------------------No, we can't have constructor in an interface.
+----------------------------------------------------------------------------------------------------------------------23- k)Is it possible to call subclass constructor from super class constructor?
+----------------------------------------------------------------------------------------------------------------------
+No,it's not possible to call sub class constructor from super class.
+----------------------------------------------------------------------------------------------------------------------23 -L)Can we have a class with no constructor in it? what will happens during object creation?
+----------------------------------------------------------------------------------------------------------------------yes, we have class with no constructor in it, but at time of loading of class compiler provide default constructor.
+----------------------------------------------------------------------------------------------------------------------23 -M)Will compiler create the deafult constructor when we already have a constructor defined in the class?
+---------------------------------------------------------------------------------------------------------------------- If you already define constructor in class then compiler don't provide anything.
+---------------------------------------------------------------------------------------------------------------------- 23- N)What happens if we defined constructor as protected?
+----------------------------------------------------------------------------------------------------------------------Protected constructor means preventing to create object of that class from outside the package.
+----------------------------------------------------------------------------------------------------------------------23 -O)Why constructor can't be final in java? or Can we declare constructor final ?
+Because constructor never inherit.
+----------------------------------------------------------------------------------------------------------------------23- P)Why constructor can't abstract in java?
+---------------------------------------------------------------------------------------------------------------------- abstract means it doesn't have body. constructor will automatically called when object of class is created and it has body also.
+---------------------------------------------------------------------------------------------------------------------- 23- Q)Why constructor can't be static in java?
+----------------------------------------------------------------------------------------------------------------------  because static menas belong to the class not an object so there is non sense constructor is static.
+----------------------------------------------------------------------------------------------------------------------23 -R)Are constructor and instance initializr block inherited to subclass?
+----------------------------------------------------------------------------------------------------------------------No, constructor and instance initilizr block inherited to subclass
+----------------------------------------------------------------------------------------------------------------------23 -S)What is order of calling constructor in case inheritance?
+----------------------------------------------------------------------------------------------------------------------Calling one class constructor to another class constructor with current instance of that class.
+----------------------------------------------------------------------------------------------------------------------23 -T)Is Constructor inherited?
+----------------------------------------------------------------------------------------------------------------------No, constructor never inherited.
+ ---------------------------------------------------------------------------------------------------------------------23 -U)Can we overload the constructor?
+---------------------------------------------------------------------------------------------------------------------- yes, we can overload the constructor, i.e a class in java has same constructor name with different arguments.
+----------------------------------------------------------------------------------------------------------------------23 -V) Can we make a constructor final?
+----------------------------------------------------------------------------------------------------------------------No, we can't make constructor final because constructor never inherit.
+----------------------------------------------------------------------------------------------------------------------23 -W)Does java support copy constructor?
+----------------------------------------------------------------------------------------------------------------------copy constructor is method that used to initialize a object by uisng another object of same class.Java doesn't suppoert copy construtor because it create confusion and                                                              ----------------------------------------------------------------------------------------------------------------------23 -X)What is mean by copy constructor?
+----------------------------------------------------------------------------------------------------------------------Copy constructor is method that used to intialize one object by using another object of same class
+----------------------------------------------------------------------------------------------------------------------23 -Y)Can we make constructor static?
+---------------------------------------------------------------------------------------------------------------------- No, we can't make constructor static. because static means belong to the class not an object and constructor will automatically called when object of class is created.
+----------------------------------------------------------------------------------------------------------------------  23 -Z)How can constructor chaining be done using this keyowrd?
+this keyword is reference variable that refere current instance of that class.
+ this keyword is used to call current class costructor,method,variable.
+this keyword is used to calll one class constructor to another class constructor with curreent instance of that class.
+----------------------------------------------------------------------------------------------------------------------23 -A)Syntax for default and parameterized constructor?
+ default constructor 
                                                                                             constructorname(){}.
                                                                                              parameterized constructor 
-                                                                                            constructorname(arguement1,arguement2){}                                                                                                                                                                                                          ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            23 -B)What happens if you provide return type in constructor? or Why return type is not allowed in constructor.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            If you provide return type in constructor it doesn't behave like                                                                                                       constructor it behave like normal method.
-                                                                                            and it will shown one warning message that method name same as constructor                                                                                             name   
+                                                                                            constructorname(arguement1,arguement2){}                                                                                                                                                                                                    ---------------------------------------------------------------------------------------------------------------- 
+23 -B)What happens if you provide return type in constructor? or Why return type is not allowed in constructor.
+---------------------------------------------------------------------------------------------------------------------- If you provide return type in constructor it doesn't behave like                                                     constructor it behave like normal method.and it will shown one warning message that method name same as constructor  name   
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                             23 -C)Can we make constructor abstract?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            No, we can't make construct abstract because abstract menas they don't                                                                                                 have body and constructor will automatically when object of class is                                                                                                   created  it has body also.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                             23 -D) Why constructor name same as class name?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                           Becuase we can create object of class by using new keyword and it has some specific information of about that class.                                              
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                          23 -A)Can constructor in java private ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                           yes constructor in java private
+---------------------------------------------------------------------------------------------------------------------23 -C)Can we make constructor abstract?
+----------------------------------------------------------------------------------------------------------------------No, we can't make construct abstract because abstract menas they don't                                                have body and constructor will automatically when object of class is                                                  created  it has body also.
+--------------------------------------------------------------------------------------------------------------------- 23 -D) Why constructor name same as class name?
+---------------------------------------------------------------------------------------------------------------------- Becuase we can create object of class by using new keyword and it has some specific information of about that class.                                              
+----------------------------------------------------------------------------------------------------------------------23 -A)Can constructor in java private ?
+----------------------------------------------------------------------------------------------------------------------yes constructor in java private
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                          23 -A)In which scenario you will use private constructor ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                          To make singleton class we need to create private constrcutor.
-											   23 -A)What is the return type of constructor ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                          Constructor doesn't have any return type.
-											  23 -A)How to call one constructor from the other constructor ??
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                          this keyword is used to call another constructor of same class, whereas
-											  super keyword is used to call another class constructor.
-                                                                                                                                                                                                                                               
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------23 -A)In which scenario you will use private constructor ?
+----------------------------------------------------------------------------------------------------------------------To make singleton class we need to create private constrcutor.
+23 -A)What is the return type of constructor ?
+----------------------------------------------------------------------------------------------------------------------Constructor doesn't have any return type.
+ 23 -A)How to call one constructor from the other constructor ??
+---------------------------------------------------------------------------------------------------------------------- this keyword is used to call another constructor of same class, whereas
+super keyword is used to call another class constructor.
+                                                                                                                      -------------------------------------------------
  28) What are the identifier in java?
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            Identifier specified name given to class,method and variable.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------Identifier specified name given to class,method and variable.
+----------------------------------------------------------------------------------------------------------------------
 29) What are the procedure for compilation of java source code?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                              java uses both interpreter and compiler to compiler source code. compiler is used to convert source code into byte code.wheras interpreter is used to                                                                                                                            convert byte code into machine level assembly instruction.
@@ -1016,23 +927,21 @@ final is used with class,variable,method.
 30) What is an applet?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                             applet is small piece of information writtern in any language to comiple byte code.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 31) What are the object class methods? ###########################
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            object class methods are - 1)toString()
+----------------------------------------------------------------------------------------------------------------------object class methods are - 1)toString()
                                                                                              2)equals() 
                                                                                              3)wait()
                                                                                              4)hashcode()
                                                                                              5)clone()
                                                                                             6) notify
                                                                                             7)notifyAll()
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 32) Is java object oriented or object based pragramming language?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                              Java is object oriented programming language because it support the concepts such as abstraction,polymorphism etc. whereas object based programming language doesn't support that things.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------Java is object oriented programming language because it support the concepts such as abstraction,polymorphism etc. whereas object based programming language doesn't support that things.
+----------------------------------------------------------------------------------------------------------------------
 33) What is JVM and it's memory areas?
-                                                                                                              JVM stands for java virtual machine.
+JVM stands for java virtual machine.
                                                                                                                It an abstract machine does not exist physically
                                                                                                               .It provide an environement to execute to byte code.
                                                                                                                It mainly follows the steps such as
@@ -1483,13 +1392,12 @@ To make class is singelton we need define private and static as field , private 
 92) How to make read only class in java? and How to make Write only class in java?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                               To make class read only make all member of class is private and use only getter method.                                                                               So we don't have setter method to write the values. whereas To make class write only we                                                                               need to make all member of class is private and use only setter method. so we are not                                                                                  able to read the values.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 93) How can we access same class in another class in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                 1) By using relative path.or by using fully qulified name.                            ----------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------1) By using relative path.or by using fully qulified name.                            
+----------------------------------------------------------------
 94) Do I need to import Java lang. package?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                              No, we don't need to improve java. lang package it import by default.
+----------------------------------------------------------------------------------------------------------------------No, we don't need to improve java. lang package it import by default.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 95) What is static import ?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
