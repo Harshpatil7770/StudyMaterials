@@ -921,182 +921,143 @@ super keyword is used to call another class constructor.
  ---------------------------------------------------------------------------------------------------------------------Identifier specified name given to class,method and variable.
 ----------------------------------------------------------------------------------------------------------------------
 29) What are the procedure for compilation of java source code?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                             java uses both interpreter and compiler to compiler source code. compiler is used to convert source code into byte code.wheras interpreter is used to                                                                                                                            convert byte code into machine level assembly instruction.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------java uses both interpreter and compiler to compiler source code. compiler is used to convert source code into byte code.wheras interpreter is used to convert byte code into machine level assembly instruction.
+----------------------------------------------------------------------------------------------------------------------
 30) What is an applet?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                            applet is small piece of information writtern in any language to comiple byte code.
+----------------------------------------------------------------------------------------------------------------------applet is small piece of information writtern in any language to comiple byte code.
 ----------------------------------------------------------------------------------------------------------------------
 31) What are the object class methods? ###########################
-----------------------------------------------------------------------------------------------------------------------object class methods are - 1)toString()
-                                                                                             2)equals() 
-                                                                                             3)wait()
-                                                                                             4)hashcode()
-                                                                                             5)clone()
-                                                                                            6) notify
-                                                                                            7)notifyAll()
+----------------------------------------------------------------------------------------------------------------------object class methods are -
+1)toString()
+2)equals() 
+3)wait()
+4)hashcode()
+5)clone()
+6) notify
+7)notifyAll()
 ----------------------------------------------------------------------------------------------------------------------
 32) Is java object oriented or object based pragramming language?
 ----------------------------------------------------------------------------------------------------------------------Java is object oriented programming language because it support the concepts such as abstraction,polymorphism etc. whereas object based programming language doesn't support that things.
 ----------------------------------------------------------------------------------------------------------------------
 33) What is JVM and it's memory areas?
 JVM stands for java virtual machine.
-                                                                                                               It an abstract machine does not exist physically
-                                                                                                              .It provide an environement to execute to byte code.
-                                                                                                               It mainly follows the steps such as
-                                                                                                               1) code loader
-                                                                                                               2)verify code
-                                                                                                               3) executing code
-                                                                                                               4)Provide runtime environment
+It an abstract machine does not exist physically.It provide an environement to execute to byte code.
+It mainly follows the steps such as
+1) code loader
+2) verify code
+3) executing code
+4) Provide runtime environment
              
-                                                                                                          JVM memory areas such as
-                                                                                                         1)Method area                 - Method area is used to store instrcution for static and non static method.
-                                                                                                         2)stack                            - stack is collections of frames which hold local variable and partial result that placed in part method calling and return. Stack                                                                                                                                                    follow LIFO manner last in first out.
-                                                                                                         3)Queue                          - Queue follows FIFO manner that is first in first out manner.
-                                                                                                         4)Pc register                    - Pc register stands for program controller register.It used to store the address of currently executing statement.
-                                                                                                         5)native method stack       - Native means comes from old version
+JVM memory areas such as
+1)Method area   - Method area is used to store instrcution for static and non static method.
+2)stack         - stack is collections of frames which hold local variable and partial result that placed in part method calling and return. Stack follow LIFO manner last in first out.
+3)Queue         - Queue follows FIFO manner that is first in first out manner.
+4)Pc register   - Pc register stands for program controller register.It used to store the address of currently executing statement.
+5)native method stack - Native means comes from old version
                     
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 34) What is JRE?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                         JRE stands for java runtime environment.It is implementation of jvm and exist physically.
-                                                                                                         It provide platform to run our application. 
+---------------------------------------------------------------------------------------------------------------------- JRE stands for java runtime environment.It is implementation of jvm and exist physically.
+  It provide platform to run our application. 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 35) What is JDK?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                         JDK stands for java development kit.It is combination of JVM,JRE and other software development tool. JDK is used to develop actual application in java.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------JDK stands for java development kit.It is combination of JVM,JRE and other software development tool. JDK is used to develop actual application in java.
+----------------------------------------------------------------------------------------------------------------------
 36) What happen if superclass and subclass having same filed name?
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                         Then to access super class we neeed to use super keyword.
-													 This situation is also called as filed hiding.
+----------------------------------------------------------------------------------------------------------------------Then to access super class we neeed to use super keyword.
+This situation is also called as filed hiding.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 37) What is the role of implement keyword?
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                         Implement keyword is used to develop relation between the class and interface. a class implements interface.
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------Implement keyword is used to develop relation between the class and interface. a class implements interface.
+----------------------------------------------------------------------------------------------------------------------
 44) Is String is keyword in Java?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                        String is not keyword in java. String is final class present in java.lang package.
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------String is not keyword in java. String is final class present in java.lang package.
+----------------------------------------------------------------------------------------------------------------------
 47) What is reference variable?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                        reference variable is associate with the object of that class.
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------reference variable is associate with the object of that class.
+----------------------------------------------------------------------------------------------------------------------
 48) Explain mutuable and immutable object?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                       mutuable object means can modified or editiable whereas immutable means can't be modified or editiable.
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------mutuable object means can modified or editiable whereas immutable means can't be modified or editiable.
+----------------------------------------------------------------------------------------------------------------------
 49) Where object is stored in memory?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                     Objects are stored in heap memory.
-                                                                                                     Heap- heap is run time data area on whch objects are allocated.
-												  
-												  
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-49) What is heap memeory
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Heap is runtime data area on which object are allocated.
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------Objects are stored in heap memory.
+Heap memory - heap memory used to for dyanmic memory allocation , where object and varaible are created runtime.
+--------------------------------------------
+49) What is heap memeory?
+----------------------------------------------------------------------------------------------------------------------
+Heap memory used for dyanamic memory allocation , where object and variable are created at runtime.
+----------------------------------------------------------------------------------------------------------------------
 50) What is memory leak?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                         Memory leak is situation occur when object present in the heap memory which are not longer                                                                            used and garbage collector unable to remove it.They are unnecessarly maintained.                      
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------Memory leak is situation occur when object present in the heap memory which are not longer                            used and garbage collector unable to remove it.They are unnecessarly maintained.                      
+----------------------------------------------------------------------------------------------------------------------
 51) What is the differnce between instance and object?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                     Instance always have a defination 
-                                                                                                     Employee employee=new Employee();
-                                                                                                     whereas object may or may not have defination
-                                                                                                     int array[];
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------Instance always have a defination 
+Employee employee=new Employee();
+whereas object may or may not have defination
+int array[];
+----------------------------------------------------------------------------------------------------------------------
 52) Exaplain the concept of singleton class with examples?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Sinleton class created to restrict the user from creating object of that class. We can create only one object of that class.
-To make class is singelton we need define private and static as field , private constructor.
-3      
-                       public class Singleton {
+----------------------------------------------------------------------------------------------------------------------
+Singleton class created to restrcit the user from creating more than one instance of class.
+Singleton class means only one instance of that class is get created.
+To make a class as sinleton we need to follow the below three criteria -
+1) declare a class constructor as private , mean it will not allow to create instance of class from outside.
+2) declare a variable as static.
+3) declare a method where we can check the first time wheather the object of singleton class
+   is created or not. If it is created then rest of all times will use that.
 
-                	private static Singleton singleton = null;
 
-                	private Singleton() {
+Class Company {
 
-                	}
+  private static Company company=null
 
-                	public static Singleton getInstance() {
-	                	if (singleton == null) {
-		                	singleton = new Singleton();
-	                	}
-		                      return singleton;
-	                                }
+ private Company(){
 
-                 	public static void main(String[] args) {
-		Singleton s1 = getInstance();
-		System.out.println(s1.hashCode());
-		Singleton s2 = getInstance();
-		System.out.println(s2.hashCode());
+ }
 
-	                  }
-                       }
-		       
-		       
-		       or
-		       
-		     class Singleton{
-		     
-		     private static Singelton single=new Singleton();
-		     private Singleton(){
+public static Company getInstance(){
+   if(company==null){
+       return company=new Company();
+   }
+   return company;
+}
 
-                     }
-		     
-		     public static Singelton getInstane(){
-		     return singel;
-		          }
-		     }
-		     class Test{
-		      public static void main(String args[]){
-		           Singleton s1=Singleton.getInstance();
-			   System.out.println(s1.hashcode());
-			   Singelton s2=Singleton.getInstance();
-			   System.out.println(s2.hashcode());
-			  }
-		     }
-			  
-			  
-		       
-		      
-            
+/**business logic**/
+public void processInput(){
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+}
+
+----------------------------------------------------------------------------------------------------------------------
 53) Why Pointer is not used in java?
------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
-                                                                      Pointer create confusion in the program and increase ambugity. Java is simple language i.r                                                                             pointer is not used in java
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-54) What is JIT?######################
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                     JIT stands for just in time compiler. It is part of JVM which used to improve the performance of                                                                      application.
-                                                                     JIT imporve performance of your application by compling byte code at run time.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------Pointer create confusion in the program and increase ambugity of the program. Java is simple language i.r             pointer is not used in java
+----------------------------------------------------------------------------------------------------------------------
+54) What is JIT?
+----------------------------------------------------------------------------------------------------------------------JIT stands for just in time compiler. It is part of JVM which used to improve the performance of application.
+JIT imporve performance of your application by compling byte code at run time.
+----------------------------------------------------------------------------------------------------------------------
 55) How object is created?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                     Object is created by using new keyword.
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+Object is created by using new keyword.
+----------------------------------------------------------------------------------------------------------------------
 56) What is the difference between constructor and Java Method?
------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+----------------------------------------------------------------------------------------------------------------------
                                                                                                                                    Constructor                                                                                        Method
-                                                                                                    1) If we don't provide any constructor in the class then constructor                       1)In case of method compiler don't provide anything.
-                                                                                                        provide default constrcutor.                                                                                               
-                                                                                                    2) Constructor called implicitly.                                                                  2)Method called explicity.
-                                                                                                    3)constructor explicity doesn't return any values                                                  3)method return values.
-                                                                                                    4)Constructor name same as class name                                                              4)method name may or may not same as class name
-                                                                                                    5)Constructor is special technique that used to intialize a object                                5)Method is used to explore the object.
+1) If we don't provide any constructor in the class then constructor          1)In case of method compiler don't 
+                                                                                provide anything.
+ provide default constrcutor.                                                                                               
+2) Constructor called implicitly.                                            2)Method called explicity.
+3)constructor explicity doesn't return any values                            3)method return values.
+4)Constructor name same as class name                                        4)method name may or may not same as class name
+5)Constructor is special technique that used to intialize a object           5)Method is used to explore the object.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 57) What is the difference between break and continue?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
                                                                                                                                Break                                                                                              continue
-                                                                                                    1) break is used in swith and loop                                               1)continue is used only loop
-                                                                                                    2)break means stops the execution of that loop.                                 2)continue means doesn't terminate the program come to next iteration.
+1) break is used in swith and loop                                             1)continue is used only loop
+2)break means stops the execution of that loop.                                2)continue means doesn't terminate the program come to next iteration.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 58) What is infinte loop?
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------                   
