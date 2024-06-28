@@ -1,0 +1,62 @@
+******************************************************************************************************************************
+******************************************************************************************************************************
+******************************************************************************************************************************
+                                 !!! Shree Swami Samarth !!!
+******************************************************************************************************************************
+******************************************************************************************************************************
+******************************************************************************************************************************
+
+Narayana Distributed transaction manager.
+
+1) Spring by default provides us transaction then why do we need separate Narayana or Atomokis? 
+-------------------------------------------------------------------------------------------------------------------------------
+i) Spring transaction basically getting used if there is one resource like Database.
+ii) But if there are many resources then it is difficult to maintain the ACID properties .i.e., atomicity ,
+    consistency , isolation and durability.
+iii) To ensure this ACID properties we have Narayana or Atomikos.
+
+2) Why we have to use Narayana instead of Atomikos ?
+-------------------------------------------------------------------------------------------------------------------------------
+
+3) What the feature of Narayana? 
+-------------------------------------------------------------------------------------------------------------------------------
+i) The main feature of namarayana basically it will commit all transaction if success or if any failure occur it will rollback all  
+i) Two phase commit pattern 
+
+A) Atomicity - 
+i) It all operation are success then only it will commit , if any thing is failed it will rollbakc all the operations.
+
+B) Consistency - 
+i) Narayana insure the data intergrity before commiting the transaction, if there is data integration violiation then it will
+  rollback it.
+
+C) Isolation - 
+i) Isolation means basically changes made by one transaction will not visible to other transaction until the first will not commit.
+
+D) Durability -
+i) Durability means it ensure that once transaction is commited it remains commited even thought id system is crashes.
+
+
+4) XA protocol 
+-------------------------------------------------------------------------------------------------------------------------------
+i)   Narayana supports XA (Extended architect) protocol.
+ii)  Narayana is getting used to for distributed transaction management purpose.
+
+5) How XA works
+-------------------------------------------------------------------------------------------------------------------------------
+Below are the two things XA will follow.
+
+i) Two-Phase commit protocol will work on the below two points
+A) prepare - 
+prepare means narayana will send msg to all resources to prepare transaction, if everything is
+success then respond as prepate , if anything is failed then respond as rollback.
+
+B) commit/rollback
+If narayana receive prepare from all resources then then narayana will send commit to all the resources.
+If narayana received rollback from any resources then narayana will msg as rollback to all the resources.
+
+ii) Atomicity and Consistency -
+Atomicitiy means narayana ensure that all operation will either commit or none.
+Consistency means it will check data integrity before commiting.
+
+6) 
