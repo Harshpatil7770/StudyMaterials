@@ -858,14 +858,14 @@ Yes we have two constructor in java class called constructor overloading means s
 ----------------------------------------------------------------------------------------------------------------------23- I)What is the use of private constructor in java?
 private constrctor is used to restrict the other user from creating object of that class.
 To make singleton class we use private constructor ie. that class has only one object is created as per the class defination.
-----------------------------------------------------------------------------------------------------------------------23- J)Can we have constructor in an Interface?
+----------------------------------------------------------------------------------------------------------------------23- J) Can we have constructor in an Interface?
 ----------------------------------------------------------------------------------------------------------------------No, we can't have constructor in an interface.
 ----------------------------------------------------------------------------------------------------------------------23- k)Is it possible to call subclass constructor from super class constructor?
 ----------------------------------------------------------------------------------------------------------------------
 No,it's not possible to call sub class constructor from super class.
 ----------------------------------------------------------------------------------------------------------------------23 -L)Can we have a class with no constructor in it? what will happens during object creation?
 ----------------------------------------------------------------------------------------------------------------------yes, we have class with no constructor in it, but at time of loading of class compiler provide default constructor.
-----------------------------------------------------------------------------------------------------------------------23 -M)Will compiler create the deafult constructor when we already have a constructor defined in the class?
+----------------------------------------------------------------------------------------------------------------------23 -M) Will compiler create the deafult constructor when we already have a constructor defined in the class?
 ---------------------------------------------------------------------------------------------------------------------- If you already define constructor in class then compiler don't provide anything.
 ---------------------------------------------------------------------------------------------------------------------- 23- N)What happens if we defined constructor as protected?
 ----------------------------------------------------------------------------------------------------------------------Protected constructor means preventing to create object of that class from outside the package.
@@ -1104,96 +1104,56 @@ No, we can't use this in static methods.
 61) What is class loader? and it's types
 ----------------------------------------------------------------------------------------------------------------------Class loader is subsystem of jvm. when you run the program it loaded first.
 Types of class loader
-1) application class loader  - It loads all the classes  from currentclasspath
-System class loader-  
-2)bootsstrap  class loader -
-bootstrap class loader is parent class of all class loader.
-it loads rt.jar file. and loads jdk internal classes.
-3)extension class loader - extension class loader loads jdk extension directory 
+1) BootStrap class loader - BootStrap class loader is parent for all class loader.
+                            It loads all the claases like java.lang.* and java.util.*.
+
+2) Extension class loader  - Extension class loader loaded all ext directory classes. 
+                              It is child class of bootStrap class loader.
+3) Application class loader - Application class loader is child class of extension class loader.
+                              It loads all the classes from application class path.
 ----------------------------------------------------------------------------------------------------------------------
 62) How classloader works in java?
 ----------------------------------------------------------------------------------------------------------------------
 class loader scan all the related location of jar files and classes.It also load all the required file.
 ----------------------------------------------------------------------------------------------------------------------
 63) What is the difference between data and information?
-----------------------------------------------------------------------------------------------------------------------Data                                                                                           Information
-1) Data is unprocessed row format                1)Information is processd well format
+----------------------------------------------------------------------------------------------------------------------          Data                                         Information
+1) Data is unprocessed row format                1) Information is processd well format
 2) Data is huge in format                        2) Information is short format
-3) Data is not meaningful                        3)Infomation is meaningful
+3) Data is not meaningful                        3) Infomation is meaningful
 ---------------------------------------------------------------------------------------------------------------------- 64) What are other oops concepts?
 ---------------------------------------------------------------------------------------------------------------------- 1)Association
   2)Aggregation
   3)Composition
----------------------------------------------------------------------------------------------------------------------- 64- A)What is Association?
+---------------------------------------------------------------------------------------------------------------------- 64- A) What is Association?
 ----------------------------------------------------------------------------------------------------------------------
-Association basically represent HAS-A relationship.
-It has two forms A) Aggreation B) Composition
+Association represent has-a relationship in java.
+Association is getting used for loosed coupling as compared to Inheritance.
+It has two types 
+A) Aggregation
+B) Composition 
 
-class Car{
+----------------------------------------------------------------------------------------------------------------------64- B) What is aggregation?
+---------------------------------------------------------------------------------------------------------------------
+Aggregation basically represent weak relationship in java.
+for eg - A car has a music system.
 
-}
+---------------------------------------------------------------------------------------------------------------------- 64- C) What is composition?
+---------------------------------------------------------------------------------------------------------------------
+Composition basically represent Strong relationship in java.
+for eg - A car has an engine.
 
-class Engine{
-//What i want i will access it via new keyword.
-//it becomes loosely coupled. 
-//Where as Inheritance we can access all parent class method ,variables. It is become tightly coupled ,
-//if we changes something in parent class it will affect in child class.
-Car c =new Car();
-
-}
-
-A car has a engine.
-Basically assocation means we can access only those filed varaible , method which i want, not a all.
-
-----------------------------------------------------------------------------------------------------------------------64- B)What is aggregation?
----------------------------------------------------------------------------------------------------------------------- Aggregation is specilized form of association means all objects have there own                                        life but there is owner.
-  for eg- A single teacher is associated with all student but not with all  department, if i delete one deparment 
-  then student will not get destroy.
-										      
-										     for eg- class Student{
-										      private int id;
-										      private String name;
-										      Address address;
-										      }
-										      class Address{
-										      
-										      }
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                     64- C)What is composition?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                      Composition is specilized form of aggregation. It also called as death                                                                                                 relationship. Composition represent has-a relationship. ie. child object doesn't                                                                                       have there own life
-                                                                                      If i delete parent object then child object get delete automatically.
-										      
-										      for eg-
-										      class Car{
-										      private String carName;
-										      
-										      private Engine engine;
-										      
-										      public Car(){
-                                                                                        engine=new Engine();
-										      }
-										      }
-										      class Engine{
-										      
-										      }
-										      
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                     64- D)How many ways to implement relation in java?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                     There are mutilple ways to implement relation in java.
-                                                                                     1) Association 
-                                                                                     2)Aggregation 
-                                                                                     3)Inheritance
-                                                                                     4)composition 
------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------
-                                                                                     64- E) Which is more tighlty bond inheritance or composition?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                     Composition is more tightly bond as compared to inheritance.  
-										     ---------------------------------------------------------------------------------
-                                                                                    64- F) When will you prefer composition over inheritance?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-                                                                                    If there is proper IS-A relationship then we will go for inhertiace if there is                                                                                       some cofusion we will go for composition.
+---------------------------------------------------------------------------------------------------------------------- 64- D)How many ways to implement relation in java?
+---------------------------------------------------------------------------------------------------------------------- There are mutilple ways to implement relation in java.
+1) Association 
+2)Aggregation 
+3)Inheritance
+4)composition 
+----------------------------------------------------------- ----------------------------------------------------------64- E) Which is more tighlty bond inheritance or composition?
+----------------------------------------------------------------------------------------------------------------------Composition is more tightly bond as compared to inheritance.  
+---------------------------------------------------------------------------------
+64- F) When will you prefer composition over inheritance?
+---------------------------------------------------------------------------------------------------------------------- If there is proper IS-A relationship then we will go for inhertiace if there is                                       some cofusion we will go for composition.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
                                                                                     64- G)How aggregation and composition are different concepts?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
