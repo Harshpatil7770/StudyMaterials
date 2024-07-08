@@ -2452,7 +2452,7 @@ class Employee{
     destroyed.
     
     
-    242) How to compare a time is lies between two times or not ? how to getprevious day or future day?
+  242) How to compare a time is lies between two times or not ? how to getprevious day or future day?
    ----------------------------------------------------------------------------------------------------------
    public Date getResult(){
    Calendor calendor=
@@ -2521,7 +2521,7 @@ class Employee{
    
    
    246) How to take call back to collar of method if any exception occurs?
-   --------------------------------------------------------------------------------------------------------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------
    1) don't handle the exception
    2) always throws the exception
    3) if you are using try and catch block
@@ -2535,14 +2535,12 @@ class Employee{
   use two star you will get blue line of comment.
   
   248) How to convert String into jsonObject?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------
   Using GSON we can convert String to Json Object.
-  
   GSON is main class of Google library.
   
-  
   249) What is the use of ObjectMapper in java?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------
   ObjectMapper is used to convert java object into json string.
   ObjectMapper objectMapper=new ObjectMapper();
   objectMapper.writeValueAsAString(paramter);	
