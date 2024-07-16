@@ -207,7 +207,7 @@ Checked Expetion                                     Uncheked Exception         
 ----------------------------------------------------------------------------------------------------------------------
 4) What are the types of exception in java?
 ----------------------------------------------------------------------------------------------------------------------There are two types of exception in java 
- 1)Checked Exception -
+1)Checked Exception -
 Checked exception means compile time exception, we can handel it by using try and catch block.
 Compile time exception means compiler able to find that exception during compile time.
 The exception direclty inherit from throwable classes except runtime called as checked exception.
@@ -248,47 +248,40 @@ It occurs due to lack of system resource.
 
 
                                                                                                                                                                                            
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 5) Keywords of Exception? 
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                                                  1)try 
-                                                                                                                                                                                                  2)Catch
-                                                                                                                                                                                                  3)finally
+---------------------------------------------------------------------------------------------------------------------- 1)try 
+  2)Catch
+  3)finally
                                                                                                                                                                                           
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 6)Try block?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Inside the try we should place exception. after the try block we use catch block that means we can't use                                                                try block alone.
+----------------------------------------------------------------------------------------------------------------------Inside the try we should place exception. after the try block we use catch block that means we can't use           try block alone.
 
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 7) Catch Block?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       afert the try block we should use catch block.that means we can't use catch block alone.A exception occur
-                                                                                                                                                                         in try block it must be handel in catch block .
+----------------------------------------------------------------------------------------------------------------------After the try block we should use catch block.that means we can't use catch block alone.
+A exception occur in try block it must be handel in catch block .
 
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 8) Finally block?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       finally block is used to excute important code of the program such as closing file,closing connection or etc. It                                                        execute whether the exception occur or not that means it execute always. It doesn't execute when fatal error occur
-                                                                                                                                                                        or we can extenally call system.exit() method                                                                                                                                                                                                                                                                                                         
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------Finally block is used to excute important code of the program such as closing file,closing connection or etc. It      execute whether the exception occur or not that means it execute always. It doesn't execute when fatal error occur
+or we can extenally call system.exit() method                                                                                                                                                                                                                                                                                                         
+----------------------------------------------------------------------------------------------------------------------
 9) throw keyword?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       throw keyword is used to thrown an exception. checked exception can't propagate by using throw keyword.                                                               throw keyword is used within the method body. by using throw keyword we can't declare multiple exception.
-                                                                                                                                                                      throw keyword is used followed instance.
+----------------------------------------------------------------------------------------------------------------------throw keyword is used to thrown an exception. checked exception can't propagate by using throw keyword.               throw keyword is used within the method body. by using throw keyword we can't declare multiple exception.
+throw keyword is used followed instance.
 
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 10) throws keyword?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                         throws keywords is used to declare to an exception. throws keyowrd is used with method signature.
-                                                                                                                                                                         throws keyword is used to follows class.checked exception propagated by using throw keyowrd. You can declare
-                                                                                                                                                                         multiple exception by using throws.             
+----------------------------------------------------------------------------------------------------------------------throws keywords is used to declare to an exception. throws keyowrd is used with method signature.
+throws keyword is used to follows class.checked exception propagated by using throw keyowrd. You can declare
+multiple exception by using throws.             
 
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 11) Why we use Finally block?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       finally block is used to execute important code of the program such as closing file, closing connedction etc.                                                          It execute always whether exception occur or not. It doesn't exceute if fatal error occur or we can externally
-                                                                                                                                                                        call system.exit() method. 
+----------------------------------------------------------------------------------------------------------------------finally block is used to execute important code of the program such as closing file, closing connedction etc.         It execute always whether exception occur or not. It doesn't exceute if fatal error occur or we can externally
+call system.exit() method. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 12) Why we use Finally block?
