@@ -21,6 +21,6 @@ B) Did poc , using core javax.jms api.
    Foe this case put operation taking 0 to 30 ms if there is load.
    90k input able to process within 17 min.
 
-C) 
+C) xor - extraordinary
 
 
