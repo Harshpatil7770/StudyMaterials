@@ -297,28 +297,30 @@ multiple exception by using throws.
 
 ----------------------------------------------------------------------------------------------------------------------
 11) Why we use Finally block?
-----------------------------------------------------------------------------------------------------------------------finally block is used to execute important code of the program such as closing file, closing connedction etc.         It execute always whether exception occur or not. It doesn't exceute if fatal error occur or we can externally
+----------------------------------------------------------------------------------------------------------------------
+finally block is used to execute important code of the program such as closing file, closing connedction etc.         
+It execute always whether exception occur or not. It doesn't exceute if fatal error occur or we can externally
 call system.exit() method. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 12) Why we use Finally block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Exception block is used to exceute important code of the program such as closing files,closing connection                                                             or etc.It is ensurely executed i.e whether exception handeled or not. 
+Exception block is used to exceute important code of the program such as closing files,closing connection                               or etc.It is ensurely executed i.e whether exception handeled or not. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 13) What is the main advantage of Exception Handeling?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       To maintain normal flow of the program we handel the exception.
+---------------------------------------------------------------------------------------------------------------
+To maintain normal flow of the program we handel the exception.
 If we don't handel the exception program will get direclty terminated.																				       
 ---------------------------------------------------------------------------------------------------------------------------------------
 14) How can you handel exception in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       By using try,catch and finally block is used to handel the exception.                                                                                                                                                                                         
+By using try,catch and finally block is used to handel the exception.                                                                                                                                                                                         
 ---------------------------------------------------------------------------------------------------------------------------------------
 15) What are the new feature added in java 1.7?
 ---------------------------------------------------------------------------------------------------------------------------------------
-1) Try with resource- A try statement declare with one or more resource called as try with resource.                                                                   If we use try with resource we don't need to use finally block for closing connection.
-                                                                                                                                                                       2) Single Catch Block Handel Muliple exception by using vertical bar or pipe. (|)
+1) Try with resource- A try statement declare with one or more resource called as try with resource.                                       If we use try with resource we don't need to use finally block for closing connection.
+                                                                                                                                        2) Single Catch Block Handel Muliple exception by using vertical bar or pipe. (|)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) What is the difference between throw and throws?
@@ -336,33 +338,32 @@ If we don't handel the exception program will get direclty terminated.
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) Which exception bydefault handeled in calling chain?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Unchecked exception by default followed in calling chain                                                                                                                                                                                       
+Unchecked exception by default followed in calling chain                                                                                                                                                                                       
 ---------------------------------------------------------------------------------------------------------------------------------------
 18) Can we handel mutilple exception in single catch block and how?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                      Yes we can handel mutiple exception in single catch block by using vertical pipe or bar.                                                                                                                                                                                           
----------------------------------------------------------------------------------------------------------------------------------------
+Yes we can handel mutiple exception in single catch block by using vertical pipe or bar.                                                                                                                                                                                        ---------------------------------------------------------------------------------------------------------------------------------------
 19) What is exception propagation?
 ---------------------------------------------------------------------------------------------------------------------------------------
-exception propagation means exception thrown from top of the stack to the bottom of the stack if not catched                                                           then drop down again main method called as exception propagation.
+exception propagation means exception thrown from top of the stack to the bottom of the stack if not catched                            then drop down again main method called as exception propagation.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 20) What is custom exception and How to create and why we need ?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Custom exception means user defined exception.It is used to catch and provide specific treatment to exiting java exception. 
 Business logic exception 
-                                                                                                                                                                        1)class NewExcpetion extends Exception
-                                                                                                                                                                       2) class NewException extends RuntimeException
+                                                                                                                                        1)class NewExcpetion extends Exception
+                                                                                                                                        2) class NewException extends RuntimeException
                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
 21) Can we keep other statement in try,catch and finally block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       No we can't keep other statement in try catch and fianlly block                                                                                                                                                                                        
+No we can't keep other statement in try catch and fianlly block                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 22) There are three statement in try block and if exception occure in second statement then does control go to
     third statement or catch block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                      If exception occur in secod statment of try block then control directly goes to catch block and third the statement                                                                                                                                                                                          
+If exception occur in second statment of try block then control directly goes to catch block and third the statement                                                
 ---------------------------------------------------------------------------------------------------------------------------------------
 23) What is unreachable catch block error?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -371,53 +372,55 @@ It you keep first super class then subclass it shows unreachaable catch block er
 ---------------------------------------------------------------------------------------------------------------------------------------
 24) What are the runtime exception in java & give example?
 ---------------------------------------------------------------------------------------------------------------------------------------
-The excepetion directly inherit from unchecked exception called as runtime exception.                                                                                  Runtime exception handel at runtime. eg - IndexOutOfBond exception,airthmetic exception, null pointer exception                                                                                                                              
+The excepetion directly inherit from unchecked exception called as runtime exception.                                                   Runtime exception handel at runtime. eg - IndexOutOfBond exception,airthmetic exception, null pointer exception                                                                                                                              
 ---------------------------------------------------------------------------------------------------------------------------------------
 25) What is out of memory error in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Out of memory error is subclass of java.lang.error. This type of exception occur in loop when condition                                                                evaluate always true
+Out of memory error generally occurs when jvm runs out of memory , it is not able to allocate memory to 
+new object.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 25) What is class not found exception & No class defination found error in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-classNotFound Exception occur when you load the class and the class not found in path.                                                                                 NoClassDefinationFoundException occur when you compile the class and at the runtime they are not present.
+classNotFound Exception occur when you load the class and the class not found in path.                                                  NoClassDefinationFoundException occur when you compile the class and at the runtime they are not present.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 26) Can we keep the statement after finally block if control returing from the finally block itself?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       No , we can't keep anything if finally block return control. if you keep it will shows unrechable catch block error                                                                                                                                                                                        
+No , we can't keep anything if finally block return control. if you keep it will shows unrechable catch block error                                               
 ---------------------------------------------------------------------------------------------------------------------------------------
 27) Does finally block get exceute if either try and catch blocks are returning the control?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Yes, finally block always execute either control returning from try or catch block
+Yes, finally block always execute either control returning from try or catch block
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 28) What is re-throwing an exception in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       If exception occur in try block it must be follw in catch block if catch block is not able to handel then we need to 
-                                                                                                                                                                       rethroew that expection by using throw keyword
+If exception occur in try block it must be follw in catch block if catch block is not able to handel then we need to 
+rethroew that expection by using throw keyword
 ---------------------------------------------------------------------------------------------------------------------------------------
 29) Why it is always recommonded that cleanup operations like DB resources keep inside finally block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Finally block is used to execute important code of the program such as closing file,closing connection etc.                                                            It executed always exception occured or not. That means fianlly block ensurely executed. That's always recommnded that important code kept inside the finally block.
+Finally block is used to execute important code of the program such as closing file,closing connection etc.                             It executed always exception occured or not. That means fianlly block ensurely executed. That's always recommnded that important code kept inside the finally block.
 ---------------------------------------------------------------------------------------------------------------------------------------
 30) What is difference between final, finally and finiliaze in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
          Final                                                     Finally                                            finalize
-1) Final is nonaccess modifier keyword.                1) Finally keyword is used to execute        1) Finalize                                                    
-Once we declare a class is final we can't                 important code of the program.             method executed just before the object
-inherit it in subclass. Once we declare                2) It execute always wheather                 is garbage collected. It is process of cleaning
-method is final we can't overide it in subclass.         the exception handeled or not.              and remove unreferenced object automatically when
-Once we declare a variable is final                                                                  we create without using new keyword.
-and initialized it we can't change
-it's value.
-
+1) final is non access modifier keyword                 1) Finally block ensurely executed ,             1) finalize is object class 
+2) Once your declare a varibale is final and               wheather exception occured or not.               method is executed just
+   initialized it , you can't change it value           2) To executed important code of the                just before the object is 
+3) Once you declate a class is final your can't            program such as closing file,                    garbage collected.
+   inherit it.                                             closing connection this type of code          2) There is no garranty 
+4) Once you declare a method is final you can't            we need to keep into finally block.               of execution of this method
+   override it.                                                                                              that;'w it is removed
+                                                                                                             from java 1.9.
 
 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 31) What is class cast exception in java?
---------------------------------------------------------------------------------------------------------------------------------------                                  Class cast exeption means jvm unable to cast exection one object type over another type.                                      
+--------------------------------------------------------------------------------------------------------------------------------------  Class cast exeption means jvm unable to cast exection one object type over another type.                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 32) What is the difference between throw,throws and throwable in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -439,7 +442,7 @@ it's value.
 1)throwable is root class of all exception and errors.                                                                                                                                                                                                                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 33) What is stackoverflow error in java?
----------------------------------------------------------------------------------------------------------------------------------                                      Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.( for eg- this type of
+---------------------------------------------------------------------------------------------------------------------------------       Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.( for eg- this type of
 error generally occur when stack overflows).
 Rucursion program
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -461,48 +464,70 @@ PrintstackTrace() method is used to declare details information if exception occ
 ---------------------------------------------------------------------------------------------------------------------------------------
 38) Give some example of checked exception?
 -------------------------------------------------------------------------------------------------------------------------------------
-1)IO Expection 2)SQL Exception 3)ClassNotFoundException
+1) IO Expection 2) SQL Exception 3) ClassNotFoundException
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 39) Give some example of unchcked exception?
 ---------------------------------------------------------------------------------------------------------------------------------------
-1)Index out of bond exception 2)AithmeticExcpetion 3)NullPointerException                                                                                             ---------------------------------------------------------------------------------------------------------------------------------------
+1) Index out of bond exception 2) ArithmeticExcpetion 3) NullPointerException                                                           ---------------------------------------------------------------------------------------------------------------------------------------
 40) What is try with resource statement in java and it's advantages?
 ---------------------------------------------------------------------------------------------------------------------------------------
-a try statement is declared with one or more resource is called as try with resource.                                                                                 when we use try with resource we don't need to use finally block.
+Try with resource basically introduced in java 1.7.
+So basically we don't need to use finally block , if are using try with resource.
+means to ensurly closing connection , file you don't need to write finally block.
+You can write the code into try() {
+                                    }
+into try . not in body , after the try in rounded bracket.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 41) Which class is super class for all error and exception?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Throwable class is super class for all error and exception.(throwable is a class not an interface)
+Throwable class is super class for all error and exception.(throwable is a class not an interface)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 42) A single try block and multiple catch blocks can co-exist in a Java Program.
    Explain.?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       At a time only one exception occur and only one catch block will get exceute.
-                                                                                                                                                                       We can keep a single try block and mutiple catch block but it should be placed in order such as
-                                                                                                                                                                      first we  write specific and then general. for eg - first we write arithmetic expection and then we write exception
-                                                                                                                                                                      block. 
-                                                                                                                                                                      high prioriety catch block exceuted first
+ At a time only one exception occur and only one catch block will get exceute.
+ We can keep a single try block and mutiple catch block but it should be placed in order such as
+ first we  write specific and then general. for eg - first we write arithmetic expection and then we write exception
+ block high prioriety catch block exceuted first
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 43) Do final, finally and finalize keywords have the same function?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Each keyword has different function.
-                                                                                                                                                                       final is used to restrict the user. finally block is used execute impotant code of the program such as closing files.
-                                                                                                                                                                       closing connection,etc. finallize method execute just before the object is garbage collected.
-                                                                                                                                                                       It is process of cleaning.
+Each keyword has different function.
+final is used to restrict the user. finally block is used execute impotant code of the program such as closing files.
+closing connection,etc. finallize method execute just before the object is garbage collected.
+It is process of cleaning.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 44)  Is it mandatory for a catch block to be followed after try block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       No,it's not neccesarry each try block must be follwed by catch block, we can use finally block instead of catch                                                       block and and thrown exception by using throws.
+No it is not mandotory to write the catch block after the try block.
+you can use finally block after the try block.
+
+public void init(){
+    try{
+        Integer res=10/0; 
+    }finally{
+       System.out.println("Executed finally block succesfully");
+     }
+}
+
+public void main String(args[]){
+   try{
+         init();
+      }catch(Exception e){
+       System.out.println("Exception catched in main method "+e.getMessage());
+      }
+}
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 45) Will the finally block be executed if the code System.exit(0) is written at the end
     of try block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       NO, then finally block will not get execute.
+NO, then finally block will not get execute.
 ---------------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                                                         try {
 
@@ -520,10 +545,10 @@ a try statement is declared with one or more resource is called as try with reso
 ---------------------------------------------------------------------------------------------------------------------------------------
 46) Difference between exception and error (explain with real time example)?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       Exception occurs due to human mistake or bad input. we can handel it by using try catch and finally block.
-                                                                                                                                                                       Error means irrecoverable, error occur due to something lack of resource in the system. To handel error
-                                                                                                                                                                       Programmer need to fix that issue.
-																				       
+Exception occurs due to human mistake or bad input. we can handel it by using try catch and finally block.
+Error means irrecoverable, error occur due to something lack of resource in the system. To handel error
+Programmer need to fix that issue.
+			       
 ---------------------------------------------------------------------------------------------------------------------------------------
 46) How we can exist code in try block means i don't want to execute finally block?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -533,8 +558,8 @@ finally block then we just write system.exit(0) method at the end of catch block
 ---------------------------------------------------------------------------------------------------------------------------------------
 46) What is custom exception and example?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Custom exception means user defined exception. It used to catch and provide specific treatment to exisitng java exception. It mainly used in business
-logic exception.
+Custom exception means user defined exception. It used to catch and provide specific treatment to exisitng java exception.
+It mainly used in business logic exception.
 
 class NewExpection extends Exception
 class NewException extends RuntimeException
@@ -596,12 +621,10 @@ No we can't write any code after throw statement if you try to write it will sho
 ---------------------------------------------------------------------------------------------------------------------------------------	
 53) Explain the importance of finally over return statement?
 ---------------------------------------------------------------------------------------------------------------------------------------	
- Finally block is more important than the return statement. If we have both finally block return statement in try and catch block then first
- fianlly block will get execute after that return statement execute.
+Finally block is more important than the return statement. If we have both finally block return statement in try and catch block then first fianlly block will get execute after that return statement execute.
 
----------------------------------------------------------------------------------------------------------------------------------------	 
- 54) Can we use catch statement for checked exceptions?
- ---------------------------------------------------------------------------------------------------------------------------------------	
+---------------------------------------------------------------------------------------------------------------------------------------	 54) Can we use catch statement for checked exceptions?
+ --------------------------------------------------------------------------------------------------------------------------------------	
  No we can't use catch statement for checked exceptions.
 
 ---------------------------------------------------------------------------------------------------------------------------------------	 
@@ -617,20 +640,20 @@ No we can't write any code after throw statement if you try to write it will sho
  1) printStackTraceMethod() - gives deatils explanation of error occured.
  2) getMessage()- gives description of expcetion occur.
  
- ---------------------------------------------------------------------------------------------------------------------------------------	
+---------------------------------------------------------------------------------------------------------------------------------------	
  55) Global Exception Handeler
- ---------------------------------------------------------------------------------------------------------------------------------------	
+---------------------------------------------------------------------------------------------------------------------------------------	
 1) Create class extends as RepsonseEntityExceptionHandeler
-2)Use @ControllerAdvice Annotations as class level
+2) Use @ControllerAdvice Annotations as class level
 
- for eg
- @ControllerAdvice
- class GLobalExceptionHandeler extends RepsonseEntityExceptionHandeler{
+for eg
+@ControllerAdvice
+class GLobalExceptionHandeler extends RepsonseEntityExceptionHandeler{
 
 @ExceptionHandeler(UserInputException.class)
- public ResponseEntity<String> userInputExcpetionHandeler(UserInputException exception){
- return new ResponseEntity<String>("Please enter valid input data ",HttpStatus.BAD_REQUEST);
- }
+public ResponseEntity<String> userInputExcpetionHandeler(UserInputException exception){
+return new ResponseEntity<String>("Please enter valid input data ",HttpStatus.BAD_REQUEST); 
+}
 
 
 3) What ever custom exception you want to create they extends as Expection or RuntimeException
@@ -653,8 +676,7 @@ If you try to access array index negative ,greather or equal to length we will g
 57) What will happen if first i keep parent exception then child exception?
 --------------------------------------------------------------------------------------------------------------------------------------- 
 It will shows compile time exception.
-If you are keeping mutiple catch block then first keep
-child class then parent class.
+If you are keeping mutiple catch block then first keep child class then parent class.
 
 58) Who is the parent class of throwable class?
 --------------------------------------------------------------------------------------------------------------------------------------- 
@@ -741,7 +763,6 @@ We can  declare it by using new keyword.
 
 65) Exception Handeling concepts
 --------------------------------------------------------------------------------------------------------------------------------------- 
-
 1) If parent class doesn't throw any exception and then subclass doesn't throws checked exception.
    If you try to declare you will get compile time error.
    
@@ -814,52 +835,51 @@ We can  declare it by using new keyword.
 	 It will work 
 	 
 
-===============================================================================================================================================================
-===============================================================================================================================================================
+========================================================================================================================================
+========================================================================================================================================
 3) String
-===============================================================================================================================================================
-===============================================================================================================================================================
-
+========================================================================================================================================
+========================================================================================================================================
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 1) Why String are thread safe?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String are immutable in java                                                                                                                                                                      
+String are immutable in java                                                                                                                                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 2) What is String ?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String represent squence of character. String is final class present in java.lang package                                                                                                                                                                       
+String represent squence of character. String is final class present in java.lang package                                                                                                                                                                       
 ---------------------------------------------------------------------------------------------------------------------------------------
 3) Why Java uses concept of String literal?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       When we use object by using to String literal JVM checks whether the object already declared or not                                                                    If declared it doesn't create new object in this way they makes JVM more memeory efficient.
+When we use object by using to String literal JVM checks whether the object already declared or not                                     If declared it doesn't create new object in this way they makes JVM more memeory efficient.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 4) What are the method of String?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        1)toUppercase() 2)toLowercase() 3)toCharArray() 4)toCharAt() 5)equals() 6)length() 7)toStrim() 8)                                                                      9)equalIgnorecase() 10) join()   11)subString()  12)IsEmpty() 
+1) toUppercase() 2)toLowercase() 3)toCharArray() 4)toCharAt() 5)equals() 6)length() 7)toStrim() 8)                                      9) equalIgnorecase() 10) join()   11)subString()  12)IsEmpty() 
 ---------------------------------------------------------------------------------------------------------------------------------------
 5) Is String keyword in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        No,String is not keyword in java. String is final class present in java.lang package                                                                                                                                                           
+No,String is not keyword in java. String is final class present in java.lang package                                                                                                                                                           
 ---------------------------------------------------------------------------------------------------------------------------------------
  6) Is string is primitive or dervied data type?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String is derived data type.                                                                                                                                
+ String is derived data type.                                                                                                                                
 ---------------------------------------------------------------------------------------------------------------------------------------
  7) What is String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
 String constant pool is special space reserved in heap memeory to store the string objects. When we create obj
-without using new keyword it will store in string constant pool                                                                                                       ---------------------------------------------------------------------------------------------------------------------------------------
+without using new keyword it will store in string constant pool                                                                         ---------------------------------------------------------------------------------------------------------------------------------------
 8) What is special about String objects as compares other objects.
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String objects are created without using new keyword and store in special memory i.e String constant pool,                                                             JVM check whether the objects already  declared or not in this way they make JVM more memory efficient. 
+String objects are created without using new keyword and store in special memory i.e String constant pool,                              JVM check whether the objects already  declared or not in this way they make JVM more memory efficient. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 9) What do you mean by mutable and immutable objects?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                Mutable objects means can editable or modify whereas immutable means cannot be modify or editiable.
+Mutable objects means can editable or modify whereas immutable means cannot be modify or editiable.
 
- for eg - 
+for eg - 
 1) If you create the object of mutuable class , it will become mutuable object.
 @Data
 @AllArgsConstructor
@@ -897,15 +917,14 @@ original String get changed here , it is a mutual object
 
 Immutable object ---
 
-String str="Harsh";
-str="Patil";
-system.out.println(str);
+String str ="Harsh" ;
+str = "Patil";
+System.out.println(str);
 
-output= patil
-
-here we can't modify the original String value , it is present in memory , we replaced str i.e reference varibale with new value of String.
-
-
+Here first str is pointing to value "Harsh" ,
+but when we print it will print Patil.
+String is immmutable in java, but still we get Patil as value because we are 
+not modifiying the original String value instead of that we replaced it.
 
 9) Mutuable class vs Immutable class ? 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -966,11 +985,11 @@ public static void main(String args[]){
 ---------------------------------------------------------------------------------------------------------------------------------------
  All three are final classes.
 
-                                                                                                        String                                                        String Buffer                                                                   String Builder                                                                                                                                1) String objects are stored in String constant pool       1)String buffer objects stored in heap memory                 1)String builder objects stores in heap memory                                                                                                        2) String are thread safe                                           2) String buffer is not thread safe                                    2) Stirng builder is thread safe                                                                                                                                3)  String objects are immutable                                  3)String buffer objects are mutable                                3) String builder objects are mutable                                                     
+           String                                 String Buffer                       String Builder                                    1) String objects are stored in String constant pool       1)String buffer objects stored in heap memory                 1)String builder objects stores in heap memory                                                                                                        2) String are thread safe                                           2) String buffer is not thread safe                                    2) Stirng builder is thread safe                                                                                                                                3)  String objects are immutable                                  3)String buffer objects are mutable                                3) String builder objects are mutable                                                     
 ---------------------------------------------------------------------------------------------------------------------------------------
 11) Why String buffer and String builder introduced in java there are already exit String class to represent the set of character?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                       When we create object by using string it becomes immtable, we are not able to modify it,If you try yo modify                                                                                                                                                                                  then chances of data losses. That's to make mutable objects StringBuffer and StringBuilder are introduced. 
+When we create object by using string it becomes immtable, we are not able to modify it,If you try yo modify                            then chances of data losses. That's to make mutable objects StringBuffer and StringBuilder are introduced. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 12) How many objects will be created in the following code?
 ---------------------------------------------------------------------------------------------------------------------------------------
