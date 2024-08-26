@@ -132,3 +132,9 @@ To prevent your Java application from crashing without any error, it's important
 18) What is EBS in aws?
 -----------------------------------------------------------------------------------------------------------------------
 Ebs stands for elastic block store. It is newtork drieve not a physicall dive,
+
+
+19) How to copy a file from one server to paste into another server? 
+-----------------------------------------------------------------------------------------------------------------------
+scp file hpatil@10.32.34.144:/appl/logs/ 
+         username@ipAddresss:path
