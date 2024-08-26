@@ -1643,13 +1643,72 @@ found is java.lang package            java.util.concurrent package.
 3) Runable interface is              3) callable interface can throw
    can't throw                          checked exception.
    checked exception.
-   
+
+
+79) When to use for loop vs Iterator in java ?
+---------------------------------------------------------------------------------------------------------------------------------------
+For loop basically used for to iterator the simple collections of lists.
+If you want more control on lists you will go with iterator , it has there own method such as next, itr , remove.
+
+
+
  80) What is the difference between fail fast and fail safe?
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
                Fail fast                                                                       Fail safe
 1) Fail fast means immediately throw concurrent throw        1) Fail safe means it doesn't throw concurrent modification
    cocurrent modification Exception.                            Exception.
 2) Fail fast doesn't occupies space in memory                2) Fail fast means occupies space in memory.
+
+
+1) fail fast will not allow us to modify the collection while iterating over the loop.
+2) it will throw immediately concurrent modification exception.
+
+class FailFast{
+
+     public static void failFastTest(){
+
+         List<String> empName=new ArrayList<>();
+         empName.add("A");
+         empName.add("B");
+
+         for(String str : empName){
+            empName.add("C");
+         }
+         
+     }
+
+
+     public static void main(String args[]){
+             failFastTest();   
+     }
+}
+
+output : concurrentModificationException
+
+class FailSafe {
+
+public static void failSafe(){
+CopyOnWriteArrayList<String> empLists= new CopyOnWriteArrayList<String>();
+empLists.add("A");
+empLists.add("B");
+
+for(String emp: empLists){
+empLists.add("C");
+}
+
+system.out.println(empLists);
+
+}
+
+public static void main(String args[]){
+failSafe();
+}
+
+}
+
+output : ["A","B","C"]
+
+
 
 81) What is means by thread executor?
  ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1694,7 +1753,8 @@ Thread.currentThread().setName("ClassName-"+timeStamp.getTime()+"-Thread")
 Collection is framework that provide an architecuture to store and manipulate the group of objects.
 
 2) What is collections?
-----------------------------------------------------------------------------------------------------------------------------------------Collections is class which provides method such as sort and synchronized ,max,min,addALL etc.
+----------------------------------------------------------------------------------------------------------------------------------------
+Collections is class which provides method such as sort and synchronized ,max,min,addALL etc.
   
 3) What is collection framework?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -1881,7 +1941,7 @@ output= 2
 
 
 9)Explain various interfaces used in collection framework?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   1) Collection interface
      Collection interface is primary interface. It extedns iterable interface.
    
@@ -1901,8 +1961,8 @@ output= 2
      Deque interface extends queue interface, which is used to perfom insert or remove operation on block wait until operations are performed.
 
 10) Explain the difference between ArrayList and Vector?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   ArrayList                                                    Vector
+----------------------------------------------------------------------------------------------------------------------------------------
+   ArrayList                                         Vector
  1)ArrayList is non legacy class.          1)Vector is legacy class.
  2)ArrayList is non synchronized           2)Vector is synchronized.
  3)ArrayList is not thread safe            3)Vector is thread safe
@@ -1911,7 +1971,7 @@ output= 2
  
 
 11) What is the difference between arraylist and linkedlist?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
              ArrayList                                LinkedList
   1)ArrayList internally uses dyanamic array      1)LinkedList internally uses doubly linked list.
   2)Arraylist provide random access               2)linkedlist doesn't provide random access.
@@ -1922,15 +1982,15 @@ output= 2
  
 
 12) What is the difference between Iterator and listIterator?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
              Iterator                                     ListIterator
- 1)Iterator is used to perform reverese operation   1)ListIterator is used to perform insert,remove operation while travesing the element.
-     while traversing the element.
+ 1)Iterator is used to perform reverese operation   1)ListIterator is used to perform insert,remove operation while travesing the 
+    element while traversing the element.
  2)Iterator traverse only forword direction         2)ListIterator traverse both forward and reverese direction.
  3)Iteraor is used in list,set,map                  3)ListIterator is used in only list.
 
 13) What is the difference between Iterator and Enumeration?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                 Iterator                                                                         Enumeration
   1)Iterator is used to perform remove operation while traversing           1)Enumeration is used to perform travesion operation over the element.
     the element 
