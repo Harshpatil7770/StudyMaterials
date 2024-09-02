@@ -1661,6 +1661,7 @@ If you want more control on lists you will go with iterator , it has there own m
 
 
 1) fail fast will not allow us to modify the collection while iterating over the loop.
+   This is applicable for Iteraor , ListIterator and For Loop
 2) it will throw immediately concurrent modification exception.
 
 class FailFast{
@@ -1685,6 +1686,7 @@ class FailFast{
 
 output : concurrentModificationException
 
+This also applicable for Iterator , ListIterator and For loop
 class FailSafe {
 
 public static void failSafe(){
