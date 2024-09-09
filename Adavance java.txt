@@ -2108,16 +2108,11 @@ output= 2
 		    }
 	 
 
+           @Overide
            public int compareTo(Employee e){
-	   
-	         if(e.getId()>this.getId()){
-                       return 1;
-		       }
-		 if(e.getId()<this.getId()){
-		       return -1;
-		       }
-		 return 0;
-		 
+           return Integer.comparae(this.id,e.id); 
+          }
+
         }
 	
 	class Test{
@@ -2143,38 +2138,38 @@ output= 2
 	    
 
 22) What do you understand by blocking queue? and why we used?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    Blocking is an interface which implements queue interface. The implementation of blocking queue is thread safe.
    The main purpose of blocking queue is due to operation such as insert,remove inside the block or wait util operation are not done.
    
 23) Why we overide equals() method? ***equals method take object as input parameter.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Hashcode return us index values or integer value based on hashing algorithim. Sometime we will get same index value that time hashcollision will occur and equlas     method get override to
-  check contains equal or not.
+----------------------------------------------------------------------------------------------------------------------------------------
+Hashcode return us index values or integer value based on hashing algorithim. Sometime we will get same index value that time hashcollision will occur and equlas method get override to
+check contains equal or not.
 
 24) How to snychronized list,set and Map?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    To synchronized list we use synchronized.list() method 
     for set synchronized.set() method
     for map synchronized.map() method
 
 25) What are the advanatages of generic collection? //////////////////////////////////////
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   1) When we use generic collection we don't need to typecasting. It is type safe and checked at compile time.
 
 26) What is Hash Collision in Hash Table? and How to prevent it?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   1) In hashtable put method first calculate hashcode,hashcode return us index value or integer value based on hashing alogorithm.
      So some times so we will get same index value that time
      has collision will occur to check contain equal or not. 
      By using separate chaining and open addressing.
 
 27) What is dictionary class?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    Dictionary class provides capability to store the key value pair   
 
 28) What is default size of load factor in hashing based collection?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    Default size is 16 and load factor is 0.75  
    
    Load factor decided when to increse the size of table.
@@ -2182,12 +2177,12 @@ output= 2
    It knows the to increase the size by formaula such as= intial capacity* load factor= 16*0.75=12
 
 29) What do you understand by fail fast?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Fail fast means immediately show concurrent modification expection.It doesn't require any extra space in memory.
-   Suppose in arraylist you are performing add or remove operations underlying of anything we will get concurrent modification exception.
+----------------------------------------------------------------------------------------------------------------------------------------
+Fail fast means immediately show concurrent modification expection.It doesn't require any extra space in memory.
+Suppose in arraylist you are performing add or remove operations underlying of anything we will get concurrent modification exception.
 
 30) What is diffrence between Array And ArrayList?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                         Array                                                               ArrayList
  1)Array is fixed in size                                               1)Arraylist is growable in size
  2)Array supports both primitive data type and objects                  2)Arraylist support only objects.
@@ -2196,33 +2191,37 @@ output= 2
  5)Array doesn't have generice feature                                  5)Arraylist have generic ferure
 
 31) What is the difference between length of array and size of array?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    If you want to measure length of array we use length() property but length property is not supported arrayList so we need to use size method.
 
 32) How to convert ArrayList to Array and Array to ArrayList?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   To convert arraylist to array we need to use toarray() method and convert array to arraylist we need to use asList() method.
 
 
 Arrays.asList() size of array become get fixed, so we are not able to add more element.
 
 33) How to make java arrayList read only?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    To make java arraylist read only we need to use Collections class collections.unmodificable() method
 
 34) How to remove duplicate from ArrayList?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    We can use hashset or linkedhashSet or Treeset
 
 35) How to reverse arrayList?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    By using revere() method of collections class , inside this method we pass lists.
    Collections.reverse(list)
 
 36) How to short arrayList in desending order?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
  first we need to sort arraylist by using Collections.sort() method after that we will use Collections.reverse()method we pass lists inside that
 
+37) how to compare two commits change ?
+----------------------------------------------------------------------------------------------------------------------------------------
+throgh eclipse you can select the last commit and latest commit.
+eight click and just click on compar
 
 37) How to synchronized arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
