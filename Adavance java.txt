@@ -2079,62 +2079,18 @@ output= 2
    Ex 1) Employee for Comparable order by empId;
    Ex 2) Employee for Comparator order by empName;
    
-   
-   1) Comparable provide only one sort of sequence
-   
-      class Employee implements Comparable<Employee>{
-          private int id;
-          private String name;
-      
-                 public Employee(int id,String name){
-		             this.id=id;
-			     this.name=name;
-			     }
-	         public void setId(int id){
-		        thid.id=id;
-			}
-	         public void setName(String name){
-		        this.name=name;
-			}
-	         public int getId(){
-		         return id;
-			 }
-	         public String getName(){
-		         return name;
-			 }
-                @override	
-	        public String toString(){
-		    return " id : "+id+" name: "+name;
-		    }
-	 
+  class Employee implements Comparable {
+     private int id;
+     private String name;
 
-           @Overide
-           public int compareTo(Employee e){
-           return Integer.comparae(this.id,e.id); 
-          }
+     Employee(){
+      }
 
-        }
-	
-	class Test{
-            public static void main(String args[]){
-	         List<Employee> empLists=new ArrayList<Employee>();
-		    empLists.add(new Employee(101,"Smith");
-		    empLists.add(new Employee(11,"Roy");
-		    empLists.add(new Employee(20,"Danny");
-		    empLists.add(new Employee(121,"David");
-		    
-		    Comparator<Employee> emp=Comparator.comparing(Employee::getId);
-		    Collections.sort(empLists,emp);
-		    for(Employee sortedEmp:empLists){
-		    System.out.println(sortedEmp);
-		    }
-	      }
-	
-	}
-	
-	
-	
-	2) Comparator
+      Employee(int id , String name){
+        this.id=id;
+        this.name=name;
+      }
+  }
 	    
 
 22) What do you understand by blocking queue? and why we used?
@@ -2144,8 +2100,10 @@ output= 2
    
 23) Why we overide equals() method? ***equals method take object as input parameter.
 ----------------------------------------------------------------------------------------------------------------------------------------
-Hashcode return us index values or integer value based on hashing algorithim. Sometime we will get same index value that time hashcollision will occur and equlas method get override to
-check contains equal or not.
+Eqauls() and hashcode() basicaly you need to override, if u are using custom class object as key in hashmap.
+hashcode return us index values or integer value, if we got same index value that time hash collision will occurs and equal method
+get override to check contain equal or not 
+
 
 24) How to snychronized list,set and Map?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -2179,11 +2137,12 @@ check contains equal or not.
 29) What do you understand by fail fast?
 ----------------------------------------------------------------------------------------------------------------------------------------
 Fail fast means immediately show concurrent modification expection.It doesn't require any extra space in memory.
-Suppose in arraylist you are performing add or remove operations underlying of anything we will get concurrent modification exception.
+Suppose you are iterating a list using for loop or iterator , and you try to add or remove element from that list
+then you will get immediately concurrent modification exception.
 
 30) What is diffrence between Array And ArrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------
-                        Array                                                               ArrayList
+            Array                                                                  ArrayList
  1)Array is fixed in size                                               1)Arraylist is growable in size
  2)Array supports both primitive data type and objects                  2)Arraylist support only objects.
  3)Array is used to store only homogenoues element                      3)ArrayList is used to store both homogenoues and hetrogenoues elements
@@ -2221,7 +2180,7 @@ Arrays.asList() size of array become get fixed, so we are not able to add more e
 37) how to compare two commits change ?
 ----------------------------------------------------------------------------------------------------------------------------------------
 throgh eclipse you can select the last commit and latest commit.
-eight click and just click on compar
+right click and just click on compar
 
 37) How to synchronized arrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2242,12 +2201,6 @@ eight click and just click on compar
 40) If we remove the element from arraylist (if i use enhanced for loop) at the time iterating it will show concurrent Modification exception?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Yes if you are using enhanced for loop and try to remove element form that loop so, we will get the concurrentModification Exception.
-  To avoid this type of error we need to use Iterator.
-
- // If you are using arraylist and try to use the methods such as add or remove underlying of any methods
-    so you will get concurrent modification exception.
-    
-    To avoid this you need to use iterator.
 
 
 41) What is generic?
@@ -2257,9 +2210,34 @@ eight click and just click on compar
 42) What is differnce between hashmap and linkedhashmap?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
                        HashMap                                                      LinkedHashMap
- 1) HashMap doesn't maintain any insertion order                      1) Linked hashmap maintain insertion order of keys.
- 2) HashMap require less memeory as compare to                        2) LinkedHashMap reuire more memory due to maintaing the order.
-    linked hashmap
+1) Hashmap doesnot maintain insertion order of keys.                 1) Linkedhashmap maintain insertion order of keys.
+2) Hashmap performs faster than linkedhashmap                        2) linkedhashmap performs slower than a hashmap
+3) hashmap required less memory as compared to linkedhashmap         3) linkedhashmap required more memory as compared to hashmap
+4) If you dont want to maintain the insertion order of keys          4) If you want to maintain the insertion order of keys and 
+   and want to perfrom fast insertion and searching operation           want to get by order the number of element then go
+   then go for hashmap.                                                 for linkedHashamap.
+
+Both implements map interface.
+
+Map<Integer,Integer> hashmap = new HashMap<Integer, Integer>();
+hashmap.put(1,1);
+hashmap.put(2,2);
+hashmap.put(3,3);
+
+output : 1,1
+         3,3
+         2,2
+
+
+Map<Integer,Integer> linkedHashMap = new LinkedHashMap<>();
+linkedHashMap.put(1,1);
+linkedHashMap.put(2,2);
+linkedHashMap.put(3,3);
+
+output : 1,1
+         2,2
+         3,3
+
 
 43) What is differnce between hashmap and HashTable?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
