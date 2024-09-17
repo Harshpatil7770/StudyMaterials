@@ -2568,7 +2568,15 @@ class Employee{
  java.lang.typecastexpection
   
    
-   
+ 252) Explain the execution of for loop ?
+  ----------------------------------------------------------------------------------------------------------
+
+
+first int i=0 initilzation , it will execute only once 
+second i<=5 ; condition it iwll execute if it is true then for loop will execute 
+third increment/decrement i++ will execute
+again condition get execute then for loop if is a true then the increment or decrement
+for(int i=0; i<=5 ;i++)
    
    
    
