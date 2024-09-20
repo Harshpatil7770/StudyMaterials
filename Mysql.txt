@@ -487,7 +487,9 @@ SELECT PERSON_AGE from PERSON ;
 
 SELECT CASE WHEN PERSON_AGE IS NOT NULL THEN PERSON_AGE WHEN PERSON_AGE IS NULL THEN 0 END AS PERSON_AGE FROM PERSON;
 
+59) Write a simple sql query? 
 
+INSERT INTO EMPLOYEE(id ,name) values (101,"ABC");
                                                                                          
                                                                                                                                                                                         
                                                                                    
