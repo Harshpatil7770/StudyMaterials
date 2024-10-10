@@ -231,11 +231,14 @@ A method declared without using body is called abstract method.
 ----------------------------------------------------------------------------------------------------------------------
 												
 B)Polymorphism
-----------------------------------------------------------------------------------------------------------------------polymorphims is greek word poly means many and morphs means forms,
+----------------------------------------------------------------------------------------------------------------------
+polymorphims is greek word poly means many and morphs means forms,
 i.e polymorphism means many forms. we can perfoms a single action into multiple forms.
 There are two types of polymorphism 
-----------------------------------------------------------------------------------------------------------------------B)What are the types of polymorphism in java?
-----------------------------------------------------------------------------------------------------------------------B-I)   Compile Time polymorphism-
+----------------------------------------------------------------------------------------------------------------------
+B)What are the types of polymorphism in java?
+----------------------------------------------------------------------------------------------------------------------
+B-I)   Compile Time polymorphism-
 ----------------------------------------------------------------------------------------------------------------------Compile time polymorphism means call an method overload to resolve compile time rather than runtime.
 Compile time polymorphism is achieved by used by using method overloading means a class in java has has 
 method name with different parameter.Compile time polymorphism is also called as static binding.The performance of compile time ploymorphism is faster than the runtime polymorphism becuase object is determined at compile time.
