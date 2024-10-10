@@ -2299,69 +2299,17 @@ B) Deep Copy
 
 
 A) Shallow Copy - 
-i) Shallow copy means using reference of original object will create another reference of same class.
-ii) In shallow copy we are not coping actual object.
-iii) Shallow copy we need to implement Cloneable interface which has clone method.
-iv) In Shallow copy if we make any change in child object it will not affect on parent object and vice-versa.
+i) Shallow copy means with the help of original object reference creating a new object.
+ii) Shallow copy means if you make a change in original object it will affect on chid object and vice versa.
+iii) To achieve shallow copy you need to implements clonabale interface which has clone method.
+iv) shallow copy object and original object will not have disjoin
 
+B) Deep copy
+i) Deep copy means creating new instance with the help of original object ,not only reference
+ii) Deep copy there is disjoin between the original and deeped copy object
+iii) to achieve deep copy you need to implement clone method and need to add some extra inside it.
+iv) If you make change in original object it iwll not affect in child object and vice versa
 
-class Employee implements Cloneable{
-
-private int id;
-
-private String name;
-
-public Employee(int id, String name){
-this.id=id;
-this.name=name;
-}
-
-public void setId(int id){
-this.id=id;
-}
-
-public int getId(){
-return id;
-}
-
-public void setName(String name){
-this.name=name;
-}
-
-public String getName(){
-return name;
-}
-
-@Overide
-public String toString(){
-return "Employee id "+id+" Name "+name+"";
-}
-
-public Object clone throws cloneNotSupportExpection{
-return super.clone();
-}
-}
-
-class Test{
-
-public static void main(String args[]){
-Employee employee=new Emplyee(1,"ABC)";
-Employee employee1= (Employee) employee.clone();
-employee.setName("Modified Original Object");
-employee1.setName("Modified Child Object");
-
-System.out.println(employee);
-
-System.out.println(employee1);
-}
-
-}
-
-
-
-
-
-}
 
   
 236) What is deep copy?
