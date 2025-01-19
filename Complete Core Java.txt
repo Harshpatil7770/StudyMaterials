@@ -1343,32 +1343,55 @@ class loader scan all the related location of jar files and classes.It also load
 ----------------------------------------------------------------------------------------------------------------------
 64) What are other oops concepts?
 ---------------------------------------------------------------------------------------------------------------------- 
-1)Association
-2)Aggregation
-3)Composition
+Association , Aggregation , Composition
 ---------------------------------------------------------------------------------------------------------------------- 
 64- A) What is Association?
 ----------------------------------------------------------------------------------------------------------------------
-Association represent has-a relationship in java.
-Association is getting used for loosed coupling as compared to Inheritance.
-It has two types 
-A) Aggregation
-B) Composition 
+Association represent the general relation between the object.
+It represent one-to-one , one-to-many, many-to-many relationship.
+for eg - student and course.
+
+class Student{
+private long studentId;
+private String studentName;
+private Course course;
+}
+
+class Course {
+private String name
+}
 
 ----------------------------------------------------------------------------------------------------------------------
 64- B) What is aggregation?
 ---------------------------------------------------------------------------------------------------------------------
-Aggregation basically represent weak relationship in java.
-for eg - A car has a music system.
+Aggregation represent one object ownes the another object , but still the owned object can exist independently.
+
+class Library {
+private List<Book> bookLists;
+}
+
+class Book {
+private String bookName;
+}
 
 ----------------------------------------------------------------------------------------------------------------------
 64- C) What is composition?
 ---------------------------------------------------------------------------------------------------------------------
-Composition basically represent Strong relationship in java.
-for eg - A car has an engine.
+Composition represent a parent object ownes complete child object.
+if we delete parent object then child object don't have their own life.
+for e.g., - House and room 
+class House{
+private String address;
+private Room room;
+}
 
----------------------------------------------------------------------------------------------------------------------- 64- D)How many ways to implement relation in java?
----------------------------------------------------------------------------------------------------------------------- There are mutilple ways to implement relation in java.
+class Room {
+String name;
+}
+---------------------------------------------------------------------------------------------------------------------- 
+64- D)How many ways to implement relation in java?
+---------------------------------------------------------------------------------------------------------------------- 
+There are mutilple ways to implement relation in java.
 1) Association 
 2)Aggregation 
 3)Inheritance
