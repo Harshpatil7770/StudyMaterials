@@ -1,0 +1,19 @@
+                                                                      !!! Shree Swami Samarth !!!
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Static block
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+i) static block executed before the execution of main method.
+ii) it executed while loading the class.
+
+public class BlockStudy{
+
+static{
+System.out.println("Executing static block...........!!!");
+}
+
+public static void main(String args[]){
+BlockStudy blockStudy=new BlockStudy();
+System.out.println("blocStudy instance created........!!!");
+}
+
+}
