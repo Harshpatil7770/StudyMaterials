@@ -1,9 +1,12 @@
-                                                                      !!! Shree Swami Samarth !!!
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                    !!! Shree Swami Samarth !!!
+-------------------------------------------------------------------------------------------------
 1) Static block
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 i) static block executed before the execution of main method.
 ii) it executed while loading the class.
+
+import java.lang.*;
+import java.util.*;
 
 public class BlockStudy{
 
@@ -12,8 +15,34 @@ System.out.println("Executing static block...........!!!");
 }
 
 public static void main(String args[]){
+System.out.println("creating blocStudy instance created........!!!");
 BlockStudy blockStudy=new BlockStudy();
 System.out.println("blocStudy instance created........!!!");
 }
+}
+
+output :
+Executing static block...........!!!
+blocStudy instance created........!!!
+
+-------------------------------------------------------------------------------------------------
+2) Instance block 
+-------------------------------------------------------------------------------------------------
+i) Instance block executed once the object of class is created.
+ii) Instance block don't required any keyword.
+iii) {} syntax of instance block.
+
+class InstanceBlockStudy{
+ {
+  System.out.println("Executing instance block......!!!");
+ }
+
+ public static void main(String args[]){
+  System.out.println("Creating instance of InstanceBlockStudy class ..........");
+  InstanceBlockStudy instanceBlockStudy=new InstanceBlockStudy();
+  System.out.println("Created Instance succesfully...!!!");
+ }
 
 }
+
+-------------------------------------------------------------------------------------------------
