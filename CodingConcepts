@@ -46,3 +46,23 @@ class InstanceBlockStudy{
 }
 
 -------------------------------------------------------------------------------------------------
+3) Volatile
+-------------------------------------------------------------------------------------------------
+i) Volatie is non access modifier keyword.
+ii) It is getting used if multiple threads updating a value of variable and we want to get the 
+    top or latest update value.
+iii) With the help of volatile keyword reader get's the updated or latest value of the varible.
+
+
+-------------------------------------------------------------------------------------------------
+4) Synchronized
+-------------------------------------------------------------------------------------------------
+i) Synchronized is non acess modifier keYword.
+ii) Synchronized means capability to access a multiple thread simlatenusly at any shared resources.
+iii) Synchronization we have block and method.
+iv) method getting used when you want to synchronize a completed code present inside a method.
+v) suppose you want synchronize only 3 , 4 out of 50 lines of your method that time you can use
+   the synchronization block.
+
+5) 
+
