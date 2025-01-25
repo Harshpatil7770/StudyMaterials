@@ -1964,79 +1964,82 @@ Methods of ListIterator is
 1) boolean hasNext() --- return present if there is element
 2) next() --- return next element if there is no element it will show noSuchElementException
 3) remove() --- It remove the element.
-							  
-							  
+
+----------------------------------------------------------------------------------------------------------------------------------------
+191) Difference between for loop Vs Iterator in Java ? 
+----------------------------------------------------------------------------------------------------------------------------------------
+For Loop 
+i) For loop is getting used the access the element using index.
+ii) We can traverse the list forward and reverse direction.
+iii) you can't modify the collection while iterating the for loop.
+
+Iterator
+i) Iterator is getting used to perfrom operation on collection or , you are able to
+    modify the collection while doing iterator.
+ii) It traverse only forward direction.
+iii) It works with list, set , array.
+iv) it has method such as remove() , hasNext() , next()							  
 ----------------------------------------------------------------------------------------------------------------------------------------
 191)  What are alternatives to java serialization?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                           There are two alternatives of java serialization. 
-							   1) xml based - xml based is done by using JAXB( java architecture for xml binding) 
-							      It provide two mechanism 1) marshling - means convert java object into xml whereas
-							      2) unmarshling- means convert xml into java object.
-							   2) Json based- JSON stands for java script object notations . It is light weight format for storing
-							     and transporting the data.
+----------------------------------------------------------------------------------------------------------------------------------------There are two alternatives of java serialization. 
+1) xml based - xml based is done by using JAXB( java architecture for xml binding) 
+   It provide two mechanism 
+  1) marshling - means convert java object into xml whereas
+  2) unmarshling- means convert xml into java object.
+2) Json based- JSON stands for java script object notations . 
+   It is light weight format for storing and transporting the data.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 192) How to make object serializable in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                           first we need to implement our class by serlizable interface.
-							   objectOutputStream is used for write the objects, wheras objectInputStream is used to read the objects.
+----------------------------------------------------------------------------------------------------------------------------------------first we need to implement our class by serlizable interface.
+objectOutputStream is used for write the objects, wheras objectInputStream is used to read the objects.
 
 What is the purpose of serialVersionId in serilization?
-The main purpose of serialVersionId is to main version compability during serilization and deserilization.
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+The serialVersionId getting used while performing serilization , deserilization.
+Basically it avoid versionCompatability problems.
+----------------------------------------------------------------------------------------------------------------------------------------
 193) Can we serialize static variables in java	?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                           No we can't seriliaze static variable in java, because static varibale are class variable not an
-							   objects. whereas serlizable mechanism is used for only to travel the state objects over the network
-							   not a class state.
+----------------------------------------------------------------------------------------------------------------------------------------No we can't seriliaze static variable in java, because static varibale are class variable not anobjects. whereas serlizable mechanism is used for only to travel the state objects over the network not a class state.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 194) When we serialize an object does the serialization mechanism saves its references too?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                         when we serialize an object then the refer must be serilizable> If we don't make this we will get 
-							 NoSerlizableException.
+----------------------------------------------------------------------------------------------------------------------------------------When we serialize an object then the refer must be serilizable> If we don't make this we will get NoSerlizableException.
 							 
-----------------------------------------------------------------------------------------------------------------------------------------------------------	
+----------------------------------------------------------------------------------------------------------------------------------------
 195) If we don’t want some of the fields not to serialize How to do that?	
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                        Transient keyword is used to skip member while serializing an object.
+----------------------------------------------------------------------------------------------------------------------------------------Transient keyword is used to skip member while serializing an object.
 							
-							## For child class
-							There is no direct way to avoid serilization of your objects we need to use readObject and writeObject
-							methods and throws NotSerliableException.
-							otherwise we need to use transieny keyword so it zero or null values.
+## For child class
+There is no direct way to avoid serilization of your objects we need to use readObject and writeObject methods and throws NotSerliableException. otherwise we need to use transieny keyword so it zero or null values.
 							
-----------------------------------------------------------------------------------------------------------------------------------------------------------	
+----------------------------------------------------------------------------------------------------------------------------------------
 196) How to achieve method hiding?	
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                        method hiding is acheived by using method overding by making method static.
+----------------------------------------------------------------------------------------------------------------------------------------method hiding is acheived by using method overding by making method static.
 							
-----------------------------------------------------------------------------------------------------------------------------------------------------------	
+---------------------------------------------------------------------------------------------------------------------------------------	
 197) What are the immutable classes in java?	
-----------------------------------------------------------------------------------------------------------------------------------------------------------							       All Wrapper classes are immutable in java.
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------All Wrapper classes are immutable in java.
+----------------------------------------------------------------------------------------------------------------------------------------
 198) Distingwhich between .java file and .class file?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 .java file is writed by human .ie source code.
 .class file generated file compiler i.e byte code.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 199) What is the difference between blank and empty in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-blank means it contains white spaces where as empty means it doesn't have any space or it doesn't have any length.
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+isBlank basically check the white spaces in the string.
+isEmpty check character in the String.
+----------------------------------------------------------------------------------------------------------------------------------------
 200) IsEmpty() and IsBlank() and length() ?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-IsEmpty() - means they doesn't allow spaces and lenth also.
-IsBlank- It allow white spaces
+----------------------------------------------------------------------------------------------------------------------------------------
+IsEmpty() - isEmpty means nothing is there, no blank space and no character.
+IsBlank- isBlank means if there is String with no character just white spaces, it will detect that.
 length() - for length!=0 we can restrict the user.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 201) IDE shortcurts
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) ctrl+s = save
 2) ctrl+shift+f = format of code
 3) ctrl+d= delete to-do generate line
@@ -2045,9 +2048,9 @@ length() - for length!=0 we can restrict the user.
 5) ctrl+g on method = to check call hierar
 6) ctrl+f = to find 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 202) How to change JDK version in java? 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Suppose if you are using jdk 1.5 and now if you want to chnage it into java 1.8.
 Just right click on your project 
 1) select build path
@@ -2056,97 +2059,88 @@ Just right click on your project
 4) Edit
 5) add 1.8 java path.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 203) What are the solid principle in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-There are basically 5 solid principle in java
-S- Single responsiblity principle - A java must be perfrom a single fucntion
-o- open closed principle - The model is open for extension and closed for modification.
-l- Liskov Substitution Principle -  liskov principle encourage to use polymorphism , code reusuablity or etc. 
-i- interface seggreagation priciple - spilt larger interface into smaller one
-d- dependency inversion principle - Depedency inversion principle said that we must have to use abstract class or interface instead
-                                    of concrete method.
-	
+----------------------------------------------------------------------------------------------------------------------------------------
+The solid principle is nothing but five important principle we need to keep in mind during developing
+our project.
+1) S stands for Single responsiblity principle -
+     single responsiblity principle means a class should have single responsiblity.
+for eg - a class is during data manupation and same class is doing notofications sending operation , it is not a good.
+         make separate out them.
+
+2) O stands for open closed principle -  
+        open closed priciple means a class should open for extends , but closed for modification.
+
+3) l stands for liskov substituion principle - 
+         liskov substituion principle means you should able to replace a class without breaking a program.
+        for eg you added class Dog which extends class Animal
+
+4) i stands for Interface seggregation priciple - 
+        Interface seggreation principle means make small -small interface, so don't need to force to implement it.
+
+5) d stand for dependency inversion principle - 
+        high level class should not depend upon the low level class. 
+        for eg - interface engine{
+                  void start();  
+                 }
+
+                 class PetrolEngine implement engine{
+                 }
+
+                 class GasEngine implement engine{
+                 }
+
+                  
 204) What is volatile keyword in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-volatile keyword is used to acheive the safety thread.
-Volatile is non- access modifier in java.
-If you write volatile keyword with variable mean value read from main memory not a specific memeory.
-
-Volatile keyword is used with filed . If the filed value is going to chnage multiple times. to visible filed value
-easily to other thread volatile keyword get used no need to use explicitly synchronization.
-
+----------------------------------------------------------------------------------------------------------------------------------------
+Volatile keyword is used with variable . 
+If the variable value is going to chnage multiple times to visible latest value to everyone, we need
+volatile keyword.
+it read the value from main memory not a specific memory.
 
 
 205) What will happen if we define constructor as private?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 If you define constructor so object access only within the class.
 To restrict the others creating objects from outside the class.
 
 206) Can a class extends more than one class in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 No, a class can't extends more than one class in java. But a class implements more than one interface in java.
 
 207) What is type casting in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Type Casting means conversion of one data type to another type.
 for eg String to Integer
 
-208) What is mean by deep cloning in java? deep copy?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-deep cloning meaning create exact copy of an object. for deep copy we need to overide the clone method of
-object class.
-
-209) What is means shallow copy?
-----------------------------------------------------------------------------------------------------------------------------------------
-
 209) What is co-variant return type in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-Co-variant return type means return type vary in subclass.
-Before java 1.5 it's not possible to override any method by chagining return type.
-The main advantage of co-variant return type is to avoid confusion of type cast.
-
-class A{
-public A getInfo(){
-    System.out.println("Superclass");
-     }
-  }
-class B extends A{
-public B getInfo(){
-    System.out.println("Subclass");
-    }
- }
- 
-
-210) What is deep copy() and shallow copy() methods?
 ----------------------------------------------------------------------------------------------------------------------------------------
+Co-varinat return type , In method overrding return type won't matter.
 
+for e.g., - 
+i) Parent class method return object, then class can return anything like Interger, String.
+ii) If parent class method return Number , then child class can return Integer, double , float.
 
-211) What happen if we create the object by using clone method?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-clone method is used to create the shallow copy of object. shallow copy means create the new object and copy all fileds and method related to the object.
+Object - all classes in Java
+Number - Integer, Long , double , float
+charSequnce - string , stringBuffer, String Builder
+Throwable - Exception , error
+Collection - list , set , map
 
 
 212) What are the fetaure of oops?
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Inheritance
 2) Abstraction
 3) Polymorphishm
 4) Encapsulation
 
 213) When we get null pointer exception in java?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-when java program try to access an object reference which has null values.
-If you assign null to the reference varaible you will get the null
-pointer exception.
-
-if your reference variable refer to the null values , you will get the null pointer exxception.
-
-for eg- Employee e =new Employee();
-
-and e is suppose null
-e.getId();
-will throw the null pointer exception.
+----------------------------------------------------------------------------------------------------------------------------------------
+If you a object which has null value and you try to get value from it , you will the null pointer exception.
+for eg - you have employee object as emp = null,
+and you are trying to access emp.getId(); you will get the null pointer exception.
 
 
 214) How to restrict the user to inherit the class without using final keyword.
@@ -2156,13 +2150,25 @@ Parent class constructor not visible for the the subclass constructor.
 
 215) Who broke the singelton design pattern.
 ---------------------------------------------------------------------------------------------------------------------------------------
-1) Serilization and deserilization - 
-   serilization means travel the state of object over the network or save the file and send over the network.
-   if you do the de-serilization it will create the new object and broke the singelton pattern.
-   To overcome this we need to use readresolve() method.
+https://github.com/Harshpatil7770/Concepts/tree/master/SingletonDesginPattern
 
-2) Reflection - reflection also broke the singleton pattern. 
-                To overcome this issue we need to use enum.
+1) Reflection
+2) Serialization and deserialization
+3) Clonebale 
+
+1) Reflection - i) means Java api basically allow to call private constructor from outside the class.
+                ii) to overcome with this issue when constructor is getting called if instance is alreday created 
+                    you can simple throw RuntimeException()
+                iii) means ways overcome with all issue is enum.
+
+2) Serialization and deserialization - 
+                 i) While serialization and deserialization java will create new instance , which breaks the singleton design pattern.
+                 ii) To avoid this use readResolve() method when serilization or deserilization is happen get the instance which
+                     already created.
+
+3) Cloning  - i) Implmeneting cloneable interface clone method also break the singleton desing pattern.
+              ii) To overcome with this throw cloneNotSupportException();
+
 		
 216) What are the rules for method overiding?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -2171,15 +2177,9 @@ Parent class constructor not visible for the the subclass constructor.
    
 2) Return type not matter from java 1.5 
    We have covariant return type.
-   
- 217) What is mean by covariant return type?
- ---------------------------------------------------------------------------------------------------------------------------------------
- Covariant return type means child class variable return type not need to match with
- parent class varible return type.
- 
- Covariant return type applicable for only objects.
- 
- 
+
+for eg ; Parent class return Number then child class can return the Interger, Long , Float, Double.
+  
  218) Return Type with access modifier rule?
  ---------------------------------------------------------------------------------------------------------------------------------------
  
@@ -2190,12 +2190,8 @@ Parent class constructor not visible for the the subclass constructor.
   5) Public - default, public - private - false scenario
   6) default- default True scenario, default- public True scenario
   7) default- protected True, default -private false
-  
-  219) What is the difference between adapter design pattern and builder desing pattern?
-  ---------------------------------------------------------------------------------------------------------------------------------------
-  Adapter desing pattern is used when the entire object is easily created.
-  Where builder design pattern is used when construction of object process is difficult.
-  
+
+
   220) What is scala language?
   ---------------------------------------------------------------------------------------------------------------------------------------
   scala is a scalable language. 
@@ -2210,27 +2206,15 @@ Parent class constructor not visible for the the subclass constructor.
   
  
   222) What is transpiler?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   Transpiler means convert one source code into another source code.
   or convert one lagungage into another langauge.
   or migration of laguage as per thier version.
   
   223) What is serilization?
   ----------------------------------------------------------------------------------------------
- Serilization is used to travel the state of object over the network.
- Serilization means convert the object into byte stream.
- To use serilization we need to implement our class as serlizable
- then  for serlizable we can use
- 1) FOS= file output  stream - 
- 2) OOS- Object output stream
- we have write object() method 
- It is present in io package
- 
- for deserilization we have
- 1) FIS- file input stream
- 2) OIS- object input stream
- we have read object() method
- 
+Serilization means convert the object into byte stream.
+It help to travel the state of object over the network.
  
  // Real world example of serilization like
  If you have boolean and you want to send as gift to someone which live in other city.
@@ -2258,19 +2242,16 @@ private void writeObject()
 private void readObject() methods
 
  ----------------------------------------------------------------------------------------------
- 
  225) Can we serilize the static variable?
  ----------------------------------------------------------------------------------------------
-  No we can't serilize the static variable. because static belong to the class and 
-  serlize belong to the object.
+  No we can't serilize the static variable. because static belong to the class and serlize belong to the object.
   
  226) static and final with serilization?
   ----------------------------------------------------------------------------------------------
-  final variable direclty serilize there value so there is no use of transient keyword.
-  No we can't serilize the static varible in java.
+  final variable get serilizaed like other non-static variable.
+  static variable will not serilized in java
   
-  
- 227) Steps procudure to use the rabbitmq?
+ 227) Steps procudure to use the rabbiMq?
   ---------------------------------------------------------------------------------------------
   1) For using rabbit mq we need to install the erlang software
   2) We can use also on web i.e https://customer.cloudamqp.com/login
@@ -2310,16 +2291,18 @@ after that you can create your own queuee .ie local quques or remote queuq
    4) JMSTemplate we used to send the message in the form of queue.
    5) For listening the message we have 
       JMSListner we need to use
+
+  229) Steps to connect and use IBM MQ ?
+  ---------------------------------------------------------------------------------------------
+  i) you need to add the IBM MQ dependencye into your application.
+  ii) add connection properties into yaml file.
+  iii) After that using JmsTemplate you can send and recevie the messages.
+
      
   229) What is the use of serial version id?
   ---------------------------------------------------------------------------------------------
-serialVersionId basically need in serilizqation and deserilization.
-To avoid the version compability problems.
-
-  Serial version id is unique identification for that class.
-  Serial version id is used in deserilization to verify the sender and reciever 
-  deserilization object similar to the serilization object.
-  If not it will show class Invalid class exception. 
+i) While serilization and deserilization we need serial version id.
+ii) Serial version id means maintain the compitability while performing the serilization and deserilization. 
   
   230) How divison and mode operator works?
   ----------------------------------------------------------------------------------------------
@@ -2354,15 +2337,8 @@ To avoid the version compability problems.
      }
   }
 
- 
-  231) What is the difference between equal and hashcode method explain with some examples?
-  ----------------------------------------------------------------------------------------------
- 1) 
- 
- 
- 
- 
- 232) How to find out non required or non used depedecies in our project?
+  
+232) How to find out non required or non used depedecies in our project?
  ----------------------------------------------------------------------------------------------
   1) Open pom.xml file 
   2) check dependencies heirarchy.
@@ -2374,75 +2350,27 @@ To avoid the version compability problems.
    1) right click on project
    2) we can check out it on our workspace - A) Run As - configuration B) Arguments or VM arguments.
    3) How to check form putty session - using below commond
-                                        ps -ef | grep -i <applName>
-					
+      ps -ef | grep -i <applName>
 
- 234) How to use clone() method in java?
-  ----------------------------------------------------------------------------------------------
-  Clone() method is object class method. It is used to create exact copy of an object. To use clone method we need to implements cloneable interface.
-  The return type of clone method is object. 
-  
-  for eg -
-  
-  class Employee{
-  
-  private long id;
-  
-  private String name;
-  
-  public Employee(long id,String name){
-       this.id=id;
-       this.name=name;
-       }
-  
-  public void setId(long id){
-         this.id=id;
-	 }
-  public long getId(){
-        return id;
-	}
-  public void setName(String name){
-     this.name=name;
-     }
-  public String getName(){
-       return name;
-       }
-  
-  public object cloneable() throws cloneNotSupportableException{
-         return super.clone();
-      }
-  public static void main(String args[]) throws cloneNotSupportableException{
-      Employee e1=new Employee(101,"Sham");
-      Employee e2=(Employee)e1.clone();
-     
-  }
 
-235) What is shallow copy?
+235) How to clone object in java ? 
 ----------------------------------------------------------------------------------------------
 In java there are two ways we can copied object.
 A) Shallow Copy
 B) Deep Copy
 
-
 A) Shallow Copy - 
-i) Shallow copy means with the help of original object reference creating a new object.
-ii) Shallow copy means if you make a change in original object it will affect on chid object and vice versa.
-iii) To achieve shallow copy you need to implements clonabale interface which has clone method.
-iv) shallow copy object and original object will not have disjoin
+i) Shallow copy creating a new object with help of reference of original object.
+ii) In Shallow copy if you make change in child object it will affect the original object and vice-versa
+iii) There is join between original and cloned object.
+
 
 B) Deep copy
-i) Deep copy means creating new instance with the help of original object ,not only reference
-ii) Deep copy there is disjoin between the original and deeped copy object
-iii) to achieve deep copy you need to implement clone method and need to add some extra inside it.
-iv) If you make change in original object it iwll not affect in child object and vice versa
+i) Deep copy means creating new object by with help of original object.
+ii) In deep copy if you make change in child object , it won't affect the original object and vice-versa.
+ii) Deep copy there is disjoin between the original and deeped copy object.
+iii) There is no join between the original and cloned object.
 
-
-  
-236) What is deep copy?
----------------------------------------------------------------------------------------------- 
-   
-   
-   
   
   237) When to use logger.info(),logger.debug(),logger.error()?
   --------------------------------------------------------------------------------------------
@@ -2548,11 +2476,11 @@ iv) If you make change in original object it iwll not affect in child object and
    
    243) How to improve performance of your application?
    ------------------------------------------------------------------------------------------------------------
-   1) If you are not going to modify any things, simply fethching use old for loop for(int i=0;i<n;i++)
-   don't use new enhanced for loop.
-   
-   
- 
+i) code reuse
+ii) avoid unnecessary db calls
+iii) try to use cache
+
+
   244) Enum
   ------------------------------------------------------------------------------------------------------------
   Enum constructor is always private.
@@ -2611,7 +2539,7 @@ iv) If you make change in original object it iwll not affect in child object and
       then throw new RuntimeException(); in catch block
       
    247) How to make blue color comments in eclipse?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   /**
   *
   */
@@ -2666,8 +2594,8 @@ for(int i=0; i<=5 ;i++)
    
    
 
-============================================================================================================================================================================================================================================Decision or control making statement,Jump statement
-============================================================================================================================================================================================================================================
+======================================================================================================================================================Decision or control making statement,Jump statement
+========================================================================================================================================
 1) What's loop?
 ----------------------------------------------------------------------------------------------------------------------
  loop is used to execute set of instruction repeatetively when some condition becomes true.
