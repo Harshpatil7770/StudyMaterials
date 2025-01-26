@@ -2483,8 +2483,39 @@ iii) try to use cache
 
   244) Enum
   ------------------------------------------------------------------------------------------------------------
-  Enum constructor is always private.
-  Whatever filed declared inside the enum it by default public static and final.
+  1) Enum is nothing but way to define constant in java.
+  2) Enum never get instatiated , or extends.
+  3) It has constructor , implicity private.
+  4) The purpose of parameterized constructor is provide more info along with enum.
+
+  enum College{
+   
+   private String collegeName;
+   private Integer collegeCode;
+
+   private College(String collegeName,Integer collegeCode){
+      this.collegeName=collegeName;
+      this.collegeCode=collegeCode;  
+  }
+
+  public String getCollegeName(){
+       return collegeName;
+  }
+
+  public Integer getCollegeCode(){
+       return collegeCode;
+  }
+
+  public College getCollge(String collegeName){
+       for(College collge : Collge.Values()){
+          if(collge.getCollgeName.eqaulIngonreCase(collegeName)){
+             return collge;
+          }
+       }
+  return null;
+  }
+  }
+
   
   245) Loop
   ------------------------------------------------------------------------------------------------------------
@@ -2581,20 +2612,13 @@ iii) try to use cache
    
  252) Explain the execution of for loop ?
   ----------------------------------------------------------------------------------------------------------
-
-
 first int i=0 initilzation , it will execute only once 
 second i<=5 ; condition it iwll execute if it is true then for loop will execute 
 third increment/decrement i++ will execute
 again condition get execute then for loop if is a true then the increment or decrement
 for(int i=0; i<=5 ;i++)
-   
-   
-   
-   
-   
-
-======================================================================================================================================================Decision or control making statement,Jump statement
+ 
+========================================================================================================================================                                     Decision or control making statement,Jump statement
 ========================================================================================================================================
 1) What's loop?
 ----------------------------------------------------------------------------------------------------------------------
@@ -2618,17 +2642,18 @@ do while loop is used when the no. of iteration is not fixed and you want to exe
 ----------------------------------------------------------------------------------------------------------------------
 
 6) What's break?
-----------------------------------------------------------------------------------------------------------------------Break is used to directly terminate the loop,It used in loop and switch case.
+----------------------------------------------------------------------------------------------------------------------
+Break is used to directly terminate the loop,It used in loop and switch case.
 Break comes under the jump statement.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+---------------------------------------------------------------------------------------------------------------------------------------  
 7) What's continue?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Continue means doesn't terminate the loop come to next iteration.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+----------------------------------------------------------------------------------------------------------------------------------------   
 8) What is upcasting ?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 Reference variable of parent class referes to the objects of child class
----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------------------------------------
 110) 
 for( int i=0;i<=5;i++)
 {
@@ -2650,14 +2675,24 @@ o2n
 log(n) best 
 
 
-111) Enhanced for loop-  for(int ele: names){
-                                              }
-     enhanced for loop is used to iterate the array and collection element.
-     advantage - make code more readable
-     it is also know as for each loop traverse element one by one.
-     The main disavantage we can't travel in reverse direction.
-     
-     
+111) Enhanced for loop Vs old For Loop
+
+    Enhanced For loop 
+    i) Enhanced for loop we don't have index based access.
+    ii) It will iterate each element of list, set or array.
+    iii) It is very simple to use.
+    iv) It is less flexible than the old for loop.
+    v) It traverse only forward direction.
+
+    For loop
+     i) For loop we have index based element access.
+     ii) It will iterate the based on the condition.
+     iii) It is complex to use.
+     iv) It is more flexible.  
+     v) It traverse both direction i.e., forward and reverse.
+     vi) It has more control over the loop such as , initilization , conditional and update.  
+
+
 112) What happen if i write
      Map<Integer> map=new HashMap<Integer>();
      
@@ -2753,20 +2788,10 @@ log(n) best
  ----------------------------------------------------------------------------------------
  Convert one data type into another data type.
  
- 118) 
- 
-
-   
-     
-     
-     
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+    
+---------------------------------------------------------------------------------------------------------------------------------------
 1) PreIncrement Pre Decrement
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 PreIncrement - 
 It increase itself and again it's values.
 
@@ -2797,7 +2822,7 @@ a=a+(a--)+a+a;//10+10+9+9=38
 System.out.println(a);//38
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 
 1) What does assertEqual work?
 assertEqual check wheather two objects equal or not.
