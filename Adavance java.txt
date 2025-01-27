@@ -43,7 +43,8 @@ Both are the declaration of an array the main difference that is int array[] at 
 only one array whereas int[] array at prefix means we can add if you want.
 ----------------------------------------------------------------------------------------------------------------------
 7) How to copy arrays in java?
----------------------------------------------------------------------------------------------------------------------- We can copy manually also array provides arrays.copy() method by using this we can copy array in java.                         
+---------------------------------------------------------------------------------------------------------------------- 
+We can copy manually also array provides arrays.copy() method by using this we can copy array in java.                         
 ----------------------------------------------------------------------------------------------------------------------
 8) What is the default value of array?
 ----------------------------------------------------------------------------------------------------------------------
@@ -164,14 +165,14 @@ Array index out of bond exception will occur , when you try to access the array 
 
 
 ======================================================================================================================
-======================================================================================================================
 2) Exception Handeling
 ======================================================================================================================
-======================================================================================================================
 ----------------------------------------------------------------------------------------------------------------------
-1) What is Expection Handeling in Java? ##################################
+1) What is Expection Handeling in Java? 
 ----------------------------------------------------------------------------------------------------------------------
-Exception handeling is mechanism that used to handel the runtime exception in java such as IO exception,classNotFound Exception,SQL Exception.
+Exception handeling is nothing but maintain the normal flow of your program.
+Exception handeling is mechanism that used to handel the runtime exception in java such as IO exception,classNotFound Exception,SQL 
+Exception.
 ----------------------------------------------------------------------------------------------------------------------
 2) What is Expection?
 ----------------------------------------------------------------------------------------------------------------------
@@ -201,41 +202,44 @@ class Test{
 ----------------------------------------------------------------------------------------------------------------------
 3) Hierarchy of Java Exception classes?
 --------------------------------------------------------------------------------------------------------------------- 
-                                        - object
-					    |
-Throwable - 
-******* Exception 
-A) checked exception
-i) classNotFoundException ( class not found on path when you compile your code)
-ii) SQL exception (SQL exception occur at compile time , whnen you compile your code)
-iii) IO exception ( 
+ Object is Parent class of classes in Java.
 
-B) unchecked exception
-i) null pointer exception
-ii) index out of bound exception -> array index out of bound , String index out of bound exception
-iii) number format exception
+ Throwable is Parent class of Exception and Error.
 
-******* ERROR
-i) out of memory error
-ii) stack overflow
-iii) virtual machine error
+ Exception have two types checked Exception and Unchecked Exception.
 
+ Error - Virtual M/c Error , OutOfMemory Error , StackOverflow
+
+ CheckedException - checked exception means handled at compile time exception , handled by using try catch block.
+                    
+                    for eg - IO , SQL , FileNotFound , ClassNotFound Exception.
+
+
+ Unchecked Exception - Unchecked Exception occurs due to program or application bug. It is also know as RuntimeException.
+                    for eg - NullPointer , ArrayIndexOutOfBound.
+                     These exception means compiler not able find it during compile time. 
+ 
 
 ---------------------------------------------------------------------------------------------------------------------
 4) What are the types of exception in java?
-----------------------------------------------------------------------------------------------------------------------There are two types of exception in java 
+----------------------------------------------------------------------------------------------------------------------
+There are two Types of exception in java 
+
 1)Checked Exception -
+
 Checked exception means compile time exception, we can handel it by using try and catch block.
 Compile time exception means compiler able to find that exception during compile time.
 The exception direclty inherit from throwable classes except runtime called as checked exception.
 Checked excetion handel at compile time.
 1) IOException
 2) SQLException
-3)ClassNotFoundException
+3) ClassNotFoundException
 
-                                                                                                                      2)Unchecked Exception
-Unchecked exception is also known as runtime exception. Compiler not able to 
-find that exception during compile time called as compile time exception.					
+
+2)Unchecked Exception
+
+Unchecked exception is also known as runtime exception. 
+Compiler not able to find that exception during compile time called as compile time exception.					
 1)The exception directly inherit from runtime exception called as unchecked expection 
 Unchecked Expection handeled at runtime
 eg-1)Index out of Bond Exception( Index out of bond exception occur if you try to acccess index negative, equal to or greather than the length).
@@ -263,51 +267,72 @@ There are two types of exception
 Error means irrecoverable.
 It occurs due to lack of system resource.
 
-
-                                                                                                                                                                                           
 ----------------------------------------------------------------------------------------------------------------------
 5) Keywords of Exception? 
----------------------------------------------------------------------------------------------------------------------- 1)try 
-  2)Catch
-  3)finally
-                                                                                                                                                                                          
+---------------------------------------------------------------------------------------------------------------------- 
+  1) try 
+  2) Catch
+  3) finally
+                                                                                                                                        
 ----------------------------------------------------------------------------------------------------------------------
-6)Try block?
-----------------------------------------------------------------------------------------------------------------------Inside the try we should place exception. after the try block we use catch block that means we can't use           try block alone.
+6) Try block?
+----------------------------------------------------------------------------------------------------------------------
+Inside the try block will the place code which we feel like it will throgh an exception.
+We can't use try block alone.
+
+Try {
+
+}Catch(){
+
+}
+try-catch ( catch the exception if occurs and maintain the normal flow of your programs).
+
+try-finally
+
+try{
+
+}finally{
+
+}
+
+but here we are not catching the exception. if any exeception occurs the control will move to finally and executed it's code and terminate the program.
+even though if there is no exception after try block , control will go to finally block and execute it.
 
 ----------------------------------------------------------------------------------------------------------------------
 7) Catch Block?
-----------------------------------------------------------------------------------------------------------------------After the try block we should use catch block.that means we can't use catch block alone.
-A exception occur in try block it must be handel in catch block .
+----------------------------------------------------------------------------------------------------------------------
+Catch block is getting used to catch the exception occured in the try block. 
+It is used to catch the exception and maintain the normal flow of your program , instead of terminating it.
 
 ----------------------------------------------------------------------------------------------------------------------
 8) Finally block?
-----------------------------------------------------------------------------------------------------------------------Finally block is used to excute important code of the program such as closing file,closing connection or etc. It      execute whether the exception occur or not that means it execute always. It doesn't execute when fatal error occur
-or we can extenally call system.exit() method                                                                                                                                                                                                                                                                                                         
+----------------------------------------------------------------------------------------------------------------------
+Finally block executed always wheather the exception occured or not.
+So will keep important code inside it , so it will surely execute it.
+It won't execute if there will be any fatal error occurs like JVM runOutOfMemory or explicitly we can call system.exit();
+
 ----------------------------------------------------------------------------------------------------------------------
 9) throw keyword?
-----------------------------------------------------------------------------------------------------------------------throw keyword is used to thrown an exception. checked exception can't propagate by using throw keyword.               throw keyword is used within the method body. by using throw keyword we can't declare multiple exception.
-throw keyword is used followed instance.
+----------------------------------------------------------------------------------------------------------------------
+throw keyword is getting used to thrown an exception.
+We can declared or throw exception only one at a time.
+throw keyword is getting used to declare the exception with instance of new keyword.
+throw keyword basically helps to propate exception back to collar of that method.
+We can throw checked and unchecked Exception using throw keyword.
+
+throw keyword shows that something is wrong here , that why i am rasing and exception here.
+throw means explicitly we are throwing an exception.
 
 ----------------------------------------------------------------------------------------------------------------------
 10) throws keyword?
-----------------------------------------------------------------------------------------------------------------------throws keywords is used to declare to an exception. throws keyowrd is used with method signature.
-throws keyword is used to follows class.checked exception propagated by using throw keyowrd. You can declare
-multiple exception by using throws.             
-
 ----------------------------------------------------------------------------------------------------------------------
-11) Why we use Finally block?
-----------------------------------------------------------------------------------------------------------------------
-finally block is used to execute important code of the program such as closing file, closing connedction etc.         
-It execute always whether exception occur or not. It doesn't exceute if fatal error occur or we can externally
-call system.exit() method. 
+throws keyword is getting used with method singature.
+With the helps of throws keyword we can declare multiple exception.
 
----------------------------------------------------------------------------------------------------------------------------------------
-12) Why we use Finally block?
----------------------------------------------------------------------------------------------------------------------------------------
-Exception block is used to exceute important code of the program such as closing files,closing connection                               or etc.It is ensurely executed i.e whether exception handeled or not. 
+throws keyword shows that a method might throws an exception , so we are making sure to it's caller of parent method
+i.e., be ready to handel the exception.
 
----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
 13) What is the main advantage of Exception Handeling?
 ---------------------------------------------------------------------------------------------------------------
 To maintain normal flow of the program we handel the exception.
@@ -325,15 +350,14 @@ By using try,catch and finally block is used to handel the exception.
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) What is the difference between throw and throws?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                           throw                                                                                         throws
- 1) throw keyword follws an instance.                               1) throws keywords follows as class.
- 2) checked exception can't propagate by using throw                2) by using throws keyword we can propagate the checked 
-    keyword.                                                           exception.
- 3) we are not able to declare multiple exception by using          3) we can declare multiple exception by using throws keyword.
-    throw keyword                                                      for eg-
-    for eg- throw new UserNotFoundExceptio();                          public void getResult() FileNotFoundException,ClassNotFoundException{
- 4) throw keyword is declare within the method                         }
-    body.                                                            4) throws keyword declared within the method singnature.
+                           throw                                                        throws
+1) throw keyword getting used inside the block   1) throws keyword getting used at method singture
+2) throw keyword basically shows that something  2) throws keyword shows that the method might throws an exception so , informing to 
+   wrong will happen here, so raising an exception here. parent or caller method be ready to handel it.
+3) throw keyword is used to throw checked and     3) used to checked exception , unchecked not needed.
+   unchecked exception.
+4) With the help of throw keyword we can           4) With the help of throws keyword we can declare multiple exception at a time.
+   declare only one exception at a time. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) Which exception bydefault handeled in calling chain?
@@ -345,12 +369,13 @@ Unchecked exception by default followed in calling chain
 Yes we can handel mutiple exception in single catch block by using vertical pipe or bar.                                                                                                                                                                                        ---------------------------------------------------------------------------------------------------------------------------------------
 19) What is exception propagation?
 ---------------------------------------------------------------------------------------------------------------------------------------
-exception propagation means exception thrown from top of the stack to the bottom of the stack if not catched                            then drop down again main method called as exception propagation.
+Exception propagation means exception thrown from top of the stack to the bottom of the stack if not catched                            then drop down again main method called as exception propagation.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 20) What is custom exception and How to create and why we need ?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Custom exception means user defined exception.It is used to catch and provide specific treatment to exiting java exception. 
+Custom exception means user defined exception.
+It is used to catch and provide specific treatment to exiting java exception. 
 Business logic exception 
                                                                                                                                         1)class NewExcpetion extends Exception
                                                                                                                                         2) class NewException extends RuntimeException
@@ -372,7 +397,11 @@ It you keep first super class then subclass it shows unreachaable catch block er
 ---------------------------------------------------------------------------------------------------------------------------------------
 24) What are the runtime exception in java & give example?
 ---------------------------------------------------------------------------------------------------------------------------------------
-The excepetion directly inherit from unchecked exception called as runtime exception.                                                   Runtime exception handel at runtime. eg - IndexOutOfBond exception,airthmetic exception, null pointer exception                                                                                                                              
+Runtime exception is nothing but unchecked exception , occures while running your application.
+It occures due to application bug.
+Compiler will not able to recognize them ,during compilation.
+for eg - NullPointerException , ArrayIndexOutOfBoundException (if you try to access the element from invalid range)
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 25) What is out of memory error in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -442,7 +471,8 @@ Finally block is used to execute important code of the program such as closing f
 1)throwable is root class of all exception and errors.                                                                                                                                                                                                                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 33) What is stackoverflow error in java?
----------------------------------------------------------------------------------------------------------------------------------       Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.( for eg- this type of
+---------------------------------------------------------------------------------------------------------------------------------       Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.
+( for eg- this type of
 error generally occur when stack overflows).
 Rucursion program
 ---------------------------------------------------------------------------------------------------------------------------------------
