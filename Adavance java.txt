@@ -1103,112 +1103,103 @@ String s2="abc";
 ---------------------------------------------------------------------------------------------------------------------------------------
 26) What is the similarity and difference between String and String buffer class?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        The Similarity between String and String buffer is both are thread safe. And dissimilarity is String objects are 
-                                                                                                                                                                        imutable in java whereas String buffer objects are mutable                                                                                                                                                        
+                                                                                                                                        The Similarity between String and String buffer is both are thread safe. 
+And dissimilarity is String objects are mutable in java whereas String buffer objects are mutable                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 27) What is similarity and diffrence between String Buffer and String Builder?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String Buffer and String builder objects are mutable and main differnce that String Buffer is thread safe                                                              Wheras String Builder objects is not thread safe
+String Buffer and String builder objects are mutable and main differnce that String Buffer is thread safe                                Wheras String Builder objects is not thread safe
 ---------------------------------------------------------------------------------------------------------------------------------------
 28) How can you make String upper case and lower case?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        To make to upper case we will use toUpperCase() method and to make String lower case we can use                                                                       toLowercase() method. 
+To make to upper case we will use toUpperCase() method and to make String lower case we can use toLowercase() method. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 29) Apart from security concept what are other reason to make String immutable in java?
---------------------------------------------------------------------------------------------------------------------------------------                                  To make jvm more memory efficient java uses concept of String literal.
+--------------------------------------------------------------------------------------------------------------------------------------  To make jvm more memory efficient java uses concept of String literal.
 For eg- suppose five reference variable referes to the one object and i want to chnage one value of them so it may chances of data loses.  
 ---------------------------------------------------------------------------------------------------------------------------------------
-30) Why is it said that the length() method of String class doesn't return accurate
-    results?
+30) Why is it said that the length() method of String class doesn't return accurate results?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Because length() method count only number of character from the String.                                                            
+Because length() method count only number of character from the String.                                                            
 
 31) What is String Buffer?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String buffer is introduced to make mutable objects. When we object by using String buffer it will strore in 
-                                                                                                                                                                        heap memeoy. String Buffer is thread safe. Performance of String Buffer is slower than the Strign Builder.
+String buffer is introduced to make mutable objects. When we object by using String buffer it will strore in heap memeoy. String Buffer is thread safe. Performance of String Buffer is slower than the Strign Builder.
 ---------------------------------------------------------------------------------------------------------------------------------------
 32) What is String  Builder?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String Builder introduced to make mutable String objects. When we create object by using String builder
-                                                                                                                                                                        it will store in heap memory. String Builder is not thread safe. The performane of String Builder is 
-                                                                                                                                                                        faster than the String Buffer.  
-																				
-																				
+ String Builder introduced to make mutable String objects. When we create object by using String builder
+ it will store in heap memory. String Builder is not thread safe. The performane of String Builder is faster than the String Buffer.  
+		
 ---------------------------------------------------------------------------------------------------------------------------------------				    
 33) What is difference between String and String Buffer?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                                                      String                                    String Buffer
+                                                                                                                                                              String                                    String Buffer
 														
-		1) String create immutable objects   1) String buffer create mutable objects
-		2) String objects strored in String  2)String buffer objects Stored in heap memory.
+ 1) String create immutable objects                     1) String buffer create mutable objects
+ 2) String objects strored in String                    2)String buffer objects Stored in heap memory.
 		constant pool
-                3)String overide equal method        3) String buffer can't overide equal method of object class.
-		of object class.
+ 3)String overide equal method                          3) String buffer can't overide equal method of object class. 
+     of object class.
 
----------------------------------------------------------------------------------------------------------------------------------------				    34) What is heap memory and String constant pool?
+---------------------------------------------------------------------------------------------------------------------------------------	34) What is heap memory and String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
-    heap memeory is runtime data area on which object are allocated. 
-    whereas String constant pool located inside the heap memory it mainly used to make jvm more memory efficient, when we create obejct of Strign by using
-    String literal jvm check wheather object declared or not,if declared it doesn't create new instance.
-
-
-=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+heap memeory is runtime data area on which object are allocated. 
+whereas String constant pool located inside the heap memory it mainly used to make jvm more memory efficient, when we create obejct of Strign by using String literal jvm check wheather object declared or not,if declared it doesn't create new instance.
 
 
 
 
 
-===============================================================================================================================================================
-===============================================================================================================================================================
+
+========================================================================================================================================
+========================================================================================================================================
 4)MultiThreading
-===============================================================================================================================================================
-===============================================================================================================================================================
-
+========================================================================================================================================
+========================================================================================================================================
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 1) What is multithreading?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Multithreading means execute multiple thread simultaneously at a same time. Mutlthreading is way to achieve multitasking.                                                                                                                                                                                        
+ Multithreading means execute multiple thread simultaneously at a same time. Mutlthreading is way to achieve multitasking.                                                
 ---------------------------------------------------------------------------------------------------------------------------------------
 2) What is thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Thread is light weight subprocess.Thread execute independently. i.e exception occur in single thread doesn't affect in other thread.
+Thread is light weight subprocess.Thread execute independently. i.e exception occur in single thread doesn't affect in other thread.
 ---------------------------------------------------------------------------------------------------------------------------------------
 3) What is the difference between thread and process?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                               Thread                                                               Process
-    1) Thread is light weight subprocess.                                                 1)A program in the execution called as process.
-    2)  Thread require shared addrees space memeory                                       2) process require separate address space memory.
-    3)  Inter thread communication is faster                                              3) Inter process communication is slower.
-    4)   Context swithcing in thread is faster                                            4) Context swithching in process is slower
+                      Thread                                                               Process
+    1) Thread is light weight subprocess.                          1)A program in the execution called as process.
+    2) Thread require shared addrees space memeory                 2) process require separate address space memory.
+    3) Inter thread communication is faster                        3) Inter process communication is slower.
+    4) Context swithcing in thread is faster                       4) Context swithching in process is slower
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 4) What do you understand by inter threads communication? 
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        The communication between synchronized thread is called as inter thread communication.
-                                                                                                                                                                        It is used to avoid thread polling in java.                                                                                                                                                                                        
+The communication between synchronized thread is called as inter thread communication.
+It is used to avoid thread polling in java.                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 5) How thread communication happen?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Thread communicate with each other by using notify(),notify all() mehtods . notify meas unblock only one waiting thread ,wheras notifyall() 
-means unblock all waiting thread.                                                                                                                                     ---------------------------------------------------------------------------------------------------------------------------------------
+Thread communicate with each other by using notify(),notify all() mehtods . notify meas unblock only one waiting thread ,wheras notifyall() means unblock all waiting thread.                                                                                           -----------------------------------------------------------------------------------------------------------------------
 6) What is the purpose of wait method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        wait method is object class method. It is used to pause the currently excecuting thread and wait until another thread will call notify and notify all methods.
+wait method is object class method. It is used to pause the currently excecuting thread and wait until another thread will call notify and notify all methods.
 ---------------------------------------------------------------------------------------------------------------------------------------
 7) why must wait method called from the synchronized block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Because synchronization block makes clear proper communication.If you try to use wait method from outside the block it will show an error such as java.lang.illegalmoniter state exception
+Because synchronization block makes clear proper communication.If you try to use wait method from outside the block it will show an error such as java.lang.illegalmoniter state exception
 ---------------------------------------------------------------------------------------------------------------------------------------
 8) What are the advantages of multithreading? 
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Mulitthreading means execute mutilple thread simultaneously. It is process to achieve multitasking.
-                                                                                                                                                                        The advantages of multithreading is
-                                                                                                                                                                        1) Thread is lightweight. i.e exception occur in single thread doesn't affect all other thread.
-                                                                                                                                                                        2) Thread require shared address space memory
-                                                                                                                                                                        3) We can perform mutiple task simultaneously at a same time.
-                                                                                                                                                                        4) Inter thread communication cost is slower.                                                                                                                                                                                   
+Mulitthreading means execute mutilple thread simultaneously. It is process to achieve multitasking.
+The advantages of multithreading is
+1) Thread is lightweight. i.e exception occur in single thread doesn't affect all other thread.
+2) Thread require shared address space memory
+3) We can perform mutiple task simultaneously at a same time.
+4) Inter thread communication cost is slower.                                                                                                                                                                                   
 ---------------------------------------------------------------------------------------------------------------------------------------
 9) What is the life cycle of thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1222,38 +1213,37 @@ Life cycle of Thread
 ---------------------------------------------------------------------------------------------------------------------------------------
 10) What is the difference between preemptive sheduling and time slicing?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Thread sheduler is part of jvm which decided which thread executed first based on some proriety and other facts.                                                       There are two types of thread sheculer 
+Thread sheduler is part of jvm which decided which thread executed first based on some proriety and other facts.                        There are two types of thread sheculer 
 1)Preemptive sheduling- Preemptive sheduling means execute high prioriety thread first and wait until another high prioriety thread comes into exisitance.
 2)Time slicing -time slicing means time taken by cpu for execution.                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
 11) What is context swithching?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        context switching means time taken by cpu for exceution                                                                                                                                                                                        
+context switching means time taken by cpu for exceution                                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 12) What is thread class?
 ---------------------------------------------------------------------------------------------------------------------------------------
-thread class is way to achieve thread object. once we extends thread class we are not able to extends other class.                                                     extending thread class means tighlty coupled and it doesn't provide any code reusblity other than copy and paste.                                                      Maintance cost of thread class very high                                                                                                                                                                                  
+thread class is way to achieve thread object. once we extends thread class we are not able to extends other class.                      extending thread class means tighlty coupled and it doesn't provide any code reusblity other than copy and paste.                       Maintance cost of thread class very high                                                                                                                                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------
 13) What is difference between thread class and runable interface for creating thread? or What are the different ways of threads usage?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Thread object is created by using two ways.
 1) Thread class( extending thread class)
 2) Runnable Interface (implementing runable interface)
-                                    Thread class                                                                        Runnable Interface
-            1) Once we extends thread class we are not able to extends other class                1) Once we implement runable interface we can extends other class.
-            2)  extending thread is tightly copuled                                               2)Implementing runable interface is loosely coupled.
-            3)Thread class don't provide any code reusablity other than copy and paste            3)runable interface provide better code reuseability.
-            4)Thread class maintanice is high                                                     4)maintance if runable interface is low
-            5)Each thread create new object so it require high memory                             5)It has shared address space memory.                                                        
-                                                                                                                          
+              Thread class                                                            Runnable Interface
+1) Once we extends thread class we are not able to extends other class 1) Once we implement runable interface we can extends other class.
+2)  extending thread is tightly copuled                                2)Implementing runable interface is loosely coupled.
+3)Thread class don't provide any code reusablity other than copy and paste  3)runable interface provide better code reuseability.
+4)Thread class maintanice is high                                       4)maintance if runable interface is low
+5)Each thread create new object so it require high memory               5)It has shared address space memory.                                                                                                                                                     
 ---------------------------------------------------------------------------------------------------------------------------------------
 14) What is user thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        User thread means user defined thread. JVM doesn't terminate until user thread get execute.                                                                                                                                                                       
----------------------------------------------------------------------------------------------------------------------------------------
+User thread means user defined thread. JVM doesn't terminate until user thread get execute.                                             ---------------------------------------------------------------------------------------------------------------------------------------
 15) What is runable interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Runable interface means functional interface , it has only one abstract method, run method . It is also known as single argument method.
+Runable interface means functional interface , it has only one abstract method, run method. 
+It is also known as single argument method.
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) What does join method?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1261,55 +1251,51 @@ Join method wait for thread to die.
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) What is the purpose and woking of sleep () method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Sleep method thread class method. It pause the currently executing thread for specific time and execute another                                                        thread if any available.
+Sleep method thread class method. It pause the currently executing thread for specific time and execute another                         thread if any available.
 ---------------------------------------------------------------------------------------------------------------------------------------
 18) what is difference between wait() and sleep() method? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
        Wait() Method                                                 Sleep() Method
-1)  Wait() method is object class method                        1)sleep() method is thread class method                                                              2) wait() method pause the currently exceuting thread           2) sleep() method pause the currently executing thread for specific time and execute another thread if any. and wait until another thread will call notify and notify all 
+1)  Wait() method is object class method                        1)sleep() method is thread class method                                 2) wait() method pause the currently exceuting thread           2) sleep() method pause the currently executing thread for specific time and execute another thread if any. and wait until another thread will call notify and notify all 
  method                                                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------
 19) Is it possible to start thread twice?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        No,It's not possible to start thread twice it will show illegalMoniterThreadstateException                                                                                                                                                                                          
+ No,It's not possible to start thread twice it will show illegalMoniterThreadstateException                                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
 20) Can we call run method instead of start?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Yes, we can run method insted of start but it doesn't behave like thred it behave like normal method                                                                   When we call start() method internally it will call run method
+Yes, we can run method insted of start but it doesn't behave like thred it behave like normal method                                    When we call start() method internally it will call run method
 ---------------------------------------------------------------------------------------------------------------------------------------
 21) What is daemon thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Daemon thread means low prioriety thread it used to proivde service and suppport to user. a java program auto
-                                                                                                                                                                        matically terminate if there is remains only daemon thread. There are two types of daemon thread
-                                                                                                                                                                        1)isDaemon() 2)setDaemon()
+Daemon thread means low prioriety thread it used to proivde service and suppport to user. a java program auto
+matically terminate if there is remains only daemon thread. There are two types of daemon thread
+1)isDaemon() 2)setDaemon()
 ---------------------------------------------------------------------------------------------------------------------------------------
 22) What is user thread?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        User thread means user defined thread jvm doesn't terminate until user thread get execute.                                                                                                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------------- User thread means user defined thread jvm doesn't terminate until user thread get execute.                                                 
 ---------------------------------------------------------------------------------------------------------------------------------------
 23) can we make the user thread as daemon thread if thread is started?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        No we can't make user thread as daemon thread if thread is started it will shows illegalMoniterstateExcpetion                                                                                                                                                                                         
----------------------------------------------------------------------------------------------------------------------------------------
+No we can't make user thread as daemon thread if thread is started it will shows illegalMoniterstateExcpetion                           ---------------------------------------------------------------------------------------------------------------------------------------
 24) What is shutdown hook?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                                                         also it is process of cleaning.
+Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                          also it is process of cleaning.
 ---------------------------------------------------------------------------------------------------------------------------------------
 25) When should we interrupt thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        When we want break out the state of thread from sleep and wait state then we interrupt the thread                                                                                                                                                                                       
+When we want break out the state of thread from sleep and wait state then we interrupt the thread                                              
 ---------------------------------------------------------------------------------------------------------------------------------------
 26) What is synchronization? or Why synchronization is neccesary?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Synchronization means capability to access mutiple thread to any shared resource.                                                                                     There are two types of synchronization 
-                                                                                                                                                                        1)Synchronization method  
-                                                                                                                                                                        2)Synchronization block
-                                                                                                                                                                        Adavtangets  of synchronization
-                                                                                                                                                                        1) To avoid thread interface
-                                                                                                                                                                        2)To avoid constistance problem 
-                                                                                                                                                                        The main purpose of synchronization is to make clear and proper communication between the thread.
-
-
+Synchronization means capability to access mutiple thread to any shared resource.                                                       There are two types of synchronization 
+1)Synchronization method  
+2)Synchronization block
+Adavtangets  of synchronization
+1) To avoid thread interface
+2)To avoid constistance problem 
+The main purpose of synchronization is to make clear and proper communication between the thread.
 
 Synchronization means basically , if multiple trying to access one method at a time , so it will allow to access only
 one thread at a time .
