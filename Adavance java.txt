@@ -1326,75 +1326,73 @@ wait until the first thread will finish finish the execution of synchronization 
 ---------------------------------------------------------------------------------------------------------------------------------------
 27) What is the purpose of synchronization block?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Synchronization block is used to perform synchronization on specific resoure of that method                                                                            Suppose i have 50 lines of code and i want synchronize five lines of them that time we use synchronization block
-                                                                                                                                                                        But if i put all lines of code of method in synchronization block it will behave same as synchronization method
-                                                                                                                                                                        The scope of synchronization block is smaller.
+Synchronization block is used to perform synchronization on specific resoure of that method                                             Suppose i have 50 lines of code and i want synchronize five lines of them that time we use synchronization block
+But if i put all lines of code of method in synchronization block it will behave same as synchronization method
+The scope of synchronization block is smaller.
 ---------------------------------------------------------------------------------------------------------------------------------------
 28) Can java object locked down for exclusive use by a given thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Yes java object locked for execusive use just we put it in synchronization block.                                                                                                                                                                              
+Yes java object locked for execusive use just we put it in synchronization block.                                                                                                                                                                              
 ---------------------------------------------------------------------------------------------------------------------------------------
 29) What is static synchronization?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        If suppose i applied synchronization before an method means lock an object but suppose i use synchronization 
-                                                                                                                                                                        before static method it means lock for an class.
+If suppose i applied synchronization before an method means lock an object but suppose i use synchronization 
+before static method it means lock for an class.
 ---------------------------------------------------------------------------------------------------------------------------------------
 30) What is the difference between notify and notifyAll() method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Notify and notifyAll() method is used to occur communcation between the to threads.
-                                                                                                                                                                         notify() meand unblock only one waiting thread whereas notifyall() means unblock all waiting thread
+Notify and notifyAll() method is used to occur communcation between the to threads.
+notify() meand unblock only one waiting thread whereas notifyall() means unblock all waiting thread
 ---------------------------------------------------------------------------------------------------------------------------------------
 31) What is deadlock?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                                                 ---------------------------------------------------------------------------------------------------------------------------------------
+Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                  ------------------------------------------------------------------------------------------------------------------------------
 32) How to detect deadlock condition ? and how can you avoid it?
 ---------------------------------------------------------------------------------------------------------------------------------------
-To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                                                   To avoid deadlock condition 
+To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                     To avoid deadlock condition 
 1)Avoid unnecessary lock
 2)Avoid nested lock
 3)Using thread join
 ---------------------------------------------------------------------------------------------------------------------------------------
 33) What is thread sheduler?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Thread scheduler is part of jvm which decides which thread execute first based on some prority and other facts.                                                       Such as time sclining and preemptive sheduling.
-Preemptive sheduling means high priority thread execute first and wait until high priority thread comes into exisitance. 
-time sclining means time taken by cpu for execution
+Thread scheduler is part of jvm which decides which thread execute first based on some prority and other facts.                        Such as time sclining and preemptive sheduling.Preemptive sheduling means high priority thread execute first and wait until high priority thread comes into exisitance. time sclining means time taken by cpu for execution
 ---------------------------------------------------------------------------------------------------------------------------------------
 34) Does each thread has stack in mutlithreaded program?
 ---------------------------------------------------------------------------------------------------------------------------------------
-yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                                                        ---------------------------------------------------------------------------------------------------------------------------------------
+yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                         --------------------------------------------------------------------------------------------------------------------------------
 35) How safety thread achieved?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                     Safety thread achieved by using following ways 
-                                                                                                                                                                        1)Using volatile keyword
-                                                                                                                                                                        2)Synchronization
-                                                                                                                                                                        3)Automatic wrapper class ( All wrapper classes are final classes in java)
-                                                                                                                                                                        4)Using lock based mechanism
+Safety thread achieved by using following ways 
+1)Using volatile keyword
+2)Synchronization
+3)Automatic wrapper class ( All wrapper classes are final classes in java)
+4)Using lock based mechanism
 ---------------------------------------------------------------------------------------------------------------------------------------
 36) What is race condition?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Race condition generally occur when mutiple thread execute at a same time                                                                                             To avoid race condition we need to use synchronization.
+Race condition generally occur when mutiple thread execute at a same time                                                               To avoid race condition we need to use synchronization.
 ---------------------------------------------------------------------------------------------------------------------------------------
 37) What is volatile keyword is java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        volatile meas value read from main memory not a specific memory.  
-                                                                                                                                                                        Volatile keyword mainly used to achieve safety threads.              
+Volatile keyword is getting used to make sure the latest or updated value of variable will get to everyone.
+It will read from main memory not a specific memory.
 ---------------------------------------------------------------------------------------------------------------------------------------
 38) What do you understand by thread pool?
----------------------------------------------------------------------------------------------------------------------------------------                               Thread pool is group of waited thread waiting for task to be allocated.
+--------------------------------------------------------------------------------------------------------------------------------------- Thread pool is group of waited thread waiting for task to be allocated.
 ---------------------------------------------------------------------------------------------------------------------------------------
 39) what is synchronization block?
--------------------------------------------------------------------------------------------------------------------------------------                                  Synchronization block is used to perform synchronization on specific resource of method. Suppose i have 50 line code i want syncronozed 5 lines of them then i will use synchronization block . The scope of synchronization block is smaller than the sychronization method. 
+-------------------------------------------------------------------------------------------------------------------------------------   Synchronization block is used to perform synchronization on specific resource of method. Suppose i have 50 line code i want syncronozed 5 lines of them then i will use synchronization block . The scope of synchronization block is smaller than the sychronization method. 
 The main purpose of synchronization is avoid thread constistance and thread interface problems.
 ---------------------------------------------------------------------------------------------------------------------------------------
 40) What are the method of thread?
---------------------------------------------------------------------------------------------------------------------------------------                                    1) start() 2)run() 3)setDaemon() 4)IsDaemon() 5)setPriority() 6)getProority()  7)yeild()  8)join()  9)sleep() 10)currentThread()
-   11)run() 12)isAlive() 13)setName() 14)getName()
+--------------------------------------------------------------------------------------------------------------------------------------) start() 2)run() 3)setDaemon() 4)IsDaemon() 5)setPriority() 6)getProority()  7)yeild()  8)join()  9)sleep() 10)currentThread()
+11)run() 12)isAlive() 13)setName() 14)getName()
 ---------------------------------------------------------------------------------------------------------------------------------------
 41) What is pass by value and pass by referecne?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        pass by value means pass eaxct cpoy value if changes occur oroginal value doesn't get changed,
-                                                                                                                                                                        pass by reference means pass an refrecne value if changes occur then it afftect in all places.
+pass by value means pass eaxct cpoy value if changes occur oroginal value doesn't get changed,
+                                                                                                                                        pass by reference means pass an refrecne value if changes occur then it afftect in all places.
 ---------------------------------------------------------------------------------------------------------------------------------------
 42) What is difference between synchronization block and synchronization method?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1414,14 +1412,14 @@ Deadlock is situation occur when two process waiting for each other to complete 
 ---------------------------------------------------------------------------------------------------------------------------------------
 Marker interface meas empty interface. It doesn't have field and method. It is called as tagiing interface
 maker interface proivde hint to jvm i.r we are implemting some important feature.
-                                                                                                                                                                       It is used to mark capabaility of class while impleemnting interface at runtime. 
-                                                                                                                                                                       yes we can create our own marker interface just create an interface and don't write anything inside it.
-                                                                                                                                                                       1) serilizable,clonable,remote are the marker interface.
+It is used to mark capabaility of class while impleemnting interface at runtime. 
+yes we can create our own marker interface just create an interface and don't write anything inside it.
+ 1) serilizable,clonable,remote are the marker interface.
 ---------------------------------------------------------------------------------------------------------------------------------------
 45) How to create immutable class in java and example?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        TO make immutable class in java we need to make class is final and all member of class is final,and private
-                                                                                                                                                                        Use only getter method.
+TO make immutable class in java we need to make class is final and all member of class is final,and private
+                                                                                                                                         Use only getter method.
 
                              final class Student{
                                                  private final int id;
@@ -1445,48 +1443,20 @@ maker interface proivde hint to jvm i.r we are implemting some important feature
                                                                }
                                                   }
 ---------------------------------------------------------------------------------------------------------------------------------------
-46) What is singleton class and example?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Singleton class is used to restrict the user from creating object of that class. To make class singleton we need 
-                                                                                                                                                                         make constructor private,so we are not able to crete object of that class. Only one object of that is created 
-  due to it's class defination.
-  
-  Once we make constructor is private we can access object within the class only.
-                  class Singleton{
-                            public static Singleton singleton=null;
-                            private Singleton(){
-                             }
-                           public static Singleton getInstance(){
-                               if(singleton=null){
-                                 singleton=new Singleton();
-                                 }
-                             return singleton;
-                          }
-                  public static void main(String args[]){
-                        Singlton s1=getInstance();
-                        System.out.println(s1.hashcode);
-                        Singleton s2=getInstance();
-                        System.out.println(s2.hashcode);
-                        }
-
-}
-
-However times you try to create the object you will get same hashcode.
----------------------------------------------------------------------------------------------------------------------------------------
 47) What is the difference between join and wait method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                               Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another 
+                                                                                                                                        Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another 
 thread will call notify and notifyAll() methods.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 48) Who calls the run method?
 ---------------------------------------------------------------------------------------------------------------------------------------
- once we called the start method it internally calls the run method.
+once we called the start method it internally calls the run method.
  
- ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 49) What is object and class level lock?
 ---------------------------------------------------------------------------------------------------------------------------------------
- if we put synchronization before a method lock for an object whereas i we put snchronization before a static method means lock for a class.
+if we put synchronization before a method lock for an object whereas i we put snchronization before a static method means lock for a class.
 ---------------------------------------------------------------------------------------------------------------------------------------
 50) What is process?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1591,9 +1561,7 @@ There are two ways to synchronization
   No sleep() method cause only current thread no any other.
   ---------------------------------------------------------------------------------------------------------------------------------------
  70) Explain about interrupt() thread?
-  ---------------------------------------------------------------------------------------------------------------------------------------
-  when we want to break out the wait and sleep position of thread we interrupt a thread.But it doesn't mean to stop immediatelty ,it polite way
-  to request.
+--------------------------------------------------------------------------------------------------------------------------------------when we want to break out the wait and sleep position of thread we interrupt a thread.But it doesn't mean to stop immediatelty ,it polite way to request.
   ---------------------------------------------------------------------------------------------------------------------------------------
   71) Explain about interthread communication and how it takes place in java?
   ---------------------------------------------------------------------------------------------------------------------------------------
