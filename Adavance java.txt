@@ -1551,8 +1551,7 @@ There are two ways to synchronization
  
  Yeild() method is static method of thread class, it direclty push thread state from runable to running.
  ---------------------------------------------------------------------------------------------------------------------------------------
- 68) Assume a thread has lock on it, calling sleep() method on that thread will release the 
-	 lock?
+ 68) Assume a thread has lock on it, calling sleep() method on that thread will release the lock?
  ---------------------------------------------------------------------------------------------------------------------------------------
   sleep() method doesn't realease the lock that thread sleep for the specify time.
   ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1562,16 +1561,16 @@ There are two ways to synchronization
   ---------------------------------------------------------------------------------------------------------------------------------------
  70) Explain about interrupt() thread?
 --------------------------------------------------------------------------------------------------------------------------------------when we want to break out the wait and sleep position of thread we interrupt a thread.But it doesn't mean to stop immediatelty ,it polite way to request.
-  ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
   71) Explain about interthread communication and how it takes place in java?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
  Interthread communication happpens by using 
  1) wait() 
  2) notify()Explain wait(), notify() and notifyAll() methods of object class ?Explain wait(), notify() and notifyAll() methods of object class ?
  3) notifyAll()
   ---------------------------------------------------------------------------------------------------------------------------------------
   72) Explain wait(), notify() and notifyAll() methods of object class ?
-  ---------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   wait () ,notify,notifyAll() are object class methods.
   wait() - pause the currently executing thread,wait until another thread will call notify and notifyAll() method.
   notify()- notify means unblock only one waiting thread
@@ -1581,21 +1580,23 @@ There are two ways to synchronization
   ---------------------------------------------------------------------------------------------------------------------------------------
   73) Explain why wait(),notify() and notifyAll() methods are in Object class rather than in 
       thread class?
-  ---------------------------------------------------------------------------------------------------------------------------------------
-  because wait(),notify(),notifyAll() methods are object level methods and these called on same objects.
-  ---------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
+  wait() , notify() and notifyAll() methods works with object , not a Thread.
+  These method control the execution of thread based on the state of object.
+   
+--------------------------------------------------------------------------------------------------------------------------------------
   74) Explain IllegalMonitorStateException and when it will be thrown?  
- ---------------------------------------------------------------------------------------------------------------------------------------
-   If you try to write wait ,notify,notifyAll() methods out the side synchrinzation context at runtime you will get IllegelMonitorStateException.
-  ---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+If you try to write wait ,notify,notifyAll() methods out the side synchrinzation context at runtime you will get IllegelMonitorStateException.
+---------------------------------------------------------------------------------------------------------------------------------------
   75) when wait(), notify(), notifyAll() methods are called does it releases the lock or holds 
     the acquired lock?
-  ---------------------------------------------------------------------------------------------------------------------------------------
- wait() ,notify(),notifyAll() methods are called from synchronization block. If try to call or write outside the synchrnonization block it
+---------------------------------------------------------------------------------------------------------------------------------------
+wait() ,notify(),notifyAll() methods are called from synchronization block. If try to call or write outside the synchrnonization block it
  will show illegal monitor state exception. when these method called it will release the lock.
  ---------------------------------------------------------------------------------------------------------------------------------------
-  76) Explain which of the following methods releases the lock when yield(), 
-      join(),sleep(),wait(),notify(), notifyAll() methods are executed?
+  76) Explain which of the following methods releases the lock when yield(), join(),sleep(),wait(),notify(), notifyAll() methods are 
+      executed?
  ---------------------------------------------------------------------------------------------------------------------------------------
  1) yeild() -No (the main purpose of yield method to restrict the thread going into wait,sleep or block state.It direclty push into runable state.
  2) join() -No ( join method wait for thread to die)
@@ -1606,10 +1607,7 @@ There are two ways to synchronization
 ---------------------------------------------------------------------------------------------------------------------------------------
  77) What are daemon threads in java? and How to make a non daemon thread as daemon? and How to make a non daemon thread as daemon?
 ---------------------------------------------------------------------------------------------------------------------------------------
-daemon thread is low priority thread, it maily used to support to user thread. JVM will automatically terminate if there is only remaning daemon
-thread. Yes we call call make non Daemon thread as daemon thread by using setDaemon() method. just write this method before start() method , if you write
-after the start method it will show IllegalMonitorStateException.
-No we can't make main thread as daemon thread.
+daemon thread is low priority thread, it maily used to support to user thread. JVM will automatically terminate if there is only remaning daemon thread. Yes we call call make non Daemon thread as daemon thread by using setDaemon() method. just write this method before start() method , if you write after the start method it will show IllegalMonitorStateException. No we can't make main thread as daemon thread.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 78) Importance about Thread class.
@@ -1618,8 +1616,8 @@ Thread class is static
 ---------------------------------------------------------------------------------------------------------------------------------------
 79) What is the difference between Runable and callable interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Runable Interface                      Callable Interface
-1) Runable interface                  1)callable interface found is 
+     Runable Interface                      Callable Interface
+1) Runable interface                  1)callable interface found is  
 found is java.lang package            java.util.concurrent package.
 2) Runable interface we               2) In collable interface we need
    need to overide the                   to overide the call()
@@ -1633,8 +1631,6 @@ found is java.lang package            java.util.concurrent package.
 ---------------------------------------------------------------------------------------------------------------------------------------
 For loop basically used for to iterator the simple collections of lists.
 If you want more control on lists you will go with iterator , it has there own method such as next, itr , remove.
-
-
 
  80) What is the difference between fail fast and fail safe?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1729,9 +1725,7 @@ Thread.currentThread().setName("ClassName-"+timeStamp.getTime()+"-Thread")
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------
-                                                        Collection
-----------------------------------------------------------------------------------------------------------------------------------------
+Collection
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 1) What is Collection?
@@ -1744,12 +1738,18 @@ Collections is class which provides method such as sort and synchronized ,max,mi
   
 3) What is collection framework?
 ----------------------------------------------------------------------------------------------------------------------------------------
-Collection framework is combination of classes and interface. Interface such as list,set,map,queue. Classes such as arraylist,linkedlist,Hashset,treeset etc.
+Collection framework is combination of classes and interface.
+Interface such as list,set,map,queue.
+Classes such as arraylist,linkedlist,Hashset,treeset etc.
 
 4) Explain Internal Working of ArrayList With Examples?
 ----------------------------------------------------------------------------------------------------------------------------------------
-ArrayList internally uses dyanamic array.Arraylist allows to us to store both homogenous and non homogenoues element. Arraylist support only objects not primitive 
-data type. Arraylist provide random acceess. ArrayList maintain insertion order and allows duplicate values. ArrayList require less space because it store only object not address.
+ArrayList internally uses dyanamic array.
+Arraylist allows to us to store both homogenous and non homogenoues element.
+Arraylist support only objects not primitive data type.
+Arraylist provide random acceess. 
+ArrayList maintain insertion order and allows duplicate values. 
+ArrayList require less space because it store only object not address.
 When we create object of arraylist inside the memory a dyanamic array is created with default capacity is 10 and load factor is 0.75 .
 It consider the capacity such = Initialsize* loadfactor.
 Ex-
@@ -1813,7 +1813,8 @@ Class Employee{
 
 6) Explain Internal working of HashSet with examples?
 ----------------------------------------------------------------------------------------------------------------------------------------
-  HashSet allow only unique values. Hashset internally uses hashmap. Hashset doesn't maintain any insertion order. It allow only one null value.
+  HashSet allow only unique values. Hashset internally uses hashmap. Hashset doesn't maintain any insertion order. 
+  It allow only one null value.
   Hashset is synchronized and thread safe.
   When we create the object of hashset suppose
   HashSet<Integer> set=new HashSet<Integer>();
@@ -1916,7 +1917,7 @@ output= 2
 
 
 8)Explain the difference between array and collection?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                
                Array                                                                            Collection  
 1)Array Supports both primitive data type and objets.                     1)Collection support only primitive data type not objects.
@@ -1926,7 +1927,7 @@ output= 2
 
 
 
-9)Explain various interfaces used in collection framework?
+9) Explain various interfaces used in collection framework?
 ----------------------------------------------------------------------------------------------------------------------------------------
   1) Collection interface
      Collection interface is primary interface. It extedns iterable interface.
@@ -1944,11 +1945,12 @@ output= 2
      queue interface extends collection interface. queue interface follow first in first out manner.
   
   6) Deque interface
-     Deque interface extends queue interface, which is used to perfom insert or remove operation on block wait until operations are performed.
+     Deque interface extends queue interface, which is used to perfom insert or remove operation on block wait until operations are 
+     performed.
 
 10) Explain the difference between ArrayList and Vector?
 ----------------------------------------------------------------------------------------------------------------------------------------
-   ArrayList                                         Vector
+         ArrayList                                Vector
  1)ArrayList is non legacy class.          1)Vector is legacy class.
  2)ArrayList is non synchronized           2)Vector is synchronized.
  3)ArrayList is not thread safe            3)Vector is thread safe
@@ -1970,24 +1972,24 @@ output= 2
 12) What is the difference between Iterator and listIterator?
 ----------------------------------------------------------------------------------------------------------------------------------------
              Iterator                                     ListIterator
- 1)Iterator is used to perform reverese operation   1)ListIterator is used to perform insert,remove operation while travesing the 
-    element while traversing the element.
+ 1)Iterator is used to perform traverse operation over the elements 1)ListIterator is used to perform insert,remove operation while 
+                                                                     travesing the.
  2)Iterator traverse only forword direction         2)ListIterator traverse both forward and reverese direction.
  3)Iteraor is used in list,set,map                  3)ListIterator is used in only list.
 
 13) What is the difference between Iterator and Enumeration?
 ----------------------------------------------------------------------------------------------------------------------------------------
                 Iterator                                                                         Enumeration
-  1)Iterator is used to perform remove operation while traversing           1)Enumeration is used to perform travesion operation over the element.
-    the element 
-  2)Iterator support both legacy and non legacy element                     2)Enumeration support only legacy element.
-  3)Iterator fails fastly so it doesn't require any                         3)Enumeration fails slowly.
+  1)Iterator is used to perform remove operation while traversing     1)Enumeration is used to perform travesion operation over the 
+     element.                                                           the element 
+  2)Iterator support both legacy and non legacy element               2)Enumeration support only legacy element.
+  3)Iterator fails fastly so it doesn't require any                    3)Enumeration fails slowly.
     extra space in a memory
 
 
 14) What is the difference between List and Set? ///////////////////////////////
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-              List                                                                                  Set
+----------------------------------------------------------------------------------------------------------------------------------------
+              List                                                                         Set
   1)list allows duplicate values                                            1)Set doesn't allow duplicate values
   2)List provide random access                                              2)Set doesn't provide random access
   3)List allow n no null values                                             3)Set doesn't allow null values.
@@ -1996,7 +1998,7 @@ output= 2
 
 
 15) What is the difference between HashSet and TreeSet? /////////////////////////////
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                          HashSet                                                       TreeSet
   1)Hashset doesn't maintain any insertion order                         1)Treeset maintain ascending order
   2)HashSet implememts hashtables                                        2)Treeset implements tree structure.
@@ -2005,7 +2007,7 @@ output= 2
   5)Hashset backed by hashmap                                            5)Treeset backed by Treemap.
   
 16) What is the diffrence between Set and Map? /////////////////
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                  Set                                                                 Map
   1)Set has only one value                                        1)Map has one value and one key
   2)Set allows only unique values                                 2)Map allows unique key and duplicate values
@@ -2013,7 +2015,7 @@ output= 2
   4) set is synchronized                                          4) Map is non synchrinized 
 
 17) What is the difference between HashSet and HashMap?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                HashSet                                                              HashMap
    1)Hashset has only one values                                  1) Hashmap represent one values and one key
    2)Hashset allows only unique values                            2)Hashmap allows unique keys but duplicate values
@@ -2022,32 +2024,34 @@ output= 2
    5)Hashset is synchronozed                                      5)Hashmap is non synchronized.
 
 18) What is the difference between HashMap and TreeMap? //////////////////////////////////
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
              HashMap                                                                 TreeMap
   1) HashMap allows n no. of null valeus                         1)Treemap doesn't allows null values
-  2)Hashmap doesn't maintain any insertion order                 2)Treemap maintaion insertion order
-  3)Hashmap require less time as compared to treemap             3)Treemap required more time.
-  4)Hashmap implements hashtables                                4)Treemap implements treestructure
-  5)Hashmap sorted by keys and value both.                       6)Treemap shorted by only keys.
+  2) Hashmap doesn't maintain any insertion order                 2)Treemap maintaion insertion order
+  3) Hashmap require less time as compared to treemap             3)Treemap required more time.
+  4) Hashmap implements hashtables                                4)Treemap implements treestructure
+  5) Hashmap sorted by keys and value both.                       6)Treemap shorted by only keys.
 
 19) What is the difference between HashMap and Hashtable?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                     HashMap                                                 HashTable
+----------------------------------------------------------------------------------------------------------------------------------------
+         	 HashMap                                                 HashTable
   1)Hashmap is non sychronized                                   1)Hashtable is synchronized
   2)Hashmap is non thread safe                                   2)Hashtable is thread safe
   3)Hashmap extends  abstract class                              3)Hashtable extends  dictionary class.
   4)Hashmap allows number of null values                         4)Hashtable doesn't allows null values.
-  5) Hashmap is non legacy                                       5) Hashtable is legacy.
+  5)Hashmap is non legacy                                       5) Hashtable is legacy.
 
 20) What is the difference between Collection and Collections?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                     Collection                                              Collections
   1)Collection is an interface                                    1)Collecctions is a class
-  2)Collection provide data stucture such list,                   2)Collections provide methods such as short(),synchronized() ,min(),max()etc.
-   set,map or etc          
+  2)Collection provide data stucture such list,                   2)Collections provide methods such as short(),synchronized() 
+                                                                  ,min(),max()etc. 
+     set,map or etc          
 
 21) What is difference between Comparable and Comparator?
-               Comparable                                                     Comparator
+
+                 Comparable                                                     Comparator
 ----------------------------------------------------------------------------------------------------------------------------------------
   1)Comparable provide compare To method for comparasion              1)Comparator provide compare method for comparision.
   2)Copmarable compare with own objects                               2)Comparator compare with two different objects.
@@ -2055,7 +2059,7 @@ output= 2
   4)Comparable provide only one short                                 4)Copmarator provide multiple sort of sequence
   5)Comparable is getting used when you want natural                  5) Comparator is getting used when you want custom order 
     Order of sequnce.                                                     of objet sequnce.
-  6) It will provide only one sort of sequence means ,                6) It iwll provide multiple sort of sequence means , if you have 
+  6)It will provide only one sort of sequence means ,                6) It iwll provide multiple sort of sequence means , if you have 
      suppose you have three attribute in your pojo class,                class has three new attribute id, name and address,
      id, name and address.                                               you can sort over it.
      so you can use only one to sort it.
