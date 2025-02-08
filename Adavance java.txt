@@ -2044,7 +2044,7 @@ output= 2
 20) What is the difference between Collection and Collections?
 ----------------------------------------------------------------------------------------------------------------------------------------
                     Collection                                              Collections
-  1)Collection is an interface                                    1)Collecctions is a class
+  1)Collection is an interface                                    1)Collections is a class
   2)Collection provide data stucture such list,                   2)Collections provide methods such as short(),synchronized() 
                                                                   ,min(),max()etc. 
      set,map or etc          
@@ -2139,7 +2139,7 @@ then you will get immediately concurrent modification exception.
 
 31) What is the difference between length of array and size of array?
 ----------------------------------------------------------------------------------------------------------------------------------------
-   If you want to measure length of array we use length() property but length property is not supported arrayList so we need to use size method.
+If you want to measure length of array we use length() property but length property is not supported arrayList so we need to use size method.
 
 32) How to convert ArrayList to Array and Array to ArrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -2150,20 +2150,19 @@ Arrays.asList() size of array become get fixed, so we are not able to add more e
 
 33) How to make java arrayList read only?
 ----------------------------------------------------------------------------------------------------------------------------------------
-   To make java arraylist read only we need to use Collections class collections.unmodificable() method
+To make java arraylist read only we need to use Collections class collections.unmodificable() method
 
 34) How to remove duplicate from ArrayList?
 ----------------------------------------------------------------------------------------------------------------------------------------
-   We can use hashset or linkedhashSet or Treeset
+We can use hashset or linkedhashSet or Treeset
 
 35) How to reverse arrayList?
-----------------------------------------------------------------------------------------------------------------------------------------
-   By using revere() method of collections class , inside this method we pass lists.
-   Collections.reverse(list)
+----------------------------------------------------------------------------------------------------------------------------------------By using revere() method of collections class , inside this method we pass lists.
+Collections.reverse(list)
 
 36) How to short arrayList in desending order?
 ----------------------------------------------------------------------------------------------------------------------------------------
- first we need to sort arraylist by using Collections.sort() method after that we will use Collections.reverse()method we pass lists inside that
+first we need to sort arraylist by using Collections.sort() method after that we will use Collections.reverse()method we pass lists inside that.
 
 37) how to compare two commits change ?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -2171,32 +2170,31 @@ throgh eclipse you can select the last commit and latest commit.
 right click and just click on compar
 
 37) How to synchronized arrayList?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   By using synchrnizedlist() method 
   Collections.sychronizedlist() method
   We need to pass lists inside this method
 
 38) When we use ArrayList vs LinkedList?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ArrayList mainly used for searching operation because it provide random access where as linkedlist is used for insertion and deletion operation because simple 
-  node will get create and delete.
+----------------------------------------------------------------------------------------------------------------------------------------
+ArrayList mainly used for searching operation because it provide random access where as linkedlist is used for insertion and deletion operation because simple node will get create and delete.
   
 39) What is time complexity of arraylist and linkedlist? which one is faster?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    LinkedList is faster than the arraylist for insertion and deletion operations. 
-    The time complexity of arraylist for insertion is o(1) ,remove o(n),get o(1) whereas the time complexity for linkedlist is insertion is o(1),remove o(n),get o(n)  
+----------------------------------------------------------------------------------------------------------------------------------------
+LinkedList is faster than the arraylist for insertion and deletion operations. 
+The time complexity of arraylist for insertion is o(1) ,remove o(n),get o(1) whereas the time complexity for linkedlist is insertion is o(1),remove o(n),get o(n)  
 
 40) If we remove the element from arraylist (if i use enhanced for loop) at the time iterating it will show concurrent Modification exception?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Yes if you are using enhanced for loop and try to remove element form that loop so, we will get the concurrentModification Exception.
+----------------------------------------------------------------------------------------------------------------------------------------
+Yes if you are using enhanced for loop and try to remove element form that loop so, we will get the concurrentModification Exception.
 
 
 41) What is generic?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   generic means parameterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket <>.
+----------------------------------------------------------------------------------------------------------------------------------------
+generic means parameterized type. It is type safe checked at compile time. we don't need to do typecasting.It represented by angular bracket <>.
    
 42) What is differnce between hashmap and linkedhashmap?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                        HashMap                                                      LinkedHashMap
 1) Hashmap doesnot maintain insertion order of keys.                 1) Linkedhashmap maintain insertion order of keys.
 2) Hashmap performs faster than linkedhashmap                        2) linkedhashmap performs slower than a hashmap
@@ -2228,7 +2226,7 @@ output : 1,1
 
 
 43) What is differnce between hashmap and HashTable?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                        HashMap                                                      HashTable
  1) HashMap is non synchronized                                         1) Hashtable is synchronied
  2) HashMap is non thread safe                                          2) HashTable is thread safe.
@@ -2237,25 +2235,25 @@ output : 1,1
  and only one null keys
  
  44) What is differnce between Treemap and hashtable?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
                        TreeMap                                                  HashTable
  1) TreeMap is non synchronized                                       1) HashTable is synchronied
  2) TreeMap is not thread safe                                        2) HashTable is thread safe
  3) Tree is non legacy class                                          3) Hashtable is legacy class
  
  45) What are the collections class methods?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) addAll() 2) max() 3) min() 4) sort()
 
 46) What is the difference between equals() and compareTo() method?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 equlas take input parameter as only objects whereas compareTo method take only string.
 
 47) How to remove User-defined class objects in Java ArrayList with example?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 
 48) Write code for Hashmap and explain everything?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
      Hashmap represent key,value pair. They allow unique keys and duplicate value. Hashmap is non synchronized and non thread safe.
      It allows n no. of null values. It implements abstract class.
      When we create the object of hashmap
@@ -2273,37 +2271,35 @@ equlas take input parameter as only objects whereas compareTo method take only s
      Whatever we passing it stored in doubly linked list.
      Suppose we will get 7 index it will store the object in 7 buckte as a doubly linked list format.
      Some times we will get same index value suppose 8,that time hash collosion will occur.
-     and equal() method get overide to check contain equal or not if contain is equal doubly linked list get overide,if contains is not equal
-     then another doubly linked list will get create connected to previous one.
+     and equal() method get overide to check contain equal or not if contain is equal doubly linked list get overide,if contains is not 
+     equal then another doubly linked list will get create connected to previous one.
      Suppose we are passing null values it will store on zeorth index. If you passing lot's of null keys it will started replacing .
       
       
 49) When do we use HashSet over TreeSet?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Hashset is used when we want to search element and we don't want any sorting order. whereas
-   Treeset is used when we want sorting element ,fast insertion and retrieving the element.
+----------------------------------------------------------------------------------------------------------------------------------------
+1) Hashset is used when we want to search element and we don't want any sorting order. 
+   whereas Treeset is used when we want sorting element ,fast insertion and retrieving the element.
    
 50) What is Linked HashSet and its features?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Linked hashset implements set interface. Linked hashset similar to the hashset. the main difference that linked hashset maintain insertion order whereas
- hashset doesn't maintain insertion order.
+----------------------------------------------------------------------------------------------------------------------------------------
+Linked hashset implements set interface. Linked hashset similar to the hashset. the main difference that linked hashset maintain insertion order whereas hashset doesn't maintain insertion order.
  
 51) What is linked hashmap and its features?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Linked hashmap maintain insertion order. Linked hashmap is faster for insertion and deletion the element.
+----------------------------------------------------------------------------------------------------------------------------------------
+Linked hashmap maintain insertion order. Linked hashmap is faster for insertion and deletion the element.
  
 52) What is SortedMap interface? /////////////////////////////////////////////
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
- SortedMap interface maintaing sorting order of keys,by default sortedmap interface natural order.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+SortedMap interface maintaing sorting order of keys,by default sortedmap interface natural order.
  
 53) What is Hashtable and explain features of Hashtable?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Hashtable is synchronized and thread safe. Hashtable extends Dictionary class.Hashtable doesn't allow null value as well as keys.Hashtable is thread safe.
- Hashtable is legacy.
+----------------------------------------------------------------------------------------------------------------------------------------
+Hashtable is synchronized and thread safe. Hashtable extends Dictionary class.Hashtable doesn't allow null value as well as keys.Hashtable is thread safe. Hashtable is legacy.
  
 54) Difference between HashMap and Hashtable?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                      HashMap                                            Hashtable
+----------------------------------------------------------------------------------------------------------------------------------------
+                  HashMap                                            Hashtable
 	1) Hashmap is non synchronized                   1) Hashtable is synchronized
 	2) Hashmap is thread safe                        2) Hashtable is non thread safe.
 	3) Hashmap allows n number                       3) Hashtable doesn't allow null values or keys. 
@@ -2311,24 +2307,19 @@ equlas take input parameter as only objects whereas compareTo method take only s
         4) Hashmap is non legacy                         4) Hashtable is legacy.
 	   
 55) What is concurrent hashmap and its features ?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Concurrent hashmap similar to the hashtable and synchronized version of hashmap. It doesn't allows null value and keys.concurrent hashmap allows multiple thread
-to access.
-Cocurrent hashmap is thread safe. i.e multiple thread can operate single object without any issues.
-Peformancewise concurrent hashmap is better than the hashmap.
-The default concurrent hashmap size is 16, load factor is 0.75.
+----------------------------------------------------------------------------------------------------------------------------------------
+Concurrent hashmap similar to the hashtable and synchronized version of hashmap. It doesn't allows null value and keys.concurrent hashmap allows multiple thread to access. Cocurrent hashmap is thread safe. i.e multiple thread can operate single object without any issues. Peformance wise concurrent hashmap is better than the hashmap. The default concurrent hashmap size is 16, load factor is 0.75.
 ConcurrentHashMap<K,V> map=new ConcurrentHashMap<k,V>(DEFINE_SIZE_ALSO_HERE);
 
 56) Difference between concurrent hashmap and hashtable?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 concurrent hashamap allows mutiple thread access whereas hashtable doesn't allow multiple thread access.
 
 57) Explain about fail safe iterators in java? //////////////////////////////////////////
----------------------------------------------------------------------------------------------------------------------------------------------------------------------Fail safe iterator means it doesn't throw concurrentMoficationException. when thread was iterating it doesn't modify the original list it create copy of that
-list. 
+----------------------------------------------------------------------------------------------------------------------------------------Fail safe iterator means it doesn't throw concurrentMoficationException. when thread was iterating it doesn't modify the original list it create copy of that list. 
 
 58) Explain about concurrentModificationException?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 If you  are removing element from enhanced for loop by using remove method so you will get concurrentModification Exception.
 ConcurrentModifcation exception means it doesn't require any extra space in a memory.
 
@@ -2341,19 +2332,21 @@ remove() method it will throw concurrentModification Exception.
 To avoid this problem we need to use Iterator
 
 59) When we get the concurrentModifcationException?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 If you are removing element from enhanced for loop by using remove method. We will get concurrentModificationException.
 To avoid this we need to use Iterator.
 
  ---------------------------------------------------------------------------------------------------------------------------------------
  60) Difference between concurrent hashmap and synchronized hashmap?
-                                 concurrent hashmap                               synchronized hashmap
-			   1) concurrent hashmap don't allow null           1) synchrnized hashmap allows null keys(one) and values.
-		              values as well as keys
-                           2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychronizedMap() we need to use
-		              we have direclty class in java                    
-		           3) accesibility more efficient                   3) In accesibility less efficient
- 
+                concurrent hashmap                               synchronized hashmap
+1) concurrent hashmap don't allow null           1) synchrnized hashmap allows null keys(one) and values.
+    values as well as keys
+2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychronizedMap() we need to use
+    we have direclty class in java                    
+3) accesibility more efficient                   3) In accesibility less efficient
+4) Multiple thread can access shared             4) Mulitple thread if trying to access the shared resource need to use the 
+                                                    synchronziation
+resource without any issue
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 61) Remove method works for arraylist and hashset?
@@ -2392,10 +2385,8 @@ require less memory.
 66) Can we take custom class object as key in hashmap?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Yes we can take custom class object as a key in hashmap.
-But we know that collections only support the objects, wrapper classes and
-all wrapper classes are immutable in java.
-We need to make it immutable.
-We need to override the equals and hashcode() method of object class.
+But we know that collections only support the objects, wrapper classes and all wrapper classes are immutable in java.
+We need to make it immutable. We need to override the equals and hashcode() method of object class.
 
 67) What is the use of Concurrrent HashMap?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -2403,7 +2394,7 @@ It allows to access multiple thread at a time.
 
 68) Scenario's if we pass custom class object as key.
 ---------------------------------------------------------------------------------------------------------------------------------------
-Scenarios 1) Suppose if we are passing custom class object as key first we need to make it as immtable.
+Scenarios 1) Suppose if we are passing custom class object as key first we need to make it as immutable.
           2) Because collection support only objects not a primitive data type.
 	  3) All wrapper class are immutble.
 	  4) To make custom class as object first we need to make them immutable by using or
@@ -2412,30 +2403,25 @@ Scenarios 1) Suppose if we are passing custom class object as key first we need 
 	  
 69) Practial scenarioes when to use HashMap vs concurrent HashMap?
 ---------------------------------------------------------------------------------------------------------------------------------------
-1) HashMap is thread safe, means only one thread access at a time. So basically in single thread enviroment
-   will use HashMap.
-   If you put it into multithreaded enviornment it give us bad result or correct result.
-   It's give better and faster performance as compate to hashmap.
+1) HashMap is non thread safe, means only one thread access at a time. So basically in single thread enviroment will use HashMap.
+   If you put it into multithreaded enviornment it give us bad result or correct result. It's give better and faster performance as 
+   compate to hashmap.
 
-2) Cocurrent hashmap is not thread safe. so multiple thread can access at a time.Basically in multithreaded environment
+2) Cocurrent hashmap is thread safe. so multiple thread can access at a time.Basically in multithreaded environment
   will use concurrent hashmap.
 
 
 
 
 
- ==================================================================================================================================================================
- ================================================================================================================================================================== 
+ ========================================================================================================================================
  RESTFul web services.
  1) Web services designed for application to application interaction
- 2) Interpolations - suppose Application A installed in java , application B installed on dotNet and application c installed on php so they can communicate 
-                     with each other with the help of web services
+ 2) Interpolations - suppose Application A installed in java , application B installed on dotNet and application c installed on php so they can communicate with each other with the help of web services
  3) It allows communicate over the network.		     
- ==================================================================================================================================================================
- ==================================================================================================================================================================
- 
+ ========================================================================================================================================
  1) REST-
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  Rest stands for Representational state transfer. It developed by roy fielding to make web services most effective.
  { Roy fileding also develops the Http protocol ) Hyper text tranfer protocol.
  
@@ -2443,76 +2429,77 @@ Scenarios 1) Suppose if we are passing custom class object as key first we need 
  It developed four methods.
  
  A) POST-
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
     Post is used to create a new resource.
     
  B) Put-
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
     Put is used to update the existing resoure.
     
  C) GET-
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
     Get is used to get the resource (or read the resource).
     
  D) DELETE-
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
    DELETE is used to delete the resource.
    
    
  Status code
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  1)200
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  ok -succesful
  
  2)201
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  created
  
  3) 400
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  Method not found
   
  4) 404
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  Bad request
   
  5) 500
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  Internal server error
  
  3)What is web service and why it required?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   Web services is desined for application to application interaction.
-  Interoperable. suppose application A installed on java, application B installed on dotnet and application c build on php so they communicate over the webservies.
-  It allows communicate over the network
+  Interoperable. 
+  suppose application A installed on java, application B installed on dotnet and application c build on php so they communicate over 
+  the webservies. It allows communicate over the network
  
  
   4) What is the difference between REST and SOAP?
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                               SOAP                                         REST
-               1) SOAP stands for simple object        1) REST stands for representational state transfer.
-                  access protocol.  
-               2) SOAP manily uses                      2) REST used json for data exachnage
-                  xml for dataexachanges
-               3) SOAP is protocol.                    3) REST is an architecrure approch.
-               4) SOAP are difficult to                4) REST is easy to implement as compare to SOAP.
-                 implements 
+ ---------------------------------------------------------------------------------------------------------------------------------------
+                     SOAP                                         REST
+       1) SOAP stands for simple object        1) REST stands for representational state transfer.
+            access protocol.  
+       2) SOAP manily uses                     2) REST used json for data exachnage
+          xml for dataexachanges
+       3) SOAP is protocol.                    3) REST is an architecrure approch.
+       4) SOAP are difficult to                4) REST is easy to implement as compare to SOAP.
+           implements 
                  
 
  5) What is differecne between put and patch?
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Put used when we want to update the complete resource. but 
- suppose if you have 50 of attribute and you want to change onlt one or two value of 
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ Put used when we want to update the complete resource. 
+ but suppose if you have 50 of attribute and you want to change onlt one or two value of 
  them we will go for patch.
 
 ========================================================================================================================================
 ========================================================================================================================================
-                                                                     !!! Shree Swami Samrath !!!
+                                        !!! Shree Swami Samrath !!!
 ========================================================================================================================================
 ========================================================================================================================================
 
-========================================================================================================================================                                                           JAVA 1.8 Features 
+========================================================================================================================================                                              JAVA 1.8 Features 
 ========================================================================================================================================
 
 The main objective of java 1.8 introduce is to enable function programming in java.
@@ -2520,18 +2507,18 @@ The main objective of java 1.8 introduce is to enable function programming in ja
 ----------------------------------------------------------------------------------------------------------------------------------------
 1) Lambda Expression 
 
-   Lambda expression is used to provide the implementations of functional interface. It is function so .class file will not get created. It is anonymous function. It is used to iterate the collection , filter and extraction purpose.
-   { anonymous means it doesn't have any return type, method name and modifier also }.
-   Lambda expression only applicable for function interface.
-   Types of lambda expression such as
-   1)No argument lambda expression 
+Lambda expression is used to provide the implementations of functional interface. It is function so .class file will not get created. It is anonymous function. It is used to iterate the collection , filter and extraction purpose.
+{ anonymous means it doesn't have any return type, method name and modifier also }.
+Lambda expression only applicable for function interface.
+Types of lambda expression such as
+1)No argument lambda expression 
    ()->{}
    () Argument list - May or may not be empty
     -> arrow token  -It is used to connect argument list to the expression body.
    {} body     - It contaions expression and syntax
-   2) Single Parameter lambda exxpression
+2) Single Parameter lambda exxpression
    (e)->{}
-   3) Two Parameter lambda expression
+3) Two Parameter lambda expression
    (e1,e2)->{}
 
 
@@ -2539,29 +2526,29 @@ The main objective of java 1.8 introduce is to enable function programming in ja
      1) In previously { Object oriented Programming Language}
         
 	public void getInfo(){
-        System.out.println("Hello");
+            System.out.println("Hello");
 	}
 	
 	Now Lambda expression is anonymous function means it doesn't have any name, return type and modifier also.
 	{ Functional Programming }
 	()-> {
-	System.out.println("Hello");
+	    System.out.println("Hello");
 	}
 	
 
-    2) 
-       public void add(int a,int b){
-       System.out.println(a+b);
-       }
+      2) 
+        public void add(int a,int b){
+            System.out.println(a+b);
+         }
        
-       (int a,int b)-> System.out.println(a+b);
+         (int a,int b)-> System.out.println(a+b);
 	
 	
 	
-     3) 
-      public int getSquare(int num){
-          return num*num;
-      }
+      3) 
+         public int getSquare(int num){
+              return num*num;
+         }
 	
 	
 	
@@ -2593,30 +2580,33 @@ The main objective of java 1.8 introduce is to enable function programming in ja
 	
    
    Advantages
-   1)Reduce boiler plate code.
+   1) Reduce boiler plate code.
    2) Code lot's of lines of code
    3) Enable Function Programming in java.
    
     
     
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 2) Stream API
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Stream API used to flow element from source to the destination.Stream API doesn't used to store the element.It takes input from collection and element visited only    once in thier life.It used to modify the resource.
-   There are two types of Stream API
-   1) Parallel Stream API
-    Parallel Stream API means we can perform multiple operations at a time. It is platform dependent. The performs of parallel Stream API is faster than the 
-    sequential Stream API. It doesn't maintain the order.( This probelm occur if you are using forEach() To overcome this problem we need to forEachOrdered() loop)
+----------------------------------------------------------------------------------------------------------------------------------------
+Stream API used to flow element from source to the destination.
+Stream API doesn't used to store the element.
+It takes input from collection and element visited only once in thier life.It used to modify the resource.
+There are two types of Stream API
+1) Parallel Stream API
+Parallel Stream API means we can perform multiple operations at a time. It is platform dependent. The performs of parallel Stream API is faster than the sequential Stream API. It doesn't maintain the order.( This probelm occur if you are using forEach() To overcome this problem we need to forEachOrdered() loop)
     
-   2) Sequential Stream API
-      Sequential Stream API is used to perform only one operations at a time. It is platform independent. The performs of sequential stream API is slower than the 
-      parallel stream API. It maintain the order.
+2) Sequential Stream API
+Sequential Stream API is used to perform only one operations at a time. 
+It is platform independent. 
+The performs of sequential stream API is slower than the parallel stream API. 
+It maintain the order.
       
-   The methods of stream such as
-   map(),filter(),disctint(),toarray(),collect(),max(),min(),findfirst(),findAny(),forEach(),limit()
+The methods of stream such as
+map(),filter(),disctint(),toarray(),collect(),max(),min(),findfirst(),findAny(),forEach(),limit()
       
-   class OddNum{
+class OddNum{
    public static void main(String args[]){
    List<Integer> list=new ArrayList<Integer>();
    list.add(10);
