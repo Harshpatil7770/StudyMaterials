@@ -2592,7 +2592,8 @@ Types of lambda expression such as
 ----------------------------------------------------------------------------------------------------------------------------------------
 Stream API used to flow element from source to the destination.
 Stream API doesn't used to store the element.
-It takes input from collection and element visited only once in thier life.It used to modify the resource.
+It takes input from collection and element visited only once in thier life.
+It used to modify the resource.
 There are two types of Stream API
 1) Parallel Stream API
 Parallel Stream API means we can perform multiple operations at a time. It is platform dependent. The performs of parallel Stream API is faster than the sequential Stream API. It doesn't maintain the order.( This probelm occur if you are using forEach() To overcome this problem we need to forEachOrdered() loop)
@@ -2622,12 +2623,11 @@ class OddNum{
    
    Advantages of streamAPI- 1) It reduce lot's of lines of codes.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 3) Default and Static Method 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any      method inside an interface it must implement in subclass so number of lines of code are unneccesarly increases. 
-   In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
-   that default method they can call such as interface.super.method() name.
+----------------------------------------------------------------------------------------------------------------------------------------Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an interface it must implement in subclass so number of lines of code are unneccesarly increases. 
+In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
+that default method they can call such as interface.super.method() name.
 
    Interface Bike{
    void  start();
@@ -2652,15 +2652,15 @@ class OddNum{
      }
    }
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 4) Functional Interface or SAM
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Functional interface means it has only one abstract method.In java 1.8 one annotation also added @FunctionInterface.
-   (This annotations helps us to write interface as per the rules).
-   It is also called as SAM i.e single abstarct method.
+----------------------------------------------------------------------------------------------------------------------------------------
+Functional interface means it has only one abstract method.In java 1.8 one annotation also added @FunctionInterface.
+(This annotations helps us to write interface as per the rules).
+It is also called as SAM i.e single abstarct method.
   
-  if you add this annotation above the interface you are not able to add any other method inside an interface if you try to add it will show compile time error.
-   But we can add n number of  default and static inside the functional Interface also.
+if you add this annotation above the interface you are not able to add any other method inside an interface if you try to add it will show compile time error.
+But we can add n number of  default and static inside the functional Interface also.
  
   If you add default method it call by Interface.super.method() name
    whereas Static method called Interface.methodName() 
@@ -2735,17 +2735,20 @@ c) Correct
  interface Addition extends Airthmetic{
   void sub(int a,int b);
  }
- 
+
+The main purpose of functional interface is desinged to use with lambdas.
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 5) For Each Method
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    For Each Method is used to iterate the element.
    For Each Method is introduced in iterable and stream Interface. 
    It is used to iterate the array and collections.
    The main advantage of for each loop is to reduce lot's lines of code.
+    It is very simple to use. 
    The disadvantage of this loop is we can't travel in reverse direction.
+
    
    class{
    public static void main(String args[]){
@@ -2762,9 +2765,9 @@ c) Correct
       }
    }
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 6) Method Reference ///////////////////////////////////
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
    Method reference is compact and easy form of lambda expression. Method reference is used to reference method of fuctional Interface.
    Types of Method Reference
    1) Reference to the static method 
@@ -2788,14 +2791,14 @@ c) Correct
    
    
    
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 7) Optional Class
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 In java 1.8 Optional class is defined to handel the nullpointer exception. It is final class.
 The method present in optinal class is isPresent() ,get(), orElse()
 
 for.eg you fetch the data from database by using id,name and the id or name is not present in the database then they will show null pointer exception.
-======================================================================================================================================================================
+========================================================================================================================================
 1) get employee list whose salary is greater than 2000 and department wise using java-8 
 
 public class Interview {
@@ -2860,31 +2863,31 @@ public class Interview {
 	}
 }                 
                  
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 8) Map  ////////////////////////////////////
---------------------------------------------------------------------------------------------------------------------------------------------------------------------      Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
-     for eg- convert string to lower case to upper case, multiply number by values etc.
+----------------------------------------------------------------------------------------------------------------------------------------Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
+for eg- convert string to lower case to upper case, multiply number by values etc.
      
      
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 9) Predicate 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Predicate is function interface, return type of predicate is boolean. It return true or false value
+----------------------------------------------------------------------------------------------------------------------------------------Predicate is function interface, return type of predicate is boolean. It return true or false value
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 10) Stream 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------    Stream means element flows from source to the desitinations. It doesn't used to store the element, It takes input from the collections.It mainly used to modify
+----------------------------------------------------------------------------------------------------------------------------------------Stream means element flows from source to the desitinations. It doesn't used to store the element, It takes input from the collections.It mainly used to modify
    the resources.
 
 11) What are method present in the optional class? ///////////////////////////////////
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) isPresent()  -------      return type boolean 
 2) get()         
 3) orElse       -------      It return if present otherwise it return another.
 
 
 12) What is method present in StreamAPI?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) collect
 2) count()
 3) disctint()
@@ -2897,7 +2900,7 @@ public class Interview {
 10) sorted()
 
 13) Describe the newly added features in Java 8?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Lambda expression
 2) StreamAPI
 3) default and static method
@@ -2908,35 +2911,35 @@ public class Interview {
 
 
 14) In StreamAPI what is the difference between parallel and sequential stream?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   Sequential Stream API-
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   Sequetial Stream API means we can perform only one iterator or operations at a time. It maintain the order. The perfoms sequential
   stream API is slower than the parallel stream API. platforn independent.
   
   Parallel Stream API-
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   Paralllel Stream API means we can perform multiple operations at a same time. The doesn't maintain the order. The performs od parallel stream API
   is faster than the sequential Stream API. platform dependent.
   
  15) What are the advantages of java 1.8?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) It reduce lots of lines of code
 2) Increase productivity
 3) Enable FUnction programming in java
 
 16) What are the advantages of java 11?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) .class file will not get create
 2) We don't need to compile your application.
 3) We have private method inside an interface.
 
  17) Can a functional interface extend/inherit another interface?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
  Yes, Funtion interface extends another interface but only when it doesn't have any abstract methods.
  
  18) What are pre-defined function interfaces in java?
------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+---------------------------------------------------------------------------------------------------------------------------------------- 
 1) Runnable 
 2) consumer
 3) predicate
@@ -2944,25 +2947,25 @@ public class Interview {
 5) Supplier
 
 19)  What are the various categories of pre-defined function interfaces?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Funtion-  It takes arguments and return the result
 2) Consumer- It passes the arguments but not return the values
 3) Supplier- no arguments but return result{get method}
 4) Predicate- It return true or false value ( boolean return type)
 
 20) How does a lambda expression relate to a functional interface?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Lambda expression is used to represnt the instance of functional interface.
 
 21) What is the basic structure/syntax of a lambda expression?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 ()-> { }
 ()- argument list- may or may not be empty
 -> arrow token - used to connect argument list to method body
 {} method body - contains expression and syntax.
 
 22) What are the avantages of lambda expression?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) To provide the implementations of functional interface
 2) Reduce lot's of lines of code
 
@@ -2981,26 +2984,26 @@ Lambda expression is used to represnt the instance of functional interface.
                  }
 
 24) What does the String::ValueOf expression mean?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 ValueOf() method convert the data into human readable format. String Valueof() method return the represenatios of values.
 
 25) What are the main componets of stream?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Jobs, tupple, operators,data stream.
 
 26) What are Intermediate and Terminal operations?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Intermediate operations doesn't produce the end result, it return the Stream.Intermediate operator are lazy loading. 
    intermediate operations methods such as map(),filter(),distinct(),skip()
 2) Terminal operations produce the end result and it doesn't return the stream. Terminal operator are eargely loading.
    Terminal operations methods such as toarray(),count(),collect(),forEach(),findFirst(),findAny()
 
 27) What are the most commonly used Intermediate operations?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 map() ,filter(),sorted(),disctint(),limit()
 
 28) What is the stateful intermediate operation? Give some examples of stateful intermediate operations?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 stateful means it internally contains state
 The stateful intermediate operations such as 
 1) disctint() ,skip(),sort(),limit()
@@ -3008,60 +3011,60 @@ all other are stateless such as
 map(),filter()
 
 29) What is the most common type of Terminal operations?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 The most common terminal operations such as
 1) collect() 2) reduce()  3) findfirst() 4)findAny() 5) forEach() 6) toArray() 
 
 30) What is the difference between find first and find any?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 findFirst() method return first element of the stream wheras findAny() method return any element of stream
 
 31) How are Collections different from Stream?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Stream doesn't used to store the elements. It is used to modify the resource.
 Collections is used to store the elements.
 
 32) What is the feature of the new Date and Time API in Java 8?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 old date time API is not thread safe, we can do less operations.
 
 33) Explain with example, LocalDate, LocalTime, and LocalDateTime APIs?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 LocalDate means localdate with time zone.
 LocalTime means without any date 
 LocalDateTime - it represent date with time
 
 33) Characterstics of Lambda Expressions?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) If you are using one parameter then theres is no need to use the parenthesis. But if your are using more parameter then you need to use the parenthisis
 2) If there is one statement in method body then there is no need to curly braces.
 
 34) What is the difference betweeen StreamAPI and CollectionAPI? /////////////////////////////////////////
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
  StreamAPI- StreamAPI doesn't use iterator and spiltiterator. It is used to modify the resource.
  CollectionAPI- CollectionAPI use iterator and spiltiterator to perform action on each element. It is used to store the data.
  
 35) How can you create function interface?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Create a interface and define only one abstarct method.(abstract means it doesn't have body). Use the annotations such as
 @FunctionalInterface. You can write mulitple default and static methods.
 
 36) What is SAM?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
   SAM stands for single abstract method. Functional Interface is also known as SAM.
   
 37) What is a Predicate? State the difference between a Predicate and a Function?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Predicate and function both are the predifined function in interface.
 2) Predicate return type is boolean i.e it return only true or flase values
-wherase function takes the arguments and return the result. Return type of function is object.
+   wherase function takes the arguments and return the result. Return type of function is object.
 
 38) What is diffrence between limit and skip?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 limit means it return the specified size, whereas skip means skip the element
 
 39) What is the difference between iterator and spiltiterator? //////////////////////////////////////////////////
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Iterator -
 1) Iterator is used in Collection API 
 2) Iterator iterate only sequential order
@@ -3074,29 +3077,29 @@ SpiltIterator-
 3)It has spiltiterator() method.
 
 40) What is the consumer functional Interface?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 consumer function interface is pre-defined function in java. It takes the arguments but doesn't return the values.
 
 41) What is supplier functional interface?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Supplier function interface means it doesn't take the inputs.It return values by using get method .
 
 42) What is the difference between java 1.8 internal and external iterations?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Internal iterations supports functional programming.whereas external Iterations supports oops programming styles.
 
 43) What is the advantage of java 1.8?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 We require less code to write.
 Enable Function Programming.
 
 44) What is the main objective to introduce Java 1.8?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 The main objective of Java 1.8 is enable function programming, so require to write lesser code.
 
 
 45) What are the different Functional Interface in Java (SAM)?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Runnable  ( run() method)
 2) Consumer
 3) Predicate
@@ -3110,29 +3113,29 @@ Marker interface
 3) Serialliable
   
  46) Comparision concepets
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  (obj1,obj2) 
  +ve when obj1 is come before obj2
  -ve when obj1 is come after obj2
  0 when obj1 and obj2 are equal.
  
  47) What 1.8 Hashmap changes?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 They remove linked list and added binary tree
 
  48) What are the in-built functional interfaces in Java?
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------=
  1) Function Interface - It take the input and return the result as object
  2) Consumer Interface - It take the input but doesn't return anything.
  3) Supplier interface- It take the doesn't take the input but return the result ( get method )
  4) Predicate Interface - Predicate return type is boolean . It return true or false values.
  
  49) Can we resuse the stream?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 No , we can't reuse the stream. Because element visited only once in their life.
 
 50) Why forEach() if we have for() already?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Because forEach() easy to use & redable.
 Where to use for loop we need to write the three steps such as
 1) define iterator for eg- int i=0;
@@ -3140,7 +3143,7 @@ Where to use for loop we need to write the three steps such as
 3) define how should the loop is iterate i++
 
 51) What are the methods of stream?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) Max
 2) Min
 3) ForEach
@@ -3173,11 +3176,10 @@ ii) If any data strucutre is non thread safe, and multiple thread is going to ac
 
 
  
------------------------------------------------------------------------------------------------------------------------------------------------------------------    
------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+----------------------------------------------------------------------------------------------------------------------------------------
 JAVA 1.9 Feature  
------------------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 1) .class file will not get created.
 2) inside the interface we can write private method also.
 
