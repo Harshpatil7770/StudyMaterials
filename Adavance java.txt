@@ -2625,7 +2625,8 @@ class OddNum{
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 3) Default and Static Method 
-----------------------------------------------------------------------------------------------------------------------------------------Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an interface it must implement in subclass so number of lines of code are unneccesarly increases. 
+----------------------------------------------------------------------------------------------------------------------------------------
+Default and Static method introduced in an interface in java 1.8. In java 1.7 we have only method declaration inside an interface and if you want to declare any method inside an interface it must implement in subclass so number of lines of code are unneccesarly increases. 
 In java 1.8 we have both method declaration and method defination inside an interface.so which class want to access
 that default method they can call such as interface.super.method() name.
 
@@ -2742,12 +2743,12 @@ The main purpose of functional interface is desinged to use with lambdas.
 ----------------------------------------------------------------------------------------------------------------------------------------
 5) For Each Method
 ----------------------------------------------------------------------------------------------------------------------------------------
-   For Each Method is used to iterate the element.
-   For Each Method is introduced in iterable and stream Interface. 
-   It is used to iterate the array and collections.
-   The main advantage of for each loop is to reduce lot's lines of code.
-    It is very simple to use. 
-   The disadvantage of this loop is we can't travel in reverse direction.
+For Each Method is used to iterate the element.
+For Each Method is introduced in iterable and stream Interface. 
+It is used to iterate the array and collections.
+The main advantage of for each loop is to reduce lot's lines of code.
+It is very simple to use. 
+The disadvantage of this loop is we can't travel in reverse direction.
 
    
    class{
@@ -2766,7 +2767,7 @@ The main purpose of functional interface is desinged to use with lambdas.
    }
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-6) Method Reference ///////////////////////////////////
+6) Method Reference
 ----------------------------------------------------------------------------------------------------------------------------------------
    Method reference is compact and easy form of lambda expression. Method reference is used to reference method of fuctional Interface.
    Types of Method Reference
@@ -2864,22 +2865,24 @@ public class Interview {
 }                 
                  
 ----------------------------------------------------------------------------------------------------------------------------------------
-8) Map  ////////////////////////////////////
-----------------------------------------------------------------------------------------------------------------------------------------Map is used to perfrom the intermediate operations.It doesn't produce end result, it return the stream.
-for eg- convert string to lower case to upper case, multiply number by values etc.
+8) Map
+----------------------------------------------------------------------------------------------------------------------------------------
+Map is used to perfrom the intermediate operations. It doesn't produce end result, it return the stream.
+for e.g.,- convert string to lower case to upper case, multiply number by values etc.
      
      
 ----------------------------------------------------------------------------------------------------------------------------------------
 9) Predicate 
-----------------------------------------------------------------------------------------------------------------------------------------Predicate is function interface, return type of predicate is boolean. It return true or false value
-
+----------------------------------------------------------------------------------------------------------------------------------------
+Predicate is function interface, return type of predicate is boolean. It return true or false value.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 10) Stream 
-----------------------------------------------------------------------------------------------------------------------------------------Stream means element flows from source to the desitinations. It doesn't used to store the element, It takes input from the collections.It mainly used to modify
-   the resources.
+---------------------------------------------------------------------------------------------------------------------------------------
+Stream means element flows from source to the desitinations. 
+It doesn't used to store the element, It takes input from the collections.It mainly used to modify the resources.
 
-11) What are method present in the optional class? ///////////////////////////////////
+11) What are method present in the optional class?
 ----------------------------------------------------------------------------------------------------------------------------------------
 1) isPresent()  -------      return type boolean 
 2) get()         
@@ -2894,7 +2897,7 @@ for eg- convert string to lower case to upper case, multiply number by values et
 4) filter()
 5) forEach
 6) limit()
-7)min()
+7) min()
 8) max()
 9) reduce()
 10) sorted()
@@ -2913,7 +2916,8 @@ for eg- convert string to lower case to upper case, multiply number by values et
 14) In StreamAPI what is the difference between parallel and sequential stream?
 ----------------------------------------------------------------------------------------------------------------------------------------
   Sequential Stream API-
-  --------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
   Sequetial Stream API means we can perform only one iterator or operations at a time. It maintain the order. The perfoms sequential
   stream API is slower than the parallel stream API. platforn independent.
   
@@ -2922,7 +2926,7 @@ for eg- convert string to lower case to upper case, multiply number by values et
   Paralllel Stream API means we can perform multiple operations at a same time. The doesn't maintain the order. The performs od parallel stream API
   is faster than the sequential Stream API. platform dependent.
   
- 15) What are the advantages of java 1.8?
+15) What are the advantages of java 1.8?
 ----------------------------------------------------------------------------------------------------------------------------------------
 1) It reduce lots of lines of code
 2) Increase productivity
