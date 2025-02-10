@@ -3124,7 +3124,7 @@ Marker interface
 They remove linked list and added binary tree
 
  48) What are the in-built functional interfaces in Java?
- ---------------------------------------------------------------------------------------------------------------------------------------=
+ ---------------------------------------------------------------------------------------------------------------------------------------
  1) Function Interface - It take the input and return the result as object
  2) Consumer Interface - It take the input but doesn't return anything.
  3) Supplier interface- It take the doesn't take the input but return the result ( get method )
@@ -3167,10 +3167,8 @@ C) lists.isEmpty ==true
 
 53) What is Thread safe and non thread safe.
 ----------------------------------------------------------------------------------------------------------------------------------------
-i)  If any data structuture is thread safe , so we don't need to worry or we don't need to do anyhting if multiple thread is going to
-    access it.
-ii) If any data strucutre is non thread safe, and multiple thread is going to access it , you need provide to synchrozition in this 
-    case otherwise you will get inconstistent result or chances of data corruption.
+i) Thread safe means multiple thread can access shared resource without any issue.
+ii) Non thread safe means multiple thread can't access shared resource at a time. It will gives inconsistent result.
 
 
 
@@ -3179,7 +3177,7 @@ ii) If any data strucutre is non thread safe, and multiple thread is going to ac
 ----------------------------------------------------------------------------------------------------------------------------------------
 JAVA 1.9 Feature  
 ----------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
+
 1) .class file will not get created.
 2) inside the interface we can write private method also.
 
