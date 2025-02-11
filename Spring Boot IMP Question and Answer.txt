@@ -4,8 +4,7 @@
 
 1) What is springBoot?
 ----------------------------------------------------------------------------------------------------------------------------------------
-Spring boot is framework for java application.
-Spring boot is good platform for deveopler to develop stand alone application and production ready feaure that you can just run it.
+Springboot is good platform for java developer to develop standalone application and production ready features, that simply you just need to run it.
 
 
 2) What is feature of springBoot?
@@ -51,10 +50,9 @@ iv) Automatically configure your application based on the depedencies.
    1) spring Boot stater JPA 
    2)Spring Boot stater JDBC
    3)Spring Boot stater mail
-   4)Spring Boot stater security
-   etc.
+   4)Spring Boot stater security etc.
 
-
++
 7) How does spring boot works?
 ----------------------------------------------------------------------------------------------------------------------------------------
 Spring boot uses the annotation such as @SpringBootApplication,it used to marks main class of your application. 
@@ -169,6 +167,14 @@ It describe health information of your running application (i.e up and running)
 To use actuator in your proejct first you need to add the SpringBoot-Actuator dependency and inside the application.properties file we need to 
 write such as management.endpoints.web.exposure.include=*
 
+such as -
+i) http://localhost:9090/actuator/health - {"status":"UP"} : health information of your running application.
+ii) http://localhost:9090/actuator/metrics - 
+ii) http://localhost:9090/actuator/env - 
+
+{"names":["application.ready.time","application.started.time","disk.free","disk.total","executor.active","executor.completed","executor.pool.core","executor.pool.max","executor.pool.size","executor.queue.remaining","executor.queued","hikaricp.connections","hikaricp.connections.acquire","hikaricp.connections.active","hikaricp.connections.creation","hikaricp.connections.idle","hikaricp.connections.max","hikaricp.connections.min","hikaricp.connections.pending","hikaricp.connections.timeout","hikaricp.connections.usage","http.server.requests","http.server.requests.active","jdbc.connections.active","jdbc.connections.idle","jdbc.connections.max","jdbc.connections.min","jvm.buffer.count","jvm.buffer.memory.used","jvm.buffer.total.capacity","jvm.classes.loaded","jvm.classes.unloaded","jvm.compilation.time","jvm.gc.concurrent.phase.time","jvm.gc.live.data.size","jvm.gc.max.data.size","jvm.gc.memory.allocated","jvm.gc.memory.promoted","jvm.gc.overhead","jvm.gc.pause","jvm.info","jvm.memory.committed","jvm.memory.max","jvm.memory.usage.after.gc","jvm.memory.used","jvm.threads.daemon","jvm.threads.live","jvm.threads.peak","jvm.threads.started","jvm.threads.states","logback.events","process.cpu.time","process.cpu.usage","process.start.time","process.uptime","system.cpu.count","system.cpu.usage","tomcat.sessions.active.current","tomcat.sessions.active.max","tomcat.sessions.alive.max","tomcat.sessions.created","tomcat.sessions.expired","tomcat.sessions.rejected"]}
+
+It ensure that application run smoothly
 
 23) How to debug or enable debug log in spring boot application?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -195,8 +201,8 @@ By default springboot uses constructor based dependency injections.
 IOC stand for inversion of controller. 
 It allows us to create the object , assemble the object and manage their entire life cycle.
 There are two types IOC container 
-1)Bean factory - It root interface for all spring bean container. Bean factory is basic container.
-2)Application Context - All beans are loaded inside the application context. application context means advanced container.
+1) Bean factory - It root interface for all spring bean container. Bean factory is basic container.
+2) Application Context - All beans are loaded inside the application context. application context means advanced container.
 
 
 26) What do you mean by spring boot support relaxed binding?
@@ -219,6 +225,9 @@ Devtools dependecies used because it detect changes automatically as well as res
 Yaml file is more or better cofig in springboot as compared to application.properties file.
 Yaml file is more clear and human readable as compare to application.properties fie also it provide lot's of useful feature to us.
 
+30) If you provided server.port in application.properties and application.yaml which one spring boot will load? 
+----------------------------------------------------------------------------------------------------------------------------------------
+It will load from application.properties file.
 
 30) Can you explain what happen in background if you run spring boot application as a java application?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -247,8 +256,21 @@ spring.datasource.password=root
 
 35) Which annoataions is used to create custom endpoints in springboot?
 ----------------------------------------------------------------------------------------------------------------------------------------
-  @endpoint annotations is used to create custom endpoints in springboot.
+ We can create custom endpoint in springboot application using @EndPoint annonations.
+ The main purpose of it create custom endpoint for your application.
+ you can create the below way
+@Endpoint(id="customEnpoint")
+@ReadOperation , @WriteOperation , @DeleteOperation we can use at method level
 
+@Component
+@Endpoint(id="employeeUtil")
+class EmployeeUtil{
+
+  @ReadOperation
+  public String getInfo(){
+      return "Presenting customer info of ABC organization";
+  }
+}
 
 36) Can you explain how to deploy spring boot application on different server?
 ----------------------------------------------------------------------------------------------------------------------------------------
