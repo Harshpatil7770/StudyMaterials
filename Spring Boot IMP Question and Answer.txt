@@ -409,39 +409,71 @@ iv) autoconfiguration
     It is method level annotations, method produced by bean and managed by spring container.
     
     22)@Scope 
-    -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    -used to specify scope of the bean
+    ------------------------------------------------------------------------------------------------------------------------------------
+    -used to specify scope of the bean.
+@Scope("prototype")
+@Autowired
+	EmployeeServiceImpl employeeServiceImpl;
+	
+
+	@Autowired
+	EmployeeServiceImpl employeeServiceImpl2;
+	
+	@Autowired
+	MessageSender messageSender;
+	
+	@Autowired
+	MessageSender messageSender2;
+	
+	
+	@PostConstruct
+	public void scopeTesting() {
+		if(employeeServiceImpl==employeeServiceImpl2) {
+			log.info("Both employeeServiceImpl and employeeServiceImpl2 object are equal");
+		}else {
+			log.info("Both employeeServiceImpl and employeeServiceImpl2  object are not equal");
+		}
+		
+		if(messageSender==messageSender2) {
+			log.info("Both messageSender and messageSender2 object are equal");
+		}else {
+			log.info("Both messageSender and messageSender2  object are not equal");
+		}
+	}
     
     23)@value 
-   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    -used to specify value of object
+   -------------------------------------------------------------------------------------------------------------------------------------
+    -used to specify value of object . Get the value of object from properties file.
     
     24)@RequestMapping 
-     ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     -----------------------------------------------------------------------------------------------------------------------------------
     -used to map the web requests
     
     25)@lombok-
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-    when we use @lombok dependecy we don't need to create setter and getter manually also no need to specify default as well as parameterized constructor 
-    we   can use @data , @NoArguConstructor and @AllArguConstructor annotations
+    ------------------------------------------------------------------------------------------------------------------------------------
+    when we use @lombok dependecy we don't need to create setter and getter manually also no need to specify default as well as 
+    parameterized constructor we can use @data , @NoArguConstructor and @AllArguConstructor annotations
     
     26)@RefreshScope -
-     ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    
+     -----------------------------------------------------------------------------------------------------------------------------------
+    The RefreshScope annotation getting used to refresh the value which you are using from spring cloud.
+     So there is change any properties which are you using , it will automatically refresh it's value.
+
     27)@Crossorigin-
-     ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    securityconcept
+     -----------------------------------------------------------------------------------------------------------------------------------
+    CrossOrigin annotations is getting used to allow different browser can request to your server. 
+    It is nothing or CORS i.e., cross origin shared resource.
    
    28) @Qualifier
-     ----------------------------------------------------------------------------------------------------------------------------------------------------------
-     @Qualifier annotations is used to choose correct one bean from multiple cases.
+  -----------------------------------------------------------------------------------------------------------------------------------
+   @Qualifier annotations is getting used to choose the explictliy mentioned bean , out of multiples.
    
    29) @Primary
-    -----------------------------------------------------------------------------------------------------------------------------------------------------------
-     @Primary annotation is used to give high prioerity to one bean if there are multiple same beans.
+    ------------------------------------------------------------------------------------------------------------------------------------
+  @Primary annotations is getting used if there are multiple beans , for default you want to use the specific bean.
      
    30) @Transactional
-   ------------------------------------------------------------------------------------------------------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------------------------
    @Transactional annotations is used to manage the transaction,  spring itself is not managing the tranasactional.
    To make proper transaction i.e commiting and rollback we need transactional annotation.
    Without transaction we might face inconsitency in application while performing the operation
@@ -456,30 +488,26 @@ iv) autoconfiguration
      both are same even if you don't write anything related to propation by default it will consider as propogation.required that means
      if there is already running transaction it will join that otherwise if there is no any running transaction it will start new transactional.
 
- 
-   
-   31) @EnableTransactionManagement
-   ------------------------------------------------------------------------------------------------------------------------------------------------------------
-   
-   32) @EnableScheduling
-   ------------------------------------------------------------------------------------------------------------------------------------------------------------
-   
-  
-  
+  C) Transaction(Propogation=Progation.required_NEW)
+    If there is already running transaction it will breka that, start it own transaction
 
+   D) Transaction(propogaton=Propagation.mandototy)
+   If there is no running trnasaction , it will throe exception.
+ 
 43) Which design pattern spring boot by default follow?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
     Spring boot default follow sinleton design pattern.
 
+  If you want to prove it. Create two object of class and compare the object using == operator you will get same hashcode result.
 
 44) What is spring boot application.properties files?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    A spring boot come with built in mechanism application configuration using files called application.properties.It located inside the src/main/resource folder.
-    the main advantage of spring boot application.properties file is provide platform to run your application on different environments. for eg. QA,dev,deployment
+----------------------------------------------------------------------------------------------------------------------------------------
+A spring boot come with built in mechanism application configuration using files called application.properties.It located inside the src/main/resource folder.
+ the main advantage of spring boot application.properties file is provide platform to run your application on different environments. for eg. QA,dev,deployment
 
 
 45) What are diffrent ways to create spring boot project?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
     1)Spring stater project
     2)Maven Project
     3)Spring boot CLI
@@ -487,23 +515,22 @@ iv) autoconfiguration
 
 
 46) How to add dependencies?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    It is very simple to add the dependecies at the time project creation but suppose you forget any dependecies to add you copy form outside (i.e MVN Repo is very
-    famoues for that) and add in pom.xml file
+ ---------------------------------------------------------------------------------------------------------------------------------------
+It is very simple to add the dependecies at the time project creation but suppose you forget any dependecies to add you copy form outside (i.e MVN Repo is very famoues for that) and add in pom.xml file
 
 
 47) What is the diffrenece between bootstrap file and application.properties file?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Bootstarp file is eargely loading ie. bean are already loading where as application.properties file lazy loading it will server when request comes.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+Bootstarp file is eargely loading ie. bean are already loading where as application.properties file lazy loading it will server when request comes.
 
 
 48) What is the latest version of spring boot?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 3.2
+ ---------------------------------------------------------------------------------------------------------------------------------------
+    SpringBoot 3.4.2
 
 
 49) What are the diffrent types of scopes of bean?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------     scope of bean specify the life cycle of bean
+ ---------------------------------------------------------------------------------------------------------------------------------------scope of bean specify the life cycle of bean
     @Scope annotations used to mark scoper of the bean
     1)Singleton- only one instance is created.
     2)Prototype- every reqest new instance is created
@@ -513,20 +540,19 @@ iv) autoconfiguration
 
 
 50) Explain the meaning of dependency and dependent object?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
     class A required other class object to do it's opeations i.e class B
     Then class A-dependent object
     class B-dependency obejct
 
 
 51) What is purpose of spring web dependecies?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Spring web dependecies is used to develop web application or restful web application.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+Spring web dependecies is used to develop web application or restful web application.
     
     
 52) What are the springboot dependency management?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency         will get automatically update.
+----------------------------------------------------------------------------------------------------------------------------------------Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency  will get automatically update.
      
  53) What are the basic annotations that spring boot offers?
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
