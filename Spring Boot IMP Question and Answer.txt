@@ -552,45 +552,49 @@ Spring web dependecies is used to develop web application or restful web applica
     
     
 52) What are the springboot dependency management?
-----------------------------------------------------------------------------------------------------------------------------------------Spring Boot config and manage their dependecy automatically. There is no need to specify version of that depdendency when you update the Spring boot dependency  will get automatically update.
+----------------------------------------------------------------------------------------------------------------------------------------
+SpringBoot dependency management means you don't need to specify the version of dependency in your application.
+The dependencies management will manage dependencies for you.
+Springboot used the concept of BOM ( bill of material ) it will contain all the list of springboot dependencies.
+When ever you will upgrade the springboot version that time it will pull all the compatiable version of dependencies
+for you.
+
+
      
  53) What are the basic annotations that spring boot offers?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
      @SpringBootApplication -It include three annotations such as 1)@ComponentScan 2)@EnableAutoConfiguration 3)Configuration
      
  54) How to enable Actuator in Spring boot application?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
      To enable actuator in spring boot first we need to add the dependency ie. spring boot actuator. 
      Inside the application.properties file write such as
      management.endpoints.web.exposure.include=*
      
  55) what is profile in spring boot?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-     profile means provide seggration of your application that opetate on specific enviornment. for eg- QA,Dev,Production etc
-     we put spring.profiles.active  so it will work for qa.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+profile means provide seggration of your application that opetate on specific enviornment. for eg- QA,Dev,Production etc
+we put spring.profiles.active  so it will work for qa.
      
-     spring.profiles.active=dev
-     
-     worked
+spring.profiles.active=dev
+worked
 
 56) What are the combinations of spring Boot?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-     Spring Boot combination of spring framework and embeded server.
-  
-  
+----------------------------------------------------------------------------------------------------------------------------------------
+Spring Boot combination of spring framework and embeded server.
+    
 57) Explain architecture of Spring Boot?
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  The class contains annotations such @SpringBootApplication and main method is the main class of our spring boot application. 
-  Before going to spring boot architecture we have layers such as -
-  1) Presentation layer
-  2) Business layer
-  3) Persitance layer
-  4) database layer
-  client send http request that request map in controller,after the controller request comes to service layer inside the service layer we have all business logic,
-  after the service layer that request goes to dao layer,dao layer means classes directly communicate with database.
+----------------------------------------------------------------------------------------------------------------------------------------
+The class contains annotations such @SpringBootApplication and main method is the main class of our spring boot application. 
+Before going to spring boot architecture we have layers such as -
+1) Presentation layer
+2) Business layer
+3) Persitance layer
+4) database layer
+client send http request that request map in controller,after the controller request comes to service layer inside the service layer we have all business logic, after the service layer that request goes to dao layer,dao layer means classes directly communicate with database.
 
  58) How to create war file of your spring boot application?
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  1) Open pom.xml file and write packaging<War>packaging
  2) Right click on your application run as maven build ---> mvn clean install 
  3) select skipTest option
@@ -598,17 +602,17 @@ Spring web dependecies is used to develop web application or restful web applica
     then run as maven install
 
 59) Status code 
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  1) 200 - Ok
  2) 201- Succesful
  3) 202- created
  4) 400 -Method Not Found
- 5)401- unauthorized
+ 5) 401- unauthorized
  6) 404 -Bad Request
  7) 500-Internal Server error
  
  60) How to genearate jar /war file of your springboot application?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
 A) Generate Jar file
 Right click on project -----> Export ---->java----> Runnable jar file --->select destination--->ok
 or
@@ -626,7 +630,7 @@ A)1Run as maven clean
 B) Run as maven build
 
 61) How to deploy your application on external server.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) First generate war file of your application
    pom.xml --> <packaging>war<\packaging>
    main class extends SpringBootServlerInitilizr, and configure override in that class.
@@ -645,26 +649,26 @@ B) Run as maven build
    
   
  62) What is lognform of POM.xml file?
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  Project object model
  
  63) What happens we we run our proejct as maven clean?
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  When we run our project or applicationa maven clean so inside all files of target folder get removed.
  
  64) How to execute test cases in spring boot?
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  Run your application as maven clean
  then maven install
  (If you face some kind of isuue at the time of maven install
-  Please go to Window ---> preferences---> JRE ---> Installed JRE ---> then check path of you JDK file not JRE.
+Please go to Window ---> preferences---> JRE ---> Installed JRE ---> then check path of you JDK file not JRE.
   
-  65) What is postman?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+65) What is postman?
+----------------------------------------------------------------------------------------------------------------------------------------
   Postman is a rest client.
   
   66) Which data foramtion is famous? How to represent data in XML form?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
    Now a day's JSON is very famous for data representation.
    
    Ans XML is very rare used,
@@ -697,36 +701,35 @@ B) Run as maven build
 </List>
    
    
-  67) What is swagger? Why is it used or How your consumer get to know how to use the url?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Swagger is used to build,documents and Consume Rest API.
-  RestAPI documentations.
-  It shows all url on Swagger UI.
-  so consumer exact get information i.e how to use that url.
+67) What is swagger? Why is it used or How your consumer get to know how to use the url?
+--------------------------------------------------------------------------------------------------------------------------------------
+Swagger is used to build,documents and Consume Rest API.
+RestAPI documentations.
+It shows all url on Swagger UI.
+so consumer exact get information i.e how to use that url.
   
-  To make documentations by using spring doc or swagger first we need to add the
-  spring doc open api dependency.
-  http://localhost:8080/swagger-ui.html
+To make documentations by using spring doc or swagger first we need to add the
+spring doc open api dependency.
+http://localhost:8080/swagger-ui.html
   
-  so we can see all RestAPI Url also the schema's.
+so we can see all RestAPI Url also the schema's.
   
 
-  68) How to do static filtering of RestAPI Resources?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Whatever field you don't want to show your consumer just make @JsonIgonore annotations above that filed.
-  For eg- If you have userName and Password filed and you don't want to show password that time we will use JSON Ignore.
+68) How to do static filtering of RestAPI Resources?
+--------------------------------------------------------------------------------------------------------------------------------------
+Whatever field you don't want to show your consumer just make @JsonIgonore annotations above that filed.
+For eg- If you have userName and Password filed and you don't want to show password that time we will use JSON Ignore.
   
-   Otherwise we have one class level annotatios that you can use 
-   i.e @JsonIgonoreProperties(Values={"filed1","filed2"}) // Static Filtering
+Otherwise we have one class level annotatios that you can use 
+i.e @JsonIgonoreProperties(Values={"filed1","filed2"}) // Static Filtering
    
    
-   
-   69) What is main purpose of Repository or dao layer?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+69) What is main purpose of Repository or dao layer?
+----------------------------------------------------------------------------------------------------------------------------------------
     The main purpose of repository is to communicate with database.
     
-  70) URL criteria or namming convection for url?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+70) URL criteria or namming convection for url?
+----------------------------------------------------------------------------------------------------------------------------------------
    1) when you write the url use noun instead of verb or adjectives.
    for eg- api/products correct
            api/prouctr wrong
@@ -741,7 +744,7 @@ B) Run as maven build
    7) use camecase for parameter
  
   71) How to make RESTAPI From scrach?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   1) first you need to create the model.
   2) Second step is create the class or interface which commnuicate with the database
   3) Third one is create the service layer and write all business logic inside it.
@@ -749,59 +752,67 @@ B) Run as maven build
   
   
   72) How you designed external or internal API'S?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Yes i have desinged both. Function of both API is same the main difference that such as
-  1) External API- External API means desgined to intergate the third party resource.
-  2) Internal API- Internal API means desgined to communicate consitute part of application.
-  
+  --------------------------------------------------------------------------------------------------------------------------------------
+  Desinged both external and internal API's/
+External API - intergrate or allow other services to communicate with are pplication.
+Will provide swagger document to them so they can learn how they can use it.
+OAUth or JWT Tokens you can use for authencation and authorizATION.
+
+Internal API'S
+Internal API'S designed for application internal communication .
+
+
   73) What is the difference between @RequestMapping and @GetMapping?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   @RequestMapping is used to at class level whereas @GetMapping is used at method level.
   
   74) What is the difference between depedency management and depedenies?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   Dependency management is one way to manage all the required depenceies in one place.
   where dependecies deals with managing and sheduling of project tasks.
   
   75) What is the difference between @Bean and @Component annotations?
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+  --------------------------------------------------------------------------------------------------------------------------------------
   @Bean is method level annotations method produced by bean and managed by spring container.
   @Component is class level annotation used to mark a java class as bean.
   
   76) What is the difference between put and patch method or if we can update by using put then why we required patch?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------------------------------
 Basically put is used to perfrom upsert operation i.e mean you can create a new resource ( if you have authority suppuse create new id) or 
 you can update the existing resouce.
 
 But sometimes i just want to update partial data for eg - i have 100 of fileds and i want to change only 2or 3 from that we can you patch.
 
 77) What are the advantages of springboot over spring?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------\
-1) The main advantage of springboot is it provide autocofiguration.
-2) Spring boot offer server such as jetty, tomcat etc.
-3) provide serval plugin with embeded server and in memory database like h2.
+----------------------------------------------------------------------------------------------------------------------------------------
+1) standalone application - springboot allows us to create the standalone application, we don't need separate
+   server , it provided embdeded server like tomcat, Jetty.
+2) production ready features - the feature like metrics. health checks will get via springbbot.
+3) reduced boiler plate code
+4) autoconfiguration - reduced lot's of manual configuration.
+5) faster setup of application
 
 78) How java map the request comes in JSON format?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------------------------------
 when we use springboot web starter dependecy it internally pulls server dependecies like springboot- stater-json.
 The spring object automatically converted into json with jackson library.
 
 79) What will happen if i don't write the @Restcontroller annotations?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------------------------------
 If you don't provide the @RestController annotations then spring will not identity the class makes for handeling the http calls.
 
 80) WHat is the difference between @RequestParam and @pathvarible?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------\
-@Pathvariable annotations when to access the value from uri template or path.
-@Requestparam annotations is used to access the value from query string. ( use fetch the data based key value pair)
+----------------------------------------------------------------------------------------------------------------------------------------
+@RequestParam - annotation is getting used to acess the value from query parameter i.e, key value pair format.
+@PathVariable - annotation is getting used to acess the value from URI template.
 
   
   
 81) If i want to send the data or fetch in csv form how can you do that?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------------------------------
 
 82) Spring Boot validation?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------------------------------
 Spring Boot with hibernate validator.
 1) First we need to add the dependecy such as
    SpringBoot stater validator.
@@ -810,23 +821,24 @@ Spring Boot with hibernate validator.
        3) @Valid - @Valid annotations used when we need to use  
    
 83) What is ResponseEntity?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-  'Response body represent the header response including status code, body.
+----------------------------------------------------------------------------------------------------------------------------------------
+Response body represent the header response including status code, body.
  
 84) What is mean by stand alone application?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------------------------------------
 stand alone application means execute itself without need of anyother.
 
 85) What happen if i don't use pom.xml file?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-Then project will not get build. TO build the maven we required pom.xml
+----------------------------------------------------------------------------------------------------------------------------------------
+If you don't use the pom.xml , you need to manage everything manually like adding libraries. It make complicated
+to manage and build the project.
 
 86) Can i use lombok without their dependency?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------------------------------------
+No , you can't use the lombok without their depedencies.
 
 87) What is the difference between @pathvariable and @Requestparam ? when to use it and eg?
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------------------------------------
 1) @Pathvatiable is used to access the value from uri template.
 
 for eg: @GetMapping("/find/{id}")
@@ -846,12 +858,12 @@ for eg:  @GetMapping("/find")
 Both return us same data just differnce of url.
 
 88) How to add validation for fields in springboot?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------------------------------------------------
 We need to add springboot validator depedency.
 after that we can use @Valid, @Pattern(regexp=) we can use.
 
 89) What is depedency injecton?
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Depdency injection is design pattern that remove depdency of your application and make them loosely coupled.
 Without depedency injection suppose i make changes in subclass i need to make changes in parent class also.
 This problem avoided by D.I and DI (depedency inversion)
@@ -895,44 +907,46 @@ Types of depedency injection
 
 
 90) @Compnent-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-     @Compnonet annotations is used to mark a class is java bean or mark a class is spring component.
+----------------------------------------------------------------------------------------------------------------------------------------@Compnonet annotations is used to mark a class is java bean or mark a class is spring component.
      
 91) @Transactional-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    @Transactional annotations provides transaction consist methods.
-    A) commit()
-    B) rollback();
+----------------------------------------------------------------------------------------------------------------------------------------
+@Transactional annotations provides transaction consist methods.
+A) commit()
+B) rollback();
     
  92) What is the ResponseEntity ?
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
  ResponseEntity consist of Httpstatus,header,and response body.
  We can control http response easily.
  
  93) How to create immutable final classes in springBoot?
- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
- we need to use @value annotations.
- It similar to the data annotations but create immutable classes.
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ I) create the class as final
+ ii) use variable as private
+ iii) intiiazlize class throguh cconstructor
+ iv) don't use the setter method.
+
  
  94) How to read values from application.properties file?
- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  By using @value annotations we read the values from application.properties file.
  
  95) What is use of @Postconstruct annotions?
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   @Postconstruct annotation used with method and method called only once just after the initiation of bean.
  
  96) What is use of @PreDestroy annotations?
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   @PreDestroy annotations is used to mark the method  executed only once just before the object is destroy by spring container.
   
   97) Can we use mutiple database with one springboot application?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 yes we can use mutliple database with one springboot application. we need add the depedency of that database and write the configuration
 inside the application.properties file.
 
 98) How to kill running process Id?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Open cmd as a administator.
 
 1) netstat -aon | findstr <portNumber>
@@ -941,7 +955,7 @@ Open cmd as a administator.
 
 
 99) mvn commond
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 mvn clean compile package install -Dmaven.skip.test=true
 
 mvn clean compile package install -Dmaven.skip.test=false
@@ -950,11 +964,11 @@ mvn clean compile package install -Dmaven.skip.test=false
 100) WHat will happpen ?
 if will provide server.port=9090 in application.properties file and server.port=9091 on application.yml? Which one 
 spring will pickup and why?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------'
+----------------------------------------------------------------------------------------------------------------------------------------
 spring will pick up properties from application.properties file, by  default spring provide us application.properties file so it will give high prioriety to this.
 
 101) Log level in spring boot?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------'
+----------------------------------------------------------------------------------------------------------------------------------------
 1) logging.path=C:/app/
 
    Log file create on the above location with default name spring.log
@@ -984,20 +998,20 @@ pattern:
   
 
 101) How to generate logs on specified path?
----------------------------------------------------------------------------------------------------------------------------------------------------------------------'
+----------------------------------------------------------------------------------------------------------------------------------------
  logging.file.path=C:/app/log Files/CBNK-ManagementService/DEBUG/
  logging.file.name=C:/app/log Files/CBNK-ManagementService/DEBUG/management.log
  
  
  102) How to create new module in springboot? if you want to create under the parent pom?
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------
  select file --> new --> other --->Maven --> New Module --> create ---> Manual depedency.
  
  If you want to create new module under the parent pom, we required to creqate as
  Maven ---> maven module -->create simple artificate--->parent as bsl --->
  
  103) WHat is the difference between NewModule or New Project?
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------
   New Module allows us to create new module under the parent project or parent pom,
   where when we create new project it act as separete project
  
@@ -1006,13 +1020,13 @@ pattern:
  
  
 103) How to create profile in springboot application? why we need that ?
--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Under the pom file we have profiles, that means we can use common module in different component.
 <profile><profile> we can create profile related module we can add under that
 
 
 104) How to rename module name in springboot application?
---------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) change name in pom file.
 2) If your module has parent pom then change that also.
 3) delete you project from workspace only , please don't delete permanetatly.
@@ -1071,7 +1085,7 @@ you can use it will call the method loading your applications
   
 
 
-======================================================================================================================================================================
+========================================================================================================================================
 1) JMS
 2) Unit and Intergration Testing
 3) XML Response
