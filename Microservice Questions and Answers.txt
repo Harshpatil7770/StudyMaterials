@@ -1,9 +1,9 @@
 =======================================================================================================================
 =======================================================================================================================
-                                                                    !!! Shree Swami Samarth !!!
+                                        !!! Shree Swami Samarth !!!
 =======================================================================================================================
 =======================================================================================================================
-=======================================================================================================================                                                                          Microservice
+                                                Microservice
 =======================================================================================================================
 
 1) What is microservice?
@@ -111,7 +111,8 @@ dependencies such as spring web , spring cloud config server.
 
 14) Which properties we need to add in application.properties so that eureka server doesn't register itself?
 -----------------------------------------------------------------------------------------------------------------------
-Eureka server doesn't register itself as client we need to add the some properties inside the application.properties file such as eureka.client.register-with-eureka=false eureka.client.fetch-registry=false
+Eureka server doesn't register itself as client we need to add the some properties inside the application.properties file such as eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
     
 
 15) What is use of lombok? --- @Data,@AllArgConstrument,@NoAllArgConstructor
@@ -147,10 +148,12 @@ Microservice communicates with each other by using lightweight http rest or mess
 
 20) What are the challenges in microservice?
 -----------------------------------------------------------------------------------------------------------------------
-   1)  Pack of cards- suppose serivce a,b,and c depends upon each other and one service get failed all application 
-     become failed.
-   2) Bouded context- decinding boudries of microservice
-
+1) The main chanllenges of microservices is data consistency. All services will have their own database so it is 
+   difficult to maintain the data consistency i.e., needed good knowledge of transaction rollback and commit operation.
+2) The number of servieces increase it increase the number of resources as well.
+3) The services commmunication will happen over the network , so high chances of failure or might be slow to
+   respond.
+4) Load balancer problem need to be solve.
 
 21) What are the micorservice monotoring tool?
 -----------------------------------------------------------------------------------------------------------------------
@@ -160,12 +163,13 @@ Microservice communicates with each other by using lightweight http rest or mess
 
 22) What do you understand by spring cloud?
 -----------------------------------------------------------------------------------------------------------------------
-    Spring cloud framework maily used to build cloud applications.
-    It Helps to build the common feature,
-    The main feautere of cloud framework such as
-    1)Service to service call
-    2)load balancing
-    3)distrubuting servcies
+ Spring cloud helps us to make cloud enable application. It helps us to solve the microservies challenges in such way like
+ i) eureka server
+ ii) spring cloud config server
+ iii) API gateway
+ iv) hystrix (fault tolerance)
+ v) spring cloud stream for messaging
+ vi) ribbon ( client side load balancing)
 
 23) In which case microservice is best suited?
 -----------------------------------------------------------------------------------------------------------------------
@@ -199,21 +203,18 @@ Microservice communicates with each other by using lightweight http rest or mess
     To use Hystrix dashboard we need to add the dependency spring cloud netfilx hystrix, and add annotations @EnableHystrix @EnableCircuitBreaker
     
     4) API- GATEWAY
-    It is acts as router of your application. We don't need to write separate url for each service calling we call it by using common url i.e. api gateway url
-    Inside the application.propeties files of api gateway we put all services with their id and prefix. so services call goes throgh gateway url and services 
-    prefix.
-    To enable API-GATEWAY we need to add dependency such as cloud stater gateway .
-    
+    API Gateway will act single entry point for your application. Instead of heating different different url or ports
+    clinet will hits the API_gateway ,and api -gateway will routes those request to appropriate service.
 
 25) Which are the some famous compaines using microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Netflix, amazon, Twitter etc.   
+-----------------------------------------------------------------------------------------------------------------------------------------
+Netflix, amazon, Twitter etc.   
 
 
 26) What is RabbitMQ?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  RabbitMQ is open source message broker.Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ       implement AMQP protocols (advanced messaging queue protocols).
-    Queue- Quque has pool to store the message. Once consumer listen that message it will gone forever.
+-----------------------------------------------------------------------------------------------------------------------------------------
+RabbitMQ is open source message broker.Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ       implement AMQP protocols (advanced messaging queue protocols).
+Queue- Quque has pool to store the message. Once consumer listen that message it will gone forever.
     
  To use rabbit mq wwe need to register on amqp cloud. Rabbitmq writtern in erlang language.
  To use the rabbitmq we need to add rabbitmq dependecies.
@@ -225,12 +226,13 @@ Microservice communicates with each other by using lightweight http rest or mess
  @RabbitListener annotations required to listen the messages.
 
 27) What is spring cloud bus?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Spring cloud bus dependecies mainly used to send only one refresh other changes happens automatically.
-    Suppose if you are changing the configuration.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Spring cloud bus main purpose is send cache refresh event to all microservices, suppose if you are using spring cloud config server 
+and you changed configuration , so spring cloud bus will send refresh event to all servives , so they can do the referesh , so we don't
+need restart of servies manually.
 
 28) What are the most commmon dependecies using in microservice?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     1) Spring cloud config server
     2) Spring cloud netflix eureka server
     3) Spring cloud netflix eureka client
@@ -247,14 +249,16 @@ Microservice communicates with each other by using lightweight http rest or mess
 
 
 29) What is feign?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     Feign is one of the most popular spring cloud component. If you want to use feign create an interface use annotations such as @Feignclient(name=)
     we neeed add the dependecny such as openFeign and in tha main application we need to add the annotations such as @EnableFeignClients
     The main purpose of feign client is without writing detailed rest template code microservices communicate with each other.
 
+1) without writing detailed rest template code a microservice communicate with each other.
+
 
 30) What is use of spring web dependecies?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
     Spring web dependecies used to develop web application or restful web applications. 
 
 
