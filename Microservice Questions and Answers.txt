@@ -255,6 +255,12 @@ need restart of servies manually.
     The main purpose of feign client is without writing detailed rest template code microservices communicate with each other.
 
 1) without writing detailed rest template code a microservice communicate with each other.
+2) We need to add spring cloud starter open feing depedency for this.
+3) After that add @EnableOpenFeign annotation into main class.
+4) Create an interface write the annotations @EnableFeign inside that interface
+   write the method declaration along with the RestAPI. 
+   provide your application name and url there.
+
 
 
 30) What is use of spring web dependecies?
@@ -262,70 +268,87 @@ need restart of servies manually.
     Spring web dependecies used to develop web application or restful web applications. 
 
 
-31) What is use of spring cloud netflix eureka server and eureka discovery client? or What is the difference between @EnableDiscoveryClient and @EnableEurekaServer?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    If you want to use eureka server first you need to add the spring cloud netflix eureka server depedency. Eureka server act as monitor of your application.
-    So to enable eureka server we need to add @EnableEurekaServer annotations.
-    also all services we need to register on eureka server for that we need to add spring cloud netflix eureka client depedency and for enabling we need to use 
-    @EnableEurekaClient dependency. and eureka server does't register itself as cleint we need to add
-    eureka.client-register-with-eureka=false
-    eureka.cleint-registry=false
+31) What is use of spring cloud netflix eureka server and eureka discovery client? 
+    or What is the difference between @EnableDiscoveryClient and @EnableEurekaServer?
+-----------------------------------------------------------------------------------------------------------------------------------------
+If you want to use eureka server first you need to add the spring cloud netflix eureka server depedency. 
+Eureka server act as monitor of your application.
+So to enable eureka server we need to add @EnableEurekaServer annotations.
+also all services we need to register on eureka server for that we need to add spring cloud netflix eureka client depedency and for enabling we need to use 
+@EnableEurekaClient dependency. and eureka server does't register itself as cleint we need to add
+eureka.client-register-with-eureka=false
+eureka.cleint-registry=false
    
 32) What is use of devtools dependecies?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Devtools dependecies detect changes automatically and restart the server automatically. we don't need to restart server manually.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Devtools dependecies detect changes automatically and restart the server automatically. we don't need to restart server manually.
 
 
 34) What is Fallback Method?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Fallback method called when error occurs in your program.
-    Suppose service A,B and C depedends upon each other and B service get down, so by using circuit breaker mechanism we send the response like
-    service may be down plaese try again later.
-   
+-----------------------------------------------------------------------------------------------------------------------------------------
+Fallback method is getting used to provide generic response from a service.
+Support you have service a and service b.
+Service a calling the api of service b and let's consider the service b down.
+So we will provide respose back for eg-> please try again later or etc.
+
+We can implement this using circuit breaker i.e, from resilence4j.
+The circuit breaker remains close if application running fine and there is no any exception.
+The circuit breaker will open if application is down.
+We can define the timeout or threshold also there.
+
 
 35) What is APIGATEWAY?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    APIGATEWAY is router of your application. we don't need to use separate url to call each service. Inside the application.properties files of api-gateway we provide
-    all service url with there id and prefix so service get called gateway url and prefix of that services.
-    To enable api gateway we need to add the dependency such as cloud gateway.
+-----------------------------------------------------------------------------------------------------------------------------------------
+API-Gateway wil acts as single point of entry for your application.
+Instead of hitting different different url , client simply heats the only API-Gateway URL.
+API-Gateway will route those message to appropriate service.
 
 36) What is Hystrix Dashboard?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Hystrix Dashboard is used to avoid failure of your application by using circuit breaker mechanism. If your application running without any error circuit breaker 
-    remains closed whereas if your application occurs some error then circuit breaker remains open.To use hystrix dashboard we need yo add spring cloud hystrix 
-    depenedency and use the annotations such @ EnableHystrix and @EnableCircuitBreaker.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Hystrix Dashboard is used to avoid failure of your application by using circuit breaker mechanism. 
+If your application running without any error circuit breaker 
+remains closed whereas if your application occurs some error then circuit breaker remains open.To use hystrix dashboard we need yo add spring cloud hystrix depenedency and use the annotations such @ EnableHystrix and @EnableCircuitBreaker.
+
+But hystrix dashboard is deprecated , instead of that you can use resilience4j.
 
 37) How to indepedent microservices communicate with each other?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Microservices communicate with each other by using Http protocol or AMQP i.e advanced messaging queue protocol.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Microservices communicate with each other by using Http protocol or AMQP i.e advanced messaging queue protocol.
     
 38) Which desgin pattern microservices follows?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-A) API Gateway
-B) circuit breaker
-C) Asynchrnouns messaging
+-----------------------------------------------------------------------------------------------------------------------------------------
+Here are the few famous microservices desing pattern are : 
+i) API-Gateway desing pattern
+ii) Database per service pattern
+iii) Service discovery pattern
+iv) Circuit breaker
+v) Saga Pattern
+vi) Retry pattern
    
    
 39) What is snychronus and asychrnous in microservice messaging system?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-snychronus means tightly coupled. 
-Client send only one request at a time and wait until the response comes we are not able to another work.
-Such as like our rest api callss.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Sychronus meassing sender will wait to recieve response back.
+It will tight coupled.
+For eg - Http request sender will send and wait to get response back,  won't proceed further
+         until response get back.
 
-Asychronus means loosly coupled.
-Client send multiple request at a time and they don't need to wait until the response come they can do another work.
-for eg - amqp.
+Asynchrous messaging means sender will send the message,  don't wait for response.
+It is loosely coupled.
+for eg - Sending message VIA kafka , rabbit mq , ibm mq.
+
+
 
 40) Where you deploy your microservice application?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-In my project we have deploy it on azure. There was devops team for deployment.
+-----------------------------------------------------------------------------------------------------------------------------------------
+It's deployed on AWS. There was devops team for deployment.
 
 41) Can i have both application.properties file and yaml.properties file in one application?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 Yes you can keep both.
 
 42) Why we need microservice why not monolothic?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 1) Monolothic means very complex application architecture structure.
    Basically we can say monolothic means all component comes under one springboot serivces.
    for eg - component name like -> manager,participant,transaction details like that.
@@ -338,13 +361,13 @@ Yes you can keep both.
               for scalabiltiy purpose we have to increse the number of instance which is costly.
               
               
-    It's not like that monolithic means they don't have different kind of services,
-   they have but every service is depends upon each other.
-   practially we can say , once we from reciving new input, validation,
-   and their operations and saving to db operatiosn get performed at only service.
+  It's not like that monolithic means they don't have different kind of services,
+  they have but every service is depends upon each other.
+  practially we can say , once we from reciving new input, validation,
+  and their operations and saving to db operatiosn get performed at only service.
    
-   Suppose we recived any bad message then whole application get's down.
-   even there is no any cause of other services.
+  Suppose we recived any bad message then whole application get's down.
+  even there is no any cause of other services.
    
    Monolothic we have mutliple services but only in one platform.
    
@@ -379,14 +402,16 @@ mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true cl
  ----------------------------------------------------------------------------------------------------------------------
  Postman is a tool. basically it is used to hit the rest api's.
  
- 46) Whne we go for feign client vs message broker?
+ 46) When we go for feign client vs message broker?
  ----------------------------------------------------------------------------------------------------------------------------------------
- feign client used when the communication between service pattern like request and response , low volume of request.
- If your application is going to handle multiple or large number of inputs, then always go with mq.
+ If your application requirement is request and response i.e., synchronous communication then will go for feign client.
+
+ If your application requriement is request and not depedends upon the response. i.e., asynchronous communication will go with MQ.
+
  
  47) What topic comes under spring cloud?
 ----------------------------------------------------------------------------------------------------------------------------------------
-1) Spring clound netflix eureka server --> Acts as monitor of your application, each service required uniqueu name, so communication can happer. 
+1) Spring clound netflix eureka server --> Acts as monitor of your application, each service required unique name, so communication can happer. 
 2) Spring cloud config server --> It acts as centraliezed server, will keep common properties in it.  consider 100 of service,
  fatabase name, useenamw and password, dev, prod, cit21, st and sit env.
 3) Spring cloud load balancer --> To handler client side load will use it.
@@ -396,36 +421,58 @@ mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true cl
 
 47) Which design pattern microservice follows?
 ----------------------------------------------------------------------------------------------------------------------------------------
-Microservice follows circuit breaker desing pattern.
+Microservice will follow several desing patterns such as : 
+1) API GAteway
+2) Circuit breaker
+3) Saga Desing pattern
+4) Retry desing pattern
+5) Eureka Discovery Pattern
+6) Database per service
 
 48) How to implement circuit breaker in your microservice?
 ----------------------------------------------------------------------------------------------------------------------------------------
-A) Now we will implement circuit breaker using resilence4j because hystrix now days goes as deprecated.
-
-Steps A) Add spring-boot-starter-actuator,spring-boot-starter-aop and resilience4j-spring-boot2 depedency.
-      B) use @CircuitBreaker annotations on method which calling another service api.
-        for eg- @CircuitBreaker(name="proxyServiceCircuitBreaker" , fallbackMethod="proxyServiceFallbackMethod")
-      C) now implement fallback method, fallbackmethod name use as it is mentioend on front of fallbackMethood,
-        and return type must be same as the api return type.
-      D)add Exception e as parameter in fallback method
-
-  
-                                         
+we can implement circuit breaker in our microservice using resilience4j depedency.
+1) First add this resilience4j depedency.
+2) Circuit breaker is getting used to avoid failure of your service.
+3) for eg - service A and service B , service A calls the service B and let's consider service B is down,
+   so that time circuit breaker will open provide generice response to use
+   for eg - please try again later or etc msg we can put.
+4) Circuit break will close if your application is running fine.
+5) using fallback method we can do this. it is also known as fault tolerance.
 
 
 49) How to handel microservice if there is any fault tolerance?
 ----------------------------------------------------------------------------------------------------------------------------------------
-
+We can hadel the fault tolerance using
+1) circuit breaker ( fallback method)
+2) Retry pattern
 
 50) WHat is the return type of fallback methods?
 ----------------------------------------------------------------------------------------------------------------------------------------
-On which api you applied circuit breaker annotations, those api return return is the return type of circuit breaker.
+The return of type of fallback method must be same as the on the method you put the @CircuitBreaker annotations.
+
 
 51) What is closed, open and half open state in circuite breaker desing pattern?
 ----------------------------------------------------------------------------------------------------------------------------------------
+Circuit breaker closed state : 
+All service are up and running fine. or requests are processing as per the expectations.
+
+Circuit break open state :
+The reuqest are rejected because , the servie are down and avoid the overwhelming.
+
+Circuit break half open state : 
+In this case we will check the service are recovered withing the time period or not.
+If yes , recovered then circuit breaker will move to close state.
+If no , not recovered then circuit breaker will move to open state.
 
 52) What are the properties actuator is going to show? How to implement actactor in your project?
 ----------------------------------------------------------------------------------------------------------------------------------------
-
+To implement actuator in your application . you need to add the spring boot actuator depedencey.
+and in the properties file you can define
+management.endpoints.web.explosure=include
+*
+health
+metric
+The actuator is subproject of your application . it will show the health information of your application.
  
  
