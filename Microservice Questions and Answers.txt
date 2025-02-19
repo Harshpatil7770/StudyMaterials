@@ -474,5 +474,60 @@ management.endpoints.web.explosure=include
 health
 metric
 The actuator is subproject of your application . it will show the health information of your application.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Desing pattern are being used in microservice.
+
+1) API-Gateway
+2) Circuit Breaker
+3) Eureka Server
+4) Retry Design Pattern
+5) Saga design pattern
+6) database per service
+7) Load balancer
+8) Zual
+
+
+1) API-Gateway desing pattern
+---------------------------------------------------------------------------------------------------------------------------------
+1) API-Gateway will act entry point for your application.
+2) All request will recieve first to API gateway and api-gateway will 
+   route those request to specific or appropriate service.
+3) Instead of heating different different ports , client will 
+   send request to API-Gateway , gateway will router that request.
+
+
+2) Circuit Breaker Design Pattern
+---------------------------------------------------------------------------------------------------------------------------------
+i) circuit breaker design pattern is nothing to avoid failure of your application or service.
+ii) We can implement circuit breaker using resilence4j.
+iii) To avoid failure of your application or service , will use it and using 
+     fallback method will provide default response back.
+iv) circuit breaker will have three types - close , open , half open.
+
+close - 
+circuit breaker will be closed state if there is no failure , the services are working fine.
+
+open - 
+circuit breaker will open ,if there is failure, will return response from fallback method.
+It will open until the mentioned threadshould. The circuit will open state means
+it won't call to the downstream of who ever service is down. it will simply provide response
+back from fallback method
+
+half open - 
+circuit breaker will be half open state , if specific time and it will allow to the service
+with specific number of times. if the failed service are recovered then circuit breaker will
+go to close state, if not recoverd then it will go to open state.
+
+
+3) Eureka Server or Service Disovery Pattern
+---------------------------------------------------------------------------------------------------------------------------------
+1) Eureka server will act as monitor of your application.
+2) We need to register all our services into eureka server.
+3) It will shows us the status of service up or down.
+4) Also we don't need remember the url , we can use the application name for service to service communication.
+
+
+
  
  
