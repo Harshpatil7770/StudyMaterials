@@ -481,9 +481,10 @@ Desing pattern are being used in microservice.
 1) API-Gateway
 2) Circuit Breaker
 3) Eureka Server
+4)  database per service
 4) Retry Design Pattern
 5) Saga design pattern
-6) database per service
+6)
 7) Load balancer
 8) Zual
 
@@ -526,8 +527,46 @@ go to close state, if not recoverd then it will go to open state.
 2) We need to register all our services into eureka server.
 3) It will shows us the status of service up or down.
 4) Also we don't need remember the url , we can use the application name for service to service communication.
+   This will work only service to service communication.
+
+4) Database per service design pattern
+---------------------------------------------------------------------------------------------------------------------------------
+1) Database per service design pattern is nothing but , each service will have their own database.
+2) To make service more scalable , indepedent , microservice have this pattern.
+3) A service will get complete ownership of that database.
+4) Even though if you make changes in the database strcture or the database itself down , if won't affect
+   to other service.
+
+5) Loadbalancer 
+---------------------------------------------------------------------------------------------------------------------------------
+1) Loadbalancer is nothing but , distribution of load or requests accross available instances.
+2) Suppose you have three instance of service B , so load balancer will route the or distrivute the 
+   load whichever is available or free.
+3) Round robbin method also we can use , it will route one by one request to each instanecs.
+4) The load balancer with eureka will automatically routes the request to the instances.
+
+6) Retry design Pattern 
+---------------------------------------------------------------------------------------------------------------------------------
+1) Retry design pattern is getting used to handle temporary failure or network issue between the services.
+2) What will do basically  , if there will be some failure, will perform retry operation.
+3) Suppose first time you retried , will see the request is properly processing or not.
+4) If not then again will wait for specific time and the second time  will do same process.
+5) If not then again will wait for specific time and third time will do the same process,
+6) If not they you can call the fallback method or shutdonw the application as per your need.
 
 
+7) How your hadeled transaction in your microservice ?
+---------------------------------------------------------------------------------------------------------------------------------
+ 1) We handled transaction in our microservices by providing each service will have their own transaction hadeling.
+ 2) Suppose your have service A -> service B -> service C -> service D
+    service will listen the msg and process  it , once everything is complete.
+    Then it will commit the msg and publish the msg into the inQueue of service B.
+    so what we did we are populating the internal communication.
+     in two attributes one is type and the second one is payload.
+3) Type will be there for each service will have different.
+   for eg - service A performed their operation and while publishing msg into service B.
+   It will put the naem BusinessValidationSucess. and along with payload.
+4) If there will be any failure , that service will commit and rollback thw msg into queue.
+5) It will do some retry will proceed to shutdown.
 
- 
  
