@@ -1,0 +1,479 @@
+======================================================================================================================
+======================================================================================================================
+                                         !!! Shree Swami Samarth !!!
+=======================================================================================================================
+=======================================================================================================================
+
+
+1) sql query for second highest salary of employee table.
+-----------------------------------------------------------------------------------------------------------------------------------------
+select salary from employee order by salary desc limit 1,1;
+
+select max(salary) from employee where salary< (select max(salary) from employee);
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+2) sql query for find unique name in employee table. (there is lots of same name of employee find unique name of employee)
+-----------------------------------------------------------------------------------------------------------------------------------------select DISTINCT name from employee;
+
+DISTINCT - used to fetch unique records from the table
+-----------------------------------------------------------------------------------------------------------------------------------------
+3) What is primary, unique and foreign ,composite keys in sql?
+-----------------------------------------------------------------------------------------------------------------------------------------Primary key-
+                                                                                                                                         Primary key is used to identify unique records of the table.Primary key never null.
+                                                                                                                                         Foregin key-
+                                                                                                                                         Foreign key is used to mark primary key of another table. We make relation between two tables with the help of 
+foreign key.
+                                                                                                                                         DISTINCT -      used to fetch unique records from the table
+                                                                                                                                         Unique key-       Unique key prevents from duplicate values, it allows one null value. 
+                                                                                                                                         Composite key-  Composite key is combination of two or more column in that table used to identitfy each row of the table .	
+-----------------------------------------------------------------------------------------------------------------------------------------
+4) What is SQL Indexes?
+-----------------------------------------------------------------------------------------------------------------------------------------Index is used to retrieve data from database very fastly.
+-----------------------------------------------------------------------------------------------------------------------------------------
+5) What is Query catche?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Query catche is used to retrieve faster data from database.
+
+6) What is Mysql?
+-----------------------------------------------------------------------------------------------------------------------------------------Mysql is database used to store the data values.
+-----------------------------------------------------------------------------------------------------------------------------------------
+7) What is the types of Database?
+-----------------------------------------------------------------------------------------------------------------------------------------RDBMS- 
+                                                                                                                                         1) RDBMS stands for relational database management system,it is used to store and retrive data from database also organize in tabular 
+   format i.e row and column form.
+   for- oracle,mysql,microsoft
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+8) What is JDBC?
+-----------------------------------------------------------------------------------------------------------------------------------------
+JDBC stands for java database connectivity driver. It is used to connect java application to the database.
+-----------------------------------------------------------------------------------------------------------------------------------------
+9) What is Tuple?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Tuple means one complete record or row.
+-----------------------------------------------------------------------------------------------------------------------------------------
+10) What are the types of sql commond categories?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Strctured query language categoried mainly four forms.
+                                                                                                                                         1)DDL- Data defination langugae. 
+A) create B)alter 3) rename 4) truncate 5) drop
+                                                                                                                                         2)DML- Data manupalation language
+A) insert B)update c)delete d)merge
+
+3)DQL -Data query language
+A) select 
+                                                                                                                                        4)DCL- data control language
+ A)Grant 
+ B)revoke
+-----------------------------------------------------------------------------------------------------------------------------------------
+11) General Queries?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) show databases
+                                                                                                                                                  
+2)  create database database_name;
+                                                                                                                                                     
+3)  use database_name;
+                                                                                                                                                      
+4) create table tabale_name(column1,colum2);
+
+5) insert into table_name(column1,column2)values(values1,values2):
+
+6) TO set primary key,not null and autoIncrement
+ insert into table_name(id int NOT NULL AUTO_INCREMENT);
+
+7) show tables;
+
+8) select * from table_name;
+
+9)alter table table_name
+add foreign key(column_name) reference table_name_of_column(column_name);
+
+10)alter table table_name
+add column_name datatype;
+
+11) update table_name set column_name=(values),column_name=(values) where column_name(p.k)=?;
+
+12) truncate table table_name;
+truncate means remove all records from the table but structure remains same, but once we do truncate we can't rollback.
+
+13) commit
+permanetly stored changes in database.
+
+14) describe table_name;
+
+15) Foreign key
+alter table table_name1
+add foreign key(column_name) references table_name2(column_name);
+
+16) delete 
+drop table table_name;
+after delete we can rollback
+
+17) TO remove column
+alter table table_name drop coloumn_name;
+
+
+
+
+
+
+
+
+                                                                                                                                                                           .
+-----------------------------------------------------------------------------------------------------------------------------------------
+12) What is Join and it's types?
+-----------------------------------------------------------------------------------------------------------------------------------------Join is used to combine two or more tables based on there relations.
+Types of join
+1) Left join means it return records from left table and matching reocrds from right table.
+
+            A) TABLE- products                                   B) TABLE- brands
+   product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
+     
+     
+     
+select * from products p left join brands b on p.brand_id=b.brand_id;
+product_id     product_name    brand_id     brand_id     brand_name
+    1)            Oppo F1f          1             1           Oppo
+    2)            Oppo F17          1             1           Oppo
+    3)            One Plus Nord     null          null        null
+     
+i.e means if there is no values then it will take null.
+																				       
+																	2)Right Join
+  right join meand it return all records from right table and matching reocrds from left table.
+
+         A) TABLE- products                                   B) TABLE- brands
+ product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
+
+ 
+
+ select * from products p right join brands b on p.brand_id=b.brand_id;
+ product_id  product_name   brand_id   brand_id    brand_name
+   1)         Oppo F1f        1        1           Oppo
+   2)         Oppo F17        1        1           Oppo
+   3)         Null           Null      2)          I phone
+
+
+3)Inner join
+  It return all common records between the two tables.
+  
+         A) TABLE- products                                    B) TABLE- brands
+   product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
+  
+   
+select * from products p inner join brands b on p.brand_id=b.brand_id;
+   
+product_id  product_name brand_id  brand_id  brand_name
+    1)        Oppo F1f      1         1        Oppo
+    2)        Oppo F17      1         1        Oppo
+
+   
+4)outer join
+                                                                                                                                         It return all reocrds from the tables even no matches with left side or right side table.
+Mysql direclty doesn't support to the outer join. so need to use union for that.
+
+        A) TABLE- products                                        B) TABLE- brands
+   product_id   product_name    brand_id                    brand_id         brand_name
+     1)         Oppo F1f          1                           1                Oppo
+     2)         Oppo F17          1                           2                Iphone
+     3)         One Plus Nord     null
+  
+  
+  select * from products p left join brands b on p.brand_id=b.brand_id UNION
+  select * from products p right join brands b on p.brand_id=b.brand_id;
+  
+   product_id   product_name    brand_id  brand_id         brand_name
+     1)         Oppo F1f          1          1                Oppo
+     2)         Oppo F17          1          1                Oppo
+     3)         One Plus Nord     null       null             null
+     4)         null              null       2                Iphone
+  
+  
+
+																				       
+																				       
+																				       
+-----------------------------------------------------------------------------------------------------------------------------------------
+13) What is the difference between truncate and delete which one rollback?
+TRUCATE means delete all records from the table and structure remains same. we can't 
+rollback once we do truncate.
+                                                                                                                                         Delete means delete existing row from that table and records also but we can rollbcak after the delete
+Before this we need to use the commond such as
+1) commit; 
+2) set autocommit=0;
+3) delete from table_name where column_name;
+4) rollback;
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+14) What is Normlization?
+-----------------------------------------------------------------------------------------------------------------------------------------Normalization means organize data in database. types of normlization such as 1NF,2NF,3NF
+-----------------------------------------------------------------------------------------------------------------------------------------
+15) What is Trigger?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Trigger is stored procedure called automatically when changes occures in the database.
+-----------------------------------------------------------------------------------------------------------------------------------------
+16) What is Stored Procedure and how can we create it?
+-----------------------------------------------------------------------------------------------------------------------------------------
+stored procedure doesn't have any return type.It used to perfom buiness logic.
+It support both input and output parameter.
+-----------------------------------------------------------------------------------------------------------------------------------------
+17) What is table?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Table are objects of database which contains all data in a database. It organize in row and column format. Table is physical entity. which occupies space in memeory also generate the the faster result. It store the data in row column format
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+18) What is index and Composite index?
+-----------------------------------------------------------------------------------------------------------------------------------------
+composite index means contains more than one column.
+                                                                                                                                         Index is used to cretae index of table. 
+-----------------------------------------------------------------------------------------------------------------------------------------
+19) How to delete table?
+-----------------------------------------------------------------------------------------------------------------------------------------drop table table_name;
+                                                                                                                                         -----------------------------------------------------------------------------------------------------------------------------------------
+20) In which language MySQL has been written?
+-----------------------------------------------------------------------------------------------------------------------------------------
+21) What is difference between SQL and MySQL?
+-----------------------------------------------------------------------------------------------------------------------------------------
+SQL stands for structured query language, it is computer language.
+where mysql is application software.
+-----------------------------------------------------------------------------------------------------------------------------------------
+22) Why do we use the MySQL database server?
+-----------------------------------------------------------------------------------------------------------------------------------------Mysql is open source platform. 
+-----------------------------------------------------------------------------------------------------------------------------------------
+23) How to add columns in Mysql?
+----------------------------------------------------------------------------------------------------------------------------------------- Mysql is open source platform.                                                                                                                                       alter table table_name add column column_name column_defination [first]after existing column;
+-----------------------------------------------------------------------------------------------------------------------------------------
+24) How to delete table in Mysql?
+----------------------------------------------------------------------------------------------------------------------------------------- drop table table_name;
+-----------------------------------------------------------------------------------------------------------------------------------------
+25) How to add foreign key in mysql?
+-----------------------------------------------------------------------------------------------------------------------------------------alter table table_name                                                                                           
+add foreignkey(column_name) referecnes table_name(column_name);
+-----------------------------------------------------------------------------------------------------------------------------------------
+26) How to change table name?
+-----------------------------------------------------------------------------------------------------------------------------------------
+rename old_table_name To new_table_name;
+-----------------------------------------------------------------------------------------------------------------------------------------
+27) How to check user in mysql?
+-----------------------------------------------------------------------------------------------------------------------------------------
+select user from mysql.user;
+SELECT CURRENT_USER();
+-----------------------------------------------------------------------------------------------------------------------------------------
+28) What is csv file?
+-----------------------------------------------------------------------------------------------------------------------------------------
+csv file stands for comma separated value file.
+-----------------------------------------------------------------------------------------------------------------------------------------
+29) What is the difference between truncate and delete?
+-----------------------------------------------------------------------------------------------------------------------------------------
+truncate is ddl commond whereas delete is dml commond.
+truncate means once we delete we are not able to do rollback. delete means we do rollback.
+-----------------------------------------------------------------------------------------------------------------------------------------
+30) What is the MySQL default port number?
+-----------------------------------------------------------------------------------------------------------------------------------------MySQL default port number is 3306.  
+-----------------------------------------------------------------------------------------------------------------------------------------
+31) What is query ?
+-----------------------------------------------------------------------------------------------------------------------------------------
+query is request used to fetch data on specified criteria.                                                                                                              
+32) select max salary from each  department?
+-----------------------------------------------------------------------------------------------------------------------------------------
+select * from department where (departmentId,salary) In(select depaartmentId,Max(salary) from department groupby departmentId); 
+
+33) What is aggregator is sql?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Aggregator is function in sql is used to perform calculation on multiple values and return single values.
+
+34) What is constraints?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Constraints is used to set the limit on datatype.
+for eg- Not null.
+
+35) What are the different types of SQL Commonds?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Basically there are four types of different commond in SQL.
+1)DDL - data defination language
+        A) alter
+	B) truncate
+	C) drop
+	D) merge
+	
+2)DML -data manupalation language
+       A) update
+       B) Insert 
+       C) delete
+ 
+3)DQL - data query language
+       A) select
+       
+4)DCL- data constraist languagae
+       A) Grant
+       B) revoke
+       
+36) What is primary key?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Primary key is used to identify unique records from the table it never allows duplicate values as well as null values.
+
+37) What is foreign key?
+-----------------------------------------------------------------------------------------------------------------------------------------
+foreign key is used to mark primary key of another table. we make relation between two
+tables with the help of foreign key.
+
+38) How to find out higest and lowest salary from employee table?
+-----------------------------------------------------------------------------------------------------------------------------------------
+select max(salary) from employee;
+
+select min(salary) from employee;
+
+select avg(salary) from employee;
+
+max,min,avg are the aggreators.
+aggregator is used to perform calculation on multiple values and return single values.
+
+39) find out second higest salary from employee table?
+-----------------------------------------------------------------------------------------------------------------------------------------
+select max(salary) from employee where salary< (select max(salary) from employee);
+
+select salary from employee order by salary desc limit 1,1;
+
+40) find out third highest salary from employee?
+-----------------------------------------------------------------------------------------------------------------------------------------
+select disctint top 3 salary from employee order by desc;
+
+41) What is the difference between delete and truncate?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Truncate is used to delete all records inside the table, but table structure remain same.
+once we do truncate we are not able do to the rollback.
+
+whereas delete means delete one or more rows from the tables.
+Once we use delete we can do the rollback.
+
+42) What is RDBMS?
+-----------------------------------------------------------------------------------------------------------------------------------------
+RDBMS stands for relations database management system. 
+It's store the data in tabular format and organize in row and column form.
+
+43) What is the difference between group by and order by?
+-----------------------------------------------------------------------------------------------------------------------------------------
+order by is used to sort the data in asc and desc order.
+
+select * from employee order by id desc;
+select * from employee order by salary asc;
+select * from employee order by age asc;
+whereas 
+
+group by is used to fetch data based on common attributes.
+
+emp_id   emp_name   department_name   age   salary
+
+1)       harsh       IT               24     42000
+2)       vijay       IT               29     90000
+3)       Ajit        IT               26     70000
+4)       Laskha      Civil            29     45000
+5)       Rija        Civil            38     56000
+6)       David       Elec             39     67000
+
+
+1) select max salary as per their department
+   select max(salary) from employee group by department_name;
+   
+
+
+
+44) How to use rollback and what is means by rollback?
+-----------------------------------------------------------------------------------------------------------------------------------------
+rollback means comes to the previous stage .
+
+for using rollback we just need to follows the steps such as
+1) commit;
+2) set autocommit=0;
+3) delete from employee where emp_id=8;
+4) select * from employee;
+5) rollback;
+
+45) What is aggreator?
+-----------------------------------------------------------------------------------------------------------------------------------------
+aggreator is function is sql used to perfrom operation on multiple values and return single values.
+
+46) What is transaction in database?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Transaction is collection of operations that perform one single logic unit of work.
+
+47) How to select last three records from the table?
+-----------------------------------------------------------------------------------------------------------------------------------------
+select * from table_name order by column_namr desc limit 3;
+
+48) How to select only inbetween id=20 to id=30 out of total 100?
+-----------------------------------------------------------------------------------------------------------------------------------------
+select * from table_name where column_name>=20 and column_name<=30;
+
+
+49) Suppose we have a table in which mechanical,IT,Civil Stream student names.Now i want to see how many student belong to IT
+or required count of them ? write a query  for that?
+
+select count(branch) from table_name where branch='IT';
+
+
+50) How to check how many records present in table?
+---------------------------------------------------------------
+select count(*) from tableName;
+
+
+51) How to read blob data from db? <OTHER>
+----------------------------------------------------------------
+select cast(coumnname as varchar) from tableName;
+
+52) Queury to column present in table?
+----------------------------------------------------------------
+select columns from table_name;
+
+53) How to check the number of records present in db?
+----------------------------------------------------------------
+select count(*) from TABLE_NAME;
+
+54) How to find out unique record from the table?
+----------------------------------------------------------------
+select DISTICNT(COLUMN_NAME) from tableName;
+
+select DISTICNT(STATE) from employee;
+
+select UNIQUE(STATE) from employee;
+
+55) How to delete records from table?
+----------------------------------------------------------------
+delete from Table_name;
+
+56) What to do select String as upper case from database?
+----------------------------------------------------------------
+SELECT PERSON_NAME FROM PERSON;
+
+SELECT UPPER(PERSON_NAME) FROM PERSON;
+
+57) 56) What to do select String as lower case from database?
+----------------------------------------------------------------
+SELECT PERSON_NAME FROM PERSON;
+
+SELECT LOWER(PERSON_NAME) FROM PERSON;
+
+58) What to do select null value as 0 from DB?
+
+SELECT PERSON_AGE from PERSON ;
+
+SELECT CASE WHEN PERSON_AGE IS NOT NULL THEN PERSON_AGE WHEN PERSON_AGE IS NULL THEN 0 END AS PERSON_AGE FROM PERSON;
+
+59) Write a simple sql query? 
+
+INSERT INTO EMPLOYEE(id ,name) values (101,"ABC");
+                                                                                         
+                                                                                                                                                                                        
+                                                                                   
+                                                                                                                                                                                     
+
+                                                                                                                                                                                        
