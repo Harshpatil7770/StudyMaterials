@@ -18,8 +18,35 @@
   
   
   1) Singleton Design Pattern
+------------------------------------------------------------------------------------------------------------------------------
+     i)  singleton design pattern we have to restrict the user from creating more than one instance of the class.
+     ii) To make class as singleton we need to 
+         create a constructor of class is private.
+         use only getter method don't use setter.
+         whenever you are calling the first time the getmethod , let's create instance of
+         that class and use those instance whenever required , or 
+         if the instance is created don't allow to create it again.
+     iii)You can make a varaible as static so you will get the instance by class.getInstance () method.
+
+class Company{
+
+     static Company company = null;
+
+     private Company(){
+     }
+
+     public static Company getInstance(){
+          if(company==null){ 
+               company=new Company();
+           }
+       return company;
+     }
+}
+
+
   
   2) Factory Desing Pattern -
+------------------------------------------------------------------------------------------------------------------------------
      Factory design pattern means subclass responsible to create an instance of bean.
      Factory design pattern is used when the constrcution object process is not difficult.
      
