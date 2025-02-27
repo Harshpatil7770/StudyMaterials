@@ -30,7 +30,7 @@ Object oriented means we organize a application has different combination object
 ----------------------------------------------------------------------------------------------------------------------
 4) What are the feature of Java?
 ----------------------------------------------------------------------------------------------------------------------
- A) Java is simple   
+A) Java is simple   
 ----------------------------------------------------------------------------------------------------------------------
 Java is simple because it simply based on language c++.Java doesn't support concepts such as pointer and explicit overloading. There is no need to remove unreferenced object manually it removed by garbage collector automatically.
 --------------------------------------------------------------------------------------------------------------------  
@@ -86,17 +86,22 @@ According to sun microsystem more than 3 billions devices uses java. Java used i
 ---------------------------------------------------------------------------------------------------------------------
 Oops stands for object oriented programming language. oops methodlogy has been derived single concepts i.e objects.
 In Java Basically we have four oops concepts or we have four pillars of java
+Abstraction 
+Polymorphism
+Encapsulation
+Inheritance
+
 ----------------------------------------------------------------------------------------------------------------------
 A) Abstraction
 ----------------------------------------------------------------------------------------------------------------------
-Abstraction is the process of hiding the implementations or details by showing main services.
-abstraction solve the problem upto design level.
-or eg-
- ---------------------------------------------------------------------------------------------------------------------
-1)Sending sms to someone you just type and send it you don't know the internal process.
-2)Automoile steering,brake,ATM machine
+Abstraction is way to hide the implementation and show some features.
+
+for eg - sending sms to someone you just type and sent it , intenrnally you don't know what happen.
+automobile steering or break, ATM machine.
 ----------------------------------------------------------------------------------------------------------------------
-How to achieve abstraction in java
+
+
+A-i) How to achieve abstraction in java ? 
 ----------------------------------------------------------------------------------------------------------------------
 1)by using interface
 2)by using abstract class
@@ -105,7 +110,7 @@ A-I) what is the difference between abstract and final method?
 ----------------------------------------------------------------------------------------------------------------------
 abstract method must be implement in subclass whereas final method never override.
 ----------------------------------------------------------------------------------------------------------------------
-A -II)What is abstarct class?
+A -II) What is abstarct class?
 Abstract class is used to achieve 0 to 100% abstraction.  If you want to use abstract method then the class must be abstract. whatever method  declare inside an abstract class it must be implement in subclass. abstract class have constructor, static member and method also it support both method declaration and defiantion. abstract class never instantiated.
 ----------------------------------------------------------------------------------------------------------------------
  A -III) Can there abstract method  without abstract class?
@@ -121,7 +126,7 @@ A-V) Is it possible to instiated abstract class?
 No, abstract class never instantited.
 
 ----------------------------------------------------------------------------------------------------------------------
-A-I)Interface
+A-I) Interface
                                                 or
 A-I) What do you mean by interface in java?
  or
@@ -156,22 +161,7 @@ It will shown compile time errror.
 A-IV) What is tightly encapsuled bond in java?
 ----------------------------------------------------------------------------------------------------------------------
 To make all variable of class private is tightly encapsulated class in java
-----------------------------------------------------------------------------------------------------------------------
- A-II) abstract class
-----------------------------------------------------------------------------------------------------------------------
-If want to declare abstract method then the class must be abstract.abstract class is used to achieve 0 to 100% abstraction. 
-In abstract class we have both method declaration and defination. In abstract class have static varible and static method also.
-What ever method declare an abstract class it must to implement in subclass.
-abstract class never instatiated. Abstract class have constructor. 
-If you don't provide any constructor in abstract class then compile provide default constructor.
-     
-A-III) When to use abstract class and interface?
-----------------------------------------------------------------------------------------------------------------------
-abstract class mainly used in larger project.because it provide common method implementations to all subclasses.where as interface is used in smaller project
-if you want to force or add some method that time interface is used.
-also when we want hide all the details and just show main service that time we use interface and if you want show some propeties to the client and hide some then we use abstract class.
-												
-----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------     
 A- IV) What are the rules for abstract class?    
 ----------------------------------------------------------------------------------------------------------------------
 1) If you want to use abstract method then the class must be abstract.
@@ -226,11 +216,7 @@ A XII)  When Can an object reference cast an interface reference?
 A XIII)Can you declare interface method is static?
 ---------------------------------------------------------------------------------------------------------------------- 
 no we can't declare interface method is static because they by default public and abstract.
----------------------------------------------------------------------------------------------------------------------- 
-A IVX) Is it compulsory a class declared abstract class it has atleast one abstract method?
-----------------------------------------------------------------------------------------------------------------------
-No it's not compulsory a class declared abstract it has atleast one abstract method.                                                                                                                                                      
------------------------------------------------------------------------------------------------------------------------ 
+-----------------------------------------------------------------------------------------------------------------------
 A XV) Can we use abstract keyword with constructor,instance intializr block,static initilization block?
 ----------------------------------------------------------------------------------------------------------------------
 No we can't use.
@@ -288,20 +274,37 @@ B)What are the types of polymorphism in java?
 ----------------------------------------------------------------------------------------------------------------------
 B-I)   Compile Time polymorphism-
 ----------------------------------------------------------------------------------------------------------------------
-Compile time polymorphism means call an method overload to resolve compile time rather than runtime.
-Compile time polymorphism is achieved by used by using method overloading means a class in java has has 
-method name with different parameter.Compile time polymorphism is also called as static binding.The performance of compile time ploymorphism is faster than the runtime polymorphism becuase object is determined at compile time.
+Compile time polymorphism is achived by using method overloading.
+Method overloading means a same method name , but different parameter ( in terms number of different parameter
+or the attribute type are different).
+Compile time polymorphism performs is faster than the runtime polymorphism.
+It is also know as static binding.
+
+public void test(int i) {
+		
+}
+	
+public void test(String val) {
+		
+}
+
+public void test(int i, int j) {
+		
+}
+	
        
-B-II)   Runtime Polymorphism(Return type is not matter in runtime polymorphims due to covarinat return type).
+B-II)   Runtime Polymorphism (Return type is not matter in runtime polymorphims due to covarinat return type).
 ----------------------------------------------------------------------------------------------------------------------
-Runtime polymorphism means call an method override to resolve runtime rather than compile time. 
-Runtime polymorphism is also known as dynamic binding.
-Rumtime polymorphims is achieved by using method overriding means a classes in java has same method name with same parameter.
-Runtime polymorphism performs is slower than the compile time polymorphism because object is determined at runtime.
-The rules for runtime polymorphism is method present in subclass it must be same as method present in parent class
+Runtime polymorphism is achived by using method overriding.
+Method overriding means a class and subclass will contain the same method , with same paramter, return type does not matter only covariant case ( suppose parent one return type is object and child class can return String , Integer etc.
+The performs of method overriding is slower than the compile time polymorphism.
+It is also know as dynamic binding.
 												
 *** Runtime polymorphism we required same exception also
 *** Return type doesn't matter.
+
+
+
         
 B-III)  Real time example of polymorphism is-
 ----------------------------------------------------------------------------------------------------------------------
@@ -312,19 +315,11 @@ a person some time it act as father,son,employee,husband or etc.
 B-IV)   Advantages of Polymorphism                                   
 ----------------------------------------------------------------------------------------------------------------------
  I) Reduce lot's of lines of code
- II)Debug application easily
+ II) Debug application easily
 ----------------------------------------------------------------------------------------------------------------------
 B-V) Can we override the overloded method? 
 ---------------------------------------------------------------------------------------------------------------------
 Yes, we can override the overloaded method.
-----------------------------------------------------------------------------------------------------------------------
-B-VI) How can we achieve concept of polymorphism in java?
-----------------------------------------------------------------------------------------------------------------------
-By using method overloading and method overriding we can achieve the concept of polymorphism in java.
-----------------------------------------------------------------------------------------------------------------------
-B-VII) What is method overloading?
-----------------------------------------------------------------------------------------------------------------------
-A class in java has multiple same method name with different parameter called as method overloading.
 ----------------------------------------------------------------------------------------------------------------------
 B-VII) How can we achieve method overloading?
 ----------------------------------------------------------------------------------------------------------------------
@@ -333,9 +328,7 @@ method oveloading is achieved by two ways
 2)By chnaging no. data type
 
 But not possible by using or chnaging return type because it create ambugity in the program.
-(Return type is not matter in method overloading we should ensure about the ambugity )
-The performs of method overloading is faster than the method overding because in method overloading case object is determined at compile time.
-It also known as static binding
+
 ----------------------------------------------------------------------------------------------------------------------
 B-VIII) What are advantages of method overloading?
 ----------------------------------------------------------------------------------------------------------------------
@@ -346,39 +339,34 @@ B-IX)Why method overloading is not possible by chaining the return type of metho
 ----------------------------------------------------------------------------------------------------------------------
 because it create amgubity in the program.
 ----------------------------------------------------------------------------------------------------------------------
- B-X) What is method overriding?
-----------------------------------------------------------------------------------------------------------------------
-Method overriding means classes in java has same method name with same parameter. method overrding is way to achieve runtime polymorphism.
-It is also calles dyanamic biding.Method overrding means call an method override to reslove runtime rather than the comiple time.( Different return type also)
-----------------------------------------------------------------------------------------------------------------------
 B-X) What is the difference between method overloading and method overriding?
 ----------------------------------------------------------------------------------------------------------------------
         method overloading                                                                   method overriding
  1) method overloading is used to achieve compile time polymorphism                 1)method overriding is used to acheive runtime polymorphism.
  2) method overloading means a class in java has multiple same                      2)method overriding means a classes in java has same method  
     method name with different parameter                                            name with same arguements 
- 3)It is also called as static binding                                              3) It is called as dyanamic binding
- 4)performs of method overloading is faster than the method overdidng               4)Performs of method overiding is slower than the method overloading                  beacause object is determined at compile time                                         because object determined at runtime.
+ 3) It is also called as static binding                                              3) It is called as dyanamic binding
+ 4) performs of method overloading is faster than the method overdidng               4)Performs of method overiding is slower than the 
+    method overloading beacause object is determined at compile time                   because object determined 
+   at runtime.
                                
                
 ----------------------------------------------------------------------------------------------------------------------
 B-XI) What is the difference between compile time polymorphism and runtime polymorphism?
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-     1) Compile time polymorphsim                                                                              1)Runtime Time polymorphism                             1)Compile time polymorphism means call an method overload to reslove           1)Runtime ploymorphism means call an method overide to
-  compile time rather than the runtime.                                          to resolve runtime rather than compile time.
-2) Compile time polymorphism is achieved by method overloading                 2) Runtime ploymorphism is achieved by method overididng
-3)Compile time ploymorphsim called static binding.                             3) Runtime polymorphism called dyanamic binding.
- 4) compilet time polymorphism provide faster method exceution .               4)Runtime polymorphism provide slower method excution.
+----------------------------------------------------------------------------------------------------------------------------------------
+                 1) Compile time polymorphsim                                   1)Runtime Time polymorphism                            
+1) Compile time polymorphism means call an method overload to reslove    1)Runtime ploymorphism means call an method overide to
+   compile time rather than the runtime.                                   to resolve runtime rather than compile time.
+2) Compile time polymorphism is achieved by method overloading           2) Runtime ploymorphism is achieved by method overididng
+3)Compile time ploymorphsim called static binding.                       3) Runtime polymorphism called dyanamic binding.
+4)Compile time polymorphism provide faster method exceution .            4)Runtime polymorphism provide slower method excution.
                                                                                                                              
+                    
 ----------------------------------------------------------------------------------------------------------------------
-B-XII) How to achieve static and dyanamic polymorphism in java?
-----------------------------------------------------------------------------------------------------------------------
-static polymorphism is achieve by using method overloading whereas dyanamic polymorphism is achieved by method overriding                      
-----------------------------------------------------------------------------------------------------------------------
-
 C)Inheritance
 ----------------------------------------------------------------------------------------------------------------------
-Inheritance means inherit properties from one class to another class. Inheritance represnt IS-A relatioship or parent child relatioship.
+Inheritance means inherit properties from one class to another class.
+Inheritance represnt IS-A relatioship or parent child relatioship.
 parent class- The class inherit properties from another class called parent class.
 child class- The class inherit feature of parent class called child class.
 C-I)Types of Inheriance 
@@ -408,8 +396,8 @@ Hybrid inheritance is combination of single and multiple inheritance.due to ambu
  
  C-II) Advantages of Inheritance
 ----------------------------------------------------------------------------------------------------------------------
-1)Without inheritance we can't achieve runtime polymporphism
-2)code redusablity.
+1) Without inheritance we can't achieve runtime polymporphism
+2) code redusablity.
 ----------------------------------------------------------------------------------------------------------------------
 C-III) The real life example of inheritance
 ----------------------------------------------------------------------------------------------------------------------
@@ -417,8 +405,8 @@ C-III) The real life example of inheritance
 ----------------------------------------------------------------------------------------------------------------------
 C-IV) Why we use inheritance?
 ----------------------------------------------------------------------------------------------------------------------
-1)Without inheritance we can't achieve runtime polymorphism. 
-2)Code reusablitiy.
+1) Without inheritance we can't achieve runtime polymorphism. 
+2) Code reusablitiy.
 ----------------------------------------------------------------------------------------------------------------------
 C-V) How does multiple inheritance implements in java?
 ---------------------------------------------------------------------------------------------------------------------- 
@@ -440,11 +428,8 @@ C-V) What is diffrence between IS-A and HAS-A relations?
 ---------------------------------------------------------------------------------------------------------------------- 
 Inheritance represnt IS-A relationship whereas Composition reprent HAS-A relationshiop. 
 for eg- Maruti suzuki IS-A car and 
-											             Maruti Suzuki HAS-A Engine
-												     
-												     
-												     
-----------------------------------------------------------------------------------------------------------------------------------------
+	Maruti Suzuki HAS-A Engine
+												     ----------------------------------------------------------------------------------------------------------------------------------------
 1)  Method overding rules
 
     A) Same method signature required.i.e same method name with same argument
@@ -452,44 +437,38 @@ for eg- Maruti suzuki IS-A car and
        from 1.5 covariant return allowed.
        covariant return type- Child variable return type doesn't need to match with parent variable
                               return type.
-			      Covariant return type applicable for only object not primitive type.
+       Covariant return type applicable for only object not primitive type.
        Return type not matter
-       
-
-												     
-											 
-											     
-											     
-											     
 
 ----------------------------------------------------------------------------------------------------------------------------------------
  D)Encapsulation
 --------------------------------------------------------------------------------------------------------------------------------------- Encapsulation means wrapping up data or hide a data as single entity.
 for eg- capsule,java bean
-To use ecapsualtion we need to make all member of class is private.
+To use encapsualtion we need to make all member of class is private.
 ---------------------------------------------------------------------------------------------------------------------------------------  D-I) Real life example
 ----------------------------------------------------------------------------------------------------------------------------------------Capsule
 
 ----------------------------------------------------------------------------------------------------------------------------------------  D-II) Advantage of encapsulation
 ---------------------------------------------------------------------------------------------------------------------------------------- 1)To make read only or write only application.
   2)control over the data and data security
-----------------------------------------------------------------------------------------------------------------------------------------7 -  A)What is differnce between abstraction and encapsulation?       
+---------------------------------------------------------------------------------------------------------------------------------------7 -  A)What is differnce between abstraction and encapsulation?       
 ----------------------------------------------------------------------------------------------------------------------------------------
-                  Abstraction                                                                              Encapsulation
+                      Abstraction                                                     Encapsulation
 1) Abstraction is the process of hiding the details or                       1) Encapsulation means wrapping up data or hide a data as single entity.
-                        implementaions by showing main services.
+    implementaions by showing main services.
 2) Abstration solve the problem upto design level                           2) Encapsulation solve the problem upto implementation level
 3) For eg- sending sms to someone you just type and                         3) for eg- java bean, capsule
-                        send it you don't know the internal process,
-                        Automible sterring, automobile break,ATM machine
+  send it you don't know the internal process,
+Automible sterring, automobile break,ATM machine
  
 ----------------------------------------------------------------------------------------------------------------------------------------
 8) What is class in java?
-----------------------------------------------------------------------------------------------------------------------------------------1)Class is blueprint from which objects are created.
+-------------------------------------------------------------------------------------------------------------------------------------
+1) Class is blueprint from which objects are created.
 2) Class is logical entity.
-3)Class created only once, it doesn't allocate memory at the time of creation.
-4)Class is created by using class keyword for eg- class employee.
-----------------------------------------------------------------------------------------------------------------------------------------8- A) Can a class extends itself in java?
+3) Class created only once, it doesn't allocate memory at the time of creation.
+4) Class is created by using class keyword for eg- class employee.
+--------------------------------------------------------------------------------------------------------------------------------------8- A) Can a class extends itself in java?
 ----------------------------------------------------------------------------------------------------------------------------------------No, A class can't extends itselft in java.
 ----------------------------------------------------------------------------------------------------------------------------------------8- B)Can we assign superclass to subclass?
 ----------------------------------------------------------------------------------------------------------------------------------------No, we can't assign superclass to subclass
@@ -499,7 +478,7 @@ for eg- SBI--------> BANK
 (subclass)       (superclass)
 ----------------------------------------------------------------------------------------------------------------------------------------8- C)Can we extends more than one class?
 ----------------------------------------------------------------------------------------------------------------------------------------No, we can't extends more than one class in java.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 9) What is object in java?
 ---------------------------------------------------------------------------------------------------------------------------------------1)Object is instance of class.
  2)Object is created as per our rquirement.
@@ -632,7 +611,7 @@ for int,byte,short.long is 0, boolean is false, object is null,float,double 0.0.
  time of creation of varible 
 
 ----------------------------------------------------------------------------------------------------------------------
-20)What is Data type and explain it's ?
+20) What is Data type and explain it's ?
 ----------------------------------------------------------------------------------------------------------------------
 Data type specified size and type value that can specified by an identifier.
 There are two types of data types
@@ -663,7 +642,8 @@ Non primirive data type means they are not predefined in java.
 1) Array  - Array is an object, which is stored the homegenous element. It holds both primitive data type and objects. 
 2) Class   - Class is blue print from which objects are created.Class is logical entity. It doesn't require any space 
            in the memeory. 
-3) interface - Interface same like as class the main difference that interface doesn't have body and constructor also. Interface also represent IS-A relationship.
+3) interface - Interface same like as class the main difference that interface doesn't have body and constructor also. Interface also 
+              represent IS-A relationship.
 4) String  - String represent sequence of character. String is final class present in java lang package.
                          
 -------------------------------------------------------------------------------------------------------------------
@@ -680,7 +660,7 @@ There is no difference between access modifier and access specifier both are sam
  --------------------------------------------------------------------------------------------------------------------- 
 Access modifier specifies scope of the class,method,block and constructor.
 There are four access modifier in java
--------------------------       
+-------------------------------------------------------------------------------------------------------------------           
 A)Public          -
 public means access from anywhere within the class, outside the class within the package outside the package also.
 ----------------------------------------------------------------------------------------------------------------------
@@ -723,7 +703,7 @@ for eg. public remains public
 ----------------------------------------------------------------------------------------------------------------------
 Yes, we can modify throws clause of subclass method while overrding in the subclass.
 ----------------------------------------------------------------------------------------------------------------------
-21-C )How will you restrict the member of class from inheriting it's subclass?
+21-C ) How will you restrict the member of class from inheriting it's subclass?
 ----------------------------------------------------------------------------------------------------------------------
 To make all member of class is private.
 -----------------------------------------------------------------------------------------------------------------------
@@ -823,17 +803,12 @@ If you declare a block is static we can chnage static variable values inside the
 1) a block declared by using keyword static is called static block.       1)A block doesn't reuired any keyword to declare it called instance block.
 2)In static block we access static variable                               2)In an instance block we can access the instance variable.
 3)static block executed before the main method.                           3)instance block executed when object of class is created
-
-----------------------------------------------------------------------------------------------------------------------
-2 -A)What is static block?
-----------------------------------------------------------------------------------------------------------------------
-A block declared by using keyword static is called static block. we can assecc only static variable inside the static block and it execute before the main method.                                                                          
 ---------------------------------------------------------------------------------------------------------------------- 
 >>> Adavantage of static keyword
 ---------------------------------------------------------------------------------------------------------------------
 -1)static keyword mainly used for memory management.
 ----------------------------------------------------------------------------------------------------------------------
- 2)final -
+ 2) final -
 ----------------------------------------------------------------------------------------------------------------------
 2- A)What is final keyword in java?      or    2-A)What is final variable in java?
 ----------------------------------------------------------------------------------------------------------------------
@@ -887,18 +862,9 @@ static final variable means constant.
 ----------------------------------------------------------------------------------------------------------------------
 If you declare method is final we can't override it in subclass. But final method get overload.
 ----------------------------------------------------------------------------------------------------------------------
-20 -B)What is final method?
-----------------------------------------------------------------------------------------------------------------------
-A method declared by using keyowrd final called as final method. Once we declare method is final we can't inherit it in subclass. 
-final method get overloaded.
-----------------------------------------------------------------------------------------------------------------------
 20) Can we overide method marked as final?
 ----------------------------------------------------------------------------------------------------------------------
 No, we can't overide metthod marked as final.
-----------------------------------------------------------------------------------------------------------------------
-20) Can final method overloded in java?
----------------------------------------------------------------------------------------------------------------------- 
-Yes final method overloaded in java.
 
 20-I) What is the difference between static keyword  and final keyword?
 ---------------------------------------------------------------------------------------------------------------------
@@ -974,9 +940,9 @@ Yes we have two constructor in java class called constructor overloading means s
 23- D) What are the rules for constructor?
 ---------------------------------------------------------------------------------------------------------------------- 
 1) Constructor name same as the class name.
-2)Constructor first line shoud be this or super keyword.
-3)Constructor internally return current instance of that class 
-4)Constructor use with only access modifier keyword not non access modifier keyword.
+2) Constructor first line shoud be this or super keyword.
+3) Constructor internally return current instance of that class 
+4) Constructor use with only access modifier keyword not non access modifier keyword.
 ----------------------------------------------------------------------------------------------------------------------
 23- E) What is constructor chaining in java?
 ----------------------------------------------------------------------------------------------------------------------
@@ -1201,39 +1167,6 @@ Instance always have a defination
 Employee employee=new Employee();
 whereas object may or may not have defination
 int array[];
-----------------------------------------------------------------------------------------------------------------------
-52) Exaplain the concept of singleton class with examples?
-----------------------------------------------------------------------------------------------------------------------
-Singleton class created to restrcit the user from creating more than one instance of class.
-Singleton class means only one instance of that class is get created.
-To make a class as sinleton we need to follow the below three criteria -
-1) declare a class constructor as private , mean it will not allow to create instance of class from outside.
-2) declare a variable as static.
-3) declare a method where we can check the first time wheather the object of singleton class
-   is created or not. If it is created then rest of all times will use that.
-
-
-Class Company {
-
-  private static Company company=null
-
- private Company(){
-
- }
-
-public static Company getInstance(){
-   if(company==null){
-       return company=new Company();
-   }
-   return company;
-}
-
-/**business logic**/
-public void processInput(){
-
-}
-
-}
 
 ----------------------------------------------------------------------------------------------------------------------
 53) Why Pointer is not used in java?
@@ -1435,7 +1368,7 @@ B) Deep copy
 ----------------------------------------------------------------------------------------------------------------------------------------
 67) Write a syntax for creating the subclass of class? 
 ----------------------------------------------------------------------------------------------------------------------------------------class subclassName extends superclassName
----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 68) Which keyword is used to inherit the class or used to define subclass?
 ----------------------------------------------------------------------------------------------------------------------------------------extends keyowords is used to extends the class.
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -1573,7 +1506,8 @@ But if you char array() to store the password it allows to make it clear after d
  2) IDE software less support to nested class that's why developer not able to work on it.
 ----------------------------------------------------------------------------------------------------------------------------------------
 102) What type inner and non static nested classes in java? ///////////////////////////
-----------------------------------------------------------------------------------------------------------------------------------------1) Local inner class             -  A class declared inside method
+-------------------------------------------------------------------------------------------------------------------------------------
+ 1) Local inner class           -  A class declared inside method
  2) Member inner class          - A class declared outside the method and inside the class
 ----------------------------------------------------------------------------------------------------------------------
 102- I) what is anonymous inner class?
@@ -1606,7 +1540,7 @@ But if you char array() to store the password it allows to make it clear after d
  2) Garbage collector is process of cleaning or remove unreferenced automatically and  make free space for jvm.
  3) System class have a gc() method
 ----------------------------------------------------------------------------------------------------------------------------------------
-110)How garbage collection is controlled?
+110) How garbage collection is controlled?
 ----------------------------------------------------------------------------------------------------------------------------------------1) Garbage collection is controlled by jvm
  2) If there is no enough space or memory running slow then jvm automatically calls                                                         garbage collector and remove unreference object. and make free space 
  3) Also we can externally class system.gc() method
@@ -1686,7 +1620,7 @@ marshling(write) means convert java object into xml. whereas unmarshling(read) m
 ----------------------------------------------------------------------------------------------------------------------------------------Transient keyword is used to avoid serialization od an object.
 How to prevent serilization of subclass. There is no direct way to avoid serilization of                                                subclass we need to implement writeObject and readObject methods and throws NotSerilizableException.
 ----------------------------------------------------------------------------------------------------------------------------------------
-132) What happens if there are multiple main methods inside one class in Java??
+132) What happens if there are multiple main methods inside one class in Java?
 ----------------------------------------------------------------------------------------------------------------------------------------Yes , we have multiple main method in java class. But jvm find the singnature such as public                                             static void main(String agrs[]) and igonre other dependecy.
 ----------------------------------------------------------------------------------------------------------------------------------------
 133) Is it possible to import the same class or package twice in Java and what
@@ -1703,23 +1637,6 @@ How to prevent serilization of subclass. There is no direct way to avoid seriliz
   2)Assiging null to the referene
     Employee e1=null;
                                                                                                                                         
-----------------------------------------------------------------------------------------------------------------------------------------
-135) What is design pattern?
-----------------------------------------------------------------------------------------------------------------------------------------Design pattern is predefined solutins for specific task and problems.
-Types of design pattern such as
-1)Core java design pattern
-2)JEE design pattern
-
-I)Singleton desing pattern
-  only one instance of that class is created due to class defination.
-  To make class singleton we need to make constructor private.
-  Singleton class mainly used to restrict the user from creating object of that class
-                                                                        
-II)Factory design pattern- 
-   A subclass is responsible to create the object of an instance.
-   Factory desing pattern is suitable if there is one interface implemented in more than one diffrent classes. in switch we can get the 
-   object of class. main purpose to reduce the number of interface and object creations.
-
 ----------------------------------------------------------------------------------------------------------------------------------------
 136) When we should use multiple if statement over if along with else if?
 ----------------------------------------------------------------------------------------------------------------------------------------multiple if statement used when we want to check multiple condition no matter if previous if statement was true or false.
@@ -1755,7 +1672,7 @@ serialVersionId=2L, it will throw an expection InvalidClassException.
 ----------------------------------------------------------------------------------------------------------------------------------------I have worked on java 17 and latest version of java is 23
 ----------------------------------------------------------------------------------------------------------------------------------------
 142) Which version of springboot and hibernate are you worked?
-----------------------------------------------------------------------------------------------------------------------------------------Spring Boot 3.3.2 and hibernate orm(6.5.0)
+----------------------------------------------------------------------------------------------------------------------------------------Spring Boot 3.4.2 and hibernate orm(6.5.0)
 ----------------------------------------------------------------------------------------------------------------------------------------
 143) If i have 1 lakh element and i want to find out the index of any element how can you do that?
 ----------------------------------------------------------------------------------------------------------------------------------------we can indexOf() method.
@@ -2168,17 +2085,6 @@ https://github.com/Harshpatil7770/Concepts/tree/master/SingletonDesginPattern
 
 3) Cloning  - i) Implmeneting cloneable interface clone method also break the singleton desing pattern.
               ii) To overcome with this throw cloneNotSupportException();
-
-		
-216) What are the rules for method overiding?
----------------------------------------------------------------------------------------------------------------------------------------
-1) Method singnature required same.
-   same method name with same parameter or arguement reuqired.
-   
-2) Return type not matter from java 1.5 
-   We have covariant return type.
-
-for eg ; Parent class return Number then child class can return the Interger, Long , Float, Double.
   
  218) Return Type with access modifier rule?
  ---------------------------------------------------------------------------------------------------------------------------------------
