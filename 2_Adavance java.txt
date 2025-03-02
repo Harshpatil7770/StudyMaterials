@@ -155,7 +155,7 @@ a is one dimensional int array and b is one dimensional int array.
 ----------------------------------------------------------------------------------------------------------------------
 The advantage of ordered array has serach time complexity is o(log n),wheras unordered array is o(n).
 ----------------------------------------------------------------------------------------------------------------------	
-22) When index out of bond exception occur?
+22) When index out of bound exception occur?
 ----------------------------------------------------------------------------------------------------------------------
 Index out of bond exception will occur when array index is negative,equal or greather than the length of array.     
 Array index out of bond exception will occur , when you try to access the array element outside from the valid range.
@@ -171,7 +171,7 @@ Array index out of bond exception will occur , when you try to access the array 
 1) What is Expection Handeling in Java? 
 ----------------------------------------------------------------------------------------------------------------------
 Exception handeling is nothing but maintain the normal flow of your program.
-Exception handeling is mechanism that used to handel the runtime exception in java such as IO exception,classNotFound Exception,SQL 
+Exception handeling is mechanism that used to handel the compile time exception in java such as IO exception,classNotFound Exception,SQL 
 Exception.
 ----------------------------------------------------------------------------------------------------------------------
 2) What is Expection?
@@ -255,6 +255,7 @@ for eg
 2)Stackoverflow - recurion time
 3)OutofMemeotyerror- occur in loop always evalute true
 												
+gt
 -------------------------------------------------------------------------------------------------------------------
 4) What is the difference between exception and error?
 ----------------------------------------------------------------------------------------------------------------------
@@ -285,6 +286,7 @@ Try {
 }Catch(){
 
 }
+
 try-catch ( catch the exception if occurs and maintain the normal flow of your programs).
 
 try-finally
@@ -369,8 +371,7 @@ Unchecked exception by default followed in calling chain
 Yes we can handel mutiple exception in single catch block by using vertical pipe or bar.                                                                                                                                                                                        ---------------------------------------------------------------------------------------------------------------------------------------
 19) What is exception propagation?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Exception propagation means exception thrown from top of the stack to the bottom of the stack if not catched                            then drop down again main method called as exception propagation.
-
+Exception propation means throws exception upto caller of that method , so you can handle or caught it as per requirment.
 ---------------------------------------------------------------------------------------------------------------------------------------
 20) What is custom exception and How to create and why we need ?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -472,8 +473,7 @@ Finally block is used to execute important code of the program such as closing f
 ---------------------------------------------------------------------------------------------------------------------------------------
 33) What is stackoverflow error in java?
 ---------------------------------------------------------------------------------------------------------------------------------       Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.
-( for eg- this type of
-error generally occur when stack overflows).
+( for eg- this type of error generally occur when stack overflows).
 Rucursion program
 ---------------------------------------------------------------------------------------------------------------------------------------
 34) Can we overide super class method which throwing unchecked exception with checked exception in the subclass?
@@ -482,8 +482,7 @@ No we can't override. for exception we required same i.e if parenT class thorowi
 ---------------------------------------------------------------------------------------------------------------------------------------
 35) What is chained exception in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Chained exception means identify one exception causes another exception in an application.                                                                                                                                                                                         
----------------------------------------------------------------------------------------------------------------------------------------
+Chained exception means identify one exception causes another exception in an application.                                                                                                                                                                                     ---------------------------------------------------------------------------------------------------------------------------------------
 36) Which class is super class for all error and exception?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Throwable class is super class for all error and exceptions.                                                                                                                                                                                                  
@@ -522,15 +521,6 @@ Throwable class is super class for all error and exception.(throwable is a class
  We can keep a single try block and mutiple catch block but it should be placed in order such as
  first we  write specific and then general. for eg - first we write arithmetic expection and then we write exception
  block high prioriety catch block exceuted first
-
----------------------------------------------------------------------------------------------------------------------------------------
-43) Do final, finally and finalize keywords have the same function?
----------------------------------------------------------------------------------------------------------------------------------------
-Each keyword has different function.
-final is used to restrict the user. finally block is used execute impotant code of the program such as closing files.
-closing connection,etc. finallize method execute just before the object is garbage collected.
-It is process of cleaning.
-
 ---------------------------------------------------------------------------------------------------------------------------------------
 44)  Is it mandatory for a catch block to be followed after try block?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -899,8 +889,8 @@ No,String is not keyword in java. String is final class present in java.lang pac
 ---------------------------------------------------------------------------------------------------------------------------------------
  7) What is String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
-String constant pool is special space reserved in heap memeory to store the string objects. When we create obj
-without using new keyword it will store in string constant pool                                                                         ---------------------------------------------------------------------------------------------------------------------------------------
+String constant pool is special space reserved in heap memeory to store the string objects.
+When we create obj without using new keyword it will store in string constant pool                                                      ----------------------------------------------------------------------------------------------------------------
 8) What is special about String objects as compares other objects.
 ---------------------------------------------------------------------------------------------------------------------------------------
 String objects are created without using new keyword and store in special memory i.e String constant pool,                              JVM check whether the objects already  declared or not in this way they make JVM more memory efficient. 
@@ -1015,7 +1005,21 @@ public static void main(String args[]){
 ---------------------------------------------------------------------------------------------------------------------------------------
  All three are final classes.
 
-           String                                 String Buffer                       String Builder                                    1) String objects are stored in String constant pool       1)String buffer objects stored in heap memory                 1)String builder objects stores in heap memory                                                                                                        2) String are thread safe                                           2) String buffer is not thread safe                                    2) Stirng builder is thread safe                                                                                                                                3)  String objects are immutable                                  3)String buffer objects are mutable                                3) String builder objects are mutable                                                     
+ String    
+i) String store object in string constant pool.
+ii) String are thread safe.
+iii) String object are immutable.
+
+String buffer
+i) String buffer store object in heap memory.
+ii) String buffer is thread safe.
+iii) String buffer are mutuable.
+
+String builder
+i) String builder store object in heap memory
+ii) String builder is non-thread safe.
+iii) String builder are immutable.
+                                              
 ---------------------------------------------------------------------------------------------------------------------------------------
 11) Why String buffer and String builder introduced in java there are already exit String class to represent the set of character?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1023,83 +1027,69 @@ When we create object by using string it becomes immtable, we are not able to mo
 ---------------------------------------------------------------------------------------------------------------------------------------
 12) How many objects will be created in the following code?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String s1=new String("abc");                                                                                                                                                                                                                                                                                                     
+                                                                                                                                        String s1=new String("abc");     
+each new keyword the object will get create.
+
 String s2="abc";                                            
-                                                                                                                                                                        String s3="abc";  
-                                                                                                                                                                        String s4="abc";  
-                                                                                                                                                                        Two objects are created one is stored in heap memory another one is stored in string constant pool
+JVM check the contain if you create the object using String literal.
+If the contain are already created then jvm won't create the new object for it.
+String s3="abc";  
+String s4="abc";  
+                                                                                                                                        Two objects are created one is stored in heap memory another one is stored in string constant pool
 
+String s1=new String("abc");  
+String s2=new String("abc");
+String s3="abc";  
+String s4="abc";   
 
-                                                                                                                                                                        String s1=new String("abc");  
-                                                                                                                                                                        String s2=new String("abc");
-                                                                                                                                                                        String s3="abc";  
-                                                                                                                                                                        String s4="abc";   
-                                                                                                                                                                        Three objects created, by using new keyword is stored in heap memory whereas by using string lateral it will
-                                                                                                                                                                        store in String constant pool
+Three objects created, by using new keyword is stored in heap memory whereas by using string lateral it will store in String constant pool
 ---------------------------------------------------------------------------------------------------------------------------------------
 13) How do you create mutable String objects?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        To create mutable string objects we need to use String Buffer and String Builder                                                                                                                                                                        
+To create mutable string objects we need to use String Buffer and String Builder                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 14) Which one will you prefer among "=="& equals() method to compare two String objects?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        = = equal to operator is used for address comparison wheras equals() method used for content comparison (equals method take only object as input parameter)                                                                                                                                                                      
+= = equal to operator is used for address comparison wheras equals() method used for content comparison (equals method take only object as input parameter)                                                                                                                                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 15) Which class will you recommonded among String,String buffer,String builder classes if i want mutable and thread safe objects?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String Buffer and String Builder both are create mutable objects but for String Builder is not thread safe so you can use StringBuffer. 
+ String Buffer and String Builder both are create mutable objects but for String Builder is not thread safe so you can use StringBuffer. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) How do you convert given String to char array?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        By using tocharArray() method                                                                                                                                                                         
+By using tocharArray() method                                                                                                           
 ---------------------------------------------------------------------------------------------------------------------------------------
-17) What is the difference between String,String buffer and String builder ?
+17) Where exactly String constant pool located in the memory?
 ---------------------------------------------------------------------------------------------------------------------------------------
- String                                                    String Buffer                                           String Buider
-1)String objects stored in String constant pool  1)String buffer objects stored in heap memory  1)String builder objects stored in heap memory
-2)Strign objects are immutable                   2)String buffer objects are mutaable           2)String builder objects are mutable
- 3)String are thread safe                        3)Strign buffer is thread safe                  3)String builder is not thread safe                                                                                                                                                                                                                                                                                                           
----------------------------------------------------------------------------------------------------------------------------------------
-18) How many objects will create in the following code ?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                              String s1=new String("abc");                                                                                                                                                                                                                                                                                                     
-       String s1="abc";  
-                                                                                                                                                                        Two objects created one by using new keyword and another one by uisng String literal.  
-
-                                                                                                                                                                        String s1=new String("abc");  
-                                                                                                                                                                        String s2=new String("abc");  
-                                                                                                                                                                        Two objects are created both are stored in heap memory
----------------------------------------------------------------------------------------------------------------------------------------
-19) Where exactly String constant pool located in the memory?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String constant pool is located inside the heap memory.                                                                                                                                                                     
+String constant pool is located inside the heap memory.                                                                                                                                                                     
 ---------------------------------------------------------------------------------------------------------------------------------------
 20)  I am performaing lots of String concenataions and String modifation in my code, which class among String,String buffer,
      String builder improve the performance of code, remember i also want thread safe code?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                          String and String buffer both are thread safe but lot's of string concationation is not supported in string ie, 
-                                                                                                                                                                          you can use String Buffer                                                                                                                                                                
+String and String buffer both are thread safe but lot's of string concationation is not supported in string ie, you can use String Buffer                                                                                                                                                                
 ---------------------------------------------------------------------------------------------------------------------------------------
 21) What is String intern?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        String objects are stores in String constant pool called as String intern                                                                                                                                                                    
+String objects are stores in String constant pool called as String intern                                                                                                                                                                    
 ---------------------------------------------------------------------------------------------------------------------------------------
 22) What is main difference java String and c,c++ String?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        C,C++ String terminated with null whereas java String doesn't terminated with null.                                                                                                                                                                      
+C,C++ String terminated with null whereas java String doesn't terminated with null.                                                                                                                                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------
 23) Can we call method using String literal?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        Yes we can call method by using String literal.                                                                                                                                                                        
+Yes we can call method by using String literal.                                                                                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------
 24) Do you have any idea why String have been made immutable in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        To make JVM more memory efficient String are immuable in java. when we create object of String by using                                                                String by using String literal JVM check wheather object declared or not.                                                                                                                                                
+To make JVM more memory efficient String are immuable in java.
+when we create object of String by using String by using String literal JVM check wheather object declared or not.                                                                                                                                                
 ---------------------------------------------------------------------------------------------------------------------------------------
-25) What do you think about String constant pool? Why they have provided this pool as we can Store String objects
-    in the heap memory itself?
+25) What do you think about String constant pool? Why they have provided this pool as we can Store String objects in the heap memory itself?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                                        When we create object of String by using String literal JVM check whether objects declared or not. If declared                                                          it doesn't create new objects,in this way they make jvm more memory efficient.
+When we create object of String by using String literal JVM check whether objects declared or not. 
+If declared it doesn't create new objects,in this way they make jvm more memory efficient.
 ---------------------------------------------------------------------------------------------------------------------------------------
 26) What is the similarity and difference between String and String buffer class?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1121,40 +1111,14 @@ For eg- suppose five reference variable referes to the one object and i want to 
 30) Why is it said that the length() method of String class doesn't return accurate results?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Because length() method count only number of character from the String.                                                            
-
-31) What is String Buffer?
----------------------------------------------------------------------------------------------------------------------------------------
-String buffer is introduced to make mutable objects. When we object by using String buffer it will strore in heap memeoy. String Buffer is thread safe. Performance of String Buffer is slower than the Strign Builder.
----------------------------------------------------------------------------------------------------------------------------------------
-32) What is String  Builder?
----------------------------------------------------------------------------------------------------------------------------------------
- String Builder introduced to make mutable String objects. When we create object by using String builder
- it will store in heap memory. String Builder is not thread safe. The performane of String Builder is faster than the String Buffer.  
-		
----------------------------------------------------------------------------------------------------------------------------------------				    
-33) What is difference between String and String Buffer?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                                              String                                    String Buffer
-														
- 1) String create immutable objects                     1) String buffer create mutable objects
- 2) String objects strored in String                    2)String buffer objects Stored in heap memory.
-		constant pool
- 3)String overide equal method                          3) String buffer can't overide equal method of object class. 
-     of object class.
-
 ---------------------------------------------------------------------------------------------------------------------------------------	34) What is heap memory and String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
 heap memeory is runtime data area on which object are allocated. 
 whereas String constant pool located inside the heap memory it mainly used to make jvm more memory efficient, when we create obejct of Strign by using String literal jvm check wheather object declared or not,if declared it doesn't create new instance.
 
-
-
-
-
-
 ========================================================================================================================================
 ========================================================================================================================================
-4)MultiThreading
+4) MultiThreading
 ========================================================================================================================================
 ========================================================================================================================================
 
@@ -1273,9 +1237,6 @@ Daemon thread means low prioriety thread it used to proivde service and suppport
 matically terminate if there is remains only daemon thread. There are two types of daemon thread
 1)isDaemon() 2)setDaemon()
 ---------------------------------------------------------------------------------------------------------------------------------------
-22) What is user thread?
---------------------------------------------------------------------------------------------------------------------------------------- User thread means user defined thread jvm doesn't terminate until user thread get execute.                                                 
----------------------------------------------------------------------------------------------------------------------------------------
 23) can we make the user thread as daemon thread if thread is started?
 ---------------------------------------------------------------------------------------------------------------------------------------
 No we can't make user thread as daemon thread if thread is started it will shows illegalMoniterstateExcpetion                           ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1381,18 +1342,14 @@ It will read from main memory not a specific memory.
 38) What do you understand by thread pool?
 --------------------------------------------------------------------------------------------------------------------------------------- Thread pool is group of waited thread waiting for task to be allocated.
 ---------------------------------------------------------------------------------------------------------------------------------------
-39) what is synchronization block?
--------------------------------------------------------------------------------------------------------------------------------------   Synchronization block is used to perform synchronization on specific resource of method. Suppose i have 50 line code i want syncronozed 5 lines of them then i will use synchronization block . The scope of synchronization block is smaller than the sychronization method. 
-The main purpose of synchronization is avoid thread constistance and thread interface problems.
----------------------------------------------------------------------------------------------------------------------------------------
 40) What are the method of thread?
 --------------------------------------------------------------------------------------------------------------------------------------) start() 2)run() 3)setDaemon() 4)IsDaemon() 5)setPriority() 6)getProority()  7)yeild()  8)join()  9)sleep() 10)currentThread()
 11)run() 12)isAlive() 13)setName() 14)getName()
 ---------------------------------------------------------------------------------------------------------------------------------------
 41) What is pass by value and pass by referecne?
 ---------------------------------------------------------------------------------------------------------------------------------------
-pass by value means pass eaxct cpoy value if changes occur oroginal value doesn't get changed,
-                                                                                                                                        pass by reference means pass an refrecne value if changes occur then it afftect in all places.
+pass by value means pass exact cpoy value if changes occur original value doesn't get changed,
+                                                                                                                                        pass by reference means pass an reference value if changes occur then it afftect in all places.
 ---------------------------------------------------------------------------------------------------------------------------------------
 42) What is difference between synchronization block and synchronization method?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1402,11 +1359,7 @@ Synchronization method is used to perform synchronization on complete resource w
 on specific resource of method. suppose i have 50 lines of code and i want to synchronize 5 lines of them then i will use synchronization block.
 The scope of synchronization block is smaller than the synchronization method,but i put all lines of synchronzation method used the synchronization
 method it will work as same.
-																			
----------------------------------------------------------------------------------------------------------------------------------------
-43) What is deadlock?
----------------------------------------------------------------------------------------------------------------------------------------
-Deadlock is situation occur when two process waiting for each other to complete and wait endlessly.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 44) What is maker interface and it's use and can we create our own marker interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1444,9 +1397,7 @@ TO make immutable class in java we need to make class is final and all member of
                                                   }
 ---------------------------------------------------------------------------------------------------------------------------------------
 47) What is the difference between join and wait method?
----------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                        Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another 
-thread will call notify and notifyAll() methods.
+--------------------------------------------------------------------------------------------------------------------------------------  Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another thread will call notify and notifyAll() methods.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 48) Who calls the run method?
@@ -1571,21 +1522,8 @@ There are two ways to synchronization
   ---------------------------------------------------------------------------------------------------------------------------------------
   72) Explain wait(), notify() and notifyAll() methods of object class ?
   --------------------------------------------------------------------------------------------------------------------------------------
-  wait () ,notify,notifyAll() are object class methods.
-  wait() - pause the currently executing thread,wait until another thread will call notify and notifyAll() method.
-  notify()- notify means unblock only one waiting thread
-  notifyAll() - notifyAll means unblock all waiting thread.
-  In java each object has a only one lock or monitor. And wait, notify and notifyAll() methods act as monitor.
-  That's why wait, notify, notifyAll are object class methods.
-  ---------------------------------------------------------------------------------------------------------------------------------------
-  73) Explain why wait(),notify() and notifyAll() methods are in Object class rather than in 
-      thread class?
-  --------------------------------------------------------------------------------------------------------------------------------------
-  wait() , notify() and notifyAll() methods works with object , not a Thread.
-  These method control the execution of thread based on the state of object.
-   
---------------------------------------------------------------------------------------------------------------------------------------
-  74) Explain IllegalMonitorStateException and when it will be thrown?  
+Wait() , notify() and notifyAll() method are part of object class because it is getting used for inter-thread communication using object. this is not thread - limited functionality,--------------------------------------------------------------------------------------------------------------------------------------
+74) Explain IllegalMonitorStateException and when it will be thrown?  
 ---------------------------------------------------------------------------------------------------------------------------------------
 If you try to write wait ,notify,notifyAll() methods out the side synchrinzation context at runtime you will get IllegelMonitorStateException.
 ---------------------------------------------------------------------------------------------------------------------------------------
