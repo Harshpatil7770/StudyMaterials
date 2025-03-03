@@ -1706,19 +1706,21 @@ Class Employee{
    list.add("Peeter");
    
    list.forEach(System.out::println);
-   // Now suppose i have added 10 element so it will store in the memory but i want to add one more element we know that arraylist size dyanamically increase.
-   so size of arraylist become become 16 
+   // Now suppose i have added 10 element so it will store in the memory but i want to add one more element we know that arraylist size 
+   dyanamically increase. so size of arraylist become become 16 
    
    list.add("Joy");
    list.forEach(System.out::println);
-   //New dyanamic array is created i.e capacity is 16 and previous get copy by using arrays.copy() method and it will store in new dyanamic array and previous array
-   get garbage collected. suppose i want to remvove one element by using remove method
+   //New dyanamic array is created i.e capacity is 16 and previous get copy by using arrays.copy() method and it will store in new 
+   dyanamic array and previous array get garbage collected. suppose i want to remvove one element by using remove method
    
    list.remove("peeter");
    list.forEach(System.out::println);
-    // But size of dyanamic array is not decrease they remain same this is main disadvantage of dyanamic array.we need to externally use toTrim() size method.
+   // But size of dyanamic array is not decrease they remain same this is main disadvantage of dyanamic array.we need to externally use 
+   toTrim() size method.
    ArrayList Provide random access so we can access any value by it's index.
-   So arraylist mainly used for searching operation. we are not able to perform insertion and deletion operation in an arraylist because lot's shifting is required. 
+   So arraylist mainly used for searching operation. we are not able to perform insertion and deletion operation in an arraylist 
+   because lot's shifting is required. 
    
       
       
@@ -1733,7 +1735,8 @@ Class Employee{
   list.add("Harsh");
   we know that the doubly linked list means
   [ Previous connnection node][ Stored element ][Next connecting node]
-  This is format of double linked list. Doubly linked list require more space because it store object with there address. Also it doesn't maintain insertion order.
+  This is format of double linked list. Doubly linked list require more space because it store object with there address. Also it 
+  doesn't maintain insertion order.
   [P][HARSH][N] inside the memory getstored.
   Now suppose i have add two more object so 
   such as
@@ -1746,7 +1749,8 @@ Class Employee{
   suppose we want to one element by using remove method
   list.remove("Taral");
   so simple node will get remove and at the time of adding simply node will added. 
-  for this linkedlist good for insertion and deletion opearation. Linked list doesn't random access also doesn't maintain insertion order. 
+  for this linkedlist good for insertion and deletion opearation. Linked list doesn't random access also doesn't maintain insertion 
+  order. 
 
 
 6) Explain Internal working of HashSet with examples?
@@ -1975,7 +1979,7 @@ output= 2
          	 HashMap                                                 HashTable
   1)Hashmap is non sychronized                                   1)Hashtable is synchronized
   2)Hashmap is non thread safe                                   2)Hashtable is thread safe
-  3)Hashmap extends  abstract class                              3)Hashtable extends  dictionary class.
+8  3)Hashmap extends  abstract class                              3)Hashtable extends  dictionary class.
   4)Hashmap allows number of null values                         4)Hashtable doesn't allows null values.
   5)Hashmap is non legacy                                       5) Hashtable is legacy.
 
@@ -1984,7 +1988,7 @@ output= 2
                     Collection                                              Collections
   1)Collection is an interface                                    1)Collections is a class
   2)Collection provide data stucture such list,                   2)Collections provide methods such as short(),synchronized() 
-                                                                  ,min(),max()etc. 
+ 8                                                                 ,min(),max()etc. 
      set,map or etc          
 
 21) What is difference between Comparable and Comparator?
@@ -2018,7 +2022,6 @@ output= 2
       }
   }
 	    
-
 22) What do you understand by blocking queue? and why we used?
 ----------------------------------------------------------------------------------------------------------------------------------------
    Blocking is an interface which implements queue interface. The implementation of blocking queue is thread safe.
@@ -2276,7 +2279,7 @@ To avoid this we need to use Iterator.
 
  ---------------------------------------------------------------------------------------------------------------------------------------
  60) Difference between concurrent hashmap and synchronized hashmap?
-                concurrent hashmap                               synchronized hashmap
+                concurrent hashmap                               non- synchronized hashmap
 1) concurrent hashmap don't allow null           1) synchrnized hashmap allows null keys(one) and values.
     values as well as keys
 2)  If you want to concurrent hashmap            2) In synchronized hashmap use collections.sychronizedMap() we need to use
