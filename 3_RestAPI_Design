@@ -1,0 +1,62 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                !!! Shree Swami Samarth !!!
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) What is REST ?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Rest stands for representational state transfer.
+
+2) What is Http? 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Http stands for hyper text tranfer protocol.
+
+3) RESTFul web services ?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Restful webs service is developed by roy fielding , the main purpose of Restful web service is application to application interaction.
+suppose your have application A, B and C written those in java , php and dotnet.
+so they can interact with each other or communicate with each other with help of REST protocol.
+
+4) Methods of REST API
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I) POST - post we have to create a new resource.
+
+
+for eg - 
+
+@PostMapping("/save")
+public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee){
+
+}
+
+II)GET - get used to get the resource
+
+@GetMapping("/find/{id}")
+public Employee getEmployee(@pathvariable long empId){
+
+}
+
+III) Put - put basically we have to update the resource
+
+@PutMapping("/update")
+public ResponseEntity<Employee> updateEmployee(@RequestBody Employee employee){
+
+}
+
+IV) Patch - patch we have for partial update the resource.
+
+@PatchMapping("/partialUpdate)
+public ResponseEntity<Employee> partialUpdateEmployeeDetails(@RequestBody Employee employee){
+
+}
+
+V) Delete - delete the resource.
+
+@DeleteMapping("/delete/{id}")
+public ResponseEntity<String> delete(@PathVaribale long empId){
+
+}
+
+
