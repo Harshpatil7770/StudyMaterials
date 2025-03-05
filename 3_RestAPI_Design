@@ -59,4 +59,17 @@ public ResponseEntity<String> delete(@PathVaribale long empId){
 
 }
 
+5) What is the difference between SOAP VS REST ?
+
+SOAP - i) soap stands for simple object access protocol.
+       ii) it mainly used for xml data exchange.
+       iii) soap is a protocol.
+       iv) soap is difficult to implement.
+
+REST - i) rest stands for representational state transfer.
+       ii) rest used for json data transfer.
+       iii) Rest is architectural approch.
+       iv) Rest is easy to implement.
+
+
 
