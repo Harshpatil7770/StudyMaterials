@@ -72,4 +72,10 @@ REST - i) rest stands for representational state transfer.
        iv) Rest is easy to implement.
 
 
-
+6) Status code
+---------------------------------------------------------------------------------------------
+200 - Ok 
+201 - Created
+400 - Method Not found
+404 - bad request
+500 - internal server error
