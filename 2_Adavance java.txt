@@ -2351,89 +2351,6 @@ Scenarios 1) Suppose if we are passing custom class object as key first we need 
 2) Cocurrent hashmap is thread safe. so multiple thread can access at a time.Basically in multithreaded environment
   will use concurrent hashmap.
 
-
-
-
-
- ========================================================================================================================================
- RESTFul web services.
- 1) Web services designed for application to application interaction
- 2) Interpolations - suppose Application A installed in java , application B installed on dotNet and application c installed on php so they can communicate with each other with the help of web services
- 3) It allows communicate over the network.		     
- ========================================================================================================================================
- 1) REST-
- ---------------------------------------------------------------------------------------------------------------------------------------
- Rest stands for Representational state transfer. It developed by roy fielding to make web services most effective.
- { Roy fileding also develops the Http protocol ) Hyper text tranfer protocol.
- 
- 
- It developed four methods.
- 
- A) POST-
- ---------------------------------------------------------------------------------------------------------------------------------------
-    Post is used to create a new resource.
-    
- B) Put-
- ---------------------------------------------------------------------------------------------------------------------------------------
-    Put is used to update the existing resoure.
-    
- C) GET-
- ---------------------------------------------------------------------------------------------------------------------------------------
-    Get is used to get the resource (or read the resource).
-    
- D) DELETE-
- ---------------------------------------------------------------------------------------------------------------------------------------
-   DELETE is used to delete the resource.
-   
-   
- Status code
- ---------------------------------------------------------------------------------------------------------------------------------------
- 1)200
- ---------------------------------------------------------------------------------------------------------------------------------------
- ok -succesful
- 
- 2)201
- ---------------------------------------------------------------------------------------------------------------------------------------
- created
- 
- 3) 400
- ---------------------------------------------------------------------------------------------------------------------------------------
- Method not found
-  
- 4) 404
- ---------------------------------------------------------------------------------------------------------------------------------------
- Bad request
-  
- 5) 500
- ---------------------------------------------------------------------------------------------------------------------------------------
- Internal server error
- 
- 3)What is web service and why it required?
-----------------------------------------------------------------------------------------------------------------------------------------
-  Web services is desined for application to application interaction.
-  Interoperable. 
-  suppose application A installed on java, application B installed on dotnet and application c build on php so they communicate over 
-  the webservies. It allows communicate over the network
- 
- 
-  4) What is the difference between REST and SOAP?
- ---------------------------------------------------------------------------------------------------------------------------------------
-                     SOAP                                         REST
-       1) SOAP stands for simple object        1) REST stands for representational state transfer.
-            access protocol.  
-       2) SOAP manily uses                     2) REST used json for data exachnage
-          xml for dataexachanges
-       3) SOAP is protocol.                    3) REST is an architecrure approch.
-       4) SOAP are difficult to                4) REST is easy to implement as compare to SOAP.
-           implements 
-                 
-
- 5) What is differecne between put and patch?
- ---------------------------------------------------------------------------------------------------------------------------------------
- Put used when we want to update the complete resource. 
- but suppose if you have 50 of attribute and you want to change onlt one or two value of 
- them we will go for patch.
-
 ========================================================================================================================================
 ========================================================================================================================================
                                         !!! Shree Swami Samrath !!!
@@ -2915,7 +2832,7 @@ Lambda expression is used to represnt the instance of functional interface.
 2) Reduce lot's of lines of code
 
 23) What are the types and common ways to use lambda expressions?
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 1) No parameter lambda expression
 () -> {
         }
