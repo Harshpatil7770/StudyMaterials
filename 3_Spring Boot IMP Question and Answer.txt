@@ -1,5 +1,5 @@
 ========================================================================================================================================
-                                                        SpringBoot 
+                                                 !!! Shree Swami Samarth !!! 
 ========================================================================================================================================
 
 1) What is springBoot?
@@ -28,7 +28,6 @@ c) It reduce the cost and time of deveoplment
 d) Spring boot increases the productivity
 e) There is no need of xml configurations
 
-
 4) What are the componets of spring boot?
 ----------------------------------------------------------------------------------------------------------------------------------------
   A) Spring boot stater
@@ -52,7 +51,7 @@ iv) Automatically configure your application based on the depedencies.
    3)Spring Boot stater mail
    4)Spring Boot stater security etc.
 
-+
+
 7) How does spring boot works?
 ----------------------------------------------------------------------------------------------------------------------------------------
 Spring boot uses the annotation such as @SpringBootApplication,it used to marks main class of your application. 
