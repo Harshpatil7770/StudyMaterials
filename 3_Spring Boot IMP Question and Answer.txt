@@ -322,7 +322,7 @@ iv) autoconfiguration
     
     1)@Required -
     ------------------------------------------------------------------------------------------------------------------------------------
-    @Required annotations used to when we want setter method of bean
+    @Required annotations annotations basically tells that the method mmust be inject during the bean creation.
     ------------------------------------------------------------------------------------------------------------------------------------
     2)@SpringBootApplication-
     ------------------------------------------------------------------------------------------------------------------------------------
@@ -333,7 +333,8 @@ iv) autoconfiguration
     -It used to config your application automatically based on their dependecies.
     ------------------------------------------------------------------------------------------------------------------------------------
     4)@ComponentScan- 
-    ------------------------------------------------------------------------------------------------------------------------------------   annotaions used to scan package for bean.
+    ------------------------------------------------------------------------------------------------------------------------------------   
+      annotaions used to scan package for bean.
     5)@Configuration-
     ------------------------------------------------------------------------------------------------------------------------------------
     It is class level annotations, Used by spring container as source bean java definations.
@@ -362,11 +363,11 @@ iv) autoconfiguration
     
     11)@RequestBody-
     ------------------------------------------------------------------------------------------------------------------------------------
-    used to send the data in form of JSON
+    Getting used to map the json into java object.
     
     12)@ResponseBody -
     ------------------------------------------------------------------------------------------------------------------------------------
-    used to return data in form of JSON
+    used to return data in form of JSON.
     
     13)@Controller-
     -----------------------------------------------------------------------------------------------------------------------------------
@@ -409,10 +410,10 @@ iv) autoconfiguration
     
     22)@Scope 
     ------------------------------------------------------------------------------------------------------------------------------------
-    -used to specify scope of the bean.
-@Scope("prototype")
-@Autowired
-	EmployeeServiceImpl employeeServiceImpl;
+    - used to specify scope of the bean.
+     @Scope("prototype")
+     @Autowired
+     EmployeeServiceImpl employeeServiceImpl;
 	
 
 	@Autowired
@@ -442,7 +443,7 @@ iv) autoconfiguration
     
     23)@value 
    -------------------------------------------------------------------------------------------------------------------------------------
-    -used to specify value of object . Get the value of object from properties file.
+    - used to specify value of object . Get the value of object from properties file.
     
     24)@RequestMapping 
      -----------------------------------------------------------------------------------------------------------------------------------
@@ -468,7 +469,7 @@ iv) autoconfiguration
    @Qualifier annotations is getting used to choose the explictliy mentioned bean , out of multiples.
    
    29) @Primary
-    ------------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------------------------------------------------------------
   @Primary annotations is getting used if there are multiple beans , for default you want to use the specific bean.
      
    30) @Transactional
@@ -488,7 +489,7 @@ iv) autoconfiguration
      if there is already running transaction it will join that otherwise if there is no any running transaction it will start new transactional.
 
   C) Transaction(Propogation=Progation.required_NEW)
-    If there is already running transaction it will breka that, start it own transaction
+    If there is already running transaction it will break that, start it own transaction
 
    D) Transaction(propogaton=Propagation.mandototy)
    If there is no running trnasaction , it will throe exception.
@@ -497,7 +498,7 @@ iv) autoconfiguration
  ---------------------------------------------------------------------------------------------------------------------------------------
     Spring boot default follow sinleton design pattern.
 
-  If you want to prove it. Create two object of class and compare the object using == operator you will get same hashcode result.
+     If you want to prove it. Create two object of class and compare the object using == operator you will get same hashcode result.
 
 44) What is spring boot application.properties files?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -750,9 +751,9 @@ i.e @JsonIgonoreProperties(Values={"filed1","filed2"}) // Static Filtering
   4) the last but not least that i.e make controller class so use the restapi resources.
   
   
-  72) How you designed external or internal API'S?
-  --------------------------------------------------------------------------------------------------------------------------------------
-  Desinged both external and internal API's/
+72) How you designed external or internal API'S?
+--------------------------------------------------------------------------------------------------------------------------------------
+Desinged both external and internal API's/
 External API - intergrate or allow other services to communicate with are pplication.
 Will provide swagger document to them so they can learn how they can use it.
 OAUth or JWT Tokens you can use for authencation and authorizATION.
