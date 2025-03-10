@@ -22,7 +22,7 @@ proof of concepts. and if there is no expertisize in microservices.
 3) What are the advantages of monolothic?
 -----------------------------------------------------------------------------------------------------------------------
    1)A single file get easily deploy as jar/war file.
-   2)TO build proof of concepts.
+   2)To build proof of concepts.
 
 
 4) What are the disadvantges of monolothic?
