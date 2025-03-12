@@ -198,9 +198,11 @@ Microservice communicates with each other by using lightweight http rest or mess
     
     
     3) Hystrix Dashboard-
-    Hystrix dashboard is used to avoid failure of your application by using circuit braker mechnaism. If your application running without any error means circuit
+    Hystrix dashboard is used to avoid failure of your application by using circuit braker mechnaism. If your application running without 
+    any error means circuit
     breaker remains closed and if your application occur some error means circuit braker remains open. 
-    To use Hystrix dashboard we need to add the dependency spring cloud netfilx hystrix, and add annotations @EnableHystrix @EnableCircuitBreaker
+    To use Hystrix dashboard we need to add the dependency spring cloud netfilx hystrix, and add annotations @EnableHystrix 
+    @EnableCircuitBreaker
     
     4) API- GATEWAY
     API Gateway will act single entry point for your application. Instead of heating different different url or ports
