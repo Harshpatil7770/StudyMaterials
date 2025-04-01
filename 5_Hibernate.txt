@@ -6,7 +6,7 @@
                                                    Hibernate(ORM 6.6)
 =========================================================================================================================================
 
-1)What is Hibernate?
+1) What is Hibernate?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
 --------------------------------------------------------------------------------------------------------------------------------------   2)What is JPA?
@@ -24,7 +24,8 @@ It provide platform to work directly with objects instead of sql statements.
   2) JPA defined in java.persitance package                  2)Hibernate defined in org.hibernate package.
   3) JPA uses JPQL pava persistance query                    3)Hibernate uses Hibernate query langugae.
      language.
-----------------------------------------------------------------------------------------------------------------------------------------4) What is ORM?
+---------------------------------------------------------------------------------------------------------------------------------------
+4) What is ORM?
 -----------------------------------------------------------------------------------------------------------------------------------------
 ORM stands for object relational mapping. It simplies data creation,data manupalation and data access.
 
@@ -49,7 +50,7 @@ Before going to hibernate architecture we have some layers such as
 
 7) Mention some advantages of using ORM over JDBC?
 ----------------------------------------------------------------------------------------------------------------------------------------- 1)Details of sql quries are hidden
- 2)Application development is fast
+2)Application development is fast
 
 
 8) What are some database supported by hibernate?
@@ -92,6 +93,7 @@ Before going to hibernate architecture we have some layers such as
 ----------------------------------------------------------------------------------------------------------------------------------------- Session factory is an interface provide factory method to get instance of class.
 17) Is session-factory object is thread safe?
 ----------------------------------------------------------------------------------------------------------------------------------------- yes,session factory object is thread safe.because it share with only one thread at a time.
+
 18) What is session?
 ----------------------------------------------------------------------------------------------------------------------------------------- Session is an interface which is used to maintain the relation between hibernate application and database layer.
 19) Is session object is thread safe? why not?
@@ -302,7 +304,7 @@ No argument constructor is used to create new instance by using newInstance() me
       
   60) What are the advatanges of NamedQuery? ##############################
  ---------------------------------------------------------------------------------------------------------------------------------------- 1) Reusable
-  2)Fail fast
+2)Fail fast
      
       
  61) what are the session methods? ##############################
@@ -323,7 +325,7 @@ flush means save the object instance in the database.
 flush in hibernate means forcefully allow to insert the record into database , but don't allow to commit it.
 Autoflush means once transaction get's completed it will commit it.
       
-  63) What is cascade? ##############################
+63) What is cascade? ##############################
 -----------------------------------------------------------------------------------------------------------------------------------------
 cascade is used to manage state of mapped entity.
      
@@ -343,8 +345,8 @@ saveOrUpdate method insert new record or update the record based on there existi
 Whenver you are doing any  operation , if everything is sucess then it will commit that transactions.
 If there will be any error while performing the operation , that time it will rollback the transactions.
  
- 67) What is dialect in hibernate?
- ----------------------------------------------------------------------------------------------------------------------------------------
+67) What is dialect in hibernate?
+----------------------------------------------------------------------------------------------------------------------------------------
  Dialect specify which database are you using in hibernate.
  
  68) What are the other orm tools?
