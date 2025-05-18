@@ -74,8 +74,7 @@ proof of concepts. and if there is no expertisize in microservices.
 
 11) What is use of spring data JPA?
 -----------------------------------------------------------------------------------------------------------------------
-
-    Spring data JPA is used to acces DAO layer.To communicate with database
+Spring data JPA simify the database access using crud operation and query method , so we need to write the boiler plate sql code.
 
 12) What is Spring Cloud Config Server ?  Advantages , Why do we need it ?
 -----------------------------------------------------------------------------------------------------------------------
@@ -177,37 +176,6 @@ Microservice communicates with each other by using lightweight http rest or mess
        so we can use in mobile, smart Tvs ,web desktop etc.
 
 
-24) What are the component of microservice?
------------------------------------------------------------------------------------------------------------------------------------------
-
-    1) Spring Cloud config server- 
-       To use spring cloud config server we need to add the config server dependency, and use @EnableConfigServer annotations.
-       The default port number of config server is 8888. 
-       It act as common service or centralized service. We put git url inside the application.properties and stroe all common connection on git,such 
-       as database connection or jms connections or etc.
-    
-
-    2) Eureka Naming Server-
-       To use eureka naming server we need to add spring cloud netflix eureka server dependency and we required to use @EnableEurekaServer annotations.
-       The default port number of eureka naming server is 8761.
-       It act as monitor of your application we can see which application is up and down.
-       So Eureka server doesn't register it self as client we need to add the some properties in 
-       application.properties files such as
-       eureka.client.register-with-eureka=false
-       eureka.client.fetch-registry=false
-    
-    
-    3) Hystrix Dashboard-
-    Hystrix dashboard is used to avoid failure of your application by using circuit braker mechnaism. If your application running without 
-    any error means circuit
-    breaker remains closed and if your application occur some error means circuit braker remains open. 
-    To use Hystrix dashboard we need to add the dependency spring cloud netfilx hystrix, and add annotations @EnableHystrix 
-    @EnableCircuitBreaker
-    
-    4) API- GATEWAY
-    API Gateway will act single entry point for your application. Instead of heating different different url or ports
-    clinet will hits the API_gateway ,and api -gateway will routes those request to appropriate service.
-
 25) Which are the some famous compaines using microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Netflix, amazon, Twitter etc.   
@@ -269,17 +237,6 @@ need restart of servies manually.
 -----------------------------------------------------------------------------------------------------------------------------------------
     Spring web dependecies used to develop web application or restful web applications. 
 
-
-31) What is use of spring cloud netflix eureka server and eureka discovery client? 
-    or What is the difference between @EnableDiscoveryClient and @EnableEurekaServer?
------------------------------------------------------------------------------------------------------------------------------------------
-If you want to use eureka server first you need to add the spring cloud netflix eureka server depedency. 
-Eureka server act as monitor of your application.
-So to enable eureka server we need to add @EnableEurekaServer annotations.
-also all services we need to register on eureka server for that we need to add spring cloud netflix eureka client depedency and for enabling we need to use 
-@EnableEurekaClient dependency. and eureka server does't register itself as cleint we need to add
-eureka.client-register-with-eureka=false
-eureka.cleint-registry=false
    
 32) What is use of devtools dependecies?
 -----------------------------------------------------------------------------------------------------------------------------------------
