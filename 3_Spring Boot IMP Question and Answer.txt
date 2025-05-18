@@ -2,6 +2,83 @@
                                                  !!! Shree Swami Samarth !!! 
 ========================================================================================================================================
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+1) What is REST ?
+----------------------------------------------------------------------------------------------------------------------------------------
+Rest stands for representational state transfer.
+
+2) What is Http? 
+-----------------------------------------------------------------------------------------------------------------------------------------
+Http stands for hyper text tranfer protocol.
+
+3) RESTFul web services ?
+-----------------------------------------------------------------------------------------------------------------------------------------
+Restful webs service is developed by roy fielding , the main purpose of Restful web service is application to application interaction.
+suppose your have application A, B and C written those in java , php and dotnet.
+so they can interact with each other or communicate with each other with help of REST protocol.
+
+4) Methods of REST API
+-----------------------------------------------------------------------------------------------------------------------------------------
+I) POST - post we have to create a new resource.
+
+
+for eg - 
+
+@PostMapping("/save")
+public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee){
+
+}
+
+II)GET - get used to get the resource
+
+@GetMapping("/find/{id}")
+public Employee getEmployee(@pathvariable long empId){
+
+}
+
+III) Put - put basically we have to update the resource
+
+@PutMapping("/update")
+public ResponseEntity<Employee> updateEmployee(@RequestBody Employee employee){
+
+}
+
+IV) Patch - patch we have for partial update the resource.
+
+@PatchMapping("/partialUpdate)
+public ResponseEntity<Employee> partialUpdateEmployeeDetails(@RequestBody Employee employee){
+
+}
+
+V) Delete - delete the resource.
+
+@DeleteMapping("/delete/{id}")
+public ResponseEntity<String> delete(@PathVaribale long empId){
+
+}
+
+5) What is the difference between SOAP VS REST ?
+
+SOAP - i) soap stands for simple object access protocol.
+       ii) it mainly used for xml data exchange.
+       iii) soap is a protocol.
+       iv) soap is difficult to implement.
+
+REST - i) rest stands for representational state transfer.
+       ii) rest used for json data transfer.
+       iii) Rest is architectural approch.
+       iv) Rest is easy to implement.
+
+
+6) Status code
+---------------------------------------------------------------------------------------------
+200 - Ok 
+201 - Created
+400 - Method Not found
+404 - bad request
+500 - internal server error
+
+
 1) What is springBoot?
 ----------------------------------------------------------------------------------------------------------------------------------------
 Springboot is good platform for java developer to develop standalone application and production ready features, that simply you just need to run it.
@@ -37,19 +114,18 @@ e) There is no need of xml configurations
 
 
 5) Why we use springboot over the spring?
-----------------------------------------------------------------------------------------------------------------------------------------i) SpringBoot provided embeded server , no need of external server.
-ii) It allows us to create the standalone application , that simple we can run it.
-iii) It provided production ready feature like health check , metrics , logging.
-iv) Automatically configure your application based on the depedencies.
+----------------------------------------------------------------------------------------------------------------------------------------i) provided emded server tomcat / jetty
+ii) reduced boiler plate code.
+iii) provide quick stater of springboot application i.e., spring initilizer.
+iv) autoconfiguration beans
 
 
 6) What are stater dependencies of spring boot module?
 ----------------------------------------------------------------------------------------------------------------------------------------
-   Spring boot stater dependencies provide rapid and easier application development process.
-   1) spring Boot stater JPA 
-   2)Spring Boot stater JDBC
-   3)Spring Boot stater mail
-   4)Spring Boot stater security etc.
+ i) spring-boot-stater-web
+ 2) spring-boot-stater-jpa
+ 3) spring-boot-stater-security
+ 4) spring-boot-stater-test
 
 
 7) How does spring boot works?
@@ -113,9 +189,8 @@ Apache Tomcat is inbulid server for a springboot.
 
 14) If you want to change default port no. of server,how can you do that? or is it possible to change default port no. of embeded server?
 ----------------------------------------------------------------------------------------------------------------------------------------
-Yes it's poosible to change default port no of spring boot application. The default port no of spring boot application is 8080.
-Now supppose i want to change port no for eg 9090 then just open the application.properies file. This file located under the src/main/resource folder 
-and write down such as server.port=9090 so in this way we change the default port no of spring boot application.
+change the port in application.properties file
+as server.port = 9090
 
 
 15) Can we create non-webapplication in spring boot?
@@ -322,7 +397,8 @@ iv) autoconfiguration
     
     1)@Required -
     ------------------------------------------------------------------------------------------------------------------------------------
-    @Required annotations annotations basically tells that the method mmust be inject during the bean creation.
+    @Required annotations is deprecated now.
+    It was getting used on the setter method and it tells that the property must be set.
     ------------------------------------------------------------------------------------------------------------------------------------
     2)@SpringBootApplication-
     ------------------------------------------------------------------------------------------------------------------------------------
@@ -330,7 +406,7 @@ iv) autoconfiguration
     
     3)@EnableAutoConguration- 
     ------------------------------------------------------------------------------------------------------------------------------------
-    -It used to config your application automatically based on their dependecies.
+    It used to config your application automatically based on their dependecies.
     ------------------------------------------------------------------------------------------------------------------------------------
     4)@ComponentScan- 
     ------------------------------------------------------------------------------------------------------------------------------------   
@@ -363,7 +439,7 @@ iv) autoconfiguration
     
     11)@RequestBody-
     ------------------------------------------------------------------------------------------------------------------------------------
-    Getting used to map the json into java object.
+    Getting used to map the json String into java object.
     
     12)@ResponseBody -
     ------------------------------------------------------------------------------------------------------------------------------------
@@ -539,13 +615,6 @@ Bootstarp file is eargely loading ie. bean are already loading where as applicat
     5)global session -object is created as per the http global session reuest.
 
 
-50) Explain the meaning of dependency and dependent object?
- ---------------------------------------------------------------------------------------------------------------------------------------
-    class A required other class object to do it's opeations i.e class B
-    Then class A-dependent object
-    class B-dependency obejct
-
-
 51) What is purpose of spring web dependecies?
  ---------------------------------------------------------------------------------------------------------------------------------------
 Spring web dependecies is used to develop web application or restful web application.
@@ -565,34 +634,10 @@ for you.
  ---------------------------------------------------------------------------------------------------------------------------------------
      @SpringBootApplication -It include three annotations such as 1)@ComponentScan 2)@EnableAutoConfiguration 3)Configuration
      
- 54) How to enable Actuator in Spring boot application?
- ---------------------------------------------------------------------------------------------------------------------------------------
-     To enable actuator in spring boot first we need to add the dependency ie. spring boot actuator. 
-     Inside the application.properties file write such as
-     management.endpoints.web.exposure.include=*
-     
- 55) what is profile in spring boot?
- ---------------------------------------------------------------------------------------------------------------------------------------
-profile means provide seggration of your application that opetate on specific enviornment. for eg- QA,Dev,Production etc
-we put spring.profiles.active  so it will work for qa.
-     
-spring.profiles.active=dev
-worked
-
 56) What are the combinations of spring Boot?
 ----------------------------------------------------------------------------------------------------------------------------------------
 Spring Boot combination of spring framework and embeded server.
     
-57) Explain architecture of Spring Boot?
-----------------------------------------------------------------------------------------------------------------------------------------
-The class contains annotations such @SpringBootApplication and main method is the main class of our spring boot application. 
-Before going to spring boot architecture we have layers such as -
-1) Presentation layer
-2) Business layer
-3) Persitance layer
-4) database layer
-client send http request that request map in controller,after the controller request comes to service layer inside the service layer we have all business logic, after the service layer that request goes to dao layer,dao layer means classes directly communicate with database.
-
  58) How to create war file of your spring boot application?
  ---------------------------------------------------------------------------------------------------------------------------------------
  1) Open pom.xml file and write packaging<War>packaging
@@ -665,10 +710,10 @@ Please go to Window ---> preferences---> JRE ---> Installed JRE ---> then check 
   
 65) What is postman?
 ----------------------------------------------------------------------------------------------------------------------------------------
-  Postman is a rest client.
+Postman is a rest client.
   
-  66) Which data foramtion is famous? How to represent data in XML form?
-  --------------------------------------------------------------------------------------------------------------------------------------
+66) Which data foramtion is famous? How to represent data in XML form?
+--------------------------------------------------------------------------------------------------------------------------------------
    Now a day's JSON is very famous for data representation.
    
    Ans XML is very rare used,
@@ -703,7 +748,7 @@ Please go to Window ---> preferences---> JRE ---> Installed JRE ---> then check 
    
 67) What is swagger? Why is it used or How your consumer get to know how to use the url?
 --------------------------------------------------------------------------------------------------------------------------------------
-Swagger is used to build,documents and Consume Rest API.
+Swagger is tool for documenting the rest api.
 RestAPI documentations.
 It shows all url on Swagger UI.
 so consumer exact get information i.e how to use that url.
@@ -782,15 +827,6 @@ Basically put is used to perfrom upsert operation i.e mean you can create a new 
 you can update the existing resouce.
 
 But sometimes i just want to update partial data for eg - i have 100 of fileds and i want to change only 2or 3 from that we can you patch.
-
-77) What are the advantages of springboot over spring?
-----------------------------------------------------------------------------------------------------------------------------------------
-1) standalone application - springboot allows us to create the standalone application, we don't need separate
-   server , it provided embdeded server like tomcat, Jetty.
-2) production ready features - the feature like metrics. health checks will get via springbbot.
-3) reduced boiler plate code
-4) autoconfiguration - reduced lot's of manual configuration.
-5) faster setup of application
 
 78) How java map the request comes in JSON format?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -906,14 +942,6 @@ Types of depedency injection
      }
 
 
-90) @Compnent-
-----------------------------------------------------------------------------------------------------------------------------------------@Compnonet annotations is used to mark a class is java bean or mark a class is spring component.
-     
-91) @Transactional-
-----------------------------------------------------------------------------------------------------------------------------------------
-@Transactional annotations provides transaction consist methods.
-A) commit()
-B) rollback();
     
  92) What is the ResponseEntity ?
 ----------------------------------------------------------------------------------------------------------------------------------------
