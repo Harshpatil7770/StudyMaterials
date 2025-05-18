@@ -2275,7 +2275,9 @@ But we can add n number of  default and static inside the functional Interface a
  interface Addition extends Arithmetic{
    void add(int a,int b);
  }
- 
+ It is correct because The interface Addition does not introduced the new method , it is just override the 
+the method present in Interface Arithmetic.
+
  
  B) False
  @FunctionInterface
@@ -2287,7 +2289,10 @@ But we can add n number of  default and static inside the functional Interface a
  interface Addition extends Airthmetic{
   void sub(int a,int b);
  }
-	
+
+It is not correct because the Interface Addition has introduced the new method and The Arithmetic also
+present on methood.
+
 
 c) Correct
 
@@ -2299,6 +2304,9 @@ c) Correct
  interface Addition extends Airthmetic{
   void sub(int a,int b);
  }
+
+It is correct because it the Interface Addition is regular interface you can add n number method into it.
+But the Airthemetic it has only one method , hence it is correct.
 
 The main purpose of functional interface is desinged to use with lambdas.
 
@@ -2431,8 +2439,7 @@ public class Interview {
 8) Map
 ----------------------------------------------------------------------------------------------------------------------------------------
 Map is used to perfrom the intermediate operations. It doesn't produce end result, it return the stream.
-for e.g.,- convert string to lower case to upper case, multiply number by values etc.
-     
+for e.g.,- convert string to lower case to upper case, multiply number by values etc.     
      
 ----------------------------------------------------------------------------------------------------------------------------------------
 9) Predicate 
@@ -2475,19 +2482,6 @@ It doesn't used to store the element, It takes input from the collections.It mai
 6) Functional Interface
 7) Optional class
 
-
-14) In StreamAPI what is the difference between parallel and sequential stream?
-----------------------------------------------------------------------------------------------------------------------------------------
-  Sequential Stream API-
-
----------------------------------------------------------------------------------------------------------
-  Sequetial Stream API means we can perform only one iterator or operations at a time. It maintain the order. The perfoms sequential
-  stream API is slower than the parallel stream API. platforn independent.
-  
-  Parallel Stream API-
-  --------------------------------------------------------------------------------------------------------------------------------------
-  Paralllel Stream API means we can perform multiple operations at a same time. The doesn't maintain the order. The performs od parallel stream API
-  is faster than the sequential Stream API. platform dependent.
   
 15) What are the advantages of java 1.8?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -2530,11 +2524,6 @@ Lambda expression is used to represnt the instance of functional interface.
 ()- argument list- may or may not be empty
 -> arrow token - used to connect argument list to method body
 {} method body - contains expression and syntax.
-
-22) What are the avantages of lambda expression?
-----------------------------------------------------------------------------------------------------------------------------------------
-1) To provide the implementations of functional interface
-2) Reduce lot's of lines of code
 
 23) What are the types and common ways to use lambda expressions?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -2601,30 +2590,11 @@ LocalDate means localdate with time zone.
 LocalTime means without any date 
 LocalDateTime - it represent date with time
 
-33) Characterstics of Lambda Expressions?
-----------------------------------------------------------------------------------------------------------------------------------------
-1) If you are using one parameter then theres is no need to use the parenthesis. But if your are using more parameter then you need to use the parenthisis
-2) If there is one statement in method body then there is no need to curly braces.
-
 34) What is the difference betweeen StreamAPI and CollectionAPI? /////////////////////////////////////////
 ----------------------------------------------------------------------------------------------------------------------------------------
  StreamAPI- StreamAPI doesn't use iterator and spiltiterator. It is used to modify the resource.
  CollectionAPI- CollectionAPI use iterator and spiltiterator to perform action on each element. It is used to store the data.
- 
-35) How can you create function interface?
-----------------------------------------------------------------------------------------------------------------------------------------
-Create a interface and define only one abstarct method.(abstract means it doesn't have body). Use the annotations such as
-@FunctionalInterface. You can write mulitple default and static methods.
 
-36) What is SAM?
-----------------------------------------------------------------------------------------------------------------------------------------
-  SAM stands for single abstract method. Functional Interface is also known as SAM.
-  
-37) What is a Predicate? State the difference between a Predicate and a Function?
-----------------------------------------------------------------------------------------------------------------------------------------
-1) Predicate and function both are the predifined function in interface.
-2) Predicate return type is boolean i.e it return only true or flase values
-   wherase function takes the arguments and return the result. Return type of function is object.
 
 38) What is diffrence between limit and skip?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -2643,42 +2613,10 @@ SpiltIterator-
 2)spiltIterator travels both parallel and sequential order
 3)It has spiltiterator() method.
 
-40) What is the consumer functional Interface?
-----------------------------------------------------------------------------------------------------------------------------------------
-consumer function interface is pre-defined function in java. It takes the arguments but doesn't return the values.
-
-41) What is supplier functional interface?
-----------------------------------------------------------------------------------------------------------------------------------------
-Supplier function interface means it doesn't take the inputs.It return values by using get method .
-
 42) What is the difference between java 1.8 internal and external iterations?
 ----------------------------------------------------------------------------------------------------------------------------------------
 Internal iterations supports functional programming.whereas external Iterations supports oops programming styles.
 
-43) What is the advantage of java 1.8?
-----------------------------------------------------------------------------------------------------------------------------------------
-We require less code to write.
-Enable Function Programming.
-
-44) What is the main objective to introduce Java 1.8?
-----------------------------------------------------------------------------------------------------------------------------------------
-The main objective of Java 1.8 is enable function programming, so require to write lesser code.
-
-
-45) What are the different Functional Interface in Java (SAM)?
-----------------------------------------------------------------------------------------------------------------------------------------
-1) Runnable  ( run() method)
-2) Consumer
-3) Predicate
-4) Supplier
-5) Function
-
-/////////////////
-Marker interface
-1) Remote interface
-2) Clonable interface
-3) Serialliable
-  
  46) Comparision concepets
  ---------------------------------------------------------------------------------------------------------------------------------------
  (obj1,obj2) 
@@ -2709,21 +2647,6 @@ Where to use for loop we need to write the three steps such as
 2) Define end point for eg i<array.length
 3) define how should the loop is iterate i++
 
-51) What are the methods of stream?
-----------------------------------------------------------------------------------------------------------------------------------------
-1) Max
-2) Min
-3) ForEach
-4) Filter
-5) Map
-6) Reduce
-7) limit 
-8) Sorted
-9) Collectors
-
-While Iterating the Stream it doesn't modify the original list it create the copy of list.
-
-
 52) Related to Lists
 ----------------------------------------------------------------------------------------------------------------------------------------
 List<String> lists=new ArrayList<>():
@@ -2738,9 +2661,6 @@ i) Thread safe means multiple thread can access shared resource without any issu
 ii) Non thread safe means multiple thread can't access shared resource at a time. It will gives inconsistent result.
 
 
-
-
- 
 ----------------------------------------------------------------------------------------------------------------------------------------
 JAVA 1.9 Feature  
 ----------------------------------------------------------------------------------------------------------------------------------------
