@@ -9,12 +9,12 @@
 1) What is Hibernate?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Hibernate is open source object relational mapping tool is used to store and retrieve data from database.
---------------------------------------------------------------------------------------------------------------------------------------   2)What is JPA?
+--------------------------------------------------------------------------------------------------------------------------------------   2) What is JPA?
 -----------------------------------------------------------------------------------------------------------------------------------------
 JPA stands for java persistence API.
 It provide platform to work directly with objects instead of sql statements.
 -----------------------------------------------------------------------------------------------------------------------------------------
-3)What is the diffrence between hibernate and JPA?
+3) What is the diffrence between hibernate and JPA?
 -----------------------------------------------------------------------------------------------------------------------------------------
                      JPA                                                    Hibernate
    1) JPA stands for java persitance API                      1) Hibernate is open soure Object relational mapping tool.It used to 
