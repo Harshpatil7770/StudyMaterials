@@ -91,11 +91,13 @@ Before going to hibernate architecture we have some layers such as
 
 16) What is session factory?
 ----------------------------------------------------------------------------------------------------------------------------------------- Session factory is an interface provide factory method to get instance of class.
+
 17) Is session-factory object is thread safe?
 ----------------------------------------------------------------------------------------------------------------------------------------- yes,session factory object is thread safe.because it share with only one thread at a time.
 
 18) What is session?
 ----------------------------------------------------------------------------------------------------------------------------------------- Session is an interface which is used to maintain the relation between hibernate application and database layer.
+
 19) Is session object is thread safe? why not?
 -----------------------------------------------------------------------------------------------------------------------------------------no, session object is not thread safe. Because We can share session between multiple threads.
 (Thread safe means we can perform only one task at a time)
@@ -103,12 +105,13 @@ Before going to hibernate architecture we have some layers such as
   
 20) What is the diffrence between update() and merge() method?
 ----------------------------------------------------------------------------------------------------------------------------------------- Update means editing something whereas merger means combine something.
+
 21) What are states of objects in hibernate?
 -----------------------------------------------------------------------------------------------------------------------------------------
 There are three states of objects in hibernate
-1)Transient- The object is transient state means they don't have primary key and not associated with session.
-2)Persistance -The object in persistance state means they direclty stored in database.
-3)Detahced - The object is detached state means object is destoryed.
+1) Transient- The object is transient state means they don't have primary key and not associated with session.
+2) Persistance -The object in persistance state means they direclty stored in database.
+3) Detahced - The object is detached state means object is destoryed.
 
 22) How to make immutable class in hibernate?
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -147,7 +150,7 @@ We can simple slf4j logger(simple logger forcascade for java)
 ----------------------------------------------------------------------------------------------------------------------------------------
 API stands application programming interface it helps to communicate two software.
 
-27) What is coupling& Realtionship?
+27) What is coupling & Realtionship?
 -----------------------------------------------------------------------------------------------------------------------------------------  
 Coupling describe realtionship between the module.
 Tight coupling- A class dependeds upon another class called tight coupling.
@@ -170,8 +173,8 @@ JPQL stands for java persistance query language,i.e not a native query. JPA uses
 
 31) Mentions two component of hibernate configuration object?
 -----------------------------------------------------------------------------------------------------------------------------------------
-1)class Mapping setup
-2)Database connection
+1) class Mapping setup
+2) Database connection
 
 32) What is the diffrence between session.save() method and session.persist()method?
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -184,21 +187,9 @@ load() method return object not found exception if object isn't found.
 
 get() method hit database immediately. wherase load method() doesn't hit the database it return proxy by default.
 
-34) What are the states of objects in hibernate?
------------------------------------------------------------------------------------------------------------------------------------------ There are three states of objects in hibernate
- Transient- The object is transient state means it doesn't have primary key and not associated the session.
- Persistance- The object is persistance state means directly stored in database.
- Detached-  Detached state means after destroying the object.
-
-
-35) What is Apache Tomcat?
------------------------------------------------------------------------------------------------------------------------------------------Apache Tomcat is most common predefined server for an internet.
-Tomacat is used to server java server pages.
-
 
 36) What is Automatic dirty checking in hibernate? ##############################
 -----------------------------------------------------------------------------------------------------------------------------------------Automatic dirty checking is feaures of hibernate,calls update statement automatically when changes occur in                           database.
-
 
 37) What is HQL?
 -----------------------------------------------------------------------------------------------------------------------------------------HQL stands for hibernate query language it is not native query. Hibernate uses Hibernate query language.
