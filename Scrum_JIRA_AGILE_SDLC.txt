@@ -1,56 +1,44 @@
 =========================================================================================================================================
 =========================================================================================================================================
-                                                                 !!! Shree Swami Samarth !!!
+                                          !!! Shree Swami Samarth !!!
 =========================================================================================================================================
 =========================================================================================================================================
 
 1) Scrum
-=======================================================================================================================================================================
-                                           1) Scrum
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                            Scrum framework is used to devlop and sustain complex product.
+==========================================================================================================================================
+1) Scrum
+----------------------------------------------------------------------------------------------------------------------------------------Scrum framework is used to devlop and sustain complex product.
 
-                                           2) Sprint
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                            Sprint is short time peroid taken by scrum team to complete set amount of work within 2,4,weeks.
+2) Sprint
+------------------------------------------------------------------------------------------------------------------------------------------Sprint is short time peroid taken by scrum team to complete set amount of work within 2,4,weeks.
 
-                                           3) Scrum methodology
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                           A) Spring backlog-
+3) Scrum methodology
+------------------------------------------------------------------------------------------------------------------------------------------A) Spring backlog-
      
-                                           Spring backlog means contains list of requirments and feature functionlity.
-                                           Inside the backlog we have user stories.
+Spring backlog means contains list of requirments and feature functionlity.
+Inside the backlog we have user stories.
 
-                                           B) Spring planning-
+B) Spring planning-
+Spring planning means choose set amount work that can complete within short time peroid i.e 2,4 weeks.
 
-                                           Spring planning means choose set amount work that can complete within short time peroid i.e 2,4 weeks.
-
-                                           C) Daily scrum-
-
-                                           Daily scrum arranged by scrum master. In this meeting whole team find out the answer of follwing questions such as
-                                           1) what was done yesterday?
-                                           2) What is plan for today?
-                                           3) Is there any abstacle to complete your work?
+C) Daily scrum-
+Daily scrum arranged by scrum master. In this meeting whole team find out the answer of follwing questions such as
+1) what was done yesterday?
+2) What is plan for today?
+3) Is there any abstacle to complete your work?
                                            
                                            
-             
+D) Sprint review-
+Present model in front of product owner.i.e - demo
 
-                                           D) Sprint review-
+E) Sprint retrospect-
+Agrees and continuos work on the process of implementations.
 
-                                           Present model in front of product owner.i.e - demo
-
-                                           E) Sprint retrospect-
-                                            Agrees and continuos work on the process of implementations.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
-
-=======================================================================================================================================================================
+==========================================================================================================================================
 2) JIRA
-=======================================================================================================================================================================
+==========================================================================================================================================
 1) JIRA
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
    JIRA is powerful project management tool used for issue and bugs tracking system.
    JIRA is developed by australian company atalansian.
    JIRA is platform indepedent ie. you can use it on os also.
@@ -62,48 +50,43 @@
    2) Issue
    3) Workflow
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 2) Epic-
-
-   Epic means larger proejct requirements,and that can divide into small small parts called as stories.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Epic means larger proejct requirements,and that can divide into small small parts called as stories.
+------------------------------------------------------------------------------------------------------------------------------------------
 3) Story-
 
-   Story means smaller project requirements that written in perspective end of user.
-   Stories further more break into development task or testing tasks. 
+Story means smaller project requirements that written in perspective end of user.
+Stories further more break into development task or testing tasks. 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+------------------------------------------------------------------------------------------------------------------------------------------
 4)Create ---  A) Epic - purpole colour ( battery charging symbol)
               B) story - green colour
               c) Bug - red colour
               d) Task - blue colour
               
-              ------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+RoadMap - means planning large piece of information into epic level.
               
-              RoadMap - means planning large piece of information into epic level.
-              
-              Whenever we create anything it will first goes to the backlog.
-              backlog means list of requirement or feature functionlity
+Whenever we create anything it will first goes to the backlog.
+backlog means list of requirement or feature functionlity
+first create the epic.
      
-              first create the epic.
-     
-              Now click on create sprint.
-              drag the backlog and drop out in spring section.
+Now click on create sprint.
+drag the backlog and drop out in spring section.
                
-               
-              Backlog click on start sprint then only you can the spring on your board.
+Backlog click on start sprint then only you can the spring on your board.
               
-              Now first it in ToDo coloumn now if you want to start your work then click on
-              inprogress in backlog Now in board you can see that task goes into
-              InProgress column.
-              Once your work is complete then click on DOne.
-              so board your task goes into third column i.e Done.
-              and Jira number come with underline on it.
+Now first it in ToDo coloumn now if you want to start your work then click on
+inprogress in backlog Now in board you can see that task goes into
+InProgress column.
+Once your work is complete then click on DOne.
+so board your task goes into third column i.e Done.
+and Jira number come with underline on it.
               
-              Now on backlog click on the complete sprint then the sprint will get remove.
+Now on backlog click on the complete sprint then the sprint will get remove.
               
-              --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
                
               Board
               Under the board we can see the ToDo,InProgressIssues,Done
@@ -146,23 +129,20 @@
 
 
 
-=======================================================================================================================================================================
+==========================================================================================================================================
 3) Agile
-=======================================================================================================================================================================
+==========================================================================================================================================
 
 Agile
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 Agile is methodology or actaual software development in industry by using short iterations i.e 2 to 4 weeks.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-=======================================================================================================================================================================
+==========================================================================================================================================
 4) SDLC
-=======================================================================================================================================================================
+==========================================================================================================================================
 
 Software development life cycle
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
  
  Every application is makes by using and following by sdlc steps.
 
@@ -174,200 +154,16 @@ Software development life cycle
  6) deployment
  7) maintaince
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-=======================================================================================================================================================================
+==========================================================================================================================================
 4) Waterfall
-=======================================================================================================================================================================
-  
+==========================================================================================================================================
 Waterfall -
  
- Waterfall means put all functionlity into single process. After done with the complete process or model we will put it in front of product owner.
- In Waterfall we don't move forward until finish the current work or model.
- But in agile we can work parallely.
+Waterfall means put all functionlity into single process. After done with the complete process or model we will put it in front of product owner.
+In Waterfall we don't move forward until finish the current work or model.
+But in agile we can work parallely.
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-=======================================================================================================================================================================
-5) GIT and GITHUB
-=======================================================================================================================================================================
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) What is Git?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Git is open source distrubuted version control sysytem it handel small as well as large project with speed and efficieny.
- 
- .git folder provide required version to the client if you have like v1,v2 .
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-2) What is GitHub?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Github hold source of your project on different language.Afetring registering on github we can use it free,we can upload
-application or project on which. so anyone can access it use it and contact you for the feedback. so basically on github 
-we can connect all over world developers.                                                                                                                                                   
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3) How to create new Repository?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Just click on new Repository. write the name of new repository
-2) make public ,private as you want. and click on create.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-4) Steps to push code on github?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Git  init -- make the folder as git repository.
-2) Git status
-3) Git add .
-4)Git commit -m "first commit"
-5) git remote add origin gitrepository_link
-6) git push -u origin main/master
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-5) ON GitHub we can upload a file size is 50mb 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   If you want to upload large file then go for gitlab
-   
-6) Upload large file on github or github desktop
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  A) Open Gitdesktop
-  B) Create git repository on github
-  C) Create folder 
-  D) Clone reposiotory ---> Select the repository and folder
-  E) Paste Application on git
-  F) Write down summary
-  G) commit
-  
- 7) What is the main purpose of branching ?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   To work parallely on the application we required branching.
-   
-   also we don't want to change the already deployed code on production environment.
-   
- 8) Why we need to merge the branches?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    To work parallel as well as suppose once i solve the issue or develop feature test it then
-    supppose you want to merge it into original branch
-    
- 9) How to create new branch and why it is required and how to merge it?
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) First clone all your code. git clone
-2) Import it into your IDE.
-3) Create a new branch on git( git is open source distrubuted version control system.) Distributed version control system means we track our changes in code as per the
-                               time.
-                               
-    git branch branch_name
-4) Git log ( check the changes in file)
-5) git branch ( check how many branches on your git)
-6) git checkout branch_name ( start working on this new Branch)
-5) git status 
-5) git add.
-6) git commit -m "first_commit"
-7) git merge branch_name
-
-
-10) What is difference between pull and fetch?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- git fetch means fetch the changes into your local repository.
- Where as git pull is combination of git fetch+git merge. I.e fetch
- changes into your working directory.
- 
-
-11) What is mean by version control system?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Version control system means track changes mades in code as per the times.
-
-12) Can we work more than one developer on same repository?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Yes we can work more than one developer on same repository.
-
-13) If two developer working on same repo and first one commit is changes and now second developer going to commit their chnages then what
-will happen?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-If one developer commit their changes and now second developer going to commit their changes they getting error like the file has 
-been already changed in remote repository.
-
-To prevent this type of problem or conflict we need to work on isolated branches.
-so git merge commond combine the branches and resolve the conflicting edits.
-
-14) How to check what are the different branches present in the repository?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git branch -a
-
-by using this commond we can check how many branches present in the repository.
-
-15) How to clone the code?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) git clone repository
-2) cd foldername
-3) git branch branch_name(which you have all the code) { you can check the tree flow }
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-16) How to delete a specific class form github?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git rm target/classes/test/java/NewTest$1.class
-
-
-17) How to change previous comment in git?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git revert commitId
-
-A edit mode will get open ------> ESP + I ---> "change your commit" ---> ctrl+c ---> ESC+:wq!
-
-But the class will get delete how we need to check.
-
-
-
-18) How to chage branch name?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-19) How to take back commited clases or staging area to working area?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-20) What is the difference between git soft and git hard commond?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-21) How to replace modified class as back or previous version?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-22) How to stash multiple classes?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git stash list file1 file2
-
-23) How to stash one class?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git stash file1
-
-24) How to unstash the files?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git stash pop
-
-25) How to remove file from staging area to working area?
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git reset HEAD -- Filepath
-
-30) Staged all commit message or staged changes revert back to working area? 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-git reset origin
-
-
-31) How to send file from one server to another server
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-scp abc.jar hpatil@10.34.32.144:/tmp/hpatil
-
-6)Swagger 
-=======================================================================================================================================================================
-Swagger is used to build and consume the restful api resources.
-so client get exact information like to to consume that api.
-
-We need to add open api maven depedency for that ans use the url
-for eg http://localhost:8080/swagger-ui/index.html
 
 
 7) Sonar qube 
