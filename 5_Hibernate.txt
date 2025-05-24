@@ -295,7 +295,7 @@ No argument constructor is used to create new instance by using newInstance() me
       
   60) What are the advatanges of NamedQuery? ##############################
  ---------------------------------------------------------------------------------------------------------------------------------------- 1) Reusable
-2)Fail fast
+2) Fail fast
      
       
  61) what are the session methods? ##############################
@@ -400,12 +400,23 @@ If you will not provide it your will face CORS error.
   
  76) How to implement ehcache in your application and what is purpose of that?
  ----------------------------------------------------------------------------------------------------------------------------------------
+Ehcache is used to improve performans of our application.
+We need to add Ehache dependency for this.
+Then use the @EnableCaching annotations.
+also in service layer , which is going to call the 
+db , there we need to mention @Cacheable(value= , key=)
+as per the ehcache.xml configruation it will keep the data into memory.
+
+
 
  
  
  77) What the use of @Transactional annotations?
- ----------------------------------------------------------------------------------------------------------------------------------------
- @Transactional annotations maily used in service layer at method level.
+----------------------------------------------------------------------------------------------------------------------------------------
+@Transactional annotations is getting used to maintain the constistenyc of data, it avoid data from
+incosistence. It is maintns the transaction commmit and rollback/
+
+@Transactional annotations maily used in service layer at method level.
  for eg- to make a one unit of work, we use this annotations.
  Suppose you have five method i.e A,B,C,D and E in one unit of work and 
  you will get exception at c method then a whole process get rollback.
