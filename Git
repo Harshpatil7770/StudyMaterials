@@ -1,1 +1,167 @@
+==========================================================================================================================================
+5) GIT and GITHUB
+------------------------------------------------------------------------------------------------------------------------------------------
+1) What is Git?
+------------------------------------------------------------------------------------------------------------------------------------------
+ Git is open source distrubuted version control sysytem it handel small as well as large project with speed and efficieny.
+ 
+ .git folder provide required version to the client if you have like v1,v2 .
+------------------------------------------------------------------------------------------------------------------------------------------
+2) What is GitHub?
+------------------------------------------------------------------------------------------------------------------------------------------
+Github hold source of your project on different language.Afetring registering on github we can use it free,we can upload
+application or project on which. so anyone can access it use it and contact you for the feedback. so basically on github 
+we can connect all over world developers.                                                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------
+3) How to create new Repository?
+------------------------------------------------------------------------------------------------------------------------------------------
+1) Just click on new Repository. write the name of new repository
+2) make public ,private as you want. and click on create.
+------------------------------------------------------------------------------------------------------------------------------------------
+4) Steps to push code on github?
+------------------------------------------------------------------------------------------------------------------------------------------
+1) Git  init -- make the folder as git repository.
+2) Git status
+3) Git add .
+4) Git commit -m "first commit"
+5) git remote add origin gitrepository_link
+6) git push -u origin main/master
+------------------------------------------------------------------------------------------------------------------------------------------
+5) ON GitHub we can upload a file size is 50mb 
+------------------------------------------------------------------------------------------------------------------------------------------
+If you want to upload large file then go for gitlab
+   
+6) Upload large file on github or github desktop
+------------------------------------------------------------------------------------------------------------------------------------------
+  A) Open Gitdesktop
+  B) Create git repository on github
+  C) Create folder 
+  D) Clone reposiotory ---> Select the repository and folder
+  E) Paste Application on git
+  F) Write down summary
+  G) commit
+  
+ 7) What is the main purpose of branching ?
+ -----------------------------------------------------------------------------------------------------------------------------------------
+To work parallely on the application we required branching.
+also we don't want to change the already deployed code on production environment.
+   
+ 8) Why we need to merge the branches?
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    To work parallel as well as suppose once i solve the issue or develop feature test it then
+    supppose you want to merge it into original branch
+    
+ 9) How to create new branch and why it is required and how to merge it?
+ -----------------------------------------------------------------------------------------------------------------------------------------
+1) First clone all your code. git clone
+2) Import it into your IDE.
+3) Create a new branch on git( git is open source distrubuted version control system.) Distributed version control system means we track our changes in code as per the
+                               time.
+                               
+    git branch branch_name
+4) Git log ( check the changes in file)
+5) git branch ( check how many branches on your git)
+6) git checkout branch_name ( start working on this new Branch)
+5) git status 
+5) git add.
+6) git commit -m "first_commit"
+7) git merge branch_name
+
+
+10) What is difference between pull and fetch?
+------------------------------------------------------------------------------------------------------------------------------------------
+ git fetch means fetch the changes into your local repository.
+ Where as git pull is combination of git fetch+git merge. I.e fetch
+ changes into your working directory.
+ 
+
+11) What is mean by version control system?
+------------------------------------------------------------------------------------------------------------------------------------------
+Version control system means track changes mades in code as per the times.
+
+12) Can we work more than one developer on same repository?
+------------------------------------------------------------------------------------------------------------------------------------------
+Yes we can work more than one developer on same repository.
+
+13) If two developer working on same repo and first one commit is changes and now second developer going to commit their chnages then what
+will happen?
+------------------------------------------------------------------------------------------------------------------------------------------
+Then the second developer will face issue , he or she will issue error message as please take a pull first.
+After than if there is any conflict then that he or she need to resolve it.
+Once all conflict resolved , then it is ok to push.
+
+14) How to check what are the different branches present in the repository?
+------------------------------------------------------------------------------------------------------------------------------------------
+git branch -a
+
+by using this commond we can check how many branches present in the repository.
+
+15) How to clone the code?
+------------------------------------------------------------------------------------------------------------------------------------------
+1) git clone url 
+------------------------------------------------------------------------------------------------------------------------------------------
+16) How to delete a specific class form github?
+------------------------------------------------------------------------------------------------------------------------------------------
+git rm target/classes/test/java/NewTest$1.class
+
+
+17) How to change previous comment in git?
+------------------------------------------------------------------------------------------------------------------------------------------
+git revert commitId
+
+A edit mode will get open ------> ESP + I ---> "change your commit" ---> ctrl+c ---> ESC+:wq!
+
+But the class will get delete how we need to check.
+
+
+18) How to chage branch name?
+------------------------------------------------------------------------------------------------------------------------------------------
+git branch -m old_branch_name new_branch_name
+
+git push origin new_branch_name
+
+19) How to take back class from staging area to working area?
+------------------------------------------------------------------------------------------------------------------------------------------
+git reset HEAD fileName
+
+20) What is the difference between git soft and git hard commond?
+------------------------------------------------------------------------------------------------------------------------------------------
+git reset --soft HEAD~1
+
+hard reset the commit , means completely removing or delete.
+
+git reset --soft HEAD~1
+
+soft reset he commit, it will be available in your local.
+
+21) How to replace modified class as back or previous version?
+------------------------------------------------------------------------------------------------------------------------------------------
+git restore fileName
+
+git checkout -- fileName
+
+22) How to stash multiple classes?
+------------------------------------------------------------------------------------------------------------------------------------------
+git stash list file1 file2
+
+23) How to stash one class?
+------------------------------------------------------------------------------------------------------------------------------------------
+git stash file1
+
+24) How to unstash the files?
+------------------------------------------------------------------------------------------------------------------------------------------
+git stash pop
+
+25) How to remove file from staging area to working area?
+------------------------------------------------------------------------------------------------------------------------------------------
+git reset HEAD -- Filepath
+
+30) Staged all commit message or staged changes revert back to working area? 
+------------------------------------------------------------------------------------------------------------------------------------------
+git reset origin
+
+
+31) How to send file from one server to another server
+------------------------------------------------------------------------------------------------------------------------------------------
+scp abc.jar hpatil@10.34.32.144:/tmp/hpatil
 
