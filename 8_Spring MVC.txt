@@ -7,10 +7,10 @@
 
 ==========================================================================================================================================                                                           Spring MVC
 ==========================================================================================================================================
-1) What is the front controller class of spring MVC? expaing the architecure of spring mvc?
+
+1) What is the front controller class of spring MVC? explain the architecure of spring mvc?
 ------------------------------------------------------------------------------------------------------------------------------------------
 Dispatcher servelet is front controller class of Spring MVC. It recieve the request from client and send them resource on the server.
-
 
 2)What is spring MVC? why they used?
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -20,23 +20,11 @@ Model- Java Bean
 View- Front End
 Controller- RestFul Resources
 
-
-3)What does @RequestMapping annotations?
-------------------------------------------------------------------------------------------------------------------------------------------
-@RequestMapping annoataions is used to map the web requests.
-
-
-4)What does @Controller annotations?
-------------------------------------------------------------------------------------------------------------------------------------------
-@Controller annotations used to mark the spring mvc application.Whenever we use@Controller we need to externally response body.
-
-
-5)Does Spring MVC Support validation?
+3)Does Spring MVC Support validation?
 ------------------------------------------------------------------------------------------------------------------------------------------
 yes, Spring MVC Support Validation.
 
-
-6)What are the steps to create SpringMVC Project?
+4)What are the steps to create SpringMVC Project?
 ------------------------------------------------------------------------------------------------------------------------------------------
 1) Open the IDE Software
 2) Click on new
@@ -47,20 +35,10 @@ yes, Spring MVC Support Validation.
 7) Add dependency manually as per your project requirements.
 8) Add deployment descriptior.
 
-
-7) What is dispathcer servlets?
+5) What is dispathcer servlets?
 ------------------------------------------------------------------------------------------------------------------------------------------
 Dispatcher servlets is front controller class of spring mvc. In this class recieve the feedback from client and send them resources on the server.
   
-8) What is view Resolver?
+6) What is view Resolver?
 ------------------------------------------------------------------------------------------------------------------------------------------
 view resolver provide mapping between view names and actual views.
-  
-9) What are the module of spring framework?
-------------------------------------------------------------------------------------------------------------------------------------------
-1) Spring AOP
-2) Spring ORM
-3) Spring JDBC
-4) Spring JPA
-5) beans
-6) Web servlet
