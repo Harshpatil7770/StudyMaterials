@@ -18,21 +18,8 @@ It is creating loosely coupled application , it become very easy to test and man
 3)Spring framework provide predefined template.
 4)Easy to test and manage your application.
 
----------------------------------------------------------------------------------------------------------------------------------------
-3) What is lazy loading?
 -----------------------------------------------------------------------------------------------------------------------------------------
-Lazy loading means it will serve when request comes.
-
------------------------------------------------------------------------------------------------------------------------------------------)what is eagerly loading?
------------------------------------------------------------------------------------------------------------------------------------------
-Eargely loading means the beans are loaded form.
-------------------------------------------------------------------------------------------------------------------------------------
-5)what is spring and why we used?
------------------------------------------------------------------------------------------------------------------------------------------
-Spring is framework for java-based application. It mainly used to develop the coupled application.
-Spring framework provided pre-defined template, so application become easy to test and manage.
------------------------------------------------------------------------------------------------------------------------------------------
-6)what are the module of Spring framework?
+3)what are the module of Spring framework?
 -----------------------------------------------------------------------------------------------------------------------------------------
 1)Spring AOP
 2)Spring ORM
@@ -41,34 +28,19 @@ Spring framework provided pre-defined template, so application become easy to te
 5)Beans
 6)Web Servlet
 
------------------------------------------------------------------------------------------------------------------------------------------
-7) what is the role of IOC container in spring?
------------------------------------------------------------------------------------------------------------------------------------------
-IOC stands for inversion of controller, it allows us to create the object assemble the object and manage their entire life cycle.
-
-
-8)what is autowiring and it's Type?
+4)what is autowiring and it's Type?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Autowiring means injecting bean automatically there is no need of explicit logic.
 Types of Autowiring
 byName,byType,Constructor
------------------------------------------------------------------------------------------------------------------------------------------
-9)what are the diffrent types of scopes of bean?
------------------------------------------------------------------------------------------------------------------------------------------
-Scopes of bean specified the life cycle bean.
-1)Singleton-Only one object is created.
-2)Prototype-Each and every request a new object is created.
-3)Request - object is created as per the http request
-4)seession - object is created as per the http session request.
-5)global session- object is created as per the http global session request.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-10) In which scenario you will use singleton and prototype?
+5) In which scenario you will use singleton and prototype?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Singleton is used in EJB stateless session where prototypes is used in EJB stateful session.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-11) what are types of transaction management supported by spring?
+6) what are types of transaction management supported by spring?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Spring support two types of transaction management
 1)Programatic Type transaction management-
@@ -78,7 +50,7 @@ It support for few transaction.
 It supports for multiple transaction.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-12) what are AOP Terminology?
+7) what are AOP Terminology?
 -----------------------------------------------------------------------------------------------------------------------------------------
 AOP stands Aspect orinted Programming.
 There are seven AOP Terminology
@@ -91,43 +63,24 @@ There are seven AOP Terminology
 7)Point cut- Expression language of spring AOP.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-13)what are types of advice?
+8)what are types of advice?
 -----------------------------------------------------------------------------------------------------------------------------------------
 1)Before advice
 2)After advice
 3)Through advice
 4)Around advice
 
------------------------------------------------------------------------------------------------------------------------------------------14) what are types of IOC container in spring?
 -----------------------------------------------------------------------------------------------------------------------------------------
-There are two types of IOC container in spring
-1)Bean factory
-2)Application context
-
-1) Bean factory- 
-Bean factory is root interface for all spring bean container.
-Bean factory means basic container.
-2) Application context- 
-All beans are loaded inside an application context.
-application context means advance container.
------------------------------------------------------------------------------------------------------------------------------------------
-15)what is main difference between bean factory and application context?
+8)what is main difference between bean factory and application context?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Bean factory meand basic container whereas application context means advanced container.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-16)Explain the meaning of dependency and dependent object?
------------------------------------------------------------------------------------------------------------------------------------------
-Dependency injection means injecting dependency object to the dependent object.
-Class A require other class object to do it's operation then class A- dependent object 
-class B-dependency object
-
------------------------------------------------------------------------------------------------------------------------------------------
-17) what is AOP?
+9) what is AOP?
 -----------------------------------------------------------------------------------------------------------------------------------------
 AOP stands for apsect oriented programming means divide your application into distinct parts it mainly used or hepls in logging security in the application.
 -----------------------------------------------------------------------------------------------------------------------------------------
-18) what are the component of spring module?########################
+10) what are the component of spring module?########################
 -----------------------------------------------------------------------------------------------------------------------------------------
 1)Spring AOP
 2)Test
@@ -135,7 +88,7 @@ AOP stands for apsect oriented programming means divide your application into di
 4)Web
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-19) what is spring container?
+11) what is spring container?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Spring container is core part of spring framework it allows us to create the object assemble the object and manage their entire life cycle.
 
@@ -196,14 +149,9 @@ Spring life cycle config by
 3) Using xml configuration -(xml file contain information about the classes and describe the process of configuration)
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-27) which annotation used for dependency check?
------------------------------------------------------------------------------------------------------------------------------------------
-@Required annotations is used for dependency check.
------------------------------------------------------------------------------------------------------------------------------------------
 28) which xml elements can be used to enable annotations support in spring?
 -----------------------------------------------------------------------------------------------------------------------------------------
 <Context:annotations-config>
-
 -----------------------------------------------------------------------------------------------------------------------------------------
 29) which spring bean scope used to create multiple instance of an object in non web application?
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -263,10 +211,10 @@ for eg- message broker rabbitmq
 -----------------------------------------------------------------------------------------------------------------------------------------
 mark a class is a aspect
 4)@Before
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 exeute before the business method
 5)@After
----------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 - execute after the business method
 6) @ModelAttribute-
 -----------------------------------------------------------------------------------------------------------------------------------------
