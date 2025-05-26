@@ -1105,8 +1105,26 @@ also @PostConstruct
 you can use it will call the method loading your applications
 
 
-  
-  
+111) Spring Security
+------------------------------------------------------------------------------------------------------------------------------
+Spring security we have to secure the spring-boot application.
+It provide built-in feature to implement authentication and authorization.
+
+Here are the two main component of spring security- 
+
+Authentication - 
+i) Authentication means verify user identity.
+
+Authorizarion - 
+i) Authorization determines what acccess will have for authroized user.
+
+Authentication method supported By Spring Security - 
+i) LDAP
+ii) Form based authnetication
+iii) Roller
+
+Spring security architecture 
+
    
   
   
