@@ -1108,6 +1108,7 @@ you can use it will call the method loading your applications
 111) Spring Security
 ------------------------------------------------------------------------------------------------------------------------------
 Spring security we have to secure the spring-boot application.
+It helps to keep secure access for our end points.
 It provide built-in feature to implement authentication and authorization.
 
 Here are the two main component of spring security- 
@@ -1118,17 +1119,43 @@ i) Authentication means verify user identity.
 Authorizarion - 
 i) Authorization determines what acccess will have for authroized user.
 
-Authentication method supported By Spring Security - 
-i) LDAP
-ii) Form based authnetication
-iii) Roller
+Spring security JWT - 
+i) JWT token is basically divided into three parts.
+   header , payload , signture
 
-Spring security architecture 
+   header will show what type of token it is or the alogorithm used to made token
 
-   
-  
-  
-  
+   payload will contain the actual information like id , name etc.
+
+   signture like a stamp or seal.
+
+
+ii) So basically how it works.
+
+ user will send their username and password first to get the JwtToken.
+
+ Authenticationmanager basically perfroming the validation,
+ it will call to the userDetailsService and it will fetch the data form database and
+it will compare the recieved input details and fetched form the data.
+If matched the it will generate Jwt token for the user.
+Jwts basically responsible to create the token.
+If not matched will create give response back to the user like User not found.
+
+Once user get the token , next time the user will send that token in 
+authorization.
+
+Once token recieved to any api , first uset will submit
+authroization as key bearer as token.
+
+token will contain the details such as when it is going to expire.
+We can keep what we want.
+
+Once user submitted than token , doFilterService from the interface that is oncePerRequestFilter.
+it will valdiate that token , if it the token is valid then it will allow to call the correct endpoint.
+
+SO every http request will first go to the OncePerRequestFilter interface that has 
+doFilterMethod.
+
 
 
 ========================================================================================================================================
