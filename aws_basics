@@ -60,6 +60,10 @@ Cloud computing means providing services such as storage, database, servers prov
 12) ELB 
     ELB stands for elastic load balancer , it automatically route traffic to multiple server (EC2) which availble , scalable.
 
+13) AWS Secrete Manager 
+    AWS Secrete manager helps to store and manage the secrete information such as 
+    password, database creditional , tokens etc.
+
 
    
 
