@@ -1,77 +1,67 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------- !!! Shree Swami Samarth !!! ----------------------------------------------------------------------------------------------
+------------------------------------------------------ !!! Shree Swami Samarth !!! ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1) AWS
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) AWS stands for amazon web services.
-2) It provides multiple services.
-like - S3,EC2,RDM,IAM,Route53,DNS,load balancer,EBS or etc.
+
+AWS stands for amazon web services.
+It is a cloud computing platform provided by amazon.
+
+2) Cloud Computing 
+Cloud computing means providing services such as storage, database, servers provided over the internet.
+
+3) EC2 
+  i) EC2 stands for elastic compute cloud
+  ii) EC2 provide virtual server to run our application on cloud.
 
 
-2) What is basic advantage of cloud?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) The basic advantage of cloud is you can take on rent it when you need , and release then back
-   once you don't need.
+4) S3 
+   S3 means simple storage service.
+   It is used to store and retrive the data at any time.
 
-3) IAM
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) IAM stands for identity access management.
-2) IAM helps us to access securely your aws account.
-3) IAM Role , IAM user, IAM Group are the features of IAM
-4) IAM user means the name of people we can say - hpatil
-5) IAM Group - the number of people works together like - dev, qa.
-6) IAM allows us to create the user and add it into respective group , so the number
-   of defined services those user can access.
-7) IAM is basically restricated or whatever service your required those access get's provided to you only.
+5) Lambda 
+   Lambda means AWS hide server from you.
+   So you don't need to manage it.
+   You have to just focus on code and tell to AWS when you want to run it for e.g., file upload or api call.
+   AWS lambda will do - 
+   Automatically run the server.
+   Run your code.
+   Shut down your application.
 
-4) How to create IAM group?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Go to the IAM service
-2) click on User group
-3) Create Group
-4) Enter the User group name
-5) Attach permissions policies to the group
-6) Create Group
+6) RDS 
+   RDS stands for relational database services.
+   It is a managed services by AWS for running relational databases like Mysql, postgress , oracle.
+   AWS is managing backup, scaling, updates etc.
 
+7) IAM 
+   IAM stands for identity access management.
+   It helps to control access of aws resources and services.
+   You can create the groups , roles , users and assign permission to them.
 
-5) How to create user and assing a particular group
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1) Goto IAM service
-2) Click on the User
-3) Click on the Create User
-4) User name - enter the username
-5) Add user to the group
-6) select the group name
-7) click on next
-8) click on create user
+8) VPC 
+   VPC stands for virtual private cloud allows us to securely run our application , databases and services.
 
+9) CloudWatch 
+   cloudwatch is one of the most popular aws servies helps to track performance , health and logs of your
+   aws infrastrucutre and application.
+   It has features such as metrics , logs , alarms etc.
 
-6) What is the region and availablity zones?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-A) Region
-1) Region is nothing but a geographical area.
-for - mumbai, london, paris
+10) CloudFront 
+   Amazon cloudfront CDN helps to deliver the content of website fastely.
+   It uses edge location to deliver the content.
+   It reduces the load on main server.
+
+11) DyanamoDB 
+    DyanamoDB is no sql database.
+    It is allows million of request per second. 
+    scales automatically.
 
 
-B) Availability zones
-1) Under the regions availabilty zones are there like
-   us-east-1a, us-east-1b or etc
-
-7) What is the purpose of multiple region and data centrers
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Basically the main purpose two deploy your application on multiple region is , to make your application as highly available.
-for eg -- 1) Mumabai region --> two data center and 2) Paris region ---> two data center are there
-this way we can spread are trafic and make are application as highly available with less latency.
-Also any of region will get crashed still other region will works.
-
-8) How to define the regional and global serivce in aws?
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Basically regional service , means it's available under the region , you are able to change the region of that services.
-
-Whereas the global serivce , means it's available globally , you are not able to change the region of that service or those services not belongs to the region.
+12) ELB 
+    ELB stands for elastic load balancer , it automatically route traffic to multiple server (EC2) which availble , scalable.
 
 
+   
 
 
 
