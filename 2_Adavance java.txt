@@ -232,6 +232,7 @@ It is recoverable or we can handel it.
 There are two types of exception
 1) compile time exception ( checked exception) 
 2) Runtime exception (unchecked exception)
+ (** we don't need to declare the runtime exception , if it is occured we can catch it)
 
 Error means irrecoverable.
 It occurs due to lack of system resource.
@@ -314,8 +315,10 @@ By using try,catch and finally block is used to handel the exception.
 ---------------------------------------------------------------------------------------------------------------------------------------
 15) What are the new feature added in java 1.7?
 ---------------------------------------------------------------------------------------------------------------------------------------
-1) Try with resource- A try statement declare with one or more resource called as try with resource.                                       If we use try with resource we don't need to use finally block for closing connection.
-                                                                                                                                        2) Single Catch Block Handel Muliple exception by using vertical bar or pipe. (|)
+1) Try with resource- A try statement declare with one or more resource called as try with resource.                                       
+If we use try with resource we don't need to use finally block for closing connection.
+
+2) Single Catch Block Handel Muliple exception by using vertical bar or pipe. (|)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 16) What is the difference between throw and throws?
@@ -346,8 +349,8 @@ Exception propation means throws exception upto caller of that method , so you c
 Custom exception means user defined exception.
 It is used to catch and provide specific treatment to exiting java exception. 
 Business logic exception 
-                                                                                                                                        1)class NewExcpetion extends Exception
-                                                                                                                                        2) class NewException extends RuntimeException
+1)class NewExcpetion extends Exception
+2) class NewException extends RuntimeException
                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
 21) Can we keep other statement in try,catch and finally block?
@@ -418,16 +421,44 @@ Finally block is used to execute important code of the program such as closing f
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 31) What is class cast exception in java?
---------------------------------------------------------------------------------------------------------------------------------------  Class cast exeption means jvm unable to cast exection one object type over another type.                                      
+--------------------------------------------------------------------------------------------------------------------------------------  
+Class cast exeption means jvm unable to cast exection one object type over another type.                                      
 --------------------------------------------------------------------------------------------------------------
 33) What is stackoverflow error in java?
----------------------------------------------------------------------------------------------------------------------------------       Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.
+---------------------------------------------------------------------------------------------------------------------------------       
+Stack overflow error is subclass of java.lang.error. It occur when jvm stack overflows.
 ( for eg- this type of error generally occur when stack overflows).
 Rucursion program
 ---------------------------------------------------------------------------------------------------------------------------------------
 34) Can we overide super class method which throwing unchecked exception with checked exception in the subclass?
 ---------------------------------------------------------------------------------------------------------------------------------------
-No we can't override. for exception we required same i.e if parenT class thorowing unchecked exception then subclass must be throws unchecked exception                                                                                                                                                                                        
+No we can't override. for exception we required same i.e if parenT class thorowing unchecked exception then subclass must be throws unchecked exception           
+
+
+
+Possible
+
+A) Parent throws checked exception and child class throws checked Exception  ? 
+   Yes
+
+B) Parent throws checked exception ( IO exception and Child class throw unchecked Exception ( NullPointerException) ?
+   Yes
+
+C) Parent not throwing any exception and child class throws checked Exception  ?
+   No it is not posssible.
+   
+
+D) Parent class not throwin any exception , can child class throws unchecked Exception ? 
+   this is valid case , if parent class not throwing any exception child class can throw uncheked exception.
+
+E) Parent class throws unchecked Exception , can child class thorws checked Exception ? 
+  No
+
+F) Parent class throws unchecked Exception , can child class throws unchecked Exception ?
+   Yes
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 35) What is chained exception in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -610,7 +641,7 @@ We can  declare it by using new keyword.
 	  }
 
 
-3) If Parent class throws child exception and subclass throws Exception you will get compile time error
+3) If Parent class throws checked exception and subclass throws Exception you will get compile time error
 
       class A{
          public void getResult() throws IOException{
@@ -662,7 +693,14 @@ We can  declare it by using new keyword.
 ---------------------------------------------------------------------------------------------------------------------------------------
 1) Why String are thread safe?
 ---------------------------------------------------------------------------------------------------------------------------------------
-String are immutable in java                                                                                                                                                                    
+String are immutable in java.
+
+
+String are immutable in java because there so many places we are using the string,
+Once string object get's created we don't want to change it or modify.
+Whenever you are modifying it it create new object for you.
+Also THere is String literal concept to make JVM more memory efficient.
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 2) What is String ?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -670,12 +708,12 @@ String represent squence of character. String is final class present in java.lan
 ---------------------------------------------------------------------------------------------------------------------------------------
 3) Why Java uses concept of String literal?
 ---------------------------------------------------------------------------------------------------------------------------------------
-When we create the bject by using to String literal JVM checks whether the object already declared or not                                If declared it doesn't create new object in this way they makes JVM more memeory efficient.
+When we create the bject by using to String literal JVM checks whether the object already declared or not If declared it doesn't create new object in this way they makes JVM more memeory efficient.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 4) What are the method of String?
 ---------------------------------------------------------------------------------------------------------------------------------------
-1) toUppercase() 2)toLowercase() 3)toCharArray() 4)toCharAt() 5)equals() 6)length() 7)toStrim() 8)                                      9) equalIgnorecase() 10) join()   11)subString()  12)IsEmpty() 
+1) toUppercase() 2)toLowercase() 3)toCharArray() 4)toCharAt() 5)equals() 6)length() 7)toStrim() 8)  9) equalIgnorecase() 10) join()   11)subString()  12)IsEmpty() 
 ---------------------------------------------------------------------------------------------------------------------------------------
  6) Is string is primitive or dervied data type?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -684,10 +722,11 @@ When we create the bject by using to String literal JVM checks whether the objec
  7) What is String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
 String constant pool is special space reserved in heap memeory to store the string objects.
-When we create obj without using new keyword it will store in string constant pool                                                      ----------------------------------------------------------------------------------------------------------------
+When we create obj without using new keyword it will store in string constant pool                                                     
+----------------------------------------------------------------------------------------------------------------
 8) What is special about String objects as compares other objects.
 ---------------------------------------------------------------------------------------------------------------------------------------
-String objects are created without using new keyword and store in special memory i.e String constant pool,                              JVM check whether the objects already  declared or not in this way they make JVM more memory efficient. 
+String objects are created without using new keyword and store in special memory i.e String constant pool, JVM check whether the objects already  declared or not in this way they make JVM more memory efficient. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 9) What do you mean by mutable and immutable objects?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -817,11 +856,11 @@ iii) String builder are immutable.
 ---------------------------------------------------------------------------------------------------------------------------------------
 11) Why String buffer and String builder introduced in java there are already exit String class to represent the set of character?
 ---------------------------------------------------------------------------------------------------------------------------------------
-When we create object by using string it becomes immtable, we are not able to modify it,If you try yo modify                            then chances of data losses. That's to make mutable objects StringBuffer and StringBuilder are introduced. 
+When we create object by using string it becomes immtable, we are not able to modify it,If you try yo modify   then chances of data losses. That's to make mutable objects StringBuffer and StringBuilder are introduced. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 12) How many objects will be created in the following code?
 ---------------------------------------------------------------------------------------------------------------------------------------
-                                                                                                                                        String s1=new String("abc");     
+String s1=new String("abc");     
 each new keyword the object will get create.
 
 String s2="abc";                                            
@@ -829,7 +868,8 @@ JVM check the contain if you create the object using String literal.
 If the contain are already created then jvm won't create the new object for it.
 String s3="abc";  
 String s4="abc";  
-                                                                                                                                        Two objects are created one is stored in heap memory another one is stored in string constant pool
+
+Two objects are created one is stored in heap memory another one is stored in string constant pool
 
 String s1=new String("abc");  
 String s2=new String("abc");
@@ -890,13 +930,15 @@ If declared it doesn't create new objects,in this way they make jvm more memory 
 To make to upper case we will use toUpperCase() method and to make String lower case we can use toLowercase() method. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 29) Apart from security concept what are other reason to make String immutable in java?
---------------------------------------------------------------------------------------------------------------------------------------  To make jvm more memory efficient java uses concept of String literal.
+-------------------------------------------------------------------------------------------------------------------------------------- 
+To make jvm more memory efficient java uses concept of String literal.
 For eg- suppose five reference variable referes to the one object and i want to chnage one value of them so it may chances of data loses.  
 ---------------------------------------------------------------------------------------------------------------------------------------
 30) Why is it said that the length() method of String class doesn't return accurate results?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Because length() method count only number of character from the String.                                                            
----------------------------------------------------------------------------------------------------------------------------------------	34) What is heap memory and String constant pool?
+---------------------------------------------------------------------------------------------------------------------------------------	
+34) What is heap memory and String constant pool?
 ---------------------------------------------------------------------------------------------------------------------------------------
 heap memeory is runtime data area on which object are allocated. 
 whereas String constant pool located inside the heap memory it mainly used to make jvm more memory efficient, when we create obejct of Strign by using String literal jvm check wheather object declared or not,if declared it doesn't create new instance.
@@ -932,7 +974,8 @@ It is used to avoid thread polling in java.
 ---------------------------------------------------------------------------------------------------------------------------------------
 5) How thread communication happen?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Thread communicate with each other by using notify(),notify all() mehtods . notify meas unblock only one waiting thread ,wheras notifyall() means unblock all waiting thread.                                                                                           -----------------------------------------------------------------------------------------------------------------------
+Thread communicate with each other by using notify(),notify all() mehtods . notify meas unblock only one waiting thread ,wheras notifyall() means unblock all waiting thread.                                                                                           
+-----------------------------------------------------------------------------------------------------------------------
 6) What is the purpose of wait method?
 ---------------------------------------------------------------------------------------------------------------------------------------
 wait method is object class method. It is used to pause the currently excecuting thread and wait until another thread will call notify and notify all methods.
@@ -957,7 +1000,8 @@ Life cycle of Thread
 ---------------------------------------------------------------------------------------------------------------------------------------
 10) What is the difference between preemptive sheduling and time slicing?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Thread sheduler is part of jvm which decided which thread executed first based on some proriety and other facts.                        There are two types of thread sheculer 
+Thread sheduler is part of jvm which decided which thread executed first based on some proriety and other facts.  
+There are two types of thread sheculer 
 1)Preemptive sheduling- Preemptive sheduling means execute high prioriety thread first and wait until another high prioriety thread comes into exisitance.
 2)Time slicing -time slicing means time taken by cpu for execution.                                                                                                                                                                          
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -967,7 +1011,9 @@ context switching means time taken by cpu for exceution
 ---------------------------------------------------------------------------------------------------------------------------------------
 12) What is thread class?
 ---------------------------------------------------------------------------------------------------------------------------------------
-thread class is way to achieve thread object. once we extends thread class we are not able to extends other class.                      extending thread class means tighlty coupled and it doesn't provide any code reusblity other than copy and paste.                       Maintance cost of thread class very high                                                                                                                                                                                  
+thread class is way to achieve thread object. once we extends thread class we are not able to extends other class. 
+extending thread class means tighlty coupled and it doesn't provide any code reusblity other than copy and paste.
+Maintance cost of thread class very high                                                                                                                                                                                  
 ---------------------------------------------------------------------------------------------------------------------------------------
 13) What is difference between thread class and runable interface for creating thread? or What are the different ways of threads usage?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -983,7 +1029,8 @@ Thread object is created by using two ways.
 ---------------------------------------------------------------------------------------------------------------------------------------
 14) What is user thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
-User thread means user defined thread. JVM doesn't terminate until user thread get execute.                                             ---------------------------------------------------------------------------------------------------------------------------------------
+User thread means user defined thread. JVM doesn't terminate until user thread get execute.                                            
+---------------------------------------------------------------------------------------------------------------------------------------
 15) What is runable interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Runable interface means functional interface , it has only one abstract method, run method. 
@@ -995,7 +1042,7 @@ Join method wait for thread to die.
 ---------------------------------------------------------------------------------------------------------------------------------------
 17) What is the purpose and woking of sleep () method?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Sleep method thread class method. It pause the currently executing thread for specific time and execute another                         thread if any available.
+Sleep method thread class method. It pause the currently executing thread for specific time and execute another  thread if any available.
 ---------------------------------------------------------------------------------------------------------------------------------------
 18) what is difference between wait() and sleep() method? ######################
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1009,7 +1056,7 @@ Sleep method thread class method. It pause the currently executing thread for sp
 ---------------------------------------------------------------------------------------------------------------------------------------
 20) Can we call run method instead of start?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Yes, we can run method insted of start but it doesn't behave like thred it behave like normal method                                    When we call start() method internally it will call run method
+Yes, we can run method insted of start but it doesn't behave like thred it behave like normal method When we call start() method internally it will call run method
 ---------------------------------------------------------------------------------------------------------------------------------------
 21) What is daemon thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1022,7 +1069,7 @@ matically terminate if there is remains only daemon thread. There are two types 
 No we can't make user thread as daemon thread if thread is started it will shows illegalMoniterstateExcpetion                           ---------------------------------------------------------------------------------------------------------------------------------------
 24) What is shutdown hook?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.                          also it is process of cleaning.
+Shutdown hook is part of jvm called before the jvm shut down normally or abruptly. It saves the states of jvm.  also it is process of cleaning.
 ---------------------------------------------------------------------------------------------------------------------------------------
 25) When should we interrupt thread?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1030,7 +1077,7 @@ When we want break out the state of thread from sleep and wait state then we int
 ---------------------------------------------------------------------------------------------------------------------------------------
 26) What is synchronization? or Why synchronization is neccesary?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Synchronization is getting used when multiple thread trying to access a shared resource.                                                 There are two types of synchronization 
+Synchronization is getting used when multiple thread trying to access a shared resource. There are two types of synchronization 
 1)Synchronization method  
 2)Synchronization block
 Adavtangets  of synchronization
@@ -1078,17 +1125,20 @@ notify() meand unblock only one waiting thread whereas notifyall() means unblock
 ---------------------------------------------------------------------------------------------------------------------------------------
 31) What is deadlock?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                  ------------------------------------------------------------------------------------------------------------------------------
+Deadlock situation occurs when two process waiting for each other to complete and they wait endlessly.                                  
+------------------------------------------------------------------------------------------------------------------------------
 32) How to detect deadlock condition ? and how can you avoid it?
 ---------------------------------------------------------------------------------------------------------------------------------------
-To detect deadlock condition we need to run our code cmd. If dead lock present we will get message.                                     To avoid deadlock condition 
+To detect deadlock condition we need to run our code cmd. If dead lock present we will get message. 
+To avoid deadlock condition 
 1)Avoid unnecessary lock
 2)Avoid nested lock
 3)Using thread join
 ---------------------------------------------------------------------------------------------------------------------------------------
 34) Does each thread has stack in mutlithreaded program?
 ---------------------------------------------------------------------------------------------------------------------------------------
-yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                         --------------------------------------------------------------------------------------------------------------------------------
+yes in mutithreaded programming each thread has stack. Beacuse thread are exceute independently                                         
+--------------------------------------------------------------------------------------------------------------------------------
 35) How safety thread achieved?
 ---------------------------------------------------------------------------------------------------------------------------------------
 Safety thread achieved by using following ways 
@@ -1099,7 +1149,7 @@ Safety thread achieved by using following ways
 ---------------------------------------------------------------------------------------------------------------------------------------
 36) What is race condition?
 ---------------------------------------------------------------------------------------------------------------------------------------
-Race condition generally occur when mutiple thread execute at a same time                                                               To avoid race condition we need to use synchronization.
+Race condition generally occur when mutiple thread execute at a same time To avoid race condition we need to use synchronization.
 ---------------------------------------------------------------------------------------------------------------------------------------
 37) What is volatile keyword is java?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1107,16 +1157,18 @@ Volatile keyword is getting used to make sure the latest or updated value of var
 It will read from main memory not a specific memory.
 ---------------------------------------------------------------------------------------------------------------------------------------
 38) What do you understand by thread pool?
---------------------------------------------------------------------------------------------------------------------------------------- Thread pool is group of waited thread waiting for task to be allocated.
+--------------------------------------------------------------------------------------------------------------------------------------- 
+Thread pool is group of waited thread waiting for task to be allocated.
 ---------------------------------------------------------------------------------------------------------------------------------------
 40) What are the method of thread?
---------------------------------------------------------------------------------------------------------------------------------------) start() 2)run() 3)setDaemon() 4)IsDaemon() 5)setPriority() 6)getProority()  7)yeild()  8)join()  9)sleep() 10)currentThread()
+--------------------------------------------------------------------------------------------------------------------------------------
+1) start() 2)run() 3)setDaemon() 4)IsDaemon() 5)setPriority() 6)getProority()  7)yeild()  8)join()  9)sleep() 10)currentThread()
 11)run() 12)isAlive() 13)setName() 14)getName()
 ---------------------------------------------------------------------------------------------------------------------------------------
 41) What is pass by value and pass by referecne?
 ---------------------------------------------------------------------------------------------------------------------------------------
 pass by value means pass exact cpoy value if changes occur original value doesn't get changed,
-                                                                                                                                        pass by reference means pass an reference value if changes occur then it afftect in all places.
+pass by reference means pass an reference value if changes occur then it afftect in all places.
 ---------------------------------------------------------------------------------------------------------------------------------------
 44) What is maker interface and it's use and can we create our own marker interface?
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1129,7 +1181,7 @@ yes we can create our own marker interface just create an interface and don't wr
 45) How to create immutable class in java and example?
 ---------------------------------------------------------------------------------------------------------------------------------------
 TO make immutable class in java we need to make class is final and all member of class is final,and private
-                                                                                                                                         Use only getter method.
+Use only getter method.
 
                              final class Student{
                                                  private final int id;
@@ -1154,7 +1206,8 @@ TO make immutable class in java we need to make class is final and all member of
                                                   }
 ---------------------------------------------------------------------------------------------------------------------------------------
 47) What is the difference between join and wait method?
---------------------------------------------------------------------------------------------------------------------------------------  Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another thread will call notify and notifyAll() methods.
+--------------------------------------------------------------------------------------------------------------------------------------  
+Join method wait for thread to die. wherease wait method is object class method which pause the currenlty executing thread and wait until another thread will call notify and notifyAll() methods.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 48) Who calls the run method?
@@ -1252,7 +1305,8 @@ There are two ways to synchronization
   No sleep() method cause only current thread no any other.
   ---------------------------------------------------------------------------------------------------------------------------------------
  70) Explain about interrupt() thread?
---------------------------------------------------------------------------------------------------------------------------------------when we want to break out the wait and sleep position of thread we interrupt a thread.But it doesn't mean to stop immediatelty ,it polite way to request.
+--------------------------------------------------------------------------------------------------------------------------------------
+when we want to break out the wait and sleep position of thread we interrupt a thread.But it doesn't mean to stop immediatelty ,it polite way to request.
 ---------------------------------------------------------------------------------------------------------------------------------------
   71) Explain about interthread communication and how it takes place in java?
 ---------------------------------------------------------------------------------------------------------------------------------------
