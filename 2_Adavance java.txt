@@ -2723,6 +2723,28 @@ JAVA 1.9 Feature
 2) inside the interface we can write private method also.
 
 
+54) What is the difference between map vs flatmap?
+----------------------------------------------------------------------------------------------------------------------------------------
+Map is nested strcture.
+
+for eg - 
+List<String> names=Arrays.asList("n,e,w","h,e,r,e");
+List<String[]> result=names.stream().map(e-> e.spilt(",").collect(Collectors.toList());
+System.out.println(result);
+
+[[n,e,w,],[h,e,r,e]]
+
+
+flatmap is single list or stream.
+
+List<String> names=Arrays.asList("n,e,w","h,e,r,e");
+List<String[]> result=names.stream().flatmap(e-> e.spilt(",").collect(Collectors.toList());
+System.out.println(result);
+
+[n,e,w,h,e,r,e]
+
  47) What is data structure
  
  48) What is the difference between collection and data structure?
+
+
