@@ -65,9 +65,14 @@ G) CloudWatch
     iii) will get email
  
 H) VPC 
-    VPC stands for virtual private cloud to getting used to run our application securely.
+    VPC stands for virtual private cloud to getting used to run our application securely , also access db , services sucurely.
 
+I) IAM 
 
+   IAM stands for identity access management, it is getting used to control the access of aws resources.
+   There will have user ,role , group etc. 
+
+-------------------------------------------------------------------------------------------------------------
 
 
 5) Lambda 
@@ -79,23 +84,6 @@ H) VPC
    Run your code.
    Shut down your application.
 
-6) RDS 
-   RDS stands for relational database services.
-   It is a managed services by AWS for running relational databases like Mysql, postgress , oracle.
-   AWS is managing backup, scaling, updates etc.
-
-7) IAM 
-   IAM stands for identity access management.
-   It helps to control access of aws resources and services.
-   You can create the groups , roles , users and assign permission to them.
-
-8) VPC 
-   VPC stands for virtual private cloud allows us to securely run our application , databases and services.
-
-9) CloudWatch 
-   cloudwatch is one of the most popular aws servies helps to track performance , health and logs of your
-   aws infrastrucutre and application.
-   It has features such as metrics , logs , alarms etc.
 
 10) CloudFront 
    Amazon cloudfront CDN helps to deliver the content of website fastely.
