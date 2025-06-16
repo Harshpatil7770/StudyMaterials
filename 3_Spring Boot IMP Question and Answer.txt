@@ -114,7 +114,8 @@ e) There is no need of xml configurations
 
 
 5) Why we use springboot over the spring?
-----------------------------------------------------------------------------------------------------------------------------------------i) provided emded server tomcat / jetty
+----------------------------------------------------------------------------------------------------------------------------------------
+i) provided emded server tomcat / jetty
 ii) reduced boiler plate code.
 iii) provide quick stater of springboot application i.e., spring initilizer.
 iv) autoconfiguration beans
@@ -233,6 +234,11 @@ Profile provide seggration of your application i.e they operate in specific envi
 for eg- dev,QA,Test,stage,production etc.
 spring.profiles.active=dev
 worked
+
+you need to keep 
+application-dev.yaml
+application-cit.yaml
+application-st.yaml
 
 22) What is actuator & it's adantages?
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -368,7 +374,8 @@ ii) more memory consumption
 
 
 39) What is framework?
-----------------------------------------------------------------------------------------------------------------------------------------Framework is predefined platform for deveopler that used to develop web application.
+----------------------------------------------------------------------------------------------------------------------------------------
+Framework is predefined platform for deveopler that used to develop web application.
 
 
 40) What are the goals of springboot?
@@ -602,11 +609,12 @@ Bootstarp file is eargely loading ie. bean are already loading where as applicat
 
 48) What is the latest version of spring boot?
  ---------------------------------------------------------------------------------------------------------------------------------------
-    SpringBoot 3.4.2
+    SpringBoot 3.5.0
 
 
 49) What are the diffrent types of scopes of bean?
- ---------------------------------------------------------------------------------------------------------------------------------------scope of bean specify the life cycle of bean
+ ---------------------------------------------------------------------------------------------------------------------------------------
+scope of bean specify the life cycle of bean
     @Scope annotations used to mark scoper of the bean
     1)Singleton- only one instance is created.
     2)Prototype- every reqest new instance is created
@@ -638,7 +646,7 @@ for you.
 ----------------------------------------------------------------------------------------------------------------------------------------
 Spring Boot combination of spring framework and embeded server.
     
- 58) How to create war file of your spring boot application?
+57) How to create war file of your spring boot application?
  ---------------------------------------------------------------------------------------------------------------------------------------
  1) Open pom.xml file and write packaging<War>packaging
  2) Right click on your application run as maven build ---> mvn clean install 
@@ -646,8 +654,8 @@ Spring Boot combination of spring framework and embeded server.
 ### Run Maven clean ( Target folder get cleaned) 
     then run as maven install
 
-59) Status code 
- ---------------------------------------------------------------------------------------------------------------------------------------
+58) Status code 
+---------------------------------------------------------------------------------------------------------------------------------------
  1) 200 - Ok
  2) 201- Succesful
  3) 202- created
@@ -799,7 +807,7 @@ i.e @JsonIgonoreProperties(Values={"filed1","filed2"}) // Static Filtering
 72) How you designed external or internal API'S?
 --------------------------------------------------------------------------------------------------------------------------------------
 Desinged both external and internal API's/
-External API - intergrate or allow other services to communicate with are pplication.
+External API - intergrate or allow other services to communicate with are application.
 Will provide swagger document to them so they can learn how they can use it.
 OAUth or JWT Tokens you can use for authencation and authorizATION.
 
@@ -1155,6 +1163,35 @@ it will valdiate that token , if it the token is valid then it will allow to cal
 
 SO every http request will first go to the OncePerRequestFilter interface that has 
 doFilterMethod.
+
+
+
+112) do we not need to install Tomcat separately on the server when running a Spring Boot application packaged as a JAR file ?
+
+No we don't need to install tomcat separelty if we configured it as part of jar or application.
+
+113) Can i used @GetMapping to save new resource ?
+   It is not good practice to use @GetMapping while creating new resource.
+   It is breaking a rest api principles.
+   Whenn we are using @GetMapping , it should not change the state of application.
+
+114) Why do we need custom endpoints ? How are we going to test using postman tool? 
+ @Endpoinnt annontation is getting used in soap.
+
+
+115) Where do i need to keep @Scope annotation ?
+ you can keep at class level or method level
+  @Scope("prototype")
+ each reqquest new instance get created.
+
+
+116) @RefreshScope -  How it will defect the changes has been made in the spring cloud config file ?
+ When you do commit in the spring cloud config file , the application will detect that.
+
+117) @CrossOrigin -  If we not provide it , then it will gives us CORS error i.e.,
+     Because our frontend and backend is running on different port. 
+    If it working fine throgh postman and not working via broweser then it must CORS error.
+ 
 
 
 
