@@ -10,14 +10,65 @@ It is a cloud computing platform provided by amazon.
 2) Cloud Computing 
 Cloud computing means providing services such as storage, database, servers provided over the internet.
 
-3) EC2 
-  i) EC2 stands for elastic compute cloud
-  ii) EC2 provide virtual server to run our application on cloud.
+
+2) What you are using in your current project ?
+
+A) AWSSecreteManager 
+i) we are using to store our secrete details on server.
+ii) WHat we did basically we keep our important dettals such mq password , DB password on server.
+iii) We are passing basically the region ,secreteKey,  trustStorePath, keyStorePath 
+     and getting the password from the server during the authentication.
+iv) AWSSecreteManager class we have to do the operation.
 
 
-4) S3 
+B) EC2 
+   i) EC2 stands for elastic cloud computing.
+   ii) EC2 provide virtual server to run our application on cloud.
+
+C) S3 
    S3 means simple storage service.
    It is used to store and retrive the data at any time.
+   What we are using basically we are reading file from s3 bucket location, and processing it.
+   Also once we complete our process succesfully , we are storing it into another folder in the bucket.
+   We are using s3Client class to build and the s3 bucket name and region.
+
+D) RDS
+   Releations databases services.
+   It is managed by AWS for RDS database such as Mysql ,postgress , oracle.
+   AWS itself managing the backup , scalling and updates etc.
+
+   In our project we have installed DB2 on linux server i.e, (EC2 elastic cloud computing) , we are managing it by ourself.
+
+E) SQS 
+
+   SQS stands for simple queue services. It is fully managed by AWS
+   To use it into out java -springboot application  , we need to add sqs dependnecy in pom file.
+   We need to create the beean of sqsClient with region , authentication details.
+   We have SendMessageRequest class producer and listenMessageRequest as consumer class.
+
+F) SNS 
+
+   SNS stands for simple notification services.
+   To integrate SNS with our springboot application here are the steps such as 
+
+   i) need to add sns dependency in pom file.
+   ii) Create the bean of SnsClient ( using region and CreationditonalProvider) 
+   iii) User PublishRequest and PublishResponse class to publissh the notificcation.
+
+
+G) CloudWatch  
+   i) Cloudwatch we don't need to do any code changes for this.
+   ii) We configured it as for 
+       pattern such as "ERROR" "Exception" in the logs trigger the alert.
+       mq queue depth is 80% full.
+       CPU is 80% full.
+    iii) will get email
+ 
+H) VPC 
+    VPC stands for virtual private cloud to getting used to run our application securely.
+
+
+
 
 5) Lambda 
    Lambda means AWS hide server from you.
@@ -59,15 +110,3 @@ Cloud computing means providing services such as storage, database, servers prov
 
 12) ELB 
     ELB stands for elastic load balancer , it automatically route traffic to multiple server (EC2) which availble , scalable.
-
-13) AWS Secrete Manager 
-    AWS Secrete manager helps to store and manage the secrete information such as 
-    password, database creditional , tokens etc.
-
-
-   
-
-
-
-
-
