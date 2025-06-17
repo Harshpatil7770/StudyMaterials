@@ -1191,7 +1191,27 @@ No we don't need to install tomcat separelty if we configured it as part of jar 
 117) @CrossOrigin -  If we not provide it , then it will gives us CORS error i.e.,
      Because our frontend and backend is running on different port. 
     If it working fine throgh postman and not working via broweser then it must CORS error.
- 
+
+
+118) How to secure our endpoints ?
+    We have annotattions @PreAuthroized("hasRole('ADMIN')")
+
+    But in spring security we have the method SecurityFilterChain  
+    there itself validating it 
+
+   @Bean
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http
+        .authorizeHttpRequests(auth -> auth
+            .requestMatchers("/admin/**").hasRole("ADMIN")
+            .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
+            .anyRequest().authenticated()
+        )
+        .httpBasic(); // or .formLogin(), or JWT config
+    return http.build();
+}
+
+
 
 
 
