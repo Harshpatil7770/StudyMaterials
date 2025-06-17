@@ -1212,7 +1212,13 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 }
 
 
+119) How to make sure are you generating token for admin or user ?
+     What we di we used userDetails interface basically it has bascially two attribute
+      one is name another is password.
+     We implemented this interface into our class and added other parameter. role.
 
+
+120) 
 
 
 ========================================================================================================================================
