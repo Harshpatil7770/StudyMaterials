@@ -14,30 +14,34 @@ Cloud computing means providing services such as storage, database, servers prov
 2) What you are using in your current project ?
 
 A) AWSSecreteManager 
-i) we are using to store our secrete details on server.
+i) we are using to store our secrete details.
 ii) WHat we did basically we keep our important dettals such mq password , DB password on server.
 iii) We are passing basically the region ,secreteKey,  trustStorePath, keyStorePath 
      and getting the password from the server during the authentication.
-iv) AWSSecreteManager class we have to do the operation.
-
+    We keep it into application.yaml in encrypted format.
+iv) AWS SDK we are using to read the secrete using SecreteManagerClient.
+v) We keep it is region specific.
+vi) If there is any update in AWSSecreteDetails , to fetch the updated we need to refresh the application.
 
 B) EC2 
    i) EC2 stands for elastic cloud computing.
    ii) EC2 provide virtual server to run our application on cloud.
-
+   iii) We installed IBM mq , DB2 on EC2 server.
+   
 C) S3 
    S3 means simple storage service.
    It is used to store and retrive the data at any time.
    What we are using basically we are reading file from s3 bucket location, and processing it.
    Also once we complete our process succesfully , we are storing it into another folder in the bucket.
    We are using s3Client class to build and the s3 bucket name and region.
-
+   We are using getObject() to read the file , putObject() method to upload the file.
+ 
 D) RDS
    Releations databases services.
    It is managed by AWS for RDS database such as Mysql ,postgress , oracle.
    AWS itself managing the backup , scalling and updates etc.
-
    In our project we have installed DB2 on linux server i.e, (EC2 elastic cloud computing) , we are managing it by ourself.
+   Due to customization we hosted DB2 on EC2.
 
 E) SQS 
 
@@ -66,16 +70,14 @@ G) CloudWatch
  
 H) VPC 
     VPC stands for virtual private cloud to getting used to run our application securely , also access db , services sucurely.
+    Do you confiured subnet or routing ->no devops team handled networking setup.
 
 I) IAM 
 
    IAM stands for identity access management, it is getting used to control the access of aws resources.
    There will have user ,role , group etc. 
 
--------------------------------------------------------------------------------------------------------------
-
-
-5) Lambda 
+J) Lambda 
    Lambda means AWS hide server from you.
    So you don't need to manage it.
    You have to just focus on code and tell to AWS when you want to run it for e.g., file upload or api call.
@@ -83,6 +85,8 @@ I) IAM
    Automatically run the server.
    Run your code.
    Shut down your application.
+
+   No server management is needed.
 
 
 10) CloudFront 
