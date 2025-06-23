@@ -86,6 +86,7 @@ iv) We will keep those properties on cloud server and rest all service will prov
 
 Advantage 
 i) It reduce the repetation of common properties from the service.
+ii) Only non-sensitive info you can keep there.
 
 13) How to use or develop the spring cloud config server ?
 -----------------------------------------------------------------------------------------------------------------------
@@ -98,7 +99,7 @@ dependencies such as spring web , spring cloud config server.
 
 12) What is eureka server? ( portno-8761) @EnableEurekaServer /spring cloud netflix eureka server.
 -----------------------------------------------------------------------------------------------------------------------
-    Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as monitor of your application.
+    Spring cloud netflix eureka server is used to build eureka server. All services must be registered on eureka server. It acts as    monitor of your application.
     To use eureka server we need to add the dependency such as netfilx eureka server and use @EnableEurekaServer annoataions.
     By using eurka server we will can see which service is up or down.
     basically we need unique-service name because service commiunicate with each other based on application-name.
@@ -147,18 +148,16 @@ Microservice communicates with each other by using lightweight http rest or mess
 
 20) What are the challenges in microservice?
 -----------------------------------------------------------------------------------------------------------------------
-1) The main chanllenges of microservices is data consistency. All services will have their own database so it is 
-   difficult to maintain the data consistency i.e., needed good knowledge of transaction rollback and commit operation.
-2) The number of servieces increase it increase the number of resources as well.
-3) The services commmunication will happen over the network , so high chances of failure or might be slow to
-   respond.
-4) Load balancer problem need to be solve.
+i) Servcies communication will happen over the internet , so it might slow the performs.
+ii) Each service will have their own database, so sharing data become difficult.
+iii) Security need to keep
+iv) Deployement increased the number resources.
+v) Error across multiple servcies hard to trace and fix.
 
 21) What are the micorservice monotoring tool?
 -----------------------------------------------------------------------------------------------------------------------
-    1) Spring Boot dashboard
-    2) Hystrix Dashboard
-    3) Eureka Server
+    1) splunk
+    2) Eureka server
 
 22) What do you understand by spring cloud?
 -----------------------------------------------------------------------------------------------------------------------
@@ -183,7 +182,7 @@ Netflix, amazon, Twitter etc.
 
 26) What is RabbitMQ?
 -----------------------------------------------------------------------------------------------------------------------------------------
-RabbitMQ is open source message broker.Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ       implement AMQP protocols (advanced messaging queue protocols).
+RabbitMQ is open source message broker.Suppose app1 wants to send meessage to app2 we can't send directly we require intermediate between them. so rabbitMQ  implement AMQP protocols (advanced messaging queue protocols).
 Queue- Quque has pool to store the message. Once consumer listen that message it will gone forever.
     
  To use rabbit mq wwe need to register on amqp cloud. Rabbitmq writtern in erlang language.
@@ -195,11 +194,19 @@ Queue- Quque has pool to store the message. Once consumer listen that message it
  
  @RabbitListener annotations required to listen the messages.
 
+
+API Gateway --> (REST) SERVICE A (MQ) ---> SERVICE B (MQ)---> SERVICE C (MQ)
+
+
 27) What is spring cloud bus?
 -----------------------------------------------------------------------------------------------------------------------------------------
 Spring cloud bus main purpose is send cache refresh event to all microservices, suppose if you are using spring cloud config server 
 and you changed configuration , so spring cloud bus will send refresh event to all servives , so they can do the referesh , so we don't
 need restart of servies manually.
+
+You need to trigger the /actuator/busRefresh api.
+on spring cloud config server. 
+It is automatically provided spring , we don't need to right manually.
 
 28) What are the most commmon dependecies using in microservice?
 -----------------------------------------------------------------------------------------------------------------------------------------
