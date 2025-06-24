@@ -307,7 +307,7 @@ for eg - Sending message VIA kafka , rabbit mq , ibm mq.
 
 40) Where you deploy your microservice application?
 -----------------------------------------------------------------------------------------------------------------------------------------
-It's deployed on AWS. There was devops team for deployment.
+It's deployed on AWS EC2 (elastic cloud computing instance). There was devops team for deployment.
 
 41) Can i have both application.properties file and yaml.properties file in one application?
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -463,6 +463,8 @@ Desing pattern are being used in microservice.
 3) Instead of heating different different ports , client will 
    send request to API-Gateway , gateway will router that request.
 
+We can implement authentication and authorization in API gateway. 
+It will first validate the jwt token and after that it will route those requests.
 
 2) Circuit Breaker Design Pattern
 ---------------------------------------------------------------------------------------------------------------------------------
