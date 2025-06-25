@@ -1230,7 +1230,31 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
         postAuthorized annotations is getting used to after the execution of mmethod validated the input and
         the data which we got after processing of msg.
 
-     
+
+121) What is the difference between GET VS POST HTTP Method ?
+
+   > Get is used to read the resource.
+   > Get the non sensitive data, becuase Get means acccessing the data via passing senstive information
+     in the url itself. Sometimes browser will cache this senstive information, so anyone can access it and
+     see the senstive information
+ 
+   > Post is used to create the resource.
+   > Get the sensitive data.
+   > Post means sending information in the body , not in the url. Post response not cached in broweser.
+
+
+122) Why senstive information get access by POST rather than GET ? 
+     Which endpoint are you using the expose the senstive information in your project ? 
+
+    > We are using post to expose the senstive information.
+    > Because post means we are sending the data in body format and receveing response back will not get saved as cache.
+    > If we use Get to access the senstive information, means we are sending the senstive information via url, 
+      so it will be get stored in brower cache , if someone will have access they can see the sensitve details
+
+
+      GETMAPPING - http://localhost:9090/api/user/login/userName=harsh&password=adbc
+
+   
      
     
 
