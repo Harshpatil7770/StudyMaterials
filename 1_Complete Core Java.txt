@@ -2203,7 +2203,15 @@ second i<=5 ; condition it iwll execute if it is true then for loop will execute
 third increment/decrement i++ will execute
 again condition get execute then for loop if is a true then the increment or decrement
 for(int i=0; i<=5 ;i++)
- 
+
+
+253) Tell me scenario where memory leak happen? 
+
+> If there is resource such as jdbc connection ,file stream , which you are not closing after the operation.
+> If the cache present hudge or very large size of object.
+> If you are using unnessary static references in your code.
+
+
 ========================================================================================================================================                                     Decision or control making statement,Jump statement
 ========================================================================================================================================
 1) What's loop?
