@@ -1218,7 +1218,21 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
      We implemented this interface into our class and added other parameter. role.
 
 
-120) 
+120) How are you securing your endpoints or application endpoint ?
+     1) We used spring security JWT token. It handels the authentication and authorization. 
+     2) Once user logged info , we are providing JWT token to them.
+     3) It will be valid for next one hr.
+     4) Backend we are validating the token for each request.
+     5) Input validation using annotations such as @Data, @Valid.
+     6) Used annotations such as PreAuthroized("hasRole('User')")
+
+        preAuthorized annotations is getting used to restrict the access of the api.
+        postAuthorized annotations is getting used to after the execution of mmethod validated the input and
+        the data which we got after processing of msg.
+
+     
+     
+    
 
 
 ========================================================================================================================================
