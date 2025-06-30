@@ -2725,23 +2725,22 @@ JAVA 1.9 Feature
 
 54) What is the difference between map vs flatmap?
 ----------------------------------------------------------------------------------------------------------------------------------------
-Map is nested strcture.
 
-for eg - 
-List<String> names=Arrays.asList("n,e,w","h,e,r,e");
-List<String[]> result=names.stream().map(e-> e.spilt(",").collect(Collectors.toList());
-System.out.println(result);
+Map will give us one to one result. Map will keep the strcutre as it is.
 
-[[n,e,w,],[h,e,r,e]]
+List<String> empName=Arrays.asList("ram","raj","sham");
+		
+		//one to one output
+	    List<String> mapResult = empName.stream().map(e-> e.toUpperCase()).collect(Collectors.toList());
+	
+	    System.out.println(mapResult);
+	    
+	    //one to many output
+	     List<String> flatMapResult = empName.stream().flatMap(e-> Arrays.stream(e.split(""))).collect(Collectors.toList());
+	
+	     System.out.println(flatMapResult);
 
-
-flatmap is single list or stream.
-
-List<String> names=Arrays.asList("n,e,w","h,e,r,e");
-List<String[]> result=names.stream().flatmap(e-> e.spilt(",").collect(Collectors.toList());
-System.out.println(result);
-
-[n,e,w,h,e,r,e]
+flatmap gives us one to many result.
 
  47) What is data structure
  
